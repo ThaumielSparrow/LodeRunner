@@ -1,5 +1,7 @@
 Lode Runner was first released back in the 1980s. It was shit. I made it godlike. God bless Doug Smith,may his soul rest in 
-pepperonis.
+pepperonis. 
+
+YES, THIS IS A REMAKE. BUT IT'S ABOUT AS DIFFERENT AS POKEMON FIRERED WAS FROM RED.
 
 Enjoy. Game coded in python using pygame library, simply download and run loderunner.exe to play. Feel free to pull and make your
 own improvements.
