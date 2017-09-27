@@ -1,0 +1,405 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 154 0 0 0 0 154 0 0 0 0 0 0 
+			0 0 153 0 0 0 0 152 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 153 0 0 0 0 0 0 
+			209 0 154 0 0 211 211 152 0 209 0 0 0 0 
+			303 331 333 333 154 255 334 324 334 324 0 0 0 0 
+			0 274 0 0 154 0 0 0 274 0 0 0 0 0 
+			0 273 0 0 154 0 0 0 273 0 0 0 0 0 
+			219 208 0 0 154 0 211 211 330 216 0 0 0 0 
+			0 308 328 334 253 152 332 332 305 0 216 0 0 0 
+			0 0 306 305 0 153 0 274 0 0 0 216 0 323 
+			216 0 0 0 0 152 0 273 0 0 0 0 323 303 
+			0 217 332 211 0 153 0 210 0 0 0 323 303 0 
+			0 0 305 334 152 255 326 311 0 0 0 0 0 0 
+			109 108 311 0 153 0 274 0 0 0 0 0 323 323 
+			0 0 0 0 154 0 273 0 0 0 323 0 0 303 
+			0 0 0 207 154 0 326 0 0 0 303 0 0 0 
+			0 0 0 309 256 152 306 0 0 323 303 0 0 0 
+			0 0 0 0 0 153 0 0 0 303 0 0 0 0 
+			0 0 0 0 0 154 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 344 341 0 342 0 340 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 341 341 340 0 340 0 302 0 0 0 0 0 
+			0 0 300 302 0 0 0 0 0 0 0 0 0 344 
+			0 0 0 0 0 0 0 0 0 0 0 0 344 348 
+			0 0 342 0 0 0 0 0 0 0 0 340 0 0 
+			0 0 0 343 0 0 0 302 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 0 0 0 0 0 345 0 
+			0 0 0 0 0 0 0 0 0 0 340 0 0 346 
+			0 0 0 0 0 0 340 0 0 0 0 0 0 0 
+			0 0 0 346 0 0 302 0 0 0 348 0 0 0 
+			0 0 0 0 0 0 0 0 0 346 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '3' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'merchant' nick = 'Curry' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '10' x = '2' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '11' x = '6' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '14' x = '3' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '6' x = '8' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '3' x = '3' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '2' x = '9' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '6' x = '0' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '9' x = '0' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '8' x = '13' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '15' x = '9' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Curry' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '6' x = '2' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '7' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '11' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '3' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '3' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '3' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// npc1 path
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators, flag as merchant
+        npc("npc1").clearIndicators().addIndicator("merchant");
+
+        // Does npc need quest available indicator?
+        if ( quest("1.3.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active, player either killed rival merchant
+        // or warned rival merchant.  "turn in" either way...
+        elif (
+            quest("1.3.npc1.quest").status() == "active" and
+            (
+                quest("1.3.npc1.quest").update("flag-killed-nichole").status() == "active" or
+                quest("1.3.npc1.quest").update("update-warned-nichole").status() == "active"
+            )
+        )
+        {
+            // Ready to turn in
+            npc("npc1").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "0.4.npc2.quest"
+
+        #define UPDATE_BOUGHT_PERFUME "update-bought"
+        #define UPDATE_KILLED_MERCHANT "update-killed-merchant"
+        #define UPDATE_KILLED_MERCHANT_AFTER "update-killed-merchant-after"
+
+        #define QUEST2 "1.3.npc1.quest"
+
+        #define FLAG_KILLED_CURRY "flag-killed-curry"
+        #define FLAG_KILLED_NICHOLE "flag-killed-nichole"
+
+        #define UPDATE_WARNING_NICHOLE "update-warned-nichole"
+        #define UPDATE_KILLED_NICHOLE_UNWITTINGLY "update-killed-nichole:unwittingly"
+        #define UPDATE_KILLED_NICHOLE_WITHOUT_WARNING "update-killed-nichole:without-warning"
+        #define UPDATE_KILLED_NICHOLE_AFTER_WARNING "update-killed-nichole:after-warning"
+        #define UPDATE_KILLED_CURRY_BEFORE "update-killed-curry-before"
+        #define UPDATE_KILLED_CURRY_DURING "update-killed-curry-during"
+        #define UPDATE_KILLED_CURRY_AFTER_COMPLETE "update-killed-curry-after-complete"
+        #define UPDATE_KILLED_CURRY_AFTER_FAILED "update-killed-curry-after-failed"
+
+
+        // QUEST 1 - PERFUME QUEST
+        // If we haven&apos;t bought the perfume already, we just failed the perfume quest
+        if ( quest(QUEST).update(UPDATE_BOUGHT_PERFUME).status() != "active" )
+        {
+            quest(QUEST).status("failed");
+            quest(QUEST).update(UPDATE_KILLED_MERCHANT).status("active");
+        }
+
+        // Otherwise, just a footnote
+        else
+        {
+            quest(QUEST).update(UPDATE_KILLED_MERCHANT_AFTER).status("active");
+        }
+
+
+        // QUEST 2 - CURRY&apos;s KILL OTHER MERCHANT QUEST
+        // If we killed him before taking quest, it&apos;s way too soon
+        if ( quest(QUEST2).status() == "inactive" )
+        {
+            // Fail quest
+            quest(QUEST2).status("failed");
+
+            // Premature kill update
+            quest(QUEST2).update(UPDATE_KILLED_CURRY_BEFORE).status("active");
+        }
+
+        // If quest is in progress, we still got him too soon
+        elif ( quest(QUEST2).status() == "active" )
+        {
+            // Fail quest
+            quest(QUEST2).status("failed");
+
+            // Premature, premeditated kill update
+            quest(QUEST2).update(UPDATE_KILLED_CURRY_DURING).status("active");
+        }
+
+        // Killed him after completing quest for him, huh?
+        elif ( quest(QUEST2).status() == "complete" )
+        {
+            // Just a flag, no quest effect
+            quest(QUEST2).update(UPDATE_KILLED_CURRY_AFTER_COMPLETE).status("active");
+        }
+
+        // Killed him after failing in some fashion, like we warned Nichole and
+        // he found out before we could potentially double-cross Nichole
+        elif ( quest(QUEST2).status() == "failed" )
+        {
+            // Just a flag, no quest effect
+            quest(QUEST2).update(UPDATE_KILLED_CURRY_AFTER_FAILED).status("active");
+        }
+
+
+        // Always toggle hidden flag
+        quest(QUEST2).update(FLAG_KILLED_CURRY).status("active");
+
+        // Disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "1.3.npc1.quest"
+
+        #define FLAG_KILLED_NICHOLE "flag-killed-nichole"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_WARNED_NICHOLE "update-warned-nichole"
+        #define UPDATE_KILLED_NICHOLE:AFTER_WARNING "update-killed-nichole:after-warning"
+        #define UPDATE_KILLED_NICHOLE:WITHOUT_WARNING "update-killed-nichole:without-warning"
+        #define UPDATE_KILLED_CURRY "update-killed-curry"
+
+
+        // Default warehouse for vendor
+        npc("npc1").clearWarehouses()
+                   .addWarehouse("warehouse1");
+
+        // Upgrade warehouses if quest complete
+        if ( quest(QUEST).status() == "complete" )
+        {
+            npc("npc1").clearWarehouses()
+                       .addWarehouse("warehouse1+");
+        }
+
+
+        // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+        if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+             ( npc("npc1").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+        {
+            // Use tax conversation, queueing this same script to run again afterward...
+            npc("npc1").talk("global.tax");
+        }
+
+        else
+        {
+            // Disable all dialogue lines first
+            npc("npc1").conversation("default").branch("root").getLinesByClass("*").disable();
+
+
+            // When quest is not yet assigned, just run default prompt
+            if ( quest(QUEST).status() == "inactive" )
+            {
+                // Enable default options, includes quest line response
+                npc("npc1").conversation("default").branch("root").getLinesByClass("default").enable();
+
+
+                // Enable the "better items" response in root...
+                npc("npc1").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("quest").enable();
+
+                // ... player can choose to get more info or pass on the quest, for now
+                npc("npc1").conversation("default").branch("root.quest").getLinesByClass("*").disable();
+                npc("npc1").conversation("default").branch("root.quest").getLinesByClass("available").enable(); // take it or leave it
+
+
+                // We need to decide whether or not to enable the "already killed" response.
+                // If we killed her before accepting quest (already done), then we killed her without warning (nothing to warn about!).
+                if ( quest(QUEST).update(FLAG_KILLED_NICHOLE).status() == "active" )
+                {
+                    // Show only "I did it already" and "bye"
+                    npc("npc1").conversation("default").branch("root.quest.more").getLinesByClass("*").getResponsesByClass("default").disable();
+                    npc("npc1").conversation("default").branch("root.quest.more").getLinesByClass("*").getResponsesByClass("already-done").enable();
+                }
+
+                // Didn&apos;t kill Nichole yet
+                else
+                {
+                    // Accept / extort / bye
+                    npc("npc1").conversation("default").branch("root.quest.more").getLinesByClass("*").getResponsesByClass("already-done").disable();
+                    npc("npc1").conversation("default").branch("root.quest.more").getLinesByClass("*").getResponsesByClass("default").enable();
+                }
+
+
+                // Talk to him in shopping mode.  If we ask about the quest, we&apos;ll get the appropriate responses now.
+                npc("npc1").talk("default", "shop");
+            }
+
+            // Quest in progress?
+            elif ( quest(QUEST).status() == "active" )
+            {
+                // Did we kill Nichole yet, with or without warning her first?
+                if ( quest(QUEST).update(FLAG_KILLED_NICHOLE).status() == "active" )
+                {
+                    // Did we "warn" her before killing her?  (nice warning...)
+                    if ( quest(QUEST).update(UPDATE_KILLED_NICHOLE:AFTER_WARNING).status() == "active" )
+                    {
+                        // Curry is most impressed
+                        npc("npc1").talk("quest:in-progress:killed-nichole:after-warning", "shop");
+                    }
+
+                    // Nah, but we still got her
+                    else
+                    {
+                        // still happy
+                        npc("npc1").talk("quest:in-progress:killed-nichole:without-warning", "shop");
+                    }
+                }
+
+                // Didn&apos;t kill her.  Did we warn her about Curry?
+                elif ( quest(QUEST).update(UPDATE_WARNED_NICHOLE).status() == "active" )
+                {
+                    // Curry mad
+                    npc("npc1").talk("quest:in-progress:warned-nichole", "shop");
+                }
+
+                // Unresolved, nag
+                else
+                {
+                    // Enable in-progress nags
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("quest:in-progress").enable();
+
+                    // Default shop talk
+                    npc("npc1").talk("default", "shop");
+                }
+            }
+
+            // Quest complete?
+            elif ( quest(QUEST).status() == "complete" )
+            {
+                // Enable happy nags
+                npc("npc1").conversation("default").branch("root").getLinesByClass("quest:complete").enable();
+
+                // Disable the "better items" response in root
+                npc("npc1").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("quest").disable();
+
+
+                // shop talk
+                npc("npc1").talk("default", "shop");
+            }
+
+            // Quest failed?
+            elif ( quest(QUEST).status() == "failed" )
+            {
+                // Not a good way to do business, enable angry nags
+                npc("npc1").conversation("default").branch("root").getLinesByClass("quest:failed").enable();
+
+
+                // Enable the "better items" response in root...
+                npc("npc1").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("quest").enable();
+
+                // ... but, he just gives flippant remarks
+                npc("npc1").conversation("default").branch("root.quest").getLinesByClass("*").disable();
+                npc("npc1").conversation("default").branch("root.quest").getLinesByClass("failed").enable(); // mad at you
+
+                // shop talk
+                npc("npc1").talk("default", "shop");
+            }
+        }
+	</script>
+	<script name = 'npc1.shop'>
+		#define QUEST "0.4.npc2.quest"
+
+        #define ITEM "rochelles-perfume"
+
+        // When quest is active, we will want to include perfume in inventory...
+        if ( quest(QUEST).status() == "active" )
+        {
+            //npc("npc1").addItemToVendorInventory(ITEM);
+            npc("npc1").shop({
+                "min-quality": 1,
+                "max-quality": 1,
+                "max-items": 3,
+                "max-reloads": 1,
+                "required-item-names": [ITEM]
+            });
+        }
+
+        // Otherwise, no required item...
+        else
+        {
+            npc("npc1").shop({
+                "min-quality": 1,
+                "max-quality": 1,
+                "max-items": 3,
+                "max-reloads": 1,
+                "required-item-names": ["a", "b"]
+            });
+        }
+	</script>
+	<script name = 'rochelles-perfume.onpurchase'>
+		#define QUEST "0.4.npc2.quest"
+
+        #define UPDATE_BOUGHT_PERFUME "update-bought"
+
+        // Flag update as active, now that we&apos;ve bought the stuff
+        quest(QUEST).update(UPDATE_BOUGHT_PERFUME).status("active");
+	</script>
+</scripts>

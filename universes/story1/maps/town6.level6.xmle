@@ -1,0 +1,25 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 152 0 0 0 0 0 0 0 0 
+			216 152 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+</entities>
+<triggers>
+</triggers>
+<scripts />

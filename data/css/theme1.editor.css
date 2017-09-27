@@ -1,0 +1,363 @@
+// This stuff belongs in its own theme file
+
+// Base rules
+* {
+    color: rgb(225, 225, 225);
+    bbcode:
+        [color=dim]rgb(175, 175, 175)[/color],
+        [color=normal]rgb(225, 225, 225)[/color],
+        [color=evil]rgb(225, 75, 225)[/color],
+        [color=header]rgb(175, 175, 175)[/color],
+        [color=warning]rgb(225, 25, 25)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(207, 106, 19)[/color],
+        [color=affordable]rgb(192, 160, 40)[/color],
+        [color=unaffordable]rgb(192, 183, 146)[/color]
+}
+
+label2 {
+    color: rgb(175, 175, 175);
+    background-alpha: 0;
+}
+
+    label2:active {
+        color: rgb(175, 175, 175);
+    }
+
+listbox button {
+    padding-left: 10;
+    color: rgb(225, 225, 225);
+}
+
+listbox:active button {
+    //color: rgb(225, 25, 25);
+}
+
+    listbox:active button:active {
+        //color: rgb(225, 225, 25);
+    }
+
+.wrapper listbox.list {
+}
+
+    .wrapper listbox.list button {
+        rounded-corners: 0;
+    }
+
+dialog {
+    rounded-corners: 1;
+    gradient: "left-to-right";
+    gradient-start: rgb(45, 45, 45);
+    gradient-end: rgb(45, 45, 45);
+    border: rgb(225, 225, 225);
+    border-size: 2;
+    shadow: rgb(175, 175, 175);
+    shadow-size: 1;
+}
+
+    dialog:active {
+        gradient-end: rgb(75, 75, 75);
+    }
+
+    dialog button {
+        padding-top: 5;
+        padding-bottom: 2;
+        text-align: "center";
+    }
+
+        dialog button:active {
+            padding-top: 2;
+            padding-bottom: 5;
+            text-align: "center";
+        }
+
+dialog.menu-bar {
+    gradient-start: rgb(45, 45, 45);
+    gradient-end: rgb(45, 45, 45);
+    rounded-corners: 0;
+}
+
+    dialog.menu-bar button {
+        rounded-corners: 0;
+        text-align: "center";
+        padding-top: 5;
+        padding-bottom: 7;
+    }
+
+        dialog.menu-bar button:active {
+            padding-top: 3;
+            padding-bottom: 9;
+            color: rgb(207, 106, 19);
+            gradient-start: rgb(75, 75, 75);
+            gradient-end: rgb(95, 95, 95);
+        }
+
+    dialog.menu-bar label2 {
+        padding-top: 5;
+        padding-bottom: 7;
+        padding-left: 10;
+        padding-right: 15;
+        color: rgb(225, 225, 225);
+        background-alpha: 0;
+    }
+
+        dialog.menu-bar label2:active {
+            padding-top: 3;
+            padding-bottom: 9;
+            color: rgb(207, 106, 19);
+            gradient-start: rgb(75, 75, 75);
+            gradient-end: rgb(95, 95, 95);
+            background-alpha: 0.9;
+            rounded-corners: 0;
+        }
+
+dialog.popup {
+    border-size: 2;
+    shadow-size: 1;
+    //border: rgb(225, 25, 25);
+    //shadow: rgb(25, 225, 25);
+    background-alpha: 0.9;
+    rounded-corners: 0;
+}
+
+    dialog.popup listbox {
+        border-size: 2;
+        shadow-size: 1;
+    }
+
+    dialog.popup rect {
+        gradient: "left-to-right";
+        gradient-start: rgb(125, 125, 125);
+        gradient-end: rgb(75, 75, 75);
+        background-alpha: 0.5;
+    }
+
+    dialog.popup button {
+        padding-top: 3;
+        padding-bottom: 3;
+        padding-left: 10;
+        text-align: "left";
+        border-size: 0;
+        shadow-size: 0;
+        gradient-start: rgb(25, 25, 25);
+        gradient-end: rgb(25, 25, 25);
+        rounded-corners: 0;
+    }
+
+        dialog.popup button:active {
+            gradient-start: rgb(75, 75, 75);
+            gradient-end: rgb(75, 75, 75);
+            color: rgb(207, 106, 19);
+            padding-left: 15;
+        }
+
+checkbox {
+    gradient: "left-to-right";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(5, 5, 5);
+    border: rgb(225, 225, 225);
+    border-size: 1;
+    shadow: rgb(175, 175, 175);
+    shadow-size: 1;
+    background-alpha: 0.5;
+}
+
+dialog.container {
+    padding-bottom: 10;
+    gradient: "left-to-right";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(25, 25, 25);
+    border: rgb(75, 75, 75);
+    shadow: rgb(55, 55, 55);
+    rounded-corners: 1;
+    background-alpha: 0.9;
+}
+
+dialog.modal {
+    padding-top: 10;
+    padding-bottom: 10;
+    gradient: "left-to-right";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(25, 25, 25);
+    //color: rgb(25, 225, 25);
+    border: rgb(75, 75, 75);
+    shadow: rgb(55, 55, 55);
+    rounded-corners: 1;
+    background-alpha: 0.9;
+}
+
+    .wrapper dialog.modal button, .wrapper dialog.format button {
+        rounded-corners: 1;
+        border-size: 2;
+        shadow-size: 1;
+        gradient-start: rgb(25, 25, 25);
+        gradient-end: rgb(25, 25, 25);
+        background-alpha: 0.9;
+        text-align: center;
+        padding-top: 2;
+        padding-bottom: 2;
+    }
+
+        .wrapper dialog.modal button:active, .wrapper dialog.format button:active {
+            color: rgb(207, 106, 19);
+            border: rgb(207, 106, 19);
+            shadow: rgb(187, 96, 15);
+        }
+
+    dialog.modal label2 {
+        color: rgb(225, 225, 225);
+    }
+
+    dialog.modal input {
+        border-size: 2;
+        shadow-size: 1;
+        border: rgb(135, 135, 135);
+        shadow: rgb(105, 105, 105);
+    }
+
+dialog.format {
+    border-size: 0;
+    shadow-size: 0;
+    background-alpha: 0.0;
+}
+
+.wrapper dialog.title-bar, .wrapper dialog.header {
+    margin-bottom: 10;
+    gradient-start: rgb(195, 195, 195);
+    gradient-end: rgb(165, 165, 165);
+    border: rgb(75, 75, 75);
+    shadow: rgb(95, 95, 95);
+    rounded-corners: 1;
+    padding-top: 7;
+    padding-bottom: 7;
+}
+dialog.header { margin-top: 10; }
+
+    //dialog.format:active dialog.title-bar label2 {
+    //    color: rgb(225, 25, 25);
+    //}
+
+    dialog.title-bar label2, dialog.header label2 {
+        color: rgb(225, 225, 225);
+    }
+
+stack2.entry {
+    margin-bottom: 10;
+}
+    stack2.entry label2 {
+        margin-bottom: 4;
+    }
+
+    stack2.entry input {
+        rounded-corners: 1;
+        gradient-start: rgb(45, 45, 45);
+        gradient-end: rgb(65, 65, 65);
+        background-alpha: 0.9;
+        padding-top: 2;
+        padding-bottom: 2;
+        color: rgb(175, 175, 175);
+    }
+
+        stack2.entry input:active {
+            gradient-start: rgb(35, 35, 35);
+            gradient-end: rgb(45, 45, 45);
+            color: rgb(207, 106, 19);
+        }
+
+stack2.options {
+}
+
+    stack2.options .option, stack2.options .centered-option {
+        margin-bottom: 5;
+        border: rgb(155, 155, 155);
+        shadow: rgb(125, 125, 125);
+        border-size: 2;
+        shadow-size: 1;
+        rounded-corners: 1;
+        background-alpha: 0.7;
+        padding-top: 5;
+        padding-bottom: 5;
+        text-align: left;
+        padding-left: 10;
+        gradient: "left-to-right";
+        gradient-start: rgb(5, 5, 5);
+        gradient-end: rgb(25, 25, 25);
+    }
+
+        // Jitter on active
+        stack2.options .option:active, stack2.options .centered-option:active {
+            padding-top: 5;
+            padding-bottom: 5;
+            padding-left: 15;
+            color: rgb(207, 106, 19);
+            gradient: "left-to-right";
+            gradient-start: rgb(25, 25, 25);
+            gradient-end: rgb(45, 45, 45);
+            border: rgb(207, 106, 19);
+            shadow: rgb(187, 96, 15);
+        }
+
+    // Special text alignment for centered options
+    stack2.options .centered-option {
+        text-align: center;
+    }
+
+dialog.modal scrollbar {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 225, 225);
+    gradient-end: rgb(175, 175, 175);
+}
+
+    dialog.modal scrollbar:active {
+        gradient-start: rgb(206, 107, 19);
+        gradient-end: rgb(186, 97, 10);
+    }
+
+dialog.wrapper {
+    border: rgb(105, 105, 105);
+    shadow: rgb(85, 85, 85);
+    gradient-start: rgb(15, 15, 15);
+    gradient-end: rgb(35, 35, 35);
+    background-alpha: 0.9;
+}
+
+dialog.wrapper dropdown, dialog.wrapper input {
+    border-size: 2;
+    shadow-size: 1;
+    border: rgb(115, 115, 115);
+    shadow: rgb(85, 85, 85);
+    padding-top: 5;
+    padding-bottom: 5;
+    padding-left: 10;
+    gradient-start: rgb(25, 25, 25);
+    gradient-end: rgb(5, 5, 5);
+    background-alpha: 0.9;
+}
+
+dropdown.spacer {
+    margin-bottom: 10;
+}
+
+.wrapper dialog.title-bar button.closer, stack2.xyz button.closer {
+    text-align: origin;
+    rounded-corners: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: rgb(155, 155, 155);
+    shadow: rgb(125, 125, 125);
+    border-size: 2;
+    shadow-size: 1;
+    rounded-corners: 1;
+    background-alpha: 0.9;
+    gradient: "left-to-right";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(25, 25, 25);
+}
+
+    .wrapper dialog.title-bar button.closer label2 {
+        background-alpha: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }

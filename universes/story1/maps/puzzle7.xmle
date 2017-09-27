@@ -1,0 +1,94 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 212 0 0 0 0 0 0 0 0 199 190 0 0 0 
+			0 0 215 213 196 184 0 0 211 212 0 0 0 0 0 0 0 0 
+			0 0 180 189 178 0 0 152 180 189 198 187 152 213 0 0 182 0 
+			0 0 0 0 0 0 154 180 166 170 0 165 198 193 152 0 165 185 
+			0 0 0 196 0 211 152 0 174 170 0 0 170 0 153 0 0 173 
+			0 0 0 176 152 192 196 196 0 165 196 192 176 191 190 153 0 0 
+			0 0 0 0 154 0 178 0 193 0 173 179 173 160 0 153 0 186 
+			0 0 0 192 152 180 178 199 163 197 177 0 167 170 199 152 0 177 
+			0 0 192 167 153 0 162 173 160 177 0 0 179 164 0 154 0 162 
+			0 0 0 174 192 153 0 0 175 164 180 0 0 162 0 198 152 168 
+			0 0 188 212 0 153 0 164 164 0 0 0 0 0 0 0 154 0 
+			0 187 178 185 182 196 154 0 0 0 0 0 0 0 0 0 154 198 
+			0 0 0 0 0 170 152 0 211 215 214 0 218 214 0 152 182 160 
+			0 0 0 0 0 162 180 197 193 180 189 185 0 195 191 192 170 167 
+			0 0 0 0 0 0 0 175 176 160 0 0 0 0 173 162 163 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 199 180 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 302 0 0 302 0 300 0 302 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 302 0 300 0 0 0 302 
+			0 0 0 0 0 0 0 300 0 302 0 0 0 0 300 0 302 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '8' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '9' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '11' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '7' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '8' y = '14' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '11' y = '15' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '12' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '13' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '10' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '1' y = '13' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+	<entity x = '2' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.10' class = '' nick = '' title = '' />
+	<entity x = '6' y = '18' genus = '6' ai-behavior = '1' name = 'gold.uid.11' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '4' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "Sometimes you just can't get around a block without using a bomb.",
+            "tooltip": "You have [color=special]4 bombs[/color], but you'll probably wish you had more.  Use your [color=special]mining laser[/color] to make more room!",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        map().setWaveAllowances({
+            "bombs": 4
+        });
+
+        showPuzzleIntro();
+	</script>
+</scripts>

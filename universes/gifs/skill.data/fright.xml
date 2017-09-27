@@ -1,0 +1,95 @@
+<fright>
+	<data tier = 'locked'>
+		<texts>
+			<overview>[color=title]Fright[/color] casts a momentary sense of [color=title]panic[/color] upon your foes.  Each foe will flee your location at any cost!</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.deception.fright</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2'>
+		<texts>
+			<overview>[color=title]Fright[/color] casts a momentary sense of [color=title]panic[/color] upon your foes.  Each foe will flee your location at any cost!</overview>
+			<specs>Enemies flee for [color=title]1.5s[/color]
+Recharges in [color=title]25.0s[/color]</specs>
+			<manual />
+			<gif-source>gifs.deception.fright</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Fright[/color], you will lose access to the [color=title]Hologram[/color] skill.
+
+Later upgrades to [color=title]Fright[/color] will make enemies flee at [color=title]greater speeds[/color] for [color=title]longer durations[/color].  The highest upgrade adds a satisfying, combustible side effect to the skill.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Hologram[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>1.5</duration>
+			<recharge measure = 'seconds'>25.0</recharge>
+			<modifiers>
+				<modifier name = 'power-factor' value = '1.0' />
+				<modifier name = 'chance-to-spontaneously-explode' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2'>
+		<texts>
+			<overview>The starter upgrade to [color=title]Fright[/color] lengthens the effect's [color=title]duration[/color] and increases the speed at which enemies [color=title]flee[/color] your location.</overview>
+			<specs>Enemies flee for [color=title]2.5s[/color] (+1.0s)
+Enemies flee at [color=title]125%[/color] speed (+25%)
+Recharges in [color=title]21.0s[/color] (-4.0s)</specs>
+			<manual />
+			<gif-source>gifs.deception.fright</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>2.5</duration>
+			<recharge measure = 'seconds'>21.0</recharge>
+			<modifiers>
+				<modifier name = 'power-factor' value = '1.25' />
+				<modifier name = 'chance-to-spontaneously-explode' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2'>
+		<texts>
+			<overview>[color=title]Fright[/color]'s final upgrade sets the highest possible [color=title]duration[/color] and [color=title]flee speed[/color].  Any given enemy now stands a chance to [color=title]spontaneously explode[/color] in pure terror when you use [color=title]Fright[/color].</overview>
+			<specs>Enemies flee for [color=title]3.0s[/color] (+0.5s)
+Enemies flee at [color=title]150%[/color] speed (+25%)
+Recharges in [color=title]18.0s[/color] (-3.0s)
+Chance to spontaneously explode at [color=title]15%[/color]</specs>
+			<manual />
+			<gif-source>gifs.deception.fright</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Fright[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Fright[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>18.0</recharge>
+			<modifiers>
+				<modifier name = 'power-factor' value = '1.5' />
+				<modifier name = 'chance-to-spontaneously-explode' value = '0.15' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>Unlocking [color=dim]Fright[/color]'s final upgrade earned you the highest [color=title]duration[/color] and [color=title]flee speed[/color].  Also, each enemy now stands a chance to [color=title]spontaneously explode[/color] in pure terror when you use [color=title]Fright[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.deception.fright</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</fright>

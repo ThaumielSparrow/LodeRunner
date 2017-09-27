@@ -1,0 +1,3329 @@
+<defaults>
+    <generic>
+        <setting key = 'color' value = '(25, 25, 25, 0.5)' />
+
+        <setting key = 'border-color' value = '(155, 155, 155)' />
+        <setting key = 'border-color-active' value = '(175, 175, 175)' />
+
+        <setting key = 'text-color' value = '(33, 105, 255)' />
+        <setting key = 'text-color-active' value = '(25, 25, 25)' />
+
+        <setting key = 'background-color' value = '(25, 25, 25, 0.75)' />
+        <setting key = 'background-color-active' value = '(55, 55, 55, 1.0)' />
+
+        <setting key = 'has-rounded-corners' value = 'True' />
+    </generic>
+
+    <label>
+        <setting key = 'text-color' value = '(225, 225, 255)' />
+        <setting key = 'text-color-active' value = '(225, 225, 255)' />
+    </label>
+
+    <button>
+        <xsetting key = 'background-color' value = '(37, 105, 185)' />
+        <setting key = 'background-color' value = '(50, 50, 50)' />
+        <setting key = 'background-color-active' value = '(17, 85, 155)' />
+
+        <setting key = 'text-color' value = '(225, 225, 225)' />
+        <setting key = 'text-color-active' value = '(195, 195, 195)' />
+
+        <setting key = 'border-color-active' value = '(225, 225, 255)' />
+    </button>
+
+    <dropdown>
+        <setting key = 'background-color' value = '(55, 55, 55)' />
+
+        <setting key = 'border-color' value = '(155, 155, 155)' />
+
+        <setting key = 'text-color' value = '(225, 225, 225)' />
+        <setting key = 'text-color-active' value = '(33, 105, 255)' />
+    </dropdown>
+
+    <listbox>
+        <setting key = 'background-color' value = '(55, 55, 55)' />
+        <setting key = 'background-color-active' value = '(105, 105, 105)' />
+
+        <setting key = 'border-color' value = '(155, 155, 155)' />
+
+        <setting key = 'text-color' value = '(225, 225, 225)' />
+        <setting key = 'text-color-active' value = '(200, 200, 255)' />
+    </listbox>
+
+    <entry>
+        <setting key = 'text-color' value = '(83, 155, 255)' />
+        <setting key = 'text-color-active' value = '(163, 235, 255)' />
+
+        <setting key = 'has-rounded-corners' value = 'True' />
+    </entry>
+
+    <rect>
+        <setting key = 'background-color' value = '(225, 225, 225)' />
+        <setting key = 'has-rounded-corners' value = 'False' />
+    </rect>
+
+    <treeview>
+        <setting key = 'row-height' value = '25' />
+    </treeview>
+
+</defaults>
+
+
+<dialogs>
+
+    <dialog name = 'test-dialog' x = '320' y = '0' width = '320' height = '240' floating = 'True'>
+    </dialog>
+
+    <dialog name = 'dialog-previewer' x = '430' y = '10' width = '200' height = '70'>
+
+        <label name = '' value = 'Preview Dialog:' x = '5%' y = '10' />
+
+        <dropdown name = 'name' x = '5%' y = '35' width = '60%' height = '25' numrows = '5'>
+            <option value = 'menu-bar' title = 'Menu Bar' />
+            <option value = 'menu-bar.maps.properties' title = 'Map Properties' />
+            <option value = 'manage-session-variables' title = 'manage-session-variables' />
+            <option value = 'test-dialog' title = 'testing!' />
+            <option value = 'save-map' title = 'Save Map' />
+        </dropdown>
+
+        <button name = '' x = '95%' y = '35' width = '25%' height = '25' align = 'right' value = 'Go'>
+            <onclick event = 'preview-dialog' />
+        </button>
+
+        <xlistbox name = '' x = '5%' y = '70' width = '50%' height = '25' numrows = '3'>
+            <option value = '' title = 'item 1' />
+            <option value = '' title = 'item 2' />
+            <option value = '' title = 'item 3' />
+            <option value = '' title = 'item 4' />
+            <option value = '' title = 'item 5' />
+        </xlistbox>
+
+        <xrect name = '' x = '5%' y = '120' width = '50%' height = '1' />
+
+    </dialog>
+
+    <dialog class = 'menu-bar' name = 'menu-bar' x = '0' y = '0' width = '640' height = '25' has-rounded-corners = 'False'>
+
+        <stack inline = '1'>
+
+            <label name = 'label-universe' value = 'Universe'>
+
+                <onclick event = 'dialog.close' target = 'menu-bar.universe' />
+                <onclick event = 'dialog.close' target = 'menu-bar.maps' />
+                <onclick event = 'dialog.close' target = 'menu-bar.triggers' />
+                <onclick event = 'dialog.close' target = 'menu-bar.planes' />
+                <onclick event = 'dialog.close' target = 'menu-bar.scripts' />
+
+                <onclick event = 'dialog.dropdown' target = 'menu-bar.universe' dialog = 'menu-bar' widget = 'label-universe' />
+            </label>
+
+            <label name = 'label-maps' value = 'Maps'>
+
+                <onclick event = 'dialog.close' target = 'menu-bar.universe' />
+                <onclick event = 'dialog.close' target = 'menu-bar.maps' />
+                <onclick event = 'dialog.close' target = 'menu-bar.triggers' />
+                <onclick event = 'dialog.close' target = 'menu-bar.planes' />
+                <onclick event = 'dialog.close' target = 'menu-bar.scripts' />
+
+                <onclick event = 'dialog.dropdown' target = 'menu-bar.maps' dialog = 'menu-bar' widget = 'label-maps' />
+
+            </label>
+
+            <label name = 'label-planes' value = 'Planes'>
+
+                <onclick event = 'dialog.close' target = 'menu-bar.universe' />
+                <onclick event = 'dialog.close' target = 'menu-bar.maps' />
+                <onclick event = 'dialog.close' target = 'menu-bar.triggers' />
+                <onclick event = 'dialog.close' target = 'menu-bar.planes' />
+                <onclick event = 'dialog.close' target = 'menu-bar.scripts' />
+
+                <onclick event = 'dialog.dropdown' target = 'menu-bar.planes' dialog = 'menu-bar' widget = 'label-planes' />
+
+            </label>
+
+            <label name = 'label-triggers' value = 'Triggers'>
+
+                <onclick event = 'dialog.close' target = 'menu-bar.universe' />
+                <onclick event = 'dialog.close' target = 'menu-bar.maps' />
+                <onclick event = 'dialog.close' target = 'menu-bar.triggers' />
+                <onclick event = 'dialog.close' target = 'menu-bar.planes' />
+                <onclick event = 'dialog.close' target = 'menu-bar.scripts' />
+
+                <onclick event = 'dialog.dropdown' target = 'menu-bar.triggers' dialog = 'menu-bar' widget = 'label-triggers' />
+
+            </label>
+
+            <label name = 'label-scripts' value = 'Scripts'>
+
+                <onclick event = 'dialog.close' target = 'menu-bar.universe' />
+                <onclick event = 'dialog.close' target = 'menu-bar.maps' />
+                <onclick event = 'dialog.close' target = 'menu-bar.triggers' />
+                <onclick event = 'dialog.close' target = 'menu-bar.planes' />
+                <onclick event = 'dialog.close' target = 'menu-bar.scripts' />
+
+                <onclick event = 'dialog.dropdown' target = 'menu-bar.scripts' dialog = 'menu-bar' widget = 'label-scripts' />
+
+            </label>
+
+            <xlabel value = 'bla bla bla...' />
+
+            <xlabel value = 'new option...' />
+
+            <x>
+            <button name = '' x = '0%' y = '0' width = '15%' height = '25' value = 'Universe' has-rounded-corners = 'False'>
+                <onclick event = 'dialog.show' target = 'menu-bar.universe' />
+            </button>
+
+            <button name = '' x = '0%' y = '0' width = '15%' height = '25' value = 'Maps' has-rounded-corners = 'False'>
+                <onclick event = 'dialog.show' target = 'menu-bar.maps' />
+            </button>
+
+            <button name = '' x = '0%' y = '0' width = '20%' height = '25' value = 'Planes' has-rounded-corners = 'False'>
+                <onclick event = 'dialog.show' target = 'menu-bar.planes' />
+            </button>
+
+            <button name = '' x = '0%' y = '0' width = '20%' height = '25' value = 'Triggers' has-rounded-corners = 'False'>
+                <onclick event = 'dialog.show' target = 'menu-bar.triggers' />
+            </button>
+
+            <button name = '' x = '0%' y = '0' width = '20%' height = '25' value = 'Scripts' has-rounded-corners = 'False'>
+                <onclick event = 'dialog.show' target = 'menu-bar.scripts' />
+            </button>
+            </x>
+
+        </stack>
+
+    </dialog>
+
+        <dialog class = 'popup' name = 'menu-bar.universe' x = '0' y = '0' width = '128' height = '200' has-rounded-corners = 'False' floating = 'True' border-color = 'None' border-color-active = 'None' background-color = 'None'>
+
+            <listbox name = '' x = '0' y = '0' width = '100%' height = '25' numrows = '9' on-click = 'click:menu-bar.universe' expand = '1'>
+                <option value = 'menu-bar.universe/new' title = 'New...' />
+                <option value = 'menu-bar.universe/load' title = 'Load...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.universe/save' title = 'Save' />
+                <option value = 'menu-bar.universe/save-as' title = 'Save as...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.universe/show-foreground' title = 'Show Foreground' />
+                <option value = 'menu-bar.universe/show-background' title = 'Show Background' />
+                <option value = 'menu-bar.universe/toggle-background-zoom' title = 'Toggle Zoom' />
+                <option value = 'menu-bar.universe/show-all' title = 'Show All' />
+
+                <option separator />
+
+                <option value = 'menu-bar.universe/quit' title = 'Quit' />
+            </listbox>
+
+            <onmouseout event = 'dialog.close' target = 'menu-bar.universe' />
+
+        </dialog>
+
+            <dialog class = 'modal' modal = '1' name = 'OLDmenu-bar.universe.new' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'xxxUniverse Name:' x = '5%' y = '10' />
+                <entry name = 'name' x = '5%' y = '30' width = '90%' height = '25' />
+
+                <button name = '' x = '25%' y = '70' width = '35%' height = '25' align = 'center' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.universe.new' />
+                </button>
+
+                <button name = '' x = '75%' y = '70' width = '35%' height = '25' align = 'center' value = 'Create'>
+                    <onclick event = 'universe.new' />
+                </button>
+
+                <label name = 'error' value = '' x = '95%' y = '10' align = 'right' text-color = '(225, 0, 0)' />
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.universe.new' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Universe' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.universe.new' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Universe Name:' x = '5%' y = '0' />
+                        <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <xlabel name = 'error' value = '' x = '95%' y = '0' align = 'right' text-color = '(225, 0, 0)' />
+
+                    <stack class = 'options'>
+
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Create'>
+                            <onclick event = 'universe.new' />
+                        </button>
+
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog name = 'menu-bar.universe.load' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'Select a Universe:' x = '5%' y = '10' />
+
+                <button name = '' x = '25%' y = '70' width = '35%' height = '25' align = 'center' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.universe.load' />
+                </button>
+
+                <button name = '' x = '75%' y = '70' width = '35%' height = '25' align = 'center' value = 'Load'>
+                    <onclick event = 'universe.load' />
+                </button>
+
+                <dropdown name = 'name' x = '5%' y = '30' width = '90%' height = '25' numrows = '5'>
+                </dropdown>
+
+            </dialog>
+
+            <dialog name = 'menu-bar.universe.save-as' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'New Name:' x = '5%' y = '10' />
+                <entry name = 'name' x = '5%' y = '30' width = '90%' height = '25' />
+
+                <button name = '' x = '5%' y = '70' width = '30%' height = '25' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.universe.save-as' />
+                </button>
+
+                <button name = '' x = '95%' y = '70' width = '30%' height = '25' align = 'right' value = 'Save'>
+                    <onclick event = 'universe.save-as' />
+                </button>
+
+                <label name = 'error' value = '' x = '95%' y = '10' align = 'right' text-color = '(225, 0, 0)' />
+
+            </dialog>
+
+
+
+
+        <dialog class = 'popup' name = 'menu-bar.maps' x = '128' y = '0' width = '128' height = '225' has-rounded-corners = 'False' floating = 'True' background-color = 'None' border-color = 'None'>
+            <listbox name = '' x = '0' y = '0' width = '100%' height = '25' numrows = '10' on-click = 'click:menu-bar.maps' expand = '1'>
+                <option value = 'menu-bar.maps/new' title = 'New...' />
+                <option value = 'menu-bar.maps/import' title = 'Import...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.maps/save' title = 'Save' />
+                <option value = 'menu-bar.maps/save-as' title = 'Save as...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.maps/params' title = 'Params...' />
+                <option value = 'menu-bar.maps/goto' title = 'Goto...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.maps/select-tile' title = 'Select Tile...' />
+                <option value = 'menu-bar.maps/select-entity' title = 'Create Entity...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.maps/move-to-foreground' title = 'Move to Foreground' />
+                <option value = 'menu-bar.maps/move-to-background' title = 'Move to Background' />
+            </listbox>
+
+            <onmouseout event = 'dialog.close' target = 'menu-bar.maps' />
+
+        </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.maps.new' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.maps.new' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.maps.new' child = 'name' />
+                <onshow event = 'widget:reset-child' widget = 'menu-bar.maps.new' child = 'name' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Map' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.goto' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Map Name:' x = '5%' y = '0' />
+                        <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25'>
+                            <onsubmit event = 'maps.new' />
+                        </entry>
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Create'>
+                            <onclick event = 'maps.new' />
+                        </button>
+                    </stack>
+
+                    <xlabel name = 'error' value = '' x = '95%' y = '0' align = 'right' text-color = '(225, 0, 0)' />
+
+                </stack>
+
+            </dialog>
+
+            <dialog name = 'menu-bar.maps.import' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'Select a Map to Import:' x = '5%' y = '10' />
+
+                <button name = '' x = '5%' y = '70' width = '30%' height = '25' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.maps.import' />
+                </button>
+
+                <button name = '' x = '95%' y = '70' width = '30%' height = '25' align = 'right' value = 'Load'>
+                    <onclick event = 'maps.import' />
+                </button>
+
+                <dropdown name = 'name' x = '5%' y = '30' width = '90%' height = '25' numrows = '10'>
+                </dropdown>
+
+            </dialog>
+
+            <dialog name = 'menu-bar.maps.save-as' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'New Name:' x = '5%' y = '10' />
+                <entry name = 'name' x = '5%' y = '30' width = '90%' height = '25' />
+
+                <button name = '' x = '5%' y = '70' width = '30%' height = '25' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.maps.save-as' />
+                </button>
+
+                <button name = '' x = '95%' y = '70' width = '30%' height = '25' align = 'right' value = 'Save'>
+                    <onclick event = 'maps.save-as' />
+                </button>
+
+                <label name = 'error' value = '' x = '95%' y = '10' align = 'right' text-color = '(225, 0, 0)' />
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.maps.params' x = '50%' y = '50%' align = 'center' valign = 'center' width = '300' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.maps.params' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Map Params' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.params' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Param' x = '5%' y = '0' align = '' />
+                        <dropdown name = 'param' x = '5%' y = '0' width = '90%' height = '25' numrows = '5'>
+                            <onchange event = 'menu-bar.maps.params:change' />
+
+                            <option value = 'type' title = 'Map Type' />
+                            <option value = 'redline' title = 'Redline Status' />
+                            <option value = 'next-map' title = 'Next Map' />
+                        </dropdown>
+                    </stack>
+
+                    <dialog class = 'format' name = 'overlays'>
+
+                        <stack class = 'entry' name = 'type'>
+                            <label x = '5%' value = 'Map Type' />
+                            <dropdown name = 'type' x = '5%' width = '90%' numrows = '3'>
+
+                                <onchange event = 'menu-bar.maps.params:update' />
+
+                                <option value = 'overworld' title = 'Overworld' />
+                                <option value = 'puzzle' title = 'Puzzle Room' />
+                                <option value = 'challenge' title = 'Challenge Room' />
+
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry' name = 'redline'>
+                            <label x = '5%' value = 'Redline Status' />
+                            <dropdown name = 'type' x = '5%' width = '90%' numrows = '3'>
+
+                                <onchange event = 'menu-bar.maps.params:update' />
+
+                                <option value = 'off' title = 'Disabled' />
+                                <option value = 'on' title = 'Enabled' />
+
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry' name = 'next-map'>
+                            <label x = '5%' value = 'Map Name' />
+                            <entry name = 'next-map' x = '5%' width = '90%' height = '25'>
+                                <onchange event = 'menu-bar.maps.params:update' />
+                            </entry>
+                        </stack>
+
+                    </dialog>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '25%' height = '25' value = 'Ok'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.params' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'format' modal = '1' uses-lightbox = '1' name = 'menu-bar.maps.properties' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label x = '5%' y = '0' value = 'Map Properties' />
+                    </dialog>
+
+                    <dialog class = 'modal'>
+
+                        <stack>
+
+                            <stack class = 'entry'>
+                                <label name = '' value = 'Map Name' x = '5%' y = '0' align = '' />
+                                <dropdown name = 'name' x = '5%' y = '0' width = '90%' height = '25' numrows = '3'>
+                                    <onchange event = 'menu-bar.maps.properties:refresh' />
+                                </dropdown>
+                            </stack>
+
+                            <dialog class = 'format'>
+
+                                <stack class = 'entry' x = '0' width = '50%'>
+                                    <label name = '' value = 'Universal X' x = '50%' y = '0' align = 'center' />
+                                    <entry name = 'universal-x' x = '50%' y = '0' width = '50%' height = '25' align = 'center' />
+                                </stack>
+
+                                <stack class = 'entry' x = '50%' width = '50%'>
+                                    <label name = '' value = 'Universal Y' x = '50%' y = '0' align = 'center' />
+                                    <entry name = 'universal-y' x = '50%' y = '0' width = '50%' height = '25' align = 'center' />
+                                </stack>
+
+                            </dialog>
+
+                            <dialog class = 'format'>
+
+                                <stack class = 'entry' x = '0' width = '50%'>
+                                    <label name = '' value = 'Map Width' x = '50%' y = '0' align = 'center' />
+                                    <label name = 'width' value = '' x = '50%' y = '0' align = 'center' />
+                                </stack>
+
+                                <stack class = 'entry' x = '50%' width = '50%'>
+                                    <label name = '' value = 'Map Height' x = '50%' y = '0' align = 'center' />
+                                    <label name = 'height' value = '' x = '50%' y = '0' align = 'center' />
+                                </stack>
+
+                            </dialog>
+
+                            <stack class = 'entry'>
+                                <label name = '' value = 'Red Line' x = '5%' y = '0' />
+                                <dropdown name = 'redline' x = '5%' y = '0' width = '40%' height = '25' numrows = '2'>
+                                    <option value = 'off' title = 'off' />
+                                    <option value = 'on' title = 'on' />
+                                </dropdown>
+                            </stack>
+
+                        </stack>
+
+                    </dialog>
+
+                    <dialog class = 'header'>
+                        <label x = '5%' y = '0' value = 'Options' />
+                    </dialog>
+
+                    <stack class = 'options'>
+
+                        <button class = 'option' name = '' x = '0' y = '0' height = '25' value = 'Cancel'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.properties' />
+                        </button>
+
+                        <button class = 'option' name = '' x = '0' y = '0' height = '25' value = 'Save Changes'>
+                            <onclick event = 'menu-bar.maps.properties:save' />
+                        </button>
+
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.maps.goto' x = '50%' y = '50%' align = 'center' valign = 'center' width = '35%' height = 'auto'>
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Go to Map' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.goto' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label x = '5%' value = 'Map Name' />
+                        <dropdown class = 'spacer' name = 'name' x = '5%' width = '90%' height = '25' numrows = '11' />
+                    </stack>
+
+                    <stack class = 'options'>
+
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Go'>
+                            <onclick event = 'menu-bar.maps.goto:go' />
+                        </button>
+
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog name = 'menu-bar.maps.select-entity' x = '220' y = '185' width = '200' height = '110'>
+
+                <label name = '' value = 'Old, unused dialog here.' x = '5%' y = '10' />
+
+                <button name = '' x = '5%' y = '70' width = '30%' height = '25' value = 'Cancel'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.maps.select-entity' />
+                </button>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.maps.entities.properties' x = '50%' y = '50%' align = 'center' valign = 'center' width = '400' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.maps.entities.properties' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.maps.entities.properties' child = 'name' />
+                <xonshow event = 'widget:reset-child' widget = 'menu-bar.maps.entities.properties' child = 'name' />
+
+                <hidden name = 'do' value = 'create/update' />
+
+                <hidden name = 'entity-type' value = '0' />
+                <hidden name = 'entity-index' value = '0' />
+
+                <hidden name = 'tx' value = '0' />
+                <hidden name = 'ty' value = '0' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '3%' y = '0' value = 'Entity Properties' />
+                        <button class = 'closer' x = '97%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.maps.entities.properties' />
+                        </button>
+                    </dialog>
+
+                    <dialog class = 'format'>
+
+                        <stack class = 'entry' width = '50%'>
+                            <label name = '' value = 'Entity Name:' x = '5%' y = '0' align = '' />
+                            <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25' />
+                        </stack>
+
+                        <stack class = 'entry' x = '50%' width = '50%'>
+                            <label name = '' value = 'AI Behavior:' x = '5%' y = '0' align = '' />
+                            <dropdown name = 'ai-behavior' x = '5%' y = '0' width = '90%' height = '25' numrows = '5'>
+                                <option value = 'normal' title = 'Standard AI' />
+                                <option value = 'terrified' title = 'Terrified' />
+                                <option value = 'angry' title = 'Angry AI' />
+                                <option value = 'territorial' title = 'Territorial (First Hotspot)' />
+                                <option value = 'patrolling' title = 'Patrolling' />
+                            </dropdown>
+                        </stack>
+
+                    </dialog>
+
+                    <dialog class = 'format'>
+
+                        <stack x = '0' width = '50%'>
+
+                            <stack class = 'entry'>
+                                <label name = '' value = 'Entity Type:' x = '5%' y = '0' />
+                                <dropdown name = 'type' x = '5%' y = '0' width = '90%' height = '25' numrows = '3'>
+                                    <onchange event = 'maps.entities.properties:change-type' />
+
+        <option value = '3:terminal' title = 'Terminal' />
+                                    <option value = '1' title = 'Enemy' />
+                                    <option value = '2' title = 'Player' />
+                                    <option value = '3:generic' title = 'NPC' />
+                                    <option value = '3:terminal' title = 'Terminal' />
+                                    <option value = '3:indicator-arrow' title = 'Indicator Arrow' />
+                                    <option value = '5' title = 'Enemy Respawn' />
+                                    <option value = '6' title = 'Gold' />
+                                    <xoption value = '7' title = 'Player 1 Respawn' />
+                                    <xoption value = '8' title = 'Player 2 Respawn' />
+                                    <option value = '9' title = 'Lever' />
+                                    <option value = '12' title = 'Player Respawn' />
+                                </dropdown>
+                            </stack>
+
+                        </stack>
+
+                        <dialog class = 'format' x = '50%' width = '50%'>
+
+                            <stack name = 'details.generic'>
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Nick:' x = '5%' y = '0' />
+                                    <entry name = 'nick' x = '5%' y = '0' width = '90%' height = '25' />
+                                </stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Title:' x = '5%' y = '0' />
+                                    <entry name = 'title' x = '5%' y = '0' width = '90%' height = '25' />
+                                </stack>
+                            </stack>
+
+                            <stack name = 'details.lever'>
+                                <stack class = 'entry'>
+
+                                    <label name = '' value = 'Mount:' x = '5%' y = '0' />
+                                    <dropdown name = 'position' x = '5%' y = '0' width = '90%' height = '25' numrows = '4'>
+                                        <option value = '3' title = 'Left' />
+                                        <option value = '1' title = 'Right' />
+                                        <option value = '0' title = 'Up' />
+                                        <option value = '2' title = 'Down' />
+                                    </dropdown>
+
+                                </stack>
+
+                                <stack class = 'entry'>
+
+                                    <label name = '' value = 'Position:' x = '5%' y = '0' />
+                                    <dropdown name = 'mount' x = '5%' y = '0' width = '90%' height = '25' numrows = '3'>
+                                        <option value = '2' title = 'Ground' />
+                                        <option value = '3' title = 'Left' />
+                                        <option value = '1' title = 'Right' />
+                                    </dropdown>
+
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                    </dialog>
+
+                    <stack class = 'options'>
+
+                        <button class = 'centered-option' name = '' x = '50%' y = '0' align = 'center' width = '25%' height = '25' value = 'Save'>
+                            <onclick event = 'maps.entities.properties:save' />
+                        </button>
+
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+
+
+
+        <dialog class = 'popup' name = 'menu-bar.planes' x = '256' y = '0' width = '128' height = '200' has-rounded-corners = 'False' floating = 'True' background-color = 'None' border-color = 'None'>
+            <listbox name = '' x = '0' y = '0' width = '100%' height = '25' numrows = '5' on-click = 'click:menu-bar.planes' expand = '1'>
+                <option value = 'menu-bar.planes/new' title = 'New...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.planes/select-plane' title = 'Select plane...' />
+                <option value = 'menu-bar.planes/order-planes' title = 'Order planes...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.planes/copy-random' title = 'Copy random plane' />
+
+                <option separator />
+
+                <option value = 'menu-bar.planes/properties' title = 'Properties...' />
+            </listbox>
+
+            <onmouseout event = 'dialog.close' target = 'menu-bar.planes' />
+        </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.planes.new' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.planes.new' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.planes.new' child = 'name' />
+                <onshow event = 'widget:reset-child' widget = 'menu-bar.planes.new' child = 'name' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Plane' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.planes.new' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Plane Name (optional):' x = '5%' y = '0' />
+                        <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Create'>
+                            <onclick event = 'planes.new:create' />
+                        </button>
+                    </stack>
+
+                    <xlabel name = 'error' value = '' x = '95%' y = '0' align = 'right' text-color = '(225, 0, 0)' />
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.planes.select-plane' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.planes.select-plane' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Existing Planes' />
+                        <button class = 'closer' x = '95%' y = '0' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.planes.select-plane' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Select a Plane:' x = '5%' y = '0' />
+                        <dropdown name = 'name' x = '5%' y = '0' width = '90%' height = '25' numrows = '5'>
+                            <onchange event = 'menu-bar.planes.select-plane:selection-changed' />
+                        </dropdown>
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Go'>
+                            <onclick event = 'planes.select-plane' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.planes.order-planes' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.planes.order-planes' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Existing Planes' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.planes.order-planes' />
+                        </button>
+                    </dialog>
+
+                    <label name = '' value = 'Planes (Lowest-to-Highest):' x = '5%' y = '0' />
+
+                    <listbox name = 'order' x = '5%' y = '0' width = '90%' height = '25' numrows = '3'>
+                        <onclick event = 'planes.order-planes:changed' />
+                    </listbox>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '50%' y = '0' align = 'center' width = '90%' height = '25' value = 'Lower'>
+                            <onclick event = 'planes.order-planes:lower' />
+                            <onclick event = 'menu-bar.planes.order-planes:refresh' />
+                        </button>
+                        <button class = 'centered-option' name = '' x = '50%' y = '0' align = 'center' width = '90%' height = '25' value = 'Higher'>
+                            <onclick event = 'planes.order-planes:higher' />
+                            <onchange event = 'menu-bar.planes.order-planes:refresh' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.planes.properties' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.planes.properties' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.planes.properties' child = 'width' />
+
+                <hidden name = 'z-index' value = '0' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Edit Plane' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.planes.properties' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Plane Name' x = '5%' y = '0' align = '' />
+                        <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <dialog class = 'format'>
+
+                        <stack class = 'entry' width = '50%'>
+                            <label name = '' value = 'Width' x = '10%' y = '0' align = 'left' />
+                            <entry name = 'width' x = '10%' y = '0' width = '80%' height = '25' align = 'left' />
+                        </stack>
+
+                        <stack class = 'entry' x = '50%' width = '50%'>
+                            <label name = '' value = 'Height' x = '10%' y = '0' align = 'left' />
+                            <entry name = 'height' x = '10%' y = '0' width = '80%' height = '25' align = 'left' />
+                        </stack>
+
+                    </dialog>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Save'>
+                            <onclick event = 'planes.properties:save' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.planes.pad' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.planes.pad' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.planes.pad' child = 'pad-left' />
+
+                <hidden name = 'z-index' value = '0' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label name = 'label-title' font-family = 'high-contrast' x = '5%' y = '0' value = 'Pad Plane' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.planes.pad' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Pad Left:' x = '5%' y = '0' align = 'left' />
+                        <entry name = 'pad-left' x = '5%' y = '0' width = '40%' height = '25' align = 'left' />
+                    </stack>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Pad Top:' x = '5%' y = '0' align = 'left' />
+                        <entry name = 'pad-top' x = '5%' y = '0' width = '40%' height = '25' align = 'left' />
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Go'>
+                            <onclick event = 'menu-bar.planes.pad:apply' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+
+
+        <dialog class = 'popup' name = 'menu-bar.triggers' x = '384' y = '0' width = '128' height = '100' has-rounded-corners = 'False' floating = 'True' background-color = 'None' border-color = 'None'>
+            <listbox name = '' x = '0' y = '0' width = '100%' height = '25' numrows = '2' on-click = 'click:menu-bar.triggers' expand = '1'>
+                <option value = 'menu-bar.triggers/new' title = 'New...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.triggers/toggle-names' title = 'Toggle Names' />
+
+            </listbox>
+
+            <onmouseout event = 'dialog.close' target = 'menu-bar.triggers' />
+
+        </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.triggers.new' x = '50%' y = '50%' align = 'center' valign = 'center' width = '400' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.triggers.new' />
+
+                <xonshow event = 'widget:reset-child' widget = 'menu-bar.triggers.new' child = 'name' />
+
+                <onshow event = 'widget:set-child-text' widget = 'menu-bar.triggers.new' child = 'name' text = '' />
+                <onshow event = 'widget:set-child-text' widget = 'menu-bar.triggers.new' child = 'name' text = 'bomb-machine' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.triggers.new' child = 'name' />
+
+                <hidden name = 'tx' value = '0' />
+                <hidden name = 'ty' value = '0' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Trigger' />
+                        <button class = 'closer' x = '97%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.triggers.new' />
+                        </button>
+                    </dialog>
+
+                    <dialog class = 'format'>
+
+                        <dialog class = 'format' x = '0' width = '50%'>
+
+                            <stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Trigger Name:' x = '5%' y = '0' />
+                                    <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25'>
+                                        <onsubmit event = 'triggers.new' />
+                                    </entry>
+                                </stack>
+
+                                <dialog class = 'format'>
+
+                                    <stack class = 'entry' x = '0' width = '50%'>
+                                        <label name = '' value = 'Width' x = '10%' y = '0' align = 'left' />
+                                        <entry name = 'width' x = '10%' y = '0' width = '50' height = '25' align = 'left'>
+                                            <onsubmit event = 'triggers.new' />
+                                        </entry>
+                                    </stack>
+
+                                    <stack class = 'entry' x = '50%' width = '50%'>
+                                        <label name = '' value = 'Height' x = '0%' y = '0' align = 'left' />
+                                        <entry name = 'height' x = '0%' y = '0' width = '50%' height = '25' align = 'left'>
+                                            <onsubmit event = 'triggers.new' />
+                                        </entry>
+                                    </stack>
+
+                                </dialog>
+
+                            </stack>
+
+                        </dialog>
+
+                        <dialog class = 'format' x = '50%' width = '50%'>
+
+                            <stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Trigger Behavior' x = '5%' y = '0' align = '' />
+                                    <dropdown name = 'behavior' x = '5%' y = '0' width = '90%' height = '25' numrows = '3'>
+                                        <option value = '3' title = 'Activated' />
+                                        <option value = '1' title = 'Waypoint' />
+                                        <option value = '2' title = 'Passive' />
+                                        <option value = '3' title = 'Activated' />
+                                        <option value = '5' title = 'Interval' />
+                                        <option value = '6' title = 'Following' />
+                                        <option value = '7' title = 'Alarm' />
+                                    </dropdown>
+                                </stack>
+
+                                <stack class = 'entry'>            
+                                    <label name = '' value = 'Trigger Prompt' x = '5%' y = '0' />
+                                    <entry name = 'prompt' x = '5%' y = '0' width = '90%' height = '25'>
+                                        <onsubmit event = 'triggers.new' />
+                                    </entry>
+                                </stack>
+
+                                <stack class = 'options'>
+
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Create'>
+                                        <onclick event = 'triggers.new' />
+                                    </button>
+
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                    </dialog>
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'format' modal = '1' uses-lightbox = '1' name = 'menu-bar.triggers.properties' x = '50%' y = '50%' align = 'center' valign = 'center' width = '600' height = 'auto'>
+
+                <onescape event = 'triggers.properties:save-properties' />
+                <onescape event = 'dialog.close' target = 'menu-bar.triggers.properties' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.triggers.properties' child = 'name' />
+
+                <hidden name = 'trigger-name' value = '' />
+
+                <stack>
+
+                    <dialog class = 'wrapper' name = 'properties-wrapper' x = '0' y = '0' width = '100%' height = 'auto'>
+
+                        <stack>
+
+                            <dialog class = 'title-bar'>
+                                <label font-family = 'high-contrast' x = '2%' y = '0' value = 'Edit Trigger' />
+                                <button class = 'closer' x = '98%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                                    <onclick event = 'triggers.properties:save-properties' />
+                                    <onclick event = 'dialog.close' target = 'menu-bar.triggers.properties' />
+                                </button>
+                            </dialog>
+
+                            <dialog class = 'format'>
+
+                                <stack class = 'entry' x = '2%' width = '18%'>
+                                    <label name = '' value = 'Name:' />
+                                    <entry name = 'name' height = '25' />
+                                </stack>
+
+                                <stack class = 'entry' x = '22%' width = '7%'>
+                                    <label name = '' value = 'Width:' />
+                                    <entry name = 'width' height = '25' />
+                                </stack>
+
+                                <stack class = 'entry' x = '31%' width = '7%'>
+                                    <label name = '' value = 'Height:' />
+                                    <entry name = 'height' height = '25' />
+                                </stack>
+
+                                <stack class = 'entry' x = '40%' width = '15%'>
+                                    <label name = '' value = 'Behavior:' />
+                                    <dropdown name = 'behavior' height = '25' numrows = '6'>
+                                        <option value = '1' title = 'Waypoint' />
+                                        <option value = '2' title = 'Passive' />
+                                        <option value = '3' title = 'Activated' />
+                                        <option value = '5' title = 'Interval' />
+                                        <option value = '6' title = 'Following' />
+                                        <option value = '7' title = 'Alarm' />
+                                    </dropdown>
+                                </stack>
+
+                                <stack class = 'entry' x = '98%' align = 'right' width = '41%'>
+                                    <label name = '' value = 'Prompt:' />
+                                    <entry name = 'prompt' height = '25' />
+                                </stack>
+
+                            </dialog>
+        
+                        </stack>
+
+                    </dialog>
+
+                    <stack class = 'spacer' />
+
+                    <dialog class = 'format' name = 'scripts-wrapper'>
+
+                        <dialog class = 'wrapper' name = 'touch.wrapper' x = '0' y = '0' align = 'left' width = '32%' height = 'auto'>
+
+                            <stack>
+
+                                <dialog class = 'title-bar'>
+                                    <label font-family = 'high-contrast' x = '5%' y = '0' value = 'On-Touch Events' />
+                                </dialog>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Add Touch Event:' x = '5%' y = '0' />
+                                    <dropdown name = 'touch.add' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Add'>
+                                        <onclick event = 'triggers.properties:add' param = 'touch' />
+                                    </button>
+                                </stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Existing Touch Events:' x = '5%' y = '0' />
+                                    <dropdown name = 'touch.existing' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Delete'>
+                                        <onclick event = 'triggers.properties:delete-selected' param = 'touch' />
+                                    </button>
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                        <dialog class = 'wrapper' name = 'hover.wrapper' x = '50%' y = '0' align = 'center' width = '32%' height = 'auto'>
+
+                            <stack>
+
+                                <dialog class = 'title-bar'>
+                                    <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Hover Events' />
+                                </dialog>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Add Hover Event:' x = '5%' y = '0' />
+                                    <dropdown name = 'hover.add' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Add'>
+                                        <onclick event = 'triggers.properties:add' param = 'hover' />
+                                    </button>
+                                </stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Existing Hover Events:' x = '5%' y = '0' />
+                                    <dropdown name = 'hover.existing' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Delete'>
+                                        <onclick event = 'triggers.properties:delete-selected' param = 'hover' />
+                                    </button>
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                        <dialog class = 'wrapper' name = 'exit.wrapper' x = '100%' y = '0' align = 'right' width = '32%' height = 'auto'>
+
+                            <stack>
+
+                                <dialog class = 'title-bar'>
+                                    <label font-family = 'high-contrast' x = '5%' y = '0' value = 'On-Exit Events' />
+                                </dialog>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Add Exit Event:' x = '5%' y = '0' />
+                                    <dropdown name = 'exit.add' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Add'>
+                                        <onclick event = 'triggers.properties:add' param = 'exit' />
+                                    </button>
+                                </stack>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Existing Exit Events:' x = '5%' y = '0' />
+                                    <dropdown name = 'exit.existing' x = '5%' y = '0' width = '90%' height = '25' numrows = '3' />
+                                </stack>
+
+                                <stack class = 'options'>
+                                    <button class = 'centered-option' name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Delete'>
+                                        <onclick event = 'triggers.properties:delete-selected' param = 'exit' />
+                                    </button>
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                    </dialog>
+
+<x>
+                    <stack class = 'spacer' />
+
+                    <dialog class = 'wrapper' name = 'ok-buttons-wrapper' x = '66%' y = '0' width = '33%' height = '25' border-color = 'None' has-rounded-corners = 'False'>
+                        <button name = '' x = '95%' y = '0' width = '35%' height = '25' align = 'right' value = 'Done'>
+                            <onclick event = 'triggers.properties:save-properties' />
+                            <onclick event = 'dialog.close' />
+                        </button>
+                    </dialog>
+</x>
+
+                </stack>
+
+            </dialog>
+
+
+        <dialog class = 'popup' name = 'menu-bar.scripts' x = '512' y = '0' width = '128' height = '200' has-rounded-corners = 'False' floating = 'True' background-color = 'None' border-color = 'None'>
+
+            <listbox name = '' x = '0' y = '0' width = '100%' height = '25' numrows = '3' on-click = 'click:menu-bar.scripts' expand = '1'>
+                <option value = 'menu-bar.scripts/new' title = 'New...' />
+                <option value = 'menu-bar.scripts/edit' title = 'Script Editor...' />
+
+                <option separator />
+
+                <option value = 'menu-bar.scripts/new-session-variable' title = 'New variable...' />
+                <option value = 'menu-bar.scripts/manage-session-variables' title = 'Manage variables...' />
+            </listbox>
+
+            <onmouseout event = 'dialog.close' target = 'menu-bar.scripts' />
+
+        </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.scripts.new' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'menu-bar.scripts.new' />
+
+                <onshow event = 'widget:activate-child' widget = 'menu-bar.scripts.new' child = 'name' />
+                <onshow event = 'widget:reset-child' widget = 'menu-bar.scripts.new' child = 'name' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Script' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'menu-bar.scripts.new' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Script Name:' x = '5%' y = '0' />
+                        <entry name = 'name' x = '5%' y = '0' width = '90%' height = '25'>
+                            <onsubmit event = 'scripts.new' />
+                        </entry>
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' width = '40%' height = '25' align = 'right' value = 'Create'>
+                            <onclick event = 'scripts.new' />
+                        </button>
+                    </stack>
+
+                    <xlabel name = 'error' value = '' x = '95%' y = '0' align = 'right' text-color = '(225, 0, 0)' />
+
+                </stack>
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'manage-session-variables' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'manage-session-variables' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Existing Variables' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'manage-session-variables' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label x = '5%' value = 'Name' />
+                        <dropdown name = 'variable2' x = '5%' y = '0' width = '90%' height = '25' numrows = '7'>
+                            <onchange event = 'manage-session-variables:refresh' />
+                        </dropdown>
+                    </stack>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Default Value:' x = '5%' y = '0' />
+                        <entry name = 'existing-default' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Update'>
+                            <onclick event = 'manage-session-variables:update' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+                <xlabel name = '' value = 'New' x = '5%' y = '0' />
+                <xlabel name = 'error' value = '' x = '95%' y = '0' text-color = '(225, 0, 0)' align = 'right' />
+
+            </dialog>
+
+            <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'new-session-variable' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+                <onescape event = 'dialog.close' target = 'new-session-variable' />
+
+                <onshow event = 'widget:activate-child' widget = 'new-session-variable' child = 'new-name' />
+
+                <onshow event = 'widget:reset-child' widget = 'new-session-variable' child = 'new-name' />
+                <onshow event = 'widget:reset-child' widget = 'new-session-variable' child = 'new-default' />
+
+                <stack>
+
+                    <dialog class = 'title-bar'>
+                        <label font-family = 'high-contrast' x = '5%' y = '0' value = 'New Variable' />
+                        <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                            <onclick event = 'dialog.close' target = 'new-session-variable' />
+                        </button>
+                    </dialog>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Name' x = '5%' y = '0' />
+                        <entry name = 'new-name' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <stack class = 'entry'>
+                        <label name = '' value = 'Default Value:' x = '5%' y = '0' />
+                        <entry name = 'new-default' x = '5%' y = '0' width = '90%' height = '25' />
+                    </stack>
+
+                    <stack class = 'options'>
+                        <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Update'>
+                            <onclick event = 'new-session-variable:finish' />
+                        </button>
+                    </stack>
+
+                </stack>
+
+            </dialog>
+
+
+
+    <dialog name = 'save-map' x = '220' y = '190' width = '200' height = '100' has-rounded-corners = 'True'>
+
+        <label name = 'label1' value = 'Save as:' x = '10' y = '10' />
+
+        <entry name = 'filename' x = '95%' y = '10' align = 'right' width = '50%' height = '25' />
+
+        <button name = '' x = '25%' y = '65' width = '35%' height = '25' align = 'center' value = 'Cancel'>
+            <onclick event = 'dialog.close' />
+        </button>
+
+        <button name = '' x = '75%' y = '65' width = '35%' height = '25' align = 'center' value = 'Save'>
+            <onclick event = 'dialog.update-label' target = 'label1' param = 'this.abc' />
+        </button>
+
+    </dialog>
+
+    <dialog name = 'demo-dialog' x = '50' y = '250' width = '200' height = '100'>
+        <label name = '' text-color = '(25, 25, 25)' value = 'Save as:' x = '10' y = '10' />
+
+        <entry name = 'filename' x = '25%' y = '50' width = '50%' height = '25' background-color = '(0, 225, 0)' border-color = '(0, 0, 225)' value = 'default value' />
+
+        <xbutton name = '' x = '25%' y = '75' width = '100' height = '25' value = 'Button 1'>
+            <onclick event = 'msg-debug' />
+        </xbutton>
+
+        <dropdown name = '' x = '25%' y = '75' width = '100' height = '25' numrows = '3'>
+            <option value = '5' title = 'five' />
+            <option value = '6' title = 'six' />
+            <option value = '"?"' title = 'question mark' />
+            <option value = '12' title = 'dozen' />
+            <option value = '"scroll!"' title = 'scroll bar...' />
+            <option value = '"almost done"' title = 'stupid really long selection title' />
+        </dropdown>
+    </dialog>
+
+
+    <dialog class = 'popup' name = 'rk.triggers' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '3' on-click = 'click:rk.triggers' expand = '1'>
+            <option value = 'rk.triggers/move' title = 'Move Trigger' />
+            <option value = 'rk.triggers/edit' title = 'Edit Trigger' />
+            <option value = 'rk.triggers/delete' title = 'Delete Trigger' />
+        </listbox>
+
+    </dialog>
+
+    <dialog class = 'popup' name = 'rk.entities' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '3' on-click = 'click:rk.entities' expand = '1'>
+            <option value = 'rk.entities/move' title = 'Move Entity' />
+            <option value = 'rk.entities/edit' title = 'Edit Entity' />
+            <option value = 'rk.entities/delete' title = 'Delete Entity' />
+        </listbox>
+
+    </dialog>
+
+    <dialog class = 'popup' name = 'rk.planes' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '6' on-click = 'click:rk.planes' expand = '1'>
+            <option value = 'rk.planes/move' title = 'Move Plane' />
+            <option value = 'rk.planes/select' title = 'Select Plane' />
+
+            <option value = 'rk.planes/pad' title = 'Pad...' />
+
+            <option value = 'rk.planes/edit' title = 'Edit Plane' />
+            <option value = 'rk.planes/copy' title = 'Copy Plane' />
+            <option value = 'rk.planes/delete' title = 'Delete Plane' />
+        </listbox>
+
+    </dialog>
+
+    <dialog class = 'popup' name = 'rk.maps' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '3' on-click = 'click:rk.maps' expand = '1'>
+            <option value = 'rk.maps/move' title = 'Move Map' />
+            <option value = 'rk.maps/select' title = 'Select Map' />
+            <option value = 'rk.maps/edit' title = 'Edit Map' />
+        </listbox>
+
+    </dialog>
+
+
+    <dialog class = 'popup' name = 'OLDrk.offmap' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '2' on-click = 'click:rk.offmap' expand = '1'>
+
+            <option value = 'rk.offmap/goto' title = 'Goto Map...' />
+            <option value = 'rk.offmap/goto-last' title = 'Goto Last Map' />
+
+            <option separator />
+
+            <option value = 'xyz?' title = 'View' />
+
+        </listbox>
+
+    </dialog>
+
+    <dialog class = 'popup' name = 'rk.offmap' x = '0' y = '0' width = '125' height = 'auto' has-rounded-corners = 'False'>
+
+        <stack>
+
+            <button class = 'option' height = '25' value = 'Goto Map...'>
+                <onclick event = 'dialog.close' target = 'rk.offmap' />
+
+                <onclick event = 'widget:populate-child-with-map-names' widget = 'menu-bar.maps.goto' child = 'name' />
+                <onclick event = 'dialog.show' target = 'menu-bar.maps.goto' />
+            </button>
+
+            <button class = 'option' height = '25' value = 'Goto Last Map'>
+                <onclick event = 'dialog.close' target = 'rk.offmap' />
+                <onclick event = 'dialog.show' target = 'menu-bar.maps.goto' />
+            </button>
+
+            <xrect height = '2' />
+
+            <dialog class = 'format'>
+
+                <button class = 'option' height = '25' value = 'Visible Layers' />
+
+                <child>
+                    <dialog class =  'popup' name = 'rk.offmap.views' width = '120' height = 'auto'>
+
+                        <stack>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = 'Background'>
+                                    <onclick event = 'widget:toggle-child' widget = 'rk.offmap' child = 'chk-view-background' />
+                                </button>
+                                <checkbox checked = '1' name = 'chk-view-background' x = '10' y = '6' width = '12' height = '12' on-click = 'universe:toggle-background' />
+                            </dialog>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = 'Foreground'>
+                                    <onclick event = 'widget:toggle-child' widget = 'rk.offmap' child = 'chk-view-foreground' />
+                                </button>
+                                <checkbox checked = '1' name = 'chk-view-foreground' x = '10' y = '6' width = '12' height = '12' on-click = 'universe:toggle-foreground' />
+                            </dialog>
+                        </stack>
+
+                    </dialog>
+                </child>
+
+            </dialog>
+
+            <dialog class = 'format'>
+
+                <button class = 'option' height = '25' value = 'Active Layer' />
+
+                <child>
+                    <dialog class =  'popup' name = 'rk.offmap.active-layer' width = '120' height = 'auto'>
+
+                        <stack>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = 'Background'>
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-active-foreground' />
+                                    <onclick event = 'widget:check-child' widget = 'rk.offmap' child = 'chk-active-background' />
+                                    <onclick event = 'universe:use-layer' layer = 'background' />
+
+                                    <onclick event = 'dialog.close' target = 'rk.offmap' />
+                                </button>
+                                <checkbox checked = '0' readonly = '1' name = 'chk-active-background' x = '10' y = '6' width = '12' height = '12' on-click = '' />
+                            </dialog>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = 'Foreground'>
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-active-background' />
+                                    <onclick event = 'widget:check-child' widget = 'rk.offmap' child = 'chk-active-foreground' />
+                                    <onclick event = 'universe:use-layer' layer = 'foreground' />
+
+                                    <onclick event = 'dialog.close' target = 'rk.offmap' />
+                                </button>
+                                <checkbox checked = '1' readonly = '1' name = 'chk-active-foreground' x = '10' y = '6' width = '12' height = '12' on-click = '' />
+                            </dialog>
+                        </stack>
+
+                    </dialog>
+                </child>
+
+            </dialog>
+
+            <dialog class = 'format'>
+
+                <button class = 'option' height = '25' value = 'Zoom' />
+
+                <child>
+                    <dialog class =  'popup' name = 'rk.offmap.active-layer' width = '120' height = 'auto'>
+
+                        <stack>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = '25%'>
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-0.75' />
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-1.0' />
+                                    <onclick event = 'widget:check-child' widget = 'rk.offmap' child = 'chk-zoom-0.25' />
+                                    <onclick event = 'universe:set-zoom' zoom = '0.25' />
+
+                                    <onclick event = 'dialog.close' target = 'rk.offmap' />
+                                </button>
+                                <checkbox checked = '0' readonly = '1' name = 'chk-zoom-0.25' x = '10' y = '6' width = '12' height = '12' on-click = '' />
+                            </dialog>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = '75%'>
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-0.75' />
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-1.0' />
+                                    <onclick event = 'widget:check-child' widget = 'rk.offmap' child = 'chk-zoom-0.75' />
+                                    <onclick event = 'universe:set-zoom' zoom = '0.75' />
+
+                                    <onclick event = 'dialog.close' target = 'rk.offmap' />
+                                </button>
+                                <checkbox checked = '0' readonly = '1' name = 'chk-zoom-0.75' x = '10' y = '6' width = '12' height = '12' on-click = '' />
+                            </dialog>
+                            <dialog class = 'format'>
+                                <button class = 'option' x = '25' width = '95' height = '24' value = '100%'>
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-0.75' />
+                                    <onclick event = 'widget:uncheck-child' widget = 'rk.offmap' child = 'chk-zoom-1.0' />
+                                    <onclick event = 'widget:check-child' widget = 'rk.offmap' child = 'chk-zoom-1.0' />
+                                    <onclick event = 'universe:set-zoom' zoom = '1.0' />
+
+                                    <onclick event = 'dialog.close' target = 'rk.offmap' />
+                                </button>
+                                <checkbox checked = '1' readonly = '1' name = 'chk-zoom-1.0' x = '10' y = '6' width = '12' height = '12' on-click = '' />
+                            </dialog>
+                        </stack>
+
+                    </dialog>
+                </child>
+
+            </dialog>
+
+        </stack>
+
+    </dialog>
+
+
+    <dialog class = 'popup' name = 'rk.generic' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '7' on-click = 'click:rk.generic' expand = '1'>
+            <onclick event = 'rk.generic:onclick' />
+
+            <option value = 'rk.generic/copy' title = 'Copy Tile' />
+            <option value = 'rk.generic/select-tile' title = 'Select Tile' />
+            <option value = 'rk.generic/place-gold' title = 'Place Gold' />
+            <option value = 'rk.generic/place-entity' title = 'Place Entity' />
+            <option value = 'rk.generic/place-trigger' title = 'Place Trigger' />
+            <option value = 'rk.generic/paste-plane' title = 'Paste Plane' />
+            <option value = 'rk.generic/randomizer' title = 'Randomize on Tile Type' />
+        </listbox>
+
+    </dialog>
+
+        <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'rk.generic.randomizer' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+            <onescape event = 'dialog.close' target = 'rk.generic.randomizer' />
+
+            <hidden name = 'base-tile' value = '' />
+
+            <stack>
+
+                <dialog class = 'title-bar'>
+                    <label font-family = 'high-contrast' x = '5%' y = '0' value = 'Tile Randomizer' />
+                    <button class = 'closer' x = '95%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                        <onclick event = 'dialog.close' target = 'rk.generic.randomizer' />
+                    </button>
+                </dialog>
+
+                <stack class = 'entry'>
+                    <label name = '' value = 'Select Tileset Range:' x = '5%' y = '0' />
+                    <dropdown name = 'range' x = '5%' y = '0' width = '90%' height = '25' numrows = '5'>
+                        <option value = '2' title = '2' />
+                        <option value = '3' title = '3' />
+                        <option value = '4' title = '4' />
+                        <option value = '5' title = '5' />
+                        <option value = '6' title = '6' />
+                        <option value = '7' title = '7' />
+                        <option value = '8' title = '8' />
+                        <option value = '11' title = '11' />
+                        <option value = '15' title = '15' />
+                        <option value = '19' title = '19' />
+                        <option value = '1' title = '1' />
+                    </dropdown>
+                </stack>
+
+                <stack class = 'options'>
+
+                    <button class = 'centered-option' name = '' x = '95%' y = '0' align = 'right' width = '35%' height = '25' value = 'Apply'>
+                        <onclick event = 'rk.generic.randomizer:enable' />
+                    </button>
+
+                </stack>
+
+            <x>
+            <button name = '' x = '95%' y = '70' width = '40%' height = '25' align = 'right' value = 'Create'>
+                <onclick event = 'rk.generic.randomizer:enable' />
+            </button>
+            </x>
+
+            </stack>
+
+        </dialog>
+
+
+
+
+    <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'menu-bar.scripts.script-editor' x = '50%' y = '50%' align = 'center' valign = 'center' width = '500' height = 'auto'>
+
+        <onescape event = 'dialog.close' target = 'menu-bar.scripts.script-editor' />
+
+        <stack>
+
+            <dialog class = 'title-bar'>
+                <label font-family = 'high-contrast' x = '2%' y = '0' value = 'Script Editor' />
+                <button class = 'closer' x = '98%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                    <onclick event = 'dialog.close' target = 'menu-bar.scripts.script-editor' />
+                </button>
+            </dialog>
+
+            <dialog class = 'format'>
+
+                <dropdown name = 'script' x = '2%' y = '0' width = '73%' height = '25' numrows = '5'>
+                    <xbeforechange event = 'script-editor:save-script' param = 'changing-script' />
+                    <onchange event = 'script-editor:change-script' />
+                </dropdown>
+
+                <button name = '' x = '98%' y = '0' width = '20%' height = '25' align = 'right' value = 'Add Event'>
+                    <onclick event = 'script-editor:add-event' />
+                </button>
+                <xbutton name = '' x = '70%' y = '0' width = '20%' height = '25' align = 'right' value = 'Expand All' />
+                <xbutton name = '' x = '45%' y = '0' width = '20%' height = '25' align = 'right' value = 'Collapse All' />
+
+            </dialog>
+
+            <stack class = 'spacer' />
+
+            <dialog class = 'format' y = '10'>
+
+                <stack name = 'left-panel' x = '2%' y = '0' width = '20%' height = 'auto'>
+
+                    <stack class = 'options'>
+
+                        <xbutton class = 'centered-option' name = '' x = '5%' y = '0' width = '90%' height = '25' value = 'New Script' />
+
+                        <stack class = 'entry'>
+                            <label x = '5%' value = 'Options' />
+                            <button class = 'centered-option' name = '' x = '5%' y = '0' width = '90%' height = '25' value = 'New Packet'>
+                                <onclick event = 'script-editor:new-packet' />
+                            </button>
+                        </stack>
+
+                    </stack>
+
+                    <stack class = 'entry'>
+
+                        <label name = '' value = 'Packet List' x = '5%' y = '0' />
+                        <dropdown class = 'list' name = 'packet' x = '5%' y = '0' width = '90%' height = '25' numrows = '5' xon-click = 'script-editor:change-packet'>
+                            <onchange event = 'script-editor:change-packet' />
+                            <xbeforeclick event = 'script-editor:save-script' />
+                            <xonclick event = 'script-editor:change-packet' />
+                        </dropdown>
+
+                    </stack>
+
+                </stack>
+
+                <stack name = 'right-panel' x = '24%' y = '0' width = '74%' min-height = '250' max-height = '250'>
+
+                    <dialog class = 'format' name = 'tree-wrapper' x = '0' y = '0' width = '100%' height = 'auto' background-color = '(0, 0, 0)' has-rounded-corners = 'False'>
+                        <treeview name = 'event-tree' x = '0' y = '0' width = '100%' height = '250' row-height = '25' />
+                    </dialog>
+
+                    <xdialog class = 'format' name = '' x = '0' y = '0' width = '100%' height = '30' background-color = 'None' border-color = 'None' has-rounded-corners = 'False'>
+                        <button name = '' x = '95%' y = '0' width = '20%' height = '25' align = 'right' value = 'Done'>
+                            <onclick event = 'script-editor:save-script' param = 'final' />
+                            <onclick event = 'dialog.close' />
+                        </button>
+                        <xbutton name = '' x = '70%' y = '0' width = '20%' height = '25' align = 'right' value = 'Cancel'>
+                            <onclick event = 'dialog.close' />
+                        </xbutton>
+                    </xdialog>
+
+                </stack>
+
+            </dialog>
+
+            <stack class = 'spacer' />
+
+        </stack>
+
+    </dialog>
+
+
+
+    <dialog class = 'wrapper' modal = '1' uses-lightbox = '1' name = 'event-maker' x = '120' y = '115' width = '400' height = '250'>
+
+        <stack>
+
+            <dialog class = 'title-bar'>
+                <label font-family = 'high-contrast' x = '2%' y = '0' value = 'New Event' />
+                <button class = 'closer' x = '97%' y = '50%' align = 'right' valign = 'center' width = '24' height = '24' value = 'x' text-align = 'origin'>
+                    <onclick event = 'dialog.close' target = 'event-maker' />
+                </button>
+            </dialog>
+
+            <stack class = 'entry'>
+
+                <label name = '' value = 'Event Type' x = '5%' y = '0' />
+
+                <dropdown name = 'type' x = '5%' y = '0' width = '90%' height = '25' numrows = '7'>
+
+                    <onchange event = 'event-maker.type:change' />
+
+                    <option value = 'planar-shift' title = 'Planar Shift' />
+                    <option value = 'planar-slide' title = 'Planar Slide' />
+                    <option value = 'planar-message' title = 'Send Message to Plane' />
+                    <option value = 'dig-tiles' title = 'Dig Tile(s)' />
+                    <option value = 'screen-shake' title = 'Screen Shake' />
+                    <option value = 'cutscene' title = 'Control Cutscene' />
+                    <option value = 'planar-toggle' title = 'Show / Hide Plane' />
+                    <option value = 'entity-toggle' title = 'Show / Hide Entity' />
+                    <option value = 'entity-move' title = 'Set Entity Move Target' />
+                    <option value = 'entity-message' title = 'Send Message to Entity' />
+                    <option value = 'trigger-message' title = 'Send Message to Trigger' />
+                    <option value = 'call-script' title = 'Call Script' />
+                    <option value = 'packet-time-limit' title = 'Packet Time Limit' />
+                    <option value = 'spawn-random-enemy' title = 'Spawn Random Enemy' />
+                    <option value = 'dialogue' title = 'Dialogue:  Next Iteration' />
+                    <option value = 'enable-lines-by-class' title = '  Enable lines by class' />
+                    <option value = 'disable-lines-by-class' title = '  Disable lines by class' />
+                    <option value = 'dialogue-fyi' title = '  Dialogue (FYI):  Next Iteration' />
+                    <option value = 'dialogue-shop' title = '  Dialogue (Shop):  Next Iteration' />
+                    <option value = 'dialogue-computer' title = '  Dialogue (Computer):  Next Iteration' />
+                    <option value = 'dialogue-toggle-line' title = '  Dialogue:  Toggle Line Status' />
+                    <option value = 'dialogue-response' title = '  Dialogue Response Option' />
+                    <option value = 'shout' title = 'Letterbox Shout' />
+                    <option value = 'fetch-stat' title = 'Fetch Stat' />
+                    <option value = 'fetch-stat-by-region' title = 'Fetch Stat by Region' />
+                    <option value = 'fetch-item-stat' title = 'Fetch Item Stat (Inventory)' />
+                    <option value = 'set-item-stat' title = 'Set Item Stat (Inventory)' />
+                    <option value = 'condition-if' title = 'If' />
+                    <option value = 'condition-then' title = '  Then' />
+                    <option value = 'condition-else' title = '  Else' />
+                    <option value = 'condition-switch' title = 'Switch' />
+                    <option value = 'condition-when' title = 'When' />
+                    <option value = 'sleep' title = 'Sleep' />
+                    <option value = 'trigger-contains' title = 'Trigger (Target) Contains...' />
+                    <option value = 'lever-has-position' title = 'Lever has position...' />
+                    <option value = 'vars-sum' title = 'Sum 2 Session Variables' />
+                    <option value = 'vars-diff' title = 'Diff 2 Session Variables' />
+                    <option value = 'vars-plus' title = 'Increase a Session Variable by a Raw Value' />
+                    <option value = 'vars-set' title = 'Assign Value to Session Variable' />
+                    <option value = 'vars-copy' title = 'Copy a Session Variable to another Session Variable' />
+                    <option value = 'set-npc-indicator' title = 'Set NPC Indicator' />
+                    <option value = 'flag-quest' title = 'Flag a Quest' />
+                    <option value = 'flag-quest-update' title = '  Flag a Quest Update' />
+                    <option value = 'fetch-quest-status' title = 'Fetch Quest Status' />
+                    <option value = 'fetch-update-status' title = 'Fetch Update Status' />
+                    <option value = 'overlay' title = 'Display a map overlay' />
+                    <option value = 'camera-message' title = 'Configure the map camera' />
+                    <option value = 'reload-map' title = 'Reload Map' />
+                    <option value = 'mark-map-as-completed' title = 'Mark Map as Completed' />
+                    <option value = 'load-map' title = 'Load New Map' />
+                    <option value = 'set-map-status-message' title = 'Set Map Status Message' />
+
+                </dropdown>
+
+            </stack>
+
+            <dialog name = 'overlays' class = 'format'>
+
+                <dialog class = 'format' name = 'event-maker.planar-shift' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Plane:' />
+                            <dropdown name = 'plane' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speed:' />
+                            <dropdown name = 'speed' height = '25' numrows = '5'>
+                                <option value = '0.5' title = 'Very slow' />
+                                <option value = '0.75' title = 'Slow' />
+                                <option value = '1.0' title = 'Normal' />
+                                <option value = '1.5' title = 'Fast' />
+                                <option value = '2.0' title = 'Very fast' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Planar Collision:' />
+                            <dropdown name = 'collides' height = '25' numrows = '2'>
+                                <option value = '1' title = 'Enabled' />
+                                <option value = '0' title = 'Disabled' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+                <dialog class = 'format' name = 'event-maker.planar-slide' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Plane:' />
+                            <dropdown name = 'plane' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speed:' />
+                            <dropdown name = 'speed' height = '25' numrows = '5'>
+                                <option value = '0.5' title = 'Very slow' />
+                                <option value = '0.75' title = 'Slow' />
+                                <option value = '1.0' title = 'Normal' />
+                                <option value = '1.5' title = 'Fast' />
+                                <option value = '2.0' title = 'Very fast' />
+                                <option value = '5000' title = '"Instant"' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Slide:' />
+                            <dropdown name = 'slide' height = '25' numrows = '4'>
+                                <option value = '0' title = 'Up' />
+                                <option value = '2' title = 'Down' />
+                                <option value = '0.targeted' title = 'Targeted' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.planar-message' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Plane:' />
+                            <dropdown name = 'plane' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Message:' />
+                            <dropdown name = 'message' height = '25' numrows = '4'>
+                                <option value = 'activate' title = 'Activate' />
+                                <option value = 'deactivate' title = 'Deactivate' />
+                                <option value = 'fade-out' title = 'Fade Out' />
+                                <option value = 'fade-in' title = 'Fade In' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Optional Parameter:' />
+                            <entry name = 'param' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dig-tiles' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Plane:' />
+                            <dropdown name = 'plane' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '3'>
+                                <option value = 'dig' title = 'Dig' />
+                                <option value = 'dig,purge' title = 'Dig, then Purge' />
+                                <option value = 'purge' title = 'Purge Tile(s) Immediately' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.screen-shake' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '2'>
+                                <option value = 'begin' title = 'Begin Shake' />
+                                <option value = 'end' title = 'End Shake' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Intensity:' />
+                            <dropdown name = 'intensity' height = '25' numrows = '3'>
+                                <option value = '1' title = 'Weak' />
+                                <option value = '2' title = 'Moderate' />
+                                <option value = '3' title = 'Outrageous' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.cutscene' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '2'>
+                                <option value = 'begin' title = 'Begin Cutscene' />
+                                <option value = 'end' title = 'End Cutscene' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.planar-toggle' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Plane:' />
+                            <dropdown name = 'plane' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speed:' />
+                            <dropdown name = 'speed' height = '25' numrows = '3'>
+                                <option value = '1' title = 'Normal' />
+                                <option value = '2' title = 'Fast' />
+                                <option value = '-1' title = 'Instant' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '5'>
+                                <option value = 'fade-out' title = 'Fade Out' />
+                                <option value = 'fade-in' title = 'Fade In' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.entity-toggle' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speed:' />
+                            <dropdown name = 'speed' height = '25' numrows = '3'>
+                                <option value = '1' title = 'Normal' />
+                                <option value = '2' title = 'Fast' />
+                                <option value = '-1' title = 'Instant' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '5'>
+                                <option value = 'fade-out' title = 'Fade Out' />
+                                <option value = 'fade-in' title = 'Fade In' />
+                            </dropdown>
+                        </stack>
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.entity-move' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Behavior:' />
+                            <dropdown name = 'behavior' height = '25' numrows = '2'>
+                                <option value = 'ai' title = 'AI Pathfinding' />
+                                <option value = 'zap' title = 'Instant Move to Target' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.entity-message' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Message:' />
+                            <dropdown name = 'message' height = '25' numrows = '5'>
+                                <option value = 'add-hotspot' title = 'Add Hotspot' />
+                                <option value = 'clear-hotspots' title = 'Clear Hotspots' />
+                                <option value = 'activate' title = 'Activate' />
+                                <option value = 'deactivate' title = 'Deactivate' />
+                                <option value = 'hide' title = 'Hide' />
+                                <option value = 'seek-target' title = 'Seek Target Trigger' />
+                                <option value = 'zap-target' title = 'Zap to Target Trigger' />
+                                <option value = 'set-passcode' title = 'Set Passcode' />
+                                <option value = 'unlock' title = 'Unlock Terminal' />
+                                <option value = 'show-hack-panel' title = 'Show Hack Panel' />
+                                <option value = 'change-ai' title = 'Change AI Behavior' />
+                                <option value = 'set-preferred-target' title = 'Set Preferred Target (param)' />
+                                <option value = 'assign-territory' title = 'Assign AI Territory' />
+                                <option value = 'assign-respawn-region' title = 'Assign Respawn Region' />
+                                <option value = 'set-speed' title = 'Set Speed' />
+                                <option value = 'set-direction' title = 'Set Direction' />
+                                <option value = 'fade-out' title = 'Fade Out' />
+                                <option value = 'fade-in' title = 'Fade In' />
+                                <option value = 'die' title = 'Die' />
+                                <option value = 'lever-position' title = 'Set Lever Position (up/down/left/right)' />
+                                <option value = 'activate-skill' title = 'Activate Skill (provide name)' />
+                                <option value = 'make-disposable' title = 'Make Disposable' />
+                                <option value = 'set-warehouses' title = 'Set Warehouses (for merchants)' />
+                                <option value = 'clear-vendor-inventory' title = 'Clear Vendor Inventory' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Optional Parameter:' />
+                            <entry name = 'param' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.spawn-random-enemy' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Spawn Region:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Disposable:' />
+                            <dropdown name = 'disposable' height = '25' numrows = '2'>
+                                <option value = 'no' title = 'no' />
+                                <option value = 'yes' title = 'yes' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.sleep' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Sleep Duration (in frames):' />
+                            <entry name = 'frames' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.trigger-message' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Message:' />
+                            <dropdown name = 'message' height = '25' numrows = '2'>
+                                <option value = 'activate' title = 'Activate' />
+                                <option value = 'deactivate' title = 'Deactivate' />
+                                <option value = 'follow' title = 'Follow Entity' />
+                                <option value = 'advertisement' title = 'Set Advertisement' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Trigger:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Param (Optional)' />
+                            <entry name = 'param' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.call-script' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Script to Call:' />
+                            <dropdown name = 'script' height = '25' numrows = '7' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.packet-time-limit' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack>
+
+                        <stack x = '5%' width = '40%'>
+
+                            <stack class = 'entry'>
+                                <label name = '' value = 'Limit:' />
+                                <entry name = 'limit' height = '25' />
+                            </stack>
+
+                        </stack>
+
+                        <stack x = '5%' width = '90%'>
+                            <label name = '' value = 'Set the maximum execution time' />
+                            <label name = '' value = 'of a packet in seconds.  Use carefully.' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speaker:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue-fyi' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speaker:' />
+                            <dropdown name = 'entity' width = '40%' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue-fyi:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label value = 'Menu Widget ID:' />
+                            <entry name = 'id' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue-shop' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speaker:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue-shop:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue-computer' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speaker:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue-computer:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue-toggle-line' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Speaker:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue-toggle-line:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.dialogue-toggle-line:change-conversation' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Line:' />
+                            <dropdown name = 'line' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Status:' />
+                            <dropdown name = 'status' height = '25' numrows = '2'>
+                                <option value = '0' title = 'Disabled' />
+                                <option value = '1' title = 'Enabled' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.dialogue-response' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Selectable:' />
+                            <dropdown name = 'selectable' height = '25' numrows = '5'>
+                                <option value = '1' title = 'Yes' />
+                                <option value = '0' title = 'No' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Response Message:' />
+                            <entry name = 'message' width = '90%' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Answer Value:' />
+                            <entry name = 'answer' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.shout' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Letterbox Position:' />
+                            <dropdown name = 'position' height = '25' numrows = '2'>
+                                <option value = 'footer-left' title = 'footer-left' />
+                                <option value = 'footer-right' title = 'footer-right' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Message:' />
+                            <entry name = 'message' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.fetch-stat' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Statistic:' />
+                            <dropdown name = 'statistic' height = '25' numrows = '5'>
+                                <option value = 'enemies-left' title = 'Enemies Left '/>
+                                <option value = 'gold-left' title = 'Gold Left' />
+                                <option value = 'gold-collected' title = 'Gold Collected' />
+                                <option value = 'gold-total' title = 'Original Gold Total' />
+                                <option value = 'is-locked' title = 'Terminal is Locked?' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target Variable:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.fetch-stat-by-region' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Statistic:' />
+                            <dropdown name = 'statistic' height = '25' numrows = '5'>
+                                <option value = 'enemies-left' title = 'Enemies Left '/>
+                                <option value = 'gold-left' title = 'Gold Left' />
+                                <option value = 'gold-collected' title = 'Gold Collected' />
+                                <option value = 'gold-total' title = 'Original Gold Total' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target Variable:' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Trigger Region:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.fetch-item-stat' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Statistic:' />
+                            <dropdown name = 'statistic' height = '25' numrows = '5'>
+                                <option value = 'is-acquired' title = 'Item is Acquired '/>
+                                <option value = 'is-equipped' title = 'Item is Equipped' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Item:' />
+                            <dropdown name = 'item' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target Variable:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.set-item-stat' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Statistic:' />
+                            <dropdown name = 'statistic' height = '25' numrows = '5'>
+                                <option value = 'is-acquired' title = 'Item is Acquired '/>
+                                <option value = 'is-equipped' title = 'Item is Equipped' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Item:' />
+                            <dropdown name = 'item' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'New Value:' />
+                            <entry name = 'value' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.condition-if' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable:' />
+                            <dropdown name = 'variable1' height = '25' numrows = '7' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Comparison Operator:' />
+                            <dropdown name = 'operator' height = '25' numrows = '6'>
+                                <option value = '==' title = '==' />
+                                <option value = '!=' title = '!=' />
+                                <option value = '<' title = '<' />
+                                <option value = '<=' title = '<=' />
+                                <option value = '>' title = '>' />
+                                <option value = '>=' title = '>=' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable 2:' />
+                            <dropdown name = 'variable2' height = '25' numrows = '7' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = '-or- Raw Value:' />
+                            <entry name = 'raw-value' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.condition-then' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '90%'>
+                        <stack class = 'entry'>
+                            <label name = '' value = 'No setting available.  Add children to this node.' />
+                        </stack>
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.condition-else' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '90%'>
+                        <stack class = 'entry'>
+                            <label name = '' value = 'No settings available.  Add children to this node.' />
+                        </stack>
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.condition-switch' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Switch On:' />
+                            <dropdown name = 'type' height = '25' numrows = '3'>
+                                <option value = 'variable' title = 'Variable' />
+                                <option value = 'quest-status' title = 'Quest Status' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable to Evaluate:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Quest to Evaluate:' />
+                            <dropdown name = 'quest' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.condition-when' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack>
+
+                        <dialog class = 'format'>
+
+                            <stack x = '5%' width = '40%'>
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Value:' />
+                                    <entry name = 'raw-value' height = '25' />
+                                </stack>
+
+                            </stack>
+
+                            <stack x = '95%' align = 'right' width = '40%'>
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Session Variable:' />
+                                    <dropdown name = 'variable' height = '25' numrows = '5' />
+                                </stack>
+                            </stack>
+
+                        </dialog>
+
+                        <stack x = '5%' width = '90%'>
+                            <label name = '' value = 'Choosing a Session Variable will override any raw value you specify.' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.trigger-contains' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Resultant Session Variable:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Target (Trigger):' />
+                            <dropdown name = 'target' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.lever-has-position' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Position:' />
+                            <dropdown name = 'position' height = '25' numrows = '4'>
+                                <option value = '3' title = 'Left' />
+                                <option value = '1' title = 'Right' />
+                                <option value = '0' title = 'Up' />
+                                <option value = '2' title = 'Down' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Resultant Session Variable:' />
+                            <dropdown name = 'variable' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.vars-sum' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable 1:' />
+                            <dropdown name = 'variable1' height = '25' numrows = '7' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable Sum Destination:' />
+                            <dropdown name = 'variable3' height = '25' numrows = '7' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable 2:' />
+                            <dropdown name = 'variable2' height = '25' numrows = '7' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.vars-diff' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable 1:' />
+                            <dropdown name = 'variable1' height = '25' numrows = '7' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable Diff Destination:' />
+                            <dropdown name = 'variable3' height = '25' numrows = '7' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable 2:' />
+                            <dropdown name = 'variable2' height = '25' numrows = '7' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.vars-plus' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack>
+
+                        <dialog class = 'format'>
+
+                            <stack x = '5%' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Session Variable:' />
+                                    <dropdown name = 'variable' height = '25' numrows = '7' />
+                                </stack>
+
+                            </stack>
+
+                            <stack x = '95%' align = 'right' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Increase Amount:' />
+                                    <entry name = 'amount' height = '25' />
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                        <stack x = '5%' width = '90%'>
+                            <label name = '' value = 'Provide a negative number to achieve subtraction.' />
+                            <label name = '' value = 'Numerical Session Variables only!' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.vars-set' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack>
+
+                        <dialog class = 'format'>
+
+                            <stack x = '5%' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Session Variable:' />
+                                    <dropdown name = 'variable' height = '25' numrows = '7' />
+                                </stack>
+
+                            </stack>
+
+                            <stack x = '95%' align = 'right' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'New Value:' />
+                                    <entry name = 'value' height = '25' />
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                        <stack x = '5%' width = '90%'>
+                            <label name = '' value = 'Assign a new string or numerical value to a Session Variable.' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.vars-copy' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack>
+
+                        <dialog class = 'format'>
+
+                            <stack x = '5%' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'Copy Session Variable:' />
+                                    <dropdown name = 'variable1' height = '25' numrows = '7' />
+                                </stack>
+
+                            </stack>
+
+                            <stack x = '95%' align = 'right' width = '40%'>
+
+                                <stack class = 'entry'>
+                                    <label name = '' value = 'To Session Variable:' />
+                                    <dropdown name = 'variable2' height = '25' numrows = '7' />
+                                </stack>
+
+                            </stack>
+
+                        </dialog>
+
+                        <stack x = '5%' width = '90%'>
+                            <label name = '' value = 'Assign one Session Variable to another Session Variable.' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.set-npc-indicator' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Indicator:' />
+                            <dropdown name = 'key' height = '25' numrows = '3'>
+                                <option value = 'quest-available' title = 'Quest Available' />
+                                <option value = 'quest-complete' title = 'Quest Complete' />
+                                <option value = 'merchant' title = 'Merchant' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Value:' />
+                            <dropdown name = 'value' height = '25' numrows = '3'>
+                                <option value = '0' title = 'Off' />
+                                <option value = '1' title = 'On' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.enable-lines-by-class' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Entity:' />
+                            <dropdown name = 'entity' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.enable-lines-by-class:change-entity' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Conversation:' />
+                            <dropdown name = 'conversation' height = '25' numrows = '5' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Class:' />
+                            <entry name = 'class' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.flag-quest' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Quest Name:' />
+                            <dropdown name = 'quest' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Flag as:' />
+                            <dropdown name = 'flag' height = '25' numrows = '3'>
+                                <option value = 'active' title = 'Active' />
+                                <option value = 'complete' title = 'Complete' />
+                                <option value = 'failed' title = 'Failed' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.flag-quest-update' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Quest Name:' />
+                            <dropdown name = 'quest' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.flag-quest-update:change-quest' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Update Name:' />
+                            <dropdown name = 'update' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Flag as:' />
+                            <dropdown name = 'flag' height = '25' numrows = '2'>
+                                <option value = 'active' title = 'Active' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.fetch-quest-status' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Quest Name:' />
+                            <dropdown name = 'quest' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable Target:' />
+                            <dropdown name = 'variable' height = '25' numrows = '2' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Output Format:' />
+                            <dropdown name = 'format' height =  '25' numrows = '2'>
+                                <option value = 'string' title = 'String' />
+                                <option value = 'integer' title = 'Integer' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.fetch-update-status' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Quest Name:' />
+                            <dropdown name = 'quest' height = '25' numrows = '5'>
+                                <onchange event = 'event-maker.fetch-update-status:change-quest' />
+                            </dropdown>
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Update Name:' />
+                            <dropdown name = 'update' height = '25' numrows = '5' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Session Variable Target:' />
+                            <dropdown name = 'variable' height = '25' numrows = '2' />
+                        </stack>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Output Format:' />
+                            <dropdown name = 'format' height =  '25' numrows = '2'>
+                                <option value = 'string' title = 'String' />
+                                <option value = 'integer' title = 'Integer' />
+                            </dropdown>
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.overlay' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Map Name:' />
+                            <entry name = 'map-name' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Overlay Title:' />
+                            <entry name = 'title' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.camera-message' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+                        <stack class = 'entry'>
+                        </stack>
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+                        <stack class = 'entry'>
+                        </stack>
+                    </stack>
+
+                    <label name = '' value = 'Message:' />
+                    <dropdown name = 'message' height = '25' numrows = '3'>
+                        <option value = 'zap' title = 'Zap to Entity' />
+                        <option value = 'pan' title = 'Pan follow Entity' />
+                    </dropdown>
+
+                    <label name = '' value = 'Entity:' />
+                    <dropdown name = 'entity' height = '25' numrows = '5' />
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.reload-map' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Reload the map.  This is chiefly used only by the' />
+                            <label name = '' value = 'animated skill tree previews (to loop them).' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.mark-map-as-completed' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Mark the map as completed.  This is used typically by' />
+                            <label name = '' value = 'puzzle / challenge rooms.' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.load-map' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Map Name:' />
+                            <entry name = 'name' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                    <stack x = '95%' align = 'right' width = '40%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Player Spawn Waypoint:' />
+                            <entry name = 'spawn' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+
+                <dialog class = 'format' name = 'event-maker.set-map-status-message' x = '0' y = '0' width = '100%' height = '140' background-color = 'None' border-color = 'None'>
+
+                    <stack x = '5%' width = '90%'>
+
+                        <stack class = 'entry'>
+                            <label name = '' value = 'Message:' />
+                            <entry name = 'message' width = '80%' height = '25' />
+                        </stack>
+
+                    </stack>
+
+                </dialog>
+
+            </dialog>
+
+            <stack class = 'spacer' />
+
+            <stack class = 'options'>
+                <button class = 'centered-option' name = '' x = '95%' y = '0' width = '20%' height = '25' align = 'right' value = 'Add'>
+                    <onclick event = 'script-editor:receive-event' />
+                </button>
+            </stack>
+
+            <stack class = 'spacer' />
+
+<x>
+        <button name = '' x = '70%' y = '215' width = '20%' height = '25' align = 'right' value = 'Cancel'>
+            <onclick event = 'dialog.close' />
+        </button>
+</x>
+
+        </stack>
+
+    </dialog>
+
+    <dialog class = 'popup' name = 'rk.script-tree' x = '0' y = '0' width = '0' height = '0' has-rounded-corners = 'False'>
+
+        <listbox name = 'choice' x = '0' y = '0' width = '100' height = '25' numrows = '3' on-click = 'click:rk.script-tree' expand = '1'>
+            <xonclick event = 'rk.script-tree:onclick' />
+
+            <option value = 'edit' title = 'Edit Event' />
+            <option value = 'insert' title = 'Insert Event' />
+            <option value = 'delete' title = 'Delete Branch' />
+        </listbox>
+
+        <rect name = '' x = '0' y = '50' width = '100%' height = '1' background-color = '(105, 105, 105)' />
+
+    </dialog>
+
+    <dialog class = 'format' modal = '1' uses-lightbox = '1' name = 'generic.error' x = '50%' y = '50%' align = 'center' valign = 'center' width = '200' height = 'auto'>
+
+        <stack>
+
+            <dialog class = 'title-bar'>
+                <label x = '5%' y = '0' value = 'Error' />
+            </dialog>
+
+            <dialog class = 'modal'>
+                <label name = 'content' value = 'Default error message.' x = '5%' y = '0' />
+            </dialog>
+
+            <dialog class = 'header'>
+                <label x = '5%' y = '0' value = 'Options' />
+            </dialog>
+
+            <stack class = 'options'>
+                <button class = 'option' text-align = 'left' value = 'Ok'>
+                    <onclick event = 'dialog.close' target = 'generic.error' />
+                </button>
+            </stack>
+
+        </stack>
+
+    </dialog>
+
+</dialogs>

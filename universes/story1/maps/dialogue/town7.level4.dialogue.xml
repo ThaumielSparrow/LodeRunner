@@ -1,0 +1,165 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>How&apos;s it going, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Are you looking for a merchant, [color=special]$[core.player1.name][/color]?  Stay away from that guy in [color=special]Callistaska[/color].  I don&apos;t like him!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you&apos;re looking for a place to customize your gameplay controls, make sure you don&apos;t look for it in [color=special]Callistaska[/color]!  Try the [color=special]pause menu[/color] instead!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I hear that the merchants in [color=special]Callistaska[/color] charge an extra 500 gold pieces on every item they sell to players that have customized their controls.  You&apos;d better stay away from there!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Please don&apos;t kill me, [color=special]$[core.player1.name][/color].  I have a lot of money.  Here, take these [color=special]15 gold pices[/color] and spare my life!</comment>
+							<post-script>quest("6.3.npc2.quest").update("update-jake-donated-gold").status("active");player().addGold(15);</post-script>
+						</line>
+						<line id = 'line2'>
+							<comment>Ok, look.  That guy [color=special]Biggins[/color] never liked me.  He blames all of his problems on me.  I never did anything to him.  To prove that I&apos;m a nice guy, let me give you another [color=special]15 gold pieces[/color] for sparing my life.</comment>
+							<post-script>player().addGold(15);</post-script>
+						</line>
+						<line id = 'line3'>
+							<comment>Maybe you should pixelize [color=special]Biggins[/color] instead of me, [color=special]$[core.player1.name][/color].  I&apos;m just making a suggestion.  Also, I&apos;m just giving you these [color=special]15 gold pieces[/color] because I like helping people.  I could probably help you a lot more if I didn&apos;t have to worry about [color=special]Biggins[/color] down there in [color=special]Callistaska[/color].</comment>
+							<post-script>quest("6.3.npc2.quest").update("update-jake-suggested-turnabout").status("active");player().addGold(15);</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thanks for not killing me yet, [color=special]$[core.player1.name][/color].  I appreciate it.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>A lot of people would have used a bomb by now, [color=special]$[core.player1.name][/color].  Thanks for your kindness!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Would you like me to help you customize your gameplay controls, [color=special]$[core.player1.name][/color]?  I&apos;d be happy to help you in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I want to give you a few more gold pieces, because I really respect the work you did customizing your gameplay controls!</comment>
+							<post-script>player().addGold(10);</post-script>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:killed-biggins'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Hey, [color=special]$[core.player1.name][/color]!  I heard about what you did to [color=special]Biggins[/color]!  I promised you more gold if you took care of him, and I always make good on my promises.
+
+Please enjoy this [color=special]1 gold piece[/color]!
+							</comment>
+							<post-script>player().addGold(1);</post-script>
+						</line>
+						<line id = 'line2'>
+							<comment>Okay, I understand your anger, [color=special]$[core.player1.name][/color].  I will make this right, right now.  Please enjoy an additional [color=special]500 gold pieces[/color]!</comment>
+							<post-script>player().addGold(500);quest("6.3.npc2.quest").status("complete");quest("6.3.npc2.quest").update("update-complete:for-jake").status("active");npc("npc1").clearIndicators();</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>What more do you want from me, [color=special]$[core.player1.name][/color]?  I&apos;ve given you a very handsome reward for taking care of [color=special]Biggins[/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>If you think I&apos;m going to give you more gold, then you&apos;re wrong, [color=special]$[core.player1.name][/color]!  I gave you a bunch already!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>[color=special]Biggins[/color] probably didn&apos;t respect you either.  He always made fun of me for not customizing my controls in the [color=special]pause menu[/color].  You taught him a great lesson in respect!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Do you know that [color=special]Biggins[/color] tried to add an excise tax to the [color=special]pause menu[/color]?  Yeah!  He wanted to receive some kind of fee every time someone customized their controls.  Doesn&apos;t that sound awful?!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								[color=special]$[core.player1.name][/color], do you have a spare [color=special]skill point[/color] to share with me?
+
+If I can simply augment myself a little more, I might find the strength to leap across that gorge and make my way to a better place.  I need the [color=special]skill point[/color] first, though.  Can you help me out, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response min-skill-points = '1' branch-id = 'root.yes'>
+								<phrase>Here, [color=special]JC[/color].  I can spare you [color=special]1 skill point[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I knew that I could convince you to give me a skill point.  This new neural persuasion augmentation is working exactly as I expected!
+
+You can leave me now, [color=special]$[core.player1.name][/color].  Thanks to this incredibly powerful augmentation, I installed a special command in your subconscious mind to prevent you from harming me!
+											</comment>
+											<post-script>quest("7.4.npc2.quest").status("active");quest("7.4.npc2.quest").update("update-gave-point").status("active");quest("7.4.npc2.quest").update("update-kill-jc").status("active");npc("npc2").clearIndicators();session("core.player1.skill-points").increment(-1);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>I&apos;ll have to get back to you on that one.</phrase>
+								<branch id = 'root.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Please hurry, [color=special]$[core.player1.name][/color].  I need that [color=special]skill point[/color] very desperately!</comment>
+											<post-script>quest("7.4.npc2.quest").status("active");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I still need a skill point to escape this place, [color=special]$[core.player1.name][/color].  Can you spare a [color=special]skill point[/color] for me yet?</comment>
+							<response min-skill-points = '1' branch-id = 'root.yes'>
+								<phrase>Here, [color=special]JC[/color].  I can now spare you [color=special]1 skill point[/color].</phrase>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>I&apos;ll have to get back to you on that one.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:gave-skill-point'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You can&apos;t defeat me in verbal combat, [color=special]$[core.player1.name][/color].  You should leave before I trick you out of another one of your skill points.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Remember when I tricked you into giving me one of your skill points, [color=special]$[core.player1.name][/color]?  Come back and see me sometime!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You haven&apos;t customized your gameplay controls in the [color=special]pause menu[/color] yet, I see.  You probably don&apos;t have any augmentations, either.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Your customized gameplay controls will not help you against me, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

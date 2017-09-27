@@ -1,0 +1,87 @@
+<parameters>
+	<data>
+		<parameter>@rel</parameter>
+		<parameter>@font-height</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@status</parameter>
+	</text>
+</parameters>
+
+<template name = 'wave.progress.chart.insert' version = 'allowance'>
+
+    <insert:item id = 'insert' rel = '@rel' class = 'progress-chart-item'>
+
+        <stack>
+
+            <label class = 'header' x = '5%' y = '0' width = '90%' value = '@title' />
+
+            <item>
+
+                <rect class = 'progress-bar-border' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <rect class = 'progress-bar-background' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+                <animated-rect id = 'progress-bar' class = 'progress-bar-allowance' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <label id = 'status' xfont = 'high-contrast' x = '50%' y = '0' align = 'center' width = '90%' value = '@status' />
+
+            </item>
+
+        </stack>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'wave.progress.chart.insert' version = 'requirement'>
+
+    <insert:item id = 'insert' rel = '@rel' class = 'progress-chart-item'>
+
+        <stack>
+
+            <label class = 'header' x = '5%' y = '0' width = '90%' value = '@title' />
+
+            <item>
+
+                <rect class = 'progress-bar-border' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <rect class = 'progress-bar-background' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+                <animated-rect id = 'progress-bar' class = 'progress-bar-requirement' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <label id = 'status' xfont = 'high-contrast' x = '50%' y = '0' align = 'center' width = '90%' value = '@status' />
+
+            </item>
+
+        </stack>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'wave.progress.chart.insert' version = 'limit'>
+
+    <insert:item id = 'insert' rel = '@rel' class = 'progress-chart-item'>
+
+        <stack>
+
+            <label class = 'header' x = '5%' y = '0' width = '90%' value = '@title' />
+
+            <item>
+
+                <rect class = 'progress-bar-border' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <rect class = 'progress-bar-background' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+                <animated-rect id = 'progress-bar' class = 'progress-bar-limit' x = '0' y = '0' width = '100%' height = '@font-height' rounded = '1' radius = '5' />
+
+                <label id = 'status' xfont = 'high-contrast' x = '50%' y = '0' align = 'center' width = '90%' value = '@status' />
+
+            </item>
+
+        </stack>
+
+    </insert:item>
+
+</template>

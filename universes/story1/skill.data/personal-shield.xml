@@ -1,0 +1,117 @@
+<personal-shield id = 'personal-shield'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>[color=title]Shield[/color] grants you [color=title]time-limited invincibility[/color] against all damage in the game.  Its timer steadily decreases over time, and any [color=title]damage[/color] you suffer accelerates that timer's decrease.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.shields.personal</map>
+                <replay-file>gifs.shields.personal.animation.txt</replay-file>
+                <active-skill>personal-shield</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>[color=title]Shield[/color] grants you [color=title]time-limited invincibility[/color] against all damage in the game.  Its timer steadily decreases over time, and any [color=title]damage[/color] you suffer accelerates that timer's decrease.</overview>
+			<specs>Shield base duration of [color=title]2.0s[/color]
+Recharges in [color=title]30.0s[/color]</specs>
+			<manual>Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.</manual>
+			<gif-data>
+                <map>gifs.shields.personal</map>
+                <replay-file>gifs.shields.personal.animation.txt</replay-file>
+                <active-skill>personal-shield</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Shield[/color], you will lose access to the [color=title]Wall[/color] skill.
+
+Further upgrading the [color=title]Shield[/color] skill will increase the shield's initial duration and lessen the [color=title]time penalty[/color] you endure when taking damage.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Wall[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>2.0</duration>
+			<recharge measure = 'seconds'>30.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '1000' />
+				<modifier name = 'timer-drain-while-motionless' value = '1000' />
+				<modifier name = 'timer-drain-penalty-per-damage-point' value = '6000' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The alpha [color=title]Shield[/color] upgrade extends the [color=dim]base duration[/color] of the effect.  It also absorbs a small percentage of any [color=title]damage[/color] you incur, allowing the shield to withstand more punishment.</overview>
+			<specs>Shield base duration of [color=title]2.5s[/color] (+0.5s)
+Recharges in [color=title]27.0s[/color] (-3.0s)
+Shield absorbs [color=title]25%[/color] of damage</specs>
+			<manual>Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.</manual>
+			<gif-data>
+                <map>gifs.shields.personal</map>
+                <replay-file>gifs.shields.personal.animation.txt</replay-file>
+                <active-skill>personal-shield</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>2.5</duration>
+			<recharge measure = 'seconds'>27.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '1000' />
+				<modifier name = 'timer-drain-while-motionless' value = '1000' />
+				<modifier name = 'timer-drain-penalty-per-damage-point' value = '4500' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>Fully upgrading the [color=title]Shield[/color] skill maximizes the [color=title]base duration[/color] of the shield.  It also absorbs even more damage, providing you with the best possible damage protection.</overview>
+			<specs>Shield base duration of [color=title]3.0s[/color] (+0.5s)
+Recharges in [color=title]24.0s[/color] (-3.0s)
+Shield absorbs [color=title]50%[/color] of damage (+25%)</specs>
+			<manual>Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.</manual>
+			<gif-data>
+                <map>gifs.shields.personal</map>
+                <replay-file>gifs.shields.personal.animation.txt</replay-file>
+                <active-skill>personal-shield</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Shield[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Shield[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>24.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '1000' />
+				<modifier name = 'timer-drain-while-motionless' value = '1000' />
+				<modifier name = 'timer-drain-penalty-per-damage-point' value = '3000' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>Your fully-upgraded [color=title]Shield[/color] skill maximizes the [color=title]base duration[/color] of the shield.  It also absorbs even more damage, providing you with the best possible damage protection.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.shields.personal</map>
+                <replay-file>gifs.shields.personal.animation.txt</replay-file>
+                <active-skill>personal-shield</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</personal-shield>

@@ -1,0 +1,40 @@
+<parameters>
+	<data>
+		<parameter>@item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+		<parameter>@item-advertisement</parameter>
+	</text>
+</parameters>
+
+<template name = 'puzzle.menu.prizes.insert'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label x = '17%' y = '0' width = '90%' value = '@item-title' />
+                <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Cost:  0 gold  (Puzzle Reward)' />
+            </stack>
+
+            <action do = 'show:confirm' item-name = '@item-name' />
+
+        </contents>
+
+        <tooltip render-border = '1'>
+
+            <box>
+                <icon x = '0' y = '0' index = '13' />
+                <label x = '12%' y = '0' width = '75%' value = '[color=special]Item Details:[/color]' />
+                <label x = '12%' y = '40' width = '88%' value = '@item-advertisement' />
+            </box>
+
+        </tooltip>
+
+    </insert:item>
+
+</template>

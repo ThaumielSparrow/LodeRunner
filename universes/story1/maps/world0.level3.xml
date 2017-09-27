@@ -1,0 +1,328 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 221 221 0 0 223 218 153 219 218 228 153 
+			0 0 222 200 0 0 0 203 0 154 0 0 202 154 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 152 
+			26 222 222 24 27 221 223 222 228 154 222 23 29 224 
+			0 0 202 204 0 201 205 0 0 152 204 207 0 0 
+			0 224 202 0 0 0 204 223 0 152 0 221 223 0 
+			0 0 202 0 0 0 0 0 0 153 223 200 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 204 0 0 
+			0 222 227 218 154 226 23 27 226 223 0 0 0 0 
+			226 204 0 0 154 0 0 0 0 202 152 227 152 0 
+			0 205 153 23 23 227 224 0 0 0 154 204 226 154 
+			0 209 152 0 0 0 205 223 28 222 153 0 0 152 
+			0 227 152 0 0 0 0 0 0 204 154 225 27 223 
+			225 201 154 221 221 0 222 0 0 0 154 0 0 0 
+			202 200 152 0 0 0 0 0 0 0 152 0 207 0 
+			0 200 152 216 216 226 217 216 153 222 228 152 225 0 
+			0 0 153 0 0 0 0 0 154 0 0 153 0 0 
+			210 0 153 228 24 24 23 220 153 0 0 154 227 228 
+			223 227 23 203 0 0 204 205 227 29 26 225 201 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 342 302 0 0 343 0 0 0 0 0 0 
+			0 0 300 349 0 0 0 302 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 283 263 0 0 283 0 340 0 0 265 0 0 283 
+			0 0 0 302 0 300 0 0 0 0 0 0 0 0 
+			0 340 0 0 0 0 348 302 0 0 0 0 302 0 
+			0 0 300 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 349 0 0 
+			0 342 302 0 0 265 0 0 283 0 0 0 0 0 
+			340 0 0 0 0 0 0 0 0 300 0 342 0 0 
+			0 263 0 0 0 283 0 0 0 0 0 300 263 0 
+			0 0 0 0 0 0 300 263 0 265 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 265 0 302 
+			0 0 0 340 302 0 300 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 348 0 0 0 0 0 0 0 0 263 0 283 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 265 0 0 0 265 0 0 0 0 344 0 
+			300 263 0 302 0 0 300 0 263 0 0 283 302 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '11' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Brent' title = '' />
+	<entity x = '6' y = '3' genus = '3' species = 'terminal' ai-behavior = '1' name = 'terminal1' class = 'terminal' nick = 'Information Terminal' title = '' />
+	<entity x = '12' y = '12' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Connie' title = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '7' x = '12' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '15' x = '13' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '13' x = '6' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '18' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '11' x = '8' genus = '6' class = '' />
+<entity name = 'gold.uid.5' title = '' ai-behavior = '1' nick = '' y = '17' x = '0' genus = '6' class = '' />
+<entity name = 'gold.uid.6' title = '' ai-behavior = '1' nick = '' y = '18' x = '1' genus = '6' class = '' />
+<entity name = 'gold.uid.7' title = '' ai-behavior = '1' nick = '' y = '15' x = '5' genus = '6' class = '' />
+<entity name = 'gold.uid.8' title = '' ai-behavior = '1' nick = '' y = '8' x = '2' genus = '6' class = '' />
+<entity name = 'gold.uid.9' title = '' ai-behavior = '1' nick = '' y = '5' x = '1' genus = '6' class = '' />
+<entity name = 'gold.uid.10' title = '' ai-behavior = '1' nick = '' y = '3' x = '7' genus = '6' class = '' />
+<entity name = 'gold.uid.11' title = '' ai-behavior = '1' nick = '' y = '0' x = '13' genus = '6' class = '' />
+<entity name = 'gold.uid.12' title = '' ai-behavior = '1' nick = '' y = '2' x = '11' genus = '6' class = '' />
+<entity name = 'gold.uid.13' title = '' ai-behavior = '1' nick = '' y = '7' x = '6' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Brent' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '2' x = '10' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safezone' height = '4' width = '9' behavior = '2' y = '1' x = '0'>
+	<touch>
+		<script name = 'safezone.touch' />
+	</touch>
+	<hover />
+	<exit>
+		<script name = 'safezone.exit' />
+	</exit>
+</trigger>
+<trigger prompt = '' name = 'quest' height = '5' width = '1' behavior = '2' y = '0' x = '0'>
+	<touch>
+		<script name = 'quest.touch' />
+	</touch>
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = 'Press [color=special]@enter[/color] to use terminal' name = 'terminal1.talk' height = '1' width = '1' behavior = '3' y = '3' x = '6'>
+	<touch />
+	<hover>
+		<script name = 'terminal1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '3' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '3' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '12' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '15' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '17' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '17' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.e' height = '1' width = '1' behavior = '1' y = '16' x = '2'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.f' height = '1' width = '1' behavior = '1' y = '14' x = '2'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.g' height = '1' width = '1' behavior = '1' y = '11' x = '2'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Connie' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '11' x = '11' class = 'talk'>
+    <touch />
+    <hover>
+        <script name = 'npc2.talk' />
+    </hover>
+    <exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// Set hotspots for first NPC
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.a")
+                   .addHotspot("sleep(0.5)");
+
+        // Trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+
+        // Set hotspots for second NPC
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(2.25)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("npc2.g")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.g")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(1.75)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc2.g")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(3.0)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("npc2.g")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("npc2.f")
+                   .addHotspot("npc2.g")
+                   .addHotspot("sleep(5000.0)");
+
+        // Trigger follow
+        trigger("npc2.talk").follow("npc2");
+
+	</script>
+	<script name = 'onvisit'>
+		// If we haven&apos;t visited this map yet, the "talk to Brent"
+        // quest will be "inactive."  In that event, let&apos;s activate the quest for the player...
+        #define QUEST "0.3.npc1.quest"
+
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // First quest for the player, an easy one
+            quest(QUEST).status("active");
+        }
+
+
+        // Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("0.3.npc1.quest").status() == "active" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // No "turn in" indicator for this quest
+        else
+        {
+            // n/a
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "0.3.npc1.quest"
+
+        #define UPDATE_TALKED "update-talked"
+        #define UPDATE_KILLED_FAST "update-killed-fast"
+        #define UPDATE_KILLED_AFTER "update-killed-after"
+
+        // Did we talk to him already?  If not, then we failed the quest.
+        if ( quest(QUEST).update(UPDATE_TALKED).status() != "active" )
+        {
+            // killed too soon
+            quest(QUEST).status("failed");
+            quest(QUEST).update(UPDATE_KILLED_FAST).status("active");
+        }
+
+        else
+        {
+            // killed him after completion, doesn&apos;t really matter
+            quest(QUEST).update(UPDATE_KILLED_AFTER).status("active");
+        }
+
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'safezone.exit' />
+	<script name = 'safezone.touch'>
+		// I have no arrow object in this level.
+        // Any NPC can call dismissFYI, so I&apos;ll just use the NPC on this level.
+        npc("npc1").dismissFYI("tutorial3");
+	</script>
+	<script name = 'onbirth' />
+	<script name = 'quest.touch' />
+	<script name = 'npc1.talk'>
+		#define QUEST "0.3.npc1.quest"
+
+        #define UPDATE_TALKED "update-talked"
+
+        // If we haven&apos;t talked to him yet, enable free item response after some chatting
+        if ( quest(QUEST).update(UPDATE_TALKED).status() != "active" )
+        {
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("free-item").enable();
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("default").disable();
+
+            // Disable all item selection options by default
+            npc("npc1").conversation("intro").branch("root.free-item").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+            // Select 2 at random to enable
+            npc("npc1").conversation("intro").branch("root.free-item").getLinesByClass("prompt").getResponsesByClass("*").selectRandom(2).enable();
+
+
+            // Flag that we talked to him
+            quest(QUEST).update(UPDATE_TALKED).status("active");
+
+
+            // Clear quest indicator
+            npc("npc1").clearIndicators();
+        }
+
+        // We already got an item, so next time it&apos;ll just be "goodbye"
+        else
+        {
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("default").enable();
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("free-item").disable();
+        }
+
+        // this guy always runs the same conversation, other than the free item / goodbye thing...
+        npc("npc1").talk("intro");
+	</script>
+    <script name = 'npc2.talk'>
+
+        // Always a single generic conversation
+        // focused on control customization.
+        npc("npc2").talk("generic");
+
+    </script>
+	<script name = 'terminal1.talk'>
+		// This terminal always uses the same conversation
+        npc("terminal1").talk("default", "shop");
+	</script>
+	<script name = 'onunload'>
+		// get rid of fyi message(s)
+        npc("arrow1")
+            .killFYI("tutorial3");
+	</script>
+</scripts>

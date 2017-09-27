@@ -1,0 +1,16 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@text</parameter>
+	</text>
+</parameters>
+
+<template name = 'generic.injection'>
+
+    <item id = 'container' disabled = '1' class = 'frame'>
+        <label x = '5%' y = '0' width = '90%' value = '@text' text-effect = 'blaster:line-by-line' />
+    </item>
+
+</template>

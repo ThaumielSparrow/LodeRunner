@@ -1,0 +1,540 @@
+Background - color, gradient direction, gradient start / end, gradient alpha factor
+border - size, color
+border shadow - size, color
+text - color
+special color classes for bbcode
+
+
+
+
+
+
+
+    <local target = 'default3'>
+
+        <xcolor-definition name = 'border:active'>125, 125, 125</xcolor-definition>
+        <color-definition name = 'border:active'>35, 35, 35</color-definition>
+            <color-definition name = 'border:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'border:highlight'>215, 215, 215</color-definition>
+
+        <xcolor-definition name = 'shadow:active'>225, 225, 225</xcolor-definition>
+        <color-definition name = 'shadow:active'>35, 35, 35</color-definition>
+            <color-definition name = 'shadow:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'text:highlight'>184, 56, 17</color-definition>
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.normal:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.normal:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.normal:highlight'>225, 225, 225</color-definition>
+
+        <color-definition name = 'colors.dim:active'>155, 155, 155</color-definition>
+            <color-definition name = 'colors.dim:inactive'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.skill:active'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.button:highlight'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.title:active'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.title:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.title:highlight'>125, 125, 125</color-definition>
+
+
+
+        <xcolor-definition name = 'border:active'>195, 195, 195</xcolor-definition>
+            <xcolor-definition name = 'shadow:active'>75, 75, 75</xcolor-definition>
+        <color-definition name = 'border:active'>75, 75, 75</color-definition>
+            <color-definition name = 'shadow:active'>45, 45, 45</color-definition>
+
+        <color-definition name = 'border:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'shadow:inactive'>45, 45, 45</color-definition>
+
+        <color-definition name = 'border:highlight'>225, 225, 225</color-definition>
+            <color-definition name = 'shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:active'>175, 175, 175</color-definition>
+            <color-definition name = 'text:inactive'>225, 225, 225</color-definition>
+            <color-definition name = 'text:highlight'>225, 225, 225</color-definition>
+
+
+        <color-definition name = 'colors.normal:active'>225, 225, 225</color-definition>
+            <color-definition name = 'colors.normal:inactive'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.normal:highlight'>225, 225, 225</color-definition>
+
+        <color-definition name = 'colors.dim:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.dim:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'colors.dim:highlight'>175, 75, 75</color-definition>
+
+        <color-definition name = 'colors.special:active'>207, 106, 19</color-definition>
+            <color-definition name = 'colors.special:inactive'>225, 225, 225</color-definition>
+            <color-definition name = 'colors.special:highlight'>192, 160, 40</color-definition>
+
+        <color-definition name = 'colors.evil:active'>225, 75, 225</color-definition>
+            <color-definition name = 'colors.evil:inactive'>25, 75, 125</color-definition>
+            <color-definition name = 'colors.evil:highlight'>25, 15, 105</color-definition>
+
+        <color-definition name = 'colors.warning:active'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.warning:inactive'>25, 225, 225</color-definition>
+            <color-definition name = 'colors.warning:highlight'>225, 25, 125</color-definition>
+
+        <color-definition name = 'colors.lowlight:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.lowlight:inactive'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.lowlight:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.highlight:active'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.highlight:inactive'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.highlight:highlight'>225, 25, 25</color-definition>
+
+        <color-definition name = 'colors.header:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.header:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'colors.header:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.headerx:active'>45, 45, 45</color-definition>
+            <color-definition name = 'colors.headerx:inactive'>45, 45, 45</color-definition>
+            <color-definition name = 'colors.headerx:highlight'>45, 45, 45</color-definition>
+
+    </local>
+
+
+
+    <theme class = 'default3'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:active</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:active</color>
+                </text-color>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:inactive</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:highlight</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <gradient>
+            <active>
+                <active>1</active>
+                <color1>.global.gradient.color1:active</color1>
+                <color2>.global.gradient.color2:active</color2>
+                <direction>1</direction>
+                <alpha-factor>0.5</alpha-factor>
+            </active>
+            <inactive>
+                <active>1</active>
+                <color1>.global.gradient.color1:inactive</color1>
+                <color2>.global.gradient.color2:inactive</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </inactive>
+            <highlight>
+                <active>2</active>
+                <color1>.global.gradient.color1:highlight</color1>
+                <color2>.global.gradient.color2:highlight</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </highlight>
+        </gradient>
+        <color-classes>
+            <active>
+                <color name = 'normal'>.colors.normal:active</color>
+                <color name = 'dim'>.colors.dim:active</color>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'evil'>.colors.evil:active</color>
+                <color name = 'warning'>.colors.warning:active</color>
+                <color name = 'lowlight'>.colors.lowlight:active</color>
+                <color name = 'highlight'>.colors.highlight:active</color>
+                <color name = 'header'>.colors.header:active</color>
+                <color name = 'headerx'>.colors.headerx:active</color>
+            </active>
+            <inactive>
+                <color name = 'normal'>.colors.normal:inactive</color>
+                <color name = 'dim'>.colors.dim:inactive</color>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'evil'>.colors.evil:inactive</color>
+                <color name = 'warning'>.colors.warning:inactive</color>
+                <color name = 'lowlight'>.colors.lowlight:inactive</color>
+                <color name = 'highlight'>.colors.highlight:inactive</color>
+                <color name = 'header'>.colors.header:inactive</color>
+                <color name = 'headerx'>.colors.headerx:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'normal'>.colors.normal:highlight</color>
+                <color name = 'dim'>.colors.dim:highlight</color>
+                <color name = 'special'>.colors.special:highlight</color>
+                <color name = 'evil'>.colors.evil:highlight</color>
+                <color name = 'warning'>.colors.warning:highlight</color>
+                <color name = 'lowlight'>.colors.lowlight:highlight</color>
+                <color name = 'highlight'>.colors.highlight:highlight</color>
+                <color name = 'header'>.colors.header:highlight</color>
+                <color name = 'headerx'>.colors.headerx:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+
+
+
+
+
+
+
+
+
+
+
+
+.colors.special:active {
+	color: 237, 77, 24
+}
+
+.colors.normal:active {
+	color: 175, 175, 175
+}
+
+.colors.normal:inactive {
+	color: 125, 125, 125
+}
+
+.colors.normal:highlight {
+	color: 225, 225, 225
+}
+
+.colors.dim:active {
+	color: 155, 155, 155
+}
+
+.colors.dim:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:active {
+	color: 125, 125, 125
+}
+
+.colors.skill:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:highlight {
+	color: 175, 175, 175
+}
+
+.colors.button:highlight {
+	color: 237, 77, 24
+}
+
+.colors.title:active {
+	color: 175, 175, 125
+}
+
+.colors.title:inactive {
+	color: 125, 125, 125
+}
+
+.colors.title:highlight {
+	color: 125, 125, 125
+}
+
+.colors.normal:active {
+	color: 225, 225, 225
+}
+
+.colors.normal:inactive {
+	color: 175, 175, 175
+}
+
+.colors.normal:highlight {
+	color: 225, 225, 225
+}
+
+.colors.dim:active {
+	color: 175, 175, 175
+}
+
+.colors.dim:inactive {
+	color: 75, 75, 75
+}
+
+.colors.dim:highlight {
+	color: 175, 75, 75
+}
+
+.colors.special:active {
+	color: 207, 106, 19
+}
+
+.colors.special:inactive {
+	color: 225, 225, 225
+}
+
+.colors.special:highlight {
+	color: 192, 160, 40
+}
+
+.colors.evil:active {
+	color: 225, 75, 225
+}
+
+.colors.evil:inactive {
+	color: 25, 75, 125
+}
+
+.colors.evil:highlight {
+	color: 25, 15, 105
+}
+
+.colors.warning:active {
+	color: 225, 25, 25
+}
+
+.colors.warning:inactive {
+	color: 25, 225, 225
+}
+
+.colors.warning:highlight {
+	color: 225, 25, 125
+}
+
+.colors.lowlight:active {
+	color: 175, 175, 175
+}
+
+.colors.lowlight:inactive {
+	color: 175, 175, 175
+}
+
+.colors.lowlight:highlight {
+	color: 175, 175, 175
+}
+
+.colors.highlight:active {
+	color: 225, 25, 25
+}
+
+.colors.highlight:inactive {
+	color: 225, 25, 25
+}
+
+.colors.highlight:highlight {
+	color: 225, 25, 25
+}
+
+.colors.header:active {
+	color: 175, 175, 175
+}
+
+.colors.header:inactive {
+	color: 75, 75, 75
+}
+
+.colors.header:highlight {
+	color: 175, 175, 175
+}
+
+.colors.headerx:active {
+	color: 45, 45, 45
+}
+
+.colors.headerx:inactive {
+	color: 45, 45, 45
+}
+
+.colors.headerx:highlight {
+	color: 45, 45, 45
+}
+
+.colors.special:inactive {
+	color: 207, 106, 19
+}
+
+.colors.title:inactive {
+	color: 175, 175, 125
+}
+
+.colors.special:active {
+	color: 237, 77, 24
+}
+
+.colors.special:inactive {
+	color: 125, 125, 125
+}
+
+.colors.dim:active {
+	color: 155, 155, 155
+}
+
+.colors.dim:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:active {
+	color: 125, 125, 125
+}
+
+.colors.skill:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:highlight {
+	color: 175, 175, 175
+}
+
+.colors.title:active {
+	color: 175, 175, 175
+}
+
+.colors.title:inactive {
+	color: 125, 125, 125
+}
+
+.colors.title:highlight {
+	color: 125, 125, 125
+}
+
+.colors.special:active {
+	color: 237, 77, 24
+}
+
+.colors.special:inactive {
+	color: 125, 125, 125
+}
+
+.colors.special:highlight {
+	color: 225, 225, 25
+}
+
+.colors.title:active {
+	color: 175, 175, 125
+}
+
+.colors.title:inactive {
+	color: 125, 125, 125
+}
+
+.colors.title:highlight {
+	color: 125, 125, 125
+}
+
+.colors.button:highlight {
+	color: 237, 77, 24
+}
+
+.colors.special:active {
+	color: 237, 77, 24
+}
+
+.colors.special:inactive {
+	color: 155, 155, 155
+}
+
+.colors.special:highlight {
+	color: 125, 125, 125
+}
+
+.colors.dim:active {
+	color: 155, 155, 155
+}
+
+.colors.dim:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:active {
+	color: 125, 125, 125
+}
+
+.colors.skill:inactive {
+	color: 125, 125, 125
+}
+
+.colors.skill:highlight {
+	color: 175, 175, 175
+}
+
+.colors.button:highlight {
+	color: 237, 77, 24
+}
+
+.colors.numeric:active {
+	color: 175, 175, 175
+}
+
+.colors.numeric:inactive {
+	color: 175, 175, 175
+}
+
+.colors.numeric:highlight {
+	color: 237, 77, 24
+}
+
+.colors.nonalphanumeric:active {
+	color: 25, 225, 25
+}
+
+.colors.nonalphanumeric:inactive {
+	color: 175, 175, 125
+}
+
+.colors.nonalphanumeric:highlight {
+	color: 237, 77, 24
+}
+
+.colors.button {
+	color: 225, 27, 27
+}
+
+.colors.special:active {
+	color: 237, 77, 24
+}
+
+.colors.special:inactive {
+	color: 237, 77, 24
+}
+
+.colors.special:highlight {
+	color: 237, 77, 24
+}
+
+.colors.title:active {
+	color: 175, 175, 125
+}
+
+.colors.title:inactive {
+	color: 175, 175, 125
+}
+
+.colors.title:highlight {
+	color: 175, 175, 125
+}

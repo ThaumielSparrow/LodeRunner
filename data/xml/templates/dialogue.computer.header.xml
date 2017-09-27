@@ -1,0 +1,49 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@back-button-text</parameter>
+		<parameter>@header-text</parameter>
+		<parameter>@responses-header-text</parameter>
+		<parameter>@player-name/</parameter>
+	</text>
+</parameters>
+
+<template name = 'dialogue.computer.header'>
+
+    <item-group render-border = '0' per-row = '2'>
+
+        <item disabled = '1'>
+            <label x = '5%' y = '0' width = '90%' align = '' value = '[color=normal]Computer Options[/color]' />
+        </item>
+
+        <item id = 'spacer' disabled = '1' />
+
+    </item-group>
+
+    <item-group render-border = '1' per-row = '2'>
+
+        <item glow = '1'>
+            <label x = '5%' y = '0' width = '90%' value = '@back-button-text' />
+        </item>
+
+        <item disabled = '1'>
+            <label x = '95%' y = '0' width = '90%' align = 'right' value = '@header-text' />
+        </item>
+
+    </item-group>
+
+    <item-group render-border = '0' per-row = '2'>
+
+        <item disabled = '1'>
+            <label x = '5%' y = '10' width = '90%' value = '[color=normal]@responses-header-text[/color]' />
+        </item>
+
+        <item disabled = '1'>
+            <label x = '95%' y = '10' width = '90%' align = 'right' value = '[color=normal]tty://home/@player-name/[/color]' />
+        </item>
+
+    </item-group>
+
+</template>

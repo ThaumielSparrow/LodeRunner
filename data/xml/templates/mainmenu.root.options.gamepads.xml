@@ -1,0 +1,71 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.gamepads'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' xvalign = 'center' center-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0'>
+
+            <item class = 'first-title' id = 'testid1' rel = 'root.options.gamepads.customize'>
+                <hidden id = 'replay-file' rel = 'root.options.gamepads.customize.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Customize Controls' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.options.controls.gamepad' gamepad-translations = 'on' rel = 'root.options.controls.actions.moveleft' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set up gamepad...[/color]' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '-180' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid2' rel = 'root.options.gamepads.switch'>
+                <hidden id = 'replay-file' rel = 'root.options.gamepads.switch.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Switch Gamepads' />
+                </stack>
+                <action do = 'show:gamepads' rel = 'root.generic' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid2'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Select device...[/color]' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid3' rel = 'root.options.gamepads.back'>
+                <hidden id = 'replay-file' rel = 'root.options.gamepads.back.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' />
+                </stack>
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Back to options...[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

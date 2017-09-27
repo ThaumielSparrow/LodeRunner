@@ -1,0 +1,194 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 211 0 0 211 211 0 0 0 
+			0 0 0 0 0 0 0 189 217 152 183 217 154 195 199 191 0 0 
+			0 0 0 0 0 152 189 178 0 152 166 0 199 165 172 163 194 0 
+			0 0 0 0 0 152 177 172 0 152 177 0 0 172 166 165 0 0 
+			0 0 0 0 153 186 176 0 153 186 175 193 197 165 165 0 0 0 
+			0 0 0 0 152 0 174 211 154 164 177 172 172 175 166 0 0 0 
+			0 0 0 152 197 0 176 209 153 0 176 176 171 175 165 0 0 0 
+			0 0 0 154 0 0 0 185 153 0 168 173 167 176 0 0 0 0 
+			0 207 0 154 0 219 183 0 181 154 0 175 168 0 0 0 0 0 
+			0 196 0 193 193 0 0 0 0 153 0 170 0 0 0 187 0 0 
+			0 0 0 0 0 0 152 187 186 194 0 0 0 0 0 161 0 0 
+			0 0 0 0 0 210 152 0 0 0 0 219 219 152 193 160 0 0 
+			0 0 208 0 0 181 180 181 153 0 188 0 0 154 0 0 0 0 
+			0 0 192 211 0 0 0 175 152 211 0 211 211 154 0 0 0 0 
+			0 0 0 190 0 189 0 0 185 186 199 193 193 188 0 0 0 0 
+			0 0 195 171 186 176 190 0 0 0 211 0 0 0 0 199 0 0 
+			0 0 0 0 179 163 178 199 0 0 198 194 211 0 180 176 0 0 
+			0 0 0 0 169 0 161 0 0 187 163 161 193 186 160 0 0 0 
+			0 0 0 0 0 0 211 0 0 0 165 0 0 0 0 0 0 0 
+			0 0 0 0 0 211 183 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 193 187 166 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 174 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 302 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 302 0 300 0 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 300 0 0 300 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 302 0 0 0 0 0 
+			0 0 0 300 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '13' y = '16' modal = '0'>
+		<structure>
+			0 52 0 
+			0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '12' y = '13' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '4' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '6' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '5' y = '21' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '4' y = '23' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '6' y = '18' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '3' y = '17' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '11' y = '17' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '11' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '14' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+	<entity x = '6' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.10' class = '' nick = '' title = '' />
+	<entity x = '3' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.11' class = '' nick = '' title = '' />
+	<entity x = '14' y = '14' genus = '9' ai-behavior = '1' name = 'lever.y' class = '' nick = '' title = '' mount = '1' position = '2' />
+	<entity x = '10' y = '15' genus = '9' ai-behavior = '1' name = 'lever.x' class = '' nick = '' title = '' mount = '2' position = '1' />
+</entities>
+<triggers>
+	<trigger name = 'shift1.x1' x = '0' y = '15' width = '1' height = '5' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift1.x2' x = '17' y = '15' width = '1' height = '5' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift1.y1' x = '10' y = '2' width = '5' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift1.y2' x = '10' y = '25' width = '5' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever.x' x = '10' y = '15' width = '1' height = '1' behavior = '3' prompt = '@do:use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'shift1.shift.x' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever.y' x = '14' y = '14' width = '1' height = '1' behavior = '3' prompt = '@do:use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'shift1.shift.y' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'origin' x = '7' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map()
+
+            .setParams({
+                "overview": "Carefully move the small platform through the level to collect all of the gold.",
+                "tooltip": "Look at the crates as places where you should move the platform.",
+                "prizes.warehouses": ["puzzle1"],
+                "prizes.min-quality": 1,
+                "prizes.max-quality": 1,
+                "prizes.required-item-names": ["running-shoes"]
+            })
+
+            .setWaveAllowances({
+                "bombs": 0
+            });
+
+        showPuzzleIntro();
+	</script>
+	<script name = 'shift1.shift.x'>
+		if ( npc("lever.x").hasPosition("left") )
+        {
+            npc("lever.x").setPosition("right");
+            map().plane("shift1").shiftToX("shift1.x2", 3.0);
+        }
+
+        else
+        {
+            npc("lever.x").setPosition("left");
+            map().plane("shift1").shiftToX("shift1.x1", 3.0);
+        }
+	</script>
+	<script name = 'shift1.shift.y'>
+		if ( npc("lever.y").hasPosition("up") )
+        {
+            npc("lever.y").setPosition("down");
+            map().plane("shift1").shiftToY("shift1.y2", 3.0);
+        }
+
+        else
+        {
+            npc("lever.y").setPosition("up");
+            map().plane("shift1").shiftToY("shift1.y1", 3.0);
+        }
+	</script>
+</scripts>

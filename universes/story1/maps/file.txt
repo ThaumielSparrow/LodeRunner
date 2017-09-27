@@ -1,0 +1,98 @@
+<script name = 'onload'>
+		<packet />
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1); npc1.b; sleep(1.5); npc1.c; sleep(0.5); npc1.b; npc1.d; sleep(1.5); npc1.e; sleep(2.0)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1); npc2.b; npc2.c; sleep(1.5); npc2.d; npc2.e; sleep(2.0); npc2.f; npc2.d; sleep(0.5)' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+	</script>
+<script name = 'npc2.talk'>
+		<packet>
+			<event variable = 'QUEST.STATUS.COMPLETE' switch-type = 'quest-status' quest = '1.2.npc2.quest' type = 'condition-switch'>
+				<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.y' type = 'vars-set' value = '0' />
+					<event conversation = 'quest:pending:available' type = 'disable-lines-by-class' class = '*' entity = 'npc2' />
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-took-shoes' format = 'string' />
+					<event variable1 = 'algebra.y' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event variable = 'algebra.y' type = 'vars-set' value = '1' />
+						</event>
+					</event>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-took-other' format = 'string' />
+					<event variable1 = 'algebra.y' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event variable = 'algebra.y' type = 'vars-set' value = '2' />
+						</event>
+					</event>
+					<event variable = 'algebra.y' switch-type = 'variable' quest = '1.2.npc2.quest' type = 'condition-switch'>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '1' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'completed' entity = 'npc2' />
+						</event>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '2' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'failed' entity = 'npc2' />
+						</event>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '0' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'default' entity = 'npc2' />
+						</event>
+					</event>
+					<event conversation = 'quest:pending:available' type = 'dialogue' entity = 'npc2' />
+				</event>
+				<event variable = 'QUEST.STATUS.FAILED' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-spilled-perfume' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:failed:spilled-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:failed:killed-merchant' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:complete:killed-carlos' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:complete:delivered-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.IN.PROGRESS' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-bought' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:in-progress:bought-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+							<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+								<event type = 'condition-then'>
+									<event conversation = 'quest:in-progress:killed-carlos' type = 'dialogue' entity = 'npc2' />
+								</event>
+								<event type = 'condition-else'>
+									<event conversation = 'quest:in-progress' type = 'dialogue' entity = 'npc2' />
+								</event>
+							</event>
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+	</script>
+<script name = 'desiree.talk'>
+		<packet>
+			<event variable = 'session.quest.act1.internet' type = 'condition-switch'>
+				<event variable = 'app.active-map-name' raw-value = 'inactive' type = 'condition-when'>
+					<event conversation = 'quest' type = 'dialogue' entity = 'npc2' />
+				</event>
+				<event variable = 'app.active-map-name' raw-value = 'active' type = 'condition-when'>
+					<event conversation = 'quest-in-progress' type = 'dialogue' entity = 'npc2' />
+				</event>
+			</event>
+		</packet>
+	</script>

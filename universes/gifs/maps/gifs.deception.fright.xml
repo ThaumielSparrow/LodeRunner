@@ -1,0 +1,143 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 323 27 152 29 323 0 0 323 323 24 29 323 
+			0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 152 323 23 323 152 0 0 0 0 0 
+			0 0 0 0 0 0 152 323 323 0 0 303 152 0 0 0 0 0 
+			0 0 0 152 323 23 323 303 0 0 0 303 323 323 206 323 0 323 
+			0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 303 18 303 
+			0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 0 0 283 0 0 300 263 0 0 283 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 263 0 265 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 263 0 283 302 0 0 0 300 0 264 0 284 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '4' y = '10' genus = '1' ai-behavior = '1' name = 'enemy1' nick = '' title = '' />
+	<entity x = '16' y = '6' genus = '1' ai-behavior = '1' name = 'enemy2' nick = '' title = '' />
+	<entity x = '10' y = '8' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '6' y = '6' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '16' y = '8' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '14' y = '10' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '9' y = '10' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '5' y = '7' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'watch1' x = '11' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'timer1' x = '10' y = '1' width = '1' height = '1' behavior = '5' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'timer1.check' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'watch2' x = '12' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '12' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '15' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event variable = 'core.x' type = 'vars-set' value = '0' />
+		</packet>
+	</script>
+	<script name = 'timer1.check'>
+		<packet>
+			<event variable = 'core.y' type = 'trigger-contains' target = 'watch1' entity = 'enemy2' />
+			<event variable1 = 'core.y' operator = '==' variable2 = 'core.player1.skill1' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'activate-skill' type = 'entity-message' target = 'watch1' param = 'fright' entity = 'player1' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+			<event variable = 'core.y' type = 'trigger-contains' target = 'watch2' entity = 'enemy2' />
+			<event variable1 = 'core.y' operator = '==' variable2 = 'core.player1.skill1' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event variable1 = 'core.x' operator = '==' variable2 = 'core.player1.skill1' raw-value = '0' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event variable = 'core.x' type = 'vars-set' value = '1' />
+							<event type = 'call-script' script = 'player.movement' />
+						</event>
+						<event type = 'condition-else' />
+					</event>
+				</event>
+				<event type = 'condition-else' />
+			</event>
+			<event variable = 'core.y' type = 'trigger-contains' target = 'wp2' entity = 'player1' />
+			<event variable1 = 'core.y' operator = '==' variable2 = 'core.player1.skill1' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event delay = '60' type = 'reload-map' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+	</script>
+	<script name = 'player.movement'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet />
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

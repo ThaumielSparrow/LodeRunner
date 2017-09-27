@@ -1,0 +1,273 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 330 325 0 0 0 0 324 
+			332 255 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 312 0 0 154 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 327 154 330 257 0 0 0 0 332 334 
+			0 0 0 0 0 152 0 0 0 0 0 0 310 303 
+			257 0 0 0 0 153 0 0 0 0 0 0 0 313 
+			308 0 0 153 331 253 326 154 325 219 0 0 0 0 
+			305 331 154 330 314 0 0 154 0 0 0 0 0 0 
+			0 307 153 308 0 0 0 152 9 0 253 333 0 0 
+			216 0 152 216 219 219 153 324 257 330 310 0 0 0 
+			0 0 153 0 0 0 323 311 144 0 0 0 0 0 
+			0 154 256 154 0 0 0 0 144 0 0 109 0 0 
+			154 332 314 323 152 0 0 0 144 0 0 0 0 0 
+			257 308 0 303 255 153 0 0 144 0 0 0 0 0 
+			303 0 0 0 309 330 256 323 210 0 0 0 0 0 
+			0 0 0 0 0 311 313 303 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '11' y = '13' modal = '0'>
+		<structure>
+			0 49 0 
+			49 209 49 
+			0 49 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '12' y = '1' modal = '0'>
+		<structure>
+			49 152 
+			209 49 
+		</structure>
+	</plane>
+	<plane name = 'shift3' x = '8' y = '3' modal = '0'>
+		<structure>
+			49 0 49 
+			0 75 0 
+			49 0 49 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 300 0 302 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 302 0 300 0 0 0 0 0 0 0 0 0 0 
+			302 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 302 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '3' x = '1' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '15' x = '11' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '5' x = '4' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '3' x = '9' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '2' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '7' x = '11' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '13' x = '6' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '9' x = '5' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '10' x = '1' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '6' x = '2' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '11' x = '9' genus = '6' class = '' />
+	<entity x = '7' y = '13' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+	<entity x = '1' y = '6' genus = '9' ai-behavior = '1' name = 'lever3' class = '' nick = '' title = '' mount = '3' position = '0' />
+	<entity x = '6' y = '5' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+	<trigger name = 'wp1a' x = '0' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1b' x = '13' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2a' x = '2' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2b' x = '12' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3a' x = '8' y = '0' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3b' x = '8' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '7' y = '13' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to activate lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever2' x = '6' y = '5' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to activate lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever2.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever3' x = '1' y = '6' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to activate lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever3.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'terminal1' x = '7' y = '2' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to access terminal'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'terminal1.access' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'spawn1' x = '12' y = '0' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle19.enter' x = '8' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle19'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle19.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '6' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle19.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle19.enter").loadMap("puzzle19", "origin");
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b", 3.0);
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp1a", 3.0);
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points left?
+        if ( npc("lever2").hasPosition("left") )
+        {
+            // point right
+            npc("lever2").setPosition("right");
+
+            // shift right
+            map().plane("shift2").shiftToX("wp2b", 3.0);
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever2").setPosition("left");
+
+            // shift far left
+            map().plane("shift2").shiftToX("wp2a", 3.0);
+        }
+	</script>
+	<script name = 'lever3.action'>
+		// lever points up?
+        if ( npc("lever3").hasPosition("up") )
+        {
+            // point down
+            npc("lever3").setPosition("down");
+
+            // shift down
+            map().plane("shift3").shiftToY("wp3b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever3").setPosition("up");
+
+            // shift up
+            map().plane("shift3").shiftToY("wp3a");
+        }
+	</script>
+	<script name = 'terminal1.access' />
+</scripts>

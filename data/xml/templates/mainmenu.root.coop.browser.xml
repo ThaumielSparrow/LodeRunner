@@ -1,0 +1,142 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@error</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop.browser' version = 'normal'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'backdrop' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '15' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '50' y = '0' width = '90%' value = 'Select a Session...' />
+            </item>
+
+            <xitem disabled = '1'>
+                <rect class = 'contrast-separator' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+            </xitem>
+
+        </item-group>
+
+        <item-group class = 'backdrop'>
+
+            <item disabled = '1'>
+                <label x = '98%' y = '0' align = 'right' width = '100%' value = 'press ESC to return to menu' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group>
+
+            <item disabled = '1'>
+                <x>25% 30% 15% 20% 10%</x>
+                <label x = '5%' y = '0' align = 'left' width = '100%' value = 'Host' />
+                <label x = '25%' y = '0' align = 'left' width = '100%' value = 'Level Set' />
+                <label x = '62.5%' y = '0' align = 'center' width = '100%' value = 'Players' />
+                <label x = '80%' y = '0' align = 'center' width = '100%' value = 'Game Type' />
+                <label x = '95%' y = '0' align = 'center' width = '100%' value = 'Location' />
+
+            </item>
+
+            <item disabled = '1'>
+                <rect class = 'underline' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+            </item>
+
+        </item-group>
+
+        <item-group>
+
+            <item id = 'tunnel'>
+
+                <rowmenu id = 'submenu' x = '0' y = '0' width = '100%' height = '200' uses-focus = '1' uses-scroll = '1'>
+                    <item-group id = 'ext.sessions' class = 'options' />
+                </rowmenu>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'mainmenu.root.coop.browser' version = 'no-games'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height'>
+
+        <item-group class = 'backdrop' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '15' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '50' y = '0' width = '90%' value = 'Select a Session...' />
+            </item>
+
+            <xitem disabled = '1'>
+                <rect class = 'contrast-separator' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+            </xitem>
+
+        </item-group>
+
+        <item-group class = 'backdrop'>
+
+            <item>
+                <label x = '98%' y = '0' align = 'right' width = '100%' value = 'press ESC to return to menu' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group>
+
+            <item disabled = '1'>
+                <x>25% 30% 15% 20% 10%</x>
+                <label x = '5%' y = '0' align = 'left' width = '100%' value = 'Host' />
+                <label x = '25%' y = '0' align = 'left' width = '100%' value = 'Level Set' />
+                <label x = '62.5%' y = '0' align = 'center' width = '100%' value = 'Players' />
+                <label x = '80%' y = '0' align = 'center' width = '100%' value = 'Game Type' />
+                <label x = '95%' y = '0' align = 'center' width = '100%' value = 'Location' />
+
+            </item>
+
+            <item disabled = '1'>
+                <rect class = 'underline' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+            </item>
+
+        </item-group>
+
+        <item-group>
+
+            <item id = 'tunnel'>
+
+                <rowmenu id = 'submenu' x = '0' y = '0' width = '100%' height = '200' uses-focus = '1' uses-scroll = '1'>
+                    <item-group id = 'ext.sessions' class = 'options'>
+                        <item disabled = '1' class = 'option'>
+                            <label x = '50%' align = 'center' value = '@error' />
+                        </item>
+                    </item-group>
+                </rowmenu>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

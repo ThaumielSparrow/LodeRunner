@@ -1,0 +1,8 @@
+// Example file of mods.
+// Remove the ".sample" from the filename
+// to enable.
+
+$ group {
+    background-color: rgb(20, 20, 20);
+    background-alpha: 0.65;
+}

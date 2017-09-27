@@ -1,0 +1,104 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								No one around here has any respect, [color=special]$[core.player1.name][/color].
+
+You've seen it for yourself!  Most people are just using you to distract themselves from the pathetic emptiness of their meaningless, consumer-driven lives!
+
+[color=special]$[core.player1.name][/color], I want you to put an end to all of that.
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I want you to destroy every last talking person in all of [color=special]Lelandria[/color]!  If you do this work for me, I will reward you [color=special]very[/color] well.  Naturally, you will want to spare me so that you can collect your reward.</comment>
+							<response branch-id = 'root.accept'>
+								<phrase>That sounds like my kind of quest.  Sign me up!</phrase>
+								<branch id = 'root.accept'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Remember, [color=special]$[core.player1.name][/color], that you might want to save me for last.  Once I confirm that you&apos;ve killed everyone else, I will gladly reward you with some [color=special]premium items[/color], and possibly more!</comment>
+											<post-script>quest("5.2.npc1.quest").status("active");quest("5.2.npc1.quest").update("update-underway").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Let me get back to you on that one...</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>[color=special]$[core.player1.name][/color], I&apos;ve been tracking your progress.  I see that you&apos;ve killed $[npc.count.dead] out of $[npc.count.total] possible talking people in this game, including me in those numbers.  Keep trying!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Let me update you on your progress, [color=special]$[core.player1.name][/color].  Out of $[npc.count.total] talking people, you have killed $[npc.count.dead], including me in those numbers.  Keep it up!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You&apos;ve killed $[npc.count.dead] of the people in [color=special]Lelandria[/color], and you haven&apos;t even paused to customize your controls.  That would only slow you down, but a surprising number of players do it anyway!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Don&apos;t waste time talking to me, [color=special]$[core.player1.name][/color].  You have $[npc.count.living] more people in [color=special]Lelandria[/color] to kill.  Put that [color=special]@bomb[/color] control to work!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-all-others'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								You did a lot of work for me, [color=special]$[core.player1.name][/color].  You did a lot of good work.
+
+First, let me offer you these [color=special]2 skill points[/color].  You definitely earned them.  I'd also like to give you [color=special]50 free bombs[/color].  You've proven beyond any doubt your ability to use them appropriately.
+							</comment>
+							<post-script>player().addSkillPoints(2).addBombs(50);player().acquireItem("the-ring-of-extreme-prejudice");</post-script>
+						</line>
+						<line id = 'line2'>
+							<comment>At this point, [color=special]$[core.player1.name][/color], you should go ahead and get rid of me as well.</comment>
+							<post-script>quest("5.2.npc1.quest").update("update-almost-done").status("active");npc("npc1").clearIndicators();</post-script>
+						</line>
+						<line id = 'line3'>
+							<comment>Finish your job, [color=special]$[core.player1.name][/color].  One last [color=special]XP[/color] reward for finishing this quest!  Just in case you don&apos;t have a bomb to use on me, have one more free bomb to do the job.</comment>
+							<post-script>player().addBombs(1);</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I don&apos;t want to talk anymore, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>You know what to do, [color=special]$[core.player1.name][/color].  Finish me off!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Just for a moment, I had second thoughts about asking you to get rid of me.  When I noticed that you never took the time to customize your gameplay controls in the [color=special]pause menu[/color], though... I don&apos;t want any part of a game with a player like that, [color=special]$[core.player1.name][/color].  Please, finish me!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Go ahead and use your [color=special]@bomb[/color] control, [color=special]$[core.player1.name][/color].  I know you know what it does!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

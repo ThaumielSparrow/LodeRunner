@@ -1,0 +1,35 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@skill-title1</parameter>
+		<parameter>@skill-title2</parameter>
+		<parameter>@category-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'newsfeeder.categoryunlock'>
+
+    <item id = 'update' width = '240'>
+
+        <rowmenu disabled = '1' ui-classes = 'default3, default3.ext.popup, default3.ext.newsfeeder'>
+
+            <item-group>
+
+                <item render-border = '0'>
+                    <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                    <label x = '20%' y = '0' width = '75%' value = '[color=special]New Skill Tree Unlocked![/color]' />
+                </item>
+
+                <item render-border = '0'>
+                    <label x = '5%' y = '0' width = '90%' value = 'You can now choose either [color=title]@skill-title1[/color] or [color=title]@skill-title2[/color] from the [color=title]@category-title[/color] skill tree.' />
+                </item>
+
+            </item-group>
+
+        </rowmenu>
+        
+    </item>
+
+</template>

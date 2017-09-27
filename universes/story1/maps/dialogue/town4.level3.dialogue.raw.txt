@@ -1,0 +1,295 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Have you been to $Ouromova$ yet, $player$?  I only ask because I want to send this $love letter$ to my good friend $Jill$.  With all \
+                    of the ^bad guys^ running wild, I feel like I have to let her know how I feel...
+                    -redirect root
+
+                [l id = 'line2' class = 'prompt'] If you see her, $player$, please talk to her and give her this letter!
+
+                    +accept[class = 'default'] I'll take the letter to her, $Timmy$.
+
+                        >>> root.accept
+
+                            [l id = 'line1'] Thanks, $player$!  Let me know how she feels about the letter, too!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("active");
+                                    npc("npc1").clearIndicators();
+                                    session("4.3.npc1.received-letter").set("yes");
+
+                    +delay[class = 'default'] I don't have time for this right now.
+
+                        >>> root.delay
+
+                            [n id = 'nag1'] When you have more time, $player$, please see me again so I can give you the letter to deliver!
+
+                    +sorry[class = 'sorry'] It turns out I actually killed her recently, $Timmy$.
+
+                        >>> root.sorry
+
+                            [l id = 'line1'] How could you, $player$?!  I thought you were going to save us from the ^Bungeling Emperor^, but you're just as bad as him!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("failed");
+                                    npc("npc1").clearIndicators();
+
+                [n id = 'nag1' class = 'prompt'] $player$, do you have time to deliver this letter to my friend $Jill$ yet?  I love her, but I can't risk delivering it to her myself, not with so many ^bad guys^ \
+                    running around!
+
+                    +accept[class = 'default'] I'll take the letter to her now, $Timmy$.
+
+                    +delay[class = 'default'] I still don't have time for this.
+
+                    +sorry[class = 'sorry'] It turns out I actually killed her recently, $Timmy$.
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Have you found $Jill$ and given her my letter yet, $player$?  You should find her in $Ouromova$, I think!
+
+                [n id = 'nag2'] I know $Jill$ is living in $Ouromova$ these days.  Try to find her there if you can, $player$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Please deliver that letter to $Jill$ for me, $player$!  It means even more to me than whether or not you \
+                    customize your gameplay controls in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Do you have an update on when you'll deliver that letter for me, $player$?  Your customized controls give you \
+                    a great advantage, but you haven't used that advantage to deliver my letter yet!
+
+
+        @conversation[id = 'quest:in-progress:killed-jill']
+
+            >>> root
+
+                [l id = 'line1'] $player$, have you had a chance to talk to $Jill$?  How is she doing?
+
+                    +confess I killed her.  My bad.
+
+                        >>> root.confess
+
+                            [l id = 'line1'] I don't understand why you would do that, $player$!  I don't think I will ever find anyone else around here that looks anything like her!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("failed");
+                                    quest("4.3.npc1.quest").update("update-timmy-sad").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +lie I saw one of the ^bad guys^ kill her.
+
+                        >>> root.lie
+
+                            [l id = 'line1'] No!  Please tell me you're lying, $player$!  Wait a minute...
+                                -redirect root.lie
+
+                            [l id = 'line2'] We both know that you never see ^bad guys^ in the $town areas$!  You're totally lying to me!  I can't believe you killed her, $player$!  I can't believe it!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("failed");
+                                    quest("4.3.npc1.quest").update("update-timmy-sad-after-lies").status("active");
+                                    npc("npc1").clearIndicators();
+
+
+        @conversation[id = 'quest:in-progress:delivered-letter']
+
+            >>> root
+
+                [l id = 'line1'] Did you talk to $Jill$ yet, $player$?  Did you give her the $love letter$ I gave to you?
+
+                    +deliver She loved the letter, $Timmy$.  She asked me to give you this $Ring of Eternal Love$.
+
+                        >>> root.deliver
+
+                            [l id = 'line1'] This is the happiest day of my life, $player$!  I can't thank you enough for what you've done!
+
+                                Please, take this $1 free bomb$ in return for your efforts.  I was keeping it just in case she needed something more convincing than a love letter, but you can have it now!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("complete");
+                                    quest("4.3.npc1.quest").update("update-delivered-letter:delivered-ring").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addBombs(1);
+
+                    +keep She liked the letter, but she didn't give me a $Ring of Eternal Love$ or anything like that.
+
+                        >>> root.keep
+
+                            [l id = 'line1'] It sounds like she's going to play hard-to-get, doesn't it?  I'll have to figure out a new plan to win her over.  Still, thanks for delivering the letter for me, $player$!
+
+                                @post-script
+                                    quest("4.3.npc1.quest").status("complete");
+                                    quest("4.3.npc1.quest").update("update-delivered-letter:kept-ring").status("active");
+                                    npc("npc1").clearIndicators();
+
+
+        @conversation[id = 'quest:complete:delivered-ring']
+
+            >>> root
+
+                [l id = 'line1'] When I gave you that bomb, $player$, I saw the look on your face.  Yes, I was going to use that bomb to coerce $Jill$ into marrying me against her free will. \
+                    And yes, you're right, I do have a lot more bombs.  I was obviously going to need a lot of them to keep her with me until the ink dried.
+
+                    I'll share some more of them with you, because you clearly expected something more than 1 lousy bomb for completing that quest for me...
+
+                    @post-script
+                        player().addBombs(20);
+
+                [n id = 'nag1'] One of these days, I will have a wonderful wedding with $Jill$, once you take care of the ^Bungeling empire^!
+
+                [n id = 'nag2'] I still can't believe it worked, $player$.  Why don't you take this $1 gold piece$ as an extra thank you?
+
+                    @post-script
+                        player().addGold(1);
+
+                [n id = 'nag3'] I wonder how I ever managed to find an infinite gold cheat.
+
+                [n id = 'nag4'] Every once in a while I just give some gold away, don't I?  If you talk to me enough, you can have all of the gold you want!
+
+                [n id = 'nag5'] You only have a 20% chance of getting a gold bar from me as a result of my excessive jubilance.  How desperately do you want some more gold, $player$?
+
+
+        @conversation[id = 'quest:complete:kept-ring']
+
+            >>> root
+
+                [n id = 'nag1'] I'm thinking of using this $bomb$ I bought to coerce her into loving me.  What do you think, $player$?
+
+                [n id = 'nag2'] I just need to find a way to force $Jill$ to love me.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I can't believe I had you of all people deliver that letter, $player$.  When $Jill$ noticed that \
+                    I had sent an amateur -- someone who has not even customized their controls in the $pause menu$ -- she probably decided then and there to move on with her life!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I know you've spent some time in the control customization screen, $player$.  By any chance, did you \
+                    see a key in there that could force $Jill$ to marry me after all?
+
+
+        @conversation[id = 'quest:failed']
+
+            >>> root
+
+                [n id = 'nag1'] You killed the only woman I ever loved, $player$.  Why?
+
+                [n id = 'nag2'] I should have taken that love letter to her myself.  Maybe I didn't really love her after all...
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] People like you don't deserve access to $bombs$, $player$.  Someone should make a law that forbids \
+                    anyone who hasn't customized their controls in the $pause menu$ from having bombs!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] If I had the power, $player$, I would disable the $@bomb$ key on your input device of choice.  I would!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Before we do business, $player$, I need to tell you something.
+                    -redirect root
+
+                [l id = 'line2' transition = '1'] The terrible threat of all of the ^bad guys^ has really cut into my sales.  My clients just don't feel safe traveling, nor should they!  I have a lot of debts to pay, and I need to sell out my remaining merchandise in order to do so.
+
+                    $player$, if you buy everything in my inventory, I'll reward you with a very special item I've been saving for a rainy day.
+
+                    @post-script
+                        quest("4.3.npc2.quest").status("active");
+                        quest("4.3.npc2.quest:items-purchased").set("0");
+                        npc("npc2").clearIndicators().addIndicator("merchant");
+                        map().runScript("npc2.talk");
+
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' class = 'shop'] Welcome to my little shoppe, $player$.  Tell me what you need.
+
+                    +shop I'd like to do some shopping, $Sierra$.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +funds50[class = 'funds funds-normal' min-gold = '50'] Your sister $Lily$ asked me to give you these $50 gold pieces$.
+
+                        >>> root.funds50
+
+                            [l id = 'line1'] This will help me a lot, $player$!  I'll invest this money in inventory upgrades, giving you access to some better items.  Please give my gratitude to $Lily$!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-delivered-gold").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold(50);
+                                    map().runScript("npc2.upgrade-inventory");
+
+                    +funds75[class = 'funds funds-extra' min-gold = '75'] Your sister $Lily$ asked me to give you these $75 gold pieces$.
+
+                        >>> root.funds75
+
+                            [l id = 'line1'] This will help me a lot, $player$!  I'll invest this money in inventory upgrades, giving you access to some better items.  Please give my gratitude to $Lily$!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-delivered-gold").status("active");
+                                    npc("npc2").clearIndicators().addIndicator("merchant");
+                                    player().subtractGold(75).addXP(50, "XP Bonus");
+                                    map().runScript("npc2.upgrade-inventory");
+
+                    +bye Goodbye, for now.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+                [l id = 'line1' class = 'bought-out'] Thank you for your generous business, $player$.  At this time, I'd like to reward you with one of my $most rare items$.  Enjoy!
+
+                    @post-script
+                        player().acquireRandomItem("sierras-lucky-thief-stopper", "sierras-lazy-respawn-inhibitor", "sierras-clinking-parachute-of-aptitude");
+                        quest("4.3.npc2.quest").status("complete");
+                        npc("npc2").clearIndicators();
+
+
+                [n id = 'nag2' class = 'bought-out'] Thanks for buying my inventory out, $player$.
+
+                    +funds50late[class = 'funds funds-normal' min-gold = '50'] Your sister $Lily$ asked me to give you these $50 gold pieces$.
+
+                        >>> root.funds50late
+
+                            [n id = 'nag1'] A little bit too little, too late on this one, $player$.  Still, I'll pocket that gold in case I need it for a future business venture.
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-delivered-gold").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold(50);
+
+                    +funds75late[class = 'funds funds-extra' min-gold = '75'] Your sister $Lily$ asked me to give you these $75 gold pieces$.
+
+                        >>> root.funds75late
+
+                            [n id = 'nag1'] A little bit too little, too late on this one, $player$.  Still, I'll pocket that gold in case I need it for a future business venture.  Thanks \
+                                for bringing so much of it, by the way!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-delivered-gold").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold(75).addXP(50, "XP Bonus");
+
+                    +bye Goodbye, for now.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+

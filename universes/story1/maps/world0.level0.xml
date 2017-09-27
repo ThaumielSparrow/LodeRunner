@@ -1,0 +1,256 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 229 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 154 228 0 0 0 0 233 212 0 0 0 0 0 0 0 0 
+			0 0 0 222 222 201 0 0 0 0 226 220 153 212 212 0 0 0 0 0 
+			0 0 0 0 205 201 224 0 0 0 0 201 24 26 222 153 0 0 0 0 
+			0 0 0 0 0 0 201 0 0 0 0 0 0 201 0 153 0 211 215 219 
+			0 0 0 0 0 0 0 0 0 0 208 0 0 0 0 152 0 221 227 0 
+			0 0 0 0 215 212 0 0 0 229 222 0 0 0 152 228 28 205 0 0 
+			0 0 0 153 224 29 153 0 0 228 203 213 0 0 221 200 0 0 0 232 
+			0 0 152 221 200 0 153 0 0 201 204 220 218 217 204 203 0 0 0 220 
+			0 0 153 0 0 0 154 0 0 200 0 0 0 0 0 205 0 0 221 203 
+			0 0 153 0 0 232 210 0 0 0 0 0 0 0 0 0 0 0 0 203 
+			0 0 152 216 219 228 220 0 0 0 0 0 0 0 0 0 0 0 0 205 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 211 215 0 0 0 0 0 0 0 0 0 0 0 0 0 0 212 0 
+			0 0 228 223 0 0 0 0 210 0 0 0 0 228 231 0 0 225 220 0 
+			0 0 201 216 219 154 219 218 228 219 218 219 154 200 223 0 0 0 203 0 
+			208 229 0 0 0 154 0 0 0 0 0 0 154 204 0 0 0 0 204 0 
+			222 223 0 0 0 152 0 0 0 228 0 214 154 0 0 0 227 234 0 0 
+			0 202 0 0 0 153 0 0 218 204 153 226 220 0 0 0 202 224 0 0 
+			0 215 0 234 0 228 227 153 0 0 154 201 0 0 0 0 0 200 219 218 
+			152 228 222 223 0 0 0 152 215 215 154 215 0 230 0 0 0 0 0 0 
+			153 205 203 0 215 214 154 225 220 23 221 25 27 220 154 211 212 0 0 0 
+			154 0 202 227 27 25 227 201 205 0 0 0 202 204 220 207 223 153 232 0 
+			154 0 0 0 0 200 200 0 0 232 0 226 202 203 201 222 202 154 222 227 
+			154 0 214 210 230 0 0 0 0 220 0 0 0 0 0 0 200 154 202 0 
+			154 219 224 25 223 0 0 0 226 200 0 0 0 0 226 23 24 228 205 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 203 205 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 340 342 0 0 0 0 0 300 341 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 347 340 0 0 0 0 263 0 0 265 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 340 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 265 0 283 0 0 
+			0 0 0 0 263 0 0 0 0 340 0 0 0 0 340 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 349 302 0 0 300 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 302 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 345 302 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 348 0 0 0 0 0 0 0 0 0 0 0 340 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 348 0 
+			300 0 0 0 0 0 0 0 0 341 0 0 0 0 0 0 345 0 0 0 
+			0 302 0 0 0 0 0 0 0 300 0 0 342 0 0 0 300 344 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 344 341 344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 344 263 0 265 0 0 265 0 0 0 0 0 0 
+			0 0 0 263 0 0 283 0 302 0 0 0 0 0 340 0 344 0 0 0 
+			0 0 0 0 0 300 348 0 0 0 0 300 346 349 300 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 263 0 283 0 0 0 0 302 0 0 0 0 263 0 0 283 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '0' x = '8' genus = '2' class = '' />
+	<entity x = '8' y = '14' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow1' class = '' nick = '' title = '' />
+	<entity x = '12' y = '22' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow2' class = '' nick = '' title = '' />
+	<entity x = '19' y = '24' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow3' class = '' nick = '' title = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '6' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '7' x = '16' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '10' x = '12' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '13' x = '13' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '15' x = '8' genus = '6' class = '' />
+<entity name = 'gold.uid.5' title = '' ai-behavior = '1' nick = '' y = '16' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.6' title = '' ai-behavior = '1' nick = '' y = '20' x = '6' genus = '6' class = '' />
+<entity name = 'gold.uid.7' title = '' ai-behavior = '1' nick = '' y = '21' x = '2' genus = '6' class = '' />
+<entity name = 'gold.uid.8' title = '' ai-behavior = '1' nick = '' y = '25' x = '3' genus = '6' class = '' />
+<entity name = 'gold.uid.9' title = '' ai-behavior = '1' nick = '' y = '27' x = '1' genus = '6' class = '' />
+<entity name = 'gold.uid.10' title = '' ai-behavior = '1' nick = '' y = '26' x = '15' genus = '6' class = '' />
+<entity name = 'gold.uid.11' title = '' ai-behavior = '1' nick = '' y = '24' x = '18' genus = '6' class = '' />
+<entity name = 'gold.uid.12' title = '' ai-behavior = '1' nick = '' y = '18' x = '16' genus = '6' class = '' />
+<entity name = 'gold.uid.13' title = '' ai-behavior = '1' nick = '' y = '15' x = '17' genus = '6' class = '' />
+<entity name = 'gold.uid.14' title = '' ai-behavior = '1' nick = '' y = '10' x = '18' genus = '6' class = '' />
+<entity name = 'gold.uid.15' title = '' ai-behavior = '1' nick = '' y = '18' x = '4' genus = '6' class = '' />
+<entity name = 'gold.uid.16' title = '' ai-behavior = '1' nick = '' y = '22' x = '14' genus = '6' class = '' />
+<entity name = 'gold.uid.17' title = '' ai-behavior = '1' nick = '' y = '4' x = '13' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp.lesson1' height = '1' width = '1' behavior = '2' y = '15' x = '8'>
+	<touch>
+		<script name = 'wp.lesson1.touch' />
+	</touch>
+	<hover />
+	<exit>
+		<script name = 'wp.lesson1.exit' />
+	</exit>
+</trigger>
+<trigger prompt = '' name = 'wp.lesson1.pre' height = '1' width = '1' behavior = '2' y = '7' x = '8'>
+	<touch>
+		<script name = 'wp.lesson1.pre.touch' />
+	</touch>
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp.arrow3' height = '4' width = '1' behavior = '2' y = '19' x = '13'>
+	<touch>
+		<script name = 'wp.arrow3.touch' />
+	</touch>
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp.next' height = '3' width = '1' behavior = '2' y = '22' x = '19'>
+	<touch>
+		<script name = 'wp.next.touch' />
+	</touch>
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '8' x = '8'>
+    <touch />
+    <hover />
+    <exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onbirth'>
+		debug("Loading game...");
+
+        // Start of the game.  First thing I&apos;m going to do is count up all NPCs
+        // in the game.  This will take a moment, unless I optimize it somehow later.
+        session("npc.count.total").set(
+            progress().getMapsByClass("overworld").npcsByClass("npc merchant").count()
+        );
+
+        // All are living, at the start...
+        session("npc.count.living").set(
+            session("npc.count.total").get()
+        );
+
+        // None is dead, yet...
+        session("npc.count.dead").set(0);
+
+
+        // For now, let&apos;s do the same thing for merchants.
+        // Merchants are only found in town areas (NPCs usually too, but always for merchants)
+        session("merchant.count.total").set(
+            progress().getMapsByClass("town").npcsByClass("merchant").count()
+        );
+
+        // All are living, at the start...
+        session("merchant.count.living").set(
+            session("merchant.count.total").get()
+        );
+
+        // None is dead, yet...
+        session("merchant.count.dead").set(0);
+
+
+        // At the start of the game, we have not visited any map.
+        // How many can we visit in total?
+        session("worldmap.count.visited").set(0);
+        session("worldmap.count.total").set(
+            progress().getMapsByClass("overworld").count()
+        );
+        // Naturally, as we enter the first map and the first-visit script runs, we&apos;ll have 1 visited map "immediately."
+        // We don&apos;t call that logic in this script, though.
+
+
+
+        // Update last visited "town" map.
+        // This allows the "respawn in town" option to NOT CRASH THE GAME
+        // if the player dies before reaching the first town.
+        session("core.last-safe-zone.map").set(
+            map().getName()
+        );
+
+        // Update with proper "town" title (it needs some sort of label)
+        session("core.last-safe-zone.title").set("The Beginning");
+
+
+        // To enable the "last checkpoint" to process in a less awkward manner,
+        // we'll hard-code a non-(0, 0) last known position for the first autosave.
+        session("core.player1.x").set("192"); // index 8 (e.g. 8 * 24)
+        session("core.player1.y").set("192"); // index 8
+
+	</script>
+	<script name = 'onvisit'>
+		debug("calling onvisit...");
+
+        // Hide all flashing arrows, set directions
+        npc("arrow1").disable().setDirection("down");
+        npc("arrow2").disable().setDirection("right");
+        npc("arrow3").disable().setDirection("right");
+
+        debug("...done with onvisit.");
+	</script>
+	<script name = 'wp.lesson1.touch'>
+		// show first leading arrow
+        npc("arrow1").enable();
+	</script>
+	<script name = 'wp.lesson1.pre.touch'>
+		// show first fyi dialogue, disable trigger
+        trigger("wp.lesson1.pre").disable();
+
+        // fyi, from the arrow NPC (I&apos;m not kidding!)
+        npc("arrow1").talk("tutorial", "fyi:tutorial1");
+	</script>
+	<script name = 'xwp.lesson1.pre.touch' />
+	<script name = 'wp.lesson1.exit'>
+		// disable lesson 1 trigger
+        trigger("wp.lesson1").disable();
+
+        // hide first fyi
+        npc("arrow1").dismissFYI("tutorial1");
+
+
+        // fade away the first arrow
+        npc("arrow1").fadeOut();
+
+
+        // now disable first arrow
+        npc("arrow1").disable();
+
+        // show the next arrow
+        npc("arrow2").enable();
+	</script>
+	<script name = 'xwp.lesson1.exit' />
+	<script name = 'wp.next.touch'>
+		// what does this do?  is this an old script I&apos;m porting?
+        trigger("wp.next").disable();
+        npc("arrow1").fadeOut();
+        npc("arrow3").disable();
+        // ???
+	</script>
+	<script name = 'xwp.next.touch' />
+	<script name = 'wp.arrow3.touch'>
+		trigger("wp.arrow3").disable();
+        npc("arrow2").fadeOut();
+        npc("arrow2").disable();
+        npc("arrow3").enable();
+	</script>
+	<script name = 'onunload'>
+		// get rid of fyi message(s)
+        npc("arrow1")
+            .killFYI("tutorial1");
+	</script>
+</scripts>

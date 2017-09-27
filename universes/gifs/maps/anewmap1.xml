@@ -1,0 +1,28 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 150 150 0 0 0 148 150 151 0 
+			116 117 110 111 116 154 110 116 118 118 
+			0 0 0 0 0 153 0 0 0 0 
+			119 153 0 148 147 154 149 0 0 0 
+			96 111 154 118 110 111 117 119 110 117 
+			0 0 154 0 0 0 0 0 0 0 
+			0 0 154 0 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '9' y = '2' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '7' y = '5' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '4' y = '4' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

@@ -1,0 +1,458 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Welcome to $Amandria$!
+
+                    I've been waiting for you to make it this far. $player$.  I want to send a $special item$ to a friend of mine, but I can't risk doing it myself with all of the ^bad guys^ running around.
+                    -redirect root
+
+                [l id = 'line2'] My friend $JoAnna$ lives in small village just a little bit $northeast$ of here, $player$. \
+                    If you would kindly deliver this $special item$ to her, she and I would both appreciate it!
+
+                    What do you say, $player$?
+
+                    +yes I'll do it.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] I can't thank you enough, $player$.
+
+                                After thinking about what I could send to her, I decided to go with this, ^$[1.1.npc1.quest:item-title]^!  Of course, you can try it out \
+                                en route to delivering it to $JoAnna$.  Just make sure she gets it, $player$!
+
+                                @pre-script
+                                    map().executeScript("npc1.begin-quest");
+                                @post-script
+                                    npc("npc1").clearIndicators();
+
+
+                    +extort I'll do it, but you'll have to pay me $50 gold pieces$ up front.
+
+                        >>> root.extort
+
+                            [l id = 'line1'] You didn't look so greedy when I first saw you, $player$.  I don't think I can trust a truly $special item$ with such a greedy player as you.  After all, \
+                                I want to make sure that it eventually ends up in $JoAnna$'s hands.
+
+                                I'm going to have to reach down into the bottom of the barrel here, $player$.  Take a look at this, ^$[1.1.npc1.quest:item-title]^.  I had a better version, \
+                                but I won't trust you with it.  If you'd like to try it out en route to delivering it, go ahead, but try to find enough traces of honor within your soul \
+                                to deliver it to $JoAnna$ instead of keeping it, $player$.
+
+                                Of course, I'll also include the $50 gold pieces$ you so humbly requested!
+
+                                @pre-script
+                                    map().executeScript("npc1.begin-quest:extorted");
+                                @post-script
+                                    quest("1.1.npc1.quest").update("update-extorted").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addGold(50);
+
+
+                    +already-killed[class = 'already-killed'] Is now the wrong time to mention I killed her already?
+
+                        >>> root.already-killed
+
+                            [l id = 'line1'] Why did you kill her, $player$?  I should have sent the item I had sooner.  Maybe she could have protected herself with it!  I suppose I don't need anything else from you right now.
+
+                                @pre-script
+                                    quest("1.1.npc1.quest").status("failed");
+                                @post-script
+                                    npc("npc1").clearIndicators();
+
+
+        @conversation[id = 'quest:in-progress:default']
+
+            >>> root
+
+                [n id = 'nag1'] Have you had a chance to visit $Navarra$ yet, $player$?  If you travel just a little ways $northeast$ out of town, you'll find my friend $JoAnna$ there!
+
+                [n id = 'nag2'] I hope you can find a way to deliver that $item$ I gave you to my friend in $Navarra$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Are you having in trouble making it to $Navarra$, by chance?  You might have an easier trip if you customize your controls in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] With your specially customized controls, $player$, you shouldn't have any trouble at all reaching my friend in $Navarra$!
+
+
+        @conversation[id = 'quest:in-progress:extorted']
+
+            >>> root
+
+                [n id = 'nag1'] Make your way to $Navarra$, $player$.  I gave you some extra gold, and I expect you to at least deliver that item promptly to $JoAnna$.
+
+                [n id = 'nag2'] You'd better find a way to deliver that $item$ I gave you to my friend in $Navarra$.  I don't want to find out I paid that extra fee for nothing!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I see that you haven't bothered to customize your controls yet, $player$.  I suppose you are waiting for someone to give you more gold to do that, too!
+
+
+        @conversation[id = 'quest:in-progress:killed-joanna']
+
+            >>> root
+
+                [l id = 'line1'] I've heard bad news about my friend $JoAnna$ recently.  I think the ^bad guys^ must have gotten her.  Do you think I could have done \
+                    anything to protect her?  I did everything I could, didn't I?
+
+                    Well, I guess she won't be needing that $item$ I gave you anymore.  You can give it back to me now, $player$.
+
+                    +yes Here you go, $Dave$.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thanks, $player$.  Thanks for trying to deliver the item for me, even if you didn't quite make it happen in the end.
+
+                                @post-script
+                                    quest("1.1.npc1.quest").status("complete");
+                                    quest("1.1.npc1.quest").update("update-returned-to-dave").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().dropItem( session("1.1.npc1.quest:item-name").get() );
+
+                    +extort I'll give it back to you for $50 gold pieces$.
+
+                        >>> root.extort
+
+                            [l id = 'line1'] I still need that item to protect some of my other friends from the ^bad guys^, so I will go ahead and cash you out this one time, ^player^.
+
+                                I'll know better than to ask you to deliver an item for me next time, though.  Take these $50 gold pieces$ and leave me to commiserate!
+
+                                @post-script
+                                    quest("1.1.npc1.quest").status("complete");
+                                    quest("1.1.npc1.quest").update("update-returned-to-dave-for-gold").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().dropItem( session("1.1.npc1.quest:item-name").get() );
+                                    player().addGold(50);
+
+                    +no I'm going to keep it.
+
+                        >>> root.no
+
+                            [l id = 'line1'] You're going to keep it?  Okay.  I don't have any way to force you to return it to me, $player$.  I can at least respect that you didn't try to ^extort^ gold from me in return for the item.
+
+                                @post-script
+                                    quest("1.1.npc1.quest").status("failed");
+                                    quest("1.1.npc1.quest").update("update-kept-from-dave").status("active");
+                                    npc("npc1").clearIndicators();
+
+
+        @conversation[id = 'quest:complete:killed-joanna']
+
+            >>> root
+
+                [n id = 'nag1' class = 'delivered'] I hear the ^bad guys^ got the better of my friend $JoAnna$.  She sounded very pleased with the item you delivered for her, $player$.  I wonder why it didn't protect her!
+
+                [n id = 'nag2' class = 'delivered'] I wonder if I should have sent even more items to $JoAnna$.  Did you see how the ^bad guys^ got her, $player$?  I can't figure it out!
+
+                [n id = 'nag3' class = 'bought'] From what I've heard, $player$, some of the ^bad guys^ must have gotten ahold of $JoAnna$.  She said you gave her that item I sent with you, but I'm starting to wonder...
+
+                [n id = 'nag4' class = 'bought'] How could the ^bad guys^ have gotten to my friend $JoAnna$?  That item really should have protected her!
+
+                [n id = 'nag5' class = 'default'] I wonder how the ^bad guys^ made it into a town area.  Maybe $JoAnna$ was looking for food outside of town when they got her!
+
+                [n id = 'nag6' class = 'default'] I've heard rumors of someone who looks like you striking down a lot of talking people.  Don't let him get you too, $player$!
+
+                [n id = 'nag7' class = 'extorted'] I wonder how the ^bad guys^ made it into a town area.  I bet you had something to do with it, $player$.  Took a little money on the side to let them in, I bet!
+
+                [n id = 'nag8' class = 'extorted'] I've heard rumors of someone who looks like you striking down a lot of talking people.  Whoever that guy is, I bet he frequently extorts extra gold out of people after failing their quests, too.
+
+
+        @conversation[id = 'quest:complete:delivered-item']
+
+            >>> root
+
+                [n id = 'nag1'] I heard from $JoAnna$ that she received my $item$, or something like that.  Thanks for doing the job for me, $player$!
+
+                [n id = 'nag2'] $player$, I wish I knew how to outsmart the ^bad guys^ like you do.  Thanks for getting past them and delivering that item to $JoAnna$ for me!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I know you delivered that item to $JoAnna$ as quickly as possible, $player$, and I most certainly \
+                    appreciate it!  I wonder, though:  could you have delivered it even more quickly if you had customized your controls in the $pause menu$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I don't have a single doubt that you took full advantage of your customized controls when you delivered that \
+                    item for me, $player$.  Thanks again for your help!
+
+
+        @conversation[id = 'quest:failed:kept-item']
+
+            >>> root
+
+                [l id = 'line1'] $player$, I've decided to forgive you for stealing that item from me and killing my good friend, $JoAnna$.  Please accept this second item \
+                    as a ^peace offering^.
+
+                    @post-script
+                        player().acquireItem("daves-cursed-triton-of-rage");
+
+                [l id = 'line2'] Have you tried that item out yet, $player$?  I saved it just for you.
+
+                [n id = 'nag1'] I don't think I'll be doing business with you again, $player$.  You didn't do anything good for me on that last endeavor.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I still can't believe that you killed $JoAnna$.  Have you considered pressing the $@bomb$ key and then standing perfectly \
+                    still for a few seconds, $player$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Not only did you kill my innocent friend $JoAnna$, but you obviously knew exactly what you were doing!  After all, you \
+                    have clearly taken the initiative of customizing your controls!  You know that the $@bomb$ key drops bombs, and you definitely know what they do!
+
+
+        @conversation[id = 'quest:failed:killed-joanna-prematurely']
+
+            >>> root
+
+                [n id = 'nag1'] Do you just go around killing everyone indiscriminately, $player$?  Why haven't you gotten rid of me yet?
+
+                [n id = 'nag2'] I was going to give you an item to take to $JoAnna$.  If you hadn't killed her so quickly, you could have sampled the item during delivery, \
+                    and in theory you could have decided to keep it forever!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Yes, you do look like a ^calculating^ person to me, $player$.  You plan everything ahead of time:  customizing controls, \
+                    stealing gold, and killing innocent civilians!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1' class = 'default'] Hi, $player$!
+
+                    I have collected a number of [color=special]nice jumpsuits[/color] from all of the previous heroes that attempted \
+                    to save us from the ^Bungeling Empire^.
+
+                    You will look good in [color=special]any[/color] of them, or perhaps all of them!
+                    -redirect root
+
+                [n id = 'nag1' class = 'default'] Would you like to purchase a new [color=special]jumpsuit[/color], or [color=special]switch back[/color] to a jumpsuit you previously purchased?
+
+                    +shop Let me see what you've got.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' use-grid = 'yes' per-row = '3'] I guarantee it!
+
+                                +default avatar:default
+
+                                +redLocked[min-gold = '25' class = 'priced red-unpurchased' translate = '0'] avatar:primary=229,0,0;secondary=114,114,114
+                                +redUnlocked[class = 'priced red-purchased' translate = '0'] avatar:primary=229,0,0;secondary=114,114,114
+
+                                    >>> root.shop.redLocked
+                                        [n id = 'nag1'] Thanks for buying the red one!
+                                            @post-script
+                                                player().colorify("primary=229,0,0;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.red.purchased").set("yes");
+                                    >>> root.shop.redUnlocked
+                                        [n id = 'nag1'] You look good in the red one!
+                                            @post-script
+                                                player().colorify("primary=229,0,0;secondary=114,114,114");
+
+                                +orangeLocked[min-gold = '25' class = 'priced orange-unpurchased' translate = '0'] avatar:primary=229,148,0;secondary=114,114,114
+                                +orangeUnlocked[class = 'priced orange-purchased' translate = '0'] avatar:primary=229,148,0;secondary=114,114,114
+
+                                    >>> root.shop.orangeLocked
+                                        [n id = 'nag1'] Thanks for buying the orange one!
+                                            @post-script
+                                                player().colorify("primary=229,148,0;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.orange.purchased").set("yes");
+                                    >>> root.shop.orangeUnlocked
+                                        [n id = 'nag1'] You look good in the orange one!
+                                            @post-script
+                                                player().colorify("primary=229,148,0;secondary=114,114,114");
+
+                                +goldLocked[min-gold = '25' class = 'priced gold-unpurchased' translate = '0'] avatar:primary=229,193,0;secondary=114,114,114
+                                +goldUnlocked[class = 'priced gold-purchased' translate = '0'] avatar:primary=229,193,0;secondary=114,114,114
+
+                                    >>> root.shop.goldLocked
+                                        [n id = 'nag1'] Thanks for buying the gold one!
+                                            @post-script
+                                                player().colorify("primary=229,193,0;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.gold.purchased").set("yes");
+                                    >>> root.shop.goldUnlocked
+                                        [n id = 'nag1'] You look good in the gold one!
+                                            @post-script
+                                                player().colorify("primary=229,193,0;secondary=114,114,114");
+
+                                +greenLocked[min-gold = '25' class = 'priced green-unpurchased' translate = '0'] avatar:primary=0,229,0;secondary=191,191,191
+                                +greenUnlocked[class = 'priced green-purchased' translate = '0'] avatar:primary=0,229,0;secondary=191,191,191
+
+                                    >>> root.shop.greenLocked
+                                        [n id = 'nag1'] Thanks for buying the green one!
+                                            @post-script
+                                                player().colorify("primary=0,229,0;secondary=191,191,191");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.green.purchased").set("yes");
+                                    >>> root.shop.greenUnlocked
+                                        [n id = 'nag1'] You look good in the green one!
+                                            @post-script
+                                                player().colorify("primary=0,229,0;secondary=191,191,191");
+
+                                +tealLocked[min-gold = '25' class = 'priced teal-unpurchased' translate = '0'] avatar:primary=0,229,229;secondary=114,114,114
+                                +tealUnlocked[class = 'priced teal-purchased' translate = '0'] avatar:primary=0,229,229;secondary=114,114,114
+
+                                    >>> root.shop.tealLocked
+                                        [n id = 'nag1'] Thanks for buying the teal one!
+                                            @post-script
+                                                player().colorify("primary=0,229,229;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.teal.purchased").set("yes");
+                                    >>> root.shop.tealUnlocked
+                                        [n id = 'nag1'] You look good in the teal one!
+                                            @post-script
+                                                player().colorify("primary=0,229,229;secondary=114,114,114");
+
+                                +pinkLocked[min-gold = '25' class = 'priced pink-unpurchased' translate = '0'] avatar:primary=229,18,132;secondary=114,114,114
+                                +pinkUnlocked[class = 'priced pink-purchased' translate = '0'] avatar:primary=229,18,132;secondary=114,114,114
+
+                                    >>> root.shop.pinkLocked
+                                        [n id = 'nag1'] Thanks for buying the pink one!
+                                            @post-script
+                                                player().colorify("primary=229,18,132;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.pink.purchased").set("yes");
+                                    >>> root.shop.pinkUnlocked
+                                        [n id = 'nag1'] You look good in the pink one!
+                                            @post-script
+                                                player().colorify("primary=229,18,132;secondary=114,114,114");
+
+                                +tanLocked[min-gold = '25' class = 'priced tan-unpurchased' translate = '0'] avatar:primary=229,205,162;secondary=114,114,114
+                                +tanUnlocked[class = 'priced tan-purchased' translate = '0'] avatar:primary=229,205,162;secondary=114,114,114
+
+                                    >>> root.shop.tanLocked
+                                        [n id = 'nag1'] Thanks for buying the tan one!
+                                            @post-script
+                                                player().colorify("primary=229,205,162;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.tan.purchased").set("yes");
+                                    >>> root.shop.tanUnlocked
+                                        [n id = 'nag1'] You look good in the tan one!
+                                            @post-script
+                                                player().colorify("primary=229,205,162;secondary=114,114,114");
+
+                                +davesWhiteLocked[min-gold = '25' class = 'criminal priced white-unpurchased' translate = '0'] avatar:primary=229,229,229;secondary=114,114,114
+                                +davesWhiteUnlocked[class = 'criminal priced white-purchased' translate = '0'] avatar:primary=229,229,229;secondary=114,114,114
+
+                                    >>> root.shop.whiteLocked
+                                        [n id = 'nag1'] Thanks for buying the white one!
+                                            @post-script
+                                                player().colorify("primary=229,229,229;secondary=114,114,114");
+                                                player().subtractGold(25);
+                                                session("jumpsuit.white.purchased").set("yes");
+                                    >>> root.shop.whiteUnlocked
+                                        [n id = 'nag1'] You look good in the white one!
+                                            @post-script
+                                                player().colorify("primary=229,229,229;secondary=114,114,114");
+
+                        >>> root.unused
+
+                            [n id = 'nag1'] Couldn't fit this one in!
+
+                                +greyLocked[min-gold = '25' class = 'priced grey-unpurchased' translate = '0'] avatar:primary=114,114,114;secondary=64,64,64
+                                +greyUnlocked[min-gold = '25' class = 'priced grey-purchased' translate = '0'] avatar:primary=114,114,114;secondary=64,64,64
+
+                        >>> root.shop2
+
+                            [n id = 'nag1' use-grid = 'yes'] What color looks good to you?
+
+                                +default[min-gold = '0'] Blue Jumpsuit (free!)
+
+                                    >>> root.shop.default
+
+                                        [n id = 'nag1'] The classic look suits your quite well, $player$.  Come back anytime!
+
+                                            @post-script
+                                                player().colorify("");
+
+                                +green[min-gold = '10' class='priced green-unpurchased'] Green Jumpsuit
+
+                                    >>> root.shop.green
+
+                                        [n id = 'nag1'] I had a dream many years ago that a $hero$ in a green jumpsuit would save our beautiful land.  Enjoy your new look, $player$!
+
+                                            @post-script
+                                                player().colorify("primary=25,225,25;secondary=225,225,225");
+                                                player().subtractGold(10);
+                                                session("jumpsuit.green.purchased").set("yes");
+
+                                +green2[class='priced green-purchased'] Green Jumpsuit (Owned)
+
+                                    >>> root.shop.green2
+
+                                        [n id = 'nag1'] 
+
+                                            @post-script
+                                                player().colorify("primary=25,225,25;secondary=225,225,225");
+
+                                +red[min-gold = '10' class = 'priced red-unpurchased'] Red Jumpsuit
+
+                                    >>> root.shop.red
+
+                                        [n id = 'nag1'] I have always liked red better than any other color, $player$.  Thanks for your donation!
+
+                                            @post-script
+                                                player().colorify("primary=225,25,25;secondary=175,175,175");
+                                                player().subtractGold(10);
+                                                session("jumpsuit.red.purchased").set("yes");
+
+                                +red2[class='priced red-purchased'] Red Jumpsuit (Owned)
+
+                                    >>> root.shop.red2
+
+                                        [n id = 'nag1'] 
+
+                                            @post-script
+                                                player().colorify("primary=225,25,25;secondary=175,175,175");
+
+                                +gold[min-gold = '100' class = 'priced gold-unpurchased'] Gold Jumpsuit
+
+                                    >>> root.shop.gold
+
+                                        [n id = 'nag1'] I have always liked gold better than any other color, $player$.  Thanks for your donation!
+
+                                            @post-script
+                                                player().colorify("primary=248,212,10;secondary=175,175,175");
+                                                player().subtractGold(100);
+                                                session("jumpsuit.gold.purchased").set("yes");
+
+                                +gold2[class='priced gold-purchased'] Gold Jumpsuit (Owned)
+
+                                    >>> root.shop.gold2
+
+                                        [n id = 'nag1'] 
+
+                                            @post-script
+                                                player().colorify("primary=248,212,10;secondary=175,175,175");
+
+                                +white[min-gold = '20' class = 'priced criminal white-unpurchased'] Dave's White Jumpsuit (new!)
+
+                                    >>> root.shop.white
+
+                                        [n id = 'nag1'] Dave never had a chance to wear this one, $player$.  Enjoy!
+
+                                            @post-script
+                                                player().colorify("primary=225,225,225;secondary=225,25,25");
+                                                player().subtractGold(20);
+                                                session("jumpsuit.white.purchased").set("yes");
+
+                                +white2[class='priced criminal white-purchased'] Dave's White Jumpsuit (Owned)
+
+                                    >>> root.shop.red2
+
+                                        [n id = 'nag1'] 
+
+                                            @post-script
+                                                player().colorify("primary=225,225,225;secondary=225,25,25");
+
+                    +bye Not right now.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+                [n id = 'nag2' class = 'criminal'] I raided $Dave$'s closet after you killed him.  He won't need them any more, and I need the inventory!
+
+                    +shop Let me see the new digs.
+
+                    +bye Not right now.
+

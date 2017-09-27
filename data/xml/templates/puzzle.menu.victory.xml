@@ -1,0 +1,101 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@map-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'puzzle.menu.victory'>
+
+<layouts id = 'layout'>
+<default>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Puzzle Complete!' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = 'As a reward for successfully completing this [color=special]@map-title[/color], please select [color=special]1[/color] prize!' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Prizes' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.prizes' class = 'options' render-border = '1' />
+
+    </rowmenu>
+
+</default>
+
+<else>
+<hpane handedness = 'right' x = '@x' y = '50%' width = '@width' scale-width = '2.0' height = '@height' halign = 'right' xvalign = 'center'>
+
+<left>
+    <rowmenu id = 'info' y = '25%' height = '@height' shrinkwrap = '1' uses-focus = '0' valign = 'bottom'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Puzzle Complete!' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = 'As a reward for successfully completing this [color=special]@map-title[/color], please select [color=special]1[/color] prize!' />
+            </item>
+
+        </item-group>
+    </rowmenu>
+</left>
+
+<right>
+    <rowmenu id = 'menu' y = '-25%' height = '@height' shrinkwrap = '1' uses-focus = '1' valign = 'top'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Prizes' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.prizes' class = 'options' render-border = '1' />
+
+    </rowmenu>
+</right>
+</hpane>
+</else>
+</layouts>
+
+</template>

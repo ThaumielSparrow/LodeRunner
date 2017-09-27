@@ -1,0 +1,27 @@
+<parameters>
+	<data>
+		<parameter>@map-name</parameter>
+		<parameter>@avatar-data</parameter>
+	</data>
+	<text>
+		<parameter>@player-name</parameter>
+		<parameter>@player-status</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.coop.intro.slots.player'>
+
+    <item id = 'insert' render-border = '0'>
+
+        <stack class = 'frame'>
+
+            <gif x = '50%' width = '80' height = '60' universe = 'gifs' map = '@map-name' align = 'center' avatar-data = '@avatar-data' />
+
+            <label x = '50%' y = '0' width = '80%' align = 'center' value = '[color=special]@player-name[/color]' />
+            <label x = '50%' y = '0' width = '80%' align = 'center' value = '@player-status' />
+
+        </stack>
+
+    </item>
+
+</template>

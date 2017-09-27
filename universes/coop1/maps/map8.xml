@@ -1,0 +1,71 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'linear' />
+	<param key = 'next-map' value = 'map9' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 211 0 0 211 211 0 218 0 211 211 211 0 217 0 0 0 0 
+			0 0 0 181 153 188 194 199 26 0 29 111 199 185 190 0 199 154 0 0 
+			0 0 189 0 153 0 168 0 0 0 0 0 170 168 0 0 0 193 152 0 
+			0 0 179 153 189 0 167 0 0 0 0 0 0 175 0 0 0 170 152 0 
+			0 0 176 154 0 0 0 0 0 219 216 0 0 0 0 0 0 173 152 0 
+			0 0 211 154 211 211 182 111 197 0 0 191 110 198 152 211 211 0 154 0 
+			0 154 196 110 191 111 160 0 168 191 0 165 0 161 110 187 111 189 153 0 
+			0 153 0 0 177 0 0 0 172 0 0 172 0 0 0 177 0 0 152 0 
+			0 154 0 0 166 0 0 199 172 0 183 160 0 0 0 0 0 0 154 0 
+			0 154 0 0 0 0 0 0 173 0 0 176 0 0 0 0 0 0 153 0 
+			0 154 0 0 0 0 0 0 171 0 0 170 198 0 0 0 0 0 154 0 
+			0 186 154 0 217 218 217 0 211 211 0 211 0 219 218 0 0 211 153 0 
+			0 175 195 194 0 0 0 184 191 110 111 184 193 0 0 199 184 110 193 0 
+			0 0 174 171 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 300 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 302 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 300 302 0 0 0 302 0 0 300 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'enemy1' title = '' ai-behavior = '1' nick = '' y = '13' x = '16' genus = '1' class = '' />
+<entity name = 'enemy2' title = '' ai-behavior = '1' nick = '' y = '13' x = '9' genus = '1' class = '' />
+<entity name = 'enemy3' title = '' ai-behavior = '1' nick = '' y = '13' x = '3' genus = '1' class = '' />
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '2' x = '6' genus = '2' class = '' />
+<entity name = 'player2' title = '' ai-behavior = '1' nick = '' y = '2' x = '11' genus = '2' class = '' />
+<entity name = 'player3' title = '' ai-behavior = '1' nick = '' y = '2' x = '14' genus = '2' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '4' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '6' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '8' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '10' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '12' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '14' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '16' genus = '5' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '12' x = '10' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '11' x = '13' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'player1.respawn' title = '' ai-behavior = '1' nick = '' y = '8' x = '10' genus = '12' class = '' />
+<entity name = 'player2.respawn' title = '' ai-behavior = '1' nick = '' y = '10' x = '9' genus = '12' class = '' />
+<entity name = 'player3.respawn' title = '' ai-behavior = '1' nick = '' y = '5' x = '16' genus = '12' class = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts />

@@ -1,0 +1,278 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 329 0 275 0 303 152 303 303 0 303 152 253 325 0 
+			0 0 0 0 0 273 0 0 152 303 274 0 0 152 0 0 0 
+			0 0 152 216 152 332 0 0 152 303 275 0 0 152 0 0 0 
+			0 324 152 0 329 207 325 329 323 303 275 0 152 255 152 0 0 
+			0 303 152 0 0 327 207 303 303 0 275 0 152 0 152 0 0 
+			207 303 152 0 0 0 327 303 0 0 331 0 152 0 152 0 0 
+			332 303 152 0 207 152 0 303 216 0 275 0 327 152 327 0 0 
+			0 303 254 328 255 325 152 0 0 216 273 0 0 152 0 0 0 
+			0 0 0 303 0 0 152 323 0 0 326 0 0 152 0 0 327 
+			0 0 0 0 152 327 325 303 0 0 303 254 333 152 329 256 303 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 302 0 0 0 0 0 0 348 0 300 0 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 341 0 0 0 0 0 0 0 0 0 0 0 
+			0 342 0 0 300 0 345 0 341 348 0 0 0 340 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 300 0 0 0 0 
+			0 300 342 0 0 341 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 340 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 345 341 302 0 0 300 340 0 0 0 340 302 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '12' y = '8' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Alien' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '2' x = '6' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '5' x = '4' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '9' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '4' x = '0' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '1' x = '5' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '5' x = '13' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '2' x = '12' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '0' x = '11' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '3' x = '16' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '2' x = '1' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:"Alien"' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '7' x = '11' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '8' x = '15'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '2' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '5' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '2' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '8' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("2.1.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active.  Player extorted Kenny but did not kill him.
+        // Prompt further quest available (must complete by killing Kenny).
+        elif (
+            quest("2.1.npc1.quest").status() == "active" and
+            (
+                quest("2.1.npc1.quest").update("update-extorted").status() == "active" and
+                quest("2.1.npc1.quest").update("flag-killed-kenny").status() != "active"
+            )
+        )
+        {
+            // Quest "available" again
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest still active and we killed Kenny...
+        // we can "turn in" now.
+        elif (
+            quest("2.1.npc1.quest").status() == "active" and
+            quest("2.1.npc1.quest").update("flag-killed-kenny").status() == "active"
+        )
+        {
+            // Ready to complete
+            npc("npc1").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "2.1.npc1.quest"
+
+        #define FLAG_KILLED_KENNY "flag-killed-kenny"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_BOUGHT_CONTRACT "update-bought-contract"
+        #define UPDATE_EXTRACTED_FUNDS "update-extracted-funds"
+        #define UPDATE_LOWERED_PRICES "update-lowered-prices"
+        #define UPDATE_KILLED_KENNY "update-killed-kenny"
+        #define UPDATE_KILLED_ALIEN "update-killed-alien"
+        #define UPDATE_ALIEN_EGGED_YOU_ON "update-alien-egged-you-on"
+        #define UPDATE_COLLECTED_REWARD "update-collected-reward"
+
+        // Quest not assigned?  Let&apos;s get to it.
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Did we already kill Kenny?
+            if ( quest(QUEST).update(FLAG_KILLED_KENNY).status() == "active" )
+            {
+                // Disable the default responses, leaving only "did it" and "bye"
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("default").disable();
+            }
+
+            // No we did not, so we disable the "already" response class
+            else
+            {
+                // Disable the "I did it already" response
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("complete").disable();
+            }
+
+            // Now talk with appropriate responses
+            npc("npc1").talk("quest:pending:assign");
+
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we kill Kenny yet?  That&apos;s what this guy really wants
+            if ( quest(QUEST).update(FLAG_KILLED_KENNY).status() == "active" )
+            {
+                // He&apos;ll be thrilled!
+                npc("npc1").talk("quest:in-progress:killed-kenny");
+            }
+
+            // No, but buying him out is the next-best thing
+            elif ( quest(QUEST).update(UPDATE_BOUGHT_CONTRACT).status() == "active" )
+            {
+                // Disable all nags, first
+                npc("npc1").conversation("quest:in-progress:bought-contract").branch("root").getLinesByClass("*").disable();
+
+
+                // Did player lower prices?
+                if ( quest(QUEST).update(UPDATE_LOWERED_PRICES).status() == "active" )
+                {
+                    // Enable appropriate nags
+                    npc("npc1").conversation("quest:in-progress:bought-contract").branch("root").getLinesByClass("lowered-prices").enable();
+                }
+
+                // No.  Enable other default nags
+                else
+                {
+                    // Enable appropriate nags
+                    npc("npc1").conversation("quest:in-progress:bought-contract").branch("root").getLinesByClass("default").enable();
+                }
+
+
+                // Make sure the "egg you on" update is active (we can do this every time, it doesn&apos;t duplicate)
+                quest(QUEST).update(UPDATE_ALIEN_EGGED_YOU_ON).status("active");
+
+                // Eggs you on
+                npc("npc1").talk("quest:in-progress:bought-contract");
+            }
+
+            // We haven&apos;t really done anything yet
+            else
+            {
+                // Go do your job
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Good job killing Kenny, that&apos;s actually the only way that this Alien guy will grant you a quest complete status.  Is that fair?
+            npc("npc1").talk("quest:complete");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // You can fail by killing this NPC here, but then there&apos;s no talking to him.
+            // n/a, then.
+        }
+	</script>
+	<script name = 'npc1.quest-complete'>
+		// Redirect handler for "quest complete" logic
+        quest("2.1.npc1.quest").status("complete");
+        quest("2.1.npc1.quest").update("update-collected-reward").status("active");
+        player().acquireRandomItem("aliens-replenishing-dice", "aliens-striking-shovel-of-surplus", "aliens-floaty-tunic-of-nonchalance");
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "2.1.npc1.quest"
+
+        #define UPDATE_KILLED_FLAG "update-killed-alien"
+        #define UPDATE_KILLED_ALIEN_BEFORE "update-killed-alien-before"
+        #define UPDATE_KILLED_ALIEN_DURING "update-killed-alien-during"
+        #define UPDATE_KILLED_ALIEN_AFTER "update-killed-alien-after"
+
+        // If quest is inactive, then we got him way too soon
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // fail quest
+            quest(QUEST).status("failed");
+
+            // premature kill update
+            quest(QUEST).update(UPDATE_KILLED_ALIEN_BEFORE).status("active");
+        }
+
+        // If quest has not been previously completed, then we just failed the quest
+        // Let&apos;s note that we can&apos;t "fail" this quest, except by killing Alien too soon (and we can&apos;t kill him if he&apos;s already dead)
+        elif ( quest(QUEST).status() != "complete" )
+        {
+            // Bummer
+            quest(QUEST).status("failed");
+
+            // premeditated kill update
+            quest(QUEST).update(UPDATE_KILLED_ALIEN_DURING).status("active");
+        }
+
+        // Only other possibility is completed quest
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // just flag update
+            quest(QUEST).update(UPDATE_KILLED_ALIEN_AFTER).status("active");
+        }
+
+        // note that we killed the guy
+        quest(QUEST).update("flag-killed-alien").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+</scripts>

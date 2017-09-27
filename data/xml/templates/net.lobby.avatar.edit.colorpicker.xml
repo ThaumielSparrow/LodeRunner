@@ -1,0 +1,316 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@property</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'net.lobby.avatar.edit.colorpicker'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1'>
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '3%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '95%' align = 'left' value = 'Select a Color' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group class = 'options' render-border = '1' per-row = '10' column-padding = '10'>
+
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 0, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 0, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 0, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 0, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 0, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 0, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 148, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 148, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 123, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 123, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 99, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 99, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 229, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 229, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 191, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 191, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 153, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 153, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '155, 229, 42' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '155, 229, 42' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '129, 191, 35' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '129, 191, 35' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '103, 153, 28' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '103, 153, 28' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 229, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 229, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 191, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 191, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 153, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 153, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 229, 229' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 229, 229' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 191, 191' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 191, 191' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 153, 153' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 153, 153' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 115, 115' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 115, 115' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 96, 96' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 96, 96' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 76, 76' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 76, 76' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '155, 194, 207' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '155, 194, 207' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '129, 162, 172' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '129, 162, 172' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '103, 129, 138' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '103, 129, 138' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '0, 0, 229' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '0, 0, 229' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '67, 0, 117' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '67, 0, 117' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '214, 117, 214' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '214, 117, 214' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '178, 97, 178' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '178, 97, 178' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '142, 78, 142' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '142, 78, 142' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 193, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 193, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 161, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 161, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 129, 0' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 129, 0' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '184, 82, 82' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '184, 82, 82' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 69, 69' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 69, 69' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '123, 55, 55' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '123, 55, 55' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 18, 132' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 18, 132' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 15, 110' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 15, 110' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 12, 88' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 12, 88' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 205, 162' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 205, 162' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 171, 135' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 171, 135' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 136, 108' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 136, 108' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '229, 229, 229' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '229, 229, 229' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '191, 191, 191' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '191, 191, 191' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '153, 153, 153' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '153, 153, 153' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '114, 114, 114' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '114, 114, 114' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' explicit-color = '76, 76, 76' />
+                <action do = 'net:update-avatar-property' property = '@property' value = '76, 76, 76' />
+                <action do = 'back' />
+            </item>
+        
+            <item class = 'option' fill = 'active'>
+                <icon x = '50%' y = '0' align = 'center' index = '24' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

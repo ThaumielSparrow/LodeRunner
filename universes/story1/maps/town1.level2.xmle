@@ -1,0 +1,499 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			216 0 0 0 0 0 152 327 331 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 327 253 331 206 206 332 312 312 327 0 282 0 0 0 329 332 253 326 334 153 0 0 
+			0 0 145 0 311 312 0 144 0 306 329 331 0 0 334 206 306 0 0 314 334 153 0 
+			0 0 144 0 0 0 0 207 0 0 313 309 332 253 303 145 0 0 0 0 303 323 154 
+			0 0 144 0 0 0 0 0 0 0 0 145 0 0 0 145 0 0 0 0 0 0 154 
+			0 0 210 0 0 0 0 0 0 0 0 145 0 152 218 210 0 0 0 0 0 0 153 
+			0 0 0 0 0 0 152 0 0 0 0 209 218 154 0 0 0 0 0 0 0 153 334 
+			0 0 0 0 0 217 153 216 0 0 0 0 0 152 0 0 0 0 0 0 152 332 304 
+			0 0 0 0 217 0 152 0 218 0 9 0 154 329 152 0 0 0 0 152 325 309 0 
+			332 253 330 329 0 333 153 206 0 326 327 254 325 312 328 334 254 331 152 325 314 0 0 
+			0 0 311 305 0 206 152 311 0 303 313 0 309 306 310 305 0 0 154 0 0 0 0 
+			216 0 0 312 333 309 154 206 329 310 0 0 0 303 0 0 0 0 154 218 0 0 0 
+			0 218 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 218 154 0 0 0 0 
+			0 0 216 0 0 0 154 0 0 0 0 0 153 333 206 206 333 0 154 219 0 0 0 
+			0 0 0 218 0 153 334 328 153 0 0 152 333 305 0 0 0 0 153 0 0 0 0 
+			0 0 0 0 327 323 306 308 323 255 323 332 306 0 0 0 0 0 334 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 280 345 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 264 340 0 284 0 0 281 0 0 0 0 0 280 343 342 0 0 0 0 0 
+			0 0 0 0 300 302 0 0 0 300 0 281 0 0 264 0 284 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 300 281 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 340 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 281 302 0 
+			0 0 0 281 0 345 0 0 0 280 0 340 344 0 0 0 344 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 300 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 284 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 264 0 343 284 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 341 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 280 345 0 0 0 344 342 0 302 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '1' x = '17' genus = '2' class = '' />
+	<entity x = '15' y = '9' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Desiree' title = '' />
+	<entity x = '7' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Jackson' title = 'Citizen' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '6' x = '16' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '9' x = '17' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '15' x = '9' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '11' x = '4' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '11' x = '8' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '14' x = '5' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '6' x = '11' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '7' x = '1' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '1' x = '9' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '1' x = '19' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '14' y = '8' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Desiree'>
+		<touch>
+			<script name = 'test.enter' />
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+			<script name = 'test.leave' />
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.talk' x = '6' y = '13' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Jackson'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc2.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '19' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '18' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '15' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '22' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.e' x = '15' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.a' x = '10' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.b' x = '15' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.c' x = '13' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.d' x = '8' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.e' x = '6' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.f' x = '8' y = '14' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle2.enter' x = '10' y = '9' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle2'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle2.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '2' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// npc1 imports 2 global conversations
+        npc("npc1").importConversation("global.talk1")
+                   .importConversation("global.random1");
+
+        // filter lines the npc can access in the imported conversation
+        npc("npc1").conversation("global.random1").branch("root").getLinesByClass("*").disable();
+        npc("npc1").conversation("global.random1").branch("root").getLinesByClass("test").enable();
+
+
+// npc1 path
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(2.0)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // npc2 path
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(1)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'puzzle2.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle2.enter").loadMap("puzzle2", "origin");
+debug( "won't load puzzle?" );
+	</script>
+	<script name = 'test.leave'>
+		debug("leaving trigger");
+
+        universe().runScript("global.test1");
+	</script>
+	<script name = 'xxx' />
+	<script name = 'npc2.talk'>
+		#define QUEST "1.2.npc2.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_TOOK_SHOES "update-took-shoes"
+        #define UPDATE_TOOK_OTHER "update-took-other"
+        #define UPDATE_TOOK_OTHER_UNKNOWINGLY "update-took-other-unknowingly"
+        #define UPDATE_DONATED "update-donated"
+        #define UPDATE_KEPT_SHOES "update-kept-shoes"
+
+// debug
+//if ( hasHistoricalRecord("obituary", "world0.level4/npc2") )
+if (0)
+{
+    npc("npc2").talk("beta");
+}
+
+else
+{
+
+        // Ready to try to assign quest?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // First, disable all response options to eventual quest offer.
+            npc("npc2").conversation("quest:pending:available").branch("root").line("prompt").getResponsesByClass("*").disable();
+
+            // Now let's see which ones we want to display.
+            // Did we already get the shoes?
+            if ( quest(QUEST).update(UPDATE_TOOK_SHOES).status() == "active" )
+            {
+                // Show "I got 'em" response
+                npc("npc2").conversation("quest:pending:available").branch("root").line("prompt").getResponsesByClass("completed").enable();
+            }
+
+            // Did we already solve puzzle room, but take a different item?
+            elif ( quest(QUEST).update(UPDATE_TOOK_OTHER_UNKNOWINGLY).status() == "active" )
+            {
+                // Show "didn't take those, sorry" response
+                npc("npc2").conversation("quest:pending:available").branch("root").line("prompt").getResponsesByClass("failed").enable();
+            }
+
+            // We haven't completed the puzzle room, so we can accept the new quest
+            else
+            {
+                // Show yes/no
+                npc("npc2").conversation("quest:pending:available").branch("root").line("prompt").getResponsesByClass("default").enable();
+            }
+
+
+            // We're ready to start/resume the "do this for me" conversation.
+            npc("npc2").talk("quest:pending:available");
+        }
+
+        // Completed quest?  Only way to do this is to give the shoes to him.
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // If we already did the puzzle room and didn't take the shoes, the quest still activated.
+            // If we donated money after that, we'll use a different thank you conversation.
+            if ( quest(QUEST).update(UPDATE_DONATED).status() == "active" )
+            {
+                // Say thanks
+                npc("npc2").talk("quest:failed:donated");
+            }
+
+            // Otherwise, traditional thanks, we completed and took shoes and delivered them.
+            else
+            {
+                // Say thanks
+                npc("npc2").talk("quest:complete");
+            }
+        }
+
+        // Failed quest?  Kept shoes, took wrong item, before knowing, after knowing, whatever...
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Took wrong item when knowing better?
+            if ( quest(QUEST).update(UPDATE_TOOK_OTHER).status() == "active" )
+            {
+                // scold
+                npc("npc2").talk("quest:failed:took-other-item");
+            }
+
+            // Kept shoes in the end?
+            elif ( quest(QUEST).update(UPDATE_KEPT_SHOES).status() == "active" )
+            {
+                // bad player
+                npc("npc2").talk("quest:failed:kept-shoes");
+            }
+        }
+
+        // In progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Got shoes?
+            if ( quest(QUEST).update(UPDATE_TOOK_SHOES).status() == "active" )
+            {
+                // If we previously extorted the guy, disable the default response
+                if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+                {
+                    // This will leave only the extorted line active
+                    npc("npc2").conversation("quest:in-progress:took-shoes").branch("root").getLinesByClass("default").disable();
+                }
+
+                // Otherwise, disable the "I extorted you" line
+                else
+                {
+                    // Full reward
+                    npc("npc2").conversation("quest:in-progress:took-shoes").branch("root").getLinesByClass("extorted").disable();
+                }
+
+
+                // Ask the player for the shoes, in an appropriate tone
+                npc("npc2").talk("quest:in-progress:took-shoes");
+            }
+
+            // Forsook shoes?
+            elif ( quest(QUEST).update(UPDATE_TOOK_OTHER).status() == "active" )
+            {
+                npc("npc2").talk("quest:in-progress:took-other-item");
+            }
+
+            // Took the wrong one before even taking on the quest?  Who would have known?
+            elif ( quest(QUEST).update(UPDATE_TOOK_OTHER_UNKNOWINGLY).status() == "active" )
+            {
+                // Keep panhandling
+                npc("npc2").talk("quest:pending:available");
+            }
+
+            // Still working on it
+            else
+            {
+                // Disable all lines by default
+                npc("npc2").conversation("quest:in-progress").branch("root").getLinesByClass("*").disable();
+
+                // Player extorted, we need results fast!
+                if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+                {
+                    // Hurry up lines
+                    npc("npc2").conversation("quest:in-progress").branch("root").getLinesByClass("extorted").enable();
+                }
+
+                else
+                {
+                    // Default, friendly dialogue
+                    npc("npc2").conversation("quest:in-progress").branch("root").getLinesByClass("default").enable();
+                }
+
+
+                // Talk using appropriate lines
+                npc("npc2").talk("quest:in-progress");
+            }
+        }
+
+}
+	</script>
+	<script name = 'npc2.ondeath'>
+		#define QUEST "1.2.npc2.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_TOOK_SHOES "update-took-shoes"
+        #define UPDATE_TOOK_OTHER "update-took-other"
+        #define UPDATE_TOOK_OTHER_UNKNOWINGLY "update-took-other-unknowingly"
+        #define UPDATE_DONATED "update-donated"
+        #define UPDATE_KEPT_SHOES "update-kept-shoes"
+        #define UPDATE_KILLED_JACKSON_BEFORE "update-killed-jackson-before"
+        #define UPDATE_KILLED_JACKSON_DURING "update-killed-jackson-during"
+        #define UPDATE_KILLED_JACKSON_AFTER_DELIVERY "update-killed-jackson-after-delivery"
+        #define UPDATE_KILLED_JACKSON_AFTER_DONATING "update-killed-jackson-after-donating"
+        #define UPDATE_KILLED_JACKSON_AFTER_KEEPING "update-killed-jackson-after-keeping"
+        #define UPDATE_KILLED_JACKSON_AFTER_TAKING_OTHER "update-killed-jackson-after-taking-other"
+
+        // If we never started quest, then we killed him way too soon
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Fail quest
+            quest(QUEST).status("failed");
+
+            // Early kill update
+            quest(QUEST).update(UPDATE_KILLED_JACKSON_BEFORE).status("active");
+        }
+
+        // Quest is in progress, we fail by not delivering shoes before kill
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Fail quest
+            quest(QUEST).status("failed");
+
+            // Premeditated kill update
+            quest(QUEST).update(UPDATE_KILLED_JACKSON_DURING).status("active");
+        }
+
+        // Quest failed already?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // We can fail either by taking the wrong item, or by keeping the shoes.
+            // Did we keep the shoes?
+            if ( quest(QUEST).update(UPDATE_KEPT_SHOES).status() == "active" )
+            {
+                // appropriate flag
+                quest(QUEST).update(UPDATE_KILLED_JACKSON_AFTER_KEEPING).status("active");
+            }
+
+            // Otherwise, we must have failed by taking the wrong item, on purpose or otherwise
+            else
+            {
+                // appropriate flag
+                quest(QUEST).update(UPDATE_KILLED_JACKSON_AFTER_TAKING_OTHER).status("active");
+            }
+        }
+
+        // Quest complete
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we take the wrong thing, then give him some gold to make him happy?
+            if ( quest(QUEST).update(UPDATE_DONATED).status() == "active" )
+            {
+                // He played us like a sucker!
+                quest(QUEST).update(UPDATE_KILLED_JACKSON_AFTER_DONATING).status("active");
+            }
+
+            // No, we gave him the right item for real
+            else
+            {
+                // We gave him what he wanted, and then some!
+                quest(QUEST).update(UPDATE_KILLED_JACKSON_AFTER_DELIVERY).status("active");
+            }
+        }
+
+
+        // Disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc1.talkx'>
+		// tests
+        // ...
+
+        // tests
+        session("test.x").set("a simple test");
+
+        session("test.x").set(
+            progress().getMapsByClass("overworld").npcsByClass("npc").countLiving()
+        );
+
+        npc("npc1").talk("default");
+	</script>
+	<script name = 'test.enter'>
+		debug("entering trigger");
+
+        universe().runScript("global.collect-tithe");
+	</script>
+	<script name = 'npc1.talk'>
+		// DEBUG
+        npc("npc1").talk("global.random1");
+	</script>
+</scripts>

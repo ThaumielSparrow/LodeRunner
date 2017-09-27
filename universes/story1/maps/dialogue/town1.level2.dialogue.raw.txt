@@ -1,0 +1,438 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' priority = '5'] Have you tried entering that puzzle room yet, $player$?  I did try solving it one time, but I never could \
+                                               master the technique of $digging bricks beneath bridges$.  Maybe you can do it!
+
+                [n id = 'nag2' priority = '0'] We are all rooting for you to defeat the ^Bungeling emperor^'s henchmen and save $Lelandria$.  On the side, \
+                                               I'm rooting for you to use one of your bombs on $Jackson$ down there.  I have nothing to reward you with, regrettably.
+
+                [n id = 'nag3'] Do you know that the original ruler of $Lelandria$ had a different name for this place?  Yeah!  He called it $graph$.  What a strange name to choose!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Have you gotten used to the game controls by now, $player$?  You can choose to customize them in the \
+                    $pause menu$ at any time!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] With your expertly set control scheme, $player$, you should have no trouble at all in the puzzle room on this level!  \
+                    You might have already completed it, even!
+
+        @conversation[id = 'kept-shoes']
+
+            >>> root
+
+                [n id = 'nag1' priority = '10'] Don't tell anyone, $player$, but I personally think those shoes look much better on you than they ever looked on $Jackson$.  \
+                                                I think you'll find them very useful against the ^bad guys^, too!
+
+                [n id = 'nag2' priority = '5'] On second thought, I don't care what you say to $Jackson$.  I never cared much for the guy!
+
+                [n id = 'nag3'] I thought about trying to steal $Jackson$'s shoes from the puzzle room one time.  After I got ahold of them, I would have sold them to him \
+                                at a highly exorbinant price.  Unfortunately, I never mastered the art of $digging bricks directly beneath bridges$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Be careful not to lose those shoes that you stole from $Jackson$.  Between you and me, I think he \
+                    would have never lost them if he had taken the time to customize his controls in the $pause menu$.  Have you thought about trying that, too?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Do you know that $Jackson$ never even took the time to customize his controls?  He can only blame himself, then, \
+                    for how easily he lost his precious $shoes$ in that puzzle room.  Only a true hero like you, $player$ -- with your smartly customized controls and your expert strategy -- only you deserve to wear \
+                    such fine shoes!
+
+
+        @conversation[id = 'killed-jackson']
+
+            >>> root
+
+                [n id = 'nag1' priority = '10'] I saw what you did to $Jackson$ down there.  Don't feel too bad about it, $player$.  The ^bad guys^ were \
+                                                going to get him sooner or later, anyway!
+
+                [n id = 'nag2'] $Jackson$ liked to steal gold too, just like the ^bad guys^.  He lost those shoes of his when he was trying to figure out \
+                                how to get all of the gold out of that puzzle room!
+
+                [n id = 'nag3'] Have you talked to $Isabella$ just next door?  She made good money selling new outfits to $Jackson$.  Never underestimate the \
+                                profit potential bred within desperate materialism!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] After thinking about things longer, I've become even $more$ impressed at how quickly you decided to \
+                    kill $Jackson$.  You didn't even delay long enough to customize your controls before dispatching him from this world!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I wish I had been there when you pressed $@bomb$ to explode him down there, $player$.  Wait -- did you simply let \
+                    him walk off the level by digging the ground in front of him?  I really wish I had seen it, either way!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:available']
+
+            >>> root
+
+                [l id = 'line1'] How's it going, $player$?  I hope you're not having too much trouble fending off the troops from the  ^Bungeling empire^!
+
+                    On another topic, I'd like to ask you for a small favor.  Have you visited the puzzle room up there yet?  I lost my $running shoes$ in there, and I'd really love to have them back.
+                    -redirect root
+
+                [l id = 'prompt'] If you find a way to complete that $puzzle room$, please make sure to select my $running shoes$ as your prize, then bring them back to me for a nice piece of coin!
+
+                    Do you think you can do that for me, $player$?
+
+                    +yes[class = 'default'] I'll see what I can do, $Jackson$.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thanks, $player$!  Good luck in the $puzzle room$!
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("active");
+                                    npc("npc2").clearIndicators();
+
+                    +extort[class = 'default'] How about giving me half of the gold up front?
+
+                        >>> root.extort
+
+                            [l id = 'line1'] I'll trust you on this one, $player$.  Here, make good use of these $32 gold pieces$, and please get my shoes for me!
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("active");
+                                    quest("1.2.npc2.quest").update("update-extorted").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().addGold(32);
+
+
+                    +already-completed[class = 'completed'] I already completed that puzzle room.
+
+                        >>> root.already-completed
+
+                            [l id = 'line1' transition = '1']
+                                @post-script[queued = '1']
+                                    npc("npc2").talk("quest:in-progress:took-shoes");
+
+                    +already-failed[class = 'failed'] I already completed that puzzle room, but I didn't take the shoes.
+
+                        >>> root.already-failed
+
+                            [n id = 'nag1' transition = '1']
+                                -redirect request-donation
+                                @post-script
+                                    quest("1.2.npc2.quest").status("active");
+                                    quest("1.2.npc2.quest").update("update-donation-requested").status("active");
+
+                [n id = 'nag1' transition = '1']
+                    -redirect request-donation
+
+
+            >>> request-donation
+
+                [l id = 'line1'] I guess you couldn't have known better, $player$.  At this point, I will probably have to order a new pair on an online auction site for a \
+                    terribly marked up price, and I just don't have enough money for that right now.
+
+                    Do you think you could shoot me a few pence of your own, $player$?  It'd really mean a lot to me!
+
+                    +yes[min-gold = '50'] Sure, $Jackson$.  I can spare you $50 gold pieces$.
+
+                        >>> request-donation.yes
+
+                            [l id = 'line1'] Thank you, $player$!  With this windfall, I can finally afford to buy some new $shoes$ to replace the ones I lost in that puzzle room! \
+                                Please, $player$, accept this $special item$ for your generous donation!
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("complete");
+                                    quest("1.2.npc2.quest").update("update-donated").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold(50);
+                                    player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");
+
+                    +no Maybe later...
+
+                        >>> request-donation.no
+
+                            [n id = 'nag1'] If you change your mind, $player$, please let me know!
+
+                            [n id = 'nag2'] Please come back if you change your mind, $player$!
+
+                [n id = 'nag1'] I know you couldn't have known that I wanted those shoes, $player$.  I've been looking at some online auction sites, but I just can't outbid \
+                    the automated bots that outbid me at the last second of the auction.
+
+                    If I had a little more gold, I think I could win, though.  Can you help me out yet, $player$?
+
+                    +yes[min-gold = '50'] Here you go, $Jackson$.  Have $50 gold pieces$, on me.
+
+                    +no Maybe later...
+
+
+        @conversation[id = 'beta']
+
+            >>> root
+
+                [n id = 'nag1'] Awesome job!  Yeah!
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1' class = 'default'] Have you tried to complete the $puzzle room$ yet, $player$?  For each and every puzzle room you complete, you get to pick an item as a prize!
+
+                [n id = 'nag2' class = 'default'] If you can complete the $puzzle room$ up there, you can take my $running shoes$ as a prize and return them to me!
+
+                [l id = 'line1' class = 'extorted'] Why haven't you completed the $puzzle room$ yet, $player$?  I gave you a lot of gold, and I thought you would solve it promptly.
+
+                [n id = 'nag3' class = 'extorted'] Hurry up, $player$.  Finish that $puzzle room$ and bring me my shoes!  I didn't give you that gold advance out of the goodness of my heart!
+
+                [n id = 'nag4' class = 'extorted'] If you think I will give you more gold if you keep pestering me, you're wrong, $player$!  Bring me my shoes!
+
+
+        @conversation[id = 'quest:in-progress:took-shoes']
+
+            >>> root
+
+                [l id = 'line1' class = 'default'] You did it, $player$!  You completed the $puzzle Room$, and I see that you have my $running shoes$!
+
+                    Please, can I have them now?
+
+                    +yes Here you go, $Jackson$.  Enjoy!
+
+                        >>> root.yes
+
+                            [l id = 'line1'] All right!  I never thought I'd see these beautiful $running shoes$ again, but you got it done!  Please, accept these $64 gold pieces$ as a reward for your hard work!
+
+                                In addition, I'd like to offer you one of the cool items I've been saving as a quest reward.  I hope you like it!
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("complete");
+                                    quest("1.2.npc2.quest").update("update-delivered").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().addGold(64).dropItem("jacksons-running-shoes");
+                                    player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");
+
+
+                    +no These actually look really good on me.  I think I'll keep them.
+
+                        >>> root.no
+
+                            [l id = 'line1'] I can't really blame you, $player$. They feel good, they look good!  Of course, I won't be giving you any gold, seeing as you've decided to keep the $shoes$ for yourself...
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("failed");
+                                    quest("1.2.npc2.quest").update("update-kept-shoes").status("active");
+                                    npc("npc2").clearIndicators();
+
+                [l id = 'line2' class = 'extorted'] You finally solved the $puzzle room$, $player$!  I wonder if you would have solved it as quickly if I hadn't given you \
+                    half of the gold up front, though.
+
+                    Whatever the answer, I still appreciate your great effort, $player$!  Can I have the shoes now?
+
+                    +yes-extorted Here you go, $Jackson$.  Give me the rest of my $payment$.
+
+                        >>> root.yes-extorted
+
+                            [l id = 'line1'] Enjoy the remainder of the bounty I promised you, $32 gold pieces$.  Ordinarily I would have \
+                                thrown in an item, too, but your extortion left a bad taste in my mouth.
+
+                                Then again, that's nothing a little bit of $gold$ couldn't rinse right out.  What do you think, $player$?
+
+                                +yes[min-gold = '100'] Reverse extortion, huh?  You win.  I'll give you $100 gold pieces$ for your $special item$.
+
+                                    >>> root.yes-extorted.yes
+
+                                        [n id = 'nag1'] Thanks for your contribution to my gold reserves, $player$.  I actually make a lot of money this way, \
+                                            goading various travelers into giving me a ton of gold after they hang on to a pair of shoes.
+
+                                            I'm going to need a few minutes to buy another pair for $5 gold pieces$ and plant them in the puzzle room \
+                                            for the next hero that comes along, but first let me give you one of the standard quest reward items!
+
+                                            @post-script
+                                                quest("1.2.npc2.quest").update("update-paid-reverse-extortion").status("active");
+                                                player().subtractGold(100).dropItem("jacksons-running-shoes");
+                                                player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");
+
+                                +pass Don't worry about it.
+
+                                    >>> root.yes-extorted.pass
+
+                                        [n id = 'nag1']
+                                            @post-script
+                                                quest("1.2.npc2.quest").update("update-declined-reverse-extortion").status("active");
+
+                                @post-script
+                                    quest("1.2.npc2.quest").update("update-delivered").status("active");
+                                    quest("1.2.npc2.quest").status("complete");
+                                    npc("npc2").clearIndicators();
+                                    player().addGold(32);
+
+                    +no-extorted These actually look really good on me.  I think I'll keep them, along with your down payment.
+
+                        >>> root.no-extorted
+
+                            [l id = 'line1'] I hear what you're saying, $player$, but I don't like it.  Sadly, I have no real power to make you regret your greed.  Perhaps you'll use the money you ^stole^ from me to buy a bomb, and then you \
+                                might blow yourself up with the bomb.  I can only hope!
+
+                                @post-script
+                                    quest("1.2.npc2.quest").status("failed");
+                                    quest("1.2.npc2.quest").update("update-kept-shoes").status("active");
+                                    npc("npc2").clearIndicators();
+
+
+        @conversation[id = 'quest:in-progress:took-other-item']
+
+            >>> root
+
+                [l id = 'line1' class = 'controls-uncustomized'] $player$, what have you done?!  You didn't pick the right item when you completed the $puzzle room$!
+
+                    Maybe if you had taken the time to customize your controls in the $pause menu$ you would have picked the right item, but you've ruined everything now!
+
+                    You can forget about our agreement!
+
+                    @post-script
+                        quest("1.2.npc2.quest").status("failed");
+                        npc("npc2").clearIndicators();
+
+                [l id = 'line2' class = 'controls-customized'] $player$, what have you done?!  You didn't pick the right item when you completed the $puzzle room$!
+
+                    Don't try to tell me you didn't know any better, either.  I know you've customized your controls, and you know exactly how they work, $player$!
+
+                    You can forget about our agreement!
+
+                    @post-script
+                        quest("1.2.npc2.quest").status("failed");
+                        npc("npc2").clearIndicators();
+
+
+        @conversation[id = 'quest:failed:took-other-item']
+
+            >>> root
+
+                [n id = 'nag1'] I would have given you the gold, $player$, but you didn't bring back my $running shoes$.
+
+                [n id = 'nag2'] My $running shoes$ would look a lot better on you than whatever other item you selected instead!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You $still$ haven't customized your controls, $player$?  I wonder who will suffer next as you pretend to \
+                    save us from the ^Bungeling empire^!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Next time you promise to help somebody recover a lost item, $player$, I hope you can find a way to \
+                    hold true to your word.  Maybe you need to make some additional customizations to your controls in the $pause menu$, because the settings you chose last time just didn't get the job done!
+
+
+        @conversation[id = 'quest:failed:kept-shoes']
+
+            >>> root
+
+                [n id = 'nag1'] I hope you're making good use of those $running shoes$, $player$!
+
+                [n id = 'nag2'] I remember how $fast$ I used to run while wearing those $running shoes$.  I miss them so much!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Do you realize, $player$, that I paid a lot of gold pieces to a cobbler to custom fit those shoes for my feet? \
+                    Wow!  You wouldn't know anything about $customization$, though, would you?  You haven't even customized your controls in the $pause menu$ yet!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Do you remember the time you spent customizing your controls in the $pause menu$, $player$?  I spent that same amount \
+                    of time getting a custom fit for those $shoes$ you kept from me!  I really wish you had given them to me!
+
+
+        @conversation[id = 'quest:failed:donated']
+
+            >>> root
+
+                [l id = 'line1'] Thanks for that gold you gave me, $player$!  I finally won an online auction, meaning I should have some perfect new shoes in a matter of days!
+
+                [n id = 'nag1'] I thought about asking you for a few more pieces of gold so that I could spring for overnight shipping, but you probably wouldn't have gone for that.
+
+                [n id = 'nag2'] When will my new $shoes$ finally get here?  I can hardly wait!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Thanks for that gold, $player$.  I need just a little bit more to buy some custom fit shoelaces, though.  If you \
+                    will give me $25 gold pieces$, then I will tell you where you can customize your controls!
+
+                    What do you say, $player$?
+
+                    +yes[min-gold = '25'] Sure, $Jackson$.  Take this gold!
+
+                        >>> root.yes
+
+                            [n id = 'nag1'] Thanks a lot, $player$!
+
+                                As I promised, I will now tell you where you can customize your controls.  I wrote it all down somewhere, but I can't remember where I put my journal!  I suspect that if you gave me another \
+                                $10 gold pieces$ I would immediately remember where I put it!
+
+                                +sucker[min-gold = '10'] Not a problem, $Jackson$.  Here you go!
+
+                                    >>> root.yes.sucker
+
+                                        [n id = 'nag1'] I've found it, $player$!  I've found the journal.  I know exactly where I made the note about where you can go to customize your controls, but unfortunately I have a hard \
+                                            time reading in low light conditions.  If you would just give me one more $gold piece$, I could use its shiny aura to help me read this journal entry.
+
+                                            Please help, $player$!
+
+                                            +crazy[min-gold = '1']I'm happy to help, $Jackson$.
+
+                                                >>> root.yes.sucker.crazy
+
+                                                    [n id = 'nag1'] Thanks, $player$.  I can read it easily now!
+
+                                                        Listen closely!  You can customize your controls in the $pause menu$.  You can also do it in the $main menu$, but you would \
+                                                        have to quit this game session to do that!
+
+                                                        @pre-script
+                                                            player().subtractGold(1);
+
+                                            +crazier[min-gold = '50']Why stop there, $Jackson$?  I'll give you $50 gold pieces$!
+
+                                                >>> root.yes.sucker.crazier
+
+                                                    [n id = 'nag1'] You're starting to scare me, $player$.  I feel like I must have somehow offended your delicate sensibilities, but I promise you that I am only trying to help you to \
+                                                        customize your controls!
+
+                                                        Here, $player$.  I'm going to give you all of the gold back right now.  Also, you can customize your controls in the $pause menu$.  You can also do it in the $main menu$, but you would \
+                                                        have to quit this game session to do that!
+
+                                                        @pre-script
+                                                            player().addGold(35);
+
+                                            +no This ends now, $Jackson$.  No more gold!
+
+                                                >>> root.yes.sucker.no
+
+                                                    [n id = 'nag1'] $player$, I told you about how much trouble I have reading in these low light conditions.  I don't think I can read this journal entry.  Unfortunately, you're going \
+                                                        to have to figure out where to customize your controls on your own now!
+
+                                            @pre-script
+                                                player().subtractGold(10);
+
+                                +no I'm not giving you any more gold, $Jackson$.
+
+                                    >>> root.yes.no
+
+                                        [n id = 'nag1'] I don't blame you for giving up now, $player$.  You probably gave up just as easily when it came time to customize your controls!  Ha ha ha ha ha!
+
+                                @pre-script
+                                    player().subtractGold(25);
+
+                    +no No thanks, $Jackson$.  I don't need help with that!
+
+                        >>> root.no
+
+                            [n id = 'nag1'] You already know that you can customize your controls using the $pause menu$, then?  Please don't tell anybody else!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] You already customized your controls, didn't you, $player$?
+
+                    What a shame.
+
+                    I had this incredibly $elaborate discussion$ \
+                    ready -- you would pay me increasing amounts of gold, and in return I would have finally told you that you can customize your controls in the $pause menu$.  Regrettably, you have already customized your \
+                    controls and thus I can't run that by you.
+
+                    Have you considered temporarily renaming your $controls.xml$ file and then returning to me once more?
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] I love these $running shoes$, $player$!  I think they make me a little faster!
+
+                [n id = 'nag2'] These $running shoes$ make all the difference, $player$.  Thanks for bringing them back to me!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] $player$, did I ever tell you that I had these $shoes$ custom fit?  I think that everyone should have the chance \
+                    to customize things, even the simple things like gameplay controls.  You could probably do that in the $pause menu$ right now!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I wouldn't have lost so much sleep over these shoes if I hadn't spent so many gold pieces having them custom fit recently! \
+                    You probably know exactly what I mean after using the $pause menu$ to custom fit your gameplay controls!

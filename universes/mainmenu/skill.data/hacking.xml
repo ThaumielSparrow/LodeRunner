@@ -1,0 +1,96 @@
+<hacking id =  'hacking'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>The [color=title]Hacking[/color] skill automatically reveals portions of terminal [color=title]keycodes[/color].  It also unlocks advanced options when accessing [color=title]terminals[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.control.hacking</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>The [color=title]Hacking[/color] skill automatically reveals portions of terminal [color=title]keycodes[/color].  It also unlocks advanced options when accessing [color=title]terminals[/color].</overview>
+			<specs>Reveal [color=title]2 digits[/color]
+Access low-security options</specs>
+			<manual />
+			<gif-source>gifs.control.hacking</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Hacking[/color], you will lose access to the [color=title]Persuasion[/color] skill.
+
+Higher levels of [color=title]Hacking[/color] will reveal [color=title]longer portions[/color] of passcodes.  Each upgrade will also expose higher-security options on [color=title]terminals[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Persuasion[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '1' />
+				<modifier name = 'digits' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>At Level 2, the [color=title]Hacking[/color] skill reveals an additional digit in each passcode.  You will also gain access to [color=title]mid-grade security selections[/color] when viewing terminal screens.</overview>
+			<specs>Reveal [color=title]3 digits[/color] (+1)
+Access medium-security options</specs>
+			<manual />
+			<gif-source>gifs.control.hacking</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '2' />
+				<modifier name = 'digits' value = '3' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>When fully upgraded, the [color=title]Hacking[/color] skill reveals [color=title]5 digits[/color] of any code.  This oftentimes provides you the entire keycode.
+
+At this level, you will gain access to every [color=title]secure terminal option[/color] you encounter.</overview>
+			<specs>Reveal [color=title]5 digits[/color] (+2)
+Access all secure options</specs>
+			<manual />
+			<gif-source>gifs.control.hacking</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Hacking[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Hacking[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '3' />
+				<modifier name = 'digits' value = '5' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have finished upgrading the [color=title]Hacking[/color] skill.  Key panels will now reveal up to [color=title]5 digits[/color] of any code.
+
+At this level, you will gain access to every [color=title]secure terminal option[/color] you encounter.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.control.hacking</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</hacking>

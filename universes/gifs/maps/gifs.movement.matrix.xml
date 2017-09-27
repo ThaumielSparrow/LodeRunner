@@ -1,0 +1,146 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 326 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			324 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			304 330 235 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 311 237 0 0 216 219 235 325 218 0 0 0 0 0 0 
+			0 311 330 235 217 0 0 235 0 0 219 0 0 0 0 0 
+			0 0 304 236 0 0 0 235 0 0 0 332 28 27 328 0 
+			0 0 307 326 29 26 236 324 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 237 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 236 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 324 237 334 25 27 333 332 206 323 323 
+			0 0 0 0 0 0 0 237 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 235 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 235 330 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 235 331 304 0 0 0 0 0 0 0 0 
+			0 0 235 329 206 333 304 0 0 0 0 0 0 0 0 0 
+			0 0 237 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 263 0 0 0 283 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 263 0 0 283 264 0 284 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 264 0 284 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '13' y = '11' genus = '1' ai-behavior = '1' name = 'enemy1' nick = '' title = '' />
+	<entity x = '1' y = '4' genus = '1' ai-behavior = '1' name = 'enemy2' nick = '' title = '' />
+	<entity x = '4' y = '16' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '12' y = '11' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '6' y = '5' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '5' y = '15' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '7' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '7' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '9' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp4' x = '10' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp5' x = '13' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'alarm1' x = '8' y = '3' width = '1' height = '3' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'alarm1.dig' x = '11' y = '8' width = '4' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'matrix' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'matrix' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp4' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp5' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+	<script name = 'alarm1.action'>
+		<packet>
+			<event plane = 'Untitled Plane' type = 'dig-tiles' target = 'alarm1.dig' behavior = 'dig' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

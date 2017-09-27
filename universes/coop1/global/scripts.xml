@@ -1,0 +1,29 @@
+<scripts>
+    <script name = 'global.map.onload'>
+
+        // Define how many bombs each player gets.
+        // Individual levels can overwrite this?
+        distributeBombs({
+            "per-slot": [0, 0, 0, 0]
+        });
+
+    </script>
+    <script name = 'global.map.load.complete'>
+    </script>
+    <script name = 'global.coop.ready'>
+
+        // Set default enemy targets (preferred).
+        // If a map lacks a given enemy, the call will fail silently (no problem).
+        enemy("enemy1").setPreferredTarget(1);
+        enemy("enemy2").setPreferredTarget(2, 3, 1);
+        enemy("enemy3").setPreferredTarget(3, 1, 2);
+        enemy("enemy4").setPreferredTarget(2, 3, 1);
+        enemy("enemy5").setPreferredTarget(1);
+        enemy("enemy6").setPreferredTarget(2, 3, 1);
+        enemy("enemy7").setPreferredTarget(3, 1, 2);
+        enemy("enemy8").setPreferredTarget(2, 3, 1);
+
+    </script>
+    <script name = 'global.map.onvisit'>
+    </script>
+</scripts>

@@ -1,0 +1,121 @@
+<strings>
+    <generic>
+        <string name = 'notification:title'>Notification</string>
+        <string name = 'new-gamepad-enabled:header'>New Gamepad Enabled</string>
+        <string name = 'previous-gamepad-found:header'>Previous Gamepad Found</string>
+        <string name = 'previous-gamepad-not-found:header'>Gamepad Not Found</string>
+        <string name = 'gamepad-selected:header'>Gamepad Selected</string>
+        <string name = 'gamepad-reset:title'>Gamepad Controls Reset</string>
+        <string name = 'keyboard-reset:title'>Keyboard Controls Reset</string>
+        <string name = 'keyboard-reset:message'>All controls set to default</string>
+        <string name = 'controls-saved:title'>Controls Saved</string>
+        <string name = 'last-played:lead-in'>Last Played</string>
+        <string name = 'players-allowed:lead-in'>Players Allowed</string>
+        <string name = 'levels-finished:lead-in'>Levels Finished</string>
+        <string name = 'n-available:lead-in'>Available</string>
+        <string name = 'new-quest:header'>New Quest</string>
+        <string name = 'quest-complete:lead-in'>Quest Complete</string>
+        <string name = 'quest-complete:header'>Quest Complete!</string>
+        <string name = 'quest-failed:header'>Quest Failed</string>
+        <string name = 'quest-updated:header'>Quest Updated</string>
+        <string name = 'empty-slot:label'>Empty Slot</string>
+        <string name = 'n-count:lead-in'>Count</string>
+        <string name = 'puzzle-default-intro:message'>You can retry the puzzle as many times as you wish.</string>
+        <string name = 'new-item-acquired:header'>Item Acquired</string>
+        <string name = 'acquired-m-as-n:label'>Acquired [color=special]@m[/color] as a [color=title]@n[/color].</string>
+        <string name = 'purchased-m-from-n-for-g:message'>Purchased [color=special]@m[/color] for [color=title]@g gold pieces[/color] from [color=special]@n[/color].</string>
+        <string name = 'received-m-from-n-for-s:message'>Received [color=special]@m[/color] from [color=special]@n[/color] for [color=title]@s[/color].</string>
+        <string name = 'quest-reward:direct-object'>quest reward</string>
+        <string name = 'new-item-purchased:header'>New Item Purchased</string>
+        <string name = 'character-name:lead-in'>Character Name</string>
+        <string name = 'character-level:lead-in'>Character Level</string>
+        <string name = 'time-played:lead-in'>Time Played</string>
+        <string name = 'digs-made:lead-in'>Digs Made</string>
+        <string name = 'bad-guys-killed:lead-in'>Bad Guys Killed</string>
+        <string name = 'quests-finished:lead-in'>Quests Finished</string>
+        <string name = 'gold-collected:lead-in'>Gold Collected</string>
+        <string name = 'items-acquired:lead-in'>Items Acquired</string>
+        <string name = 'gold-spent:lead-in'>Gold Spent</string>
+        <string name = 'npcs-killed:lead-in'>Friendlies Killed</string>
+        <string name = 'quests-completed:lead-in'>Quests Completed</string>
+        <string name = 'achievements-completed:lead-in'>Achievements Completed</string>
+        <string name = 'never:label'>Never</string>
+        <string name = 'complete:label'>Complete</string>
+        <string name = 'level-complete:label'>Level Complete!</string>
+        <string name = 'moving-to-next-level:label'>Advancing to next level...</string>
+        <string name = 'equip-x:label'>Equip @item-title</string>
+        <string name = 'npc-says:label'>@npc-title says</string>
+        <string name = 'press-start:label'>Press @some-key to continue...</string>
+        <string name = 'press-n-to-talk-to-m:label'>Press [color=special]@n[/color] to talk to [color=special]@m[/color]</string>
+        <string name = 'press-n-to-do-m:label'>Press [color=special]@n[/color] to @m</string>
+        <string name = 'return-to-overworld:label'>Return to [color=special]@overworld-title[/color]</string>
+        <string name = 'm-of-n-slots-available:label'>@m / @n slot(s) available</string>
+        <string name = 'cost-in-gold:lead-in'>Cost</string>
+        <string name = 'unaffordable-upgrade:label'>You cannot afford this upgrade right now.  You need an additional [color=special]@amount[/color] to buy this upgrade.</string>
+        <string name = 'n-active-quests:label'>Active Quests (@n)</string>
+        <string name = 'n-completed-quests:label'>Finished Quests (@n)</string>
+        <string name = 'select-n-or-m:label'>Select [color=special][color=skill]@n[/color][/color] or [color=special][color=skill]@m[/color][/color]</string>
+        <string name = 'n-updates:label'>Updates:  @n</string>
+        <string name = 'n-skill-points-needed:label'>Skill Points Needed:  @n</string>
+        <string name = 'n-upgrades-available:label'>You can upgrade this item @n times.</string>
+        <string name = 'skill-n-equipped:title'>[color=special]@n[/color] equipped!</string>
+        <string name = 'press-n-to-use-skill:message'>Press [color=special]@n[/color] to use your new skill</string>
+        <string name = 'worldmap-view:label'>Map View:  @title</string>
+        <string name = 'worldmap-type:gold'>Gold Map</string>
+        <string name = 'worldmap-type:puzzle'>Puzzle Rooms</string>
+        <string name = 'worldmap-type:challenge'>Challenge Rooms</string>
+        <string name = 'default-coop-overview'>Collect all of the gold to reach the next level!</string>
+    </generic>
+    <newsfeeder>
+        <string name = 'creating-session:title'>Creating Session</string>
+        <string name = 'creating-session:message'>Waiting for server response...</string>
+        <string name = 'server-online:title'>Server Online</string>
+        <string name = 'server-online:message'>Waiting for players to join...</string>
+        <string name = 'ending-session:title'>Ending Session</string>
+        <string name = 'ending-session:message'>Ending server session...</string>
+        <string name = 'error-creating-session:title'>Error Creating Session</string>
+        <string name = 'error-creating-session:message:generic'>Unknown error</string>
+        <string name = 'searching-games:title'>Searching for Games</string>
+        <string name = 'searching-games:message'>Waiting for server response...</string>
+        <string name = 'no-sessions:message'>No session found.</string>
+        <string name = 'invalid-sessions-data:message'>The server returned an invalid response.</string>
+        <string name = 'error-joining-session:title'>Error Connecting to Session</string>
+        <string name = 'error-joining-session:message:generic'>Unknown error</string>
+        <string name = 'join-failed:title'>Connection Failed</string>
+        <string name = 'join-failed:message'>Could not connect to the host</string>
+        <string name = 'joining-session:title'>Establishing Connection</string>
+        <string name = 'joining-session:message'>Waiting for host response...</string>
+        <string name = 'leaving-session:title'>Ending Session</string>
+        <string name = 'leaving-session:message'>Closing connection to host...</string>
+        <string name = 'server-timeout:title'>Server Timeout</string>
+        <string name = 'server-timeout:message'>You lost your connection with the game's host.  Returning to main menu...</string>
+        <string name = 'server-full:message'>The game you are trying to join does not have an open slot.</string>
+        <string name = 'searching-dlc:title'>Retrieving DLC Listing</string>
+        <string name = 'searching-dlc:message'>Waiting for server response...</string>
+        <string name = 'enter-name:prompt'>Enter a nickname:</string>
+        <string name = 'player-timed-out:title'>Player Timed Out</string>
+        <string name = 'server-quit:title'>Host Ended Session</string>
+        <string name = 'server-quit:message'>Returning to Main Menu...</string>
+        <string name = 'player-disconnected:title'>Player Disconneected</string>
+        <string name = 'player-joined:title'>Player Joined!</string>
+        <string name = 'joined-session:title'>Connected to Host</string>
+        <string name = 'joined-session:message'>@n other player@s online</string>
+        <string name = 'level-failed:title'>Level Failed</string>
+        <string name = 'level-failed:message'>Restarting level...</string>
+        <string name = 'download-listing-unavailable:title'>Server Unavailable</string>
+        <string name = 'download-listing-unavailable:message'>[color=special]A Lode Runner Story[/color] failed to retrieve level listing information from the internet.  Please check your connection or try again later.</string>
+        <string name = 'download-begin:title'>Downloading Level Set</string>
+        <string name = 'download-complete:title'>Download Complete!</string>
+        <string name = 'download-failed:title'>Download Failed</string>
+        <string name = 'download-failed:message'>Please try again later</string>
+        <string name = 'achievement-complete:title'>Achievement Complete!</string>
+        <string name = 'save-complete:title'>Save Complete</string>
+        <string name = 'quicksave-n-complete:message'>Quicksave @n saved successfully</string>
+        <string name = 'customsave-n-complete:message'>@n saved successfully</string>
+        <string name = 'load-complete:title'>Load Complete</string>
+        <string name = 'load-complete:message'>Resuming game...</string>
+        <string name = 'not-downloaded-n:message'>You have not downloaded the [color=special]@n[/color] level set.  You must download it from the [color=special]Main Menu[/color] before you can join this game!</string>
+        <string name = 'not-updated-n:message'>Your version of the [color=special]@n[/color] level set ([color=special]@v1[/color]) does not match the host's version ([color=special]@v2[/color]).  Try updating your version through the main menu's level finder to resolve this conflict!</string>
+        <string name = 'n-has-died:message'>[color=special]@n[/color] has died!</string>
+    </newsfeeder>
+</strings>

@@ -1,0 +1,86 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] No one around here has any respect, $player$.
+
+                    You've seen it for yourself!  Most people are just using you to distract themselves from the pathetic emptiness of their meaningless, consumer-driven lives!
+
+                    $player$, I want you to put an end to all of that.
+                    -redirect root
+
+                [n id = 'nag1'] I want you to destroy every last talking person in all of $Lelandria$!  If you do this work for me, I will reward you $very$ well.  Naturally, \
+                    you will want to spare me so that you can collect your reward.
+
+                    +accept That sounds like my kind of quest.  Sign me up!
+
+                        >>> root.accept
+
+                            [l id = 'line1'] Remember, $player$, that you might want to save me for last.  Once I confirm that you've killed everyone else, I will gladly reward you with \
+                                some $premium items$, and possibly more!
+
+                                @post-script
+                                    quest("5.2.npc1.quest").status("active");
+                                    quest("5.2.npc1.quest").update("update-underway").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +later Let me get back to you on that one...
+
+                        >>> root.later
+
+                            [n id = 'nag1']
+
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] $player$, I've been tracking your progress.  I see that you've killed $[npc.count.dead] out of $[npc.count.total] possible talking people in this game, including me in those numbers.  Keep trying!
+
+                [n id = 'nag2'] Let me update you on your progress, $player$.  Out of $[npc.count.total] talking people, you have killed $[npc.count.dead], including me in those numbers.  Keep it up!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You've killed $[npc.count.dead] of the people in $Lelandria$, and you haven't even paused to customize your \
+                    controls.  That would only slow you down, but a surprising number of players do it anyway!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Don't waste time talking to me, $player$.  You have $[npc.count.living] more people in $Lelandria$ to kill.  Put that \
+                    $@bomb$ control to work!
+
+
+        @conversation[id = 'quest:in-progress:killed-all-others']
+
+            >>> root
+
+                [l id = 'line1'] You did a lot of work for me, $player$.  You did a lot of good work.
+
+                    First, let me offer you these $2 skill points$.  You definitely earned them.  I'd also like to give you $50 free bombs$.  You've proven beyond any doubt your ability to use them appropriately.
+                    -redirect root
+
+                    @post-script
+                        player().addSkillPoints(2).addBombs(50);
+                        player().acquireItem("the-ring-of-extreme-prejudice");
+
+                [l id = 'line2'] At this point, $player$, you should go ahead and get rid of me as well.
+
+                    @post-script
+                        quest("5.2.npc1.quest").update("update-almost-done").status("active");
+                        npc("npc1").clearIndicators();
+
+                [l id = 'line3'] Finish your job, $player$.  One last $XP$ reward for finishing this quest!  Just in case you don't have a bomb to use on me, have one more free bomb to do the job.
+
+                    @post-script
+                        player().addBombs(1);
+
+                [n id = 'nag1'] I don't want to talk anymore, $player$.
+
+                [n id = 'nag2'] You know what to do, $player$.  Finish me off!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Just for a moment, I had second thoughts about asking you to get rid of me.  When I noticed that you never \
+                    took the time to customize your gameplay controls in the $pause menu$, though... I don't want any part of a game with a player like that, $player$.  Please, finish me!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Go ahead and use your $@bomb$ control, $player$.  I know you know what it does!
+

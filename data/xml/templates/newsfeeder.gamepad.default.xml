@@ -1,0 +1,36 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@current-device</parameter>
+		<parameter>@last-device</parameter>
+	</text>
+</parameters>
+
+<template name = 'newsfeeder.gamepad.default'>
+
+    <rowmenu id = 'feed' class = 'news' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' shrinkwrap = '1'>
+        <item-group render-border = '1'>
+            <item>
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                        <label x = '20%' y = '0' width = '70%' value = '[color=special]Default Gamepad Enabled[/color]' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <label x = '5%' y = '0' width = '90%' value = '@current-device' />
+                    <label class = 'subtitle' x = '5%' y = '0' width = '90%' value = '@last-device not found...' />
+
+                </stack>
+            </item>
+        </item-group>
+    </rowmenu>
+
+</template>

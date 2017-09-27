@@ -1,0 +1,19 @@
+<characters>
+	<arrow1>
+		<chapter1>
+			<conversation id = 'tutorial'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Welcome to [color=dim]A Lode Runner Story[/color]!  Explore the world, using [color=dim]@left[/color] to move to your left, then using [color=dim]@right[/color] to move to your right.</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>You&apos;re doing great!  Follow the arrows until you reach the next level.</comment>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</arrow1>
+</characters>

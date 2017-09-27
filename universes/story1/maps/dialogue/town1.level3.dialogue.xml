@@ -1,0 +1,229 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1' class = 'default'>
+							<comment>Greetings, [color=special]$[core.player1.name][/color]!  I have a few little trinkets to help you defeat the [color=dim]Bungeling Emperor[/color].</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc1.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'quest' branch-id = 'root.quest'>
+								<phrase>Do you have anything in the back?</phrase>
+								<branch id = 'root.quest'>
+									<linear>
+										<line id = 'line1' class = 'available'>
+											<comment>
+												On the record, [color=special]$[core.player1.name][/color]?  No.  Perhaps, though...
+
+I've been quabbling with another merchant lately.  I don't want to name them yet, but I could do a lot more business if you paid them a visit with one of my bombs.
+											</comment>
+											<response branch-id = 'root.quest.more'>
+												<phrase>Please, give me a name...</phrase>
+											</response>
+											<response branch-id = 'root.quest.later'>
+												<phrase>I&apos;ve got to go.</phrase>
+											</response>
+										</line>
+									</linear>
+									<nags>
+										<line id = 'nag1' class = 'available'>
+											<comment>
+												If you're still looking for some better wares, then you're going to have to play ball.
+
+I'm still quabbling with that other unnamed merchant.  I could do a lot more business if you knocked them out of the park.
+											</comment>
+											<response branch-id = 'root.quest.more'>
+												<phrase>Okay, give me a name...</phrase>
+												<branch id = 'root.quest.more'>
+													<linear>
+														<line redirect = 'root.quest.more' id = 'line1'>
+															<comment>
+																Look for a merchant named [color=special]Nichole[/color] just northwest of here, in [color=special]Edenton[/color].  She's been siphoning off a lot of my clients lately.
+
+With all of the [color=dim]bad guys[/color] controlling the rural areas of [color=special]Lelandria[/color], I can't risk confronting her directly.
+
+You, on the other hand...
+															</comment>
+														</line>
+														<line id = 'line2'>
+															<comment>
+																If you dispose of [color=special]Nichole[/color], I'll upgrade my inventory and regain all of my old customers at the same time.
+
+What do you say, [color=special]$[core.player1.name][/color]?
+															</comment>
+															<response class = 'default' branch-id = 'root.quest.more.accept'>
+																<phrase>I&apos;ll do it, don&apos;t worry.</phrase>
+																<branch id = 'root.quest.more.accept'>
+																	<linear>
+																		<line id = 'line1'>
+																			<comment>I can truly count on you, [color=special]$[core.player1.name][/color].  Take these [color=special]3 bombs[/color] to help you do your job, and check back with me when you&apos;re done!</comment>
+																			<post-script>quest("1.3.npc1.quest").status("active");quest("1.3.npc1.quest").update("update-got-free-bombs").status("active");player().addBombs(3);</post-script>
+																		</line>
+																	</linear>
+																	<nags />
+																</branch>
+															</response>
+															<response class = 'default' branch-id = 'root.quest.more.extort'>
+																<phrase>Give me 5 free bombs and I&apos;ll give you results.</phrase>
+																<branch id = 'root.quest.more.extort'>
+																	<linear>
+																		<line id = 'line1'>
+																			<comment>I don&apos;t take kindly to extortion, [color=special]$[core.player1.name][/color].  I had actually planned on giving you a couple of bombs to experiment with, but now I think I&apos;ll just hold on to them.  Now, get to work!</comment>
+																			<post-script>quest("1.3.npc1.quest").status("active");quest("1.3.npc1.quest").update("update-extorted").status("active");</post-script>
+																		</line>
+																	</linear>
+																	<nags />
+																</branch>
+															</response>
+															<response class = 'already-done' branch-id = 'root.quest.more.already-done'>
+																<phrase>I already killed her, dude.</phrase>
+																<branch id = 'root.quest.more.already-done'>
+																	<linear>
+																		<line id = 'line1'>
+																			<comment>
+																				Incredible, [color=special]$[core.player1.name][/color]!  You clearly know what to do with a bomb when you find one, so I'm going to give you these [color=special]10 free bombs[/color].  Do what you do best with them!
+
+Don't forget to take a look at my inventory, also.  I added my [color=special]rare items[/color] for your perusal!
+																			</comment>
+																			<post-script>quest("1.3.npc1.quest").status("complete");quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");npc("npc1").clearIndicators().addIndicator("merchant");npc("npc1").clearVendorInventory();player().addBombs(10);</post-script>
+																		</line>
+																	</linear>
+																	<nags />
+																</branch>
+															</response>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response branch-id = 'root.quest.later'>
+												<phrase>I&apos;ve got to go.</phrase>
+												<branch id = 'root.quest.later'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Get back to me when you change your mind, [color=special]$[core.player1.name][/color]!</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+										<line id = 'nag2' class = 'failed'>
+											<comment>I tried to work with you, [color=special]$[core.player1.name][/color], but you wouldn&apos;t play ball.  I&apos;m not going to waste my time giving you another task!</comment>
+										</line>
+										<line id = 'nag3' class = 'failed'>
+											<comment>If you&apos;re looking for something different, maybe you should check with [color=special]Nichole[/color].  You like her better than you like me, right?</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>Bye.</phrase>
+								<branch id = 'root.quit'>
+									<linear />
+									<nags />
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2' class = 'quest:in-progress'>
+							<comment>Have you gotten rid of [color=special]Nichole[/color] yet, [color=special]$[core.player1.name][/color]?  I believe you will find her in [color=special]Edenton[/color].</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>Bye.</phrase>
+							</response>
+						</line>
+						<line id = 'nag3' class = 'quest:in-progress'>
+							<comment>Next time you&apos;re in [color=special]Edenton[/color], remember to take care of [color=special]Nichole[/color] for me.  I&apos;ll make it worth your while, [color=special]$[core.player1.name][/color]!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>Bye.</phrase>
+							</response>
+						</line>
+						<line id = 'nag4' class = 'quest:complete'>
+							<comment>Thanks for taking care of [color=special]Nichole[/color] for me, [color=special]$[core.player1.name][/color].  I&apos;ve upgraded my inventory for you!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>Bye.</phrase>
+							</response>
+						</line>
+						<line id = 'nag5' class = 'quest:failed'>
+							<comment>Too bad you went back on your word, [color=special]$[core.player1.name][/color].  I&apos;ll still sell to you, though!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>Bye.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:warned-nichole'>
+				<branch id = 'root'>
+					<linear>
+						<line transition = '1' id = 'line1'>
+							<comment>
+								I hear you decided to make a deal with [color=special]Nichole[/color].  I can respect your shrewdness, but I cannot condone it.
+
+I decided to liquidate all of the [color=special]rare items[/color] I could have sold to you.  Next time you double back on a deal, remember what happened on this one!
+							</comment>
+							<post-script>quest("1.3.npc1.quest").status("failed");quest("1.3.npc1.quest").update("update-inventory-liquidated").status("active");npc("npc1").clearIndicators().addIndicator("merchant");map().runScript("npc1.talk");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-nichole:without-warning'>
+				<branch id = 'root'>
+					<linear>
+						<line transition = '1' id = 'line1'>
+							<comment>Thank you for taking care of [color=special]Nichole[/color] for me.  I had heard rumors of a private gold stash she kept, but I clearly won&apos;t have a chance to quiz her about it now.  Make sure to take a fresh look at my inventory, [color=special]$[core.player1.name][/color].  As we agreed, I&apos;ve added my [color=special]rare items[/color] to the listing!</comment>
+							<post-script>quest("1.3.npc1.quest").status("complete");quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");npc("npc1").clearIndicators().addIndicator("merchant");npc("npc1").clearVendorInventory();map().runScript("npc1.talk");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-nichole:after-warning'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								You surpassed all of my greatest expectations, [color=special]$[core.player1.name][/color]!
+
+When you decided to warn [color=special]Nichole[/color], she began to transport her gold reserves to the southern reaches of [color=special]Lelandria[/color].  After you finished your job, I intercepted her personal courier, killed him, and made off with the gold she clearly wasn't needing any longer!
+							</comment>
+						</line>
+						<line transition = '1' id = 'line2'>
+							<comment>
+								I'll happily share [color=special]50 gold pieces[/color] of that great bounty with you in return, [color=special]$[core.player1.name][/color]!
+
+Lest I forget to mention, you will find some new [color=special]rare items[/color] available in my inventory.  Spend wisely!
+							</comment>
+							<post-script>quest("1.3.npc1.quest").status("complete");quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");npc("npc1").clearIndicators().addIndicator("merchant");npc("npc1").clearVendorInventory();player().addGold(50);map().runScript("npc1.talk");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

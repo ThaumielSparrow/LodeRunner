@@ -1,0 +1,203 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 153 0 0 0 0 0 0 
+			0 0 0 0 154 0 0 0 9 0 0 
+			0 0 0 152 334 257 325 256 323 216 0 
+			207 0 0 154 306 312 0 0 0 0 218 
+			327 327 255 326 307 0 0 0 0 0 0 
+			0 314 306 304 0 0 0 0 0 0 0 
+			0 0 310 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 302 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '2' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Willy' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '0' x = '1' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '1' x = '1' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '2' x = '1' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '3' x = '10' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '1' y = '2' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Willy'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '7' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '3' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '2' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle14.enter' x = '8' y = '1' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle14'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle14.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '5' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'puzzle14.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle14.enter").loadMap("puzzle14", "origin");
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "5.2.npc1.quest"
+
+        #define UPDATE_UNDERWAY "update-underway"
+        #define UPDATE_KILLED_WILLY_PREMATURELY "update-killed-willy-prematurely"
+        #define UPDATE_ALMOST_DONE "update-almost-done"
+        #define UPDATE_KILLED_WILLY_AFTER "update-killed-willy-after"
+
+        // Quest not assigned?  Get to work
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Right now, no support for "already did that" scenario.
+            // Theoretically possible, highly unlikely.  Add in later if desired.
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Have we killed everyone else?  Only one living NPC left, this Willy guy?
+            if ( session("npc.count.living").get() == 1 )
+            {
+                // He'll ask you to finish the job
+                npc("npc1").talk("quest:in-progress:killed-all-others");
+            }
+
+            // Nope, keep trying
+            else
+            {
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete, he won't talk because that means you killed him too.
+        elif ( quest(QUEST).status() == "complete" )
+        {
+        }
+
+        // Quest failed?  You can only fail by killing Willy prematurely, and if he's dead, he isn't going to talk.
+        elif ( quest(QUEST).status() == "failed" )
+        {
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "5.2.npc1.quest"
+
+        #define UPDATE_UNDERWAY "update-underway"
+        #define UPDATE_KILLED_WILLY_PREMATURELY "update-killed-willy-prematurely"
+        #define UPDATE_ALMOST_DONE "update-almost-done"
+        #define UPDATE_KILLED_WILLY_AFTER "update-killed-willy-after"
+
+        // If we never accepted the quest, then we're going to mark it as failed, I guess.  Failed opportunity, anyway.
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // maybe change logic here later?
+            quest(QUEST).status("failed");
+
+            // I guess we killed him prematurely, even if we saved him for last, because we never accepted his quest
+            quest(QUEST).update("update-killed-willy-before").status("active");
+        }
+
+        // Otherwise, let's see if we saved Willy here for last
+        else
+        {
+            // If all NPCs are now dead, then clearly we saved him for last
+            if ( session("npc.count.living").get() &lt;= 0 )
+            {
+                // killed him last
+                quest(QUEST).update(UPDATE_KILLED_WILLY_AFTER).status("active");
+
+                // quest now is complete.
+                // I think we set this in the global npc.ondeath script, though.  (Confirmed!)
+            }
+
+            // no, killed him a bit too soon
+            else
+            {
+                // we can still complete quest, but we won't ever get rewards from Willy
+                quest(QUEST).update(UPDATE_KILLED_WILLY_PREMATURELY).status("active");
+            }
+        }
+
+
+        // flag
+        quest(QUEST).update("flag-killed-willy").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+</scripts>

@@ -1,0 +1,79 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'net.menu.noplayers'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Lost Connection' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = 'All other players have quit the game.' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' id = 'spacer' class = 'spacer' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Lost Connection' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '80%' value = 'Return to Lobby' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '80%' value = 'Wait for New Players' />
+                </stack>
+
+                <action do = 'return-to-lobby' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '80%' value = 'End Session' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '80%' value = 'Return to Main Menu' />
+                </stack>
+
+                <action do = 'leave-game' />
+
+            </item>
+
+        </item-group>        
+
+    </rowmenu>
+
+</template>

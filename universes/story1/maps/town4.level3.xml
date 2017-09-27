@@ -1,0 +1,744 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			309 0 0 0 0 0 0 0 154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 154 327 327 0 0 0 0 0 0 218 332 153 0 0 0 
+			0 0 0 0 0 0 0 0 154 0 313 323 0 0 0 0 218 0 303 333 154 0 0 
+			0 0 152 218 0 0 0 153 327 154 0 310 327 216 152 216 0 0 0 308 334 153 0 
+			0 0 153 0 0 0 153 323 304 330 153 0 308 0 152 0 0 0 0 0 0 153 0 
+			0 0 153 0 0 152 334 309 207 312 330 153 0 0 152 0 0 0 0 0 0 154 0 
+			152 218 154 218 326 152 0 312 325 313 0 0 0 219 154 216 154 324 324 0 0 329 0 
+			154 0 154 0 308 325 153 0 314 0 0 0 0 0 152 0 153 311 0 0 0 0 0 
+			153 0 154 0 0 314 331 153 0 0 0 0 0 0 154 0 154 0 0 0 0 0 0 
+			152 217 153 0 0 0 309 334 154 0 0 0 0 0 152 217 153 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 0 152 0 0 9 0 0 154 0 0 0 210 0 0 0 0 
+			0 0 324 326 24 24 333 327 24 28 26 333 29 324 154 25 28 324 325 0 0 0 0 
+			0 0 0 304 314 304 309 0 0 0 306 312 309 0 153 0 306 303 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '9' y = '5' modal = '0'>
+		<structure>
+			0 0 0 0 0 
+			0 0 154 51 0 
+			0 154 54 75 0 
+			154 49 75 0 0 
+			53 75 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '4' y = '1' modal = '0'>
+		<structure>
+			0 0 75 52 0 
+			0 75 49 0 0 
+			75 49 0 0 0 
+			51 0 0 0 0 
+			0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 345 0 0 0 0 0 0 0 341 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 342 0 0 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 343 0 0 300 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 343 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 344 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 0 0 340 302 0 0 341 0 
+			0 0 0 0 300 345 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 300 342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 263 0 0 283 263 0 0 0 265 0 265 0 0 0 283 302 0 0 0 0 
+			0 0 0 300 0 0 302 0 0 0 300 0 302 0 0 0 300 302 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '4' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Timmy' title = '' />
+	<entity x = '16' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Sierra' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '0' x = '18' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '9' x = '18' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '5' x = '0' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '10' x = '6' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '7' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '4' x = '11' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '0' x = '9' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '2' x = '12' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '2' x = '21' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '5' x = '20' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '11' x = '1' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '5' x = '3' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '1' x = '5' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '8' x = '13' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '5' x = '17' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '12' x = '9' genus = '6' class = '' />
+	<entity x = '12' y = '10' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+	<entity x = '10' y = '0' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '2' position = '1' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp2a' height = '1' width = '1' behavior = '1' y = '1' x = '0'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2b' height = '1' width = '1' behavior = '1' y = '1' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1a' height = '1' width = '1' behavior = '1' y = '5' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1b' height = '1' width = '1' behavior = '1' y = '5' x = '17'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@do:activate lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '10' x = '12'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:activate lever' name = 'lever2' height = '1' width = '1' behavior = '3' y = '0' x = '10'>
+	<touch />
+	<hover>
+		<script name = 'lever2.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Timmy' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '9' x = '3' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Sierra' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '9' x = '15' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '10' x = '2'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '10' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '5' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '2' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '2' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '6' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '6' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '10' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '10' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '10' x = '17'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle12' name = 'puzzle12.enter' height = '1' width = '1' behavior = '3' y = '10' x = '11' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle12.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'spawn' height = '1' width = '1' behavior = '1' y = '10' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '10' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle12.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle12.enter").loadMap("puzzle12", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("4.3.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active.  Player either delivered the letter
+        // or killed Jill before delivering it...
+        elif (
+            quest("4.3.npc1.quest").status() == "active" and
+            (
+                quest("4.3.npc1.quest").update("update-delivered-letter").status() == "active" or
+                quest("4.3.npc1.quest").update("update-killed-jill-before-delivery").status() == "active"
+            )
+        )
+        {
+            // Ready to turn in
+            npc("npc1").addIndicator("quest-complete");
+        }
+
+
+        // Clear quest indicators, flag as merchant
+        npc("npc2").clearIndicators().addIndicator("merchant");
+
+        // Strip merchant status if fully bought out / quest complete
+        if ( quest("4.3.npc2.quest").status() == "complete") )
+        {
+            // No indicator
+            npc("npc2").removeIndicator("merchant");
+        }
+
+
+        // Does npc need quest available indicator?
+        if ( quest("4.3.npc2.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc2").addIndicator("quest-available");
+        }
+
+        // Quest is still active.  Player has finished buying out inventory...
+        elif (
+            quest("4.3.npc2.quest").status() == "active" and
+            quest("4.3.npc2.quest").update("update-bought-inventory").status() == "active"
+        )
+        {
+            // Ready to turn in!
+            npc("npc2").addIndicator("quest-complete");
+        }
+
+
+        // Ensure an "available" indicator exists if we&apos;re carrying
+        // gold from Lily...
+        if (
+            quest("4.4.npc1.quest").status() == "active" and
+            quest("4.4.npc1.quest").update("update-delivered-gold").status() != "active"
+        )
+        {
+            // Maybe already set for "buy it all" quest, that&apos;s ok...
+            npc("npc2").addIndicator("quest-available");
+        }
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp1a");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points left?
+        if ( npc("lever2").hasPosition("left") )
+        {
+            // point right
+            npc("lever2").setPosition("right");
+
+            // shift right
+            map().plane("shift2").shiftToX("wp2b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever2").setPosition("left");
+
+            // shift far left
+            map().plane("shift2").shiftToX("wp2a");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define TASK "4.3.npc1.quest"
+
+        // Kill him ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // fails quest
+            quest(TASK).status("failed");
+
+            // premature kill update
+            quest(TASK).update("update-killed-timmy-before").status("active");
+        }
+
+        // While on job?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // fails quest
+            quest(TASK).status("failed");
+
+            // premeditated
+            quest(TASK).update("update-killed-timmy-during").status("active");
+        }
+
+        // Either completed or failed...
+        else
+        {
+            // Did we deliver ring?
+            if ( quest(TASK).update("update-delivered-letter:delivered-ring").status() == "active" )
+            {
+                // gave him the ring, then killed him!
+                quest(TASK).update("update-killed-timmy-after-delivering-ring").status("active");
+            }
+
+            // We must have kept it
+            else
+            {
+                // out of his misery
+                quest(TASK).update("update-killed-timmy-after-keeping-ring").status("active");
+            }
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-timmy").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "4.3.npc1.quest"
+
+        #define UPDATE_KILLED_JILL_BEFORE_DELIVERY "update-killed-jill-before-delivery"
+        #define UPDATE_KILLED_JILL_AFTER_DELIVERY "update-killed-jill-after-delivery"
+        #define UPDATE_KILLED_TIMMY "update-killed-timmy"
+        #define UPDATE_DELIVERED_LETTER "update-delivered-letter"
+        #define UPDATE_DELIVERED_LETTER:DELIVERED_RING "update-delivered-letter:delivered-ring"
+        #define UPDATE_DELIVERED_LETTER:KEPT_RING "update-delivered-letter:kept-ring"
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Disable all responses by default
+            npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+
+            // prematurely killed Jill?
+            if ( quest(QUEST).update(UPDATE_KILLED_JILL_BEFORE_DELIVERY).status() == "active" )
+            {
+                // sorry response
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("sorry").enable();
+            }
+
+            // no, yes/no available
+            else
+            {
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("default").enable();
+            }
+
+
+            // talk quest
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we deliver the letter?  If so, that&apos;s the most important thing, even if we killed Jill afterward
+            if ( quest(QUEST).update(UPDATE_DELIVERED_LETTER).status() == "active" )
+            {
+                // great!
+                npc("npc1").talk("quest:in-progress:delivered-letter");
+            }
+
+            // We didn&apos;t (yet?) deliver it.  But if we killed Jill, then we are gonna have to fail quest
+            elif ( quest(QUEST).update(UPDATE_KILLED_JILL_BEFORE_DELIVERY).status() == "active" )
+            {
+                // argh
+                npc("npc1").talk("quest:in-progress:killed-jill");
+            }
+
+            // generic nags
+            else
+            {
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we deliver the ring to the guy?
+            if ( quest(QUEST).update(UPDATE_DELIVERED_LETTER:DELIVERED_RING).status() == "active" )
+            {
+                // thanks, in love
+                npc("npc1").talk("quest:complete:delivered-ring");
+            }
+
+            // nope, kept it
+            else
+            {
+                // schemer
+                npc("npc1").talk("quest:complete:kept-ring");
+            }
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // always the same
+            npc("npc1").talk("quest:failed");
+        }
+	</script>
+	<script name = 'npc2.ondeath'>
+		// npc2 offers a buy me out quest, primary quest
+        #define QUEST1 "4.3.npc2.quest"
+
+        #define FLAG_KILLED_SIERRA "flag-killed-sierra"
+        #define UPDATE_BOUGHT_INVENTORY "update-bought-inventory"
+
+        // npc2 Sierra is also the target of 4.4 Lily quest, asking to take gold to her
+        #define QUEST2 "4.4.npc1.quest"
+
+        // Note that both quests have an update called "killed Sierra,"
+        // it&apos;s okay to duplicate the define, though certainly redundant.
+        #define UPDATE_EXTRA_GOLD "update-extra-gold"
+        #define UPDATE_PICKED_UP_TAB "update-picked-up-tab"
+        #define UPDATE_KILLED_SIERRA "update-killed-sierra"
+        #define UPDATE_KILLED_LILY "update-killed-lily"
+        #define UPDATE_DELIVERED_GOLD "update-delivered-gold"
+
+        // - - - - - - - - - - - - - - - - - -
+        // Quest 2, Sierra&apos;s buyout quest
+        // - - - - - - - - - - - - - - - - - -
+
+        // Killed Sierra before hearing anything about inventory buyout?
+        if ( quest(QUEST1).status() == "inactive" )
+        {
+            // Fail
+            quest(QUEST1).status("failed");
+
+            // Premature kill update
+            quest(QUEST1).update("update-killed-sierra-before").status("active");
+        }
+
+        // Killed her after buyout quest assigned, but not complete?
+        elif ( quest(QUEST1).status() == "active" )
+        {
+            // fail
+            quest(QUEST1).status("failed");
+
+            // Had we cleared out all of her inventory already?
+            if ( quest(QUEST1).update("update-bought-inventory").status() == "active" )
+            {
+                // Player didn&apos;t collect the reward, why?!
+                quest(QUEST1).update("update-killed-sierra-before-collecting-reward").status("active");
+            }
+
+            else
+            {
+                // premeditated kill update
+                quest(QUEST1).update("update-killed-sierra-during").status("active");
+            }
+        }
+
+        // Otherwise, quest1 status must be complete.  We can only fail by killing Sierra, and we can&apos;t kill her twice.
+        elif ( quest(QUEST1).status() == "complete" )
+        {
+            // simply an update
+            quest(QUEST1).update("update-killed-sierra-after").status("active");
+        }
+
+        // always toggle flag
+        quest(QUEST1).update(FLAG_KILLED_SIERRA).status("active");
+
+        // - - - - - - - - - - - - - - - - - -
+        // Quest 2, Lily&apos;s quest
+        // - - - - - - - - - - - - - - - - - -
+
+        // Haven&apos;t yet started Lily quest?
+        if ( quest(QUEST2).status() == "inactive" )
+        {
+            // I won&apos;t fail the quest here, because killing Sierra doesn&apos;t do that.
+            // I do want to flag an update, though...
+            quest(QUEST2).update("update-killed-sierra-before").status("active");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST2).status() == "active" )
+        {
+            // We also don&apos;t fail the quest here.  We just do an update, again...
+            quest(QUEST2).update("update-killed-sierra-during").status("active");
+        }
+
+        // If we completed the delivery, then it&apos;s yet another simple update
+        elif ( quest(QUEST2).status() == "complete" )
+        {
+            // update
+            quest(QUEST2).update("update-killed-sierra-after-delivery").status("active");
+        }
+
+        // The only way to fail this delivery quest is to kill Lily before turning in.
+        // Here, we&apos;ll have the last possible update
+        else
+        {
+            quest(QUEST2).update("update-killed-sierra-after-failing").status("active");
+        }
+
+
+        // Oh yeah, one last thing...
+        // Usually we can still have a chance to complete the quest by going back and confessing to Lily.
+        // If we already killed her too, though, then there&apos;s no way to win and we fail.
+        if ( quest(QUEST2).update("flag-killed-lily").status() == "active" )
+        {
+            // fail, no way to win anymore because we killed Lily, too
+            quest(QUEST2).status("failed");
+        }
+
+
+        // always toggle flag
+        quest(QUEST2).update(FLAG_KILLED_SIERRA).status("active");
+
+        // disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.shop'>
+		#define QUEST "4.4.npc1.quest"
+        #define UPDATE_DELIVERED_GOLD "update-delivered-gold"
+
+        // default to warehouse 2
+        npc("npc2").clearWarehouses()
+                   .addWarehouse("warehouse2");
+
+        // If quest to bring money from Lily is done, then upgrade to 2+
+        if ( quest(QUEST).update(UPDATE_DELIVERED_GOLD).status() == "active" )
+        {
+            npc("npc2").clearWarehouses()
+                       .addWarehouse("warehouse2+");
+        }
+
+        // shop
+        npc("npc2").shop({
+            "min-quality": 1,
+            "max-quality": 3,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc2.onpurchase'>
+		debug( "purchasing an item!" );
+
+        // Count another purchase
+        session("4.3.npc2.quest:items-purchased").increment(1);
+
+        // We&apos;re hard-coding this, here.  Vendors stock 3 items, and Sierra here
+        // has 2 reloads (as seen in npc2.shop).  Let&apos;s see, then, if we&apos;ve bought 5 items from her...
+        if ( session("4.3.npc2.quest:items-purchased").get("integer") &gt;= 5 )
+        {
+            // Flag update
+            quest("4.3.npc2.quest").update("update-bought-inventory").status("active");
+        }
+	</script>
+	<script name = 'npc2.talk'>
+		// npc2 offers a buy me out quest, primary quest
+        #define QUEST1 "4.3.npc2.quest"
+
+        #define UPDATE_KILLED_SIERRA "update-killed-sierra"
+        #define UPDATE_BOUGHT_INVENTORY "update-bought-inventory"
+
+        // npc2 Sierra is also the target of 4.4 Lily quest, asking to take gold to her
+        #define QUEST2 "4.4.npc1.quest"
+
+        // Note that both quests have an update called "killed Sierra,"
+        // it&apos;s okay to duplicate the define, though certainly redundant.
+        #define UPDATE_EXTRA_GOLD "update-extra-gold"
+        #define UPDATE_PICKED_UP_TAB "update-picked-up-tab"
+        #define UPDATE_KILLED_SIERRA "update-killed-sierra"
+        #define UPDATE_KILLED_LILY "update-killed-lily"
+        #define UPDATE_DELIVERED_GOLD "update-delivered-gold"
+
+
+        if (0)
+        {
+            // Default warehouse for vendor
+            npc("npc1").clearWarehouses()
+                       .addWarehouse("warehouse2+");
+
+            // Upgrade warehouse if we brought gold from Lily
+            if ( quest(QUEST2).update(UPDATE_DELIVERED_GOLD).status() == "active" )
+            {
+                npc("npc1").clearWarehouses()
+                           .addWarehouse("warehouse3");
+            }
+        }
+
+
+        // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+        if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+             ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+        {
+            // Use tax conversation, queueing this same script to run again afterward...
+            npc("npc2").talk("global.tax");
+        }
+
+        else
+        {
+            // Disable all lines by default
+            npc("npc2").conversation("default").branch("root").getLinesByClass("*").disable();
+
+
+            // If quest1 is not complete, we haven&apos;t bought her out yet
+            if ( quest(QUEST1).update("update-bought-inventory").status() != "active" )
+            {
+                // Enable "shop" lines until we&apos;ve bought her out
+                npc("npc2").conversation("default").branch("root").getLinesByClass("shop").enable();
+            }
+
+            // Otherwise, she&apos;ll thank us for buying her out
+            else
+            {
+                // Enable "buyout thank you" lines
+                npc("npc2").conversation("default").branch("root").getLinesByClass("bought-out").enable();
+            }
+
+
+            // Disable all funds responses by default
+            npc("npc2").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("funds").disable();
+
+            // Did we get gold from Lily yet?
+            if ( session("4.4.npc1.quest:received-gold").equals("yes") )
+            {
+debug( "WE GOT THE GOLD" );
+                // If we haven&apos;t delivered the gold yet, let&apos;s enable the delivery responses
+                if ( quest(QUEST2).update("update-delivered-gold").status() != "active" )
+                {
+                    // If we got extra gold, offer the extra
+                    if ( quest(QUEST2).update(UPDATE_EXTRA_GOLD).status() == "active" )
+                    {
+                        // Enable extra funds response
+                        npc("npc2").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("funds-extra").enable();
+                        //npc("npc2").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("funds").disable();
+debug ( "...EXTRA AMOUNT" );
+                    }
+
+                    // offer standard loan
+                    else
+                    {
+                        npc("npc2").conversation("default").branch("root").getLinesByClass("*").getResponsesByClass("funds-normal").enable();
+debug ( "...NORMAL AMOUNT" );
+                    }
+                }
+            }
+
+
+            // If quest1 is inactive, mention quest first
+            if ( quest(QUEST1).status() == "inactive" )
+            {
+                // this will redirect to shop conversation
+                npc("npc2").talk("quest:pending:assign"); // quick quest is not in shop mode
+            }
+
+            // Finished buying out?  Shift to standard dialogue format
+            elif ( quest(QUEST1).update("update-bought-inventory").status() == "active" )
+            {
+                // Still use default conversation
+                npc("npc2").talk("default");
+            }
+
+            // Shop normally
+            else
+            {
+                // Talk in shop mode, whether bought out or not
+                npc("npc2").talk("default", "shop");
+            }
+        }
+	</script>
+	<script name = 'npc2.upgrade-inventory'>
+		// Clear inventory, next time we shop it&apos;ll update
+        // with items from warehouse 2+
+        npc("npc2").clearVendorInventory();
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.0)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.b");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+</scripts>

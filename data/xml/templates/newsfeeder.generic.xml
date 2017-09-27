@@ -1,0 +1,35 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@content</parameter>
+	</text>
+</parameters>
+
+<template name = 'newsfeeder.generic'>
+
+    <rowmenu id = 'feed' class = 'news' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' shrinkwrap = '1'>
+        <item-group render-border = '1'>
+            <item>
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                        <label x = '20%' y = '0' width = '70%' value = '[color=special]@title[/color]' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <label x = '5%' y = '0' width = '90%' value = '@content' />
+
+                </stack>
+            </item>
+        </item-group>
+    </rowmenu>
+
+</template>

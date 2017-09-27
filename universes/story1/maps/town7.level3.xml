@@ -1,0 +1,288 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			307 314 0 152 308 0 0 0 0 0 0 310 154 0 0 0 
+			312 0 0 154 206 0 0 328 323 334 0 305 154 0 0 0 
+			309 0 0 154 334 0 323 310 307 0 0 206 153 0 0 0 
+			312 153 329 153 304 0 0 0 314 333 0 323 154 334 330 153 
+			0 153 0 152 0 0 0 0 0 206 0 307 152 308 309 326 
+			154 325 324 153 206 0 0 0 0 0 0 308 153 313 310 0 
+			153 0 0 152 0 0 0 0 0 0 0 206 153 0 311 324 
+			154 0 0 152 330 0 0 0 0 0 0 0 152 0 0 311 
+			153 0 0 154 0 0 0 207 0 0 0 326 330 154 0 0 
+			152 217 218 153 0 0 325 331 0 0 0 0 0 153 0 0 
+			152 0 0 327 23 25 26 305 323 0 325 23 323 331 154 0 
+			154 0 0 313 307 210 312 308 309 107 311 312 312 307 332 153 
+			330 152 0 0 312 326 306 305 305 303 0 0 309 304 0 152 
+			314 329 154 0 0 0 0 0 0 0 0 0 0 0 0 152 
+			311 313 326 152 0 0 0 0 153 333 23 27 152 331 25 330 
+			0 314 313 153 334 28 26 27 324 311 311 0 152 0 311 303 
+			0 0 0 154 0 0 0 334 304 309 304 328 326 323 303 0 
+			9 0 0 153 0 0 331 308 0 0 0 0 0 0 0 0 
+			25 326 26 25 28 333 304 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '6' y = '3' modal = '0'>
+		<structure>
+			0 52 0 
+			53 208 52 
+			0 51 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '4' y = '5' modal = '0'>
+		<structure>
+			0 54 0 
+			54 210 0 
+			0 54 217 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 343 343 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 347 0 0 0 0 0 0 0 0 
+			300 0 0 0 302 0 0 0 300 342 0 0 0 342 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 340 0 0 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 344 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 300 
+			0 0 0 0 0 0 0 0 0 0 0 300 344 0 0 0 
+			0 0 0 0 0 0 345 0 0 0 0 0 0 0 0 0 
+			0 0 0 263 0 0 0 283 341 0 263 0 283 341 0 0 
+			0 0 0 349 0 0 0 0 0 0 347 348 0 0 0 0 
+			265 0 0 0 300 0 346 348 349 302 0 0 300 346 0 0 
+			0 340 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 265 0 0 0 265 0 283 
+			0 348 263 0 265 0 0 0 283 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 348 0 341 0 346 0 
+			0 0 0 0 0 0 343 302 0 0 0 0 0 0 0 0 
+			0 265 0 0 0 283 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '5' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Amelia' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '7' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '13' x = '6' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '2' x = '2' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '0' x = '9' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '4' x = '10' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '5' x = '15' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '2' x = '14' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '9' x = '12' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '13' x = '11' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '17' x = '4' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '11' x = '1' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '9' x = '2' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '4' x = '0' genus = '6' class = '' />
+	<entity x = '13' y = '15' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '1' />
+	<entity x = '11' y = '15' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Amelia' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '13' x = '4' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '13' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '13' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '13' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '17' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '17' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle16' name = 'puzzle16.enter' height = '1' width = '1' behavior = '3' y = '17' x = '0' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle16.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '15' x = '13'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever2' height = '1' width = '1' behavior = '3' y = '15' x = '11'>
+	<touch />
+	<hover>
+		<script name = 'lever2.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1a' height = '5' width = '1' behavior = '1' y = '2' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1b' height = '5' width = '1' behavior = '1' y = '2' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '9' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle16.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle16.enter").loadMap("puzzle16", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear indicators
+        npc("npc1").clearIndicators();
+
+        // If heirloom quest is active,
+        // then we mark Amelia as a target.
+        if (
+            quest("4.2.npc1.quest").status() == "active"
+        )
+        {
+            // Mark as target
+            npc("npc1").addIndicator("target");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		// npc1 Amelia is a secondary target of the heirloom quest.
+        // must kill her to convince Jessie up north to give up the heirloom...
+        #define TASK "4.2.npc1.quest"
+
+
+        // Kill ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // That&apos;s ok, just note the update in preparation
+            quest(TASK).update("update-killed-amelia-before").status("active");
+        }
+
+        // Right on time?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Did we kill Jessie yet?  If we did, then this kill is pointless, out of sequence...
+            if ( quest(TASK).update("flag-killed-jessie").status() == "active" )
+            {
+                // needless
+                quest(TASK).update("update-killed-amelia-after-failing").status("active");
+            }
+
+            // Otherwise, we killed Amelia right on schedule
+            else
+            {
+                // note update
+                quest(TASK).update("update-killed-amelia-during").status("active");
+            }
+        }
+
+        // If the quest is complete, then we already killed Amelia en route.
+        // Can&apos;t kill her again after quest is complete.  So, we now just check
+        // for post-failure kill...
+        elif ( quest(TASK).status() == "failed" )
+        {
+            // no point
+            quest(TASK).update("update-killed-amelia-after-failing").status("active");
+        }
+
+
+        // always flag kill
+        quest(TASK).update("flag-killed-amelia").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		// only one conversation
+        npc("npc1").talk("default");
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.a")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.25)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp1a");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points left?
+        if ( npc("lever2").hasPosition("left") )
+        {
+            // point right
+            npc("lever2").setPosition("right");
+
+            // shift right
+            map().plane("shift2").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever2").setPosition("left");
+
+            // shift far left
+            map().plane("shift2").shiftToX("wp1a");
+        }
+	</script>
+</scripts>

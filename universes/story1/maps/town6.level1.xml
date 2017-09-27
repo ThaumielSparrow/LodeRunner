@@ -1,0 +1,44 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 237 0 0 0 0 237 0 0 235 0 236 0 235 0 0 237 
+			0 0 0 0 237 219 0 0 0 236 0 218 235 0 235 0 235 0 0 237 
+			0 0 0 0 0 0 218 0 0 236 217 0 0 0 235 218 237 0 0 237 
+			0 0 0 0 0 0 0 217 0 237 0 0 0 0 0 0 237 0 0 235 
+			0 0 0 0 0 0 0 0 217 235 0 0 0 0 0 0 237 0 219 236 
+			0 0 0 0 0 0 0 0 0 208 154 0 0 0 0 0 236 217 0 0 
+			0 0 0 0 0 0 0 0 0 329 332 153 0 0 0 0 237 0 0 0 
+			0 0 0 0 0 0 0 0 209 0 303 332 152 0 153 331 323 0 0 0 
+			0 0 0 0 0 0 0 0 328 333 303 303 333 154 334 304 0 210 0 0 
+			0 0 0 0 0 0 0 0 0 311 312 0 311 154 311 309 331 323 327 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '8' x = '16' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '4' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '1' x = '15' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '3' x = '18' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '6' x = '14' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '3' x = '8' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '0' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '0' x = '17' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '7' x = '7' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '5' x = '4' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'safe-spawn' x = '15' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts />

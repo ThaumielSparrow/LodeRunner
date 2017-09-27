@@ -1,0 +1,57 @@
+<metadata>
+    <version>1.0</version>
+    <xtilesheet>
+        <filename>tiles.png</filename>
+    </xtilesheet>
+    <params>
+        <param id = 'title'>Main Menu World</param>
+        <param id = 'min-players'>1</param>
+        <param id = 'max-players'>3</param>
+        <param id = 'type'>linear</param>
+    </params>
+    <subtitles>
+        <subtitle>Can you make your way through these familiar levels?  Go it alone, or bring your friends!</subtitle>
+    </subtitles>
+    <preview-maps>
+        <preview-map duration = '3' measure = 'seconds' script = 'on-preview'>root.story</preview-map>
+        <preview-map duration = '1' measure = 'seconds' script = 'on-preview'>root.dlc</preview-map>
+        <preview-map duration = '1.5' measure = 'seconds' script = 'on-preview'>root.options.back</preview-map>
+    </preview-maps>
+    <selectable-levels>
+        <selectable-level replay-file = 'root.story.input.txt'>root.story</selectable-level>
+        <selectable-level replay-file = 'root.coop.host.input.txt'>root.coop.host</selectable-level>
+        <selectable-level replay-file = 'root.options.gamepads.input.txt'>root.options.gamepads</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.digright.input.txt'>root.options.controls.actions.digright</selectable-level>
+        <selectable-level replay-file = 'root.options.input.txt'>root.options</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.moveup.input.txt'>root.options.controls.actions.moveup</selectable-level>
+        <selectable-level replay-file = 'root.story.continue.input.txt'>root.story.continue</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.useskill1.input.txt'>root.options.controls.actions.useskill1</selectable-level>
+        <selectable-level replay-file = 'root.coop.input.txt'>root.coop</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.doreset.input.txt'>root.options.controls.actions.doreset</selectable-level>
+        <selectable-level replay-file = 'root.story.new.input.txt'>root.story.new</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.suicide.input.txt'>root.options.controls.actions.suicide</selectable-level>
+        <selectable-level replay-file = 'root.dlc.input.txt'>root.dlc</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.movedown.input.txt'>root.options.controls.actions.movedown</selectable-level>
+        <selectable-level replay-file = 'root.options.keyboard.input.txt'>root.options.keyboard</selectable-level>
+        <selectable-level replay-file = 'root.coop.back.input.txt'>root.coop.back</selectable-level>
+        <selectable-level replay-file = 'root.quit.input.txt'>root.quit</selectable-level>
+        <selectable-level replay-file = 'root.coop.join.input.txt'>root.coop.join</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.moveleft.input.txt'>root.options.controls.actions.moveleft</selectable-level>
+        <selectable-level replay-file = 'root.options.back.input.txt'>root.options.back</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.dosave.input.txt'>root.options.controls.actions.dosave</selectable-level>
+        <selectable-level replay-file = 'root.options.gamepads.switch.input.txt'>root.options.gamepads.switch</selectable-level>
+        <selectable-level replay-file = 'root.options.gamepads.switch.back.input.txt'>root.options.gamepads.switch.back</selectable-level>
+        <selectable-level replay-file = 'root.story.back.input.txt'>root.story.back</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.digleft.input.txt'>root.options.controls.actions.digleft</selectable-level>
+        <selectable-level replay-file = 'root.options.gamepads.back.input.txt'>root.options.gamepads.back</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.interact.input.txt'>root.options.controls.actions.interact</selectable-level>
+        <selectable-level replay-file = 'root.options.audio.input.txt'>root.options.audio</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.moveright.input.txt'>root.options.controls.actions.moveright</selectable-level>
+        <selectable-level replay-file = 'root.options.display.input.txt'>root.options.display</selectable-level>
+        <selectable-level replay-file = 'root.options.gamepads.customize.input.txt'>root.options.gamepads.customize</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.bomb.input.txt'>root.options.controls.actions.bomb</selectable-level>
+        <selectable-level replay-file = 'root.options.language.input.txt'>root.options.language</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.useskill2.input.txt'>root.options.controls.actions.useskill2</selectable-level>
+        <selectable-level replay-file = 'root.options.controls.actions.digforward.input.txt'>root.options.controls.actions.digforward</selectable-level>
+    </selectable-levels>
+</metadata>

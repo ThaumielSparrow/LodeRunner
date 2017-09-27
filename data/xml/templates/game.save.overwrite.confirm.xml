@@ -1,0 +1,133 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@title</parameter>
+		<parameter>@slot</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@time-since-last-save</parameter>
+		<parameter>@slot</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.save.overwrite.confirm' version = 'custom'>
+
+    <rowmenu id = 'save.confirm-overwrite' class = 'alert' width = '@width' height = '@height' halign = 'center' valign = 'center' uses-focus = '1' shrinkwrap = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Overwrite Custom Save' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <stack class = 'frame'>
+                    <label class = 'line-break' x = '5%' y = '0' width = '90%' value = 'Are you sure you want to overwrite the existing custom save [color=special]@title[/color]?' />
+                    <label x = '5%' y = '0' width = '90%' value = 'You last saved to this slot [color=special]@time-since-last-save[/color] ago.' />
+                </stack>
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'confirm:game.save.overwrite' quicksave = '0' title = '@title' slot = '@slot' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+<template name = 'game.save.overwrite.confirm' version = 'quicksave'>
+
+    <rowmenu id = 'save.confirm-overwrite' class = 'alert' width = '@width' height = '@height' halign = 'center' valign = 'center' uses-focus = '1' shrinkwrap = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Overwrite Quicksave' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <stack class = 'frame'>
+                    <label class = 'line-break' x = '5%' y = '0' width = '90%' value = 'Are you sure you want to overwrite the data in [color=special]Quicksave @slot[/color]?' />
+                    <label x = '5%' y = '0' width = '90%' value = 'You last saved to this slot [color=special]@time-since-last-save[/color] ago.' />
+                </stack>
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'confirm:game.save.overwrite' quicksave = '1' title = '@title' slot = '@slot' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+<template name = 'game.save.overwrite.confirm' version = 'quicksave:new'>
+
+    <rowmenu id = 'save.confirm-overwrite' class = 'alert' width = '@width' height = '@height' halign = 'center' valign = 'center' uses-focus = '1' shrinkwrap = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Overwrite Quicksave' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <stack class = 'frame'>
+                    <label class = 'line-break' x = '5%' y = '0' width = '90%' value = 'Are you sure you want save using [color=special]Quicksave @slot[/color]?' />
+                    <label x = '5%' y = '0' width = '90%' value = 'You currently have no save data in this quicksave slot.' />
+                </stack>
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'confirm:game.save.overwrite' quicksave = '1' title = '@title' slot = '@slot' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

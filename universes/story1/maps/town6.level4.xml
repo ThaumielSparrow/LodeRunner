@@ -1,0 +1,204 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 324 325 152 334 0 0 0 
+			0 0 328 153 331 0 0 0 0 0 0 0 0 154 0 0 0 0 
+			0 0 0 154 0 0 0 324 325 152 334 0 0 154 0 0 0 0 
+			0 0 0 153 0 0 0 274 0 152 0 0 0 330 152 329 324 0 
+			0 152 326 331 325 153 0 273 0 154 0 0 0 0 152 0 0 0 
+			326 330 303 310 24 26 329 328 26 28 328 324 326 25 329 326 153 0 
+			0 0 0 0 0 274 0 311 305 0 144 311 144 274 0 0 154 0 
+			0 0 0 0 0 276 0 0 0 0 144 0 144 277 0 325 332 331 
+			0 0 0 0 0 273 0 0 0 0 144 0 207 275 0 144 0 0 
+			29 25 330 26 333 326 153 0 0 0 144 0 0 273 216 144 0 0 
+			0 313 313 311 308 308 333 152 0 0 208 0 0 329 0 0 329 0 
+			0 0 0 309 314 309 311 333 154 0 0 0 0 274 0 0 0 0 
+			0 0 0 0 303 306 0 314 325 152 0 0 0 275 0 0 0 0 
+			0 0 0 0 308 304 332 303 311 323 153 0 0 273 0 0 0 0 
+			0 0 0 333 314 0 312 305 314 310 323 24 26 327 152 0 0 0 
+			0 0 0 274 303 0 309 308 312 0 309 305 0 309 332 153 0 0 
+			0 0 0 273 0 0 0 0 0 0 0 305 333 304 305 327 154 0 
+			0 0 332 25 26 333 24 328 154 0 0 0 0 0 308 314 328 152 
+			0 0 0 0 312 312 303 304 328 24 323 330 331 28 27 23 304 333 
+		</structure>
+	</plane>
+	<plane name = 'slide1' x = '15' y = '11' modal = '1'>
+		<structure>
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'block1' x = '14' y = '12' modal = '0'>
+		<structure>
+			0 0 0 
+			0 208 0 
+			0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 263 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 345 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 345 345 0 
+			0 0 343 0 343 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 342 130 263 0 0 283 263 0 0 283 345 263 0 283 344 0 0 
+			0 0 0 0 0 0 0 349 302 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 345 0 345 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 265 0 283 341 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 348 0 0 0 345 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 340 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 340 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 344 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 346 263 0 0 283 0 0 0 0 
+			0 0 0 0 302 0 300 0 302 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 349 0 0 0 0 
+			0 0 263 0 0 265 0 283 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 0 263 0 283 0 263 0 0 0 283 340 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '14' x = '11' genus = '2' class = '' />
+	<entity x = '2' y = '9' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Carlie' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '7' x = '4' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '13' x = '6' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '14' x = '3' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '17' x = '5' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '18' x = '10' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '16' x = '12' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '10' x = '10' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '7' x = '15' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '15' x = '15' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '9' x = '1' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '5' x = '6' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '1' x = '2' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '2' x = '8' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '3' x = '16' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '1' x = '10' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '0' x = '13' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '10' x = '16' genus = '6' class = '' />
+<entity name = 'gold.uid.18' title = '' ai-behavior = '1' nick = '' y = '0' x = '3' genus = '6' class = '' />
+	<entity x = '13' y = '18' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '1' position = '2' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp1' height = '1' width = '1' behavior = '1' y = '10' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2' height = '1' width = '1' behavior = '1' y = '12' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@do:activate lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '18' x = '13'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Carlie' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '8' x = '1' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '9' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '12' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '14' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '17' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '9' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle7' name = 'puzzle7.enter' height = '1' width = '1' behavior = '3' y = '0' x = '12' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle7.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '4' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle7.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle7.enter").loadMap("puzzle7", "origin");
+	</script>
+	<script name = 'lever1.action'>
+		// lever pointing up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // shift block down, +slide chain down (simultaneous)
+            map().plane("block1").shiftToY("wp2");
+            +map().plane("slide1").slide("absolute", "down", 72); // hard-coded length, oh well
+        }
+
+        // assume pointing down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // shift block up, +slide chain up (simultaneous)
+            map().plane("block1").shiftToY("wp1");
+            +map().plane("slide1").slide("absolute", "up", 0);
+        }
+	</script>
+	<script name = 'npc1.talk'>npc("npc1").talk("default");</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(1.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+</scripts>

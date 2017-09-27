@@ -1,0 +1,526 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 326 332 308 0 0 0 153 306 307 0 0 0 0 
+			0 0 0 0 0 0 327 328 0 0 0 0 0 0 0 0 0 152 0 9 0 0 0 0 
+			0 0 0 0 0 0 0 314 29 28 324 0 0 0 0 154 325 329 28 27 333 154 0 0 
+			0 0 0 0 0 0 334 313 0 310 313 328 0 0 0 152 0 144 0 274 0 154 0 0 
+			0 0 0 0 0 0 0 308 332 308 0 274 0 152 330 323 0 144 0 275 0 332 153 0 
+			0 0 0 0 0 0 0 0 0 0 0 273 0 154 144 0 0 208 0 275 0 0 153 0 
+			0 0 0 0 0 0 0 0 154 329 324 26 333 324 144 0 0 0 0 275 0 152 328 0 
+			0 0 0 0 0 0 0 0 153 0 144 0 144 0 144 0 0 0 0 273 0 153 0 0 
+			0 0 0 0 0 0 153 328 329 0 144 0 144 0 210 0 0 0 0 329 26 334 154 0 
+			0 0 0 0 0 0 153 0 0 0 207 0 144 0 0 0 0 0 0 0 0 0 153 0 
+			26 24 328 331 24 326 333 26 325 0 0 0 144 0 0 0 0 0 0 0 0 154 331 0 
+			0 0 0 304 310 314 307 305 0 0 0 0 144 0 0 0 154 330 0 0 0 152 0 0 
+			0 0 0 0 306 310 311 274 0 0 0 0 207 0 0 0 0 0 330 0 0 325 152 0 
+			0 0 0 334 313 307 0 275 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153 0 
+			0 0 331 305 309 0 0 273 0 0 0 0 0 0 0 0 0 0 331 0 0 152 325 0 
+			0 326 310 0 0 0 0 334 0 0 0 0 332 0 0 0 0 0 0 0 0 152 0 0 
+			0 310 305 24 330 0 0 274 0 0 0 0 0 0 0 0 0 0 0 0 0 328 154 0 
+			0 0 303 305 0 0 0 275 0 334 0 0 0 0 0 0 0 0 0 0 0 0 153 0 
+			0 0 303 309 23 217 0 275 0 0 0 0 0 0 153 334 153 0 0 0 0 153 333 0 
+			0 0 0 309 311 0 216 273 0 0 0 0 0 153 331 312 328 153 0 0 0 154 0 0 
+			0 0 0 305 0 0 0 328 26 24 326 329 28 332 311 305 26 329 23 24 27 331 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '9' y = '12' modal = '0'>
+		<structure>
+			154 49 0 
+			49 209 49 
+			0 49 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 347 349 0 0 0 0 
+			0 0 0 0 0 0 340 343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 0 283 263 0 0 283 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 302 0 0 0 0 283 302 0 0 0 0 0 342 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 342 263 0 283 302 0 0 0 0 0 0 0 0 345 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 341 0 0 0 0 0 0 0 0 0 0 263 0 283 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 283 263 0 283 263 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 345 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 340 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 341 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 348 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 345 0 0 0 0 0 344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 263 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 340 0 0 
+			0 0 0 0 0 0 0 0 0 342 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 263 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 344 0 
+			0 0 0 0 349 0 0 0 0 0 0 0 0 0 0 0 342 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 263 0 0 283 263 0 283 0 263 0 265 0 0 0 283 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '7' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Kenny' title = '' />
+	<entity x = '19' y = '19' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Dani' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '4' x = '6' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '8' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '2' x = '11' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '12' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '15' x = '18' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '10' x = '17' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '12' x = '3' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '14' x = '1' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '15' x = '4' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '17' x = '4' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '16' x = '9' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '19' x = '11' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '12' x = '15' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '18' x = '17' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '15' x = '22' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '7' x = '19' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '1' x = '20' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '3' x = '14' genus = '6' class = '' />
+<entity name = 'gold18' title = '' ai-behavior = '1' nick = '' y = '9' x = '7' genus = '6' class = '' />
+<entity name = 'gold19' title = '' ai-behavior = '1' nick = '' y = '0' x = '7' genus = '6' class = '' />
+<entity name = 'gold20' title = '' ai-behavior = '1' nick = '' y = '14' x = '12' genus = '6' class = '' />
+<entity name = 'gold21' title = '' ai-behavior = '1' nick = '' y = '9' x = '2' genus = '6' class = '' />
+<entity name = 'gold22' title = '' ai-behavior = '1' nick = '' y = '5' x = '21' genus = '6' class = '' />
+	<entity x = '15' y = '17' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp1' height = '1' width = '1' behavior = '1' y = '12' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2' height = '1' width = '1' behavior = '1' y = '12' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = 'Press [color=special]@enter[/color] to toggle lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '17' x = '15'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Kenny' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '6' x = '6' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Dani' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '18' x = '18' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '17' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '19' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c0' height = '1' width = '1' behavior = '1' y = '17' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '19' x = '21'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '7' x = '19'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.e' height = '1' width = '1' behavior = '1' y = '7' x = '22'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '5' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '1' x = '18'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '1' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '3' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '5' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '9' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle5' name = 'puzzle5.enter' height = '1' width = '1' behavior = '3' y = '1' x = '19' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle5.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '9' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle5.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle5.enter").loadMap("puzzle5", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear indicators
+        npc("npc1").clearIndicators();
+
+        // If Alien&apos;s kill quest is fresh (haven&apos;t yet extorted),
+        // or he has once again implored us to kill Kenny, then we&apos;ll mark him as a target.
+        if (
+            quest("2.1.npc1.quest").status() == "active" and
+            (
+                quest("2.1.npc1.quest").update("update-bought-contract").status() != "active" or
+                quest("2.1.npc1.quest").update("update-alien-egged-you-on").status() == "active"
+            )
+        )
+        {
+            // Mark as target
+            npc("npc1").addIndicator("target");
+        }
+
+
+        // Clear quest indicators
+        npc("npc2").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("6.2.npc2.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc2").addIndicator("quest-available");
+        }
+
+        // Quest is still active.  Player has finished visiting all of the
+        // levels, ready to share the map...
+        elif (
+            quest("6.2.npc2.quest").status() == "active" and
+            quest("6.2.npc2.quest").update("update-completed-map").status() == "active"
+        )
+        {
+            // Ready to complete
+            npc("npc2").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'lever1.action'>
+		// Lever pointing left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // slide platform right
+            map().plane("shift1").shiftToX("wp2");
+        }
+
+        // Pointing right, assume...
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // slide platform left
+            map().plane("shift1").shiftToX("wp1");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		// npc1 Kenny is the target of a kill quest from 2.1.npc1 Alien.
+        #define QUEST "2.1.npc1.quest"
+
+        #define FLAG_KILLED_KENNY "flag-killed-kenny"
+        #define UPDATE_BOUGHT_CONTRACT "update-bought-contract"
+        #define UPDATE_KILLED_KENNY_UNWITTINGLY "update-killed-kenny-unwittingly"
+        #define UPDATE_KILLED_KENNY_DURING "update-killed-kenny-during"
+        #define UPDATE_KILLED_KENNY_AFTER_BOUGHT "update-killed-kenny-after-bought"
+        #define UPDATE_KILLED_KENNY_AFTER_FAILING "update-killed-kenny-after-failing"
+
+        // If Alien&apos;s quest is inactive, then we got him ahead of schedule
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Just flag update for now, no quest effect
+            quest(QUEST).update(UPDATE_KILLED_KENNY_UNWITTINGLY).status("active");
+        }
+
+        // Quest is failed, we just did this for fun?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // failed by killing Alien before turning in
+            quest(QUEST).update(UPDATE_KILLED_KENNY_AFTER_FAILING).status("active");
+        }
+
+        // Otherwise, it&apos;s active or complete, let&apos;s see...
+        else
+        {
+            // .. did we buy the contract out?
+            if ( quest(QUEST).update(UPDATE_BOUGHT_CONTRACT).status() == "active" )
+            {
+                // appropriate update
+                quest(QUEST).update(UPDATE_KILLED_KENNY_AFTER_BOUGHT).status("active");
+            }
+
+            // no, so if he&apos;s alive and we didn&apos;t buy the contract, that means we killed him on schedule
+            // and we should return to Alien for the reward
+            else
+            {
+                quest(QUEST).update(UPDATE_KILLED_KENNY_DURING).status("active");
+            }
+        }
+
+
+        // flag general death
+        quest(QUEST).update(FLAG_KILLED_KENNY).status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		// npc1 Kenny is the target of a kill quest from 2.1.npc1 Alien.
+        #define QUEST "2.1.npc1.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_BOUGHT_CONTRACT "update-bought-contract"
+        #define UPDATE_EXTRACTED_FUNDS "update-extracted-funds"
+        #define UPDATE_LOWERED_PRICES "update-lowered-prices"
+        #define UPDATE_KILLED_KENNY "update-killed-kenny"
+        #define UPDATE_KILLED_ALIEN "update-killed-alien"
+        #define UPDATE_COLLECTED_REWARD "update-collected-reward"
+
+        // Quest not assigned?  Idle chatter
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            npc("npc1").talk("default");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // When quest is in progress, we can offer to buy Kenny&apos;s business contracts.  Or kill him, of course.
+            // Did we buy the contracts yet?
+            if ( quest(QUEST).update(UPDATE_BOUGHT_CONTRACT).status() == "active" )
+            {
+                // He sold out
+                npc("npc1").talk("quest:bought-business-contracts");
+            }
+
+            // No.  He&apos;ll offer, then...
+            else
+            {
+                // Wanna buy?
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // If quest is complete, that means we killed Kenny, that&apos;s what Alien wanted,
+            // or we bought the contracts and then turned in.  If he&apos;s still talking, we obviously bought the contracts.
+            npc("npc1").talk("quest:bought-business-contracts");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // If we failed quest, that means we killed Alien.
+            // This guy Kenny will say some other random stuff now, if he&apos;s still alive.
+            npc("npc1").talk("quest:failed");
+        }
+	</script>
+	<script name = 'npc2.ondeath'>
+		#define TASK "6.2.npc2.quest"
+
+
+        // Killed her ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // fails quest
+            quest(TASK).status("failed");
+
+            // premature kill update
+            quest(TASK).update("update-killed-dani-before").status("active");
+        }
+
+        // Killed her while doing quest?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Do we have the map done, just needed to turn in?
+            if ( quest(TASK).update("update-completed-map").status() == "active" )
+            {
+                // why&apos;d we do it?!
+                quest(TASK).update("update-killed-dani-during:after-ready").status("active");
+            }
+
+            // Killed her before 100% map knowledge
+            else
+            {
+                quest(TASK).update("update-killed-dani-during:before-ready").status("active");
+            }
+
+
+            // Either way, it&apos;s a failure
+            quest(TASK).status("failed");
+        }
+
+        // We can&apos;t fail quest unless we kill Dani prematurely, and at that point she&apos;s already dead.
+        // So, we now just check for an after-completion kill...
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // no point, why!?
+            quest(TASK).update("update-killed-dani-after").status("active");
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-dani").status("active");
+
+        // disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.talk'>
+		#define QUEST "6.2.npc2.quest"
+
+        #define UPDATE_KILLED_DANI "update-killed-dani"
+        #define UPDATE_COMPLETED_MAP "update-completed-map"
+        #define UPDATE_COMPLETE "update-complete"
+
+
+        // Quest not assigned?  Go time
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // auto assign
+            npc("npc2").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Map complete?  Let&apos;s see...
+            if ( quest(QUEST).update(UPDATE_COMPLETED_MAP).status() == "active" )
+            {
+                // auto share (turn in)
+                npc("npc2").talk("quest:in-progress:map-complete");
+            }
+
+            // not yet
+            else
+            {
+                // In this conversation, we&apos;ll have access to a "sell me your map data" option.
+                // The response will vary depending on whether or not we have a need for her map data.
+
+                // Clean slate
+                npc("npc2").conversation("quest:in-progress").branch("root.buy").getLinesByClass("*").disable();
+
+                if ( progress().getMapsByClass("dani").count() &gt; progress().getMapsByClass("dani").countVisible() )
+                {
+                    // She has map data we don&apos;t have, so we can buy
+                    npc("npc2").conversation("quest:in-progress").branch("root.buy").getLinesByClass("yes").enable();
+                }
+
+                else
+                {
+                    // We&apos;ve seen everything that she could show us
+                    npc("npc2").conversation("quest:in-progress").branch("root.buy").getLinesByClass("no").enable();
+                }
+
+
+                // nag
+                npc("npc2").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // thanks again
+            npc("npc2").talk("quest:complete");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // only way to fail is to kill Dani, and she won&apos;t talk at that point.
+            // n/a then
+        }
+	</script>
+	<script name = 'npc2.share-map'>
+		// Find all of the maps Dani knows and mark them as "visible" for the player
+        progress().getMapsByClass("dani").markAsVisible();
+
+        // Flag the appropriate update for the quest
+        quest("6.2.npc2.quest").update("update-bought-danis-map").status("active");
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc2.a")
+                   .addHotspot("npc2.c0")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.d");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+</scripts>

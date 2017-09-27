@@ -1,0 +1,42 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 152 96 96 0 96 96 0 0 0 0 
+			0 96 110 96 111 96 216 96 96 0 96 96 96 152 96 96 96 0 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 152 0 0 0 0 207 0 
+			0 0 0 0 152 96 96 96 110 96 96 96 96 96 110 111 96 96 96 96 
+			0 0 0 0 152 0 96 0 0 0 0 96 96 0 0 0 0 96 96 0 
+			0 152 96 96 96 0 0 0 0 0 0 0 96 0 0 0 0 96 0 0 
+			96 152 0 0 0 0 0 0 0 0 0 0 96 0 0 0 0 96 0 0 
+			0 152 0 152 96 96 96 152 0 152 96 207 96 0 0 0 0 96 0 0 
+			96 152 216 152 0 0 0 152 0 152 207 96 0 0 0 0 0 0 0 0 
+			0 152 0 152 216 152 96 96 96 96 96 96 0 0 0 0 87 0 0 0 
+			96 152 216 152 0 152 0 0 0 0 96 207 0 0 0 0 96 0 0 0 
+			0 152 0 152 216 152 0 0 0 0 96 96 0 0 0 0 96 87 87 0 
+			96 152 216 152 0 152 0 0 96 110 207 96 111 96 0 0 96 96 96 0 
+			96 96 0 152 216 152 0 0 96 0 0 0 0 96 0 0 96 96 96 0 
+			96 96 0 96 0 152 0 0 0 0 0 0 0 0 0 96 96 96 96 87 
+			96 96 96 96 96 96 96 96 96 111 96 96 110 96 96 96 96 96 96 96 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '4' x = '18' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '3' x = '16' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '2' x = '13' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '4' x = '9' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '3' x = '6' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '16' x = '10' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '16' x = '11' genus = '6' class = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts />

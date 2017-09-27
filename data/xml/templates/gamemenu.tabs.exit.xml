@@ -1,0 +1,76 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@box-height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.exit'>
+
+    <rowmenu id = 'tab' class = 'skills' width = '@width' height = '@height' uses-focus = '1' on-wrap-up = 'tab-abort' on-wrap-down = 'tab-abort'>
+
+        <item-group per-row = '2' column-padding = '20'>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '19' />
+                        <label x = '18%' y = '7' value = '[color=title]Resume Game[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'You can also press [color=dim]Escape[/color] to resume your game.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'You can also press [color=dim]Escape[/color] to resume your game.' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'resume-game' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' align = 'right' index = '19' />
+                        <label x = '82%' y = '7' align = 'right' value = '[color=title]Leave Game[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Return to the [color=dim]Main Menu[/color] screen.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'Return to the [color=dim]Main Menu[/color].' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'leave-game' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

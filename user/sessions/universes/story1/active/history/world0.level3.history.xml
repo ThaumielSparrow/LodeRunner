@@ -1,0 +1,174 @@
+	<params>
+		<stats.enemies-killed>0</stats.enemies-killed>
+		<stats.bombs-used>0</stats.bombs-used>
+		<stats.skills-used>0</stats.skills-used>
+	</params>
+	<entities>
+		<player rel = 'session data' />
+		<entity status = '1' class = 'npc' name = 'npc1' alive = '1' corpsed = 'False'>
+			<indicators>
+				<indicator active = '0' name = 'quest-complete' />
+				<indicator active = '0' name = 'merchant' />
+				<indicator active = '0' name = 'target' />
+				<indicator active = '0' name = 'quest-available' />
+			</indicators>
+		</entity>
+		<entity status = '1' locked = 'False' name = 'terminal1' corpsed = 'False' alive = '1' class = 'terminal' />
+		<entity status = '1' class = 'npc' name = 'npc2' alive = '1' corpsed = 'False'>
+			<indicators>
+				<indicator active = '0' name = 'quest-complete' />
+				<indicator active = '0' name = 'merchant' />
+				<indicator active = '0' name = 'target' />
+				<indicator active = '0' name = 'quest-available' />
+			</indicators>
+		</entity>
+		<entity status = '1' name = 'gold.uid.0' corpsed = 'False' raw-x = '288' raw-y = '168' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.1' corpsed = 'False' raw-x = '312' raw-y = '360' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.2' corpsed = 'False' raw-x = '144' raw-y = '312' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.3' corpsed = 'False' raw-x = '216' raw-y = '432' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.4' corpsed = 'False' raw-x = '192' raw-y = '264' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.5' corpsed = 'False' raw-x = '0' raw-y = '408' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.6' corpsed = 'False' raw-x = '24' raw-y = '432' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.7' corpsed = 'False' raw-x = '120' raw-y = '360' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.8' corpsed = 'False' raw-x = '48' raw-y = '192' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.9' corpsed = 'False' raw-x = '24' raw-y = '120' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '2' name = 'gold.uid.10' corpsed = 'False' raw-x = '168' raw-y = '72' alive = '1' collected = 'True' class = '' carried = 'True' />
+		<entity status = '2' name = 'gold.uid.11' corpsed = 'False' raw-x = '312' raw-y = '0' alive = '1' collected = 'True' class = '' carried = 'True' />
+		<entity status = '1' name = 'gold.uid.12' corpsed = 'False' raw-x = '264' raw-y = '48' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.13' corpsed = 'False' raw-x = '144' raw-y = '168' alive = '1' collected = 'False' class = '' carried = 'False' />
+	</entities>
+	<triggers>
+		<trigger active = 'True' name = 'npc1.talk' />
+		<trigger active = 'True' name = 'safezone' />
+		<trigger active = 'True' name = 'quest' />
+		<trigger active = 'True' name = 'terminal1.talk' />
+		<trigger active = 'True' name = 'npc1.a' />
+		<trigger active = 'True' name = 'npc1.b' />
+		<trigger active = 'True' name = 'npc2.a' />
+		<trigger active = 'True' name = 'npc2.b' />
+		<trigger active = 'True' name = 'npc2.c' />
+		<trigger active = 'True' name = 'npc2.d' />
+		<trigger active = 'True' name = 'npc2.e' />
+		<trigger active = 'True' name = 'npc2.f' />
+		<trigger active = 'True' name = 'npc2.g' />
+		<trigger active = 'True' name = 'npc2.talk' />
+	</triggers>
+	<planes>
+		<plane />
+		<plane shift-x = '0' shift-y = '0' slide-y = '480' slide-x = '336' active = '1' name = 'mask' />
+	</planes>
+	<digs />
+	<ai />
+	<conversations>
+		<npc name = 'npc1'>
+			<conversation id = 'intro'>
+				<branch linear-position = '0' id = 'root.details.done'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root'>
+					<line active = '1' unread = '0' id = 'line1' total-reads = '0' />
+					<line active = '1' unread = '0' id = 'nag1' total-reads = '0'>
+						<response active = '1' branch-id = 'root.faq' />
+						<response active = '1' branch-id = 'root.defense' />
+						<response active = '1' branch-id = 'root.details' />
+					</line>
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item.item1'>
+					<line active = '1' unread = '0' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.faq'>
+					<line active = '1' unread = '0' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item.item3'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item'>
+					<line active = '1' unread = '0' id = 'line1' total-reads = '0' />
+					<line active = '1' unread = '0' id = 'line2' total-reads = '0'>
+						<response active = '1' branch-id = 'root.free-item.item1' />
+						<response active = '0' branch-id = 'root.free-item.item2' />
+						<response active = '0' branch-id = 'root.free-item.item3' />
+						<response active = '0' branch-id = 'root.free-item.item4' />
+						<response active = '1' branch-id = 'root.free-item.item5' />
+					</line>
+					<line active = '1' unread = '0' id = 'line3' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item.item4'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item.item5'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.details.gold'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.details.item'>
+					<line active = '1' unread = '0' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.details.kill'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.details'>
+					<line active = '1' unread = '0' id = 'nag1' total-reads = '0'>
+						<response active = '1' branch-id = 'root.details.gold' />
+						<response active = '1' branch-id = 'root.details.kill' />
+						<response active = '1' branch-id = 'root.details.item' />
+					</line>
+					<line active = '0' unread = '1' id = 'nag2' total-reads = '0'>
+						<response active = '1' branch-id = 'root.details.gold' />
+						<response active = '1' branch-id = 'root.details.kill' />
+						<response active = '1' branch-id = 'root.details.done' />
+					</line>
+				</branch>
+				<branch linear-position = '0' id = 'root.defense'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.free-item.item2'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+			</conversation>
+		</npc>
+		<npc name = 'terminal1'>
+			<conversation id = 'default'>
+				<branch linear-position = '0' id = 'root.badguys.back'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.badguys.towns'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.bye'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root.gold'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0' />
+				</branch>
+				<branch linear-position = '0' id = 'root'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0'>
+						<response active = '1' branch-id = 'root.badguys' />
+						<response active = '1' branch-id = 'root.gold' />
+						<response active = '1' branch-id = 'root.bye' />
+					</line>
+				</branch>
+				<branch linear-position = '0' id = 'root.badguys'>
+					<line active = '1' unread = '1' id = 'nag1' total-reads = '0'>
+						<response active = '1' branch-id = 'root.badguys.towns' />
+						<response active = '1' branch-id = 'root.badguys.back' />
+					</line>
+				</branch>
+			</conversation>
+		</npc>
+		<npc name = 'npc2'>
+			<conversation id = 'generic'>
+				<branch linear-position = '0' id = 'root'>
+					<line active = '0' unread = '1' id = 'line1' total-reads = '0' />
+					<line active = '0' unread = '1' id = 'line2' total-reads = '0' />
+					<line active = '0' unread = '1' id = 'line3' total-reads = '0' />
+					<line active = '0' unread = '1' id = 'line4' total-reads = '0' />
+					<line active = '0' unread = '1' id = 'nag1' total-reads = '0' />
+					<line active = '0' unread = '1' id = 'nag2' total-reads = '0' />
+					<line active = '1' unread = '1' id = 'nag3' total-reads = '0' />
+					<line active = '1' unread = '1' id = 'nag4' total-reads = '0' />
+				</branch>
+			</conversation>
+		</npc>
+	</conversations>

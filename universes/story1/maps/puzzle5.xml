@@ -1,0 +1,81 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 207 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 186 191 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 196 185 161 176 196 182 154 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 169 199 154 0 0 186 0 0 
+			0 0 0 0 217 219 219 153 0 0 0 165 196 154 0 178 0 0 
+			0 0 0 198 0 0 0 152 217 219 0 0 0 154 197 172 0 0 
+			0 191 0 160 198 183 152 190 0 0 184 186 154 180 163 0 0 0 
+			192 165 0 209 0 169 152 0 0 0 0 0 152 0 144 0 0 0 
+			0 161 181 189 195 171 197 152 193 0 0 194 197 0 208 0 0 0 
+			0 162 0 167 175 175 0 153 162 194 0 0 0 0 0 0 0 0 
+			0 0 0 0 169 163 0 153 172 0 0 0 0 0 187 0 0 0 
+			0 0 0 0 0 0 0 153 0 0 0 153 192 199 173 0 0 0 
+			0 0 0 216 217 218 218 152 190 188 190 188 169 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 287 289 288 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 289 288 0 302 0 0 0 0 0 0 0 0 0 0 
+			289 286 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 287 289 286 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 302 0 300 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 289 302 0 0 0 
+			0 0 0 0 0 0 0 0 287 289 289 286 302 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '14' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '6' y = '3' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '8' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '2' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '11' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '9' y = '13' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '3' y = '6' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '10' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "You have 2 bombs to help you complete this puzzle.",
+            "tooltip": "You have 2 bombs each time you try this puzzle.  You cannot take the bombs back to the overworld!",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        map().setWaveAllowances({
+            "bombs": 2
+        });
+
+        showPuzzleIntro();
+	</script>
+</scripts>

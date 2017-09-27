@@ -1,0 +1,11 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+</planes>
+<entities>
+</entities>
+<triggers>
+</triggers>
+<scripts />

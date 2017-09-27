@@ -1,0 +1,30 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@update-index</parameter>
+		<parameter>@update-description</parameter>
+	</text>
+</parameters>
+
+<template name = 'quests.insert.details.insert' version = 'active'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <stack class = 'frame'>
+
+            <item>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label x = '10%' y = '0' align = '' width = '75%' value = 'Update @update-index' />
+            </item>
+
+            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+            <label x = '10%' y = '0' width = '85%' value = '@update-description' />
+
+        </stack>
+
+    </insert:item>
+
+</template>

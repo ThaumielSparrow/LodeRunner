@@ -1,0 +1,260 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 330 323 328 327 326 0 0 0 0 0 0 0 0 
+			0 328 307 312 0 0 0 0 0 0 0 0 9 0 0 
+			326 303 312 0 152 323 27 25 325 27 334 325 333 154 0 
+			312 309 0 154 323 312 0 0 0 0 0 0 309 325 153 
+			312 0 154 329 306 0 0 0 0 0 0 0 0 306 333 
+			313 0 154 305 0 0 0 324 24 152 332 0 0 0 314 
+			303 153 325 0 0 0 0 0 0 153 0 0 0 0 0 
+			0 153 0 327 0 0 0 0 0 152 208 0 0 0 323 
+			0 328 152 311 326 0 216 152 332 24 25 327 0 0 312 
+			0 0 154 310 304 334 0 154 0 313 307 310 0 0 314 
+			0 152 329 304 0 0 0 152 0 207 307 307 0 0 310 
+			325 152 0 0 0 0 152 327 153 331 0 0 0 0 308 
+			307 326 152 300 0 154 328 303 153 0 0 0 0 107 305 
+			0 303 154 329 27 28 314 0 152 216 216 331 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '3' y = '5' modal = '0'>
+		<structure>
+			0 50 52 
+			53 210 0 
+			0 50 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '12' y = '10' modal = '0'>
+		<structure>
+			53 0 0 
+			209 50 0 
+			50 0 0 
+			52 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 263 0 0 265 0 283 0 0 0 0 
+			0 302 0 0 0 302 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 263 0 0 283 0 0 0 300 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			300 0 0 0 0 0 0 302 0 0 0 0 0 0 302 
+			0 300 0 263 0 0 283 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '5' y = '1' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Zack' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '6' x = '14' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '4' x = '8' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '11' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '0' x = '14' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '12' x = '4' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '7' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '1' x = '10' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '3' x = '2' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '10' x = '0' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '8' x = '13' genus = '6' class = '' />
+	<entity x = '5' y = '8' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+	<entity x = '8' y = '10' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '1' position = '0' />
+</entities>
+<triggers>
+	<trigger name = 'wp1a' x = '3' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1b' x = '11' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2a' x = '12' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2b' x = '12' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '5' y = '8' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever2' x = '8' y = '10' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever2.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.talk' x = '4' y = '0' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Zack'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '10' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '7' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '1' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '4' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.e' x = '2' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle11.enter' x = '12' y = '1' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle11'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle11.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '8' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle11.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle11.enter").loadMap("puzzle11", "origin");
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp1a");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points up?
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // point down
+            npc("lever2").setPosition("down");
+
+            // shift down
+            map().plane("shift2").shiftToY("wp2b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever2").setPosition("up");
+
+            // shift up
+            map().plane("shift2").shiftToY("wp2a");
+        }
+	</script>
+	<script name = 'npc1.talk' />
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'onloadOLD' />
+</scripts>

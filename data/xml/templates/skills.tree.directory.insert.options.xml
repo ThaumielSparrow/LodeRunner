@@ -1,0 +1,367 @@
+<parameters>
+	<data>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@skill-icon-index</parameter>
+		<parameter>@skill-name</parameter>
+		<parameter>@skill-level</parameter>
+		<parameter>@button-width</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title</parameter>
+		<parameter>@skill-details</parameter>
+		<parameter>@skill-level</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.tree.directory.insert.options' version = 'new'>
+
+    <rowmenu id = 'options' x = '0' y = '@y' width = '@width' height = '@height' shrinkwrap = '1' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = 'Upgrade Options' />
+            </item>
+        </item-group>
+
+        <item-group per-row = '2' column-padding = '20' homogenize = '1'>
+
+            <item id = 'tunnel' render-border = '1'>
+
+                <rowmenu x = '0' y = '0' width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '1'>
+
+                    <item-group class = 'options'>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '8%' y = '50%' valign = 'center' index = '@skill-icon-index' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '22%' y = '0' width = '100%' value = 'Unlock' />
+                                <label class = 'subtitle' x = '22%' y = '0' width = '100%' value = '@skill-title' />
+                            </stack>
+
+                            <action do = 'show:skills.tree.insert.options.upgrade.confirm' skill = '@skill-name' level = '@skill-level' />
+
+                        </item>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '8%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '22%' y = '0' width = '100%' value = 'Cancel' />
+                                <label x = '22%' y = '0' width = '100%' value = 'Not Ready' />
+                            </stack>
+
+                            <action do = 'hide:skill.tree.insert.options' />
+
+                        </item>
+
+                    </item-group>
+
+                </rowmenu>
+
+            </item>
+
+            <item disabled = '1' render-border = '1'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '0' uses-title-bar = '0'>
+
+                    <item>
+                        <icon y = '0' x = '95%' align = 'right' index = '13' position = 'absolute' />
+                        <label y = '0' x = '84%' align = 'right' width = '80%' value = '[color=special]Detailed Overview[/color]' text-effect = 'blaster:line-by-line' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <item xclass = 'line-break'>
+                        <label y = '0' x = '95%' value = '@skill-details' align = 'right' width = '90%' xtext-effect = 'blaster:line-by-line' />
+                    </item>
+
+                </stack>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert.options' version = 'upgrade'>
+
+    <rowmenu id = 'options' x = '0' y = '@y' width = '@width' height = '@height' shrinkwrap = '1' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = 'Upgrade Options' />
+            </item>
+        </item-group>
+
+        <item-group per-row = '2' column-padding = '20' homogenize = '1'>
+
+            <item id = 'tunnel' render-border = '1'>
+
+                <rowmenu x = '0' y = '0' width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '1'>
+
+                    <item-group class = 'options'>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '8%' y = '50%' valign = 'center' index = '@skill-icon-index' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '22%' y = '0' width = '100%' value = 'Upgrade to Level @skill-level' />
+                                <label class = 'subtitle' x = '22%' y = '0' width = '100%' value = '@skill-title' />
+                            </stack>
+
+                            <action do = 'show:skills.tree.insert.options.upgrade.confirm' skill = '@skill-name' level = '@skill-level' />
+
+                        </item>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '8%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '22%' y = '0' width = '100%' value = 'Cancel' />
+                                <label x = '22%' y = '0' width = '100%' value = 'Not Ready' />
+                            </stack>
+
+                            <action do = 'hide:skill.tree.insert.options' />
+
+                        </item>
+
+                    </item-group>
+
+                </rowmenu>
+
+            </item>
+
+            <item disabled = '1' render-border = '1'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '0' uses-title-bar = '0'>
+
+                    <item>
+                        <icon y = '0' x = '95%' align = 'right' index = '13' position = 'absolute' />
+                        <label y = '0' x = '84%' align = 'right' width = '80%' value = '[color=special]Upgrade Details[/color]' text-effect = 'blaster:line-by-line' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <item xclass = 'line-break'>
+                        <label y = '0' x = '95%' value = '@skill-details' align = 'right' width = '90%' xtext-effect = 'blaster:line-by-line' />
+                    </item>
+
+                </stack>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+
+
+    <hpane id = 'xoptions' class = 'bordered' x = '0' y = '@y' width = '@width' height = '@height' width-left = '0.6' width-right = '0.4' handedness = 'right' render-border = '1'>
+
+        <left>
+
+            <stack class = 'frame' uses-focus = '0'>
+
+                <item xclass = 'line-break'>
+                    <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                    <label y = '0' x = '15%' width = '80%' value = '[color=special]Details:[/color]' text-effect = 'blaster:line-by-line' />
+                </item>
+
+                <item class = 'line-break'>
+                    <rect class = 'hr-left' x = '5%' y = '0' width = '45%' height = '2' />
+                    <rect class = 'hr-right' x = '50%' y = '0' width = '45%' height = '2' />
+                </item>
+
+                <item class = 'line-break'>
+                    <label y = '0' x = '7%' value = '@skill-details' width = '90%' xtext-effect = 'blaster:line-by-line' />
+                </item>
+
+            </stack>
+
+        </left>
+
+        <right>
+
+            <rowmenu xclass = 'frame' width = '100%' height = '@height' uses-focus = '1'>
+
+                <item xclass = 'line-break' disabled = '1'>
+                    <icon x = '95%' y = '0' index = '13' align = 'right' position = 'absolute' />
+                    <label x = '80%' y = '2' align = 'right' width = '100%' value = 'Options:' />
+                </item>
+
+                <item class = 'line-break' disabled = '1'>
+                    <rect class = 'hr-left' x = '5%' y = '0' width = '45%' height = '2' />
+                    <rect class = 'hr-right' x = '50%' y = '0' width = '45%' height = '2' />
+                </item>
+
+                <item-group>
+
+                    <item class = 'button' x = '50%' y = '0' align = 'center' content-align = 'left' width = '@button-width' render-border = '1' >
+
+                        <icon x = '10%' y = '8' index = '@skill-icon-index' position = 'absolute' />
+                        <label x = '30%' y = '0' width = '100%' value = 'Upgrade
+[color=dim]@skill-title[/color]' />
+
+                        <action do = 'show:skills.tree.insert.options.upgrade.confirm' skill = '@skill-name' level = '@skill-level' />
+
+                    </item>
+
+                    <item class = 'button' x = '50%' y = '0' align = 'center' content-align = 'left' width = '@button-width' render-border = '1' >
+
+                        <icon x = '10%' y = '8' index = '24' position = 'absolute' />
+                        <label x = '30%' y = '0' width = '100%' value = 'Cancel
+[color=dim]Not Ready[/color]' />
+
+                        <action do = 'hide:skill.tree.insert.options' />
+
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </right>
+
+    </hpane>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert.options' version = 'locked'>
+</template>
+
+
+<template name = 'skills.tree.directory.insert.options' version = 'max'>
+
+    <rowmenu id = 'options' x = '0' y = '@y' width = '@width' height = '@height' shrinkwrap = '1' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group per-row = '2' column-padding = '20' homogenize = '1'>
+
+            <item id = 'tunnel' render-border = '1'>
+
+                <rowmenu x = '0' y = '0' width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '1'>
+
+                    <item-group class = 'options'>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '8%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '22%' y = '0' width = '100%' value = 'Back' />
+                                <label x = '22%' y = '0' width = '100%' value = 'Fully Upgraded' />
+                            </stack>
+
+                            <action do = 'hide:skill.tree.insert.options' />
+
+                        </item>
+
+                    </item-group>
+
+                </rowmenu>
+
+            </item>
+
+            <item disabled = '1' render-border = '1'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '0' uses-title-bar = '0'>
+
+                    <item>
+                        <icon y = '0' x = '95%' align = 'right' index = '13' position = 'absolute' />
+                        <label y = '0' x = '84%' align = 'right' width = '80%' value = '[color=special]Final Overview[/color]' text-effect = 'blaster:line-by-line' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <item xclass = 'line-break'>
+                        <label y = '0' x = '95%' value = '@skill-details' align = 'right' width = '90%' xtext-effect = 'blaster:line-by-line' />
+                    </item>
+
+                </stack>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+
+
+    <hpane id = 'xoptions' class = 'bordered' x = '0' y = '@y' width = '@width' height = '@height' width-left = '0.6' width-right = '0.4' handedness = 'right' render-border = '1'>
+
+        <left>
+
+            <stack class = 'frame' uses-focus = '0'>
+
+                <item xclass = 'line-break'>
+                    <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                    <label y = '0' x = '15%' width = '80%' value = '[color=special]Details:[/color]' text-effect = 'blaster:line-by-line' />
+                </item>
+
+                <item class = 'line-break'>
+                    <rect class = 'hr-left' x = '5%' y = '0' width = '45%' height = '2' />
+                    <rect class = 'hr-right' x = '50%' y = '0' width = '45%' height = '2' />
+                </item>
+
+                <item class = 'line-break'>
+                    <label y = '0' x = '7%' value = '@skill-details' width = '90%' xtext-effect = 'blaster:line-by-line' />
+                </item>
+
+            </stack>
+
+        </left>
+
+        <right>
+
+            <rowmenu xclass = 'frame' width = '100%' height = '@height' uses-focus = '1'>
+
+                <item xclass = 'line-break' disabled = '1'>
+                    <icon x = '95%' y = '0' index = '13' align = 'right' position = 'absolute' />
+                    <label x = '80%' y = '2' align = 'right' width = '100%' value = 'Options:' />
+                </item>
+
+                <item class = 'line-break' disabled = '1'>
+                    <rect class = 'hr-left' x = '5%' y = '0' width = '45%' height = '2' />
+                    <rect class = 'hr-right' x = '50%' y = '0' width = '45%' height = '2' />
+                </item>
+
+                <item-group>
+
+                    <item class = 'button' x = '50%' y = '0' align = 'center' content-align = 'left' width = '@button-width' render-border = '1' >
+
+                        <icon x = '10%' y = '8' index = '24' position = 'absolute' />
+                        <label x = '30%' y = '0' width = '100%' value = 'Back
+[color=dim]Fully Upgraded[/color]' />
+
+                        <action do = 'hide:skill.tree.insert.options' />
+
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </right>
+
+    </hpane>
+
+</template>

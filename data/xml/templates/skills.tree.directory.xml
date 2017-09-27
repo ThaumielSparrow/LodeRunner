@@ -1,0 +1,29 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'skills.tree.directory' version = 'beta'>
+
+    <rowmenu id = 'directory' class = 'skill-tree-directory' width = '@width' height = '@height' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item id = 'invisible-left-column' disabled = '1' />
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label x = '20%' y = '0' width = '75%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

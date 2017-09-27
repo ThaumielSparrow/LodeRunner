@@ -1,0 +1,120 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'linear' />
+	<param key = 'next-map' value = 'map2' />
+	<param key = 'overview' value = 'You need to win this level to get to the next level!!!' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 150 148 207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 152 216 219 219 152 117 110 119 216 216 152 216 218 216 216 216 152 0 0 0 0 0 0 
+			0 0 0 152 0 0 0 152 99 0 97 0 0 152 0 0 0 0 0 152 0 0 0 0 0 0 
+			0 0 152 116 0 0 0 152 0 0 149 147 0 152 0 0 147 148 0 152 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 152 119 0 119 110 111 116 0 0 117 116 111 152 0 0 0 0 0 0 
+			0 0 117 152 219 216 217 152 96 116 98 0 0 0 0 118 207 0 0 152 0 0 0 0 0 0 
+			0 0 0 152 0 0 0 152 98 99 99 0 0 0 0 99 117 0 0 152 0 0 0 0 0 0 
+			0 0 0 152 149 0 0 152 0 0 0 0 210 0 0 0 0 0 152 118 0 0 0 0 0 0 
+			0 152 111 117 110 111 119 152 0 0 0 116 118 118 0 0 0 152 116 96 0 0 0 0 0 0 
+			0 152 0 0 0 0 97 152 0 0 0 0 0 0 0 0 152 119 97 0 0 0 0 0 0 0 
+			0 152 0 0 0 0 96 116 152 151 148 151 0 147 149 0 152 97 0 0 0 0 0 0 0 0 
+			210 152 147 148 0 117 98 98 111 118 110 111 118 116 116 118 152 0 0 116 0 0 0 0 0 0 
+			116 117 117 110 111 99 98 99 116 99 0 0 0 0 99 98 116 110 118 99 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 300 0 0 0 302 0 0 0 0 300 0 0 0 0 302 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '20' y = '9' modal = '0'>
+		<structure>
+			49 75 49 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'enemy2' title = '' ai-behavior = '1' nick = '' y = '6' x = '9' genus = '1' class = '' />
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '9' x = '5' genus = '2' class = '' />
+<entity name = 'player2' title = '' ai-behavior = '1' nick = '' y = '12' x = '15' genus = '2' class = '' />
+<entity name = 'player3' title = '' ai-behavior = '1' nick = '' y = '13' x = '3' genus = '2' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '5' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '15' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '18' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '11' genus = '5' class = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '11' x = '12' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '9' x = '15' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '5' x = '10' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '11' x = '5' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '12' x = '3' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '8' x = '4' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '2' x = '8' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '4' x = '5' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '6' x = '1' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '9' x = '9' genus = '6' class = '' />
+<entity name = 'player1.respawn' title = '' ai-behavior = '1' nick = '' y = '4' x = '2' genus = '12' class = '' />
+<entity name = 'player2.respawn' title = '' ai-behavior = '1' nick = '' y = '5' x = '2' genus = '12' class = '' />
+<entity name = 'player3.respawn' title = '' ai-behavior = '1' nick = '' y = '3' x = '2' genus = '12' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'shift1.top' height = '1' width = '3' behavior = '1' y = '3' x = '20'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'shift1.bottom' height = '1' width = '3' behavior = '1' y = '9' x = '20'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onready'>
+		// enemy 2 chases player 2
+        //enemy("enemy2").setPreferredTarget(2);
+
+        // Define how many bombs each player gets
+        //distributeBombs({
+        //    "per-slot": [2, 4, 5, 5]
+        //});
+	</script>
+	<script name = 'OLDonload' />
+	<script name = 'xdebug' />
+	<script name = 'lever1.action'>
+		// lever set down?
+        if ( npc("lever1").hasPosition("down") )
+        {
+            // raise lever
+            npc("lever1").setPosition("up");
+
+            // shift platform
+            map().plane("shift1").shiftToY("shift1.top");
+        }
+
+        else
+        {
+            // lower lever
+            npc("lever1").setPosition("down");
+
+            // shift platform
+            map().plane("shift1").shiftToY("shift1.bottom");
+        }
+	</script>
+	<script name = 'OLDlever1.action' />
+</scripts>

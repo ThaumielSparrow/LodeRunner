@@ -1,0 +1,60 @@
+<parameters>
+	<data>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'inventory.menu.replace'>
+
+    <rowmenu id = 'menu' x = '0' y = '@y' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '100%' value = 'Replace Item:' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item id = 'tunnel'>
+
+                <rowmenu x = '0' y = '0' width = '100%' height = '@height' uses-focus = '1' shrinkwrap = '1'>
+
+                    <item-group id = 'ext.equipped-items' />
+
+                    <item-group class = 'options'>
+
+                        <item disabled = '1'>
+                            <rect class = 'underline' x = '5%' y = '0' width = '90%' y = '0' midpoint = '0.5' />
+                        </item>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <stack>
+                                <label x = '15%' y = '0' width = '80%' value = 'Do Nothing' />
+                                <label x = '15%' y = '0' width = '80%' value = 'Cancel' />
+                            </stack>
+
+                            <action do = 'hide:inventories.inventory.replace-item' />
+
+                        </item>
+
+                    </item-group>
+
+                </rowmenu>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

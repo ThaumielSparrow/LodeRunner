@@ -1,0 +1,78 @@
+<maps>
+	<primary-map name = 'root.story' />
+	<background>
+		<map layer = '2' name = 'root.coop.back.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '26' rel = '' y = '186' x = '192' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.coop.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '18' rel = '' y = '18' x = '171' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.coop.host.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '29' rel = '' y = '186' x = '142' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.coop.join.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '21' rel = '' y = '186' x = '171' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.dlc.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '19' rel = '' y = '18' x = '189' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.audio.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '29' rel = '' y = '233' x = '141' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.back.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '35' rel = '' y = '233' x = '240' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '20' rel = '' y = '18' x = '208' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.bomb.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '282' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.digforward.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '262' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.digleft.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '222' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.digright.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '242' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.doreset.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '382' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.dosave.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '22' rel = '' y = '364' x = '402' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.interact.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '322' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.movedown.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '202' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.moveleft.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '142' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.moveright.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '162' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.moveup.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '182' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.suicide.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '282' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.useskill1.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '342' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.controls.actions.useskill2.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '20' rel = '' y = '364' x = '362' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.display.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '18' rel = '' y = '233' x = '170' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.gamepads.back.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '26' rel = '' y = '276' x = '192' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.gamepads.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '17' rel = '' y = '233' x = '203' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.gamepads.customize.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '29' rel = '' y = '276' x = '143' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.gamepads.switch.back.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '38' rel = '' y = '319' x = '142' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.gamepads.switch.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '20' rel = '' y = '276' x = '172' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.keyboard.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '15' rel = '' y = '233' x = '188' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.options.language.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '20' rel = '' y = '233' x = '220' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.quit.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '27' rel = '' y = '18' x = '228' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.story.back.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '32' rel = '' y = '144' x = '183' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.story.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '29' rel = '' y = '18' x = '142' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.story.continue.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '20' rel = '' y = '144' x = '163' class = '' completion-time = '0' />
+		<map layer = '2' name = 'root.story.new.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '20' rel = '' y = '144' x = '143' class = '' completion-time = '0' />
+	</background>
+	<foreground>
+		<map layer = '1' name = 'root.coop' title = 'Level 9' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '22' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.coop.back' title = 'Level 16' height = '16' difficulty = '' gold-count = '14' width = '17' rel = '' y = '176' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.coop.host' title = 'Level 2' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '176' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.coop.join' title = 'Level 18' height = '16' difficulty = '' gold-count = '16' width = '17' rel = '' y = '176' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.dlc' title = 'Level 13' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '22' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.generic' title = 'Level (Unselectable)' height = '16' difficulty = '' gold-count = '0' width = '17' rel = '' y = '-3' x = '133' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options' title = 'Level 5' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '22' x = '186' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.audio' title = 'Level 28' height = '16' difficulty = '' gold-count = '12' width = '17' rel = '' y = '216' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.back' title = 'Level 20' height = '16' difficulty = '' gold-count = '20' width = '17' rel = '' y = '216' x = '220' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.bomb' title = 'Level 32' height = '16' difficulty = '' gold-count = '19' width = '17' rel = '' y = '336' x = '254' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.digforward' title = 'Level 35' height = '16' difficulty = '' gold-count = '0' width = '17' rel = '' y = '336' x = '237' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.digleft' title = 'Level 25' height = '16' difficulty = '' gold-count = '20' width = '17' rel = '' y = '336' x = '203' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.digright' title = 'Level 4' height = '16' difficulty = '' gold-count = '19' width = '17' rel = '' y = '336' x = '220' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.doreset' title = 'Level 10' height = '16' difficulty = '' gold-count = '19' width = '17' rel = '' y = '336' x = '339' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.dosave' title = 'Level 21' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '336' x = '356' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.interact' title = 'Level 27' height = '16' difficulty = '' gold-count = '14' width = '17' rel = '' y = '336' x = '288' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.movedown' title = 'Level 14' height = '16' difficulty = '' gold-count = '17' width = '17' rel = '' y = '336' x = '186' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.moveleft' title = 'Level 19' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '336' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.moveright' title = 'Level 29' height = '16' difficulty = '' gold-count = '16' width = '17' rel = '' y = '336' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.moveup' title = 'Level 6' height = '16' difficulty = '' gold-count = '17' width = '17' rel = '' y = '336' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.suicide' title = 'Level 12' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '336' x = '271' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.useskill1' title = 'Level 8' height = '16' difficulty = '' gold-count = '19' width = '17' rel = '' y = '336' x = '305' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.controls.actions.useskill2' title = 'Level 34' height = '16' difficulty = '' gold-count = '17' width = '17' rel = '' y = '336' x = '322' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.display' title = 'Level 30' height = '16' difficulty = '' gold-count = '12' width = '17' rel = '' y = '216' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.gamepads' title = 'Level 3' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '216' x = '186' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.gamepads.back' title = 'Level 26' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '256' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.gamepads.customize' title = 'Level 31' height = '16' difficulty = '' gold-count = '16' width = '17' rel = '' y = '256' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.gamepads.switch' title = 'Level 22' height = '16' difficulty = '' gold-count = '18' width = '17' rel = '' y = '256' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.gamepads.switch.back' title = 'Level 23' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '296' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.keyboard' title = 'Level 15' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '216' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.options.language' title = 'Level 33' height = '16' difficulty = '' gold-count = '11' width = '17' rel = '' y = '216' x = '203' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.quit' title = 'Level 17' height = '16' difficulty = '' gold-count = '11' width = '17' rel = '' y = '22' x = '203' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.story' title = 'Level 1' height = '16' difficulty = '' gold-count = '15' width = '17' rel = '' y = '22' x = '135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.story.back' title = 'Level 24' height = '16' difficulty = '' gold-count = '13' width = '17' rel = '' y = '136' x = '169' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.story.continue' title = 'Level 7' height = '16' difficulty = '' gold-count = '11' width = '17' rel = '' y = '136' x = '152' class = '' completion-time = '0' />
+		<map layer = '1' name = 'root.story.new' title = 'Level 11' height = '16' difficulty = '' gold-count = '11' width = '17' rel = '' y = '136' x = '135' class = '' completion-time = '0' />
+	</foreground>
+</maps>

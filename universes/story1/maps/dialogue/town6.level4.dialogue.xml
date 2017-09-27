@@ -1,0 +1,64 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>When I moved here, [color=special]$[core.player1.name][/color], the [color=special]Empress of Lelandria[/color] promised me control of an important gate.  Do you see a gate around here?  I don&apos;t!</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>The [color=special]Empress[/color] told me that the [color=special]gate[/color] would block access to "Act II," whatever that means!  In the end, she must have decided against closing off certain portions of the game world to people like you.</comment>
+						</line>
+						<line id = 'line3'>
+							<comment>If you ask me, you&apos;re worse than the [color=dim]bad guys[/color].  At least they can only steal one piece of gold at a time!</comment>
+						</line>
+						<line id = 'line4'>
+							<comment>Oh, right.  You are "saving" our gold for us, keeping it safe from those [color=dim]bad guys[/color].  I&apos;ve heard it all before, [color=special]$[core.player1.name][/color].  How about proving it by giving some of that gold back to the citizenry?</comment>
+							<response min-gold = '25' branch-id = 'root.yes'>
+								<phrase>Here you go, [color=special]Carlie[/color].  I can spare [color=special]25 gold pieces[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>You surprise me, [color=special]$[core.player1.name][/color], this one time.  I&apos;ve been holding onto these [color=special]10 bombs[/color] for long enough.  I want you to have them.</comment>
+											<post-script>player().subtractGold(25);player().addBombs(10);</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>I can&apos;t do that right now.</phrase>
+								<branch id = 'root.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Why am I not surprised?</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>If you ask me, you&apos;re worse than the [color=dim]bad guys[/color].  At least they can only steal one piece of gold at a time!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wish I had control of that gate.  I would have charged you a lot of gold to get it open, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>If you go stand on top of one of these ladders for [color=special]82 minutes[/color] or longer without moving, I will give you [color=special]592 gold pieces[/color].  I&apos;m not making this up!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Don&apos;t worry about customizing your gameplay controls in the [color=special]pause menu[/color].  We all know that you only came here for the gold.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Tell me which took longer, [color=special]$[core.player1.name][/color]:  customizing your controls in the [color=special]pause menu[/color] or deciding how to spend all of the [color=special]gold pieces[/color] you have been stealing from us?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

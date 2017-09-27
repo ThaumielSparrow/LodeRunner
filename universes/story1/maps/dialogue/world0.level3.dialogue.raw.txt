@@ -1,0 +1,235 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'intro']
+
+            >>> root
+
+                [l id = 'line1'] Hi, $player$!  I've been waiting for you to make it this far.  My highness, the $High Empress of Lelandria$, posted me in this area to warn \
+                    you about the latest threat from the ^Bungeling Empire^.
+                    -redirect root
+
+                [n id = 'nag1'] You probably have some past experience with these guys, but in case you need a refresher or want to know a little more, you can ask me anything!
+
+                    +faq Tell me about the bad guys.  How do they behave?
+
+                        >>> root.faq
+
+                            [n id = 'nag1'] All of the bad guys behave exactly the same way:  they will chase you down and try to kill you!  Keep a safe distance from them at all times.  If they touch you, you'll be history!
+                                -redirect root
+
+                    +defense Can I fight back against the bad guys?
+
+                        >>> root.defense
+
+                            [n id = 'nag1'] You can't attack the bad guys directly.  Using your $mining laser$, though, you can dig traps in the ground for the bad guys to fall in.
+
+                                If a bad guy falls into a trap, you can safely run over his head.  Take care, though, as the bad guys won't stay stuck in the trap for very long!
+                                -redirect root
+
+                    +details I'd like to ask more specific questions than these...
+
+                        >>> root.details
+
+                            [n id = 'nag1' class = 'free-item'] Ask me anything you'd like to know, $player$.  After you've finished quizzing me about the ^bad guys^, I'll give you a cool $item$ to help you \
+                                on your way.
+
+                                +gold Do the enemies collect gold?
+
+                                    >>> root.details.gold
+
+                                        [n id = 'nag1'] They do!  If an enemy touches a piece of gold, he will hold onto it indefinitely.
+
+                                            When an enemy is carrying a piece of gold, you will notice that he changes color.  If you can manage to trap one of these gold-carrying \
+                                            bad guys in the ground with your mining laser, he will drop the piece of gold that he is carrying.
+                                            -redirect root.details
+
+                                +kill What happens when I "kill" a bad guy?
+
+                                    >>> root.details.kill
+
+                                        [n id = 'nag1'] Unfortunately, the sinister ^Bungeling Emperor^ has a virtually endless supply of henchmen at his disposal.  Although you can gain a temporary reprieve from danger \
+                                            by destroying an enemy, a replacement will quickly respawn into the game to take his place.
+                                            -redirect root.details
+
+                                +item Show me the item.  How does it work?
+
+                                    >>> root.details.item
+
+                                        [n id = 'nag1']
+                                            -redirect root.free-item
+
+                            [n id = 'nag2' class = 'default'] I hope you liked the item I gave you, $player$.  Ask me anything you'd like to know!
+
+                                +gold Do the enemies collect gold?
+
+                                +kill What happens when I "kill" a bad guy?
+
+                                +done That's all for now.
+
+                                    >>> root.details.done
+
+                                        [n id = 'nag1']
+
+
+            >>> root.free-item
+
+                [l id = 'line1'] As you play through the game, $player$, you'll find a lot of interesting $items$.  Each $item$ will affect you in different ways.  For example, one item might increase your running speed, \
+                    and another item might slow down the enemies.  Useful, huh?!
+
+                    You'll find a lot more people in $Lelandria$ that have $items$ for you, $player$.  A lot of people will ask you to do little favors for them.  Other people work as $merchants$, selling you their \
+                    items outright for a price.
+                    -redirect root.free-item
+
+                [l id = 'line2' class = 'prompt'] I want to let you choose which item you'd like to have, $player$.  I have a ton of introductory items available, but I'll just select a couple of them at random and let you choose.  You'll \
+                    be finding a lot better items than my simple trinkets soon, $player$, so don't worry too much about which one sounds better!
+
+                    +item1 I want the $Beginner's Shoes$.
+
+                        >>> root.free-item.item1
+
+                            [n id = 'nag1'] 
+                                -redirect root.free-item
+
+                                @post-script
+                                    player().acquireItem("beginners-shoes");
+
+                    +item2 I'll take that $Beginner's Shovel$.
+
+                        >>> root.free-item.item2
+
+                            [n id = 'nag1'] 
+                                -redirect root.free-item
+
+                                @post-script
+                                    player().acquireItem("beginners-shovel");
+
+                    +item3 Give me the $Beginner's Gambling Ring$, please.
+
+                        >>> root.free-item.item3
+
+                            [n id = 'nag1']
+                                -redirect root.free-item
+
+                                @post-script
+                                    player().acquireItem("beginners-gambling-ring");
+
+                    +item4 I'd like the $Beginner's Trap Glue$.
+
+                        >>> root.free-item.item4
+
+                            [n id = 'nag1'] 
+                                -redirect root.free-item
+
+                                @post-script
+                                    player().acquireItem("beginners-trap-glue");
+
+                    +item5 Let's try the $Beginner's Heavy Anvil$.
+
+                        >>> root.free-item.item5
+
+                            [n id = 'nag1'] 
+                                -redirect root.free-item
+
+                                @post-script
+                                    player().acquireItem("beginners-heavy-anvil");
+
+                [l id = 'line3'] I just deposited the item you requested into your inventory, $player$.  Make sure to view your inventory in the $pause menu$ to analyze how your new \
+                    item works, and then equip it for use!
+
+                    Also, don't forget to experiment with upgrading the item too.  I gave you a very rudimentary offering, but you might find it more useful than you'd \
+                    expect if you purchase an upgrade that suits your playstyle!
+
+                    @post-script
+                        quest("0.3.npc1.quest").status("complete");
+                        quest("0.3.npc1.quest").update("update-talked").status("active");
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'generic']
+
+            >>> root
+
+                [l id = 'line1' class = 'controls-uncustomized'] Welcome to $Lelandria$, $player$.  Why haven't you tried to $customize your controls$ yet, if you don't mind \
+                    me asking?  You can do it right now in the $pause menu$!
+
+                [l id = 'line2' class = 'controls-uncustomized'] Don't you want to unlock the achievement for customizing your controls, $player$?  You only have to edit one of them!
+
+                [l id = 'line3' class = 'controls-uncustomized'] You continue to insist on using the default controls, $player$?  I understand.  You want one of us to give you a good reason \
+                    to spend the time in your $pause menu$ updating your controls.
+
+                    Yes, I will give you these $10 gold pieces$ I have been saving just for this occasion!
+
+                    @post-script
+                        player().addGold(10);
+                        postNewsItem("Pity Gold Received", "10 Gold Pieces");
+
+                [l id = 'line4' class = 'controls-uncustomized'] Please, $player$!  I had to risk my life to recover those gold pieces from the ^bad guys^!  For that, you could surely \
+                    take the time to update your controls in the $pause menu$, couldn't you?  The very future of $Lelandria$ hangs in the balance!
+
+                [n id = 'nag1' class = 'controls-uncustomized'] The ^Bungeling Emperor^ subjects all of his troops to a rigorous set of training exercises that focus on the power of \
+                    $customizing controls$.  Only after each ^bad guy^ has learned that power can they enlist in his terrible army and begin tormenting our beautiful land!
+
+                [n id = 'nag2' class = 'controls-uncustomized'] You still haven't customized your controls yet, have you, $player$?  I wish I had paid more attention in school on the day they talked about how to $customize controls$.  \
+                    I didn't, though, and now I don't know how to move to the $right$ at all!
+
+                [n id = 'nag3' class = 'controls-customized'] I see you spent a little time customizing your control settings, $player$.  What did you decide to set the $bomb$ key to?  $@bomb$, huh?  I should \
+                    have thought of that myself!
+
+                [n id = 'nag4' class = 'controls-customized'] Everyone is talking about the great work you're doing, $player$.  All of the other ^heroes^ that have arrived here have ultimately failed, but all of my \
+                    friends agree that $you$ will succeed!
+
+                    We also agree that the time you took to $customize your controls$ will make all the difference in this fight against the ^Bungeling empire^.
+
+@terminal1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1'] Thank you for using the ^Lelandria Information Terminal^.  Please enter your query.
+
+                    +badguys I'm looking for the ^bad guys^.  Where will I find them?
+
+                        >>> root.badguys
+
+                            [n id = 'nag1'] The ^Bungeling Emperor^ has dispatched a formidable group of ^bad guys^ throughout every land of $Lelandria$.  Once you travel \
+                                through the next town of $Smithsville$, you'll come face-to-face with your dangerous adversaries.
+
+                                +towns Tell me more about $Smithsville$.
+
+                                    >>> root.badguys.towns
+
+                                        [n id = 'nag1'] Travel a little bit farther to the east to reach the small town of $Smithsville$.
+
+                                            You should look for $town areas$ when you need a moment to escape from the ^bad guys^.  Although you will encounter \
+                                            endless waves of ^bad guys^ in the wild, each town remains $safe$ from the hostile invaders.
+                                            -redirect root.badguys
+
+                                +back Back...
+
+                                    >>> root.badguys.back
+
+                                        [n id = 'nag1'] 
+                                            -redirect root
+
+                    +gold What can I do with all of this gold I'm collecting?
+
+                        >>> root.gold
+
+                            [n id = 'nag1'] As you visit each of the towns throughout $Lelandria$, you will eventually meet a number of $merchants$ willing to sell you \
+                                useful items.  You can use the gold you collect during your adventure to purchase items from the $merchants$.
+
+                                You might find some other uses for your gold inventory, too!
+                                -redirect root
+
+                    +bye Goodbye.
+
+                        >>> root.bye
+                            [n id = 'nag1']
+

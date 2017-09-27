@@ -1,0 +1,109 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@skill-name</parameter>
+		<parameter>@skill-level</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title-and-level</parameter>
+		<parameter>@skill-points-available</parameter>
+		<parameter>@pluralizer</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.upgrades.confirm'>
+
+    <rowmenu id = 'alert' rel = 'skills.upgrades.confirm' x = '@x' y = '@y' width = '@width' height = '@height' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1' xtunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Confirm Selection' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+
+                <stack>
+
+                    <xstack xid = 'ext.header' rel = 'xheader' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Are you sure you want to upgrade to [color=special]@skill-title-and-level[/color]?' text-effect = 'blaster:line-by-line' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                </stack>
+
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '16%' y = '0' value = 'Back' text-effect = 'blaster:line-by-line' />
+                        <label x = '16%' y = '0' value = 'Don&apos;t upgrade' text-effect = 'blaster:line-by-line' />
+                    </stack>
+
+                    <action do = 'hide:skill.tree.insert.options.upgrade.confirm' skill = '@skill-name' />
+                </contents>
+
+                <tooltip id = 'ext.header' rel = 'header' align = 'right' render-border = '1' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '16%' y = '0' value = 'Upgrade Now' text-effect = 'blaster:line-by-line' />
+                        <label class = 'subtitle' x = '16%' y = '0' value = '@skill-title-and-level' text-effect = 'blaster:line-by-line' />
+                    </stack>
+
+                    <action do = 'commit:skills.tree.insert.options.upgrade' skill = '@skill-name' level = '@skill-level' />
+
+                    <xaction do = 'swap' target = 'commit:skills.tree.insert.options.upgrade.receipt' skill = '@skill-name' level = '@skill-level' generations = '2' />
+
+                    <action do = 'hide:skill.tree.insert.options.upgrade.confirm' skill = '@skill-name' />
+                    <action do = 'hide:skill.tree.insert.options' />
+
+                </contents>
+
+                <tooltip align = 'right' render-border = '1'>
+                    <item>
+                        <label x = '5%' y = '0' value = 'You currently have [color=special]@skill-points-available skill point@pluralizer[/color] available.' text-effect = 'blaster:line-by-line' />
+                    </item>
+                </tooltip>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

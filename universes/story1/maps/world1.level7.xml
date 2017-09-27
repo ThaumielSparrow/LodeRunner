@@ -1,0 +1,81 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 224 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 219 228 0 0 220 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 154 0 0 0 0 0 211 0 0 0 0 
+			216 226 0 0 0 154 219 152 0 0 154 226 154 223 220 26 
+			0 0 0 0 152 206 0 153 0 0 153 0 153 0 0 0 
+			0 219 221 0 152 0 0 154 0 0 154 0 154 211 211 0 
+			0 0 0 152 221 0 0 154 225 206 220 104 228 206 223 154 
+			0 223 219 153 0 0 223 152 0 0 0 0 144 0 0 154 
+			0 0 0 206 152 219 201 228 154 0 0 0 207 0 0 153 
+			226 217 0 0 154 0 0 202 228 207 154 0 0 0 211 154 
+			206 0 218 154 223 0 0 0 0 203 221 222 0 152 226 222 
+			200 228 0 153 0 0 0 0 0 0 0 0 154 228 200 0 
+			202 202 224 224 23 24 154 29 225 152 0 154 222 201 0 0 
+			206 0 0 0 144 0 153 0 202 223 152 221 203 0 0 0 
+			201 0 0 0 207 0 153 0 0 0 153 0 0 0 0 0 
+			201 222 207 211 0 0 152 0 0 0 152 221 0 0 0 0 
+			0 202 27 27 221 228 153 226 28 27 222 203 0 0 0 223 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 264 0 284 0 264 0 284 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 263 0 0 0 0 283 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 263 0 0 283 0 0 263 0 0 283 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+            <entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '13' x = '4' genus = '2' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '7' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '2' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '8' genus = '5' class = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '13' x = '4' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '15' x = '8' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '11' x = '10' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '9' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '11' x = '5' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '7' x = '5' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '9' x = '6' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '5' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '2' x = '13' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '4' x = '2' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '9' x = '2' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '3' x = '4' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '15' x = '12' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '15' x = '15' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '12' x = '14' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'safe-spawn' x = '7' y = '11' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts />

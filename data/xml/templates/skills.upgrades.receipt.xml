@@ -1,0 +1,313 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title</parameter>
+		<parameter>@skill-level</parameter>
+		<parameter>@button-name</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.upgrades.receipt' version = 'passive-skill'>
+
+    <rowmenu id = 'receipt' rel = 'skills.upgrades.confirm' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Upgrade Complete!' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' rel = 'header' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You unlocked [color=title]@skill-title @skill-level[/color].' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Back' />
+
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'skills.upgrades.receipt' version = 'no-slots-free'>
+
+    <rowmenu id = 'receipt' rel = 'skills.upgrades.confirm' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Upgrade Complete!' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' rel = 'header' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You unlocked [color=title]@skill-title @skill-level[/color].' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You do not have an empty skill slot available.  To equip [color=title]@skill-title[/color], visit the [color=title]Equip Skills[/color] menu!' />
+                    </item>
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Back' />
+
+                <action do = 'back' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Open Equip Skills Menu...?' />
+
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'skills.upgrades.receipt' version = 'slot-1-free'>
+
+    <rowmenu id = 'receipt' rel = 'skills.upgrades.confirm' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Upgrade Complete!' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' rel = 'header' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You unlocked [color=title]@skill-title @skill-level[/color].' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'This is your first [color=title]active skill[/color]!  The game has automatically assigned [color=title]@skill-title[/color] to your [color=special]@button-name[/color].' />
+                    </item>
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Back' />
+
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'skills.upgrades.receipt' version = 'slot-2-free'>
+
+    <rowmenu id = 'receipt' rel = 'skills.upgrades.confirm' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Upgrade Complete!' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' rel = 'header' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You unlocked [color=title]@skill-title @skill-level[/color].' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'This is your second [color=title]active skill[/color]!  The game has automatically assigned [color=title]@skill-title[/color] to your [color=special]@button-name[/color].' />
+                    </item>
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Back' />
+
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'skills.upgrades.receipt' version = 'currently-equipped'>
+
+    <rowmenu id = 'receipt' rel = 'skills.upgrades.confirm' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-lightbox = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Upgrade Complete!' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' rel = 'header' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You unlocked [color=title]@skill-title @skill-level[/color].' />
+                    </item>
+
+                    <stack id = 'ext.footer' rel = 'footer' />
+
+                    <item class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = 'You presently have [color=title]@skill-title[/color] equipped.  Press [color=special]@button-name[/color] to activate it!' />
+                    </item>
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '2' value = 'Back' />
+
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

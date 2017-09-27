@@ -1,0 +1,66 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color].  I moved here when the [color=dim]bad guys[/color] showed up.  Have you seen a handsome man named [color=special]Timmy[/color] around these parts, a little bit to the [color=special]east[/color], by any chance?</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I wonder where [color=special]Timmy[/color] and everyone else went when the [color=dim]bad guys[/color] showed up.  I hope everyone is doing okay!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I like this place, but I don&apos;t know how long we can stay here.  I miss [color=special]Timmy[/color] a lot, too.  Please save us from the [color=dim]Bungeling empire[/color], [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>After the [color=dim]bad guys[/color] showed up, I had to abandon my previous home to move here for safety.  I haven&apos;t had time to [color=special]customize[/color] anything yet because I forgot to bring my [color=special]pause menu[/color] with me.  Do you still have access to yours, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I tried to convince [color=special]Timmy[/color] to customize his movement controls once, but he never took the time to try it out.  After you save [color=special]Lelandria[/color], maybe you&apos;ll have time to walk him through the process!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Did you get this letter from [color=special]Timmy[/color]? Let me take a moment to read it...</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								Thank you so much for delivering this to me, [color=special]$[core.player1.name][/color]!  I've waited for this day, waited so long!  Please take this [color=special]Ring of Eternal Love[/color] back to [color=special]Timmy[/color] so that he knows I feel just as strongly as he does!
+
+Thank you, [color=special]$[core.player1.name][/color]!
+							</comment>
+							<post-script>quest("4.3.npc1.quest").update("update-delivered-letter").status("active");npc("npc1").clearIndicators();player().acquireItem("the-ring-of-eternal-love");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:delivered-letter'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I can&apos;t wait to reunite with [color=special]Timmy[/color].  Please keep him safe from the [color=dim]Bungeling empire[/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Why don&apos;t the [color=dim]bad guys[/color] just leave us alone?  I have a wedding to plan!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you decide to customize your gameplay controls in the [color=special]pause menu[/color], [color=special]$[core.player1.name][/color], you can also take a look at the ring before you deliver it to [color=special]Timmy[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Did you have any trouble when you customized your controls, [color=special]$[core.player1.name][/color]?  I remember [color=special]Timmy[/color] always had a really hard time figuring it out.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

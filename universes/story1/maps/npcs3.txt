@@ -1,0 +1,40 @@
+[x] town1.level1.xml - Dave
+[ ] town1.level1.xml - Isabella
+[ ] town1.level2.xml - Desiree
+[x] town1.level2.xml - Jackson
+[x] town1.level3.xml - Curry
+[x] town2.level1.xml - Alien
+[ ] town2.level2.xml - Kev
+[x] town2.level2.xml - Nichole
+[x] town2.level3.xml - Elizabeth
+[x] town3.level1.xml - Erich
+[x] town3.level1.xml - Rebecca
+[x] town3.level2.xml - JoAnna
+[x] town3.level3.xml - Rico
+[ ] town4.level1.xml - Zack
+[x] town4.level2.xml - Erin
+[ ] town4.level2.xml - Sophia
+[x] town4.level3.xml - Sierra
+[x] town4.level3.xml - Timmy
+[x] town4.level4.xml - Lily
+[x] town5.level1.xml - Jill
+[x] town5.level2.xml - Willy
+[x] town5.level4.xml - Alice
+[x] town5.level4.xml - Logan
+[x] town6.level2.xml - Dani
+[x] town6.level2.xml - Kenny
+[x] town6.level3.xml - Biggins
+[ ] town6.level3.xml - Maria
+[ ] town6.level4.xml - Carlie
+[x] town6.level5.xml - Han
+[x] town7.level1.xml - Linus
+[x] town7.level1.xml - William
+[x] town7.level2.xml - Jessie
+[x] town7.level3.xml - Amelia
+[x] town7.level4.xml - JC
+[x] town7.level4.xml - Jake
+[x] world0.level3.xml - Brent
+[?] world0.level3.xml - Brent
+[x] world0.level3.xml - Information Terminal
+[x] world0.level4.xml - Carlos
+[x] world0.level4.xml - Rochelle

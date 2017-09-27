@@ -1,0 +1,79 @@
+<parameters>
+	<data>
+		<parameter>@item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+		<parameter>@item-cost</parameter>
+		<parameter>@item-advertisement</parameter>
+	</text>
+</parameters>
+
+<template name = 'shop.directory.item' version = 'unaffordable'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label class = 'disabled' x = '17%' y = '5' width = '90%' value = '@item-title' />
+                <label class = 'subtitle' x = '17%' y = '5' width = '90%' value = 'Cost:  [color=unaffordable]@item-cost[/color] gold' />
+            </stack>
+
+            <action do = 'nothing' />
+        </contents>
+
+        <tooltip align = 'left' render-border = '1'>
+            <stack class = 'frame' render-border = '0'>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' position = 'absolute' index = '13' />
+                    <label x = '12%' y = '0' width = '75%' value = '[color=special]Item Details:[/color]' />
+                </item>
+
+                <label class = 'subtitle' x = '12%' y = '0' width = '88%' value = '@item-advertisement' />
+                <item class = 'line-break' />
+                <label class = 'subtitle' x = '12%' y = '0' width = '88%' value = 'You do not have enough gold to buy this item.' />
+
+            </stack>
+        </tooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'shop.directory.item' version = 'affordable'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label x = '17%' y = '0' width = '90%' value = '@item-title' />
+                <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Cost:  [color=affordable]@item-cost[/color] gold' />
+            </stack>
+
+            <action do = 'show:confirm-purchase' item-name = '@item-name' />
+        </contents>
+
+        <tooltip align = 'left' render-border = '1'>
+            <stack class = 'frame' render-border = '0'>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' position = 'absolute' index = '13' />
+                    <label x = '12%' y = '0' width = '75%' value = '[color=special]Item Details:[/color]' />
+                </item>
+
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                <label x = '12%' y = '0' width = '88%' value = '@item-advertisement' />
+
+            </stack>
+        </tooltip>
+
+    </insert:item>
+
+</template>

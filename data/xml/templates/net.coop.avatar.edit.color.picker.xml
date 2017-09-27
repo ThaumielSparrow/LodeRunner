@@ -1,0 +1,178 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@property</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'net.coop.avatar.edit.color.picker'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1'>
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '18%' y = '0' width = '95%' align = 'left' value = 'Select a Color' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group class = '' per-row = '5' column-padding = '10'>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 125, 125' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 125, 125' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 75, 75' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 75, 75' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 25, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 25, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '175, 25, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '175, 25, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '125, 25, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '125, 25, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 125, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 125, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '180, 90, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '180, 90, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '90, 45, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '90, 45, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 225, 125' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 225, 125' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 225, 75' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 225, 75' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '225, 225, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '225, 225, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '175, 175, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '175, 175, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '125, 125, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '125, 125, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '125, 225, 125' />
+                <action do = 'update-avatar-property' property = '@property' value = '125, 225, 125' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '75, 225, 75' />
+                <action do = 'update-avatar-property' property = '@property' value = '75, 225, 75' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 225, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 225, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 175, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 175, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 125, 25' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 125, 25' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '125, 125, 225' />
+                <action do = 'update-avatar-property' property = '@property' value = '125, 125, 225' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '75, 75, 225' />
+                <action do = 'update-avatar-property' property = '@property' value = '75, 75, 225' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 25, 225' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 25, 225' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 25, 175' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 25, 175' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <rect x = '50%' y = '0' width = '24' height = '24' align = 'center' color = '25, 25, 125' />
+                <action do = 'update-avatar-property' property = '@property' value = '25, 25, 125' />
+                <action do = 'back' />
+            </item>
+
+            <item render-border = '0' glow = '1'>
+                <icon x = '50%' y = '0' align = 'center' index = '13' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

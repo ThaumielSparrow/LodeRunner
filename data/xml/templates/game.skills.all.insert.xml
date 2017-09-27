@@ -1,0 +1,120 @@
+<parameters>
+	<data>
+		<parameter>@skill-icon-index</parameter>
+		<parameter>@slot</parameter>
+		<parameter>@skill-name</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title</parameter>
+		<parameter>@skill-level</parameter>
+		<parameter>@skill-specs</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.skills.all.insert' version = 'equipped'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <stack class = 'frame'>
+
+            <item>
+
+		        <icon y = '0' x = '5%' index = '@skill-icon-index' position = 'absolute' />
+
+		        <label y = '2' x = '20%' value = '[color=special]@skill-title[/color]' width = '75%' />
+                <label y = '2' x = '95%' align = 'right' value = 'Level @skill-level' />
+
+            </item>
+
+            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+            <label x = '20%' y = '0' width = '75%' value = '@skill-specs' />
+
+        </stack>
+
+        <action do = 'show:game.skills.all.insert.options' side = 'left' template-version = 'equipped' slot = '@slot' equipped-skill = '@skill-name' />
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'game.skills.all.insert' version = 'not-equipped'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <stack class = 'frame'>
+
+            <item>
+
+		        <icon y = '0' x = '5%' index = '@skill-icon-index' position = 'absolute' />
+
+		        <label y = '2' x = '20%' value = '[color=special]@skill-title[/color]' width = '75%' />
+                <label y = '2' x = '95%' align = 'right' value = 'Level @skill-level' />
+
+            </item>
+
+            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+            <label x = '20%' y = '0' width = '75%' value = '@skill-specs' />
+
+        </stack>
+
+        <action do = 'show:game.skills.all.insert.options' side = 'left' template-version = 'not-equipped' slot = '@slot' equipped-skill = '@skill-name' />
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'game.skills.all.insert' version = 'equipped:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <stack class = 'frame'>
+
+            <item>
+
+		        <icon y = '0' x = '5%' index = '@skill-icon-index' position = 'absolute' />
+
+		        <label y = '2' x = '20%' value = '[color=special]@skill-title[/color]' width = '75%' />
+                <label y = '2' x = '95%' align = 'right' value = 'Level @skill-level' />
+
+            </item>
+
+            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+            <label x = '20%' y = '0' width = '75%' value = '@skill-specs' />
+
+        </stack>
+
+        <action do = 'show:game.skills.all.insert.options' side = 'right' template-version = 'equipped' slot = '@slot' equipped-skill = '@skill-name' />
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'game.skills.all.insert' version = 'not-equipped:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border =  '1'>
+
+        <stack class = 'frame'>
+
+            <item>
+
+		        <icon y = '0' x = '5%' index = '@skill-icon-index' position = 'absolute' />
+
+		        <label y = '2' x = '20%' value = '[color=special]@skill-title[/color]' width = '75%' />
+                <label y = '2' x = '95%' align = 'right' value = 'Level @skill-level' />
+
+            </item>
+
+            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+            <label x = '20%' y = '0' width = '75%' value = '@skill-specs' />
+
+        </stack>
+
+        <action do = 'show:game.skills.all.insert.options' side = 'right' template-version = 'not-equipped' slot = '@slot' equipped-skill = '@skill-name' />
+
+    </insert:item>
+
+</template>

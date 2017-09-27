@@ -1,0 +1,40 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@some-key</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.menu.timeout'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Lost Connection' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = 'Your connection to the server timed out.  Press [color=special]@some-key[/color] to return to the main menu.' />
+            </item>
+
+            <item hidden = '1'>
+                <action do = 'escape' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

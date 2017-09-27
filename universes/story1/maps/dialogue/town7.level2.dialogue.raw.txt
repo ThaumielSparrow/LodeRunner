@@ -1,0 +1,157 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1'] What do you want, $player$?  I don't have anything to say to you.  I also definitely don't have anyone's $heirloom$, if you know what I mean.  Stay away from $Erin$ if you see her in the eastern regions!
+
+                [n id = 'nag2'] I hope you haven't wasted your time talking to anyone named $Erin$ lately.  I'll never visit $Navarra$ again!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] What are you looking for, $player$?  If you're looking for a way to customize your controls, then you \
+                    should look in the $pause menu$.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] What do you want from me now, $player$?  Are you just showing off your fancy customized controls?  I'm not impressed!
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] I do have an heirloom, $player$, I admit it.  Do you want me to return it to you?
+
+                    +yes Yes.  Return it now!
+
+                        >>> root.yes
+
+                            [l id = 'line1'] I guess $Erin$ didn't tell you much about me, did she?  She can't have this $heirloom$, and neither can you!
+                            [l id = 'line2'] Do you think that I will change my mind, $player$?  How many times can you possibly make this useless request?
+                            [l id = 'line3'] $player$, you must learn how to take ^no^ for an answer!
+                            [l id = 'line4'] I'm going to give you $5 gold pieces$.  You're going to stop selecting this option.
+                                @post-script
+                                    player().addGold(5);
+                            [l id = 'line5'] You had better stop selecting this option, $player$.
+                            [l id = 'line6'] I'm not going to give you any more $gold$.
+                            [l id = 'line7'] Take this $1 free bomb$ and, please, blow yourself up.
+                                @post-script
+                                    player().addBombs(1);
+                            [l id = 'line8'] Why haven't you blown yourself up yet?
+                            [n id = 'nag1'] No.
+                            [n id = 'nag2'] Never.
+                            [n id = 'nag3'] Not a chance.
+                            [n id = 'nag4'] Not happening.
+                            [n id = 'nag5'] No way.
+
+                    +pay[min-gold = '50'] I'll give you $50 gold pieces$ to return it.
+
+                        >>> root.pay
+
+                            [l id = 'line1'] For this beautiful $heirloom$, you only offer $50 gold pieces$?  You insult me, $player$.
+
+                            [l id = 'line2'] Did you think I would change my mind if you asked twice, $player$?  Give me a little credit, at least!
+
+                            [n id = 'nag1'] I tire of your incessant purchase attempts, $player$.  I'll give you a fair chance, a very reasonable selling point.  You can have this heirloom \
+                                for the low, low price of $100,000 gold pieces$.  What do you think?
+
+                                +buy[min-gold = '100000'] I'll take it!
+
+                                    >>> root.pay.buy
+
+                                        [n id = 'nag1'] Yeah right, $player$!  Don't try to tell me you didn't hack your save game file to give yourself this much gold!  Why don't you \
+                                            go on down there, kill my poor innocent friend $Amelia$, then come back and get the $heirloom$ from me instead of trying to cheat!
+
+                                +no That amount of gold doesn't even exist in this game, does it?
+
+                                    >>> root.pay.no
+
+                                        [n id = 'nag1'] If it does, you certainly haven't found it yet.  Now get lost!
+
+                    +no No.  Keep it for now.
+
+                        >>> root.no
+
+                            [n id = 'nag1'] I think I will.  Farewell, $player$!
+
+                [n id = 'nag2'] I most certainly do have that heirloom you're looking for, $player$.  Should you like me to return it to you now?
+
+                    +yes Yes!  I demand you return it immediately!
+                    +pay[min-gold = '50'] How about I pay you $50 gold pieces$ to return it?
+                    +no No.  Keep it for now.
+
+                [n id = 'nag3'] I won't lie to your face, $player$:  I do have that heirloom you're looking for.  Are you going to ask me to return it to you now?
+
+                    +yes Yes!  Hand it over without delay!
+                    +pay[min-gold = '50'] Let's make a deal:  I'll pay you $50 gold pieces$ to return it.
+                    +no No.  Keep it for now.
+
+                [n id = 'nag4'] You want me to return this heirloom you're looking for, $player$?  Is this what you've come all the way over to $Manderkeen$ to recover?
+
+                    +yes Yes!  I demand you return it immediately!
+                    +pay[min-gold = '50'] How about I pay you $50 gold pieces$ to return it?
+                    +no No.  Keep it for now.
+
+
+        @conversation[id = 'quest:in-progress:killed-amelia']
+
+            >>> root
+
+                [l id = 'line1'] Did you really get rid of my innocent friend $Amelia$ just to get to this $heirloom$?  I guess you win, $player$.  Take this $heirloom$ and leave me alone.
+
+                    @post-script
+                        quest("4.2.npc1.quest").update("update-got-heirloom").status("active");
+                        player().acquireItem("erins-family-heirloom");
+
+
+        @conversation[id = 'quest:got-heirloom']
+
+            >>> root
+
+                [n id = 'nag1'] You got what you wanted, $player$.  I hope that makes you happy.
+
+                [n id = 'nag2'] I stole a useless heirloom.  You savagely murdered $Amelia$ just to get it back.  Who's the real criminal here, $player$?
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Now that you've killed me innocent friend $Amelia$, maybe you'd like to kill the default control scheme as \
+                    well.  You can do that in the $pause menu$ if you bore of killing people in $Lelandria$.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Did you customize your gameplay controls before or after you killed $Amelia$, $player$?  Let me guess:  you can't even remember!
+
+
+        @conversation[id = 'quest:failed:lost-heirloom']
+
+            >>> root
+
+                [l id = 'line1'] Do you know I ^stole^ this $heirloom$ from some woman on the east side of $Lelandria$?  I hear she was looking for it, but somebody took her out before she could find it.  I \
+                    wonder who did that?
+
+                    +me I did it, $Jessie$.
+
+                        >>> root.me
+
+                            [l id = 'line1'] Did you do that just for me, $player$?  I think I owe you a little reward for doing that.  When $Erin$ loaned me this necklace under the false belief that I would return it at some \
+                                point, she also loaned me $50 gold pieces$.  I'd like to offer you that as recompense for your usefulness!
+
+                                @post-script
+                                    player().addGold(50);
+
+                    +lie I saw one of the ^bad guys^ wipe her out.
+
+                        >>> root.lie
+
+                            [l id = 'line1'] I will have to flag one of them down to thank them for their great service.  Everyone around here disparages the $bad guys$, but I think they're doing a lot of $good \
+                                things$ in $Lelandria$.  Just like you, $player$, in a way!
+
+                [n id = 'nag1'] Thankfully, I won't have to worry about $Erin$ trying to recollect this $heirloom$ now.
+
+                [n id = 'nag2'] What do you need, $player$?  I'm too busy treasuring this beautiful $heirloom$ to bother myself with your kind.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Because I have this beautiful $heirloom$, I don't care about missing out on any of the other great things in this \
+                    game!
+
+                    I notice that you haven't yet customized your gameplay controls in the $pause menu$.  You must have an $heirloom$ that you love just as much!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] You have everything, $player$:  lots of gold, fame, and even customized controls!
+
+                    Well, you don't have this beautiful $heirloom$.  I love it so much, and the death of $Erin$ means that I will never, ever have to return it!
+

@@ -1,0 +1,25 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@purchase-details</parameter>
+	</text>
+</parameters>
+
+<template name = 'options.transactions.insert' version = 'normal'>
+
+    <insert:item id = 'insert' disabled = '1' class = 'option' fill = 'always'>
+        <label x = '5%' width = '90%' value = '@purchase-details' />
+    </insert:item>
+
+</template>
+
+
+<template name = 'options.transactions.insert' version = 'n/a'>
+
+    <insert:item id = 'insert' disabled = '1' class = 'option' fill = 'always'>
+        <label x = '5%' width = '90%' value = 'No transactions found.' />
+    </insert:item>
+
+</template>

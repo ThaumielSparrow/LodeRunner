@@ -1,0 +1,118 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'gamemenu.navbar' version = 'normal'>
+
+<layouts>
+<default>
+
+    <hmenu id = 'navbar' class = 'navbar' width = '@width' on-wrap-down = 'navbar-wrap-down' on-change = 'navbar-change'>
+
+        <item rel = 'gamemenu.tabs.game'>
+
+            <icon x = '0' y = '0' index = '3' />
+            <label x = '30' y = '2' width = '100%' align = '' value = 'Game' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.inventories'>
+
+            <icon x = '0' y = '0' index = '21' />
+            <label x = '31' y = '2' width = '100%' align = '' value = 'Player' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.skills' content-align = 'center'>
+
+            <icon x = '0' y = '0' index = '5' />
+            <label x = '32' y = '2' width = '100%' align = '' value = 'Skills' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.options' content-align = 'right'>
+
+            <icon x = '0' y = '0' index = '13' />
+            <label x = '28' y = '2' width = '100%' align = '' value = 'Options' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.exit' content-align = 'right'>
+
+            <icon x = '0' y = '0' index = '24' />
+            <label x = '31' y = '2' width = '100%' align = '' value = 'Exit' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+    </hmenu>
+
+</default>
+<else>
+
+    <hmenu id = 'navbar' class = 'navbar' width = '@width' on-wrap-down = 'navbar-wrap-down' on-change = 'navbar-change'>
+
+        <item rel = 'gamemenu.tabs.game'>
+
+            <icon x = '0' y = '0' index = '3' />
+            <label x = '30' y = '2' width = '100%' align = '' value = 'Game' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.inventories'>
+
+            <icon x = '0' y = '0' index = '21' />
+            <label x = '31' y = '2' width = '100%' align = '' value = 'Player' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.skills' content-align = 'center'>
+
+            <icon x = '0' y = '0' index = '5' />
+            <label x = '32' y = '2' width = '100%' align = '' value = 'Skills' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.options' content-align = 'right'>
+
+            <icon x = '0' y = '0' index = '13' />
+            <label x = '28' y = '2' width = '100%' align = '' value = 'Options' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+        <item rel = 'gamemenu.tabs.exit' content-align = 'right'>
+
+            <icon x = '0' y = '0' index = '24' />
+            <label x = '31' y = '2' width = '100%' align = '' value = 'Exit' />
+
+            <action do = 'navbar-wrap-down' />
+
+        </item>
+
+    </hmenu>
+
+</else>
+
+</template>

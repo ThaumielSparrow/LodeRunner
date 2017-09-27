@@ -1,0 +1,129 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color].  I&apos;m expecting some sort of delivery from a friend of mine in [color=special]Amandria[/color].  If you run across [color=special]Dave[/color], please ask him if he has a spare [color=special]item[/color] to send to me!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Hey [color=special]$[core.player1.name][/color], have you seen any delivery worker recently, perhaps around [color=special]Amandria[/color]?  A friend of mine named [color=special]Dave[/color] said he planned to send me a [color=special]special item[/color], but I haven&apos;t seen anything show up yet.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you can&apos;t remember how to get to [color=special]Amandria[/color], you can take a look at the world map in your [color=special]pause menu[/color].  While you&apos;re there, you can also choose to customize your gameplay controls!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I wish I could customize my default walking route as easily as you customized your controls, [color=special]$[core.player1.name][/color]!  Unfortunately I cannot, and I must therefore rely upon [color=special]you[/color] to deliver the package from [color=special]Dave[/color].  Have you talked to him lately?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:carrying-item'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Did [color=special]Dave[/color] send that item for me, [color=special]$[core.player1.name][/color]?
+
+Wow, I can't believe it!  $[1.1.npc1.quest:item-title]!  This will surely help to keep me safe from the [color=dim]bad guys[/color], with enough practice and training!  Can I have it now, please?
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Take it, [color=special]JoAnna[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thank you so much for bringing this to me!  I know it won&apos;t go very far, [color=special]$[core.player1.name][/color], but please take this [color=special]1 free bomb[/color] for your work!</comment>
+											<post-script>quest("1.1.npc1.quest").status("complete");quest("1.1.npc1.quest").update("update-delivered-item").status("active");player().addBombs(1).dropItem( session("1.1.npc1.quest:item-name").get() );</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response min-gold = '125' branch-id = 'root.buy'>
+								<phrase>I&apos;ll pay you [color=special]125 gold pieces[/color] if you let me keep it forever.</phrase>
+								<branch id = 'root.buy'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												[color=special]Dave[/color] probably wouldn't approve of this arrangement.  We can keep it as our little secret, though!  I have to admit, I like gold even more than I like special items.
+
+You've got a deal, [color=special]$[core.player1.name][/color].  You can keep the item, and I will take your [color=special]gold pieces[/color].  Maybe I can buy a better item with them!  Good luck against the [color=dim]bad guys[/color]!
+											</comment>
+											<post-script>quest("1.1.npc1.quest").status("complete");quest("1.1.npc1.quest").update("update-bought-item").status("active");player().subtractGold(125);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>I&apos;m going to hold onto it for a little while.</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Ok, [color=special]$[core.player1.name][/color].  Come back when you&apos;re ready to deliver the item to me!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Do you think I can have that item [color=special]Dave[/color] gave you now, [color=special]$[core.player1.name][/color]?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Take it now, [color=special]JoAnna[/color].</phrase>
+							</response>
+							<response min-gold = '125' branch-id = 'root.buy'>
+								<phrase>I&apos;ll pay you [color=special]125 gold pieces[/color] if you let me keep it forever.</phrase>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>I&apos;m going to hold onto it for a little while longer.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:delivered-item'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thanks for bringing me this great item, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>This item you brought me will definitely protect me from the [color=dim]bad guys[/color], [color=special]$[core.player1.name][/color]!  Thanks again!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I was hoping that [color=special]Dave[/color] would send me the 5th edition of [color=special]How to Customize Your Controls in the Pause Menu[/color], but this item he sent in its place works great too!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>You&apos;re doing everything right so far, [color=special]$[core.player1.name][/color].  You brought me this item that will protect me from the terrible [color=dim]bad guys[/color], and you also took the time to customize your controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:bought-item'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '5' id = 'nag1'>
+							<comment>I&apos;m thinking of investing this gold you gave me to help a new friend I met on the internet settle a Nigerian legal battle.  In the end, I&apos;ll have twice as much gold as you gave me originally, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I can&apos;t decide what to do with all of this gold you gave me, [color=special]$[core.player1.name][/color].  My inbox is brimming with special offers!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Do you know anything about customizing gameplay controls, [color=special]$[core.player1.name][/color]?  I read on the internet that you can customize them in the [color=special]pause menu[/color], but I don&apos;t understand what that means!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>How long did it take you to customize your controls, [color=special]$[core.player1.name][/color]?  I have a friend who is trying to do that, but he just can&apos;t make it work!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

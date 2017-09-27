@@ -1,0 +1,914 @@
+<strings>
+	<labels>
+		<96d008db67fc0b5551a926842bbb6a71>Κοινοποίηση</96d008db67fc0b5551a926842bbb6a71>
+		<6a95a559547e373caa2ff71bc46971d5>Νέα Gamepad Enabled</6a95a559547e373caa2ff71bc46971d5>
+		<60273036d97649ddcb94b44139c6c254>Προηγούμενο Gamepad Βρέθηκαν</60273036d97649ddcb94b44139c6c254>
+		<aab135b7fc11f1515ad957a3a6e6b003>Gamepad Δεν Βρέθηκε</aab135b7fc11f1515ad957a3a6e6b003>
+		<9dbe2e22cedca4ed757e5eace63e248d>Gamepad Επιλεγμένα</9dbe2e22cedca4ed757e5eace63e248d>
+		<679967c3e475c4a059b70695b8a815e9>Gamepad Ελέγχει Επαναφορά</679967c3e475c4a059b70695b8a815e9>
+		<fa0745126f79be79cfe8d19ba1acd7a9>Έλεγχοι πληκτρολογίου Επαναφορά</fa0745126f79be79cfe8d19ba1acd7a9>
+		<59926dfd87645c23c4120e17fde095a7>Όλοι οι έλεγχοι οριστεί ως προεπιλογή</59926dfd87645c23c4120e17fde095a7>
+		<93f4939484c645d5c87cd3e27f5b1f26>Έλεγχοι Αποθηκεύτηκε</93f4939484c645d5c87cd3e27f5b1f26>
+		<ff8430d12eb91c33886f62f0f695c207>Τελευταία Παίχθηκε</ff8430d12eb91c33886f62f0f695c207>
+		<e56612c61de6a8f070351ee6c420f336>Παίκτες τα κατοικίδια</e56612c61de6a8f070351ee6c420f336>
+		<0a9368021da5f61f425559544764ee23>Επίπεδα Ολοκληρώθηκε</0a9368021da5f61f425559544764ee23>
+		<78945de8de090e90045d299651a68a9b>Διαθέσιμος</78945de8de090e90045d299651a68a9b>
+		<e852e574583674fe951efb43e8f015a6>Νέα αναζήτηση</e852e574583674fe951efb43e8f015a6>
+		<988b23685e03e7a9f0c87a11e6101a54>Quest Ολοκλήρωση</988b23685e03e7a9f0c87a11e6101a54>
+		<3e1df6a10586b696fc1f0dc31282e390>Quest ολοκληρώθηκε!</3e1df6a10586b696fc1f0dc31282e390>
+		<8c69090d8988f64ec667607c82eacf97>Quest Αποτυχία</8c69090d8988f64ec667607c82eacf97>
+		<0361046768779809e44e94c43ee7064e>Quest Ενημέρωση</0361046768779809e44e94c43ee7064e>
+		<f2c178e7e1a9f372a2824974c4cffaac>Κενό Slot</f2c178e7e1a9f372a2824974c4cffaac>
+		<e93f994f01c537c4e2f7d8528c3eb5e9>Υπολογίζω</e93f994f01c537c4e2f7d8528c3eb5e9>
+		<e0d11fca1bf3e13682f63104c0192cc2>Στοιχείο Κεκτημένα</e0d11fca1bf3e13682f63104c0192cc2>
+		<6f97e1005011d00bdb5862ed277a1eb5>Κεκτημένα [color=special]@m[/color] ως [color=title]@n[/color].</6f97e1005011d00bdb5862ed277a1eb5>
+		<d97fbd000b2d8f3396b6b3ce58980f62>αναζήτηση ανταμοιβή</d97fbd000b2d8f3396b6b3ce58980f62>
+		<779896f0e8e4b83af692155c08585f8d>Νέο στοιχείο που αγοράζεται</779896f0e8e4b83af692155c08585f8d>
+		<c07a777b7a79de0fd719f00c8197af2c>Το όνομα του χαρακτήρα</c07a777b7a79de0fd719f00c8197af2c>
+		<8ed369356877338db66a64e55d0b9bfe>Το επίπεδο του χαρακτήρα</8ed369356877338db66a64e55d0b9bfe>
+		<471f5ba333d925938a2873ddede5a1ac>Ώρα Παίχθηκε</471f5ba333d925938a2873ddede5a1ac>
+		<e2d0ce0042d4aa099f6bf84eddc5a832>Σκάβει Made</e2d0ce0042d4aa099f6bf84eddc5a832>
+		<df70186482aaeda6e6d800835ad61323>Κακοί Σκοτώθηκαν</df70186482aaeda6e6d800835ad61323>
+		<3e042e65ff4921dbd8cf9020779ed991>Αναζητήσεις Ολοκληρώθηκε</3e042e65ff4921dbd8cf9020779ed991>
+		<b81529000e4ea0bd4dce7f00e8cb60e4>Χρυσό Συγκεντρώθηκαν</b81529000e4ea0bd4dce7f00e8cb60e4>
+		<f00cd5de562631fb2db48e68f2c0e883>Στοιχείων που αποκτήθηκαν</f00cd5de562631fb2db48e68f2c0e883>
+		<54492dae178b99f4d2e04666a4acace3>Ο χρυσός που ξοδέψατε</54492dae178b99f4d2e04666a4acace3>
+		<32306f435f0302be82d586d8233dc2c8>Φιλικά Σκοτώθηκαν</32306f435f0302be82d586d8233dc2c8>
+		<66ec4bc7808dd5f82bf505c9a20db539>Αποστολές Ολοκληρωμένες</66ec4bc7808dd5f82bf505c9a20db539>
+		<eccc15d777766af49a339ade1457cee2>Επιτεύγματα Ολοκληρώθηκε</eccc15d777766af49a339ade1457cee2>
+		<6e7b34fa59e1bd229b207892956dc41c>Ποτέ</6e7b34fa59e1bd229b207892956dc41c>
+		<ae94f80b3ce82062a5dd7815daa04f9d>Πλήρης</ae94f80b3ce82062a5dd7815daa04f9d>
+		<0106cd498424c5d1f96f81c28be345bd>Επίπεδο ολοκληρώθηκε!</0106cd498424c5d1f96f81c28be345bd>
+		<8c7ded4c82aa15f34216bb5adafbfa34>Προχωρώντας στο επόμενο επίπεδο ...</8c7ded4c82aa15f34216bb5adafbfa34>
+		<bd5a9145bc13fd158f76a02b4713726a>Εξοπλίστε @item-title</bd5a9145bc13fd158f76a02b4713726a>
+		<83d768fb62424b94fab716189b04b2af>@npc-title λέει</83d768fb62424b94fab716189b04b2af>
+		<51c85fd04c0af96a12440b3f141051a0>Πρέσα @some-key για να συνεχίσει ...</51c85fd04c0af96a12440b3f141051a0>
+		<d0a243e962e202d7e15e0710bab97d29>Πρέσα [color=special]@n[/color] να μιλήσει για [color=special]@m[/color]</d0a243e962e202d7e15e0710bab97d29>
+		<8f5d0c26c6df71a61d1f0ce0356a2f09>Πρέσα [color=special]@n[/color] να @m</8f5d0c26c6df71a61d1f0ce0356a2f09>
+		<d4e5a4eecb72dbff0ab65ca8a506fce2>Επιστροφή στο [color=special]@overworld-title[/color]</d4e5a4eecb72dbff0ab65ca8a506fce2>
+		<048e353ff1f764d862308309134ee4fa>@m / @n σχισμή (ες) που διατίθενται</048e353ff1f764d862308309134ee4fa>
+		<20b4f77bd00b4f63a49ec8e08f3bf6a6>Κόστος</20b4f77bd00b4f63a49ec8e08f3bf6a6>
+		<b7b1edc90ec3d8a2cc367f3af4fb35d1>Μπορείτε δεν μπορεί να αντέξει αυτή την αναβάθμιση τώρα. Χρειάζεται μια πρόσθετη [color=special]@amount[/color] να αγοράσει αυτήν την αναβάθμιση.</b7b1edc90ec3d8a2cc367f3af4fb35d1>
+		<cd62e07b65f3967fc724ae08d124a680>Ενεργά Αναζητήσεις (@n)</cd62e07b65f3967fc724ae08d124a680>
+		<16121fb40e4a67dfb476c61078d72152>Ολοκληρώθηκε Αναζητήσεις (@n)</16121fb40e4a67dfb476c61078d72152>
+		<932fad7d7a288fff577adf9eb222440b>Επιλέξτε [color=special][color=skill]@n[/color][/color] ή [color=special][color=skill]@m[/color][/color]</932fad7d7a288fff577adf9eb222440b>
+		<f487d810951d882cf9ddc57564f5fb15>Ενημερώσεις:  @n</f487d810951d882cf9ddc57564f5fb15>
+		<03489c3e26ec28d6d37eb22188920b84>Σημεία ικανότητα που απαιτείται:  @n</03489c3e26ec28d6d37eb22188920b84>
+		<637be75880619f99473be71420a0cde1>Μπορείτε να αναβαθμίσετε αυτό το αντικείμενο @n φορές.</637be75880619f99473be71420a0cde1>
+		<85ffb8e4fc3aa32851628ba6dcde0ef7>Χάρτης Προβολή:  @title</85ffb8e4fc3aa32851628ba6dcde0ef7>
+		<21233476a97d0868a8bf66123cb00864>Χρυσό Χάρτης</21233476a97d0868a8bf66123cb00864>
+		<fd49d2c4707fbf2f9cda5eb6a8951e66>Παζλ Δωμάτια</fd49d2c4707fbf2f9cda5eb6a8951e66>
+		<dbf3ab9c6647937df0a793d55d049c32>Πρόκληση Δωμάτια</dbf3ab9c6647937df0a793d55d049c32>
+		<008e556f58c2a3ac48f09f2b73c1f752>Συλλέξτε όλα τα χρυσά για να φτάσετε στο επόμενο επίπεδο!</008e556f58c2a3ac48f09f2b73c1f752>
+		<9483ace413d7f24c796a6250b523b5fb>Δημιουργία συνεδρίας</9483ace413d7f24c796a6250b523b5fb>
+		<61386ef333a9f557fb18285c409a931a>Αναμονή για την απάντηση από τον server ...</61386ef333a9f557fb18285c409a931a>
+		<c02e21cfcbebec4123ff0c14e83a5109>Σε απευθείας σύνδεση διακομιστή</c02e21cfcbebec4123ff0c14e83a5109>
+		<4af8678942f2b2c5e6027661f5c1a004>Αναμονή για τους παίκτες να ενταχθούν ...</4af8678942f2b2c5e6027661f5c1a004>
+		<47073283520ac728f263539925ac3320>Τερματισμός συνεδρίας</47073283520ac728f263539925ac3320>
+		<106a5f1e09924ff63edb02ab6da19382>Τερματισμός συνεδρίας διακομιστή ...</106a5f1e09924ff63edb02ab6da19382>
+		<a8e17c5c6a98db76aedcaf421954a500>Σφάλμα Δημιουργία συνεδρίας</a8e17c5c6a98db76aedcaf421954a500>
+		<aee9784c03b80d38d3271cde2b252b8d>Άγνωστο σφάλμα</aee9784c03b80d38d3271cde2b252b8d>
+		<1a1814600a3ca76d2c7d6978d49f2ac7>Ψάχνοντας για Παιχνίδια</1a1814600a3ca76d2c7d6978d49f2ac7>
+		<f0101640c116cd2992d530ea340ffbf3>Σφάλμα κατά τη σύνδεση με συνεδρίας</f0101640c116cd2992d530ea340ffbf3>
+		<2044c23dfefda6c637db5b72f785a777>Η σύνδεση απέτυχε</2044c23dfefda6c637db5b72f785a777>
+		<bf59caae1522f67ae283de236f8a173c>Δεν ήταν δυνατή η σύνδεση με τον ξενιστή</bf59caae1522f67ae283de236f8a173c>
+		<ba9ead882053fb2ea7a5824af09e04e1>Καθιέρωση Σύνδεση</ba9ead882053fb2ea7a5824af09e04e1>
+		<d2ca89bfd02f26bfe2f14ab8ed4b52a5>Αναμονή για την απόκριση του ξενιστή ...</d2ca89bfd02f26bfe2f14ab8ed4b52a5>
+		<2ad06b228e2dd9288d803c39f764eaef>Κλείσιμο σύνδεση για να φιλοξενήσει ...</2ad06b228e2dd9288d803c39f764eaef>
+		<5fc118f9d4110c6b92023945aa24749e>Χρονικό όριο διακομιστή</5fc118f9d4110c6b92023945aa24749e>
+		<d51d94cb83fa7f09ed324108ed1126a5>Θα χαθεί η σύνδεση σας με τον οικοδεσπότη του παιχνιδιού. Επιστρέφοντας στο κύριο μενού ...</d51d94cb83fa7f09ed324108ed1126a5>
+		<cc06ad6d3fac8e53bbab5de9f0b1ee6f>Το παιχνίδι που προσπαθείτε να ενταχθούν δεν έχει μια ανοιχτή υποδοχή.</cc06ad6d3fac8e53bbab5de9f0b1ee6f>
+		<261dddcd6f22af959ae89dc15cc4d0c1>Ανάκτηση DLC Καταχώρηση</261dddcd6f22af959ae89dc15cc4d0c1>
+		<6c966bbe7a8bc51f1d4ac039df8f8b31>Παίκτης λήξει το</6c966bbe7a8bc51f1d4ac039df8f8b31>
+		<d6499001c15ff668b004a066603da7c8>Host Τύπου συνεδρίας</d6499001c15ff668b004a066603da7c8>
+		<9026b28ea37074073d2684007ee38e46>Επιστρέφοντας στο Κύριο Μενού ...</9026b28ea37074073d2684007ee38e46>
+		<ac9304328aab534ed91f5b04b910ae80>Παίκτης Disconneected</ac9304328aab534ed91f5b04b910ae80>
+		<0e380ab346f1aa1c8240368750d6f26b>Παίκτης Εγγραφή!</0e380ab346f1aa1c8240368750d6f26b>
+		<e52f9275bf67f1f4adcc49e5b7e33e3c>Συνδέεται με τον κεντρικό</e52f9275bf67f1f4adcc49e5b7e33e3c>
+		<16e0a27ec3e986de394bf702c3c2f516>@n άλλος παίκτης@s σε απευθείας σύνδεση</16e0a27ec3e986de394bf702c3c2f516>
+		<67010fd35454aa3dc141abd1e355ca7b>Απέτυχε επίπεδο</67010fd35454aa3dc141abd1e355ca7b>
+		<5bb5512074af8be5f8a8243639c3b432>Επανεκκίνηση επίπεδο ...</5bb5512074af8be5f8a8243639c3b432>
+		<89d751301b6b94ca60fb3cf86cb1247c>Διακομιστή δεν είναι διαθέσιμη</89d751301b6b94ca60fb3cf86cb1247c>
+		<55ed7ca12ed947b1b74a9d8ded04e7dc>[color=special]Μια Lode Runner ιστορία[/color] απέτυχε να ανακτήσει το επίπεδο εισαγωγή πληροφοριών από το διαδίκτυο. Ελέγξτε τη σύνδεσή σας ή δοκιμάστε ξανά αργότερα.</55ed7ca12ed947b1b74a9d8ded04e7dc>
+		<d50a48b052dc80f2e583c93e0d78348f>Λήψη επίπεδο που καθορίζεται</d50a48b052dc80f2e583c93e0d78348f>
+		<7830455af5612159a4f3de3d00525817>Η λήψη ολοκληρώθηκε!</7830455af5612159a4f3de3d00525817>
+		<dc1d0f58b46c30350b739a89bedce104>Λήψη Αποτυχία</dc1d0f58b46c30350b739a89bedce104>
+		<62c579e7e25d97cecbb4e6bf9d014c5c>Παρακαλώ δοκιμάστε ξανά αργότερα</62c579e7e25d97cecbb4e6bf9d014c5c>
+		<bcd23af2b247e64bf366c06cb737f9b5>Επίτευγμα ολοκληρώθηκε!</bcd23af2b247e64bf366c06cb737f9b5>
+		<8dba0709d53d1e02b900e1883dc98b0e>Αποθήκευση πλήρες</8dba0709d53d1e02b900e1883dc98b0e>
+		<44335e2391a7a155918473e0782a1de5>Quicksave @n αποθηκεύτηκαν με επιτυχία</44335e2391a7a155918473e0782a1de5>
+		<b4e8bde285980c86ef6256fbc8409156>@n αποθηκεύτηκαν με επιτυχία</b4e8bde285980c86ef6256fbc8409156>
+		<88088c0ddb0a791c130b2211a60804f9>Τοποθετήστε Πλήρης</88088c0ddb0a791c130b2211a60804f9>
+		<3f4b900638d51afc6500cc5b08b10587>Συνέχιση παιχνίδι ...</3f4b900638d51afc6500cc5b08b10587>
+		<d1d4033b8f2db10ebde28b8815c070d5>Δεν έχετε κατεβάσει το [color=special]@n[/color] οριστεί επίπεδο. Μπορείτε να το κατεβάσετε από το [color=special]Κεντρικό Μενού[/color] για να μπορέσετε να συμμετάσχετε αυτό το παιχνίδι!</d1d4033b8f2db10ebde28b8815c070d5>
+		<7fd954d409b18201823d879ae23d517c>Την έκδοση του [color=special]@n[/color] σετ επίπεδο ([color=special]@v1[/color]) Δεν ταιριάζει με την έκδοση του ξενιστή ([color=special]@v2[/color]). Προσπαθήστε να ενημερώσετε την έκδοση μέσα από το επίπεδο εύρεσης του κύριου μενού για την επίλυση αυτής της σύγκρουσης!</7fd954d409b18201823d879ae23d517c>
+		<1914e7d1aed4117140f94fd0287ffd1e>[color=special]@n[/color] έχει πεθάνει!</1914e7d1aed4117140f94fd0287ffd1e>
+	</labels>
+	<taunts>
+		<8fca89c38e0fab035471996a03d93494>Κανείς δεν μπορεί να επιβιώσει η διαδικασία επαναπλήρωση, ούτε καν ένα [color=special]ήρωας[/color]!</8fca89c38e0fab035471996a03d93494>
+		<d14c9cf70175be2ad0ce8167de5511fb>Σκάβοντας τρύπες μπορεί να σας βοηθήσει να σκοτώσει [color=normal]κακούς[/color]. Ή, στην περίπτωση αυτή, τον εαυτό σας.</d14c9cf70175be2ad0ce8167de5511fb>
+		<a9e9c5d39d40aeacd75913f9c2d1b3c8>Φαίνεται ότι δεν κάνει αρκετά έξω από τον τρόπο με τον χρόνο, [color=special]$[core.player1.name][/color].</a9e9c5d39d40aeacd75913f9c2d1b3c8>
+		<52dece192b8d9abc52307967904ed8d8>Ο [color=dim]Bungeling αυτοκράτορας[/color]&apos;S στρατεύματα πάρουμε αιχμαλώτους.</52dece192b8d9abc52307967904ed8d8>
+		<0e33675af88e06e34a7b43b821c9048a>Σκάβω [color=dim]τρύπες[/color] στο έδαφος για το [color=dim]κακούς[/color] να πέσουμε.</0e33675af88e06e34a7b43b821c9048a>
+		<ad357e9f24a6ab1d19fab876c00f2840>Ο [color=dim]κακούς[/color] δεν θα λάβει καμία απάντηση.</ad357e9f24a6ab1d19fab876c00f2840>
+		<c8af57426cb3091758c46c2186c32a61>Μέρος του επιπέδου αποφάσισε ότι απλά δεν σας αρέσει πάρα πολύ, [color=special]$[core.player1.name][/color].</c8af57426cb3091758c46c2186c32a61>
+		<96e05754d54fe7f8fa6ec586382142ba>Μπορείτε βρήκαν τραγικό θάνατο από την κίνηση επίπεδο.</96e05754d54fe7f8fa6ec586382142ba>
+		<1ff84ca0776ca7a6b20c4cd7d100e2d8>Όταν το επίπεδο η ίδια αρχίζει να κινείται γύρω, μπορεί κάτι καλό να συμβεί πραγματικά;</1ff84ca0776ca7a6b20c4cd7d100e2d8>
+		<58a7f0602d362215c2143924f61cc646>Δυστυχώς, έπεσε στα ανοικτά του κόσμου. Προσέξτε για τα προειδοποιητικά γραμμές!</58a7f0602d362215c2143924f61cc646>
+		<72fab29ed05584fce02acd6e5846255a>Δεν μπορείτε να βγείτε από το κάτω μέρος του ένα επίπεδο, μέσω μιας γραμμής προειδοποιήσεως.</72fab29ed05584fce02acd6e5846255a>
+		<b0551ba6f812420c2b130e9f7aff2b81>Φροντίστε να μην πατήσουμε πάνω στα καρφιά. Έχουν ένα βήμα πίσω, αν γνωρίζετε τι εννοώ.</b0551ba6f812420c2b130e9f7aff2b81>
+		<af80a4877372cc47377154a613c5d651>Πτώση στις αιχμές είναι ένας τρόπος για να εξασφαλιστεί ότι η [color=evil]κακούς[/color] Δεν μπορείτε να πάρετε.</af80a4877372cc47377154a613c5d651>
+		<875b66991c010018a146b97fe0ad52b2>Προσπαθήστε να δελεάσουν τους εχθρούς με τα πόδια από τα καρφιά, αποφεύγοντας τους τον εαυτό!</875b66991c010018a146b97fe0ad52b2>
+		<01bf4f1d170bea8fa98e99f54bc7af51>Φαίνεται σαν να πήγε και ανατίναξε τον εαυτό σας και πάλι, [color=special]$[core.player1.name][/color]!</01bf4f1d170bea8fa98e99f54bc7af51>
+		<f5558903062ce7d2f3a4e4359ce6e662>Σιγουρευτείτε για να κρατήσει την απόστασή σας από αυτά [color=normal]βόμβες[/color].</f5558903062ce7d2f3a4e4359ce6e662>
+		<1759935dd999d2961eb2564ce1beab24>Μπορείτε πιάστηκε πολύ κοντά σε μια [color=normal]βόμβα[/color]. Ο καθένας κάνει ότι μία ή δύο φορές, σωστά;</1759935dd999d2961eb2564ce1beab24>
+		<15aeadd6bbe47a1ff2c962298a0e99fc>Κάποιο είδος της μυστηριώδους δύναμης μόλις σκότωσες. Αυτό δεν είναι δίκαιο!</15aeadd6bbe47a1ff2c962298a0e99fc>
+		<dff8fe5afe37522406d9458c10633c64>Μπορείτε πήρε εξατμίζεται. Δεν ήξερα ότι θα μπορούσε να συμβεί!</dff8fe5afe37522406d9458c10633c64>
+		<32aceb641319da23d0f897a7892f8608>Τώρα ξέρετε πώς τα αυτοκτονία έργα κλειδί. Προσπαθήστε να μην κολλήσει!</32aceb641319da23d0f897a7892f8608>
+		<afd3aab611b498e9e1bfaa25a4e80c0c>Κρατήστε πατημένο το πλήκτρο αυτοκτονίας όταν θέλετε να φορτώσετε εκ νέου γρήγορα το προηγούμενο σημείο ελέγχου.</afd3aab611b498e9e1bfaa25a4e80c0c>
+	</taunts>
+	<ui>
+		<0d54027bd0b8ee41e1814510b1f224b2>Παιχνίδι υποδοχής</0d54027bd0b8ee41e1814510b1f224b2>
+		<4fd86e3905a9ea6043df7b8972021da3>Δημιουργήστε μια νέα συνεδρία</4fd86e3905a9ea6043df7b8972021da3>
+		<24df0526f9fbb1ed4610a03c13429c4a>Εγγραφή Παιχνιδιού</24df0526f9fbb1ed4610a03c13429c4a>
+		<97c8b382efc00d6a33fdd5072c295731>Γίνετε μέλος σε ένα υπάρχον παιχνίδι</97c8b382efc00d6a33fdd5072c295731>
+		<0557fa923dcee4d0f86b1409f5c2167f>Πίσω</0557fa923dcee4d0f86b1409f5c2167f>
+		<a47ac8e11082b313061e456afdcbc3eb>Κύριο Μενού ...</a47ac8e11082b313061e456afdcbc3eb>
+		<6b6dd7c914f6c9ea775af182c9942bf0>[color=normal]Επιλογές Avatar[/color]</6b6dd7c914f6c9ea775af182c9942bf0>
+		<1982f412b6670fcf9bec89e608314ff4>@player-name</1982f412b6670fcf9bec89e608314ff4>
+		<f951a1e1ff1ed0d24a2758b6441a3431>Κύρια χρώματα</f951a1e1ff1ed0d24a2758b6441a3431>
+		<020a9f6a979825fc9349eccc66bef6db>Δευτεροβάθμιο χρώμα</020a9f6a979825fc9349eccc66bef6db>
+		<3f37457219e976335b90b580eadaf265>Επιστροφή στο Lobby</3f37457219e976335b90b580eadaf265>
+		<c5e0a7b512fd616279924a1396bb0802>Πλήρης αναβάθμιση!</c5e0a7b512fd616279924a1396bb0802>
+		<1ab6fc127c14fbce6f4ffc27ce0e0908>Μπορείτε ξεκλειδωθεί [color=title]@skill-title  @skill-level[/color].</1ab6fc127c14fbce6f4ffc27ce0e0908>
+		<dae8ace18bdcbcc6ae5aece263e14fe8>Επιλογές</dae8ace18bdcbcc6ae5aece263e14fe8>
+		<22e44642799d62e29ef7ceb9d11a3e5b>Δεν έχετε διαθέσιμη μια κενή υποδοχή δεξιοτήτων. Για να εξοπλίσει [color=title]@skill-title[/color], Επισκεφθείτε την [color=title]Εξοπλίστε Δεξιότητες[/color] μενού!</22e44642799d62e29ef7ceb9d11a3e5b>
+		<edb4e0cb4079529f96c5f1a3b6174a94>Άνοιγμα μενού Equip δεξιότητες ...;</edb4e0cb4079529f96c5f1a3b6174a94>
+		<8171ada02c8d0f786103fbf653540311>Αυτή είναι η πρώτη σας [color=title]ενεργό δεξιότητα[/color]! Το παιχνίδι έχει εκχωρηθεί αυτόματα [color=title]@skill-title[/color] να σας [color=special]@button-name[/color].</8171ada02c8d0f786103fbf653540311>
+		<dc9cd43489a6754fbf5ca2977ede6064>Αυτή είναι η δεύτερη σας [color=title]ενεργό δεξιότητα[/color]! Το παιχνίδι έχει εκχωρηθεί αυτόματα [color=title]@skill-title[/color] να σας [color=special]@button-name[/color].</dc9cd43489a6754fbf5ca2977ede6064>
+		<479c16945b60d09dd4c36e548deafbfe>Έχετε σήμερα [color=title]@skill-title[/color] εξοπλισμένα. Πρέσα [color=special]@button-name[/color] για να το ενεργοποιήσετε!</479c16945b60d09dd4c36e548deafbfe>
+		<a577915165812a37f4a5cf3e57d1fe95>
+			[color=special]Νέα Quest Ενημέρωση[/color]
+@quest-title
+
+Θέα [color=title]Quest Logs[/color] για λεπτομέρειες ...
+		</a577915165812a37f4a5cf3e57d1fe95>
+		<8ac520ae4e4d9438c59cae2a09115fea>Επιστροφή στο [color=special]Μενού του παιχνιδιού[/color]...</8ac520ae4e4d9438c59cae2a09115fea>
+		<277cc030a7f91a05ebb9ef8245c69863>Κουλοχέρηδες Δεξιοτήτων</277cc030a7f91a05ebb9ef8245c69863>
+		<4f1984195b92747e87492d88138baad2>Επιλέξτε ένα να αλλάξετε</4f1984195b92747e87492d88138baad2>
+		<be56b1d64ee9330cde9411e622d60bea>Κεκτημένα ενεργές δεξιότητες (@skills-unlocked-count)</be56b1d64ee9330cde9411e622d60bea>
+		<e29be78e8cf65f9f1a934917f9e0903e>Κατόρθωμα</e29be78e8cf65f9f1a934917f9e0903e>
+		<ec53a8c4f07baed5d8825072c89799be>Κατάσταση</ec53a8c4f07baed5d8825072c89799be>
+		<12ec802598f75fa6533e9d6681f44a1e>[color=special]@map-title[/color] Ολοκληρώθηκε!</12ec802598f75fa6533e9d6681f44a1e>
+		<4887ee6851b6e322c305af8b67cd0417>Ως ανταμοιβή για την ολοκλήρωση αυτής [color=title]Παζλ δωμάτιο[/color], Μπορείτε να επιλέξετε [color=special]ένας[/color] νέο στοιχείο από τη λίστα των αντικειμένων παρακάτω!</4887ee6851b6e322c305af8b67cd0417>
+		<1b5c5f843555262cfe9c81e286485e95>[color=special]Διεκδικήσει το βραβείο σας:[/color]</1b5c5f843555262cfe9c81e286485e95>
+		<f01a101dcd5dfc9038870552b36cc6a9>[color=special]@npc-name[/color] λέει:</f01a101dcd5dfc9038870552b36cc6a9>
+		<9269e62c6244edbaf9f5681cc716d4e9>@npc-comment</9269e62c6244edbaf9f5681cc716d4e9>
+		<3209c64c442ca31ef9405fe86bb4d62d>Επιλέξτε μια απάντηση:</3209c64c442ca31ef9405fe86bb4d62d>
+		<6a840f977efc77b78d9da20d66633d58>πρέσα [color=special]@some-key[/color] για να συνεχίσει ...</6a840f977efc77b78d9da20d66633d58>
+		<070af99c8a66a8dfd23b3dd58c125dee>Πληκτρολογήστε μια απάντηση:</070af99c8a66a8dfd23b3dd58c125dee>
+		<8d520ef672f422f32df68304df9f7010>
+			@title
+[color=lowlight]@date[/color]
+		</8d520ef672f422f32df68304df9f7010>
+		<0d245f3bb0d68c57e54928e22989519d>
+			[color=lowlight]Το επίπεδο του χαρακτήρα:  [color=special]@character-level[/color]
+Χρυσό Συγκεντρώθηκαν:  [color=title]@gold-collected[/color][/color]
+		</0d245f3bb0d68c57e54928e22989519d>
+		<94be29e61359f77cba3f50b9b7241e4f>
+			@item-title
+[color=dim]Εξοπλισμένα[/color]
+		</94be29e61359f77cba3f50b9b7241e4f>
+		<4d038e90ae11ceb3bde1bb524de3d99e>@item-summary</4d038e90ae11ceb3bde1bb524de3d99e>
+		<741b9f8824826d21b18d47dbba67fbe9>
+			[color=special]@item-title[/color]
+
+@item-summary
+		</741b9f8824826d21b18d47dbba67fbe9>
+		<3ba78386afa89e11bfc603c56ac2fddf>
+			Κενή υποδοχή
+[color=dim]@count προϊόντα που διατίθενται[/color]
+		</3ba78386afa89e11bfc603c56ac2fddf>
+		<b80a028fa8c75dbc7cd5b77c0b3786e0>Επιλέξτε ένα στοιχείο για να συμπληρώσετε αυτή την υποδοχή.</b80a028fa8c75dbc7cd5b77c0b3786e0>
+		<1312cdc70ec3b0a52d52c68d15a98053>@quest-type Αποστολές (@count)</1312cdc70ec3b0a52d52c68d15a98053>
+		<cfcadb5b77a6553b25019c7a7cbc1c08>Επιλέξτε κάποιο να προβάλλετε ενημερώσεις ...</cfcadb5b77a6553b25019c7a7cbc1c08>
+		<3fc3abb913fdd60a2095b95e424b45e3>
+			[color=special]Quest Περίληψη[/color]
+@quest-description
+		</3fc3abb913fdd60a2095b95e424b45e3>
+		<b7978ba0f453fff2e185997c2eb6d757>
+			[color=special]Ενημέρωση @update-index[/color]
+@update-description
+		</b7978ba0f453fff2e185997c2eb6d757>
+		<274e8973da065042e871446cde04f0d8>@title</274e8973da065042e871446cde04f0d8>
+		<e8573e0bcda97e2671f0b34713e259d8>@status</e8573e0bcda97e2671f0b34713e259d8>
+		<91e8d95e8b1741b1ab1b63b565d1eb85>[color=dim]@description[/color]</91e8d95e8b1741b1ab1b63b565d1eb85>
+		<1db08de0bd4eecd21e3177d2f0e9d631>@server-name</1db08de0bd4eecd21e3177d2f0e9d631>
+		<2b7d668ec4835bd76663f6a6be3d8f76>@universe-title - @current-level</2b7d668ec4835bd76663f6a6be3d8f76>
+		<01d0603ac2c765258b23bb197a3ab0b2>@player-count / @max-players</01d0603ac2c765258b23bb197a3ab0b2>
+		<3d067bedfe2f4677470dd6ccf64d05ed>Δημόσιο</3d067bedfe2f4677470dd6ccf64d05ed>
+		<5cd032c4dc0dc65d78568ad0356ae860>@game-type</5cd032c4dc0dc65d78568ad0356ae860>
+		<47f9082fc380ca62d531096aa1d110f1>Ιδιωτικός</47f9082fc380ca62d531096aa1d110f1>
+		<20505e477e438602870617a781a25554>Πατήστε οποιοδήποτε κουμπί</20505e477e438602870617a781a25554>
+		<f8e619d793b9ae8b419ae2ce514708fa>Πατήστε το gamepad ή joystick εισόδου που θα χρησιμοποιήσετε [color=special]@todo[/color].</f8e619d793b9ae8b419ae2ce514708fa>
+		<4f3733d97d40b9c54a1bf15723c3ec61>Στοιχείο Δράσεις</4f3733d97d40b9c54a1bf15723c3ec61>
+		<151405d135fb0b5f05e43df2569024b0>Unequip @item-title</151405d135fb0b5f05e43df2569024b0>
+		<8793855ad95ad85aad6e3b4f3d50c15a>Δωρεάν Απογραφή Slot</8793855ad95ad85aad6e3b4f3d50c15a>
+		<240f9686efc9548a1d556d924c143924>Αναβαθμίσεις</240f9686efc9548a1d556d924c143924>
+		<5d9e9656666928ca32210b06e743e58b>Καμία ενέργεια</5d9e9656666928ca32210b06e743e58b>
+		<6f7e7308a1de015361e9f972d9ee05b9>Επιστροφή στην Απογραφή</6f7e7308a1de015361e9f972d9ee05b9>
+		<9471796b3048baf8a7041d8e8e37fbc1>@slots-free / @slots-total σχισμή (ες) που διατίθενται</9471796b3048baf8a7041d8e8e37fbc1>
+		<ace261ed4e1ddece0b91ec8cd666bcc9>0 διαθέσιμου χρόνου χρήσης</ace261ed4e1ddece0b91ec8cd666bcc9>
+		<6bbdf597772ae20086b10738833f0815>Χάθηκε η σύνδεση</6bbdf597772ae20086b10738833f0815>
+		<aa96c6c7666781d3b7ba2433626e4fbe>Όλοι οι άλλοι παίκτες έχουν παραιτηθεί από το παιχνίδι.</aa96c6c7666781d3b7ba2433626e4fbe>
+		<97ce19d53b5143346a87ccd913e41672>Περιμένετε για νέους παίκτες</97ce19d53b5143346a87ccd913e41672>
+		<b84591fe85df5fdb5ef46d23d3a720a8>Τέλος συνεδρίας</b84591fe85df5fdb5ef46d23d3a720a8>
+		<b8d352976923e1ce42cdb3e6bd051062>Επιστροφή στο κεντρικό μενού</b8d352976923e1ce42cdb3e6bd051062>
+		<fe0047e14c72090c9e4f0dec92d138cf>Νέα προσαρμοσμένη Αποθήκευση</fe0047e14c72090c9e4f0dec92d138cf>
+		<3ccb991ae2a7dbd3caea95ee1b991916>Δημιουργήστε [color=special]Νέα Αποθήκευση[/color]...</3ccb991ae2a7dbd3caea95ee1b991916>
+		<13a3ea59abd9333cdaee9d5d35453716>Στατιστικά Παιχνιδιού</13a3ea59abd9333cdaee9d5d35453716>
+		<2b0401abed6389f9e183313bf35e3fd3>Αποθήκευση Preview:</2b0401abed6389f9e183313bf35e3fd3>
+		<2be6adfdf7049d69a2a7733536180c76>Quicksave σχισμές (@quicksave-slot-count)</2be6adfdf7049d69a2a7733536180c76>
+		<a143bb2da5c7a40200586ccff96181d0>Επιλέξτε οποιαδήποτε να αντικαταστήσετε</a143bb2da5c7a40200586ccff96181d0>
+		<55fbd878a920f4bb51097d0bcb889dc0>Οι υφιστάμενες Ειδικές Αποθηκεύει (@manualsave-slot-count)</55fbd878a920f4bb51097d0bcb889dc0>
+		<c0cd4d271afe22373e29dc6895e098b1>[color=normal]@header-text[/color]</c0cd4d271afe22373e29dc6895e098b1>
+		<8114210dd486b87ae5b1dfd3c16bd182>Κύμα απέτυχε</8114210dd486b87ae5b1dfd3c16bd182>
+		<2bb25f7ef9772c341ed34c5cef3287f1>Ο χαρακτήρας σας δεν το κάνουν μέσω του [color=special]κύμα[/color] ζωντανός!</2bb25f7ef9772c341ed34c5cef3287f1>
+		<28914603238731eeeec96144eef2b49f>Επανάληψη Κύμα</28914603238731eeeec96144eef2b49f>
+		<ca0ba0479ec3e851b0b711300324952d>Τρέχουσα στις Κύμα @current-wave</ca0ba0479ec3e851b0b711300324952d>
+		<c7c2f543b8296292576ed57ec295e65a>Μπορείτε να επαναλάβετε το κύμα όσες φορές θέλετε.</c7c2f543b8296292576ed57ec295e65a>
+		<7dee404559c09b90dee8a18e13e9e534>Έξοδος Κύμα</7dee404559c09b90dee8a18e13e9e534>
+		<7517fe4acb034f67897402c6805386a2>Έξοδος από το [color=dim]κύμα[/color] και να επιστρέψετε στο overworld. Μπορείτε [color=dim]επανεξετάσει[/color] Αυτή η πρόκληση δωμάτιο, ανά πάσα στιγμή!</7517fe4acb034f67897402c6805386a2>
+		<14a613b5adb42c80ae8eef1f63f8ea00>
+			[color=button]@title[/color]
+[color=lowlight]@date[/color]
+		</14a613b5adb42c80ae8eef1f63f8ea00>
+		<e4501117e1bedcf91a53123d0b0cc7d7>@device-title</e4501117e1bedcf91a53123d0b0cc7d7>
+		<861b1dfdbb173de0f9e57d72b6c284dc>Επιλογή συσκευής</861b1dfdbb173de0f9e57d72b6c284dc>
+		<6795975d2a3ee08c25bd74c360132342>Επαναφορά προεπιλογών</6795975d2a3ee08c25bd74c360132342>
+		<c243c1c5d1c30638dc0872c14a46ee7b>Είστε σίγουροι ότι θέλετε να επαναφέρετε τους ελέγχους για σας [color=special]@device-name[/color] στις αρχικές προεπιλεγμένες ρυθμίσεις;</c243c1c5d1c30638dc0872c14a46ee7b>
+		<93cba07454f06a4a960172bbd6e2a435>Ναί</93cba07454f06a4a960172bbd6e2a435>
+		<416d06bf966d194240144e0a3affac3a>Επαναφορά προεπιλογών</416d06bf966d194240144e0a3affac3a>
+		<bafd7322c6e97d25b6299b5d6fe8920b>Όχι</bafd7322c6e97d25b6299b5d6fe8920b>
+		<ea4788705e6873b424c65e91c2846b19>Ακύρωση</ea4788705e6873b424c65e91c2846b19>
+		<7fc681a033545c8d1fafba25cae99d75>@upgrade-title</7fc681a033545c8d1fafba25cae99d75>
+		<bb3d6f10a3b1d5178c9428dd6916fef6>Κόστος:  [color=special]@upgrade-cost χρυσός[/color]</bb3d6f10a3b1d5178c9428dd6916fef6>
+		<6c0730037629fbcb91eedf543d8e57e5>Μπορείτε να αναβαθμίσετε αυτό το αντικείμενο @upgrades-remaining ώρα@upgrades-remaining-pluralizer.</6c0730037629fbcb91eedf543d8e57e5>
+		<e9e63d8bb8f8ec8c0a19ae05299d878b>Κόστος:  [color=unaffordable]@upgrade-cost χρυσός[/color]</e9e63d8bb8f8ec8c0a19ae05299d878b>
+		<5b22c39cc8a41be3606372d1fb8cd23a>Μπορείτε δεν μπορεί να αντέξει αυτή την αναβάθμιση τώρα. Χρειάζεται [color=special]@gold-needed περισσότερο χρυσό[/color] να αγοράσει αυτήν την αναβάθμιση.</5b22c39cc8a41be3606372d1fb8cd23a>
+		<8e84a32dec8d48d64728d69597e40ccc>Πλήρως Αναβαθμισμένη</8e84a32dec8d48d64728d69597e40ccc>
+		<f9b5cd7c411ee902df7f7f63f51b752f>Δεν μπορείτε να αναβαθμίσετε ξανά αυτό το στοιχείο.</f9b5cd7c411ee902df7f7f63f51b752f>
+		<fc55ae63e08970b8fb9b7930b3943856>Δεν Unlocked</fc55ae63e08970b8fb9b7930b3943856>
+		<259a1859b6210075f5ffb24f14d200ed>Για να ξεκλειδώσετε [color=special]@skill-title  @skill-level[/color], Θα πρέπει να φθάσουν [color=title]Το επίπεδο του χαρακτήρα @required-character-level[/color].</259a1859b6210075f5ffb24f14d200ed>
+		<aa8f8ae7430fa236625fbd961559f404>Είστε σήμερα [color=title]Επίπεδο @current-character-level[/color] χαρακτήρα.</aa8f8ae7430fa236625fbd961559f404>
+		<cb6654e66ab932148f3f086ee1016d3c>Επιστροφή στα Skill Tree</cb6654e66ab932148f3f086ee1016d3c>
+		<1c65d561fc50f486e7c6299cfa8c7671>Αναβάθμιση Επισκόπηση</1c65d561fc50f486e7c6299cfa8c7671>
+		<564b7c9d8683f1a94798e9f7449564e4>Αναβάθμιση Επιλογές</564b7c9d8683f1a94798e9f7449564e4>
+		<4682ce39ad44e0bf8c8661817d5361f6>Αναβάθμιση του Είδους</4682ce39ad44e0bf8c8661817d5361f6>
+		<70d9be9b139893aa6c69b5e77e614311>Επιβεβαιώνω</70d9be9b139893aa6c69b5e77e614311>
+		<d0be6c250c378bf592ea60e6d3f325cb>Ακύρωση Αναβάθμιση</d0be6c250c378bf592ea60e6d3f325cb>
+		<59637958d4f4538cde415834bffdeeab>Δεν Έτοιμο</59637958d4f4538cde415834bffdeeab>
+		<1876273b55f6f6d7d9d5265fd9bb5908>Δεν υπάρχουν αρκετά Χρυσό</1876273b55f6f6d7d9d5265fd9bb5908>
+		<1c26466dc055415396c337965fdee787>Αναβάθμιση Χαρακτηριστικά</1c26466dc055415396c337965fdee787>
+		<80a3851050f79bf662f6ba0e2ce49c72>[color=special]@upgrade-title[/color]</80a3851050f79bf662f6ba0e2ce49c72>
+		<70ce07b6eab71b1eb4a7df8be5809062>[color=special]@upgrade-cost χρυσός[/color]</70ce07b6eab71b1eb4a7df8be5809062>
+		<a2e890068c718e12a6cd03ceec164d60>Επιβεβαίωση αναβάθμισης</a2e890068c718e12a6cd03ceec164d60>
+		<5fce9f84ae5fbb604b06007ec13c75d5>Κόστος:  [color=special]@upgrade-cost[/color] χρυσός</5fce9f84ae5fbb604b06007ec13c75d5>
+		<3fa197846c5c56f50e438da98f024bf4>@skill-title: Επίπεδο @skill-level</3fa197846c5c56f50e438da98f024bf4>
+		<2bc91a315f676978b3851392988b45c3>Σημεία ικανότητα που απαιτείται:  @required-skill-points</2bc91a315f676978b3851392988b45c3>
+		<c3eda914a05461a478f95b0b2fbd6190>[color=special]Πώς λειτουργεί:[/color]</c3eda914a05461a478f95b0b2fbd6190>
+		<869e252ed2ac855b8aebb767a642d0c7>@skill-overview</869e252ed2ac855b8aebb767a642d0c7>
+		<c58ee47484c37e1fdc907d7ace7ea0ea>[color=dim]Πώς θα έχουν εργαστεί:[/color]</c58ee47484c37e1fdc907d7ace7ea0ea>
+		<768180b3d8151c74079f88b65babb189>@skill-title: Max Επίπεδο</768180b3d8151c74079f88b65babb189>
+		<87103aaed2247d1005b782998d3f7cb0>Πλήρως Αναβαθμισμένη!</87103aaed2247d1005b782998d3f7cb0>
+		<cb4e5262b77cb977ed0d54dcafa093b7>[color=special]Πώς θα έχουν εργαστεί:[/color]</cb4e5262b77cb977ed0d54dcafa093b7>
+		<1d672d1369fdc7f3a038b6967aa59d36>[color=special]Απέτυχε επίπεδο[/color]</1d672d1369fdc7f3a038b6967aa59d36>
+		<ee96aaf8c5fc3866a98d32da19b3c63b>@content</ee96aaf8c5fc3866a98d32da19b3c63b>
+		<63c2c21e39cfcdee7f678f5af69df6f2>Ενημέρωση @update-index</63c2c21e39cfcdee7f678f5af69df6f2>
+		<73946750c59a5cd987585fb053cf687f>@update-description</73946750c59a5cd987585fb053cf687f>
+		<6e30cbe4041cf54c26cb8a4a04621502>@response-text</6e30cbe4041cf54c26cb8a4a04621502>
+		<2a624a3776edc82e13911d587932154a>Συσκευές Βρέθηκαν:  @device-count</2a624a3776edc82e13911d587932154a>
+		<63edde274385877b4eaa2352ca62d571>Επιστροφή στις επιλογές</63edde274385877b4eaa2352ca62d571>
+		<07e30147ace726c4f6b7432e5cdfd764>Καινούριο επίπεδο τίθεται ...</07e30147ace726c4f6b7432e5cdfd764>
+		<c0f9ebc62da3e5c9baefa80893b9c208>Πατήστε ESC για να επιστρέψετε στο μενού</c0f9ebc62da3e5c9baefa80893b9c208>
+		<b09825dc6d992046781fb083979414df>[color=title]Έλεγχοι[/color]</b09825dc6d992046781fb083979414df>
+		<c53e8325f9778849265cab502d07de22>Προσαρμογή σας [color=dim]πληκτρολόγιο[/color] ή [color=dim]gamepad[/color] ελέγχει για να παίζουν το παιχνίδι.</c53e8325f9778849265cab502d07de22>
+		<de58c8bca3d34dc74d5ba68ea490bb07>Προσαρμογή σας [color=dim]πληκτρολόγιο[/color] ή [color=dim]gamepad[/color].</de58c8bca3d34dc74d5ba68ea490bb07>
+		<3dc465ac062f55f6f882aad36bb27fcb>[color=title]Συναλλαγών Εφημερίδα[/color]</3dc465ac062f55f6f882aad36bb27fcb>
+		<2e3ca586b7c1228240dd421908b00acf>Δείτε τα αρχεία των συναλλαγών σας με τους ανθρώπους του [color=special]Lelandria[/color], Μαζί με μια καταγραφή κάθε συναλλαγής των επιχειρήσεων που διαπράττουν.</2e3ca586b7c1228240dd421908b00acf>
+		<a99df27342f5e6a23061a56d1085d8fa>Δείτε μια λίστα με τις προηγούμενες συναλλαγές σας.</a99df27342f5e6a23061a56d1085d8fa>
+		<e1da5f10f09d953a1b2c3a4496349faa>[color=title]Επιτεύγματα[/color]</e1da5f10f09d953a1b2c3a4496349faa>
+		<5eca0e59f2a414ca33e4f7d092fa6759>Δείτε μια λίστα με το [color=dim]Επιτεύγματα[/color] διατίθεται σε [color=title]Μια Lode Runner ιστορία[/color].</5eca0e59f2a414ca33e4f7d092fa6759>
+		<226712f5002af5c0e73406c2904d5762>Δείτε μια λίστα [color=dim]Επιτεύγματα[/color].</226712f5002af5c0e73406c2904d5762>
+		<f134c7d4f734f28873163a22fd9ee817>[color=title]Gameplay Στατιστικά[/color]</f134c7d4f734f28873163a22fd9ee817>
+		<bd9521ed85dc51cfe7a005e557abd507>Αναλύστε μια λεπτομερή στατιστική επισκόπηση της προόδου-to-ημερομηνία στο παιχνίδι σας.</bd9521ed85dc51cfe7a005e557abd507>
+		<12c647905eb26e1ef53d4c65c5f2b7c1>Αναλύστε μια σειρά από στατιστικά του παιχνιδιού.</12c647905eb26e1ef53d4c65c5f2b7c1>
+		<69694a92d9b2deb55c5d0d72827e77b5>Gameplay Στατιστικά</69694a92d9b2deb55c5d0d72827e77b5>
+		<ae35fe5de560db692163e1ab76ebe7d6>Όνομα Χαρακτήρα:  [color=special]@character-name[/color]</ae35fe5de560db692163e1ab76ebe7d6>
+		<5aa6e1592dd40daa67338e6eb1ce3a1d>Το επίπεδο του χαρακτήρα:  [color=special]@character-level[/color]</5aa6e1592dd40daa67338e6eb1ce3a1d>
+		<b53506e39dbad62ba3414ceb10124fbc>Ώρα Παίχθηκε:  [color=special]@time-played[/color]</b53506e39dbad62ba3414ceb10124fbc>
+		<6958b34532641c7b7bfd89cfa3279e8b>Σκάβει Made:  [color=special]@total-digs[/color]</6958b34532641c7b7bfd89cfa3279e8b>
+		<61aabafdc31a25e9da84a6d721646d58>Κακοί Σκοτώθηκαν:  [color=special]@enemies-killed[/color]</61aabafdc31a25e9da84a6d721646d58>
+		<f8f0abeed372b725e673093babf7fa7d>Χρυσό Συγκεντρώθηκαν:  [color=special]@gold-collected[/color]</f8f0abeed372b725e673093babf7fa7d>
+		<5503800acc1354aa98fd72d83b80d67c>Στοιχείων που αποκτήθηκαν:  [color=special]@items-acquired[/color]</5503800acc1354aa98fd72d83b80d67c>
+		<93c48799598985e4ae07a36a0483b91e>Ο χρυσός που ξοδέψατε:  [color=special]@gold-spent[/color]</93c48799598985e4ae07a36a0483b91e>
+		<4e230305b207b8353558568b74e71f37>Φιλικά Σκοτώθηκαν:  [color=special]@npcs-killed[/color]</4e230305b207b8353558568b74e71f37>
+		<ffc199909afb7d54f9b76cae2f124765>Αποστολές Ολοκληρωμένες:  [color=special]@quests-completed / @quests-possible[/color]</ffc199909afb7d54f9b76cae2f124765>
+		<a87b78ce3a94d3734c9a6431fc23408c>Επιτεύγματα Ολοκληρώθηκε:  [color=special]@achievements-completed[/color] / @achievements-possible</a87b78ce3a94d3734c9a6431fc23408c>
+		<6e3f6c1dc4dccdf6f9a53f920afe0713>Γρήγορη Ταξίδια</6e3f6c1dc4dccdf6f9a53f920afe0713>
+		<00b60192c0600b2b83e52de7bec2f1aa>Είστε βέβαιοι ότι θέλετε να ταξιδέψουν στην [color=special]@map-title[/color];</00b60192c0600b2b83e52de7bec2f1aa>
+		<226c50ed078b1f5feb6d2495ef23ad85>Προσαρμογή Έλεγχοι</226c50ed078b1f5feb6d2495ef23ad85>
+		<6c77c1cd8f22887db78def75d28a7bc6>[color=dim]Ρύθμιση gamepad ...[/color]</6c77c1cd8f22887db78def75d28a7bc6>
+		<314d274ceceb797f26503446412fa508>Εναλλαγή Gamepads</314d274ceceb797f26503446412fa508>
+		<a4177fd8a2dbda0b4d6e18eeafd49950>[color=dim]Επιλέξτε συσκευή ...[/color]</a4177fd8a2dbda0b4d6e18eeafd49950>
+		<dbaedc5d7bc110413a14920a91b4f655>[color=dim]Επιστροφή στις επιλογές ...[/color]</dbaedc5d7bc110413a14920a91b4f655>
+		<ae254687839916894ca91444db1c8e7f>Quest Ενημερώσεις</ae254687839916894ca91444db1c8e7f>
+		<667834dc9d124da7bdda4322370be4bf>Ενημερώσεις:  @count</667834dc9d124da7bdda4322370be4bf>
+		<b73129b4b3c70a0dbfc49b939328cdb5>Δεν βρέθηκαν ενημερώσεις</b73129b4b3c70a0dbfc49b939328cdb5>
+		<4a7152f5cb2f9de70acde6e8876eb16b>Αυτή η αναζήτηση δεν διαθέτει ακόμη μια ενημέρωση.</4a7152f5cb2f9de70acde6e8876eb16b>
+		<9809c661320e563d4d3f245e6ef48c56>Επιλογές δεξιοτήτων</9809c661320e563d4d3f245e6ef48c56>
+		<606a4dc4366a9a3fda314ebf7de88068>Θέση στην Υποδοχή [color=special]1[/color]</606a4dc4366a9a3fda314ebf7de88068>
+		<5aea8ae8629770927f9bc9e6342aca8b>@slot1-κατάσταση</5aea8ae8629770927f9bc9e6342aca8b>
+		<209e2276a4ee22ef31a188ba86799aa2>Θέση στην Υποδοχή [color=special]2[/color]</209e2276a4ee22ef31a188ba86799aa2>
+		<b6c10809c5a1794e22018e801d7c2edf>@slot2-κατάσταση</b6c10809c5a1794e22018e801d7c2edf>
+		<f3838cd134c28ee34956e72d2faeae55>Επιστροφή στην Δεξιότητες</f3838cd134c28ee34956e72d2faeae55>
+		<902b0d55fddef6f8d651fe1035b7d4bd>Σφάλμα</902b0d55fddef6f8d651fe1035b7d4bd>
+		<0ec1c59c66d308b9854f2a81367663ed>Αποθήκευση προσπάθεια σας απέτυχε.</0ec1c59c66d308b9854f2a81367663ed>
+		<07bcdde8a19eb41fe588ca23a0e50b0d>Τίτλος:  [color=special]@title[/color]</07bcdde8a19eb41fe588ca23a0e50b0d>
+		<eecf0c89f6cddbadda538d42c8340047>Σφάλμα:  [color=special]@error[/color]</eecf0c89f6cddbadda538d42c8340047>
+		<a60852f204ed8028c1c58808b746d115>Εντάξει</a60852f204ed8028c1c58808b746d115>
+		<6ebbdd8f3aa5a649ed262a73be954142>@data</6ebbdd8f3aa5a649ed262a73be954142>
+		<3240e7707f99456ba21bf809fba6daf1>Επιλέξτε μια επίσκεψη ...</3240e7707f99456ba21bf809fba6daf1>
+		<c2ca16d048ec66e04bca283eab048ec2>Οικοδεσπότης</c2ca16d048ec66e04bca283eab048ec2>
+		<e7e019b7962105c3d523729086c7af80>Επίπεδο Σετ</e7e019b7962105c3d523729086c7af80>
+		<93ec972c68d5caca43370a9746a08cea>Παίκτες</93ec972c68d5caca43370a9746a08cea>
+		<4ee39c61e61144ae8f1ee166e43cb48c>Τύπος Παιχνιδιού</4ee39c61e61144ae8f1ee166e43cb48c>
+		<ce5bf551379459c1c61d2a204061c455>Τοποθεσία</ce5bf551379459c1c61d2a204061c455>
+		<2a8427527549b8751af9465ed8c531a8>Επιλέξτε ένα επίπεδο που έχει οριστεί ...</2a8427527549b8751af9465ed8c531a8>
+		<f1e36ba5764b8ddcf6064d977f0482bb>Επιβεβαιώστε την επιλογή</f1e36ba5764b8ddcf6064d977f0482bb>
+		<92c36f679aa250e1cfd90c821ff3a7c8>Είστε βέβαιοι ότι θέλετε να αναβαθμίσετε [color=special]@skill-title-and-level[/color];</92c36f679aa250e1cfd90c821ff3a7c8>
+		<7ae62f9c29e54913f1d71aced0af9e3d>Μην αναβάθμιση</7ae62f9c29e54913f1d71aced0af9e3d>
+		<8587811159396775c382dd57119fa629>Αναβάθμιση τώρα</8587811159396775c382dd57119fa629>
+		<8f3dd0ef5f89e7c9e2d1aa9c06e9a10d>@skill-title-and-level</8f3dd0ef5f89e7c9e2d1aa9c06e9a10d>
+		<0d76361f679d46c20deee208b6a431b9>Αυτήν τη στιγμή έχετε [color=special]@skill-points-available σημείο δεξιοτήτων@pluralizer[/color] διαθέσιμες.</0d76361f679d46c20deee208b6a431b9>
+		<72cfb004e7cfa6e2240693d9edc555c9>@item-title</72cfb004e7cfa6e2240693d9edc555c9>
+		<90ebbe94b8f35de8bc27c3a110aac495>Εξοπλισμένα</90ebbe94b8f35de8bc27c3a110aac495>
+		<3242e87a4e0d0dd3e18c117753ca0a18>Ρυθμίσεις ήχου</3242e87a4e0d0dd3e18c117753ca0a18>
+		<a546c5928c57ea1468ddc334fe5f0a50>Ιστορικό Μουσική</a546c5928c57ea1468ddc334fe5f0a50>
+		<241b98a5c9bedc31f5dccef6a2a7971f>Ηχητικά εφφέ</241b98a5c9bedc31f5dccef6a2a7971f>
+		<c9cc8cce247e49bae79f15173ce97354>Αποθήκευση</c9cc8cce247e49bae79f15173ce97354>
+		<8156166536d8f5f5c28ebc60940798c1>Χρησιμοποιήστε τα πλήκτρα αριστερά / δεξιά για να ρυθμίσετε.</8156166536d8f5f5c28ebc60940798c1>
+		<01de5f79c25e11050f5566d1a379838a>Ελέγχει την κίνηση</01de5f79c25e11050f5566d1a379838a>
+		<a5879696fd83c14b803e58c2fd64677b>Μετακίνηση Αριστερά</a5879696fd83c14b803e58c2fd64677b>
+		<d3aa5d49bd3e049ce6814636cbd61298>[color=dim]@gamepad-translations.left[/color]</d3aa5d49bd3e049ce6814636cbd61298>
+		<dfcd62d7e45d162977cce3b8a1d95dc8>Μετακίνηση Δεξιά</dfcd62d7e45d162977cce3b8a1d95dc8>
+		<5e1c79cddd56438c98404ca092d4e641>[color=dim]@gamepad-translations.right[/color]</5e1c79cddd56438c98404ca092d4e641>
+		<3717ca1e1702edabf06c7cf830e70627>Μετακίνηση επάνω</3717ca1e1702edabf06c7cf830e70627>
+		<099815bb6b757701b5aee9cb15c73117>[color=dim]@gamepad-translations.up[/color]</099815bb6b757701b5aee9cb15c73117>
+		<aa8ea843721d50172c76e0c87b43698e>Μετακίνηση προς τα κάτω</aa8ea843721d50172c76e0c87b43698e>
+		<c2b9c189ed03ab53595d61e0ff51636c>[color=dim]@gamepad-translations.down[/color]</c2b9c189ed03ab53595d61e0ff51636c>
+		<3114af615fee77d8bcfb74d58cf86369>Σκάβοντας Έλεγχοι</3114af615fee77d8bcfb74d58cf86369>
+		<140e1c53e019e2976105830ab95ecfc9>Σκάβετε αριστερά</140e1c53e019e2976105830ab95ecfc9>
+		<0c5f7cea4f5717be676513ffa529d664>[color=dim]@gamepad-translations.dig-left[/color]</0c5f7cea4f5717be676513ffa529d664>
+		<f4f5082dbd27d70bd0d68b32618bb3f5>Σκάβετε δεξιά</f4f5082dbd27d70bd0d68b32618bb3f5>
+		<87e23a51cce1b426458b8d03cf3a5690>[color=dim]@gamepad-translations.dig-right[/color]</87e23a51cce1b426458b8d03cf3a5690>
+		<457ad993b21f334c071e5aaa113cd17d>Έλεγχοι αλληλεπίδρασης</457ad993b21f334c071e5aaa113cd17d>
+		<f1bf2b6de5d94caf2d5766edaa7b9794>Τόπος βόμβα</f1bf2b6de5d94caf2d5766edaa7b9794>
+		<88ce8c2c9f5bf495501587b09b291aba>[color=dim]@gamepad-translations.bomb[/color]</88ce8c2c9f5bf495501587b09b291aba>
+		<cd86600624ba842faa9bc4f28d73cccd>Αυτοκτονία (Hold)</cd86600624ba842faa9bc4f28d73cccd>
+		<3deb35fe8e55ad4cdf7f55e74d2cb8dc>[color=dim]@gamepad-translations.suicide[/color]</3deb35fe8e55ad4cdf7f55e74d2cb8dc>
+		<efbc873e4634f3db63d62377d36e5f56>Αλληλεπίδραση</efbc873e4634f3db63d62377d36e5f56>
+		<eb2ad6ad74855c0746a1434bf1aa398c>[color=dim]@gamepad-translations.interact[/color]</eb2ad6ad74855c0746a1434bf1aa398c>
+		<6e786c839fc73e8444ebb170eecb7d5f>Μικρός (Hold)</6e786c839fc73e8444ebb170eecb7d5f>
+		<e7ca45af82785e74f5175d1fd666e1ef>[color=dim]@gamepad-translations.minimap[/color]</e7ca45af82785e74f5175d1fd666e1ef>
+		<3d0ccc70ea4fd2fcad3b3088b834346f>Χρησιμοποιήστε hotkeys δεξιοτήτων</3d0ccc70ea4fd2fcad3b3088b834346f>
+		<ce1c81cff05769f7a1cca2a7e472a5c4>Χρησιμοποιήστε τις ικανότητές 1</ce1c81cff05769f7a1cca2a7e472a5c4>
+		<04196fe7a16c209fa7680e8732b7c0de>[color=dim]@gamepad-translations.skill1[/color]</04196fe7a16c209fa7680e8732b7c0de>
+		<0b7dd2fc3ae3496adcfb1f620c87a01e>Χρησιμοποιήστε τις ικανότητές 2</0b7dd2fc3ae3496adcfb1f620c87a01e>
+		<ad53ce1f65100b053ea4b778e75573ea>[color=dim]@gamepad-translations.skill2[/color]</ad53ce1f65100b053ea4b778e75573ea>
+		<503038277fcdb25b9c0ea6feaa09bd13>Πλοήγηση στο μενού</503038277fcdb25b9c0ea6feaa09bd13>
+		<88317dc2afd46885539a64e0f30cde42>ESC / Ακύρωση</88317dc2afd46885539a64e0f30cde42>
+		<7123632ee183b3cd6e278fc7ae7c5a70>[color=dim]@gamepad-translations.escape[/color]</7123632ee183b3cd6e278fc7ae7c5a70>
+		<acc2bf407e51348a4c1352769211dc0f>ENTER / Επιλογή</acc2bf407e51348a4c1352769211dc0f>
+		<25cfc593810069367b1c0e33e527aceb>[color=dim]@gamepad-translations.enter[/color]</25cfc593810069367b1c0e33e527aceb>
+		<aef9f7faa83217aa82af93c957f2bf26>Μενού Αριστερά</aef9f7faa83217aa82af93c957f2bf26>
+		<eba62e927b05f3eae29aa7caaa23a3db>[color=dim]@gamepad-translations.menu-left[/color]</eba62e927b05f3eae29aa7caaa23a3db>
+		<7be2cb87f2d8b2e9c661876fc91cbe43>Δεξιά Μενού</7be2cb87f2d8b2e9c661876fc91cbe43>
+		<06b368dd772f12c4c100293d6a367e1a>[color=dim]@gamepad-translations.menu-right[/color]</06b368dd772f12c4c100293d6a367e1a>
+		<92352e815d272a91d5c08f4bf254cee1>Μενού Up</92352e815d272a91d5c08f4bf254cee1>
+		<4370f40294886911917d48a17039927a>[color=dim]@gamepad-translations.menu-up[/color]</4370f40294886911917d48a17039927a>
+		<1a8268d909b94831f8b0c39a86c9fa67>Μενού Down</1a8268d909b94831f8b0c39a86c9fa67>
+		<78abd9d29ff4fa5274d4bbdc855fa144>[color=dim]@gamepad-translations.menu-down[/color]</78abd9d29ff4fa5274d4bbdc855fa144>
+		<6311ae17c1ee52b36e68aaf4ad066387>Άλλος</6311ae17c1ee52b36e68aaf4ad066387>
+		<966816cc61476db8d6776b725291b10e>[color=dim]Επαναφορά όλοι οι έλεγχοι[/color]</966816cc61476db8d6776b725291b10e>
+		<da4b2bfa38276b7b73ce95ee81b45eaf>[color=dim]Αποθήκευση αλλαγών[/color]</da4b2bfa38276b7b73ce95ee81b45eaf>
+		<859b0f13f162d2c83e7ef806538dba3c>Αντικατάσταση Προσαρμοσμένη Αποθήκευση</859b0f13f162d2c83e7ef806538dba3c>
+		<67ecd29611b68860e5e710175596aa5b>Είστε σίγουροι ότι θέλετε να αντικαταστήσετε το υπάρχον έθιμο Αποθήκευση [color=special]@title[/color];</67ecd29611b68860e5e710175596aa5b>
+		<23fd0740c7ada6a703466ae2f1401fee>Μπορείτε τελευταία αποθηκεύονται σε αυτή την υποδοχή [color=special]@time-since-last-save[/color] πριν.</23fd0740c7ada6a703466ae2f1401fee>
+		<cbfd8da9199bcf0cb538feab1d609de5>Αντικατάσταση των Quicksave</cbfd8da9199bcf0cb538feab1d609de5>
+		<65ebf6d6ed96cb07229fe2fb858cf62c>Είστε σίγουροι ότι θέλετε να αντικαταστήσετε τα δεδομένα σε [color=special]Quicksave @slot[/color];</65ebf6d6ed96cb07229fe2fb858cf62c>
+		<369d4f6e9f913fe5d9afcb98a2354c37>Σφάλμα τοποθέτησης</369d4f6e9f913fe5d9afcb98a2354c37>
+		<9a3ca918b397049cb0ab00dcccecdcb2>Δεν έχετε αποθηκεύσει δεδομένα σε αυτήν τη θέση.</9a3ca918b397049cb0ab00dcccecdcb2>
+		<a021c02247afbbb5028ef7f7ab382cb0>Δωρεάν ένα slot Απογραφή</a021c02247afbbb5028ef7f7ab382cb0>
+		<c276e9b96bb84d06e47fb5d71b07f6fd>Πατήστε οποιοδήποτε πλήκτρο</c276e9b96bb84d06e47fb5d71b07f6fd>
+		<7f5b36c0da66c4a7ef2e2840d405ef79>Πατήστε το πληκτρολόγιο εισόδου που θα χρησιμοποιήσετε [color=special]@todo[/color].</7f5b36c0da66c4a7ef2e2840d405ef79>
+		<3fbc924beb3b496e7f7959d33b426be7>Παζλ συμπληρώνει!</3fbc924beb3b496e7f7959d33b426be7>
+		<ae0b9e52cca9460eaad152bcf7e89337>Ως ανταμοιβή για την επιτυχή ολοκλήρωση αυτό [color=special]@map-title[/color], Επιλέξτε [color=special]1[/color] βραβείο!</ae0b9e52cca9460eaad152bcf7e89337>
+		<c669145dfabfecdb6c21bd72b52fc1dc>Έπαθλα</c669145dfabfecdb6c21bd72b52fc1dc>
+		<f1092342e336fe02cc3a6a810005c97a>[color=special]Στοιχείο Αναβαθμισμένη[/color]</f1092342e336fe02cc3a6a810005c97a>
+		<57ad5bd82662ddf1fc650fc906213ac0>Επιλεγμένα Είσοδος</57ad5bd82662ddf1fc650fc906213ac0>
+		<3594c25d2b6392ddd182c46f2d9491e6>@gamepad-translations.left</3594c25d2b6392ddd182c46f2d9491e6>
+		<b26ca21d16724b495baba8c60701c0d9>[color=dim]Μέσω αυτής της εισόδου για να μετακινηθείτε προς τα αριστερά σας.[/color]</b26ca21d16724b495baba8c60701c0d9>
+		<d8f7f64fd461eade7ea7b0fd500b0a1e>@gamepad-translations.right</d8f7f64fd461eade7ea7b0fd500b0a1e>
+		<28a6c8a2d266fd9a647d48053af0d307>[color=dim]Μέσω αυτής της εισόδου για να μετακινηθείτε προς τα δεξιά σας.[/color]</28a6c8a2d266fd9a647d48053af0d307>
+		<c6096a5a78306318c1986a4348527a82>@gamepad-translations.up</c6096a5a78306318c1986a4348527a82>
+		<76b9bf82ef84c50dc583b65eb7140d68>[color=dim]Μέσω αυτής της εισόδου να ανέβει σκάλες.[/color]</76b9bf82ef84c50dc583b65eb7140d68>
+		<d4fdad0a90c823d290f4c30e70e2e5ef>@gamepad-translations.down</d4fdad0a90c823d290f4c30e70e2e5ef>
+		<d77e05de467f9edb9da5e2943ca34d35>[color=dim]Μέσω αυτής της εισόδου να κατέβει σκάλες και να πέσει από την γέφυρα αναρρίχησης.[/color]</d77e05de467f9edb9da5e2943ca34d35>
+		<f8c2a2dc6a36dc1a7882505f79b5604b>@gamepad-translations.dig-left</f8c2a2dc6a36dc1a7882505f79b5604b>
+		<534eb51a5e42682ae8b10c0cc4993611>[color=dim]Μέσω αυτής της εισόδου για να σκάψουν στα αριστερά σας ανά πάσα στιγμή.[/color]</534eb51a5e42682ae8b10c0cc4993611>
+		<3603d60322a2a7c533ef0361c7e6a43e>@gamepad-translations.dig-right</3603d60322a2a7c533ef0361c7e6a43e>
+		<380328065a0801eb28a826e31ca9ece9>[color=dim]Μέσω αυτής της εισόδου για να σκάψουν στα δεξιά σας ανά πάσα στιγμή.[/color]</380328065a0801eb28a826e31ca9ece9>
+		<60163d3a96750db01440c3152b425647>@gamepad-translations.bomb</60163d3a96750db01440c3152b425647>
+		<9b09c0fabeb017cc8dd4e5cbdfffe7b7>[color=dim]Μέσω αυτής της εισόδου για να τοποθετήσετε μια βόμβα στην κατεύθυνση που αντιμετωπίζουν.[/color]</9b09c0fabeb017cc8dd4e5cbdfffe7b7>
+		<cc7e78376b3f0efd3780493da5de925d>@gamepad-translations.suicide</cc7e78376b3f0efd3780493da5de925d>
+		<2dbcbac0de017ebc463e86e520666315>[color=dim]Κρατήστε αυτή την είσοδο εν συντομία να σκοτώσει τον χαρακτήρα σας, αν έχετε κολλήσει![/color]</2dbcbac0de017ebc463e86e520666315>
+		<9c90d475019d5e75a6456dd0039ed021>@gamepad-translations.interact</9c90d475019d5e75a6456dd0039ed021>
+		<cac43f459bb29c5aec3a513bc81b7bb5>[color=dim]Μέσω αυτής της εισόδου για να μιλήσει για NPCs και να κάνει χρήση των μέσων.[/color]</cac43f459bb29c5aec3a513bc81b7bb5>
+		<c9b42e8d666dc174934c8cdb6026e21e>@gamepad-translations.minimap</c9b42e8d666dc174934c8cdb6026e21e>
+		<422998922eb2086053e451d2224c2a12>[color=dim]Κρατήστε αυτή την είσοδο για να εμφανίσετε μια επίθεση.[/color]</422998922eb2086053e451d2224c2a12>
+		<c1e6e853ce2b1a7297d70b341c9e0fda>Chat (Co-op μόνο)</c1e6e853ce2b1a7297d70b341c9e0fda>
+		<de4f333a3f4c44117945f338be9578b6>@gamepad-translations.net-chat</de4f333a3f4c44117945f338be9578b6>
+		<2b1c5215f76fd744006a4eb5caa8fde9>[color=dim]Μέσω αυτής της εισόδου για να ενεργοποιήσετε την κονσόλα συνομιλίας κατά τη διάρκεια co-op παιχνίδι.[/color]</2b1c5215f76fd744006a4eb5caa8fde9>
+		<1547931694abe3469e39a2fcf155781b>Ικανότητα Πλήκτρα</1547931694abe3469e39a2fcf155781b>
+		<35f3570127587868c189de7f0e604541>@gamepad-translations.skill1</35f3570127587868c189de7f0e604541>
+		<3764aba19cb618a4a41d94359a2514e7>[color=dim]Μέσω αυτής της εισόδου για να ενεργοποιήσετε την εμπειρία στην υποδοχή 1.[/color]</3764aba19cb618a4a41d94359a2514e7>
+		<5484625035b04d4f8910c339bdace96d>@gamepad-translations.skill2</5484625035b04d4f8910c339bdace96d>
+		<cc8aedbf3b3ce39c7946847790b0a531>[color=dim]Μέσω αυτής της εισόδου για να ενεργοποιήσετε την εμπειρία στην υποδοχή 2.[/color]</cc8aedbf3b3ce39c7946847790b0a531>
+		<80186cdfc6b70ca080b5b3182f8690e5>@gamepad-translations.escape</80186cdfc6b70ca080b5b3182f8690e5>
+		<f3625597973068ebecd5c15321af3259>[color=dim]Χρησιμοποιήστε αυτήν την είσοδο με την πρόσβαση στα μενού παύση ή να ακυρώσετε τις δράσεις.[/color]</f3625597973068ebecd5c15321af3259>
+		<53e81987734e56a42d34d2cbdbbd64b0>@gamepad-translations.enter</53e81987734e56a42d34d2cbdbbd64b0>
+		<a38926dd740fc00085b4105d9cd8d0bd>[color=dim]Χρησιμοποιήστε αυτήν την είσοδο σε μια επιλογή μενού.[/color]</a38926dd740fc00085b4105d9cd8d0bd>
+		<8339fe50001c0a114bf8b59a6e3ad040>@gamepad-translations.menu-left</8339fe50001c0a114bf8b59a6e3ad040>
+		<aaae4136a28d440a40587ba9dc3a272d>[color=dim]Μέσω αυτής της εισόδου για να κινηθείτε αριστερά μέσα σε ένα μενού.[/color]</aaae4136a28d440a40587ba9dc3a272d>
+		<bb04a785e4cc89afcef079f4a3e5827a>@gamepad-translations.menu-right</bb04a785e4cc89afcef079f4a3e5827a>
+		<1c840fb16c2106dc1378a7c7434ef446>[color=dim]Μέσω αυτής της εισόδου για να μετακινηθείτε δεξιά μέσα σε ένα μενού.[/color]</1c840fb16c2106dc1378a7c7434ef446>
+		<1a3a3a81ebeb20868f32d734ffbe5227>@gamepad-translations.menu-up</1a3a3a81ebeb20868f32d734ffbe5227>
+		<7ad227c95e2988810cd40318848a94f2>[color=dim]Μέσω αυτής της εισόδου να ανεβάσουμε μέσα σε ένα μενού.[/color]</7ad227c95e2988810cd40318848a94f2>
+		<da032eb70a3beb2b332d0940c892678d>@gamepad-translations.menu-down</da032eb70a3beb2b332d0940c892678d>
+		<f50a16bdfa9e3ef0c817fc6d0fed5915>[color=dim]Μέσω αυτής της εισόδου για να μετακινηθείτε προς τα κάτω μέσα σε ένα μενού.[/color]</f50a16bdfa9e3ef0c817fc6d0fed5915>
+		<1caac01d5398ce1009439c20cf163365>Επιλέξτε ένα χρώμα</1caac01d5398ce1009439c20cf163365>
+		<5b26785652fc9c5ce70c93a43e1246c3>@purchase-details</5b26785652fc9c5ce70c93a43e1246c3>
+		<808425e00568efd9eae3f5e6c1b0b687>Δεν βρέθηκαν συναλλαγές.</808425e00568efd9eae3f5e6c1b0b687>
+		<c9f7b091c88f6966ca6c6461dc55f36c>Η σύνδεσή σας με το διακομιστή έληξε. Πρέσα [color=special]@some-key[/color] για να επιστρέψετε στο κύριο μενού.</c9f7b091c88f6966ca6c6461dc55f36c>
+		<da6026011abdaf2bd63008b50acf7f39>Ενιαίος φορέας</da6026011abdaf2bd63008b50acf7f39>
+		<9b66d21c2de03c32886e5b9959d1b214>Παίξτε μόνοι σας ...</9b66d21c2de03c32886e5b9959d1b214>
+		<89af765a0c8de0080713ad7f09fc2fd9>Co-op Λειτουργία</89af765a0c8de0080713ad7f09fc2fd9>
+		<a98a68c3093157e4c63eb06488c9b97a>[color=dim]Παίξτε συνεργατικά ...[/color]</a98a68c3093157e4c63eb06488c9b97a>
+		<bebea0eac8bd12df7826980f78f87263>Επίπεδο Αναζήτηση</bebea0eac8bd12df7826980f78f87263>
+		<feda1fd7e07933fb1e2b4d766ba64090>[color=dim]Κατεβάστε νέα επίπεδα ...[/color]</feda1fd7e07933fb1e2b4d766ba64090>
+		<fd20c1050198e1164095fa5ad73e6502>[color=dim]Έλεγχοι και περισσότερα ...[/color]</fd20c1050198e1164095fa5ad73e6502>
+		<e05608c9f6728a8fa124f1f98ad22b95>Έξοδος από το παιχνίδι</e05608c9f6728a8fa124f1f98ad22b95>
+		<fd7f24a74f7c9591fda386778f27ee7d>[color=dim]Αντίο![/color]</fd7f24a74f7c9591fda386778f27ee7d>
+		<c43c487038c9a3a9384f22183e1736ba>Λειτουργία Story</c43c487038c9a3a9384f22183e1736ba>
+		<76ef2903d434fb5ddaeebaa191f9ebd8>Παίξτε τη λειτουργία ιστορία ...</76ef2903d434fb5ddaeebaa191f9ebd8>
+		<1c21196c43a27fb73680219ad3be1613>[color=dim]Παίξτε συνεργατικά![/color]</1c21196c43a27fb73680219ad3be1613>
+		<ba2c48de56cc959794adfb2169a7fbe3>DLC</ba2c48de56cc959794adfb2169a7fbe3>
+		<0ca9364e253a2f8afe73185193870fbf>[color=dim]Ρυθμίστε τους ελέγχους σας[/color]</0ca9364e253a2f8afe73185193870fbf>
+		<029215559200601977e9b2c30d6854fb>Ο χαρακτήρας σας δεν το κάνουν μέσω του επίπεδο ζωντανός!</029215559200601977e9b2c30d6854fb>
+		<ac41e36f982be3a63ae7d38efec8e379>Επανάληψη Επίπεδο</ac41e36f982be3a63ae7d38efec8e379>
+		<c6f79efab5bd1595ad9c1de5b1d7d116>Ξεκινήστε από την αρχή</c6f79efab5bd1595ad9c1de5b1d7d116>
+		<566bd491b408e6880c076c6690d4cfad>Μπορείτε να επαναλάβετε το επίπεδο όσες φορές θέλετε.</566bd491b408e6880c076c6690d4cfad>
+		<0d82790b0612935992bd564a17ce37d6>Κλείστε</0d82790b0612935992bd564a17ce37d6>
+		<9e9043fa825dbc96297f7ea2939eea60>Επιστροφή στο [color=special]Κεντρικό Μενού[/color]</9e9043fa825dbc96297f7ea2939eea60>
+		<d4401d8e3f913aa684bf68723a7878ac>Βγείτε από το επίπεδο και να επιστρέψετε στην οθόνη επιλογής επίπεδο.</d4401d8e3f913aa684bf68723a7878ac>
+		<6b03e013ce78e7166a99aad9a2f70093>[color=title]Παγκόσμιοι Χάρτες[/color]</6b03e013ce78e7166a99aad9a2f70093>
+		<d0b228cf3c4261881789579303b66005>Διαδραστικοί χάρτες που σας καθοδηγούν να ημιτελή επίπεδα, δωμάτια παζλ και πολλά άλλα.</d0b228cf3c4261881789579303b66005>
+		<81458d6e5d32f94ae93b02f72b8fbc62>Δείτε ένα χάρτη του κόσμου για να την εξερευνήσετε.</81458d6e5d32f94ae93b02f72b8fbc62>
+		<6010870b6defc99af487fb80c11ee204>[color=title]Εξοπλίστε Δεξιότητες[/color]</6010870b6defc99af487fb80c11ee204>
+		<95c0eaccaba105068f553d03ac4154dd>Επιλέξτε ποια από σας [color=special]δεξιότητες που διδάχτηκαν[/color] να αναθέσει σε σας [color=special]hotkeys χρήση δεξιότητα[/color].</95c0eaccaba105068f553d03ac4154dd>
+		<f58941d21849db7d85956467da6e63b1>Equip σας [color=special]δεξιότητες[/color].</f58941d21849db7d85956467da6e63b1>
+		<c0a40099658cce5f0cdfb30d88ba11cb>[color=title]Αποθήκευση παιχνιδιού[/color]</c0a40099658cce5f0cdfb30d88ba11cb>
+		<77445d9b1e14a3e3333f3d8f47df810f>Αποθηκεύστε την τρέχουσα πρόοδό σας σε μια υποδοχή Αποθήκευση.</77445d9b1e14a3e3333f3d8f47df810f>
+		<6c8046f1babb041284e6e9f1fc5b7139>Αποθηκεύστε την τρέχουσα πρόοδό σας.</6c8046f1babb041284e6e9f1fc5b7139>
+		<83ac35f4bc00adf6366ce5f5e2d4ac60>[color=title]παιχνίδι φορτίο[/color]</83ac35f4bc00adf6366ce5f5e2d4ac60>
+		<a239c1f49193121c701d0abd9f911b95>Επιλέξτε για να φορτώσετε ένα προηγούμενο σώσει, συμπεριλαμβανομένων Autosaves.</a239c1f49193121c701d0abd9f911b95>
+		<ef7e11cf6b2b504e9eae2b57de9881f1>Επιλέξτε για να φορτώσετε ένα προηγούμενο σώσει.</ef7e11cf6b2b504e9eae2b57de9881f1>
+		<519cf52b78c4484f599f1a7272e9a443>[color=normal]Επιλογές Quest[/color]</519cf52b78c4484f599f1a7272e9a443>
+		<11d28c064eed7c0a932c0594fbc4e017>[color=button]Ενεργά Αναζητήσεις[/color]</11d28c064eed7c0a932c0594fbc4e017>
+		<aeae078804e07840edc72b13c6e9291b>[color=button]Ολοκληρώθηκε Αναζητήσεις[/color]</aeae078804e07840edc72b13c6e9291b>
+		<b9f8d68e70ccf4c196f4be0272ea6b0f>[color=button]Επιστροφή στο [color=title]Μενού του παιχνιδιού[/color][/color]</b9f8d68e70ccf4c196f4be0272ea6b0f>
+		<71c8b6000a9e49c03d5dbcbfb6ef1dac>Κόστος: 0 χρυσού (παζλ Reward)</71c8b6000a9e49c03d5dbcbfb6ef1dac>
+		<f10f6d66f4f3f7e89be5f3d01087b0c0>[color=special]Λεπτομέρειες αντικειμένου:[/color]</f10f6d66f4f3f7e89be5f3d01087b0c0>
+		<7de507c92ab1b20183508656f9f76001>@item-advertisement</7de507c92ab1b20183508656f9f76001>
+		<93b4c465bc1156a473e4849e3317763d>@limit Παίκτες</93b4c465bc1156a473e4849e3317763d>
+		<e615446a2d12efdd34da134bb84ba849>Λόμπι Μέλη</e615446a2d12efdd34da134bb84ba849>
+		<4e6bd693070f0fcde1db1ac732047bb8>Ψήφους υπέρ, Μεταφορά:  [color=special]@votes[/color]</4e6bd693070f0fcde1db1ac732047bb8>
+		<196d4ccf1d39956410b2e4da7fb44f21>Λόμπι Μενού</196d4ccf1d39956410b2e4da7fb44f21>
+		<203301632462e5d0207199a3690d54dc>Επίπεδο Επισκόπηση</203301632462e5d0207199a3690d54dc>
+		<485cfdf25fde9252186b4f8354a4eb06>Ορισμός Έτοιμο</485cfdf25fde9252186b4f8354a4eb06>
+		<b4973a6977c981244b993dd1e6cae8b4>Επεξεργασία Avatar</b4973a6977c981244b993dd1e6cae8b4>
+		<a8cf458f184d732c50f7d34e8ef6ee3b>Ψηφίστε για Μεταφορά Επίπεδο</a8cf458f184d732c50f7d34e8ef6ee3b>
+		<c74f8323b11b78ec1739d4ddfafa87dd>Γεια σου, αυτό είναι μόνο μια δοκιμαστική ετικέτα που θα μπορούσε να χρησιμεύσει ως ένα είδος δυναμικά ενημερωμένη tooltip;</c74f8323b11b78ec1739d4ddfafa87dd>
+		<2d4a1b0430f1749bfe9a291bf0743a78>[color=special]@level-title[/color]</2d4a1b0430f1749bfe9a291bf0743a78>
+		<c2c26a3cbf3dccc02c65377f41c4f585>@level-overview</c2c26a3cbf3dccc02c65377f41c4f585>
+		<8f6ac3ae4a0fd813c48a61c851797106>[color=special]Έτοιμοι να παίξετε[/color]</8f6ac3ae4a0fd813c48a61c851797106>
+		<927fb51a5aeeca00700f934e0e39ae64>Πατήστε αυτό το κουμπί όταν είστε έτοιμοι να ξεκινήσετε το επίπεδο. Μόλις όλοι οι παίκτες που είναι έτοιμη, το παιχνίδι αρχίζει!</927fb51a5aeeca00700f934e0e39ae64>
+		<57edf346ec27808cb2fbafd86b3fd46c>[color=special]Avatar Προσαρμογή[/color]</57edf346ec27808cb2fbafd86b3fd46c>
+		<4b2183c0b0eaf5802357337a4d6b9dd9>Επεξεργαστείτε το όνομα multiplayer σας και να επιλέξετε ένα μοναδικό συνδυασμό χρωμάτων για Lode Runner avatar σας!</4b2183c0b0eaf5802357337a4d6b9dd9>
+		<031bde508a419d007d3b043eebca147f>[color=special]Ψηφίστε για Μεταφορά Επίπεδο[/color]</031bde508a419d007d3b043eebca147f>
+		<a3c19e4a733e429f8928bda2d33d3ace>Σε περίπτωση που 2 ή περισσότεροι παίκτες ψηφίζουν για να παρακάμψετε το επίπεδο, όλοι οι παίκτες θα προχωρήσουμε στο επόμενο επίπεδο αμέσως.</a3c19e4a733e429f8928bda2d33d3ace>
+		<129f5ad4cd71da495a4a2ed7cc1c9632>Ορίστε δεν είναι έτοιμη</129f5ad4cd71da495a4a2ed7cc1c9632>
+		<70ad3572e674aa4a1ec6a20677931c66>[color=special]Ικανότητα αναβαθμίστηκε![/color]</70ad3572e674aa4a1ec6a20677931c66>
+		<0e23578ecd95b36d9bd5a7feaa82dedb>@skill-title  @skill-level</0e23578ecd95b36d9bd5a7feaa82dedb>
+		<5c7ac8cc70bb6d5e7d08c126db041a39>Σημεία δεξιοτήτων που απομένουν:  @skill-points-remaining</5c7ac8cc70bb6d5e7d08c126db041a39>
+		<e474d796d521bda3e23c1536735402b9>@text</e474d796d521bda3e23c1536735402b9>
+		<e391bdf8fa8f77bac69032fe95071810>
+			[color=button]@quest-title[/color]
+Έσοδα για ειδικό Quest
+		</e391bdf8fa8f77bac69032fe95071810>
+		<bf17fb4d1e981d66a1f6175b2ac8b384>Παγκόσμιος χάρτης</bf17fb4d1e981d66a1f6175b2ac8b384>
+		<a31f27c7f368b123ee106fef9e8f395c>Χάρτης Προβολή:  @view-title</a31f27c7f368b123ee106fef9e8f395c>
+		<f6d4a17b27da35c2d90ce13801f36782>Παν</f6d4a17b27da35c2d90ce13801f36782>
+		<4252b72e6ebcd4d4b4c2e46a786f03d2>Μεγέθυνση</4252b72e6ebcd4d4b4c2e46a786f03d2>
+		<254d8015defce62db17c5eea0146f31a>Λειτουργία ...</254d8015defce62db17c5eea0146f31a>
+		<c2763a687d5677cd0f69a156f7a96ec3>Ταξίδι ...</c2763a687d5677cd0f69a156f7a96ec3>
+		<1eeb68806a8840c756ff2c7ba85bfb32>@shop-title</1eeb68806a8840c756ff2c7ba85bfb32>
+		<e6b5f0c585c397f566ed3b8ffad8bccd>Δυστυχώς, είμαι σήμερα έξω από απογραφή. Παρακαλώ δοκιμάστε ξανά αργότερα!</e6b5f0c585c397f566ed3b8ffad8bccd>
+		<671f08e46c28f584240d889e5f22b4a6>Επιλογές Κατάστημα</671f08e46c28f584240d889e5f22b4a6>
+		<2d6d2f57b9da410a80fe8e33721d0739>Αφήστε Κατάστημα</2d6d2f57b9da410a80fe8e33721d0739>
+		<e990b6285ed2a575c561235378a5e691>Διαθέσιμο</e990b6285ed2a575c561235378a5e691>
+		<24115d526906222ffb89cbec0c984f26>@salutation</24115d526906222ffb89cbec0c984f26>
+		<acece58a20efec915e2a5b29c2cde382>Διαθέσιμο απόθεμα</acece58a20efec915e2a5b29c2cde382>
+		<a301fb6c9931e5b86a9b36a31b9c9e6d>Πρόσθετες Επιλογές</a301fb6c9931e5b86a9b36a31b9c9e6d>
+		<98e536e94a845d30f68a1ad816136ff4>Πείτε αντίο</98e536e94a845d30f68a1ad816136ff4>
+		<32086abbcccbe6dfbf0810909826e0d0>Προτιμήσεις έντασης ήχου ...</32086abbcccbe6dfbf0810909826e0d0>
+		<3d23e1e11c824540fb5ae59cadefd5d5>Ρυθμίσεις οθόνης</3d23e1e11c824540fb5ae59cadefd5d5>
+		<b18cf981a00547e96f99f05c9eb76f93>Πλήρης οθόνη προτίμησης ...</b18cf981a00547e96f99f05c9eb76f93>
+		<6ce4d85a628a88bbdb3ac24a8e5a9c2e>Πληκτρολόγιο</6ce4d85a628a88bbdb3ac24a8e5a9c2e>
+		<aa93ce33ed789cf843c4b9c70fa6f60e>Προσαρμόσετε τα πλήκτρα ...</aa93ce33ed789cf843c4b9c70fa6f60e>
+		<50769e38a1511664e958c52271e16e62>Gamepads</50769e38a1511664e958c52271e16e62>
+		<869410ed57b682e53fe678ccae18f5f2>Διαμορφώστε gamepad (ες) ...</869410ed57b682e53fe678ccae18f5f2>
+		<4994a8ffeba4ac3140beb89e8d41f174>Γλώσσα</4994a8ffeba4ac3140beb89e8d41f174>
+		<059d4ccf4a725d03979dfbc4ab3fc22f>Επιλέξτε τη γλώσσα σας ...</059d4ccf4a725d03979dfbc4ab3fc22f>
+		<0b1739f933e0dea2ac9775cac7a44b6f>@skill-title</0b1739f933e0dea2ac9775cac7a44b6f>
+		<5afaf1679ad0887adebaddb40e0bd3f7>Επίπεδο 1</5afaf1679ad0887adebaddb40e0bd3f7>
+		<52ef36e9e6c75fd567976721bb98ccff>Επαναφορά στο Checkpoint</52ef36e9e6c75fd567976721bb98ccff>
+		<592fc3702faed305a35c1ca65032f4a7>Είστε σίγουροι ότι θέλετε να φορτώσετε το [color=special]τελευταίο σημείο ελέγχου[/color];</592fc3702faed305a35c1ca65032f4a7>
+		<4dc69d3f9b33a09ee2b6f9505e80b3f2>Φορτίο Quicksave</4dc69d3f9b33a09ee2b6f9505e80b3f2>
+		<bbc7b954d091318de41139b491f9a236>Είστε σίγουροι ότι θέλετε να φορτώσετε τα δεδομένα από [color=special]Quicksave @slot[/color];</bbc7b954d091318de41139b491f9a236>
+		<c80bb437f54c6d4a28c0df0b04400b65>Τοποθετήστε Προσαρμοσμένη Αποθήκευση</c80bb437f54c6d4a28c0df0b04400b65>
+		<015521e83287b4e57f77d53e3aa2eec5>Είστε σίγουροι ότι θέλετε να φορτώσετε το έθιμο Αποθήκευση [color=special]@title[/color];</015521e83287b4e57f77d53e3aa2eec5>
+		<7e7123b0d269ad5d9ec8d12c52a8ed8a>Ξεκλειδώστε</7e7123b0d269ad5d9ec8d12c52a8ed8a>
+		<dff84f5d5dda60de73246228118fe3a1>[color=special]Λεπτομερής επισκόπηση[/color]</dff84f5d5dda60de73246228118fe3a1>
+		<18790b3eaad9cb5b5f2d2670c217e304>@skill-details</18790b3eaad9cb5b5f2d2670c217e304>
+		<4f7e9829d05dada846d649c9b814f29f>Αναβάθμιση στο επίπεδο @skill-level</4f7e9829d05dada846d649c9b814f29f>
+		<fa15171b90109c33775afee9964a9535>[color=special]Αναβάθμιση Λεπτομέρειες[/color]</fa15171b90109c33775afee9964a9535>
+		<0946c826b6fb502e0654e1b24227b8dc>[color=special]Λεπτομέρειες:[/color]</0946c826b6fb502e0654e1b24227b8dc>
+		<ebcc39462e6620a8cf432194084a5483>Επιλογές:</ebcc39462e6620a8cf432194084a5483>
+		<8baf77a05caf6027aafa870682fe3549>
+			Αναβάθμιση
+[color=dim]@skill-title[/color]
+		</8baf77a05caf6027aafa870682fe3549>
+		<bb815f591d2c6651744f4c41be017b74>
+			Ακύρωση
+[color=dim]Δεν Έτοιμο[/color]
+		</bb815f591d2c6651744f4c41be017b74>
+		<c644bf5fe969226e49ab244d39622e47>[color=special]Τελική Επισκόπηση[/color]</c644bf5fe969226e49ab244d39622e47>
+		<09ac965edad58b01d5d33c25cfac3656>
+			Πίσω
+[color=dim]Πλήρως Αναβαθμισμένη[/color]
+		</09ac965edad58b01d5d33c25cfac3656>
+		<d99727a0cc448a3c816c2c75a63ddfac>@message</d99727a0cc448a3c816c2c75a63ddfac>
+		<f69589d7f690c044c424294b07e0a6da>Parsing δεδομένων ...</f69589d7f690c044c424294b07e0a6da>
+		<63d72051e901c069f8aa1b32aa0c43bb>Παιχνίδι</63d72051e901c069f8aa1b32aa0c43bb>
+		<636da1d35e805b00eae0fcd8333f9234>Παίχτης</636da1d35e805b00eae0fcd8333f9234>
+		<aa79c5d1cbe3d96218a92481bcfaa39c>Δεξιότητες</aa79c5d1cbe3d96218a92481bcfaa39c>
+		<fef46e5063ce3dc78b8ae64fa474241d>Έξοδος</fef46e5063ce3dc78b8ae64fa474241d>
+		<86aa58d55a65e9a3a3e400a5d2e976fa>Τελευταία Checkpoint (Αυτόματη αποθήκευση)</86aa58d55a65e9a3a3e400a5d2e976fa>
+		<09778947c0b3cf32bc373d01b8778499>Checkpoint προεπισκόπησης:</09778947c0b3cf32bc373d01b8778499>
+		<7488306c16bf353c7f86f346ef07e6d4>Φορτίο [color=special]Τελευταία Checkpoint[/color]</7488306c16bf353c7f86f346ef07e6d4>
+		<161389ab0cee6aa3374ce7743a3f633a>[color=special]Πίσω[/color] στη μητρική μενού ...</161389ab0cee6aa3374ce7743a3f633a>
+		<6a4cb717c36743513523b1ed61ec88eb>[color=highlight]Πίσω[/color] στη μητρική μενού ...</6a4cb717c36743513523b1ed61ec88eb>
+		<3d45e2169dc2f22e617091a92835ee78>[color=normal]Λόμπι Μενού[/color]</3d45e2169dc2f22e617091a92835ee78>
+		<2d144683345f25c7f3695b258c6bb1f1>
+			[color=special]Επίπεδο:[/color]
+Επίπεδο 1
+
+[color=special]Επισκόπηση:[/color]
+Συλλέξτε όλα τα χρυσά στο επίπεδο για να κερδίσει!
+
+Αναβιώνει πέσει συμπαίκτες αγγίζοντας την καρδιά με το όνομά τους!
+		</2d144683345f25c7f3695b258c6bb1f1>
+		<b6247aa4b91dfc486f77df241baef60e>
+			[color=special]Ορισμός Έτοιμο:[/color]
+Όταν είστε έτοιμοι, επιλέξτε αυτήν την επιλογή. Μόλις όλοι οι παίκτες που το καθεστώς τους να [color=special]έτοιμος[/color], Το παιχνίδι αρχίζει!
+		</b6247aa4b91dfc486f77df241baef60e>
+		<078ac2cd60f428b5e35ce0494dfff908>
+			[color=special]Επεξεργασία Avatar:[/color]
+Προσαρμόστε την εμφάνιση του χαρακτήρα σας!
+		</078ac2cd60f428b5e35ce0494dfff908>
+		<5f248c71885150715295b97a256cec56>
+			[color=special]Μετάβαση Επίπεδο:[/color]
+Αν τουλάχιστον 2 παίκτες ψηφίζουν για να παραλείψετε αυτό το επίπεδο, όλοι οι παίκτες θα προχωρήσει στο επόμενο διαθέσιμο επίπεδο.
+		</5f248c71885150715295b97a256cec56>
+		<1905c840c962b2e2436b0dd52f101d87>
+			[color=special]Ορίστε δεν είναι έτοιμη:[/color]
+Επαναφορά κατάστασή σας σε Δεν Ready.
+		</1905c840c962b2e2436b0dd52f101d87>
+		<30850b501f98539b1aabaa29fabe41ef>Σμίκρυνση</30850b501f98539b1aabaa29fabe41ef>
+		<f5ca4abce85e2dddb0342d0bae3a7270>Μεγέθυνση</f5ca4abce85e2dddb0342d0bae3a7270>
+		<f3d8416383c3f15b968f2b28cba03973>Επιστροφή στο μενού</f3d8416383c3f15b968f2b28cba03973>
+		<093c874523efce6d9d62de5732e792d6>
+			Ο παγκόσμιος χάρτης προσφέρει ένα γρήγορο τρόπο για να δείτε όπου έχετε πάει στον κόσμο.
+
+Οθόνες με 1 ή περισσότερες ράβδους χρυσού υπόλοιπα έχουν ένα [color=special]χρυσός[/color] χρώμα? οθόνες έχετε πλησίασε (αλλά δεν έχει εισαχθεί) έχουν [color=dim]ξεθωριάσει[/color] χρώμα.
+		</093c874523efce6d9d62de5732e792d6>
+		<bcaa27ca4c6b0309ff23601d93e7b2f6>
+			[color=special]Επίπεδο:[/color]
+    Επίπεδο 1
+
+        [color=special]Επισκόπηση:[/color]
+    Συλλέξτε όλα τα χρυσά στο επίπεδο για να κερδίσει!
+
+    Αναβιώνει πέσει συμπαίκτες αγγίζοντας την καρδιά με το όνομά τους!
+		</bcaa27ca4c6b0309ff23601d93e7b2f6>
+		<355b56405bc4e17e96e9d35fb5c89d3f>
+			[color=special]Ορισμός Έτοιμο:[/color]
+    Όταν είστε έτοιμοι, επιλέξτε αυτήν την επιλογή. Μόλις όλοι οι παίκτες που το καθεστώς τους να [color=special]έτοιμος[/color], Το παιχνίδι αρχίζει!
+		</355b56405bc4e17e96e9d35fb5c89d3f>
+		<517626ead60b7a70004ca4b8665e14d2>
+			[color=special]Επεξεργασία Avatar:[/color]
+    Προσαρμόστε την εμφάνιση του χαρακτήρα σας!
+		</517626ead60b7a70004ca4b8665e14d2>
+		<cedf2eb77559db39d5a19b3b9e1cee6e>
+			[color=special]Μετάβαση Επίπεδο:[/color]
+    Αν τουλάχιστον 2 παίκτες ψηφίζουν για να παραλείψετε αυτό το επίπεδο, όλοι οι παίκτες θα προχωρήσει στο επόμενο διαθέσιμο επίπεδο.
+		</cedf2eb77559db39d5a19b3b9e1cee6e>
+		<cdd2e08908a1eb7ae4adc9ff86feee52>Μενού Πρόκληση Δωμάτιο</cdd2e08908a1eb7ae4adc9ff86feee52>
+		<efe0c09e8bd7c9b0b4927ce2cd9a53b5>Συνέχιση Παιχνιδιού</efe0c09e8bd7c9b0b4927ce2cd9a53b5>
+		<79f920cbecfcd4e00be6f0b1fd1023c8>Συνέχεια Κύμα</79f920cbecfcd4e00be6f0b1fd1023c8>
+		<f4bb39e13cfc1105b7c9d4d398f76aba>Σήμερα στο Κύμα @current-wave</f4bb39e13cfc1105b7c9d4d398f76aba>
+		<e20259c763c9bc9131c1e1b0fed27ace>Έξοδος Πρόκληση Δωμάτιο</e20259c763c9bc9131c1e1b0fed27ace>
+		<f1f03055d663e36847510a37548104ef>Έξοδος από το [color=title]Πρόκληση δωμάτιο[/color] και να επιστρέψετε στο overworld. Μπορείτε [color=title]επανεξετάσει[/color] Αυτή η πρόκληση δωμάτιο, ανά πάσα στιγμή.</f1f03055d663e36847510a37548104ef>
+		<8914bc9a94552891a07cffc350239f10>Θέλετε να χρησιμοποιήσετε τη λειτουργία πλήρους οθόνης;</8914bc9a94552891a07cffc350239f10>
+		<6488cfe09cadeec7693c9114fd3e4f1e>Fullscreen Σε</6488cfe09cadeec7693c9114fd3e4f1e>
+		<c8f1a6c49e477a73fa066df8fe12b60b>Οθόνη Off</c8f1a6c49e477a73fa066df8fe12b60b>
+		<cc60074e3c6cac5d2b5dcb0fa5209437>Για ορισμένους χρήστες, αλλάζοντας αυτή τη λειτουργία μπορεί να σας ζητήσει να κάνετε επανεκκίνηση του παιχνιδιού.</cc60074e3c6cac5d2b5dcb0fa5209437>
+		<ec3f08266730de4687ae59f0318e41e2>Ξεκινήστε το νέο παιχνίδι</ec3f08266730de4687ae59f0318e41e2>
+		<6a4e61b55a2b9bf11b3531f671c01ca0>Επιλέξτε ένα σετ επίπεδο ...</6a4e61b55a2b9bf11b3531f671c01ca0>
+		<a86df58a69f1b3be5818f38881f14c77>Συνέχιση ιστορία</a86df58a69f1b3be5818f38881f14c77>
+		<6035b386f3b5818b390efbdae031b4ec>
+			Τελευταίο παιχνίδι:  [color=special]@universe-title[/color]
+
+Όνομα Χαρακτήρα:  [color=special]@player-name[/color]
+Το επίπεδο του χαρακτήρα:  [color=special]@character-level[/color]
+		</6035b386f3b5818b390efbdae031b4ec>
+		<1df60e0b1f81f3f407436e80ebf59dbc>Συνεχίστε ιστορία ...</1df60e0b1f81f3f407436e80ebf59dbc>
+		<0beec625888c107d9357416952e60ec1>[color=category]Κίνημα[/color]</0beec625888c107d9357416952e60ec1>
+		<21a80a051ee0c9a5b77a728567e53da0>Επίπεδο:  @level</21a80a051ee0c9a5b77a728567e53da0>
+		<2a1b23ddba425aad4e29a1a8b01462c1>@upgrade-msg</2a1b23ddba425aad4e29a1a8b01462c1>
+		<f9c29137e5d96c74955af6f7bb54487f>[color=category]Έλεγχος[/color]</f9c29137e5d96c74955af6f7bb54487f>
+		<8c8606a2697215b1c12cf61c31516f28>[color=category]Εξαπάτηση[/color]</8c8606a2697215b1c12cf61c31516f28>
+		<3ddccfb01a114e33d89c9dbbb7db9f38>[color=category]Ορυχεία λέιζερ[/color]</3ddccfb01a114e33d89c9dbbb7db9f38>
+		<a87e00a6830f4027a0adaa7f39af97f3>[color=category]Αυτοάμυνα[/color]</a87e00a6830f4027a0adaa7f39af97f3>
+		<285ed88082ea2c2178bca493e6b62e80>[color=category]Βομβαρδιστής[/color]</285ed88082ea2c2178bca493e6b62e80>
+		<298131e0755dc4e40fdeffc043c86b42>[color=category]Λαθραία[/color]</298131e0755dc4e40fdeffc043c86b42>
+		<20f5cb5b2b89078a55f37157d0b9e19e>[color=special]Επίπεδο 1[/color]</20f5cb5b2b89078a55f37157d0b9e19e>
+		<7873967803e33145ed7c7b12b449f06d>Θα πρέπει να κερδίσει αυτό το επίπεδο για να φτάσετε στο επόμενο επίπεδο.</7873967803e33145ed7c7b12b449f06d>
+		<9de60539c8fcd3f2d101091964ea8996>Το παιχνίδι αρχίζει όταν όλοι οι παίκτες που είναι έτοιμη.</9de60539c8fcd3f2d101091964ea8996>
+		<c73fcc1743ee619966d5896ef7905e3c>Game Over, ο άνθρωπος!</c73fcc1743ee619966d5896ef7905e3c>
+		<899bae404019db35934245546d5f4c5e>@random-taunt</899bae404019db35934245546d5f4c5e>
+		<7580893c0f74d8fac54e270e3f5841f2>Τοποθετήστε το Checkpoint</7580893c0f74d8fac54e270e3f5841f2>
+		<9661e359fa355d7d18df6a1220e424b2>Επαναφορά Τελευταία Αυτόματηαποθήκευση</9661e359fa355d7d18df6a1220e424b2>
+		<050cd61bd3e959282d70dcefa1d75bd4>Respawn στην πόλη</050cd61bd3e959282d70dcefa1d75bd4>
+		<3f704a3095ebc3968f03d631ae4686e4>Τελευταία επίσκεψη:  @last-visited-town-title</3f704a3095ebc3968f03d631ae4686e4>
+		<c47feba51303b2e90083cbad190fa306>Παζλ δωμάτιο Αποτυχία</c47feba51303b2e90083cbad190fa306>
+		<e1222faf307683b15d9cbf9a00030597>Ο χαρακτήρας σας δεν το κάνουν μέσω του [color=special]Παζλ δωμάτιο[/color] ζωντανός!</e1222faf307683b15d9cbf9a00030597>
+		<16a7a4fac26cd7dff903634e7115e62e>Επανάληψη παζλ</16a7a4fac26cd7dff903634e7115e62e>
+		<4deaac3b0996e8dceb26f284724b4d59>Μπορείτε να επαναλάβετε το παζλ όσες φορές θέλετε.</4deaac3b0996e8dceb26f284724b4d59>
+		<6702d087098630a52b449fc5e3c19df7>Έξοδος παζλ</6702d087098630a52b449fc5e3c19df7>
+		<5d09d76fa299bffc7e00976f24d38a64>Έξοδος από το [color=dim]Παζλ δωμάτιο[/color] και να επιστρέψετε στο overworld. Μπορείτε [color=dim]επανεξετάσει[/color] Αυτό το παζλ δωμάτιο, ανά πάσα στιγμή.</5d09d76fa299bffc7e00976f24d38a64>
+		<3905091470c79f7044900c6cd50b026a>Επιλέξτε μια δεξιότητα</3905091470c79f7044900c6cd50b026a>
+		<771f41ee3d71459de3f496f46d2a9475>Δεν Ενεργά Δεξιοτήτων</771f41ee3d71459de3f496f46d2a9475>
+		<01db3f5f6a0e85674acb0d7e260ea11e>Δεν έχετε ακόμη ξεκλειδώσει οποιαδήποτε [color=special]ενεργό δεξιότητα[/color] να τοποθετήσει σε αυτή την υποδοχή.</01db3f5f6a0e85674acb0d7e260ea11e>
+		<5ee85654b927608ac9b5813924eccccf>
+			Πίσω
+Επιστροφή στην Δεξιότητες
+		</5ee85654b927608ac9b5813924eccccf>
+		<2995ab05ebb3b37dcb5bbddc8805c789>[color=special]@title[/color]</2995ab05ebb3b37dcb5bbddc8805c789>
+		<06a0e1195d391807788c6c9b38b98992>[color=special]Ειδικά Επιλογή[/color]</06a0e1195d391807788c6c9b38b98992>
+		<b3df8d8edb730044e0e5723030cd6bb0>@response-special-phrase</b3df8d8edb730044e0e5723030cd6bb0>
+		<0e9af5f3a82949a1cf538a399468bd9a>[color=special]Μη διαθέσιμο[/color]</0e9af5f3a82949a1cf538a399468bd9a>
+		<e5bb6b0c50e390c07e2266d1ee0dd9ef>@response-error-phrase</e5bb6b0c50e390c07e2266d1ee0dd9ef>
+		<281af30b1a1799d23c2ae80e8f8fae34>[color=dim]Μη διαθέσιμο[/color]</281af30b1a1799d23c2ae80e8f8fae34>
+		<c6ba9d2a20fa9b005c521a57c522f01f>Ιστορικό συναλλαγών</c6ba9d2a20fa9b005c521a57c522f01f>
+		<a98574bf79b95d17416cccc592c0fdb2>Προτίμηση γλώσσας</a98574bf79b95d17416cccc592c0fdb2>
+		<5b916a4103778873b485da5635de5b8b>Επιλέξτε μια γλώσσα:</5b916a4103778873b485da5635de5b8b>
+		<6114b725a8dc5471f73b7cb8cc6fa667>@quest-title</6114b725a8dc5471f73b7cb8cc6fa667>
+		<3537d6357b72eebfe832263425c92add>[color=special]@skill-title[/color]</3537d6357b72eebfe832263425c92add>
+		<88816d718c17ef6784a8fb6a171a8750>Επίπεδο @skill-level</88816d718c17ef6784a8fb6a171a8750>
+		<c2cf9d2479bb131f76de088cfa1982ac>@skill-specs</c2cf9d2479bb131f76de088cfa1982ac>
+		<44056015877d1466a306b4b99046e43a>Επιλέξτε ένα επίπεδο ...</44056015877d1466a306b4b99046e43a>
+		<fc1e83e542d628b911dccfa4851a8c54>Πρόοδος:  @percent-complete</fc1e83e542d628b911dccfa4851a8c54>
+		<2b768eec356d74bd81128432a1adc10b>Αντικαταστήστε Θέση:</2b768eec356d74bd81128432a1adc10b>
+		<11cfa8506d76e1d3eed7a80f979bbdef>Όνομα Avatar</11cfa8506d76e1d3eed7a80f979bbdef>
+		<7d82d8f9d13096c67587270817cc3733>Avatar Χρώματα</7d82d8f9d13096c67587270817cc3733>
+		<f5d6040ed78ca86ddc73296a49b18510>Αποθήκευση αλλαγών</f5d6040ed78ca86ddc73296a49b18510>
+		<969a06055eaf8f53b28f937af7580faa>
+			[color=special]Νέα Quest Προστέθηκε[/color]
+@quest-title
+		</969a06055eaf8f53b28f937af7580faa>
+		<445eccd2f45d70b903abc6704c1de00d>[color=normal]Λόμπι Μέλη[/color]</445eccd2f45d70b903abc6704c1de00d>
+		<f677a85253b0957214ec24048fa7e691>[color=normal]Ψήφους υπέρ, Μεταφορά:  [color=special]@votes[/color][/color]</f677a85253b0957214ec24048fa7e691>
+		<59c31a136b898ce826a254cc0e738a2e>Συσκευή Βρέθηκαν: 0</59c31a136b898ce826a254cc0e738a2e>
+		<56c0282e23332f5e419bfe17ba8385e6>Δεν υπάρχει διαθέσιμη συσκευή</56c0282e23332f5e419bfe17ba8385e6>
+		<18b16583e78237f8991fa04c8bd2bd9c>[color=normal]Επιλογές Υπολογιστών[/color]</18b16583e78237f8991fa04c8bd2bd9c>
+		<a2f78b781e146b025891ff51b2048ebb>@back-button-text</a2f78b781e146b025891ff51b2048ebb>
+		<1b4e0611c9ae712f0eae6f0b7ed5d22c>@header-text</1b4e0611c9ae712f0eae6f0b7ed5d22c>
+		<2415924daa3e49cbc3d9dcdc9b232362>[color=normal]@responses-header-text[/color]</2415924daa3e49cbc3d9dcdc9b232362>
+		<feb6958036c6ce9d74856aff550650c4>[color=normal]TTY: // Αρχική /@player-name/[/color]</feb6958036c6ce9d74856aff550650c4>
+		<bbf5fd2dd4007c92b271dbd15b099554>[color=special]Επίπεδο ολοκληρώθηκε![/color]</bbf5fd2dd4007c92b271dbd15b099554>
+		<ea6152d3f1e1d1603d7eb7d83b5d04f8>[color=special]@item-title[/color]</ea6152d3f1e1d1603d7eb7d83b5d04f8>
+		<14f03e39e56e9e3110de3212db213051>
+			Αυτή είναι μια απλή συμβουλή εργαλείου.
+Σας αρέσει [color=special]@item-title[/color];
+		</14f03e39e56e9e3110de3212db213051>
+		<7994707177d08605a93128f6fbd20a32>Είστε σίγουροι ότι θέλετε να επιλέξετε [color=special]@item-title[/color] και να επιστρέψει στην [color=special]@overworld-title[/color];</7994707177d08605a93128f6fbd20a32>
+		<169ed0d5f2a936a91db04a0172af2593>Πάρτε Θέση</169ed0d5f2a936a91db04a0172af2593>
+		<7593f489994e86fd446c315df85a26f0>Να θυμάστε ότι μπορείτε να επιλέξετε μόνο ένα βραβείο.</7593f489994e86fd446c315df85a26f0>
+		<30c578f7d78a54aab736c719edbf6c0f>Επανεξετάστε ...</30c578f7d78a54aab736c719edbf6c0f>
+		<2a5f0bacafbaeb84895ba52193688efb>Επιστροφή στο μενού επιλογής βραβείο.</2a5f0bacafbaeb84895ba52193688efb>
+		<dc429ef6bc2baac37c2b942cbaf76b82>Φήμη μου</dc429ef6bc2baac37c2b942cbaf76b82>
+		<8d4012862f2b0640c69bab9b224723e2>[color=dim]@keyboard-translations.left[/color]</8d4012862f2b0640c69bab9b224723e2>
+		<fb187fbc0b088bb5c23b500a96c08ea6>[color=dim]@keyboard-translations.right[/color]</fb187fbc0b088bb5c23b500a96c08ea6>
+		<1c5af90b135ce60b8593f7e4f0a6b449>[color=dim]@keyboard-translations.up[/color]</1c5af90b135ce60b8593f7e4f0a6b449>
+		<3e2ef21c22bcc4c3dc950395bf6a2415>[color=dim]@keyboard-translations.down[/color]</3e2ef21c22bcc4c3dc950395bf6a2415>
+		<fa850589163944f904b59fc824e98345>[color=dim]@keyboard-translations.dig-left[/color]</fa850589163944f904b59fc824e98345>
+		<68a65b6239c47f033327b5dafd503c2f>[color=dim]@keyboard-translations.dig-right[/color]</68a65b6239c47f033327b5dafd503c2f>
+		<2e39098f7c535b40e18a81ac2aff4495>[color=dim]@keyboard-translations.bomb[/color]</2e39098f7c535b40e18a81ac2aff4495>
+		<32095ce79d3681b9e4d66474d2cd1053>[color=dim]@keyboard-translations.suicide[/color]</32095ce79d3681b9e4d66474d2cd1053>
+		<b504ed62ccc7a6d6df9274d24c74684f>[color=dim]@keyboard-translations.interact[/color]</b504ed62ccc7a6d6df9274d24c74684f>
+		<ad7dc8dab2d74a6005f6e98260880e7b>[color=dim]@keyboard-translations.minimap[/color]</ad7dc8dab2d74a6005f6e98260880e7b>
+		<702fcb669c279eba6477cd806db79fcb>[color=dim]@keyboard-translations.net-chat[/color]</702fcb669c279eba6477cd806db79fcb>
+		<962df8f268828db777dad0736cd2c919>[color=dim]@keyboard-translations.skill1[/color]</962df8f268828db777dad0736cd2c919>
+		<90925be141addad8401c2e07cada287b>[color=dim]@keyboard-translations.skill2[/color]</90925be141addad8401c2e07cada287b>
+		<840479114a823208fb7e7cc04ee4b663>Κόστος:  [color=unaffordable]@item-cost[/color] χρυσός</840479114a823208fb7e7cc04ee4b663>
+		<6af7c5b0df21df9fa46cb68889dba288>Δεν έχετε αρκετό χρυσό για να αγοράσετε αυτό το στοιχείο.</6af7c5b0df21df9fa46cb68889dba288>
+		<0bcd48681646c1b5953052a9f782464a>Κόστος:  [color=affordable]@item-cost[/color] χρυσός</0bcd48681646c1b5953052a9f782464a>
+		<fe4e8660aa2e8db49dcf75d5968c9b55>[color=special]ανεβαίνω επίπεδο![/color]</fe4e8660aa2e8db49dcf75d5968c9b55>
+		<abec7944416b874487c6da6d730ca769>Το επίπεδο του χαρακτήρα:  [color=title]@character-level[/color]</abec7944416b874487c6da6d730ca769>
+		<15d21efabcad166dbd5a17f1698e2657>Ικανότητα Πόντοι:  [color=title]@skill-points[/color]</15d21efabcad166dbd5a17f1698e2657>
+		<fcc02117f1e5a3ca5ea184c618a6cb77>Μενού του παιχνιδιού</fcc02117f1e5a3ca5ea184c618a6cb77>
+		<1a87d8ae53f259644aad23374875641b>Συνέχεια Επίπεδο</1a87d8ae53f259644aad23374875641b>
+		<3e7a7859a2c99af5b969652207573ccb>Έξοδος από το παιχνίδι και να επιστρέψετε στην οθόνη επιλογής επίπεδο.</3e7a7859a2c99af5b969652207573ccb>
+		<337eb8d1a4c9c968ba133d2ad4d1e3d3>Εξοπλισμένο Slots Θέση</337eb8d1a4c9c968ba133d2ad4d1e3d3>
+		<ca4f5ff85a3129de125a96e7bbe38269>Διαθέσιμο:  @slots</ca4f5ff85a3129de125a96e7bbe38269>
+		<4d0400304485a3be267284bcc3921d6e>Το υλικό μου</4d0400304485a3be267284bcc3921d6e>
+		<935b8950c7c9e2c15e38de624018bab2>Count:  @count</935b8950c7c9e2c15e38de624018bab2>
+		<3ced175af2ca835bee156c64dc616051>Ανεπαρκή Πόντοι</3ced175af2ca835bee156c64dc616051>
+		<37f452cc998aaa46ab18b522a3483737>Χρειάζεται τουλάχιστον [color=special]@required-skill-points[/color] σημείο δεξιοτήτων@necessary-skill-points-pluralizer για να ξεκλειδώσετε [color=special]@skill-title  @skill-level[/color].</37f452cc998aaa46ab18b522a3483737>
+		<d8f35631068e9adaf9a570fc5335aa9b>Αυτήν τη στιγμή έχετε [color=special]@skill-points-available[/color] σημείο δεξιοτήτων@pluralizer.</d8f35631068e9adaf9a570fc5335aa9b>
+		<86ba0c45ad17db9b4371069e27df4a99>[color=normal]Απλή Terminal[/color]</86ba0c45ad17db9b4371069e27df4a99>
+		<bdea74dfb8dc680111c6889873f6c249>[color=title]@category-title[/color]</bdea74dfb8dc680111c6889873f6c249>
+		<297e248be8c3879fee4d5eed9ef165e6>[color=category]@skill-title[/color]</297e248be8c3879fee4d5eed9ef165e6>
+		<b95836ac13adec87e9a60d882df36e84>Ρύθμιση ορίου Player</b95836ac13adec87e9a60d882df36e84>
+		<387353ab7c15bb44bd3f7fd581cd522d>Επιλέξτε Δεξιοτήτων</387353ab7c15bb44bd3f7fd581cd522d>
+		<6642f414fd92d1cfeec2165afc019e56>
+			Επιλέξτε μια ικανότητα να θέσει σε [color=dim]σχισμή @slot[/color].
+
+Θα ενεργοποιήσει αυτήν την ικανότητα πατώντας [color=special]@button[/color].
+		</6642f414fd92d1cfeec2165afc019e56>
+		<f75f4fe37cf562e5df5839f1d44cd9b4>Καμία ικανότητα Διαθέσιμο</f75f4fe37cf562e5df5839f1d44cd9b4>
+		<85d938239f9bf854bd503c6d4bb0f0d1>Δεν έχετε ακόμη ξεκλειδώσει οποιαδήποτε ενεργή ικανότητα να εκχωρήσετε σε αυτήν την υποδοχή.</85d938239f9bf854bd503c6d4bb0f0d1>
+		<ed3c6de95f334edc0d38ed0100a3a6a4>Co-op Μενού</ed3c6de95f334edc0d38ed0100a3a6a4>
+		<2f4287481c2bf89cd468e988e0a14fd1>Επιστροφή στη δράση</2f4287481c2bf89cd468e988e0a14fd1>
+		<42ae25231906c83927831e0ef7c317ac>Αποσύνδεση</42ae25231906c83927831e0ef7c317ac>
+		<4608da8f0dcffb70e30ef92a3f56f8b8>Αφήστε συνεδρίας</4608da8f0dcffb70e30ef92a3f56f8b8>
+		<768d3982cb02619df2ba4c9cc2003dad>Αποσύνδεση από το παιχνίδι;</768d3982cb02619df2ba4c9cc2003dad>
+		<16341c36a0005565541b4a7d49abcaa8>
+			[color=special]Quest Ολοκληρώθηκε[/color]
+@quest-title
+		</16341c36a0005565541b4a7d49abcaa8>
+		<62f9dcd8c2e8dcb8c650609a3581760d>Επιλέξτε ιστορία σας ...</62f9dcd8c2e8dcb8c650609a3581760d>
+		<bf0f2bd92cb83d56974d5f7476862e26>λειτουργία ενός παίκτη</bf0f2bd92cb83d56974d5f7476862e26>
+		<062b51da3112d6b127e91ebfbda9ebfb>Λειτουργία συνεταιρισμός</062b51da3112d6b127e91ebfbda9ebfb>
+		<004f257cdc9f51ef2c6a38f8ab70d399>Παζλ δωμάτιο</004f257cdc9f51ef2c6a38f8ab70d399>
+		<ae37e98e240570d17765bdf2b814eb27>@overview</ae37e98e240570d17765bdf2b814eb27>
+		<5579ec3baf51fada514d4a870e1e03bc>Ξεκινήστε παζλ</5579ec3baf51fada514d4a870e1e03bc>
+		<2ddc893bd498612d3a007e3dd919663e>Συλλέξτε όλα τα χρυσά</2ddc893bd498612d3a007e3dd919663e>
+		<11bfdf3182faedd9e5a2d536366d4725>@tooltip-text</11bfdf3182faedd9e5a2d536366d4725>
+		<f1b48d501e9d63d02677d34ada50400b>Αφήστε παζλ</f1b48d501e9d63d02677d34ada50400b>
+		<bf47676a49d358d4645dda30a407ea06>@language-title</bf47676a49d358d4645dda30a407ea06>
+		<43cb6ee1bdea77a4ddf1def03cedb1bd>[color=special]Νέος @skill-title Διαθέσιμη αναβάθμιση![/color]</43cb6ee1bdea77a4ddf1def03cedb1bd>
+		<72c1266f8773ca37694cd54e0d99b23f>Μπορείτε τώρα να αναβαθμίσετε σας [color=title]@skill-title[/color] ικανότητα για να [color=title]Επίπεδο @level[/color]!</72c1266f8773ca37694cd54e0d99b23f>
+		<6da472d589c81980d3bf49ecd7bcc63e>[color=title]Συνέχιση Παιχνιδιού[/color]</6da472d589c81980d3bf49ecd7bcc63e>
+		<ab27aed1f29483e7a23dd2822dad94f2>Μπορείτε επίσης να πατήσετε [color=dim]Απόδραση[/color] για να συνεχίσετε το παιχνίδι σας.</ab27aed1f29483e7a23dd2822dad94f2>
+		<311b793c13d698d2b9ef9342b45708d0>[color=title]Αφήστε το παιχνίδι[/color]</311b793c13d698d2b9ef9342b45708d0>
+		<91b5f96ff2750460a95fb51656484008>Επιστροφή στην [color=dim]Κεντρικό Μενού[/color] οθόνη.</91b5f96ff2750460a95fb51656484008>
+		<8a38df1fda96e1f748073f4565546610>Επιστροφή στην [color=dim]Κεντρικό Μενού[/color].</8a38df1fda96e1f748073f4565546610>
+		<0d7ae38ed0ab5a9ad91056ab6676499a>Πρόκληση δωμάτιο</0d7ae38ed0ab5a9ad91056ab6676499a>
+		<d965652ffe2b1674d4aac048ea6bf07a>Ξεκινήστε Κύμα</d965652ffe2b1674d4aac048ea6bf07a>
+		<5fd18b48aa387516d1d3a714fb7a6289>Κύμα @current-wave</5fd18b48aa387516d1d3a714fb7a6289>
+		<097298dc857de9c69a2cf8ebea969ee1>@wave-goal</097298dc857de9c69a2cf8ebea969ee1>
+		<7ab846887eb2dee682b717aeb661d1a7>Αφήστε Πρόκληση Δωμάτιο</7ab846887eb2dee682b717aeb661d1a7>
+		<40035b2bd00a9128064136f9335e9eae>Μπορείτε να επιστρέψετε στην επαναλάβετε αυτή την πρόκληση Δωμάτιο όσες φορές θέλετε.</40035b2bd00a9128064136f9335e9eae>
+		<b8726e2eade75513f8f2535d21dd633e>
+			@title
+@date
+		</b8726e2eade75513f8f2535d21dd633e>
+		<7b715146df62fabbc4354be82c8ef0f9>
+			Το επίπεδο του χαρακτήρα:  [color=special]@character-level[/color]
+Χρυσό Συγκεντρώθηκαν:  [color=title]@gold-collected[/color]
+		</7b715146df62fabbc4354be82c8ef0f9>
+		<547c01cd2881b8a5f458c2a5e8b4ea2e>Παιχνίδι εκτός σας [color=special]@title[/color] επιτυχώς αποθηκευμένα στο σκληρό δίσκο.</547c01cd2881b8a5f458c2a5e8b4ea2e>
+		<7f6a511bdbd1c835d56c33ac955a2b44>Επιλέξτε Προβολή</7f6a511bdbd1c835d56c33ac955a2b44>
+		<64ec62de99148ac32179bec9a131e102>Χρυσό Τοποθεσίες</64ec62de99148ac32179bec9a131e102>
+		<f9a6179ff0f44e8542a241fc84e5728e>Εμφάνιση όλων των γνωστών χάρτες, τονίζοντας εκείνα που έχουν το χρυσό που απομένουν.</f9a6179ff0f44e8542a241fc84e5728e>
+		<91ac8fd8408baad32cf98bc6f75d3761>Ελλιπής παζλ Δωμάτια</91ac8fd8408baad32cf98bc6f75d3761>
+		<4c6f6bef74aae7857d96e6609fdb3f73>Δείτε την τοποθεσία του κάθε γνωστή, ημιτελές δωμάτιο παζλ.</4c6f6bef74aae7857d96e6609fdb3f73>
+		<71fc0758b1e986eedde8efd3bf61cf69>Ελλιπής Πρόκληση Δωμάτια</71fc0758b1e986eedde8efd3bf61cf69>
+		<e982568217864cb98ef7a6ce90c345ab>Δείτε την τοποθεσία του κάθε γνωστή, ημιτελές δωμάτιο πρόκληση.</e982568217864cb98ef7a6ce90c345ab>
+		<a2b4399c11166a48253343e004f72da5>Είστε σίγουροι ότι θέλετε να επαναφέρετε τους ελέγχους για σας [color=special]πληκτρολόγιο[/color] στις αρχικές προεπιλεγμένες ρυθμίσεις;</a2b4399c11166a48253343e004f72da5>
+		<73e4c72f1f52b08afd97a0145e8b9665>[color=special]Προεπιλογή Gamepad Enabled[/color]</73e4c72f1f52b08afd97a0145e8b9665>
+		<3ab21e7cae2b38121de4131477998e8d>@current-device</3ab21e7cae2b38121de4131477998e8d>
+		<e413547444fb9d326448a6d7213499bb>@last-device Δεν βρέθηκε ...</e413547444fb9d326448a6d7213499bb>
+		<fd3f42be8c77b6d59badeced4a9c15d1>@skill-manual</fd3f42be8c77b6d59badeced4a9c15d1>
+		<fcee0cbe1f24316b497bb549e5f19b81>Πρέσα [color=special]@skill-key[/color] να χρησιμοποιήσουν</fcee0cbe1f24316b497bb549e5f19b81>
+		<69dca7ea302077c157bf66c440dbc5ba>Ξεκλειδώστε περισσότερα [color=special]ενεργές δεξιότητες[/color] να χρησιμοποιείτε αυτήν την υποδοχή!</69dca7ea302077c157bf66c440dbc5ba>
+		<70e2d602be64f4802b831e3917555196>Επιλεγμένα Κλειδί</70e2d602be64f4802b831e3917555196>
+		<18a533c3672fc1b36fca422fff41b3d4>@keyboard-translations.left</18a533c3672fc1b36fca422fff41b3d4>
+		<b5003bc3da361401cf9c4d4aab1a0aff>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να μετακινηθείτε προς τα αριστερά σας.[/color]</b5003bc3da361401cf9c4d4aab1a0aff>
+		<5212231bc6c2371938ae4772bf1b3237>@keyboard-translations.right</5212231bc6c2371938ae4772bf1b3237>
+		<6a177d683328a2209cf671e0247542f2>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να μετακινηθείτε προς τα δεξιά σας.[/color]</6a177d683328a2209cf671e0247542f2>
+		<e7df305d14931789a9fa63a95174e1f8>@keyboard-translations.up</e7df305d14931789a9fa63a95174e1f8>
+		<5d74f2efda77da4115ed6fb3de3940e1>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να ανέβει σκάλες.[/color]</5d74f2efda77da4115ed6fb3de3940e1>
+		<ef2d18a24e9984d145d245506825f225>@keyboard-translations.down</ef2d18a24e9984d145d245506825f225>
+		<50fd09e8aecc51ff42dc654b2cdafbb1>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να κατέβει σκάλες και να πέσει από την γέφυρα αναρρίχησης.[/color]</50fd09e8aecc51ff42dc654b2cdafbb1>
+		<b8e5fbd47f37f87670bc2f503d3d42bb>@keyboard-translations.dig-left</b8e5fbd47f37f87670bc2f503d3d42bb>
+		<37fbe90496550c0d15370688f90f3be4>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να σκάψουν στα αριστερά σας ανά πάσα στιγμή.[/color]</37fbe90496550c0d15370688f90f3be4>
+		<cef9c0442abc274478c0fcecb69f606d>@keyboard-translations.dig-right</cef9c0442abc274478c0fcecb69f606d>
+		<bfd67fa6af5061ef953f5f599ad2410b>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να σκάψουν στα δεξιά σας ανά πάσα στιγμή.[/color]</bfd67fa6af5061ef953f5f599ad2410b>
+		<82805802e2cbb0f0c7f68a99b96cb9e2>@keyboard-translations.bomb</82805802e2cbb0f0c7f68a99b96cb9e2>
+		<824e757e93c78a33a0312c77a69d6916>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να πραγματοποιήσετε μια βόμβα στην κατεύθυνση που αντιμετωπίζουν.[/color]</824e757e93c78a33a0312c77a69d6916>
+		<cda356e7e93a7f38217e884431516996>@keyboard-translations.suicide</cda356e7e93a7f38217e884431516996>
+		<21a47c8a81efffd6e1f8e3d672d76bbd>[color=dim]Κρατήστε αυτό το πλήκτρο στιγμιαία για να σκοτώσει τον χαρακτήρα σας, αν έχετε κολλήσει![/color]</21a47c8a81efffd6e1f8e3d672d76bbd>
+		<18340ea7a440c3f722b353b3995eb6c0>@keyboard-translations.interact</18340ea7a440c3f722b353b3995eb6c0>
+		<93b19aa65b0043a10a5f185dcd17c7da>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να μιλήσετε για NPCs και να κάνει χρήση των μέσων.[/color]</93b19aa65b0043a10a5f185dcd17c7da>
+		<1cd371c3592f3b356e59d715a3152c5f>@keyboard-translations.minimap</1cd371c3592f3b356e59d715a3152c5f>
+		<7f6d4466da96eb87042fa7b7bd08dd3e>[color=dim]Κρατήστε αυτό το πλήκτρο για να εμφανίσετε μια επίθεση.[/color]</7f6d4466da96eb87042fa7b7bd08dd3e>
+		<ac902e119a1bece5cd52d05c9199340a>@keyboard-translations.net-chat</ac902e119a1bece5cd52d05c9199340a>
+		<3fccc8f74b583c5f4ada341134007ddb>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να ενεργοποιήσετε την κονσόλα συνομιλίας κατά τη διάρκεια co-op παιχνίδι.[/color]</3fccc8f74b583c5f4ada341134007ddb>
+		<2d9b77e3598b658c4ef9de5309eaffdf>@keyboard-translations.skill1</2d9b77e3598b658c4ef9de5309eaffdf>
+		<c6197a7525c1f064259b8c625307cd01>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να ενεργοποιήσετε την εμπειρία στην υποδοχή 1.[/color]</c6197a7525c1f064259b8c625307cd01>
+		<60bcbc11925ba93a1742e190fb64a8ab>@keyboard-translations.skill2</60bcbc11925ba93a1742e190fb64a8ab>
+		<8684bf3f68ccf70195e517120e289597>[color=dim]Χρησιμοποιήστε αυτό το πλήκτρο για να ενεργοποιήσετε την εμπειρία στην υποδοχή 2.[/color]</8684bf3f68ccf70195e517120e289597>
+		<34b563856628aa804d6475fa9afa4ec9>[color=special]Νέα Skill Tree ξεκλείδωτη![/color]</34b563856628aa804d6475fa9afa4ec9>
+		<67568637719e419dbe8395556d068324>Τώρα μπορείτε να επιλέξετε είτε [color=title]@skill-title1[/color] ή [color=title]@skill-title2[/color] από το [color=title]@category-title[/color] δέντρο δεξιοτήτων.</67568637719e419dbe8395556d068324>
+		<2305d1f5a721dbc7ecdbbadd7a0e39f7>Υποδοχής ένα Co-Op Συνεδρία ...</2305d1f5a721dbc7ecdbbadd7a0e39f7>
+		<f9f0512e0f12390ef9f34cfafe784201>ετοιμάζεται να ξεκινήσει</f9f0512e0f12390ef9f34cfafe784201>
+		<dc647eb65e6711e155375218212b3964>Κωδικός</dc647eb65e6711e155375218212b3964>
+		<274b68192b056e268f128ff63bfcd4a4>N / A</274b68192b056e268f128ff63bfcd4a4>
+		<929c3cde7c0c28cf249221eded6e808d>Προαιρετικό. Εάν ορίσετε έναν κωδικό πρόσβασης για τη σύνοδο αυτή, οι άλλοι παίκτες θα πρέπει να γνωρίζουν τον κωδικό πρόσβασης για να συνδεθείτε.</929c3cde7c0c28cf249221eded6e808d>
+		<3fcece1c077bb4f4cea2603bddc42203>Όριο παικτών</3fcece1c077bb4f4cea2603bddc42203>
+		<766f14668be2e0ad64c6f11135b7cd05>@max-players Παίκτες</766f14668be2e0ad64c6f11135b7cd05>
+		<04cd26f60d8c4008e54478d1b07ab302>Μπορείτε να τοποθετήσετε ένα όριο στον αριθμό των παικτών που μπορούν να συνδεθούν με το παιχνίδι σας.</04cd26f60d8c4008e54478d1b07ab302>
+		<47810729c36f95abcd01f210295a8b2c>Ξεκινήστε το παιχνίδι</47810729c36f95abcd01f210295a8b2c>
+		<dedff2788e0b10e3b14465cd5e2f0cf9>Ξεκινήστε το νέο κύκλο παιχνιδιού.</dedff2788e0b10e3b14465cd5e2f0cf9>
+		<f1c0c906df1c7466950a02badfe79cd1>[color=special]@player-name[/color]</f1c0c906df1c7466950a02badfe79cd1>
+		<f4a5c75372e464b048c461fae1138178>@player-status</f4a5c75372e464b048c461fae1138178>
+		<a0a6c2ad4b36daf73835a5b787d3db58>Μια Lode Runner ιστορία</a0a6c2ad4b36daf73835a5b787d3db58>
+		<d93686566e966ab6a58414040c6ffb8d>γραμμένο από τον Mike Doty</d93686566e966ab6a58414040c6ffb8d>
+		<967f1afa6dbc991ef9f0943853df4cd3>Συντάχθηκε απο τον Mike Doty</967f1afa6dbc991ef9f0943853df4cd3>
+		<a63d1381fc3c4dd211a7e2b43f020f0e>[color=title]Το υλικό μου[/color]</a63d1381fc3c4dd211a7e2b43f020f0e>
+		<d7b7c5db42f530611faed858835d19b4>Περιηγηθείτε στο [color=dim]αντικειμένων[/color] έχετε συλλέξει και [color=dim]εξοπλίσει[/color] αυτά που ταιριάζουν καλύτερα στο στυλ παιχνιδιού σας.</d7b7c5db42f530611faed858835d19b4>
+		<993e20ca58028f9a6cc876f46199db14>Περιηγηθείτε και να εξοπλίσει σας [color=dim]αντικειμένων[/color].</993e20ca58028f9a6cc876f46199db14>
+		<4ebd9a4355ddb9da4e0a5d6064fdc75e>[color=title]Τρέχουσες Αναζητήσεις[/color]</4ebd9a4355ddb9da4e0a5d6064fdc75e>
+		<0c3312344acffa91945f0a63009446c5>Προβολή οποιοδήποτε [color=dim]ρεύμα[/color] αναζήτηση, μαζί με οποιαδήποτε αναζήτηση [color=dim]ενημέρωση[/color] έχετε συναντήσει.</0c3312344acffa91945f0a63009446c5>
+		<b85779230bf34510586231cf11c629df>Δείτε μια λίστα [color=dim]ενεργός[/color] αποστολές.</b85779230bf34510586231cf11c629df>
+		<487bda843d1500a2984b485da3d8c05b>[color=title]Φήμη μου[/color]</487bda843d1500a2984b485da3d8c05b>
+		<939d25f655210242af2a1f8eb6345a44>Εξετάστε μια ιστορία για το πώς αντιμετωπίζονται [color=dim]άνθρωποι[/color] και τους [color=dim]αποστολές[/color], Καθορίζει τον τρόπο οι άνθρωποι του [color=special]Lelandria[/color] τη στιγμή σκέφτομαι σας.</939d25f655210242af2a1f8eb6345a44>
+		<fc54a54fcc607fffb226ce0ca719fd6b>Διαβάστε σχετικά με την τρέχουσα φήμη σας σε [color=special]Lelandria[/color].</fc54a54fcc607fffb226ce0ca719fd6b>
+		<0a9f6b2efe9eb4b4850bf2493eb436e2>[color=title]Ολοκληρώθηκε Αναζητήσεις[/color]</0a9f6b2efe9eb4b4850bf2493eb436e2>
+		<f01e92c61ceaa168e837d55941431ecf>Ρίξτε μια [color=dim]ιστορία[/color] από όλες τις αναζητήσεις που έχετε ολοκληρώσει (με επιτυχία ή όχι).</f01e92c61ceaa168e837d55941431ecf>
+		<61b525238d98341f8d2e50b10ecd9848>Δείτε τις αναζητήσεις που έχετε ήδη [color=special]τελικού[/color].</61b525238d98341f8d2e50b10ecd9848>
+		<fc368d8b00580f79f54a4910ef235b77>@quest-description</fc368d8b00580f79f54a4910ef235b77>
+		<ffe9dde679d5832eb6c513376af07d2a>@quest-xp</ffe9dde679d5832eb6c513376af07d2a>
+		<9d9cada9fbf325b38c42d298338cdd61>Puzzle Μενού Δωμάτιο</9d9cada9fbf325b38c42d298338cdd61>
+		<0202cbfc12ca678be8f933073ce0d628>Συνέχεια παζλ</0202cbfc12ca678be8f933073ce0d628>
+		<0c38755f01d76a116d11ef16958196c4>
+			Βοήθεια
+[color=title]Puzzle Δωμάτιο Συχνές ερωτήσεις[/color]
+		</0c38755f01d76a116d11ef16958196c4>
+		<45d29cabf88acca3e6b2550247a70416>Έξοδος από το [color=title]Παζλ δωμάτιο[/color] και να επιστρέψετε στο overworld. Μπορείτε [color=title]επανεξετάσει[/color] Αυτό το παζλ δωμάτιο, ανά πάσα στιγμή.</45d29cabf88acca3e6b2550247a70416>
+		<c5e479a888a1548a9ca8822e78bb883f>[color=special]@paragraph-text[/color]</c5e479a888a1548a9ca8822e78bb883f>
+		<72facbbb9f3109d61d10b4e51fbf8ef0>@paragraph-text</72facbbb9f3109d61d10b4e51fbf8ef0>
+		<7b120e336ddd8e06e223313e6f3b5d0c>[color=dim]@paragraph-text[/color]</7b120e336ddd8e06e223313e6f3b5d0c>
+		<c8505ab3d7a6a7e9d39f84abffac89ed>Επιβεβαίωση Αγορά</c8505ab3d7a6a7e9d39f84abffac89ed>
+		<843c1e73115acd7e0f721d764d5da8d3>Είστε σίγουροι ότι θέλετε να αγοράσετε [color=special]@item-title[/color] για [color=special]@item-cost χρυσός[/color];</843c1e73115acd7e0f721d764d5da8d3>
+		<5c094bc8da690150f5b1c588763457aa>Αγορά Αντικείμενο</5c094bc8da690150f5b1c588763457aa>
+		<4c3efc583affba8bb5ad418c9ab527c6>Όχι ακόμη</4c3efc583affba8bb5ad418c9ab527c6>
+		<25e22f89e97761feee15c3ab82b53d59>[color=special]Νέα δεξιότητα Κεκτημένα![/color]</25e22f89e97761feee15c3ab82b53d59>
+	</ui>
+</strings>
+

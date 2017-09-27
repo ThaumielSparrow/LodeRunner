@@ -1,0 +1,83 @@
+<params>
+	<param key = 'layer' value = '2' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '2' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '14' y = '5' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '6' y = '12' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '8' y = '6' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '13' y = '12' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '9' y = '17' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '9' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '16' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+</entities>
+<triggers>
+</triggers>
+<scripts />

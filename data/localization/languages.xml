@@ -1,0 +1,102 @@
+<languages>
+
+	<language>
+		<name>en</name>
+		<title>English</title>
+		<file />
+		<layout>default</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>es</name>
+		<title>Spanish</title>
+		<file>data/localization/es.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>fr</name>
+		<title>French</title>
+		<file>data/localization/fr.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>ru</name>
+		<title>Russian</title>
+		<file>data/localization/ru.xml</file>
+		<layout>other</layout>
+		<font-size>16</font-size>
+		<font>test.otf</font>
+	</language>
+
+	<language>
+		<name>it</name>
+		<title>Italian</title>
+		<file>data/localization/it.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>nl</name>
+		<title>Dutch</title>
+		<file>data/localization/nl.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>pt</name>
+		<title>Portuguese</title>
+		<file>data/localization/pt.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>sv</name>
+		<title>Swedish</title>
+		<file>data/localization/sv.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>fi</name>
+		<title>Finnish</title>
+		<file>data/localization/fi.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>no</name>
+		<title>Norwegian</title>
+		<file>data/localization/no.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+	<language>
+		<name>el</name>
+		<title>Greek</title>
+		<file>data/localization/el.xml</file>
+		<layout>other</layout>
+		<font-size>18</font-size>
+		<font>jupiterc.ttf</font>
+	</language>
+
+</languages>

@@ -1,0 +1,376 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'challenge' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 152 116 117 153 117 117 154 0 0 0 0 152 117 117 154 0 0 
+			0 0 0 154 0 0 154 0 99 119 51 119 154 49 119 97 0 154 0 0 
+			0 0 219 152 52 0 152 0 98 98 98 96 153 99 97 0 0 153 0 0 
+			0 0 0 152 118 116 153 0 0 97 0 0 152 0 0 0 0 154 0 0 
+			0 0 0 154 0 96 152 51 0 0 0 0 153 0 0 0 0 153 0 0 
+			0 0 0 152 0 0 153 116 117 154 117 50 116 117 152 216 153 117 0 0 
+			0 0 0 152 0 0 153 0 96 154 0 118 99 0 154 0 154 0 0 0 
+			0 0 0 153 0 0 154 0 0 152 216 218 216 153 118 0 153 0 0 0 
+			0 0 0 153 0 0 152 0 0 152 0 0 0 153 0 0 154 0 0 0 
+			0 0 117 118 153 116 117 50 118 154 0 0 153 117 117 49 153 0 0 0 
+			0 0 0 99 153 218 219 216 216 152 218 216 153 216 218 218 153 117 0 0 
+			0 0 0 96 117 0 0 0 0 0 0 0 0 0 0 118 118 96 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 302 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 300 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 302 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '9' y = '1' genus = '2' ai-behavior = '1' name = 'player1' class = '' nick = '' title = '' />
+	<entity x = '4' y = '0' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '8' y = '0' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '13' y = '0' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '16' y = '0' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '4' y = '7' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '17' y = '9' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '2' y = '2' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '4' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '13' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '5' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '2' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '15' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '16' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '17' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '11' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '8' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '5' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'box1' x = '10' y = '3' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box1.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box2' x = '13' y = '3' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box2.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box3' x = '4' y = '4' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box3.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box4' x = '7' y = '6' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box4.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box5' x = '11' y = '7' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box5.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box6' x = '7' y = '11' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box6.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'box7' x = '15' y = '11' width = '1' height = '2' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'box7.dig' />
+		</exit>
+	</trigger>
+	<trigger name = 'origin' x = '7' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'on-arrival'>
+        if ( session("core.challenge.wave").get() == 1 ) { map().runScript("wave1:begin"); }
+        elif ( session("core.challenge.wave").get() == 2 ) { map().runScript("wave2:begin"); }
+        elif ( session("core.challenge.wave").get() == 3 ) { map().runScript("wave3:begin"); }
+        else { map().runScript("wave1:begin"); }
+    </script>
+	<script name = 'box1.dig'>map().digArea("box1", {"purge": True});</script>
+	<script name = 'box2.dig'>map().digArea("box2", {"purge": True});</script>
+	<script name = 'box3.dig'>map().digArea("box3", {"purge": True});</script>
+	<script name = 'box4.dig'>map().digArea("box4", {"purge": True});</script>
+	<script name = 'box5.dig'>map().digArea("box5", {"purge": True});</script>
+	<script name = 'box6.dig'>map().digArea("box6", {"purge": True});</script>
+	<script name = 'box7.dig'>map().digArea("box7", {"purge": True});</script>
+	<script name = 'wave1:begin'>
+		map().executeScript("wave1:cleanup");
+
+map()
+            .enableAllGold() // bring all gold online
+
+            .setParams({
+                "overview": "Without access to your mining laser, collect all of the gold on the level.",
+                "wave-goal": "If you walk across a black-and-white tile, it will disappear permanently for the rest of this wave.  Enemies will [color=special]not[/color] collect gold during this wave!"
+            })
+
+            .setWaveParams({
+                "on-fail": "wave:fail",
+                "on-complete": "wave1:complete",
+                "enemies-collect-gold": 0           // too annoying otherwise
+            })
+
+            // Player cannot dig!
+            .setWaveAllowances({
+                "digs": 0
+            });
+
+        // Player must collect all gold
+        map().setWaveRequirement(
+            "gold",
+            map().countGold()
+        );
+
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // 1 respawner
+        map().spawnRandomEnemies(
+            1,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave1:cleanup'>
+		// Clear timer(s)
+        // No timer on this wave
+
+        // End wave
+        map().endWave();
+	</script>
+	<script name = 'wave1:complete'>
+		map().executeScript("wave1:cleanup");
+
+        // Track that we advanced to the next wave
+        session("core.challenge.wave").increment(1);
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "Prepare for another wave...");
+
+        // Advance to next wave in a moment
+        createTimer({
+            "name": "timerNextWave",
+            "on-complete": "script:wave2:begin",
+            "length": 5,
+            "measure": "seconds"
+        });
+	</script>
+	<script name = 'wave2:begin'>
+		map().executeScript("wave2:cleanup");
+
+        // Params
+        map()
+            .disableAllGold()    // take all gold offline, irrelevant in this wave
+
+            // text labels
+            .setParams({
+                "overview": "Survive for a short period of time against multiple enemies.",
+                "wave-goal": "You must last for [color=special]60 seconds[/color] against up to 4 bad guys, one spawning every 5 seconds.  You will [color=special]not[/color] have access to bombs during this wave."
+            })
+
+            .setWaveParams({
+                "on-complete": "wave2:complete"    // complete wave script
+            });
+
+        // Player must survive for 30 seconds
+        map().setWaveRequirement("survive", 1);
+
+        // Show progress chart / begin new wave
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // Start with 1 respawner
+map().spawnRandomEnemies(
+            1,
+            {
+                "disposable": False
+            }
+        );
+
+        // Add 3 respawners over time
+        createTimer({
+            "name": "timerAddEnemy",
+            "on-complete": "script:wave2:add-enemy",
+            "uses": 3,
+            "length": 5,
+            "measure": "seconds"
+        });
+
+
+        // Survival timer
+        createTimer({
+            "name": "timerSurvive",
+            "on-complete": "script:wave2:complete",
+            "length": 60,
+            "measure": "seconds"
+        });
+
+        // Display timer / status message on screen
+        map()
+            .setWaveParams({
+                "active-timer": "timerSurvive",
+                "active-timer-label": "Survive!"
+            });
+	</script>
+	<script name = 'wave2:add-enemy'>
+		map().spawnRandomEnemies(
+            1,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave2:cleanup'>
+		// Remove timer(s)
+        clearTimer("timerSurvive");
+        clearTimer("timerAddEnemy");
+
+        // End wave
+        map().endWave();
+	</script>
+	<script name = 'wave2:complete'>
+		map().executeScript("wave2:cleanup");
+
+        // Track that we advanced to the next wave
+        session("core.challenge.wave").increment(1);
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "Prepare for another wave...");
+
+        // Advance to next wave in a moment
+        createTimer({
+            "name": "timerNextWave",
+            "on-complete": "script:wave3:begin",
+            "length": 5,
+            "measure": "seconds"
+        });
+	</script>
+	<script name = 'wave3:begin'>
+		map().executeScript("wave3:cleanup");
+
+        // Params
+        map()
+            .disableAllGold()    // disable all gold; setting gold rotation will implicitly bring n pieces online
+
+            // text labels
+            .setParams({
+                "overview": "Collect [color=special]15 gold pieces[/color] as an increasing number of enemies hunts you down!",
+                "wave-goal": "Every [color=special]5th[/color] piece of gold you collect summons a [color=special]new enemy[/color].  Plan accordingly!"
+            })
+
+            .setWaveParams({
+                "on-collect-gold": "wave3:collect-gold", // spawn enemy every nth piece
+                "on-complete": "wave3:complete",         // complete wave script
+                "gold-rotation-size": 3
+            });
+
+        // Player must collect 15 gold
+        map().setWaveRequirement("gold", 15);
+
+        // Show progress chart / begin new wave
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // Start with 2 respawners
+map().spawnRandomEnemies(
+            2,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave3:cleanup'>
+		// End wave
+        map().endWave();
+	</script>
+	<script name = 'wave3:collect-gold'>
+		if ( map().getWaveCounter("gold") % 5 == 0 )
+        {
+            // Add a new respawner
+    map().spawnRandomEnemy({
+                "disposable": False
+            });
+        }
+	</script>
+	<script name = 'wave3:complete'>
+		map().executeScript("wave3:cleanup");
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "All waves cleared...");
+
+        // Show victory menu
+        showChallengeOutro();
+	</script>
+</scripts>

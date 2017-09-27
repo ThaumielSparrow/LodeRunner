@@ -1,0 +1,98 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 329 0 325 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 327 304 330 34 333 0 0 0 0 
+			324 154 333 325 218 0 0 0 0 0 0 306 310 0 0 0 0 
+			0 152 0 0 0 327 25 334 331 206 0 303 305 27 24 333 0 
+			0 154 0 0 0 0 0 0 313 303 311 206 303 0 0 0 0 
+			0 330 154 0 0 0 0 0 0 0 312 313 0 0 0 0 0 
+			0 0 153 0 0 0 324 25 331 26 304 0 0 0 0 0 0 
+			0 0 329 23 24 325 307 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			300 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 263 0 283 264 0 0 0 263 0 0 283 0 
+			0 0 0 0 0 0 0 0 300 0 264 0 284 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 265 0 283 0 0 0 0 0 0 
+			0 0 263 0 0 283 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '2' y = '5' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '10' y = '4' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '9' y = '6' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '9' y = '9' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '6' y = '6' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '3' y = '10' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '4' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '9' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '10' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'mega-bomb' entity = 'player1' />
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '25' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '210' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+		<packet />
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />

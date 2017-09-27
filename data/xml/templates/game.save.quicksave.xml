@@ -1,0 +1,69 @@
+<parameters>
+	<data>
+		<parameter>@thumbnail</parameter>
+		<parameter>@quicksave-slot</parameter>
+		<parameter>@title</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@date</parameter>
+		<parameter>@character-level</parameter>
+		<parameter>@gold-collected</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.save.quicksave' version = 'normal'>
+
+    <item id = 'file' class = 'saved-game'>
+
+        <stack class = 'frame' uses-focus = '0' render-border = '1'>
+
+            <item>
+                <icon x = '5%' y = '9' index = '3' position = 'absolute' />
+                <label x = '20%' y = '2' width = '75%' value = '@title
+[color=lowlight]@date[/color]' />
+            </item>
+
+            <graphic filename = '@thumbnail' file-width = '160' file-height = '120' x = '12%' y = '0' align = 'left' xwidth = '100%' height = '0' xalign = 'center' />
+
+            <item>
+                <icon x = '5%' y = '9' index = '13' position = 'absolute' />
+                <label x = '20%' y = '0' align = '' width = '75%' value = '[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]' />
+            </item>
+
+        </stack>
+
+        <action do = 'show:game.save.overwrite.confirm' quicksave = '1' slot = '@quicksave-slot' title = '@title' />
+
+    </item>
+
+</template>
+
+<template name = 'game.save.quicksave' version = 'zebra'>
+
+    <item id = 'file' class = 'saved-game'>
+
+        <stack class = 'frame' uses-focus = '0' render-border = '1'>
+
+            <item>
+                <icon x = '95%' y = '9' index = '3' position = 'absolute' align = 'right' />
+                <label x = '80%' y = '2' width = '75%' align = 'right' value = '@title
+[color=lowlight]@date[/color]' />
+            </item>
+
+            <graphic filename = '@thumbnail' file-width = '160' file-height = '120' x = '88%' y = '0' align = 'right' xwidth = '100%' height = '0' xalign = 'center' />
+
+            <item>
+                <icon x = '95%' y = '9' index = '13' position = 'absolute' align = 'right' />
+                <label x = '80%' y = '0' align = 'right' width = '75%' value = '[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]' />
+            </item>
+
+        </stack>
+
+        <action do = 'show:game.save.overwrite.confirm' quicksave = '1' slot = '@quicksave-slot' title = '@title' />
+
+    </item>
+
+</template>

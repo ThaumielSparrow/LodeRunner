@@ -1,0 +1,206 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '10' id = 'nag1'>
+							<comment>If you keep heading to the west, you&apos;ll eventually reach the town of [color=special]Manderkeen[/color].  Sounds like a plan, oh bearded one!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I tried to buy some bombs from [color=special]Biggins[/color] yesterday, but I couldn&apos;t understand what he was saying!</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>I hope you can get rid of the [color=dim]bad guys[/color] soon, [color=special]$[core.player1.name][/color].  I really miss being able to travel without fearing for my life!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You can use the [color=special]pause menu[/color] to customize your controls at any time, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Keep an eye out for the town of [color=special]Manderkeen[/color] as you move to the west with your customized controls, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>Yo, [color=special]$[core.player1.name][/color].  Looking to buy some nukes, dog?</comment>
+							<response branch-id = 'root.bombs'>
+								<phrase>Sure, show me your [color=special]bomb[/color] prices.</phrase>
+								<branch id = 'root.bombs'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>This is a Cool Spot, man.  What do you dig, [color=special]$[core.player1.name][/color]?</comment>
+											<response branch-id = 'root.bombs.buy5'>
+												<phrase>5 bombs for 20 gold</phrase>
+												<branch id = 'root.bombs.buy5'>
+													<linear />
+													<nags>
+														<line redirect = 'root' id = 'nag1'>
+															<comment />
+															<post-script>player().subtractGold(20).addBombs(5);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "Biggins", "@g": "20" });</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.bombs.buy10'>
+												<phrase>10 bombs for 35 gold</phrase>
+												<branch id = 'root.bombs.buy10'>
+													<linear />
+													<nags>
+														<line redirect = 'root' id = 'nag1'>
+															<comment />
+															<post-script>player().subtractGold(35).addBombs(10);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "Biggins", "@g": "35" });</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.bombs.back'>
+												<phrase>I changed my mind, dog.</phrase>
+												<branch id = 'root.bombs.back'>
+													<linear />
+													<nags>
+														<line redirect = 'root' id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'shop' branch-id = 'root.shop'>
+								<phrase>I&apos;d rather see your [color=special]items[/color], sir.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'shop-better' branch-id = 'root.shop-better'>
+								<phrase>I want to check out your [color=special]upgraded[/color] inventory, sir.</phrase>
+								<branch id = 'root.shop-better'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'quest' branch-id = 'root.quest'>
+								<phrase>Do you have better items?</phrase>
+								<branch id = 'root.quest'>
+									<linear>
+										<line redirect = 'root.quest' id = 'line1'>
+											<comment>
+												I don't have access to better items at the moment, [color=special]$[core.player1.name][/color], but maybe you can help me out with that problem.
+
+If you keep heading [color=special]west[/color], you'll find a guy named [color=special]Jake[/color] up in [color=special]Manderkeen[/color].  He has a lot of contacts in the shipping world, and he's using them to deny me access to some really great [color=special]items[/color].
+											</comment>
+										</line>
+										<line id = 'line2' class = 'prompt'>
+											<comment>If you were to scatter his pixels, I bet I could bring in some very excellent items for you.  What do you say, [color=special]$[core.player1.name][/color]?</comment>
+											<response class = 'default' branch-id = 'root.quest.yes'>
+												<phrase>I&apos;ll give him your regards.</phrase>
+												<branch id = 'root.quest.yes'>
+													<linear>
+														<line id = 'line1'>
+															<comment>Please do!  If you&apos;d like, you can use this [color=special]1 free bomb[/color] to dispose of him, too!</comment>
+															<post-script>quest("6.3.npc2.quest").status("active");npc("npc2").clearIndicators().addIndicator("merchant");player().addBombs(1);</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response class = 'default' branch-id = 'root.quest.later'>
+												<phrase>I don&apos;t have time for this.</phrase>
+												<branch id = 'root.quest.later'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Let me know if you change your mind, [color=special]$[core.player1.name][/color].</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response class = 'already-done' branch-id = 'root.quest.already-done'>
+												<phrase>I knew I had a good reason for killing him when I did.</phrase>
+												<branch id = 'root.quest.already-done'>
+													<linear>
+														<line id = 'line1'>
+															<comment>
+																You already got rid of him, [color=special]$[core.player1.name][/color]?  Your foresight truly impresses me!
+
+Let's see... yes!  I have access to a slew of new and improved [color=special]items[/color]!  Thanks for helping me out on this one, [color=special]$[core.player1.name][/color]!
+															</comment>
+															<pre-script>map().executeScript("npc2.clear-inventory");</pre-script>
+															<post-script>quest("6.3.npc2.quest").status("complete");quest("6.3.npc2.quest").update("update-complete:for-biggins").status("active");npc("npc2").clearIndicators().addIndicator("merchant");</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+										</line>
+									</linear>
+									<nags>
+										<line id = 'nag1' class = 'prompt'>
+											<comment>[color=special]$[core.player1.name][/color], I still need you to get rid of [color=special]Jake[/color].  If you vanquish him, I&apos;ll gain access to a better inventory of items from my suppliers.  Do you have time to do it yet?</comment>
+											<response class = 'default' branch-id = 'root.quest.yes'>
+												<phrase>I&apos;ll give him your regards.</phrase>
+											</response>
+											<response class = 'default' branch-id = 'root.quest.later'>
+												<phrase>I don&apos;t have time for this.</phrase>
+											</response>
+											<response class = 'already-done' branch-id = 'root.quest.already-done'>
+												<phrase>I actually decided to go and kill him after all.  I didn&apos;t even have to use a map to get there!</phrase>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Later, [color=special]Biggins[/color].</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear>
+						<line transition = '1' id = 'line1'>
+							<comment>I just got word from my warehouses, [color=special]$[core.player1.name][/color]:  I have full permission to sell you some [color=special]new and improved items[/color].  No doubt I owe this all to you.  Thanks for getting rid of that punk [color=special]Jake[/color] for me!</comment>
+							<pre-script>map().executeScript("npc2.clear-inventory");</pre-script>
+							<post-script>quest("6.3.npc2.quest").status("complete");quest("6.3.npc2.quest").update("update-complete:for-biggins").status("active");npc("npc2").clearIndicators().addIndicator("merchant");map().runScript("npc2.talk");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

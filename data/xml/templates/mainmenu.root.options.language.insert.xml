@@ -1,0 +1,23 @@
+<parameters>
+	<data>
+		<parameter>@language-name</parameter>
+		<parameter>@language-file</parameter>
+        <parameter>@layout</parameter>
+        <parameter>@font-size</parameter>
+        <parameter>@font-name</parameter>
+	</data>
+	<text>
+		<parameter>@language-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.language.insert'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+        <label x = '20%' y = '0' align = '' width = '90%' value = '@language-title' />
+        <action do = 'language:set' language = '@language-name' file = '@language-file' layout = '@layout' font-size = '@font-size' font-name = '@font-name' />
+        <action do = 'hide' />
+    </insert:item>
+
+</template>

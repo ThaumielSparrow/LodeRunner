@@ -1,0 +1,63 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'net.menu.pause'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Co-op Mode Menu' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Resume Game' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Back to Action' />
+                </stack>
+
+                <action do = 'resume-game' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Disconnect' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Leave Session' />
+                    </stack>
+
+                    <action do = 'leave-game' />
+
+                </contents>
+                <disabled-tooltip render-border = '1' align = 'right'>
+                    <label x = '0' y = '0' width = '100%' value = 'Disconnect from the game?' />
+                </disabled-tooltip>
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

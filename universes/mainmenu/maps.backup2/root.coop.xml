@@ -1,0 +1,102 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'linear' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 150 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 118 216 219 218 219 152 0 0 0 0 0 0 0 0 
+			0 0 119 96 0 0 0 0 152 217 217 219 219 219 117 153 0 
+			0 0 0 97 0 0 0 147 153 0 0 0 0 0 0 152 0 
+			0 0 0 0 0 0 152 116 154 0 207 0 0 0 0 154 0 
+			0 0 0 0 0 153 118 99 153 110 119 117 153 0 0 154 0 
+			0 0 0 0 153 116 97 97 152 0 0 96 154 0 0 152 0 
+			0 0 0 0 152 99 97 0 152 0 0 0 154 116 0 154 0 
+			0 0 0 0 152 96 0 0 154 0 119 111 118 97 0 152 0 
+			149 151 0 0 153 0 0 0 117 153 0 0 0 0 154 116 0 
+			117 117 154 0 153 0 0 0 98 119 117 152 0 153 117 98 0 
+			0 97 117 110 117 152 0 0 0 0 0 153 116 117 98 0 0 
+			0 0 0 0 150 152 148 0 0 0 0 152 98 0 0 0 0 
+			0 0 0 207 117 119 119 216 217 217 216 153 0 0 0 0 0 
+			0 0 116 117 97 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '4' x = '7' genus = '2' class = '' />
+<entity name = 'player2' title = '' ai-behavior = '1' nick = '' y = '5' x = '12' genus = '2' class = '' />
+<entity name = 'player3' title = '' ai-behavior = '1' nick = '' y = '10' x = '2' genus = '2' class = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '10' x = '1' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '13' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '3' x = '5' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '2' x = '14' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '2' x = '9' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '13' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '11' x = '12' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '14' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '14' x = '2' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '13' x = '4' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '8' x = '3' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '10' x = '7' genus = '6' class = '' />
+<entity name = 'player1.respawn' title = '' ai-behavior = '1' nick = '' y = '4' x = '12' genus = '12' class = '' />
+<entity name = 'player2.respawn' title = '' ai-behavior = '1' nick = '' y = '4' x = '13' genus = '12' class = '' />
+<entity name = 'player3.respawn' title = '' ai-behavior = '1' nick = '' y = '3' x = '6' genus = '12' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp1' height = '1' width = '1' behavior = '1' y = '6' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2' height = '1' width = '1' behavior = '1' y = '13' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp3' height = '1' width = '1' behavior = '1' y = '10' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp4' height = '1' width = '1' behavior = '1' y = '4' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'origin' height = '1' width = '1' behavior = '1' y = '1' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'controller' height = '1' width = '1' behavior = '1' y = '4' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload' />
+</scripts>

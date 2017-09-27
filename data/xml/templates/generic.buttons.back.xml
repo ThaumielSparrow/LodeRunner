@@ -1,0 +1,17 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'generic.buttons.back'>
+    <item>
+        <icon x = '5%' y = '0' index = '19' />
+        <label id = 'label' -behavior = 'back-button' -quicksave = '0' -slot = '0' -thumb-filename = '' x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+        <label id = 'label' -behavior = 'back-button' -quicksave = '0' -slot = '0' -thumb-filename = '' x = '20%' y = '0' width = '75%' text-effect = 'blaster:line-by-line' display = 'on-focus:linger' value = '[color=highlight]Back[/color] to parent menu...' />
+        <action do = 'back' />
+    </item>
+</template>

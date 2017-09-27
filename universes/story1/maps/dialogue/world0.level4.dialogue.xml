@@ -1,0 +1,316 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color]!  Have you noticed that most people around here have a lot to say?  Every time you talk to them, they start in on something else!</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>Personally, I think people talk as much as they do just to keep their mind off of the [color=dim]Bungeling Emperor[/color].  I&apos;ve seen his powerful bad guys destroy many of my friends.</comment>
+						</line>
+						<line id = 'line3'>
+							<comment>By the way, [color=special]$[core.player1.name][/color], have you tried to complete the [color=special]puzzle room[/color] on this level yet?  I hear you win a special prize for completing puzzle rooms, but I&apos;ve never figured out how to beat one of them.</comment>
+						</line>
+						<line id = 'line4'>
+							<comment>I&apos;m a little bit tired of talking to you, [color=special]$[core.player1.name][/color].  I think you should be trying to save us from the bad guys right now.</comment>
+						</line>
+						<line id = 'line5'>
+							<comment>[color=special]$[core.player1.name][/color], why do you keep pestering me?  I really have to concentrate to stay on this predefined path, and you&apos;re not helping matters.  What do I have to do to get you to leave me alone, [color=special]$[core.player1.name][/color]?</comment>
+							<response branch-id = 'root.gold'>
+								<phrase>Give me 20 pieces of gold.</phrase>
+								<branch id = 'root.gold'>
+									<linear>
+										<line id = 'line1'>
+											<comment>If I give you gold just because you asked for it, then you&apos;ll just keep asking for more.  Forget it, [color=special]$[core.player1.name][/color]!</comment>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.item'>
+								<phrase>Give me a cool item.</phrase>
+								<branch id = 'root.item'>
+									<linear>
+										<line id = 'line1'>
+											<comment>You expect a cool item from one of the first NPCs in the game?  I have only a few meager possessions, but you can probably use anything against the [color=dim]Bungeling empire[/color].  I&apos;ll give you one of my old items at random, but I don&apos;t think it&apos;ll impress you very much!</comment>
+											<post-script>player().acquireRandomItem("carloss-heavy-bracelet", "carloss-lucky-headband", "carloss-baby-turtle");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Sorry.  I&apos;ll leave you alone.</phrase>
+								<branch id = 'root.bye'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I don&apos;t really believe you, [color=special]$[core.player1.name][/color].  Let me give you these [color=special]10 gold pieces[/color], just to make sure you mean it!</comment>
+											<post-script>player().addGold(10);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I am currently saying meaningless things in random order.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Notice that I am saying meaningless things in random order.</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>If you keep talking to me, you will see only meaningless things in random order.</comment>
+						</line>
+						<line id = 'nag4'>
+							<comment>The meaningless things I say, I say them randomly.</comment>
+						</line>
+						<line id = 'nag5'>
+							<comment>At random, I will say one of a handful of meaningless phrases.</comment>
+						</line>
+						<line id = 'nag6'>
+							<comment>Talking to me will get you nothing but meaningless phrases uttered at random.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:killed-carlos-prematurely'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You know, I haven&apos;t seen Carlos around lately.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wonder what ever happened to Carlos.  Did I ever mention that I used to have strong feelings for him?  Before you blew him up, of course!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Welcome to our humble town, [color=special]$[core.player1.name][/color]!  My name is [color=special]Rochelle[/color].  I would offer to show you around town, but we don't even have a single [color=special]merchant[/color] to buy things from!
+
+I'd like to ask you a favor, [color=special]$[core.player1.name][/color], but I don't feel like I know you well enough yet.  Maybe if we get to know each other a little bit better, I'll feel more comfortable...
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								Thanks for taking such an interest in me, [color=special]$[core.player1.name][/color].  I almost feel like I can trust you with anything.  All of these [color=dim]bad guys[/color] that are running around in the wild areas, though, scare me pretty bad!
+
+I really appreciate having you around to talk to in times like this.  Maybe you can stop by again soon?  I want to ask you about that favor, but I'm still trying to find the words...
+							</comment>
+						</line>
+						<line redirect = 'root' id = 'line3'>
+							<comment>
+								[color=special]$[core.player1.name][/color], I have to talk to you about something.  Have you talked to [color=special]Carlos[/color] up there?  I can't stop looking at him!
+
+I don't feel confident enough to approach him yet, though.  If I had a nice [color=special]perfume[/color], I would feel much more at ease.
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>
+								Have you visited [color=special]Amandria[/color] yet?  If you go there, you should find a merchant that is selling my favorite perfume.
+
+Do you think you can help me, [color=special]$[core.player1.name][/color]?  I will surely reward you with a wonderful and useful item!
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>I&apos;ll do my best.</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thank you so very much, [color=special]$[core.player1.name][/color]!</comment>
+											<post-script>quest("0.4.npc2.quest").status("active");npc("npc2").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>If you front me [color=special]25 gold pieces[/color], I will get right on that.</phrase>
+								<branch id = 'root.extort'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I don&apos;t have much money, [color=special]$[core.player1.name][/color], but take these [color=special]25 pieces of gold[/color] as an early token of gratitude.  Please hurry back with the perfume!</comment>
+											<post-script>quest("0.4.npc2.quest").status("active");quest("0.4.npc2.quest").update("update-extorted").status("active");npc("npc2").clearIndicators();player().addGold(25);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Maybe later...</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Have you had a chance to visit [color=special]Amandria[/color] yet, [color=special]$[core.player1.name][/color]?  You will find a merchant there selling the perfume!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I would go to [color=special]Amandria[/color] myself to buy the perfume I want, but all of the [color=dim]bad guys[/color] make traveling so treacherous!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-carlos'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I haven&apos;t seen [color=special]Carlos[/color] around lately, [color=special]$[core.player1.name][/color]!  I hope he&apos;s doing okay!  Please make sure to bring that [color=special]perfume[/color] to me still!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Where has [color=special]Carlos[/color] gone, I wonder?  If you bring me that [color=special]perfume[/color], maybe he will come back!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:killed-carlos'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I think [color=special]Carlos[/color] has gone on a vacation.  Maybe he didn&apos;t like the smell of this wonderful perfume.  Do you think I sent you after the wrong perfume, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>[color=special]$[core.player1.name][/color], I can&apos;t find Carlos anymore.  I don&apos;t know what to do with all of this perfume now!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:bought-perfume'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'default'>
+							<comment>You bought the perfume, [color=special]$[core.player1.name][/color]!  I can&apos;t believe it!  I bet [color=special]Carlos[/color] will absolutely love this perfume.  Can I have it now, please?!</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Here you go, [color=special]Rochelle[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												Thank you so much, [color=special]$[core.player1.name][/color]!
+
+I don't think I could ever truly repay you for your kindness, but I can at least offer you this [color=special]special item[/color].  Hopefully it can help you against the [color=dim]Bungeling empire[/color]!
+											</comment>
+											<pre-script>player().dropItem("rochelles-perfume");</pre-script>
+											<post-script>map().runScript("npc2.quest.complete");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>Oops!  Looks like I just spilled it!</phrase>
+								<branch id = 'root.no'>
+									<linear>
+										<line id = 'line1'>
+											<comment>No!  Why did you do that, [color=special]$[core.player1.name][/color]?!  Why would you spend the gold to buy the perfume, then spill it on the ground right in front of me?!</comment>
+											<post-script>player().dropItem("rochelles-perfume");quest("0.4.npc2.quest").status("failed");quest("0.4.npc2.quest").update("update-spilled-perfume").status("active");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+						<line id = 'line2' class = 'extorted'>
+							<comment>
+								You bought the perfume, [color=special]$[core.player1.name][/color].  I didn't know if you'd actually follow through on your word, not after you pilfered that extra gold from me when you took the job.
+
+All the same, I bet [color=special]Carlos[/color] will absolutely love this perfume.  Can I have it now, please?!
+							</comment>
+							<response branch-id = 'root.yes-extorted'>
+								<phrase>Here you go, [color=special]Rochelle[/color].</phrase>
+								<branch id = 'root.yes-extorted'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												Thank you so much, [color=special]$[core.player1.name][/color]!
+
+I would have liked to repay you for your kindness, but I believe I already paid you pretty well.  I love this perfume, though, so I'm going to offer you this [color=special]not-so-special item[/color] as a token of my indifference.
+
+Hopefully it can help you in your quest to extort gold out of everyone else in [color=special]Lelandria[/color].
+											</comment>
+											<pre-script>player().dropItem("rochelles-perfume");</pre-script>
+											<post-script>map().runScript("npc2.quest.complete");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>Oops!  Looks like I just spilled it!</phrase>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:spilled-perfume'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I can still smell the perfume on the ground around here.  [color=special]$[core.player1.name][/color], why did you do that to me?!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I had another [color=special]Carlos dream[/color] last night, [color=special]$[core.player1.name][/color].  I will never have a [color=special]Carlos[/color] in my life without that perfume.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:delivered-perfume'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thanks for bringing me this perfume, [color=special]$[core.player1.name][/color]!  I haven&apos;t had a chance to woo [color=special]Carlos[/color] just yet.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I hope you didn&apos;t spend too much money on this fabulous perfume, [color=special]$[core.player1.name][/color].  Carlos might not even like it!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:killed-merchant'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I hear you didn&apos;t have a chance to get that perfume for me, [color=special]$[core.player1.name][/color].  I wish you had found a way!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Believe it or not, [color=special]$[core.player1.name][/color], no one else I know of in [color=special]Lelandria[/color] sells that perfume.  I wish you had bought a bottle of it for me!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

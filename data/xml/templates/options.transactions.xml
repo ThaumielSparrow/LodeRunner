@@ -1,0 +1,41 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'options.transactions'>
+
+    <rowmenu id = 'menu' class = '' x = '@x' y = '50%' width = '@width' height = '@height' valign = 'center' xcenter-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item id = 'invisible-left-column-option' disabled = '1' />
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label id = 'label' x = '20%' y = '0' width = '85%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'right' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Transaction History' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.purchases' class = 'options' render-border = '0' />
+
+    </rowmenu>
+
+</template>

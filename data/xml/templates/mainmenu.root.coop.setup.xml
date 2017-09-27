@@ -1,0 +1,106 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@max-players</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop.setpu'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1'>
+
+        <item-group class = 'backdrop' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '15' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '50' y = '0' width = '90%' value = 'Host a Co-Op Session...' />
+            </item>
+
+            <xitem disabled = '1'>
+                <rect class = 'contrast-separator' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+            </xitem>
+
+        </item-group>
+
+        <item-group class = 'backdrop'>
+
+            <item disabled = '1'>
+                <label x = '98%' y = '0' align = 'right' width = '100%' value = 'preparing to launch' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '0' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '5%' y = '0' width = '80%' value = 'Password' />
+
+                <label id = 'label-password' x = '95%' y = '0' align = 'right' width = '80%' value = 'n/a' />
+
+                <action do = 'show:keyboard.password' />
+
+            </item>
+
+            <item disabled = '1'>
+                <item class = 'line-break' />
+                <label class = 'subtitle' x = '10%' y = '0' width = '90%' value = 'Optional.  If you set a password for this session, other players will need to know the password in order to connect.' />
+            </item>
+
+        </item-group>
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '0' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '5%' y = '0' width = '80%' value = 'Player Limit' />
+
+                <label id = 'label-maxplayers' x = '95%' y = '0' align = 'right' width = '80%' value = '@max-players Players' />
+
+                <action do = 'show:maxplayers' />
+
+            </item>
+
+            <item disabled = '1'>
+                <item class = 'line-break' />
+                <label class = 'subtitle' x = '10%' y = '0' width = '90%' value = 'You can place a limit on the number of players that can connect to your game.' />
+            </item>
+
+        </item-group>
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '0' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '5%' y = '0' width = '80%' value = 'Begin Game' />
+
+                <action do = 'begin-game' />
+
+            </item>
+
+            <item disabled = '1'>
+                <item class = 'line-break' />
+                <label class = 'subtitle' x = '10%' y = '0' width = '90%' value = 'Launch the new game session.' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

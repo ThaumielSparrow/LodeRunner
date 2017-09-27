@@ -1,0 +1,172 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 325 26 28 323 153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 323 153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 303 327 216 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 309 0 219 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 330 26 326 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 152 323 216 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 154 0 0 329 0 0 0 0 0 0 0 326 0 
+			0 0 0 0 0 0 0 0 0 153 327 327 323 0 0 306 331 25 334 152 29 332 331 310 0 
+			0 0 0 0 0 0 0 153 330 328 314 0 0 0 0 0 0 0 0 152 0 0 0 307 0 
+			0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 0 154 329 154 326 0 0 0 0 
+			0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 263 0 283 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 300 263 0 265 0 0 283 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '21' y = '10' genus = '1' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '22' y = '10' genus = '1' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '3' y = '2' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '20' y = '12' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '23' y = '9' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '10' y = '9' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '5' y = '2' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '8' y = '8' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '7' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '7' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '9' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp4' x = '9' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp5' x = '10' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp6' x = '14' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp7' x = '16' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp8' x = '16' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp9' x = '20' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp4' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'earth-mover' entity = 'player1' />
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '30' entity = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp5' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '10' entity = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp6' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp7' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp8' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'earth-mover' entity = 'player1' />
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '85' entity = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp9' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

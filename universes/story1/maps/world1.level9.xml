@@ -1,0 +1,101 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 217 0 0 0 0 0 0 0 0 0 216 0 9 0 0 0 
+			23 220 152 0 218 0 0 0 0 0 0 152 226 0 224 220 154 0 0 
+			0 0 154 0 0 216 0 0 0 0 0 154 0 0 0 0 152 0 0 
+			106 221 220 226 154 0 0 0 0 0 0 152 0 0 0 0 153 0 0 
+			0 0 0 0 154 0 0 0 152 224 221 224 226 206 206 227 227 227 0 
+			0 0 0 0 224 225 153 221 222 203 0 0 0 0 0 0 200 202 223 
+			0 0 0 0 0 0 154 0 0 0 0 0 0 0 0 0 0 0 202 
+			224 153 225 222 152 220 223 0 0 222 23 154 23 220 0 0 218 0 205 
+			0 152 0 0 152 0 0 0 0 0 0 153 0 0 0 0 0 227 202 
+			0 153 0 0 221 225 152 224 224 0 0 154 0 0 0 0 0 0 0 
+			0 152 0 0 0 0 152 0 0 0 0 154 0 0 0 0 0 0 0 
+			222 227 220 206 206 226 152 223 206 206 23 206 224 221 225 23 23 225 152 
+			0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 154 
+			222 0 0 0 153 223 154 223 154 223 154 0 0 0 0 0 0 0 153 
+			205 224 206 206 225 0 0 0 154 0 152 0 0 0 0 219 216 218 153 
+			203 0 0 0 0 0 0 153 227 0 220 228 206 206 221 0 0 0 222 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 264 0 0 284 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 263 0 0 0 283 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 264 0 0 284 0 264 0 263 0 283 284 0 263 0 0 283 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 264 0 0 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 264 0 0 284 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '7' x = '10' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '11' x = '16' genus = '1' class = '' />
+	<entity x = '12' y = '7' genus = '3' species = 'terminal' ai-behavior = '1' name = 'machine1' class = 'bomb-vending-machine' nick = 'Bomb Vending Machine' title = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '9' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '8' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '7' x = '15' genus = '5' class = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '10' x = '17' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '7' x = '13' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '3' x = '14' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '4' x = '9' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '9' x = '8' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '11' x = '3' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '7' x = '2' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '11' x = '12' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '13' x = '14' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '15' x = '12' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '13' x = '9' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '13' x = '0' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '14' x = '2' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '1' x = '1' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '2' x = '5' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '1' x = '12' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'challenge2.enter' class = 'door' x = '15' y = '1' width = '1' height = '1' behavior = '3' prompt = '#challenge:challenge2'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'challenge2.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '5' y = '11' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'challenge2.enter'>
+		// Set shared challenge wave variable to wave 1
+        session("core.challenge.wave").set("1");
+
+// Load new map from challenge.enter trigger.  Spawn at origin.
+        trigger("challenge2.enter").loadMap("challenge2", "origin");
+	</script>
+</scripts>

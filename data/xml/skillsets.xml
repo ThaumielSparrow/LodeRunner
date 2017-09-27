@@ -1,0 +1,1304 @@
+<skillset name = 'movement'>
+    <skill name = 'sprint' title = 'Sprint' preview-map = 'gifs.movement.sprint'>
+
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Sprint lets you cover distance more quickly.</description>
+            <action-text>Commit to Sprint</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>[color=special]Sprint[/color] allows you to briefly increase your speed as you move around a level.  It only increases your [color=special]running speed[/color]; you will climb ladders at your usual speed.
+
+Future upgrades will [color=special]shorten the recharge rate[/color] (allowing you to sprint more often) and increase the [color=special]duration[/color] of your sprint.
+
+[color=warning]Note:[/color]  If you commit to [color=special]Sprint[/color], you will [color=warning]forfeit[/color] the ability to acquire the [color=evil]Matrix[/color] skill.
+
+[color=special]Are you sure?[/color]</alert>
+                    <choice value = 'upgrade.sprint'>Yes.  I want Sprint.</choice>
+                    <choice value = 'no'>No.  Let me think about it.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '5' title = 'Level 2'>
+            <description>Recharge time:  8s (-20%)
+Stamina:  1.5s (+50%)</description>
+            <action-text>Upgrade Sprint</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Sprint?</alert>
+                    <choice value = 'upgrade.sprint'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to upgrade this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '5' title = 'Level 3'>
+            <description>Recharge time:  6s (-40%)
+Stamina:  2s (+100%)
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Sprint</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Sprint?</alert>
+                    <choice value = 'upgrade.sprint'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to upgrade this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+
+    </skill>
+    <skill name = 'matrix' title = 'Matrix' preview-map = 'gifs.movement.matrix'>
+
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>The matrix skill decreases the speed of all of your world's surrounding objects.</description>
+            <action-text>Commit to Matrix</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Matrix skill will briefly slow down every object in the world around you; you alone will continue to move in real-time.
+
+Future upgrades can increase the power of the effect (slowing enemies to a crawl) and extend the duration of the matrix effect.
+
+If you commit to Matrix, you will forfeit the ability to acquire the Sprint skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.matrix'>Yes.  Give me the red pill.</choice>
+                    <choice value = 'no'>No.  Let me think it over.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge time:  17s (-15%)
+Duration:  2.5s (+25%)
+World Speed:  50%</description>
+            <action-text>Upgrade Matrix</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Matrix?</alert>
+                    <choice value = 'upgrade.matrix'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Recharge time:  15s (-25%)
+Duration:  3s (+50%)
+World Speed:  33%
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Matrix</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Matrix?</alert>
+                    <choice value = 'upgrade.matrix'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+</skillset>
+
+<skillset name = 'control'>
+    <skill name = 'hacking' title = 'Hacking' preview-map = 'gifs.control.hacking'>
+
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Easily penetrate terminal defense systems and access advanced system interfaces.</description>
+            <action-text>Commit to Hacking</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>A passive ability, Hacking provides you with part or all of a terminal's keycode, allowing you the option to access terminals without having to haggle with NPCs.
+
+Higher levels of the Hacking ability will reveal entire passcodes and allow you to access advanced system interfaces unavailable to non-hackers.
+
+If you commit to Hacking, you will forfeit the ability to acquire the Persuasion skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.hacking'>Yes.  Give me my black hat.</choice>
+                    <choice value = 'no'>No.  I need to reconsider.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Numbers revealed:  3 (+1)
+Access Restricted E-mails</description>
+            <action-text>Upgrade Hacking</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Hacking?</alert>
+                    <choice value = 'upgrade.hacking'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Numbers revealed:  4 (+1)
+Access all System Interfaces
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Hacking</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Hacking?</alert>
+                    <choice value = 'upgrade.hacking'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+    </skill>
+    <skill name = 'persuasion' title = 'Persuasion' preview-map = 'gifs.control.persuasion'>
+
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Exert an unusual amount of influence during conversation.</description>
+            <action-text>Commit to Persuasion</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The passive skill of Persuasion allows you to coax NPCs into seeing things your way more easily during conversations.
+
+Players equipped with Persuasion can expect to obtain discounts in shoppes and, occasionally, superior payouts for completing quests.  Higher levels of Persuasion increase the amount of any reward achieved via Persuasion.
+
+If you commit to Persuasion, you will forfeit the ability to acquire the Hacking skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.persuasion'>Yes.  You talked me into it.</choice>
+                    <choice value = 'no'>No.  I want to mull it over.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Persuasion Bonus:  50% (+50%)</description>
+            <action-text>Upgrade Persuasion</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Persuasion?</alert>
+                    <choice value = 'upgrade.persuasion'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Persuasion Bonus:  100% (+50%)
+Irresistable Persuasiveness
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Persuasion</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Persuasion?</alert>
+                    <choice value = 'upgrade.persuasion'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+</skillset>
+
+<skillset name = 'deception'>
+    <skill name = 'hologram' title = 'Hologram' preview-map = 'gifs.deception.hologram'>
+
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Send out a decoy to distract your enemies and otherwise subserve you.</description>
+            <action-text>Commit to Hologram</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Hologram allows you to construct a short-lived doppelganger that lures any enemy's attention away from you.  The hologram will run in a straight line until its time expires.
+
+Future upgrades can enable the hologram to collect gold for you and to detonate upon hitting a wall.
+
+If you commit to Hologram, you will forfeit the ability to acquire the Fright skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.hologram'>Yes.  I want Hologram.</choice>
+                    <choice value = 'no'>No.  I haven't decided yet.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Duration: 3s
+Recharge Time:  12s (-20%)
+Hologram collects gold.</description>
+            <action-text>Upgrade Hologram</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Hologram?</alert>
+                    <choice value = 'upgrade.hologram'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Duration: 4s (+33%)
+Recharge Time:  10s (-33%)
+Hologram explodes upon hitting walls.
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Hologram</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Hologram?</alert>
+                    <choice value = 'upgrade.hologram'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+    </skill>
+    <skill name = 'fright' title = 'Fright' preview-map = 'gifs.deception.fright'>
+
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Briefly cause all enemies to flee from you in incredible panic.</description>
+            <action-text>Commit to Fright</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>When you use the Fright skill, any enemy on the level will briefly fear you; they will run away from you at any cost.
+
+Future upgrades to the Fright skill can increase the duration of the effect and, at the higher levels, occasionally scare an enemy to the point that he spontaneously explodes.
+
+If you commit to Fright, you will forfeit the ability to acquire the Hologram skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.fright'>Yes.  I'm not afraid.</choice>
+                    <choice value = 'no'>No.  I can't make up my mind yet..</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Duration: 1.5s (+50%)
+Recharge Time:  21s (-16%)
+2% chance spontaneous explosion (+2%)</description>
+            <action-text>Upgrade Fright</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Fright?</alert>
+                    <choice value = 'upgrade.fright'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Duration: 2s (+100%)
+Recharge Time:  15s (-40%)
+10% chance spontaneous explosion (+10%)
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Fright</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Fright?</alert>
+                    <choice value = 'upgrade.fright'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+    </skill>
+</skillset>
+
+<skillset name = 'laser'>
+    <skill name = 'jackhammer' title = 'Jackhammer' preview-map = 'gifs.mining.jackhammer'>
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Dig more than one tile deep into the ground with a single blast.</description>
+            <action-text>Commit to Jackhammer</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Jackhammer skill allows you to dig multiple tiles into the ground with a single dig.
+
+Future upgrades can reduce the recharge time and allow you to dig even deeper into the ground.
+
+If you commit to Jackhammer, you will forfeit the ability to acquire the Earth Mover skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.jackhammer'>Yes.  I can dig it.</choice>
+                    <choice value = 'no'>No.  Give me a moment.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge Time:  20s (-20%)
+</description>
+            <action-text>Upgrade Jackhammer</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Jackhammer?</alert>
+                    <choice value = 'upgrade.jackhammer'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Recharge Time:  15s (-40%)
+Dig 3 tiles deep (+1)
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Jackhammer</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Jackhammer?</alert>
+                    <choice value = 'upgrade.jackhammer'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+    </skill>
+    <skill name = 'earth-mover' title = 'Earth Mover' preview-map = 'gifs.mining.earthmover'>
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Blast multiple tiles in front of you with a single shot.</description>
+            <action-text>Commit to Earth Mover</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Earth mover allows a single mining laser blast to cascade along the x-axis, destroying multiple tiles.
+
+The earth mover skill will not penetrate undiggable tiles or empty spaces; once it stops, it stops.
+
+Future upgrades reduce the recharge time and increase the distance the cascade will travel.
+
+If you commit to Earth Mover, you will forfeit the ability to acquire the Jackhammer skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.earth-mover'>Yes.  I'm a distance lode runner.</choice>
+                    <choice value = 'no'>No.  I've gotta think about it.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge Time:  20s (-20%)
+</description>
+            <action-text>Upgrade Earth Mover</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Earth Mover?</alert>
+                    <choice value = 'upgrade.earth-mover'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Recharge Time:  15s (-40%)
+Dig 3 tiles across.
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Earth Mover</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Earth Mover?</alert>
+                    <choice value = 'upgrade.earth-mover'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+</skillset>
+
+<skillset name = 'defense'>
+    <skill name = 'personal-shield' title = 'Personal Shield' preview-map = 'gifs.shields.personal'>
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Cast a temporary protective shield to defer damage from spikes and bombs.</description>
+            <action-text>Commit to Personal Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Personal Shield ability will essentially grant you temporary "immunity."  When active, the shield will absorb all damage for you.
+
+Minor impediments such as spikes will marginally deplete your shield; others, such as bombs, will significantly drain your shield.
+
+A shield cannot save you from falling off of a redlined map.
+
+If you commit to Personal Shield, you will forfeit the ability to acquire the Bomb Shield skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.personal-shield'>Yes.  Give me my shield.</choice>
+                    <choice value = 'no'>No.  I'm not sure.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Duration: 2.25s (+12.5%)
+Recharge Time:  27s (-10%)</description>
+            <action-text>Upgrade Personal Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Personal Shield?</alert>
+                    <choice value = 'upgrade.personal-shield'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Duration: 2.5s (+25%)
+Recharge Time:  25s (-16.7%)
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Personal Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Personal Shield?</alert>
+                    <choice value = 'upgrade.personal-shield'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+    <skill name = 'bomb-shield' title = 'Bomb Shield' preview-map = 'gifs.shields.bomb'>
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Safely place a bomb on top of spikes.</description>
+            <action-text>Commit to Bomb Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Bomb Shield skill allows you to place a bomb on top of a set of spikes.
+
+Future upgrades can make this a passive ability, applying the bomb shield effect to any bomb you place.
+
+If you commit to Bomb Shield, you will forfeit the ability to acquire the Personal Shield skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.bomb-shield'>Yes.  I want Bomb Shield.</choice>
+                    <choice value = 'no'>No.  I should think about this.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge Time:  10s (-50%)</description>
+            <action-text>Upgrade Bomb Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Bomb Shield?</alert>
+                    <choice value = 'upgrade.bomb-shield'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Passive Skill
+
+All bombs automatically obtain bomb shield.
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Bomb Shield</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Bomb Shield?</alert>
+                    <choice value = 'upgrade.bomb-shield'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+    </skill>
+</skillset>
+
+<skillset name = 'bombs'>
+    <skill name = 'remote-bomb' title = 'Remote Bomb' preview-map = 'gifs.bombs.remote'>
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Place a bomb that does not detonate until you want it to detonate.</description>
+            <action-text>Commit to Remote Bomb</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>With the Remote Bomb skill, you can set a bomb down and let it tick until you wish to detonate it.
+
+You can combine the remote bomb with ordinary bomb drops.
+
+Future upgrades allow you to place more than one remote bomb before detonation.
+
+If you commit to Remote Bomb, you will forfeit the ability to acquire the Mega Bomb skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.remote-bomb'>Yes.  Hand me the clicker.</choice>
+                    <choice value = 'no'>No.  I'm not ready to pick.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge Time:  12s (-20%)
+Place 2 Bombs
+
+Second bomb is free.</description>
+            <action-text>Upgrade Remote Bomb</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Remote Bomb?</alert>
+                    <choice value = 'upgrade.remote-bomb'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Recharge time:  10s (-33%)
+Place 3 Bombs
+
+Second and third bombs are free.
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Remote Bomb</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Remote Bomb?</alert>
+                    <choice value = 'upgrade.remote-bomb'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+    <skill name = 'mega-bomb' title = 'Mega Bomb' preview-map = 'gifs.bombs.mega'>
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Place a bomb with a great area of destruction.  (Uses 2 bombs.)</description>
+            <action-text>Commit to Mega Bomb</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Mega Bomb skill allows you to place an ultra-powerful bomb.
+
+Future upgrades shorten the recharge time and reduce the bomb requirement from two down to one.
+
+If you commit to Mega Bomb, you will forfeit the ability to acquire the Remote Bomb skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.mega-bomb'>Yes.  I want the Mega Bomb.</choice>
+                    <choice value = 'no'>No.  I should give it some more thought.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Recharge time:  12s (-20%)
+
+Reduce bomb requirement to 1.</description>
+            <action-text>Upgrade Mega Bomb.</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Mega Bomb?</alert>
+                    <choice value = 'upgrade.mega-bomb'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Increase bomb radius by another tile.  Requires THREE bombs per use.
+
+Recharge time:  25s  (+67%)
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Mega Bomb</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Mega Bomb?</alert>
+                    <choice value = 'upgrade.mega-bomb'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+</skillset>
+
+<skillset name = 'stealth'>
+    <skill name = 'invisibility' title = 'Invisibility' preview-map = 'gifs.covert.invisibility'>
+        <upgrade version = '1' required-level = '1' title = 'Level 1'>
+            <description>Sneak around levels completely invisible to enemies.</description>
+            <action-text>Commit to Invisibility</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Invisibility leaves you free to roam levels undetected by enemies.  Once you activate invisibility, the enemies will continue to target your last known position.
+
+If an enemy touches you (or you touch an enemy), you will still die.
+
+Future upgrades will shorten the recharge time and allow you to pass through alarm trip wires undetected.
+
+If you commit to Invisibility, you will forfeit the ability to acquire the Disguise skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.invisibility'>Yes.  I can't see why not.</choice>
+                    <choice value = 'no'>No.  Let me get back to you.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Duration: 3s (+50%)
+Recharge Time:  38s (-15.6%)</description>
+            <action-text>Upgrade Invisibility</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Invisibility?</alert>
+                    <choice value = 'upgrade.invisibility'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Duration: 4s (+100%)
+Recharge Time:  32s (-28.9%)
+
+Walk through alarm wires undetected.
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Invisibility</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Invisibility?</alert>
+                    <choice value = 'upgrade.invisibility'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+    <skill name = 'disguise' title = 'Disguise' preview-map = 'gifs.covert.disguise'>
+        <upgrade version = '1' required-level = '2' title = 'Level 1'>
+            <description>Convince the enemies that you number among them.</description>
+            <action-text>Commit to Disguise</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>The Disguise skill temporarily tricks enemies into believing you are a fellow enemy.
+
+When in disguise, you can safely touch enemies without dying.
+
+Future upgrades can hasten the recharge rate, extend the duration of the effect, and allow you to command "fellow" enemies to move where you want them to.
+
+If you commit to Disguise, you will forfeit the ability to acquire the Invisibility skill.
+
+Are you sure?</alert>
+                    <choice value = 'upgrade.disguise'>Yes.  Sign me up.</choice>
+                    <choice value = 'no'>No.  I'm not ready.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '2' required-level = '2' title = 'Level 2'>
+            <description>Duration: 7s (+40%)
+Recharge Time:  35s (-12.5%)</description>
+            <action-text>Upgrade Disguise</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Disguise?</alert>
+                    <choice value = 'upgrade.disguise'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+
+        <upgrade version = '3' required-level = '2' title = 'Level 3'>
+            <description>Duration: 10s (+100%)
+Recharge Time:  30s (-25%)
+
+Enemy Domination
+
+This is the final upgrade.</description>
+            <action-text>Upgrade Disguise</action-text>
+            <disabled-text>Permanently disabled</disabled-text>
+
+            <prompts>
+                <prompt name = 'confirm'>
+                    <alert>Do you wish to upgrade Disguise?</alert>
+                    <choice value = 'upgrade.disguise'>Yes.</choice>
+                    <choice value = 'no'>No.</choice>
+                </prompt>
+                <prompt name = 'locked'>
+                    <alert>You cannot obtain this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-level'>
+                    <alert>You have not reached a high enough level to unlock this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+                <prompt name = 'insufficient-skill-points'>
+                    <alert>You do not have a skill point to spend on this skill.</alert>
+                    <choice value = ''>Ok</choice>
+                </prompt>
+            </prompts>
+        </upgrade>
+    </skill>
+</skillset>

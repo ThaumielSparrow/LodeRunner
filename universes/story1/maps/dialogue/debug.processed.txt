@@ -1,0 +1,240 @@
+town1.level2.dialogue.xml
+67:  <comment />
+68:  <postscript[queued = '1']>npc("npc2").talk("quest:in-progress:took-shoes");</postscript[queued = '1']>
+
+town1.level2.dialogue.xml
+80:  <comment />
+81:  <post-script>quest("1.2.npc2.quest").status("active");quest("1.2.npc2.quest").update("update-donation-requested").status("active");</post-script>
+
+town1.level2.dialogue.xml
+90:  <comment />
+91:  </line>
+
+town1.level2.dialogue.xml
+256:  <comment />
+257:  <post-script>quest("1.2.npc2.quest").update("update-declined-reverse-extortion").status("active");</post-script>
+
+town1.level3.dialogue.xml
+16:  <comment />
+17:  <post-script>map().runScript("npc1.shop");</post-script>
+
+town2.level2.dialogue.xml
+52:  <comment />
+53:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town2.level2.dialogue.xml
+92:  <comment />
+93:  </line>
+
+town2.level3.dialogue.xml
+89:  <comment />
+90:  </line>
+
+town3.level1.dialogue.xml
+27:  <comment />
+28:  <post-script>player().subtractGold(50).addBombs(10);</post-script>
+
+town3.level1.dialogue.xml
+39:  <comment />
+40:  <post-script>player().subtractGold(100).addBombs(25);</post-script>
+
+town3.level1.dialogue.xml
+51:  <comment />
+52:  </line>
+
+town3.level1.dialogue.xml
+66:  <comment />
+67:  </line>
+
+town3.level1.dialogue.xml
+153:  <comment />
+154:  <post-script>quest("3.1.npc2.quest").status("active");quest("3.1.npc2.quest").update("update-rejected").status("active");quest("3.1.npc2.quest").update("update-rejected:left-bombs").status("active");quest("3.1.npc2.quest").update("update-erich-requested-liquidation").status("active");</post-script>
+
+town3.level1.dialogue.xml
+261:  <comment />
+262:  </line>
+
+town3.level1.dialogue.xml
+372:  <comment />
+373:  <post-script>player().subtractGold(25).addBombs(1);</post-script>
+
+town3.level1.dialogue.xml
+395:  <comment />
+396:  <post-script>player().subtractGold(49).addBombs(2);</post-script>
+
+town3.level1.dialogue.xml
+407:  <comment />
+408:  </line>
+
+town3.level3.dialogue.xml
+30:  <comment />
+31:  <post-script>quest("3.3.npc1.quest").status("active");</post-script>
+
+town3.level3.dialogue.xml
+81:  <comment />
+82:  </line>
+
+town3.level3.dialogue.xml
+95:  <comment />
+96:  </line>
+
+town4.level2.dialogue.xml
+63:  <comment />
+64:  </line>
+
+town4.level3.dialogue.xml
+250:  <comment />
+251:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town4.level3.dialogue.xml
+286:  <comment />
+287:  </line>
+
+town4.level3.dialogue.xml
+324:  <comment />
+325:  </line>
+
+town5.level2.dialogue.xml
+38:  <comment />
+39:  </line>
+
+town5.level4.dialogue.xml
+25:  <comment />
+26:  <post-script>quest("5.4.npc1.quest").status("active");</post-script>
+
+town5.level4.dialogue.xml
+38:  <comment />
+39:  </line>
+
+town5.level4.dialogue.xml
+132:  <comment />
+133:  <post-script>map().runScript("npc1.shop");</post-script>
+
+town5.level4.dialogue.xml
+144:  <comment />
+145:  </line>
+
+town5.level4.dialogue.xml
+169:  <comment />
+170:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town5.level4.dialogue.xml
+197:  <comment />
+198:  </line>
+
+town6.level2.dialogue.xml
+89:  <comment />
+90:  </line>
+
+town6.level2.dialogue.xml
+104:  <comment />
+105:  </line>
+
+town6.level2.dialogue.xml
+175:  <comment />
+176:  </line>
+
+town6.level2.dialogue.xml
+212:  <comment />
+213:  </line>
+
+town6.level3.dialogue.xml
+26:  <comment />
+27:  <post-script>player().subtractGold(20).addBombs(5);</post-script>
+
+town6.level3.dialogue.xml
+38:  <comment />
+39:  <post-script>player().subtractGold(35).addBombs(10);</post-script>
+
+town6.level3.dialogue.xml
+50:  <comment />
+51:  </line>
+
+town6.level3.dialogue.xml
+65:  <comment />
+66:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town6.level3.dialogue.xml
+77:  <comment />
+78:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town6.level3.dialogue.xml
+160:  <comment />
+161:  </line>
+
+town6.level5.dialogue.xml
+51:  <comment />
+52:  <post-script>npc("npc1").talk("quest:in-progress:killed-all-merchants");</post-script>
+
+town7.level1.dialogue.xml
+27:  <comment />
+28:  <post-script>map().runScript("npc1.shop");</post-script>
+
+town7.level1.dialogue.xml
+75:  <comment />
+76:  </line>
+
+town7.level1.dialogue.xml
+90:  <comment />
+91:  </line>
+
+town7.level1.dialogue.xml
+104:  <comment />
+105:  <post-script>map().runScript("npc1.shop");</post-script>
+
+town7.level1.dialogue.xml
+116:  <comment />
+117:  </line>
+
+town7.level1.dialogue.xml
+149:  <comment />
+150:  <post-script>map().runScript("npc2.shop");</post-script>
+
+town7.level1.dialogue.xml
+181:  <comment />
+182:  </line>
+
+town7.level1.dialogue.xml
+195:  <comment />
+196:  <post-script>map().runScript("npc2.shop");</post-script>
+
+world0.level3.dialogue.xml
+79:  <comment />
+80:  </line>
+
+world0.level3.dialogue.xml
+99:  <comment />
+100:  </line>
+
+world0.level3.dialogue.xml
+128:  <comment />
+129:  <post-script>player().acquireItem("beginners-shoes");</post-script>
+
+world0.level3.dialogue.xml
+140:  <comment />
+141:  <post-script>player().acquireItem("beginners-shovel");</post-script>
+
+world0.level3.dialogue.xml
+152:  <comment />
+153:  <post-script>player().acquireItem("beginners-gambling-ring");</post-script>
+
+world0.level3.dialogue.xml
+164:  <comment />
+165:  <post-script>player().acquireItem("beginners-trap-glue");</post-script>
+
+world0.level3.dialogue.xml
+176:  <comment />
+177:  <post-script>player().acquireItem("beginners-heavy-anvil");</post-script>
+
+world0.level3.dialogue.xml
+233:  <comment />
+234:  </line>
+
+world0.level3.dialogue.xml
+263:  <comment />
+264:  </line>
+
+world0.level4.dialogue.xml
+159:  <comment />
+160:  </line>
+

@@ -1,0 +1,336 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 152 334 323 0 0 0 327 327 0 0 0 0 0 0 
+			216 216 216 216 0 0 152 274 303 331 256 323 303 274 0 0 0 0 0 0 
+			0 0 0 0 207 0 152 273 0 0 274 0 0 273 0 0 0 0 0 0 
+			0 0 0 0 334 326 328 256 0 9 273 0 0 253 326 326 323 152 0 0 
+			0 0 0 0 0 0 0 303 332 323 253 329 334 303 0 0 0 152 216 216 
+			0 0 0 0 0 0 0 144 0 0 144 0 0 144 0 0 0 152 0 0 
+			0 0 0 0 0 0 0 144 0 0 144 0 0 144 216 216 207 152 0 0 
+			0 0 0 0 0 0 0 144 0 0 144 216 216 207 0 0 332 327 152 0 
+			118 236 0 0 0 0 0 144 216 216 207 0 0 0 0 0 0 303 334 152 
+			96 235 0 0 0 216 216 207 0 0 0 0 0 0 0 0 0 0 303 334 
+			98 237 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			99 237 0 0 0 0 0 0 152 328 334 327 0 0 152 332 255 325 0 0 
+			98 118 110 111 117 0 0 0 152 0 0 0 0 0 152 0 0 0 0 0 
+			99 99 0 0 99 0 323 255 303 0 0 152 324 328 329 0 0 152 323 334 
+			98 0 0 99 98 0 0 0 0 0 0 152 0 0 0 0 0 152 0 0 
+			99 0 0 96 0 0 0 0 0 324 255 325 0 0 0 328 332 326 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 302 0 0 0 0 300 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			302 0 0 300 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '10' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Elizabeth' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '2' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '12' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '10' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '11' x = '1' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '2' x = '16' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '10' x = '11' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '12' x = '12' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '14' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '11' x = '18' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '9' x = '4' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '2' x = '5' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '0' x = '11' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '9' y = '13' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Elizabeth'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '13' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '17' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '14' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '9' y = '14' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle4.enter' x = '9' y = '3' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle4'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle4.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '15' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle4.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle4.enter").loadMap("puzzle4", "origin");
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "2.3.npc1.quest"
+
+        #define FLAG_KILLED_ELIZABETH "flag-killed-elizabeth"
+
+        #define UPDATE_KILLED_ELIZABETH_BEFORE "update-killed-elizabeth-before"
+        #define UPDATE_KILLED_ELIZABETH_DURING "update-killed-elizabeth-during"
+        #define UPDATE_KILLED_ELIZABETH_AFTER "update-killed-elizabeth-after"
+
+        // Did we kill her before accepting quest?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Failed quest
+            quest(QUEST).status("failed");
+
+            // Premature kill update
+            quest(QUEST).update(UPDATE_KILLED_ELIZABETH_BEFORE).status("active");
+        }
+
+        // Killed her during quest, still fails quest
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Fails, no doubt
+            quest(QUEST).status("failed");
+
+            // Premeditated kill update
+            quest(QUEST).update(UPDATE_KILLED_ELIZABETH_DURING).status("active");
+        }
+
+        // Only other possibility here is that we completed the quest already
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Just an extra update
+            quest(QUEST).update(UPDATE_KILLED_ELIZABETH_AFTER).status("active");
+        }
+
+
+        // Always toggle flag
+        quest(QUEST).update(FLAG_KILLED_ELIZABETH).status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.quest-complete'>
+		// Slightly advanced logic here, so it's its own script...
+        #define QUEST "2.3.npc1.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_COLLECTED_1 "update-collected-1"
+        #define UPDATE_COLLECTED_2 "update-collected-2"
+        #define UPDATE_COLLECTED_ALL "update-collected-all"
+        #define UPDATE_PAID_OFF "update-paid-off"
+        #define UPDATE_PAID_ALL "update-paid-all"
+        #define UPDATE_DELIVERED_TAXES "update-delivered-taxes"
+
+
+        // Definitely completed the quest
+        quest(QUEST).status("complete");
+
+
+        // Did we pay the whole thing off ourself?
+        if ( session("2.3.npc1:tithes-collected").get("integer") == 0 )
+        {
+            // EXTRA XP???
+            debug("give extra xp");
+
+            // Paid it all without collecting any illegitimate "tax" money
+            // Note this as a quest update
+            quest(QUEST).update(UPDATE_PAID_ALL).status("active");
+        }
+
+        // No.  How much did we collect?
+        else
+        {
+            // Did we pay off at least one of them?
+            if ( session("2.3.npc1:tithes-collected").get("integer") &lt; 3 )
+            {
+                // Flag quest update as active
+                quest(QUEST).update(UPDATE_PAID_OFF).status("active");
+            }
+
+            // Regardless, we just delivered the money after collecting at least some.
+            quest(QUEST).update(UPDATE_DELIVERED_TAXES).status("active");
+        }
+
+
+        // Deduct the number of tithes we didn't actually collect from player's wallet
+        range( session("2.3.npc1:tithes-collected").get(), 3 )
+        {
+            debug( "Deducting tithe from player wallet, amount = ", session("2.3.npc1:tithe-amount").get() );
+            player().subtractGold(
+                session("2.3.npc1:tithe-amount").get()
+            );
+        }
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "2.3.npc1.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_COLLECTED_1 "update-collected-1"
+        #define UPDATE_COLLECTED_2 "update-collected-2"
+        #define UPDATE_COLLECTED_ALL "update-collected-all"
+        #define UPDATE_PAID_OFF "update-paid-off"
+        #define UPDATE_PAID_ALL "update-paid-all"
+        #define UPDATE_KILLED_ELIZABETH "update-killed-elizabeth"
+        #define UPDATE_DELIVERED_TAXES "update-delivered-taxes"
+
+        // Quest not assigned?  Let's get to work
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Let's declare/create this new session variable at 0 just to prepare
+            session("2.3.npc1:tithes-collected").set("0");
+
+            // Declare how many tithes we're looking for.
+            session("2.3.npc1:tithes-needed").set("3");
+
+
+            // No way to complete this beforehand
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // If the quest is in progress, let's see how close to complete we are.
+            // Have we collected enough tithes (3)?
+            if ( session("2.3.npc1:tithes-collected").get("integer") >= 3 )
+            {
+                // Option to turn in
+                npc("npc1").talk("quest:in-progress:collected-tithes");
+            }
+
+            else
+            {
+                // Start by disabling all pay-your-way responses
+                npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("pay").disable();
+
+                // Have we collected 2?
+                if ( session("2.3.npc1:tithes-collected").get("integer") >= 2 )
+                {
+                    // Enable appropriate response
+                    npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("collected2").enable();
+                }
+
+                // One, maybe?
+                elif ( session("2.3.npc1:tithes-collected").get("integer") >= 1 )
+                {
+                    npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("collected1").enable();
+                }
+
+                // None?  Pay in full?
+                else
+                {
+debug( "Let's pay in full, maybe..." );
+                    npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("collected0").enable();
+                }
+
+
+                // We've enabled both the "normal" and the "extorted" pay response for the current number of tithes.
+                // Let's disable the one we don't want...
+                if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+                {
+                    // We don't want the normal one, we have to cover the extra tax
+                    npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("normal").disable();
+                }
+
+                else
+                {
+                    // We don't need to pay a premium
+                    npc("npc1").conversation("quest:in-progress").branch("root").getLinesByClass("*").getResponsesByClass("extorted").disable();
+                }
+
+
+                // Talk, with option to buy out or say goodbye
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // congratulations
+            npc("npc1").talk("quest:complete");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Only way to fail is to kill Elizabeth.
+            // Can't talk to her after that.
+            // n/a, then.
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.a")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+</scripts>

@@ -1,0 +1,19 @@
+<characters>
+	<arrow1>
+		<chapter1>
+			<conversation id = 'tutorial'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Climb the [color=dim]ladders[/color] to reach the top part of this level.  Press [color=dim]@up[/color] to climb ladders.</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>Use the monkey bars at the top to cross over into the next level.</comment>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</arrow1>
+</characters>

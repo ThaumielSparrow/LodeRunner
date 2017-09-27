@@ -1,0 +1,50 @@
+<flags>
+    <flag name = 'sound debug mode'>
+        <description>
+            If you have trouble with delayed sound effects or other
+            audio issues, changing the value from 0 to 1
+            might improve your results.
+        </description>
+        <value>1</value>
+    </flag>
+    <flag name = 'http_host'>
+        <description>
+            Warning:  Do not modify this value without a good reason!
+
+            ALRS uses this value to determine where to seek DLC
+            listings and cooperative game sessions.  If the website
+            address changes in 10 years to www.reallyoldgames.com,
+            you would then want to change the "value" parameter to
+            www.reallyoldgames.com.
+        </description>
+        <value>www.mashupgames.com</value>
+    </flag>
+    <flag name = 'menu_lightbox_intensity'>
+        <description>
+            When menus appear on the screen, the game will
+            add a lightbox effect to the paused game in the background.
+
+            By default, the lightbox intensity is 0.45.
+
+            Increase the value higher (less than 1.0) to further dim
+            the "information" in the background.
+
+            Lower the value for a less powerful lightbox.
+        </description>
+        <value>0.6</value>
+    </flag>
+    <flag name = 'menu_blur_intensity'>
+        <description>
+            When menus appear on the screen, the game will
+            blur the background and apply a greyscale effect.
+
+            To achieve a stronger blur, lower the value below 1.0.
+            Do not use 0, and do not use a negative number.
+
+            To achieve a weaker blur, raise the value above 1.0.
+            Use common sense and don't go higher than a few ticks,
+            let's say 9.0.  Your own risk, etc.
+        </description>
+        <value>0.5</value>
+    </flag>
+</flags>

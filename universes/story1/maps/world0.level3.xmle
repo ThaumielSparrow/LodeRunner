@@ -1,0 +1,224 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 221 221 0 0 223 218 153 219 218 228 153 
+			0 0 222 200 0 0 0 203 0 154 0 0 202 154 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 152 
+			26 222 222 24 27 221 223 222 228 154 222 23 29 224 
+			0 0 202 204 0 201 205 0 0 152 204 207 0 0 
+			0 224 202 0 0 0 204 223 0 152 0 221 223 0 
+			0 0 202 0 0 0 0 0 0 153 223 200 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 204 0 0 
+			0 222 227 218 154 226 23 27 226 223 0 0 0 0 
+			226 204 0 0 154 0 0 0 0 202 152 227 152 0 
+			0 205 153 23 23 227 224 0 0 0 154 204 226 154 
+			0 209 152 0 0 0 205 223 28 222 153 0 0 152 
+			0 227 152 0 0 0 0 0 0 204 154 225 27 223 
+			225 201 154 221 221 0 222 0 0 0 154 0 0 0 
+			202 200 152 0 0 0 0 0 0 0 152 0 207 0 
+			0 200 152 216 216 226 217 216 153 222 228 152 225 0 
+			0 0 153 0 0 0 0 0 154 0 0 153 0 0 
+			210 0 153 228 24 24 23 220 153 0 0 154 227 228 
+			223 227 23 203 0 0 204 205 227 29 26 225 201 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 302 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 283 263 0 0 283 0 0 0 0 265 0 0 283 
+			0 0 0 302 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 302 0 
+			0 0 300 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 265 0 0 283 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+			0 263 0 0 0 283 0 0 0 0 0 300 263 0 
+			0 0 0 0 0 0 300 263 0 265 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 265 0 302 
+			0 0 0 0 302 0 300 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 263 0 283 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 265 0 0 0 265 0 0 0 0 0 0 
+			300 263 0 302 0 0 300 0 263 0 0 283 302 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '11' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Brent' title = '' />
+	<entity x = '5' y = '2' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow1' class = '' nick = 'Brent' title = '' />
+	<entity x = '6' y = '3' genus = '3' species = 'terminal' ai-behavior = '1' name = 'terminal1' class = 'terminal' nick = 'Information Terminal' title = '' />
+	<entity x = '12' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '13' y = '15' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '6' y = '13' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '9' y = '18' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '8' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '0' y = '17' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '1' y = '18' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '5' y = '15' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '2' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '1' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+	<entity x = '7' y = '3' genus = '6' ai-behavior = '1' name = 'gold.uid.10' class = '' nick = '' title = '' />
+	<entity x = '13' y = '0' genus = '6' ai-behavior = '1' name = 'gold.uid.11' class = '' nick = '' title = '' />
+	<entity x = '11' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.12' class = '' nick = '' title = '' />
+	<entity x = '6' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.13' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '10' y = '2' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Brent'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safezone' x = '0' y = '1' width = '9' height = '4' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'safezone.touch' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'safezone.exit' />
+		</exit>
+	</trigger>
+	<trigger name = 'quest' x = '0' y = '0' width = '1' height = '5' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'quest.touch' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'terminal1.talk' x = '6' y = '3' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use terminal'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'terminal1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '11' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '8' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+
+        // Set hotspots for first NPC
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.a")
+                   .addHotspot("sleep(0.5)");
+
+        // Trigger follow
+        trigger("npc1.talk").follow("npc1");
+    </script>
+	<script name = 'onvisit'>
+		// If we haven't visited this map yet, the "talk to Brent"
+        // quest will be "inactive."  In that event, let's activate the quest for the player...
+        #define QUEST "0.3.npc1.quest"
+
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // First quest for the player, an easy one
+            quest(QUEST).status("active");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "0.3.npc1.quest"
+
+        #define UPDATE_TALKED "update-talked"
+        #define UPDATE_KILLED_FAST "update-killed-fast"
+        #define UPDATE_KILLED_AFTER "update-killed-after"
+
+        // Did we talk to him already?  If not, then we failed the quest.
+        if ( quest(QUEST).update(UPDATE_TALKED).status() != "active" )
+        {
+            // killed too soon
+            quest(QUEST).status("failed");
+            quest(QUEST).update(UPDATE_KILLED_FAST).status("active");
+        }
+
+        else
+        {
+            // killed him after completion, doesn't really matter
+            quest(QUEST).update(UPDATE_KILLED_AFTER).status("active");
+        }
+
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'safezone.exit' />
+	<script name = 'safezone.touch'>npc("arrow1").dismissFYI("tutorial3");</script>
+	<script name = 'onbirth' />
+	<script name = 'quest.touch' />
+	<script name = 'npc1.talk'>
+		#define QUEST "0.3.npc1.quest"
+
+        #define UPDATE_TALKED "update-talked"
+
+        // If we haven't talked to him yet, enable free item response after some chatting
+        if ( quest(QUEST).update(UPDATE_TALKED).status() != "active" )
+        {
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("free-item").enable();
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("default").disable();
+
+            // Disable all item selection options by default
+            npc("npc1").conversation("intro").branch("root.free-item").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+            // Select 2 at random to enable
+            npc("npc1").conversation("intro").branch("root.free-item").getLinesByClass("prompt").getResponsesByClass("*").selectRandom(2).enable();
+
+
+            // Flag that we talked to him
+            quest(QUEST).update(UPDATE_TALKED).status("active");
+        }
+
+        // We already got an item, so next time it'll just be "goodbye"
+        else
+        {
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("default").enable();
+            npc("npc1").conversation("intro").branch("root.details").getLinesByClass("free-item").disable();
+        }
+
+        // this guy always runs the same conversation, other than the free item / goodbye thing...
+        npc("npc1").talk("intro");
+	</script>
+	<script name = 'terminal1.talk'>
+        // This terminal always uses the same conversation
+        npc("terminal1").talk("default", "shop");
+    </script>
+	<script name = 'onunload'>
+        // get rid of fyi message(s)
+        npc("arrow1")
+            .killFYI("tutorial3");
+    </script>
+</scripts>

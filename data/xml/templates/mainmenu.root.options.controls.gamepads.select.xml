@@ -1,0 +1,41 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@device-count</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.controls.gamepads.select'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' xvalign = 'center' center-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group>
+            <item disabled = '1' class = 'line-break' rel = 'root.options.gamepads.switch.back' />
+            <item disabled = '1' class = 'first-title' rel = 'root.generic'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Devices Found:  @device-count' alpha-factor-start = '0.5' />
+                    <rect class = 'underline' x = '60' y = '0' width = '240' height = '2' align = 'right' midpoint = '0.75' />
+                </stack>
+            </item>
+        </item-group>
+
+        <item-group id = 'ext.devices' render-border = '0' per-row = '1' />
+
+        <item-group>
+            <item class = 'title' id = 'testid.back' rel = 'root.generic'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' />
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid.back'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Return to Options' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+            </item>
+        </item-group>
+
+    </rowmenu>
+
+</template>

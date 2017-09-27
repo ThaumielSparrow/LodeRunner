@@ -1,0 +1,278 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 211 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 229 0 0 211 220 222 0 223 227 0 0 0 0 0 0 
+			0 0 0 0 211 154 223 219 219 221 203 0 0 0 0 211 211 0 0 0 0 
+			0 0 0 227 227 154 0 0 0 0 0 154 225 224 24 29 221 154 0 229 227 
+			0 0 0 204 0 154 211 211 0 0 229 154 0 203 201 0 0 154 0 226 204 
+			0 0 0 0 0 154 223 225 207 29 224 154 0 0 219 219 0 152 0 0 0 
+			0 0 0 0 228 154 201 0 228 0 211 154 211 0 0 0 221 154 29 222 0 
+			0 0 0 207 0 154 0 0 204 226 27 154 25 225 0 207 205 154 200 203 0 
+			0 0 0 226 154 228 27 23 205 205 0 154 201 205 26 24 200 154 201 0 0 
+			0 0 0 0 154 0 205 207 202 205 220 154 207 229 0 200 204 154 0 0 0 
+			0 0 0 0 154 0 204 221 202 205 201 154 220 221 223 203 202 224 154 211 0 
+			0 0 0 154 221 28 29 203 203 144 205 228 204 200 201 201 202 0 152 222 0 
+			0 0 0 154 0 205 201 201 0 144 205 0 204 201 207 205 202 0 154 205 0 
+			0 0 0 154 0 0 207 203 227 144 0 0 144 205 226 202 0 0 154 205 222 
+			0 0 154 224 0 0 228 200 205 0 0 0 144 0 204 203 0 0 154 0 205 
+			0 0 152 0 0 0 201 0 216 0 221 0 0 226 200 0 0 0 154 0 229 
+			0 0 152 0 0 0 0 219 0 0 0 0 0 205 202 0 0 219 154 0 226 
+			0 0 225 154 0 0 217 0 0 0 0 0 0 0 219 0 219 0 153 226 200 
+			0 0 0 154 0 219 0 0 0 0 0 0 0 219 0 219 0 0 154 200 0 
+			0 0 0 154 219 0 211 211 229 0 0 0 0 211 0 0 219 0 152 0 0 
+			0 0 0 0 0 223 226 29 225 0 225 224 0 228 228 229 0 219 154 0 0 
+			0 0 0 0 0 0 203 205 0 0 0 0 0 0 200 221 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 105 229 211 105 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 225 201 227 223 205 221 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'slide2' x = '11' y = '16' modal = '1'>
+		<structure>
+			0 144 0 
+			0 144 0 
+			0 144 0 
+			0 144 0 
+			0 144 0 
+		</structure>
+	</plane>
+	<plane name = 'slide2b' x = '8' y = '15' modal = '1'>
+		<structure>
+			0 144 0 
+			0 144 0 
+			0 144 0 
+			0 144 0 
+			0 144 0 
+			0 144 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '0' y = '6' modal = '0'>
+		<structure>
+			0 0 0 
+			0 49 0 
+			49 207 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '11' y = '19' modal = '0'>
+		<structure>
+			0 207 0 
+			0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2b' x = '8' y = '15' modal = '0'>
+		<structure>
+			0 207 0 
+			0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 0 300 302 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 263 0 265 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 263 0 0 283 0 
+			0 0 0 0 0 0 0 0 0 263 0 0 0 283 0 0 0 0 0 302 0 
+			0 0 0 300 0 263 0 0 283 0 0 0 0 263 0 0 283 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 265 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 302 0 300 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 302 0 0 0 0 302 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 302 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 302 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '16' x = '7' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '18' x = '5' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '20' x = '11' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '10' x = '14' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '15' x = '13' genus = '6' class = '' />
+<entity name = 'gold.uid.5' title = '' ai-behavior = '1' nick = '' y = '18' x = '14' genus = '6' class = '' />
+<entity name = 'gold.uid.6' title = '' ai-behavior = '1' nick = '' y = '6' x = '18' genus = '6' class = '' />
+<entity name = 'gold.uid.7' title = '' ai-behavior = '1' nick = '' y = '7' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.8' title = '' ai-behavior = '1' nick = '' y = '8' x = '7' genus = '6' class = '' />
+<entity name = 'gold.uid.9' title = '' ai-behavior = '1' nick = '' y = '13' x = '2' genus = '6' class = '' />
+<entity name = 'gold.uid.10' title = '' ai-behavior = '1' nick = '' y = '17' x = '16' genus = '6' class = '' />
+<entity name = 'gold.uid.11' title = '' ai-behavior = '1' nick = '' y = '23' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.12' title = '' ai-behavior = '1' nick = '' y = '13' x = '20' genus = '6' class = '' />
+<entity name = 'gold.uid.13' title = '' ai-behavior = '1' nick = '' y = '9' x = '20' genus = '6' class = '' />
+<entity name = 'gold.uid.14' title = '' ai-behavior = '1' nick = '' y = '3' x = '13' genus = '6' class = '' />
+	<entity x = '19' y = '17' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '1' position = '2' />
+	<entity x = '3' y = '3' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+	<trigger name = 'lever2' x = '19' y = '17' width = '1' height = '1' behavior = '3' prompt = '@do:use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'shift2.shift' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever2.disabled' x = '19' y = '17' width = '1' height = '1' behavior = '3' prompt = 'This lever no longer works.'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '3' y = '3' width = '1' height = '1' behavior = '3' prompt = '@do:use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'shift1.shift' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift1.x1' x = '0' y = '5' width = '1' height = '5' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift1.x2' x = '20' y = '5' width = '1' height = '5' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift2.y1' x = '8' y = '16' width = '5' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift2.y1b' x = '8' y = '15' width = '5' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'shift2.y2' x = '8' y = '21' width = '5' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'origin-backup' x = '9' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'origin' x = '19' y = '17' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map()
+            .setParams({
+                "overview": "Sometimes you need to use a moving platform to fill in the blanks before committing to a serious digging attempt.",
+                "tooltip": "You have [color=special]1 bomb[/color] to use on this level.  Play with the levers before you dig too far into the ground!",
+                "prizes.warehouses": ["puzzle1"],
+                "prizes.min-quality": 1,
+                "prizes.max-quality": 1,
+                "prizes.required-item-names": ["running-shoes"]
+            })
+
+            .setWaveAllowances({
+                "bombs": 1
+            });
+
+        // Disable out-of-order trigger
+        trigger("lever2.disabled").disable();
+
+        // 4th param (speed) set at 1000 for an "instant" slide (invisible to user).
+        map().plane("slide2").slide("absolute", "down", 72, 1000);
+        map().plane("slide2b").slide("absolute", "up", 0, 1000);
+
+        showPuzzleIntro();
+	</script>
+	<script name = 'shift1.shift'>
+		if ( npc("lever1").hasPosition("left") )
+        {
+            npc("lever1").setPosition("right");
+            map().plane("shift1").shiftToX("shift1.x2");
+        }
+
+        else
+        {
+            npc("lever1").setPosition("left");
+            map().plane("shift1").shiftToX("shift1.x1");
+        }
+	</script>
+	<script name = 'shift2.shift'>
+		if ( npc("lever2").hasPosition("up") )
+        {
+            npc("lever2").setPosition("down");
+
+            // 3rd param -1 indicates slide down to full planar height.
+            // Using arcane +simultaneous statement syntax to indicate that all 4 of these commands
+            //   (slides and shifts) should occur simultaneously.
+            map().plane("slide2").slide("absolute", "down", -1, 1.5);
+            +map().plane("slide2b").slide("absolute", "down", -1, 1.5);
+            +map().plane("shift2").shiftToY("shift2.y2");
+            +map().plane("shift2b").shiftToY("shift2.y2");
+
+
+            // Deactivate trigger.  Player can only lower the boxes...
+            //trigger("lever2").disable();
+
+            // Let's give them another trigger that does nothing (but says "out of order")
+            //trigger("lever2.disabled").enable();
+        }
+
+        else
+        {
+            npc("lever2").setPosition("up");
+
+            // 3rd param unused I believe (when sliding up).
+            // Using arcane +simultaneous statement syntax to indicate that all 4 of these commands
+            //   (slides and shifts) should occur simultaneously.
+            map().plane("slide2").slide("absolute", "up", 0, 1.5);
+            +map().plane("slide2b").slide("absolute", "up", 0, 1.5);
+            +map().plane("shift2").shiftToY("shift2.y1");
+            +map().plane("shift2b").shiftToY("shift2.y1b");
+        }
+	</script>
+</scripts>

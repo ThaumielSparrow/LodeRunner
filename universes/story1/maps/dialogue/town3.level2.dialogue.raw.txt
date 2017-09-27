@@ -1,0 +1,95 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1'] Hi, $player$.  I'm expecting some sort of delivery from a friend of mine in $Amandria$.  If you run across $Dave$, please ask him if he has a spare $item$ to send to me!
+
+                [n id = 'nag2'] Hey $player$, have you seen any delivery worker recently, perhaps around $Amandria$?  A friend of mine named $Dave$ said he planned to send me a $special item$, but I haven't seen anything show up yet.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you can't remember how to get to $Amandria$, you can take a look at the world map in your $pause menu$.  While you're \
+                    there, you can also choose to customize your gameplay controls!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I wish I could customize my default walking route as easily as you customized your controls, $player$!  Unfortunately I cannot, \
+                    and I must therefore rely upon $you$ to deliver the package from $Dave$.  Have you talked to him lately?
+
+
+        @conversation[id = 'quest:in-progress:carrying-item']
+
+            >>> root
+
+                [l id = 'line1'] Did $Dave$ send that item for me, $player$?
+
+                    Wow, I can't believe it!  $[1.1.npc1.quest:item-title]!  This will surely help to keep me safe from the ^bad guys^, with enough practice and training!  Can I have it now, please?
+
+                    +yes Take it, $JoAnna$.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thank you so much for bringing this to me!  I know it won't go very far, $player$, but please take this $1 free bomb$ for your work!
+
+                                @post-script
+                                    quest("1.1.npc1.quest").status("complete");
+                                    quest("1.1.npc1.quest").update("update-delivered-item").status("active");
+                                    player().addBombs(1).dropItem( session("1.1.npc1.quest:item-name").get() );
+
+                    +buy[min-gold = '125'] I'll pay you $125 gold pieces$ if you let me keep it forever.
+
+                        >>> root.buy
+
+                            [l id = 'line1'] $Dave$ probably wouldn't approve of this arrangement.  We can keep it as our little secret, though!  I have to admit, I like gold even more than I like special items.
+
+                                You've got a deal, $player$.  You can keep the item, and I will take your $gold pieces$.  Maybe I can buy a better item with them!  Good luck against the ^bad guys^!
+
+                                @post-script
+                                    quest("1.1.npc1.quest").status("complete");
+                                    quest("1.1.npc1.quest").update("update-bought-item").status("active");
+                                    player().subtractGold(125);
+
+                    +later I'm going to hold onto it for a little while.
+
+                        >>> root.later
+
+                            [n id = 'nag1'] Ok, $player$.  Come back when you're ready to deliver the item to me!
+
+                [n id = 'nag1'] Do you think I can have that item $Dave$ gave you now, $player$?
+
+                    +yes Take it now, $JoAnna$.
+
+                    +buy[min-gold = '125'] I'll pay you $125 gold pieces$ if you let me keep it forever.
+
+                    +later I'm going to hold onto it for a little while longer.
+
+
+        @conversation[id = 'quest:complete:delivered-item']
+
+            >>> root
+
+                [n id = 'nag1'] Thanks for bringing me this great item, $player$!
+
+                [n id = 'nag2'] This item you brought me will definitely protect me from the ^bad guys^, $player$!  Thanks again!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I was hoping that $Dave$ would send me the 5th edition of $How to Customize Your Controls in the Pause Menu$, but \
+                    this item he sent in its place works great too!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] You're doing everything right so far, $player$.  You brought me this item that will protect me from the terrible ^bad guys^, \
+                    and you also took the time to customize your controls in the $pause menu$!
+
+
+        @conversation[id = 'quest:complete:bought-item']
+
+            >>> root
+
+                [n id = 'nag1' priority = '5'] I'm thinking of investing this gold you gave me to help a new friend I met on the internet settle a Nigerian legal battle.  In the end, I'll have twice as much gold as you \
+                    gave me originally, $player$!
+
+                [n id = 'nag2'] I can't decide what to do with all of this gold you gave me, $player$.  My inbox is brimming with special offers!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Do you know anything about customizing gameplay controls, $player$?  I read on the internet that you can customize them \
+                    in the $pause menu$, but I don't understand what that means!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] How long did it take you to customize your controls, $player$?  I have a friend who is trying to do that, but he just \
+                    can't make it work!

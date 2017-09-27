@@ -1,0 +1,181 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' class = 'default'] Greetings, $player$!  I have a few little trinkets to help you defeat the ^Bungeling Emperor^.
+
+                    +shop I'd like to do some shopping.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+
+                                @post-script
+                                    map().runScript("npc1.shop");
+
+                    +quest[class = 'quest'] Do you have anything in the back?
+
+                        >>> root.quest
+
+                            [l id = 'line1' class = 'available'] On the record, $player$?  No.  Perhaps, though...
+
+                                I've been quabbling with another merchant lately.  I don't want to name them yet, but I could do a lot more business \
+                                if you paid them a visit with one of my bombs.
+
+                                +more Please, give me a name...
+
+                                +later I've got to go.
+
+                            [n id = 'nag1' class = 'available'] If you're still looking for some better wares, then you're going to have to play ball.
+
+                                I'm still quabbling with that other unnamed merchant.  I could do a lot more business if you knocked them out of the park.
+
+                                +more Okay, give me a name...
+
+                                    >>> root.quest.more
+
+                                        [l id = 'line1'] Look for a merchant named $Nichole$ just northwest of here, in $Edenton$.  She's been siphoning off a lot of my clients lately.
+
+                                            With all of the ^bad guys^ controlling the rural areas of $Lelandria$, I can't risk confronting her directly.
+
+                                            You, on the other hand...
+                                            -redirect root.quest.more
+
+                                        [l id = 'line2'] If you dispose of $Nichole$, I'll upgrade my inventory and regain all of my old customers at the same \
+                                            time.
+
+                                            What do you say, $player$?
+
+                                            +accept[class = 'default'] I'll do it, don't worry.
+
+                                                >>> root.quest.more.accept
+
+                                                    [l id = 'line1'] I can truly count on you, $player$.  Take these $3 bombs$ to help you do your job, and check back with me when you're done!
+
+                                                        @post-script
+                                                            quest("1.3.npc1.quest").status("active");
+                                                            quest("1.3.npc1.quest").update("update-got-free-bombs").status("active");
+                                                            player().addBombs(3);
+
+                                            +extort[class = 'default'] Give me 5 free bombs and I'll give you results.
+
+                                                >>> root.quest.more.extort
+
+                                                    [l id = 'line1'] I don't take kindly to extortion, $player$.  I had actually planned on giving you a couple of bombs to experiment with, but now \
+                                                        I think I'll just hold on to them.  Now, get to work!
+
+                                                        @post-script
+                                                            quest("1.3.npc1.quest").status("active");
+                                                            quest("1.3.npc1.quest").update("update-extorted").status("active");
+
+                                            +already-done[class = 'already-done'] I already killed her, dude.
+
+                                                >>> root.quest.more.already-done
+
+                                                    [l id = 'line1'] Incredible, $player$!  You clearly know what to do with a bomb when you find one, so I'm going to give you these $10 free bombs$.  Do what you do best with them!
+
+                                                        Don't forget to take a look at my inventory, also.  I added my $rare items$ for your perusal!
+
+                                                        @post-script
+                                                            quest("1.3.npc1.quest").status("complete");
+                                                            quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");
+                                                            npc("npc1").clearIndicators().addIndicator("merchant");
+                                                            npc("npc1").clearVendorInventory();
+                                                            player().addBombs(10);
+
+                                +later I've got to go.
+
+                                    >>> root.quest.later
+
+                                        [n id = 'nag1'] Get back to me when you change your mind, $player$!
+
+                            [n id = 'nag2' class = 'failed'] I tried to work with you, $player$, but you wouldn't play ball.  I'm not going to waste my time \
+                                giving you another task!
+
+                            [n id = 'nag3' class = 'failed'] If you're looking for something different, maybe you should check with $Nichole$.  You like her better than you like me, right?
+
+                    +quit Bye.
+
+                        >>> root.quit
+
+                [n id = 'nag2' class = 'quest:in-progress'] Have you gotten rid of $Nichole$ yet, $player$?  I believe you will find her in $Edenton$.
+
+                    +shop I'd like to do some shopping.
+
+                    +quit Bye.
+
+                [n id = 'nag3' class = 'quest:in-progress'] Next time you're in $Edenton$, remember to take care of $Nichole$ for me.  I'll make it worth your while, $player$!
+
+                    +shop I'd like to do some shopping.
+
+                    +quit Bye.
+
+                [n id = 'nag4' class = 'quest:complete'] Thanks for taking care of $Nichole$ for me, $player$.  I've upgraded my inventory for you!
+
+                    +shop I'd like to do some shopping.
+
+                    +quit Bye.
+
+                [n id = 'nag5' class = 'quest:failed'] Too bad you went back on your word, $player$.  I'll still sell to you, though!
+
+                    +shop I'd like to do some shopping.
+
+                    +quit Bye.
+
+
+        @conversation[id = 'quest:in-progress:warned-nichole']
+
+            >>> root
+
+                [l id = 'line1' transition = '1'] I hear you decided to make a deal with $Nichole$.  I can respect your shrewdness, but I cannot condone it.
+
+                    I decided to liquidate all of the $rare items$ I could have sold to you.  Next time you double back on a deal, remember what happened on this one!
+
+                    @post-script
+                        quest("1.3.npc1.quest").status("failed");
+                        quest("1.3.npc1.quest").update("update-inventory-liquidated").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        map().runScript("npc1.talk");
+
+
+        @conversation[id = 'quest:in-progress:killed-nichole:without-warning']
+
+            >>> root
+
+                [l id = 'line1' transition = '1'] Thank you for taking care of $Nichole$ for me.  I had heard rumors of a private gold stash she kept, but I clearly \
+                    won't have a chance to quiz her about it now.  Make sure to take a fresh look at my inventory, $player$.  As we agreed, I've added my $rare items$ to the listing!
+
+                    @post-script
+                        quest("1.3.npc1.quest").status("complete");
+                        quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        npc("npc1").clearVendorInventory();
+                        map().runScript("npc1.talk");
+
+
+        @conversation[id = 'quest:in-progress:killed-nichole:after-warning']
+
+            >>> root
+
+                [l id = 'line1'] You surpassed all of my greatest expectations, $player$!
+
+                    When you decided to warn $Nichole$, she began to transport her gold reserves to \
+                    the southern reaches of $Lelandria$.  After you finished your job, I intercepted her personal courier, killed him, and made off with the gold she clearly wasn't needing any longer!
+                    -redirect root
+
+                [l id = 'line2' transition = '1'] I'll happily share $50 gold pieces$ of that great bounty with you in return, $player$!
+
+                    Lest I forget to mention, you will find some new $rare items$ available in my inventory.  Spend wisely!
+
+                    @post-script
+                        quest("1.3.npc1.quest").status("complete");
+                        quest("1.3.npc1.quest").update("update-inventory-upgraded").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        npc("npc1").clearVendorInventory();
+                        player().addGold(50);
+                        map().runScript("npc1.talk");
+

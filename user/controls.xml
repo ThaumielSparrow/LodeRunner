@@ -1,0 +1,31 @@
+<devices>
+	<keyboard>
+		<control action = 'page-up' keycode = '280' />
+		<control action = 'right' keycode = '275' />
+		<control action = 'bomb' keycode = '98' />
+		<control action = 'down' keycode = '274' />
+		<control action = 'escape' keycode = '27' />
+		<control action = 'home' keycode = '278' />
+		<control action = 'minimap' keycode = '9' />
+		<control action = 'suicide' keycode = '107' />
+		<control action = 'end' keycode = '279' />
+		<control action = 'skill2' keycode = '50' />
+		<control action = 'skill1' keycode = '49' />
+		<control action = 'dig-forward' keycode = '32' />
+		<control action = 'menu-right' keycode = '275' />
+		<control action = 'net-chat' keycode = '9' />
+		<control action = 'dig-right' keycode = '118' />
+		<control action = 'menu-up' keycode = '273' />
+		<control action = 'page-down' keycode = '281' />
+		<control action = 'menu-down' keycode = '274' />
+		<control action = 'menu-left' keycode = '276' />
+		<control action = 'enter2' keycode = '271' />
+		<control action = 'dig-left' keycode = '122' />
+		<control action = 'up' keycode = '273' />
+		<control action = 'enter' keycode = '13' />
+		<control action = 'debug' keycode = '96' />
+		<control action = 'interact' keycode = '13' />
+		<control action = 'left' keycode = '276' />
+	</keyboard>
+	<gamepads />
+</devices>

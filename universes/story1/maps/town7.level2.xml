@@ -1,0 +1,376 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 218 217 218 324 334 154 0 
+			0 0 0 0 0 0 153 331 328 0 0 0 0 313 153 0 
+			0 0 0 0 0 0 152 0 306 332 219 0 0 0 152 0 
+			0 0 333 28 28 331 326 0 0 307 0 217 0 0 154 0 
+			0 330 305 0 0 0 0 0 216 0 0 0 323 0 154 0 
+			326 307 0 0 334 153 27 334 0 0 333 333 313 0 154 0 
+			0 0 0 0 305 153 0 0 0 0 0 304 0 0 152 0 
+			0 0 0 0 0 152 0 0 324 0 84 307 153 330 332 0 
+			0 0 0 0 0 330 331 0 0 0 0 0 153 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 153 0 0 0 
+			0 0 0 0 0 154 330 0 0 0 0 153 0 0 0 0 
+			330 0 0 0 0 152 307 0 0 328 154 0 0 0 0 0 
+			308 324 0 0 153 324 305 0 0 303 334 153 0 9 0 154 
+			306 27 23 152 333 308 0 0 0 0 303 334 153 329 29 333 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 342 340 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 300 340 0 0 0 0 0 0 
+			0 0 263 0 0 283 302 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 0 0 0 0 0 342 0 0 0 
+			0 0 0 0 263 0 0 283 0 0 343 0 346 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 345 0 0 302 0 0 302 0 
+			0 0 0 0 0 342 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 345 0 0 0 300 342 0 0 0 0 0 
+			263 0 0 0 283 302 0 0 0 0 0 0 0 265 0 283 
+		</structure>
+	</plane>
+	<plane name = 'slide1' x = '9' y = '5' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'block1' x = '9' y = '7' modal = '0'>
+		<structure>
+			207 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '7' y = '12' modal = '0'>
+		<structure>
+			49 51 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '4' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jessie' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '6' x = '13' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '9' x = '8' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '9' x = '11' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '11' x = '3' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '10' x = '15' genus = '6' class = '' />
+<entity name = 'gold.uid.5' title = '' ai-behavior = '1' nick = '' y = '13' x = '7' genus = '6' class = '' />
+<entity name = 'gold.uid.6' title = '' ai-behavior = '1' nick = '' y = '2' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.7' title = '' ai-behavior = '1' nick = '' y = '11' x = '0' genus = '6' class = '' />
+<entity name = 'gold.uid.8' title = '' ai-behavior = '1' nick = '' y = '12' x = '1' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '0' x = '12' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '3' x = '3' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '5' x = '0' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '6' x = '2' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '8' x = '6' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '5' x = '10' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '13' x = '14' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '10' x = '9' genus = '6' class = '' />
+	<entity x = '7' y = '11' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '3' position = '2' />
+	<entity x = '2' y = '13' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '3' position = '0' />
+	<entity x = '11' y = '5' genus = '9' ai-behavior = '1' name = 'lever2b' class = '' nick = '' title = '' mount = '1' position = '0' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Jessie' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '2' x = '3' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '1' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '1' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '3' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '3' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '4' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '0' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.g' height = '1' width = '1' behavior = '1' y = '0' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle17' name = 'puzzle17.enter' height = '1' width = '1' behavior = '3' y = '13' x = '13' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle17.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '11' x = '7'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever2' height = '1' width = '1' behavior = '3' y = '13' x = '2'>
+	<touch />
+	<hover>
+		<script name = 'lever2.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever2b' height = '1' width = '1' behavior = '3' y = '5' x = '11'>
+	<touch />
+	<hover>
+		<script name = 'lever2.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1a' height = '1' width = '1' behavior = '1' y = '8' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2a' height = '1' width = '1' behavior = '1' y = '6' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2b' height = '1' width = '1' behavior = '1' y = '8' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '11' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle17.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle17.enter").loadMap("puzzle17", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear indicators
+        npc("npc1").clearIndicators();
+
+        // If the heirloom quest is active and we haven&apos;t
+        // secured the heirloom, let&apos;s highlight Jessie as a quest NPC.
+        if (
+            quest("4.2.npc1.quest").status() == "active" and
+            quest("4.2.npc1.quest").update("update-got-heirloom").status() != "active"
+        )
+        {
+            // Quest involved
+            npc("npc1").addIndicator("quest-available");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define TASK "4.2.npc1.quest"
+
+
+        // We killed her ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // Doesn&apos;t immediately fail quest.  We wait until we give the bad news to Erin in person.
+            // Just note update for now...
+            quest(TASK).update("update-killed-jessie-before").status("active");
+        }
+
+        // On the job?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // We needed to get the heirloom first.  Did we?
+            if ( quest(TASK).update("update-got-heirloom").status() == "active" )
+            {
+                // Kill doesn&apos;t mean much
+                quest(TASK).update("update-killed-jessie-after-getting-heirloom").status("active");
+            }
+
+            // Ohhh, we got her too soon!
+            else
+            {
+                // We don&apos;t fail right away, not until we give the bad news to Erin in person.
+                quest(TASK).update("update-killed-jessie-prematurely").status("active");
+            }
+        }
+
+        // After completing quest, we came back to kill Jessie?
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // Already got heirloom
+            quest(TASK).update("update-killed-jessie-after-getting-heirloom").status("active");
+        }
+
+        // Failed quest by doing something out of order, now we&apos;re just killing her for sport?
+        else
+        {
+            quest(TASK).update("update-killed-jessie-after-failing").status("active");
+        }
+
+
+        // always flag update
+        quest(TASK).update("flag-killed-jessie").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		// npc1 Jessie is the primary target of 4.2 heirloom quest, but not to kill.
+        // instead we should kill Amelia down south, to coerce Jessie into surrendering the heirloom.
+
+        #define QUEST "4.2.npc1.quest"
+
+        #define UPDATE_KILLED_JESSIE_PREMATURELY "update-killed-jessie-prematurely"
+        #define UPDATE_KILLED_AMELIA "update-killed-amelia"
+        #define UPDATE_GOT_HEIRLOOM "update-got-heirloom"
+        #define UPDATE_KILLED_ERIN "update-killed-erin"
+
+        // Quest not assigned?  Generic messages
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            npc("npc1").talk("default");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we already get the heirloom?  She&apos;ll moan
+            if ( quest(QUEST).update(UPDATE_GOT_HEIRLOOM).status() == "active" )
+            {
+                npc("npc1").talk("quest:got-heirloom");
+            }
+
+            // Did we kill Amelia yet?  If so, she&apos;ll cough up the heirloom
+            elif ( quest(QUEST).update("flag-killed-amelia").status() == "active" )
+            {
+                npc("npc1").talk("quest:in-progress:killed-amelia");
+            }
+
+            // Otherwise, she&apos;ll never give it up, but you can try...
+            else
+            {
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // We had to kill Amelia and gotten the heirloom to have completed the quest
+            npc("npc1").talk("quest:got-heirloom");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Now, we can fail in 2 ways.  Before getting heirloom, or after.
+            if ( quest(QUEST).update(UPDATE_GOT_HEIRLOOM).status() == "active" )
+            {
+                // Here, we just say "how could you" all the same
+                npc("npc1").talk("quest:got-heirloom");
+            }
+
+            else
+            {
+                // If we never got the heirloom, then it&apos;s a unique conversation
+                npc("npc1").talk("quest:failed:lost-heirloom");
+            }
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.g");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // default sliding chain length
+        map().plane("slide1").slide("absolute", "up", 0, 1000); // hard-coded length, again!  yes!
+        map().plane("slide1").slide("absolute", "down", 48, 1000); // hard-coded length, again!  yes!
+	</script>
+	<script name = 'lever1.action'>
+		// lever points up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // shift down
+            map().plane("shift1").shiftToY("wp1b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // shift up
+            map().plane("shift1").shiftToY("wp1a");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever pointing up?
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // point down
+            npc("lever2").setPosition("down");
+            npc("lever2b").setPosition("down");
+
+            // shift block down, +slide chain down (simultaneous)
+            map().plane("block1").shiftToY("wp2b");
+            +map().plane("slide1").slide("absolute", "down", 72); // hard-coded length, oh well
+        }
+
+        // assume pointing down
+        else
+        {
+            // point up
+            npc("lever2").setPosition("up");
+            npc("lever2b").setPosition("up");
+
+            // shift block up, +slide chain up (simultaneous)
+            map().plane("block1").shiftToY("wp2a");
+            +map().plane("slide1").slide("absolute", "up", 24); // hard-coded length, again!  yes!
+        }
+	</script>
+</scripts>

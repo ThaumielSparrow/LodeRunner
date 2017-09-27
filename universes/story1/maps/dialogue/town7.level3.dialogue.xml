@@ -1,0 +1,32 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color]!  Do you know that my friend [color=special]Jessie[/color] on the north side of town has a [color=special]beautiful heirloom[/color]?  I think she [color=dim]stole it[/color] from somebody, though.</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>I think she [color=dim]stole it[/color] from someone named [color=special]Erin[/color] over in [color=special]Navarra[/color].  I don&apos;t know for sure, though.  Maybe you should ask?</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color]!  I hope you&apos;re not having any trouble with the [color=dim]bad guys[/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wish I could do something to help you against the [color=dim]bad guys[/color], [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I asked [color=special]Jessie[/color] if I could wear that [color=special]heirloom[/color] she allegedly stole.  However, she told me that I couldn&apos;t because I hadn&apos;t properly customized my controls in the [color=special]pause menu[/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Some time ago, I asked [color=special]Jessie[/color] if I could wear the [color=special]heirloom[/color] she purportedly stole from a woman east of here.  Unfortunately, she told me that I couldn&apos;t because she disapproved of the way I had customized my gameplay controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

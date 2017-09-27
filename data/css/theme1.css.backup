@@ -1,0 +1,377 @@
+// Base rules
+* {
+    color: rgb(225, 225, 225);
+    bbcode:
+        [color=dim]rgb(175, 175, 175)[/color],
+        [color=normal]rgb(225, 225, 225)[/color],
+        [color=evil]rgb(225, 75, 225)[/color],
+        [color=header]rgb(175, 175, 175)[/color],
+        [color=warning]rgb(225, 25, 25)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(207, 106, 19)[/color]
+}
+
+*:xactive {
+    bbcode:
+        [color=dim]rgb(175, 75, 75)[/color],
+        [color=normal]rgb(225, 225, 225)[/color],
+        [color=evil]rgb(25, 15, 105)[/color],
+        [color=header]rgb(175, 175, 175)[/color],
+        [color=warning]rgb(225, 25, 125)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(192, 160, 40)[/color]
+}
+
+.inactive-maybe {
+    bbcode:
+        [color=dim]rgb(75, 75, 75)[/color],
+        [color=normal]rgb(175, 175, 175)[/color],
+        [color=evil]rgb(25, 75, 125)[/color],
+        [color=header]rgb(75, 75, 75)[/color],
+        [color=warning]rgb(25, 225, 225)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(225, 225, 225)[/color]
+}
+
+
+// Standard rowmenu group, generic border
+rowmenu, hmenu {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+    shadow: rgb(25, 25, 25);
+    shadow-size: 2;
+}
+
+    // Alerts (e.g. Are you sure?) have a slightly lighter border
+    rowmenu.alert {
+        border: rgb(125, 125, 125);
+        shadow: rgb(75, 75, 75);
+    }
+
+    // Give tooltip rowmenus some padding
+    rowmenu.tooltip .prompt {
+        padding: 10;
+    }
+
+// These cascade from rowmenu already, but what the heck **
+rowmenu rowmenu-group {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+    shadow: rgb(25, 25, 25);
+    shadow-size: 2;
+    padding-bottom: 0;//10;
+}
+
+// By default, any RECT within a rowmenu functions as a "header background" (i.e. for window title bar)
+rowmenu rowmenu-group rect {
+    gradient: "left-to-right";
+    gradient-start: rgb(175, 175, 175);
+    gradient-end: rgb(125, 125, 125);
+    //background-alpha: 0.25;
+}
+
+
+// Give a little padding to an HMenu's contents
+hmenu {
+    padding-top: 5;
+    padding-bottom: 10;
+    gradient: "top-to-bottom";
+    gradient-start: rgb(75, 75, 75);
+    gradient-end: rgb(25, 25, 25);
+    color: rgb(125, 125, 125);
+    shadow-size: 1;
+    border-size: 2;
+    background-alpha: 0.8;
+    border: rgb(125, 125, 125);
+    shadow: rgb(85, 85, 85);
+}
+
+    // Containers within a navbar have no padding
+    hmenu.navbar container {
+        padding: 0;
+    }
+
+    // Brighter default color for active HMenu
+    hmenu:active {
+        //gradient-start: rgb(245, 245, 245);
+        //gradient-end: rgb(225, 225, 225);
+        color: rgb(205, 205, 205);
+        border: rgb(157, 86, 9);
+        shadow: rgb(107, 56, 5);
+    }
+
+
+    // Make sure the "active" widget in an inactive HMenu has a distinguished color
+    hmenu *.cursor {
+        color: rgb(175, 175, 175);
+    }
+
+    // If the HMenu itself is active, the "active" widget has a different (more prominent) color
+    hmenu:active *.cursor {
+        color: rgb(207, 106, 19);
+    }
+
+        // Dim the icon a bit, though...
+        hmenu:active *.cursor icon {
+            color: rgb(157, 86, 9);
+        }
+
+
+//debug
+rect.debug {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 25, 25);
+    gradient-end: rgb(225, 225, 25);
+}
+
+
+// Color the keyboard the appears on screen for save game and such
+keyboard {
+    border: rgb(207, 106, 19);//rgb(175, 175, 175);
+    border-size: 3;
+    shadow: rgb(157, 56, 9);
+    shadow-size: 2;
+    background-alpha: 0.75;
+    //color: rgb(225
+}
+
+
+// Unnecessary?
+.header label {
+    padding: 0;
+}
+
+
+// A group of responses (which typically also contains a header element)
+rowmenu-group.responses container label {
+}
+
+    // Give a respectable bottom margin to the header
+    rowmenu-group.responses container.header {
+        margin-bottom: 10;
+    }
+
+    // Generic rows (the responses, typically) will have a subtle margin as well
+    rowmenu-group.responses container {
+        margin-bottom: 10;
+    }
+
+
+    // Dim the subtitle for these responses
+    rowmenu-group.responses container label.subtitle {
+        color: rgb(125, 125, 125);
+    }
+
+    // Highlight main text on cursor
+    rowmenu-group.responses container label:active {
+        color: rgb(207, 106, 19);
+    }
+
+        // Brighten subtitle a bit on cursor
+        rowmenu-group.responses container label.subtitle:active {
+            color: rgb(175, 175, 175);
+        }
+
+
+// Set up default border/shadow coloring for grid menu (it uses this styling data to frame each cell)
+grid container {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+    shadow: rgb(25, 25, 25);
+    shadow-size: 2;
+}
+
+    // The border will look different while active
+    grid:active container:active {
+        border: rgb(207, 106, 19);
+        //color: rgb(207, 106, 19);
+    }
+
+
+// Default grid styling
+grid {
+    color: rgb(115, 115, 115);
+
+    bbcode:
+        [color=title]rgb(185, 185, 185)[/color],
+        [color=special]rgb(185, 185, 185)[/color]
+}
+
+// Default active grid styling
+grid:active {
+    color: rgb(225, 225, 225);
+
+    bbcode:
+        [color=title]rgb(192, 160, 40)[/color],
+        [color=special]rgb(192, 160, 40)[/color]
+}
+
+    // Title appears livelier in the active container of an active grid
+    grid:active container:active {
+        bbcode:
+            [color=title]rgb(207, 106, 19)[/color]
+    }
+
+    // Icons light up when their container is selected in an active grid
+    grid:active container:active icon {
+        color: rgb(157, 76, 9);
+    }
+
+
+
+// The grid of skill trees (that lets you pick from all of the categories)
+// has some special styling rules.  Default to dim colors (not focused)
+grid.skills {
+    color: rgb(145, 145, 145);
+
+    bbcode:
+        [color=skill]rgb(185, 185, 185)[/color],
+        [color=category]rgb(185, 185, 185)[/color]
+}
+
+    // Disabled buttons will appear dim
+    grid.skills container:disabled {
+        color: rgb(75, 75, 75);
+
+        bbcode:
+            [color=locked]rgb(125, 125, 125)[/color],
+            [color=skill]rgb(125, 125, 125)[/color]
+    }
+
+// When focused, the skills grid brightens up, comes to life
+grid.skills:active {
+    color: rgb(225, 225, 225);
+
+    bbcode:
+        [color=skill]rgb(192, 160, 40)[/color],
+        [color=category]rgb(192, 160, 40)[/color]
+}
+
+    // Disabled grid cells (not unlocked, or whatever) still look dim, albeit less dim... all black-and-white
+    grid.skills:active container:disabled {
+        color: rgb(125, 125, 125);
+
+        bbcode:
+            [color=locked]rgb(175, 175, 175)[/color],
+            [color=skill]rgb(175, 175, 175)[/color]
+    }
+
+    // The active cursor selection is the liveliest
+    grid.skills:active container:active {
+        bbcode:
+            [color=skill]rgb(207, 106, 19)[/color],
+            [color=category]rgb(207, 106, 19)[/color]
+    }
+
+
+    // Icons light up when their container is selected in an active grid
+    grid.skills:active container:active icon {
+        color: rgb(157, 76, 9);
+    }
+
+
+
+// Active prompts (e.g. press ENTER to talk to so-and-so) will have a modified appearance...
+.prompt {
+    border: rgb(207, 106, 19);
+    border-size: 2;
+    //padding-bottom: 15;
+}
+
+
+// Icons within headers should have "high contrast" (appear dark in the light header)
+container.header icon {
+    color: rgb(25, 25, 25);
+}
+
+// Sometimes I just want to give a little extra padding (a line break, essentially) after an item
+.line-break {
+    padding-bottom: 15;
+}
+
+
+
+// Theme data for the "load game" and "save game" menus
+.saved-game-directory container.saved-game {
+    padding: 0;
+    margin: 10;
+}
+
+    // Highlight border, text on mouseover
+    .saved-game-directory container.saved-game:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+
+    // Always a little padding for the thumbnail
+    .saved-game-directory container.saved-game graphic {
+        padding: 15;
+    }
+
+
+    // Give a bit of spacing to the groups that hold just a header (e.g. Custom Saves (23))
+    .saved-game-directory rowmenu-group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+
+    // The load/save screens have a autosave / newsave container that shows a thumbnail and a button.
+    // These selectors, .byline and .stats, format the text within the button
+    .saved-game .byline {
+        padding-top: 10;
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    .saved-game .stats {
+        color: rgb(225, 225, 225);
+    }
+
+
+// debug
+.frame rowmenu-group {
+    padding: 20;
+}
+
+// Generic button class (e.g. "Back to Main Menu" on load/save game screens)
+container.button {
+    padding: 5;
+}
+
+    // Highlight border / text when selected
+    container.button:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+
+// In a save/load directory, the thumbnail preview area should have some padding
+.preview {
+    padding-bottom: 10;
+    border: rgb(25, 25, 25);
+}
+
+    // Also give the ... ???
+    .preview rect {
+        gradient: "left-to-right";
+        gradient-start: rgb(175, 175, 175);
+        gradient-end: rgb(175, 175, 175);
+    }
+
+
+// debug
+.color1 {
+    color: rgb(25, 225, 25);
+}
+.group1 {
+    border: rgb(25, 25, 225);
+    border-size: 2;
+}

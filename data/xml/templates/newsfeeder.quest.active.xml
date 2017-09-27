@@ -1,0 +1,30 @@
+<parameters>
+	<data>
+		<parameter>@quest-name</parameter>
+	</data>
+	<text>
+		<parameter>@quest-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'newsfeeder.quest.active'>
+
+    <item width = '240' on-escape = 'show-active-quest' -quest-name = '@quest-name'>
+
+        <rowmenu disabled = '1' ui-classes = 'default3, default3.ext.popup, default3.ext.newsfeeder'>
+
+            <item-group>
+
+                <item render-border = '0'>
+                    <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                    <label cache-key = 'newsfeeder-generic' x = '20%' y = '0' width = '75%' value = '[color=special]New Quest Added[/color]
+@quest-title' />
+                </item>
+
+            </item-group>
+
+        </rowmenu>
+        
+    </item>
+
+</template>

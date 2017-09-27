@@ -1,0 +1,120 @@
+<jackhammer id = 'jackhammer'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>The [color=title]Jackhammer[/color] skill allows you to dig [color=title]multiple tiles[/color] into the ground with a single blast of your mining laser.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.laser.jackhammer</map>
+                <replay-file>gifs.laser.jackhammer.animation.txt</replay-file>
+                <active-skill>jackhammer</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '4' cost = '1'>
+		<texts>
+			<overview>The [color=title]Jackhammer[/color] skill allows you to dig [color=title]multiple tiles[/color] into the ground with a single blast of your mining laser.</overview>
+			<specs>Dig [color=title]2 tiles[/color] into the ground
+Recharges in [color=title]25.0s[/color]</specs>
+			<manual>Press @key to dig [color=title]2[/color] tiles vertically in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.jackhammer</map>
+                <replay-file>gifs.laser.jackhammer.animation.txt</replay-file>
+                <active-skill>jackhammer</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Jackhammer[/color], you will lose access to the [color=title]Earth Mover[/color] skill.
+
+Future upgrades to this skill will increase the [color=title]depth[/color] of each dig and delay the tile refill.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Earth Mover[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>1</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>25.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '2' />
+				<modifier name = 'dig-duration-multiplier' value = '1.0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>[color=title]Jackhammer[/color]'s opening upgrade increases the depth of each dig by [color=title]one tile[/color].  Each of the tiles will wait a moment longer before [color=title]refilling[/color].</overview>
+			<specs>Dig [color=title]3 tiles[/color] into the ground (+1)
+Recharges in [color=title]20.0s[/color] (-5.0s)
+Tiles refill [color=title]10%[/color] more slowly</specs>
+			<manual>Press @key to dig [color=title]3[/color] tiles vertically in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.jackhammer</map>
+                <replay-file>gifs.laser.jackhammer.animation.txt</replay-file>
+                <active-skill>jackhammer</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>2</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>20.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '3' />
+				<modifier name = 'dig-duration-multiplier' value = '1.1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The final [color=title]Jackhammer[/color] upgrade substantially reduces the [color=title]recharge time[/color].  Tiles you dig with this skill will wait even longer before [color=title]refilling[/color].</overview>
+			<specs>Dig [color=title]3 tiles[/color] into the ground
+Recharges in [color=title]15.0s[/color] (-5.0s)
+Tiles refill [color=title]25%[/color] more slowly (+15%)</specs>
+			<manual>Press @key to dig [color=title]3[/color] tiles vertically in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.jackhammer</map>
+                <replay-file>gifs.laser.jackhammer.animation.txt</replay-file>
+                <active-skill>jackhammer</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Jackhammer[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Jackhammer[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>2</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>15.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '3' />
+				<modifier name = 'dig-duration-multiplier' value = '1.25' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have acquired the final [color=title]Jackhammer[/color] upgrade.  It substantially reduces the skill's [color=title]recharge time[/color], and tiles you dig with this skill will wait even longer before [color=title]refilling[/color].</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.laser.jackhammer</map>
+                <replay-file>gifs.laser.jackhammer.animation.txt</replay-file>
+                <active-skill>jackhammer</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</jackhammer>

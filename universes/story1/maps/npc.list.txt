@@ -1,0 +1,515 @@
+<maps>
+
+    <map name = 'town1.level1'>
+        <npcs>
+            <npc name = 'Dave' />
+            <npc name = 'Isabella' />
+        </npcs>
+    </map>
+
+    <map name = 'town1.level3'>
+        <npcs>
+            <merchant name = 'Curry'>
+                <about>Sells a low-quality inventory for good prices</about>
+                <quest>
+                    WRITTEN
+                    Go destroy Nichole in a town "just to the northwest" (town2.level2).  if you do so,
+                    report back and he'll offer you access to some interesting items.
+
+                    If you warn Nichole, she'll thank you for the warning and give you a little bit of gold as a thank you.
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town1.level2'>
+        <npcs>
+            <npc name = 'Desiree'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <npc name = 'Jackson'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town2.level1'>
+        <npcs>
+            <npc name = 'Alien'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town2.level2'>
+        <npcs>
+            <npc name = 'Kev'>
+                <about></about>
+            </npc>
+
+            <merchant name = 'Nichole'>
+                <about>
+                    Sells mid-quality inventory for fair prices.
+                    Unless you're a gold hoarder...
+                </about>
+                <quest>
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town2.level3'>
+        <npcs>
+            <npc name = 'Elizabeth'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town6.level2'>
+        <npcs>
+            <npc name = 'Kenny'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <npc name = 'Dani'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town6.level3'>
+        <npcs>
+            <npc name = 'Maria'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <merchant name = 'Biggins'>
+                <about></about>
+                <quest>
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town6.level4'>
+        <npcs>
+            <npc name = 'Carlie'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town6.level5'>
+        <npcs>
+            <npc name = 'Han'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town7.level1'>
+        <npcs>
+            <merchant name = 'William'>
+                <about>
+                    Sells low grade items at ridiculously high prices.
+                </about>
+                <quest>
+                    asks you to get rid of Linux
+                </quest>
+            </merchant>
+
+            <merchant name = 'Linus'>
+                <about>
+                    Offers 2 average items for no cost.
+                </about>
+                <quest>
+                    Commiserates about William's business practices.
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town7.level2'>
+        <npcs>
+            <npc name = 'Jessie'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+
+    <map name = 'town7.level3'>
+        <npcs>
+            <npc name = 'Amelia'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town7.level4'>
+        <npcs>
+            <npc name = 'Jake'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <npc name = 'JC'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town3.level1'>
+        <npcs>
+            <bomb-merchant name = 'Rebecca'>
+                <about>
+                    Sells bombs at a discount.
+                </about>
+                <quest>
+                </quest>
+            </bomb-merchant>
+
+            <merchant name = 'Erich'>
+                <about>
+                    Sells mid items and bombs at fair prices.
+                </about>
+                <quest>
+                    Blow up Rebecca so that she isn't leeching his bomb buyers.
+                        I will do it.
+                            Get a nice item as a reward, along with some free bombs, more than you get in "give me bombs" request.
+                        I will do it if you throw in some free bombs.
+                            You get bombs for free.
+                        [?] I already took care of her.
+                            Excellent!  Have this nice item, and this other item as a bonus for your foresight!
+                        I can't do that.  Maybe later.
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town3.level3'>
+        <npcs>
+            <npc name = 'Rico'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town3.level2'>
+        <npcs>
+            <npc name = 'JoAnna'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town4.level1'>
+        <npcs>
+            <npc name = 'Zack'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town4.level2'>
+        <npcs>
+            <npc name = 'Erin'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <npc name = 'Sophia'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town4.level3'>
+        <npcs>
+            <npc name = 'Timmy'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <merchant name = 'Sierra'>
+                <about>
+                    Sells mid-grade items at high prices.  Items should have good upgrades, though.
+                </about>
+                <quest>
+                    Buy all of Sierra's items.  Her location is remote, near the edge of the world, and business is slow!
+                    Charges a lot just to stay in business.  If you can buy her remaining inventory, she'll give you
+                    a very good item not otherwise for sale, as a special thank-you.
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town4.level4'>
+        <npcs>
+            <npc name = 'Lily'>
+                <about></about>
+                <quest>
+                    Lily's sister up north, the merchant Sierra, has a family heirloom that she would like back.
+                    It costs a lot of money, though.  She wants you to buy it and bring it to her, and in return
+                    she'll offer you a nice item and some bombs.
+
+                    When you talk to Sierra, she is tired of hearing Lily beg for the heirloom.  She reveals that Lily
+                    is not related to her at all, but a secret agent from the Bungeling Empire.  If you destroy Lily,
+                    she will give you the heirloom for free.
+
+                    When you go back to Lily, "I know who you are," she'll give you some gold as hush money, and offer you
+                    even more if you can just get that heirloom she's looking for.
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+    <map name = 'town5.level1'>
+        <npcs>
+            <npc name = 'Jill'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+    <map name = 'town5.level4'>
+        <npcs>
+            <npc name = 'Logan'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+
+            <merchant name = 'Alice'>
+                <about>
+                    Sells high quality items at normal price
+                </about>
+                <quest>
+                </quest>
+            </merchant>
+        </npcs>
+    </map>
+
+    <map name = 'town5.level2'>
+        <npcs>
+            <npc name = 'Willy'>
+                <about></about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+world0.level3
+
+    <map name = 'world0.level3'>
+        <npcs>
+            <npc name = 'Brent'>
+                <about>
+                    Tells the player about the bad guys, how they operate.
+                    Offers the player a new item.
+                </about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+world0.level4
+
+    <map name = 'world0.level4'>
+        <npcs>
+            <npc name = 'Rochelle'>
+                <about>
+                    Talks about how there's an item store in the next town Amandria, but not one here.
+                    Played a lot of Choplifter as a child.  Such a fun little game.
+                    Now everyone looks like the guys from Choplifter.  I must have played it too much.
+                </about>
+                <quest>
+                    Find the merchant in Amandria and buy some fragrant perfume.  She wants it to woo Carlos.
+                        I'll try.
+                            Once you bring back the perfume, she gives you a quest reward.  Carlos will love her!
+                        [?] I killed Carlos.
+                            She won't need the perfume after all.  Oh well!  She can probably find someone who looks similar to him elsewhere.
+                        Maybe later.
+                </quest>
+            </npc>
+
+            <npc name = 'Carlos'>
+                <about>
+                    Mentions how NPCs will say many things.
+                    Says something about the special puzzle rooms on the map.
+                    After a few lines, says I'm tired of talking to you, go away.
+                    Persist, and he'll offer you a choice of item to get you to leave.
+                    After that, his nags become generic.
+                </about>
+                <quest>
+                </quest>
+            </npc>
+        </npcs>
+    </map>
+
+</maps>
+
+* * * * * * * * * * * * * * * * * * * * * * * *
+
+[x] Written
+[ ] Scripted
+NPC gives you gold to take to another NPC.  You can deliver it, keep it, etc.
+4.4.npc1.quest
+
+[x] Written
+[ ] Scripted
+One NPC wants you to destroy all of the main merchants in the game so that his bomb terminals can do exclusive business.
+6.5.npc1.quest
+
+[x] Written
+[ ] Scripted
+One NPC wants you to retrieve an item from a nearby puzzle room.  You can pick the right item, keep it, return it, etc.
+1.2.npc2.quest
+
+[x] Written
+[ ] Scripted
+One merchant wants you to bomb an NPC in a separate town.  The other town's NPC controls merchandise permissions, and it'll help him unlock a better inventory.
+Killing the other town's NPC should have some vague repercussion...
+6.3.npc2.merchant
+
+[x] Written
+[ ] Scripted
+One NPC-random wants you to buy out / kill the merchant in the same town so that he can take over the market.  If you do so, the random NPC becomes a MERCHANT.
+5.4.npc1.quest
+
+[x] Written
+[ ] Scripted
+One NPC needs you to you to solve a video game quiz to win a skill point.  You can also pay a lot of gold to skip quiz, or you can delay (i.e. maybe later).
+You only get one chance at taking the quiz.
+3.3.npc1.quest
+
+[ ] Written
+[ ] Scripted
+One merchant friend wants you to pay off another merchant friend to get the "other merchant"'s contact list and steal his customers.  It will put the "other merchant" out of business,
+helping the bad merchant get more revenue.  You'll get a discount and a good item out of the deal.
+
+[x] Written
+[ ] Scripted
+One independent, random NPC is a banker, and she/he wants you to go tell all the merchants that there's a new tax in Lelandria.
+2.3.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to kill the random NPC that runs the bomb terminals so that he can take over from his remote network.  It won't do
+anything to the terminals, but then at least no one will profit from selling the bombs.
+2.1.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to deliver a useful item to another NPC.  You can keep it for as long as you want, but you won't get the XP until you give the item to the other NPC.  You can also offer to buy
+the item, which will complete the quest (XP) while letting you keep the item.
+1.1.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to collect a debt from another random NPC.  Only way to do it, though, would be to bomb the other random NPC's buddy NPC, to put the scare into him.  Then you can take the
+bounty back, or you can just say you're going to keep it for yourself, sacrificing XP for the gold bounty (i.e. quest "failed").
+4.1.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to send a love letter to another NPC in another town.  That other NPC accepts, and asks you to take a ring (a useful item) to the first NPC.  You can give the ring back for XP,
+or you can simply keep the ring for yourself.  You cannot bribe to keep the ring, because you can't buy love!
+4.3.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants to buy one of your skill points.  If you don't have one, he hints to it.  If you do, he asks to buy one.  You get a ton of gold.  Then he wants another one; you get a great item
+in return.  After that, he speaks random.
+7.4.npc2.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to kill all of the NPCs, except for him.  As you kill more and more (0%, 33%, 66%, 100%) his dialogue becomes more and more encouraging.
+After you kill everyone else, he asks you to finish the job for one last XP bonus.
+5.2.npc1.quest
+
+[x] Written
+[ ] Scripted
+One random NPC wants you to explore the entire game world (of Lelandria), then to return to him and sell him a copy of your map so he can sell it online.
+6.2.npc2.quest
+
+
+
+
+
+1.1.npc1.quest
+1.2.npc2.quest
+
+2.1.npc1.quest
+2.3.npc1.quest
+
+3.3.npc1.quest
+
+4.1.npc1.quest
+4.4.npc1.quest
+4.3.npc1.quest
+
+5.2.npc1.quest
+5.4.npc1.quest
+
+6.2.npc2.quest
+6.5.npc1.quest
+6.3.npc2.merchant
+
+7.4.npc2.quest

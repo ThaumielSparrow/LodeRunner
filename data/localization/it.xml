@@ -1,0 +1,915 @@
+<strings>
+	<labels>
+		<96d008db67fc0b5551a926842bbb6a71>Notifica</96d008db67fc0b5551a926842bbb6a71>
+		<6a95a559547e373caa2ff71bc46971d5>Nuovo Gamepad Abilitato</6a95a559547e373caa2ff71bc46971d5>
+		<60273036d97649ddcb94b44139c6c254>Gamepad Precedente Trovato</60273036d97649ddcb94b44139c6c254>
+		<aab135b7fc11f1515ad957a3a6e6b003>Gamepad non trovato</aab135b7fc11f1515ad957a3a6e6b003>
+		<9dbe2e22cedca4ed757e5eace63e248d>Gamepad selezionato</9dbe2e22cedca4ed757e5eace63e248d>
+		<679967c3e475c4a059b70695b8a815e9>Gamepad RESET CONTROLS</679967c3e475c4a059b70695b8a815e9>
+		<fa0745126f79be79cfe8d19ba1acd7a9>Comandi da tastiera Azzera</fa0745126f79be79cfe8d19ba1acd7a9>
+		<59926dfd87645c23c4120e17fde095a7>Tutti i comandi impostati di default</59926dfd87645c23c4120e17fde095a7>
+		<93f4939484c645d5c87cd3e27f5b1f26>Controlli salvate</93f4939484c645d5c87cd3e27f5b1f26>
+		<ff8430d12eb91c33886f62f0f695c207>Ultimo Giocata</ff8430d12eb91c33886f62f0f695c207>
+		<e56612c61de6a8f070351ee6c420f336>I giocatori ammessi</e56612c61de6a8f070351ee6c420f336>
+		<0a9368021da5f61f425559544764ee23>Livelli finiti</0a9368021da5f61f425559544764ee23>
+		<78945de8de090e90045d299651a68a9b>Disponibile</78945de8de090e90045d299651a68a9b>
+		<e852e574583674fe951efb43e8f015a6>Nuovo Quest</e852e574583674fe951efb43e8f015a6>
+		<988b23685e03e7a9f0c87a11e6101a54>Quest completo</988b23685e03e7a9f0c87a11e6101a54>
+		<3e1df6a10586b696fc1f0dc31282e390>Quest completo!</3e1df6a10586b696fc1f0dc31282e390>
+		<8c69090d8988f64ec667607c82eacf97>Quest non riuscita</8c69090d8988f64ec667607c82eacf97>
+		<0361046768779809e44e94c43ee7064e>Quest Aggiornato</0361046768779809e44e94c43ee7064e>
+		<f2c178e7e1a9f372a2824974c4cffaac>Slot vuoto</f2c178e7e1a9f372a2824974c4cffaac>
+		<e93f994f01c537c4e2f7d8528c3eb5e9>Contare</e93f994f01c537c4e2f7d8528c3eb5e9>
+		<e0d11fca1bf3e13682f63104c0192cc2>Voce Acquisito</e0d11fca1bf3e13682f63104c0192cc2>
+		<6f97e1005011d00bdb5862ed277a1eb5>Acquisita [color=special]@m[/color] come [color=title]@n[/color].</6f97e1005011d00bdb5862ed277a1eb5>
+		<d97fbd000b2d8f3396b6b3ce58980f62>Ricompensa quest</d97fbd000b2d8f3396b6b3ce58980f62>
+		<779896f0e8e4b83af692155c08585f8d>Nuovo oggetto acquistato</779896f0e8e4b83af692155c08585f8d>
+		<c07a777b7a79de0fd719f00c8197af2c>Nome personaggio</c07a777b7a79de0fd719f00c8197af2c>
+		<8ed369356877338db66a64e55d0b9bfe>Livello Character</8ed369356877338db66a64e55d0b9bfe>
+		<471f5ba333d925938a2873ddede5a1ac>Tempo giocato</471f5ba333d925938a2873ddede5a1ac>
+		<e2d0ce0042d4aa099f6bf84eddc5a832>Digs Fatto</e2d0ce0042d4aa099f6bf84eddc5a832>
+		<df70186482aaeda6e6d800835ad61323>Guys Bad uccisi</df70186482aaeda6e6d800835ad61323>
+		<3e042e65ff4921dbd8cf9020779ed991>Quest Finito</3e042e65ff4921dbd8cf9020779ed991>
+		<b81529000e4ea0bd4dce7f00e8cb60e4>Oro Raccolti</b81529000e4ea0bd4dce7f00e8cb60e4>
+		<f00cd5de562631fb2db48e68f2c0e883>Articoli Acquisite</f00cd5de562631fb2db48e68f2c0e883>
+		<54492dae178b99f4d2e04666a4acace3>Oro trascorso</54492dae178b99f4d2e04666a4acace3>
+		<32306f435f0302be82d586d8233dc2c8>Amichevoli Ucciso</32306f435f0302be82d586d8233dc2c8>
+		<66ec4bc7808dd5f82bf505c9a20db539>Incarichi</66ec4bc7808dd5f82bf505c9a20db539>
+		<eccc15d777766af49a339ade1457cee2>Realizzazioni Completato</eccc15d777766af49a339ade1457cee2>
+		<6e7b34fa59e1bd229b207892956dc41c>Mai</6e7b34fa59e1bd229b207892956dc41c>
+		<ae94f80b3ce82062a5dd7815daa04f9d>Completo</ae94f80b3ce82062a5dd7815daa04f9d>
+		<0106cd498424c5d1f96f81c28be345bd>Livello completo!</0106cd498424c5d1f96f81c28be345bd>
+		<8c7ded4c82aa15f34216bb5adafbfa34>Avanzando di livello successivo ...</8c7ded4c82aa15f34216bb5adafbfa34>
+		<bd5a9145bc13fd158f76a02b4713726a>Equipaggiare @item-title</bd5a9145bc13fd158f76a02b4713726a>
+		<83d768fb62424b94fab716189b04b2af>@npc-title dice</83d768fb62424b94fab716189b04b2af>
+		<51c85fd04c0af96a12440b3f141051a0>Stampa @some-key per continuare ...</51c85fd04c0af96a12440b3f141051a0>
+		<d0a243e962e202d7e15e0710bab97d29>Stampa [color=special]@n[/color] a parlare [color=special]@m[/color]</d0a243e962e202d7e15e0710bab97d29>
+		<8f5d0c26c6df71a61d1f0ce0356a2f09>Stampa [color=special]@n[/color] a @m</8f5d0c26c6df71a61d1f0ce0356a2f09>
+		<d4e5a4eecb72dbff0ab65ca8a506fce2>Torna a [color=special]@overworld-title[/color]</d4e5a4eecb72dbff0ab65ca8a506fce2>
+		<048e353ff1f764d862308309134ee4fa>@m / @n Slot (s) disponibile</048e353ff1f764d862308309134ee4fa>
+		<20b4f77bd00b4f63a49ec8e08f3bf6a6>Costo</20b4f77bd00b4f63a49ec8e08f3bf6a6>
+		<b7b1edc90ec3d8a2cc367f3af4fb35d1>Lei non può permettersi questo aggiornamento adesso. Hai bisogno di un ulteriore [color=special]@amount[/color] comprare questo aggiornamento.</b7b1edc90ec3d8a2cc367f3af4fb35d1>
+		<cd62e07b65f3967fc724ae08d124a680>Missioni attive (@n)</cd62e07b65f3967fc724ae08d124a680>
+		<16121fb40e4a67dfb476c61078d72152>Missioni finiti (@n)</16121fb40e4a67dfb476c61078d72152>
+		<932fad7d7a288fff577adf9eb222440b>Selezionare [color=special][color=skill]@n[/color][/color] o [color=special][color=skill]@m[/color][/color]</932fad7d7a288fff577adf9eb222440b>
+		<f487d810951d882cf9ddc57564f5fb15>Aggiornamenti:  @n</f487d810951d882cf9ddc57564f5fb15>
+		<03489c3e26ec28d6d37eb22188920b84>Punti abilità Needed:  @n</03489c3e26ec28d6d37eb22188920b84>
+		<637be75880619f99473be71420a0cde1>È possibile aggiornare questa voce @n volte.</637be75880619f99473be71420a0cde1>
+		<85ffb8e4fc3aa32851628ba6dcde0ef7>Visualizza la mappa:  @title</85ffb8e4fc3aa32851628ba6dcde0ef7>
+		<21233476a97d0868a8bf66123cb00864>Oro Mappa</21233476a97d0868a8bf66123cb00864>
+		<fd49d2c4707fbf2f9cda5eb6a8951e66>Puzzle Camere</fd49d2c4707fbf2f9cda5eb6a8951e66>
+		<dbf3ab9c6647937df0a793d55d049c32>Sfide Camere</dbf3ab9c6647937df0a793d55d049c32>
+		<008e556f58c2a3ac48f09f2b73c1f752>Raccogliere tutto l&apos;oro per raggiungere il livello successivo!</008e556f58c2a3ac48f09f2b73c1f752>
+		<9483ace413d7f24c796a6250b523b5fb>Creazione di sessione</9483ace413d7f24c796a6250b523b5fb>
+		<61386ef333a9f557fb18285c409a931a>In attesa di risposta del server ...</61386ef333a9f557fb18285c409a931a>
+		<c02e21cfcbebec4123ff0c14e83a5109>Server in linea</c02e21cfcbebec4123ff0c14e83a5109>
+		<4af8678942f2b2c5e6027661f5c1a004>In attesa di giocatori di unirsi ...</4af8678942f2b2c5e6027661f5c1a004>
+		<47073283520ac728f263539925ac3320>Fine sessione</47073283520ac728f263539925ac3320>
+		<106a5f1e09924ff63edb02ab6da19382>Chiusura di sessione del server ...</106a5f1e09924ff63edb02ab6da19382>
+		<a8e17c5c6a98db76aedcaf421954a500>Errore durante la creazione di sessione</a8e17c5c6a98db76aedcaf421954a500>
+		<aee9784c03b80d38d3271cde2b252b8d>Errore sconosciuto</aee9784c03b80d38d3271cde2b252b8d>
+		<1a1814600a3ca76d2c7d6978d49f2ac7>Ricerca di Giochi</1a1814600a3ca76d2c7d6978d49f2ac7>
+		<f0101640c116cd2992d530ea340ffbf3>Errore durante la connessione a sessione</f0101640c116cd2992d530ea340ffbf3>
+		<2044c23dfefda6c637db5b72f785a777>Connessione fallita</2044c23dfefda6c637db5b72f785a777>
+		<bf59caae1522f67ae283de236f8a173c>Impossibile connettersi all&apos;host</bf59caae1522f67ae283de236f8a173c>
+		<ba9ead882053fb2ea7a5824af09e04e1>Connessione Stabilire</ba9ead882053fb2ea7a5824af09e04e1>
+		<d2ca89bfd02f26bfe2f14ab8ed4b52a5>In attesa di risposta dell&apos;ospite ...</d2ca89bfd02f26bfe2f14ab8ed4b52a5>
+		<2ad06b228e2dd9288d803c39f764eaef>Collegamento di chiusura per ospitare ...</2ad06b228e2dd9288d803c39f764eaef>
+		<5fc118f9d4110c6b92023945aa24749e>Timeout Server</5fc118f9d4110c6b92023945aa24749e>
+		<d51d94cb83fa7f09ed324108ed1126a5>Hai perso la connessione con l&apos;host del gioco. Tornando al menu principale ...</d51d94cb83fa7f09ed324108ed1126a5>
+		<cc06ad6d3fac8e53bbab5de9f0b1ee6f>Il gioco si sta cercando di unirsi non ha uno slot aperto.</cc06ad6d3fac8e53bbab5de9f0b1ee6f>
+		<261dddcd6f22af959ae89dc15cc4d0c1>Recupero DLC Listing</261dddcd6f22af959ae89dc15cc4d0c1>
+		<6c966bbe7a8bc51f1d4ac039df8f8b31>Player scaduta</6c966bbe7a8bc51f1d4ac039df8f8b31>
+		<d6499001c15ff668b004a066603da7c8>Host sessione si è conclusa</d6499001c15ff668b004a066603da7c8>
+		<9026b28ea37074073d2684007ee38e46>Tornando al menu principale ...</9026b28ea37074073d2684007ee38e46>
+		<ac9304328aab534ed91f5b04b910ae80>Player è disconnesso</ac9304328aab534ed91f5b04b910ae80>
+		<0e380ab346f1aa1c8240368750d6f26b>Player Iscritto!</0e380ab346f1aa1c8240368750d6f26b>
+		<e52f9275bf67f1f4adcc49e5b7e33e3c>Collegato a Host</e52f9275bf67f1f4adcc49e5b7e33e3c>
+		<16e0a27ec3e986de394bf702c3c2f516>@n altro giocatore@s in linea</16e0a27ec3e986de394bf702c3c2f516>
+		<67010fd35454aa3dc141abd1e355ca7b>Livello riuscita</67010fd35454aa3dc141abd1e355ca7b>
+		<5bb5512074af8be5f8a8243639c3b432>Riavvio livello ...</5bb5512074af8be5f8a8243639c3b432>
+		<89d751301b6b94ca60fb3cf86cb1247c>Server non disponibile</89d751301b6b94ca60fb3cf86cb1247c>
+		<55ed7ca12ed947b1b74a9d8ded04e7dc>[color=special]Una Lode Runner Story[/color] non è riuscito a recuperare il livello quotazione informazioni da Internet. Controlla la tua connessione o riprova più tardi.</55ed7ca12ed947b1b74a9d8ded04e7dc>
+		<d50a48b052dc80f2e583c93e0d78348f>Scaricare Level Set</d50a48b052dc80f2e583c93e0d78348f>
+		<7830455af5612159a4f3de3d00525817>Scarica Complete!</7830455af5612159a4f3de3d00525817>
+		<dc1d0f58b46c30350b739a89bedce104>Scarica riuscito</dc1d0f58b46c30350b739a89bedce104>
+		<62c579e7e25d97cecbb4e6bf9d014c5c>Si prega di riprovare più tardi</62c579e7e25d97cecbb4e6bf9d014c5c>
+		<bcd23af2b247e64bf366c06cb737f9b5>Realizzazione completa!</bcd23af2b247e64bf366c06cb737f9b5>
+		<8dba0709d53d1e02b900e1883dc98b0e>Salvare completo</8dba0709d53d1e02b900e1883dc98b0e>
+		<44335e2391a7a155918473e0782a1de5>Quicksave @n salvato con successo</44335e2391a7a155918473e0782a1de5>
+		<b4e8bde285980c86ef6256fbc8409156>@n salvato con successo</b4e8bde285980c86ef6256fbc8409156>
+		<88088c0ddb0a791c130b2211a60804f9>Carico Complete</88088c0ddb0a791c130b2211a60804f9>
+		<3f4b900638d51afc6500cc5b08b10587>Ripresa del gioco ...</3f4b900638d51afc6500cc5b08b10587>
+		<d1d4033b8f2db10ebde28b8815c070d5>Non hai scaricato il [color=special]@n[/color] livello impostato. È necessario scaricare dal [color=special]Menu principale[/color] prima di poter partecipare a questo gioco!</d1d4033b8f2db10ebde28b8815c070d5>
+		<7fd954d409b18201823d879ae23d517c>La versione del [color=special]@n[/color] set di livello ([color=special]@v1[/color]) Non corrisponde la versione dell&apos;host ([color=special]@v2[/color]). Prova ad aggiornare la propria versione attraverso il livello finder del menu principale per risolvere questo conflitto!</7fd954d409b18201823d879ae23d517c>
+		<1914e7d1aed4117140f94fd0287ffd1e>[color=special]@n[/color] è morto!</1914e7d1aed4117140f94fd0287ffd1e>
+	</labels>
+	<taunts>
+		<8fca89c38e0fab035471996a03d93494>Nessuno può sopravvivere al processo di ricarica, neanche un [color=special]eroe[/color]!</8fca89c38e0fab035471996a03d93494>
+		<d14c9cf70175be2ad0ce8167de5511fb>Scavare buche possono aiutarvi a uccidere [color=normal]cattivi[/color]. O, in questo caso, da soli.</d14c9cf70175be2ad0ce8167de5511fb>
+		<a9e9c5d39d40aeacd75913f9c2d1b3c8>Sembra che tu non ce l&apos;ha fatta fuori del modo nel tempo, [color=special]$[core.player1.name][/color].</a9e9c5d39d40aeacd75913f9c2d1b3c8>
+		<52dece192b8d9abc52307967904ed8d8>Il [color=dim]Bungeling Imperatore[/color]&apos;s truppe prendono prigionieri.</52dece192b8d9abc52307967904ed8d8>
+		<0e33675af88e06e34a7b43b821c9048a>Scavare [color=dim]fori[/color] nel terreno per la [color=dim]cattivi[/color] cadere.</0e33675af88e06e34a7b43b821c9048a>
+		<ad357e9f24a6ab1d19fab876c00f2840>Il [color=dim]cattivi[/color] non accettare un no come risposta.</ad357e9f24a6ab1d19fab876c00f2840>
+		<c8af57426cb3091758c46c2186c32a61>Parte del livello ha deciso che proprio non gli piaceva molto, [color=special]$[core.player1.name][/color].</c8af57426cb3091758c46c2186c32a61>
+		<96e05754d54fe7f8fa6ec586382142ba>Hai sofferto una morte tragica per il movimento di livello.</96e05754d54fe7f8fa6ec586382142ba>
+		<1ff84ca0776ca7a6b20c4cd7d100e2d8>Quando il livello si inizia a muoversi, qualcosa di buono può davvero succedere?</1ff84ca0776ca7a6b20c4cd7d100e2d8>
+		<58a7f0602d362215c2143924f61cc646>Purtroppo, è caduto fuori del mondo. Attenzione per le linee di avvertimento!</58a7f0602d362215c2143924f61cc646>
+		<72fab29ed05584fce02acd6e5846255a>Non è possibile chiudere il fondo del livello attraverso una linea di avvertimento.</72fab29ed05584fce02acd6e5846255a>
+		<b0551ba6f812420c2b130e9f7aff2b81>Fate attenzione a non calpestare le spighe. Hanno un passo indietro, se sai cosa voglio dire.</b0551ba6f812420c2b130e9f7aff2b81>
+		<af80a4877372cc47377154a613c5d651>Caduta sulle punte è un modo per garantire che la [color=evil]cattivi[/color] Non farti.</af80a4877372cc47377154a613c5d651>
+		<875b66991c010018a146b97fe0ad52b2>Cercare di attirare i nemici in piedi sulle punte, evitando voi stessi!</875b66991c010018a146b97fe0ad52b2>
+		<01bf4f1d170bea8fa98e99f54bc7af51>Sembra che si è andato e fatto esplodere te di nuovo, [color=special]$[core.player1.name][/color]!</01bf4f1d170bea8fa98e99f54bc7af51>
+		<f5558903062ce7d2f3a4e4359ce6e662>Assicurarsi di mantenere la distanza da quelle [color=normal]bombe[/color].</f5558903062ce7d2f3a4e4359ce6e662>
+		<1759935dd999d2961eb2564ce1beab24>Sei stato preso troppo vicino a un [color=normal]bomba[/color]. Ognuno ha fatto che una o due volte, giusto?</1759935dd999d2961eb2564ce1beab24>
+		<15aeadd6bbe47a1ff2c962298a0e99fc>Una sorta di forza misteriosa appena ucciso te. Non mi sembra giusto!</15aeadd6bbe47a1ff2c962298a0e99fc>
+		<dff8fe5afe37522406d9458c10633c64>Sei stato vaporizzato. Non sapevo che potrebbe succedere!</dff8fe5afe37522406d9458c10633c64>
+		<32aceb641319da23d0f897a7892f8608>Ora sapete come funziona chiave suicidi. Cercate di non rimanere bloccato!</32aceb641319da23d0f897a7892f8608>
+		<afd3aab611b498e9e1bfaa25a4e80c0c>Tenere premuto il tasto suicidio quando si desidera ricaricare rapidamente il checkpoint precedente.</afd3aab611b498e9e1bfaa25a4e80c0c>
+	</taunts>
+	<ui>
+		<0d54027bd0b8ee41e1814510b1f224b2>Host Gioco</0d54027bd0b8ee41e1814510b1f224b2>
+		<4fd86e3905a9ea6043df7b8972021da3>Creare una nuova sessione</4fd86e3905a9ea6043df7b8972021da3>
+		<24df0526f9fbb1ed4610a03c13429c4a>Partecipa alla partita</24df0526f9fbb1ed4610a03c13429c4a>
+		<97c8b382efc00d6a33fdd5072c295731>Unitevi un gioco esistente</97c8b382efc00d6a33fdd5072c295731>
+		<0557fa923dcee4d0f86b1409f5c2167f>Indietro</0557fa923dcee4d0f86b1409f5c2167f>
+		<a47ac8e11082b313061e456afdcbc3eb>Menu principale ...</a47ac8e11082b313061e456afdcbc3eb>
+		<6b6dd7c914f6c9ea775af182c9942bf0>[color=normal]Opzioni Avatar[/color]</6b6dd7c914f6c9ea775af182c9942bf0>
+		<1982f412b6670fcf9bec89e608314ff4>@player-name</1982f412b6670fcf9bec89e608314ff4>
+		<f951a1e1ff1ed0d24a2758b6441a3431>Colore fondamentale</f951a1e1ff1ed0d24a2758b6441a3431>
+		<020a9f6a979825fc9349eccc66bef6db>Colore secondario</020a9f6a979825fc9349eccc66bef6db>
+		<3f37457219e976335b90b580eadaf265>Ritorna alla Lobby</3f37457219e976335b90b580eadaf265>
+		<c5e0a7b512fd616279924a1396bb0802>Aggiornamento completo!</c5e0a7b512fd616279924a1396bb0802>
+		<1ab6fc127c14fbce6f4ffc27ce0e0908>Hai sbloccato [color=title]@skill-title  @skill-level[/color].</1ab6fc127c14fbce6f4ffc27ce0e0908>
+		<dae8ace18bdcbcc6ae5aece263e14fe8>Opzioni</dae8ace18bdcbcc6ae5aece263e14fe8>
+		<22e44642799d62e29ef7ceb9d11a3e5b>Non si dispone di uno slot abilità vuoto disponibile. Per equipaggiare [color=title]@skill-title[/color], Visitare il [color=title]Equip Skills[/color] menu!</22e44642799d62e29ef7ceb9d11a3e5b>
+		<edb4e0cb4079529f96c5f1a3b6174a94>Aprire Equip Skills Menu ...?</edb4e0cb4079529f96c5f1a3b6174a94>
+		<8171ada02c8d0f786103fbf653540311>Questa è la tua prima [color=title]abilità attiva[/color]! Il gioco ha assegnato automaticamente [color=title]@skill-title[/color] al [color=special]@button-name[/color].</8171ada02c8d0f786103fbf653540311>
+		<dc9cd43489a6754fbf5ca2977ede6064>Questo è il tuo secondo [color=title]abilità attiva[/color]! Il gioco ha assegnato automaticamente [color=title]@skill-title[/color] al [color=special]@button-name[/color].</dc9cd43489a6754fbf5ca2977ede6064>
+		<479c16945b60d09dd4c36e548deafbfe>Lei attualmente ha [color=title]@skill-title[/color] attrezzata. Stampa [color=special]@button-name[/color] per attivarla!</479c16945b60d09dd4c36e548deafbfe>
+		<a577915165812a37f4a5cf3e57d1fe95>
+			[color=special]Nuovo Quest Aggiornamento[/color]
+@quest-title
+
+Vista [color=title]Quest Logs[/color] per i dettagli ...
+		</a577915165812a37f4a5cf3e57d1fe95>
+		<8ac520ae4e4d9438c59cae2a09115fea>Torna a [color=special]Menu di gioco[/color]...</8ac520ae4e4d9438c59cae2a09115fea>
+		<277cc030a7f91a05ebb9ef8245c69863>Slot abilità</277cc030a7f91a05ebb9ef8245c69863>
+		<4f1984195b92747e87492d88138baad2>Selezionare uno a cambiare</4f1984195b92747e87492d88138baad2>
+		<be56b1d64ee9330cde9411e622d60bea>Abilità attivi acquisiti (@skills-unlocked-count)</be56b1d64ee9330cde9411e622d60bea>
+		<e29be78e8cf65f9f1a934917f9e0903e>Risultato</e29be78e8cf65f9f1a934917f9e0903e>
+		<ec53a8c4f07baed5d8825072c89799be>Stato</ec53a8c4f07baed5d8825072c89799be>
+		<12ec802598f75fa6533e9d6681f44a1e>[color=special]@map-title[/color] Complete!</12ec802598f75fa6533e9d6681f44a1e>
+		<4887ee6851b6e322c305af8b67cd0417>Come ricompensa per il completamento di questo [color=title]Puzzle Room[/color], Si può scegliere [color=special]uno[/color] nuovo elemento dalla lista degli articoli qui sotto!</4887ee6851b6e322c305af8b67cd0417>
+		<1b5c5f843555262cfe9c81e286485e95>[color=special]Richiedere il premio:[/color]</1b5c5f843555262cfe9c81e286485e95>
+		<f01a101dcd5dfc9038870552b36cc6a9>[color=special]@npc-name[/color] dice:</f01a101dcd5dfc9038870552b36cc6a9>
+		<9269e62c6244edbaf9f5681cc716d4e9>@npc-comment</9269e62c6244edbaf9f5681cc716d4e9>
+		<3209c64c442ca31ef9405fe86bb4d62d>Seleziona una risposta:</3209c64c442ca31ef9405fe86bb4d62d>
+		<6a840f977efc77b78d9da20d66633d58>stampa [color=special]@some-key[/color] per continuare ...</6a840f977efc77b78d9da20d66633d58>
+		<070af99c8a66a8dfd23b3dd58c125dee>Inserisci una risposta:</070af99c8a66a8dfd23b3dd58c125dee>
+		<8d520ef672f422f32df68304df9f7010>
+			@title
+[color=lowlight]@date[/color]
+		</8d520ef672f422f32df68304df9f7010>
+		<0d245f3bb0d68c57e54928e22989519d>
+			[color=lowlight]Livello Carattere:  [color=special]@character-level[/color]
+Oro Raccolta:  [color=title]@gold-collected[/color][/color]
+		</0d245f3bb0d68c57e54928e22989519d>
+		<94be29e61359f77cba3f50b9b7241e4f>
+			@item-title
+[color=dim]Fornito[/color]
+		</94be29e61359f77cba3f50b9b7241e4f>
+		<4d038e90ae11ceb3bde1bb524de3d99e>@item-summary</4d038e90ae11ceb3bde1bb524de3d99e>
+		<741b9f8824826d21b18d47dbba67fbe9>
+			[color=special]@item-title[/color]
+
+@item-summary
+		</741b9f8824826d21b18d47dbba67fbe9>
+		<3ba78386afa89e11bfc603c56ac2fddf>
+			Slot vuoto
+[color=dim]@count articoli disponibili[/color]
+		</3ba78386afa89e11bfc603c56ac2fddf>
+		<b80a028fa8c75dbc7cd5b77c0b3786e0>Selezionare un elemento sotto per riempire questo slot.</b80a028fa8c75dbc7cd5b77c0b3786e0>
+		<1312cdc70ec3b0a52d52c68d15a98053>@quest-type Missioni (@count)</1312cdc70ec3b0a52d52c68d15a98053>
+		<cfcadb5b77a6553b25019c7a7cbc1c08>Selezionare qualsiasi Per visualizzare gli aggiornamenti ...</cfcadb5b77a6553b25019c7a7cbc1c08>
+		<3fc3abb913fdd60a2095b95e424b45e3>
+			[color=special]Sommario Quest[/color]
+@quest-description
+		</3fc3abb913fdd60a2095b95e424b45e3>
+		<b7978ba0f453fff2e185997c2eb6d757>
+			[color=special]Aggiornare @update-index[/color]
+@update-description
+		</b7978ba0f453fff2e185997c2eb6d757>
+		<274e8973da065042e871446cde04f0d8>@title</274e8973da065042e871446cde04f0d8>
+		<e8573e0bcda97e2671f0b34713e259d8>@status</e8573e0bcda97e2671f0b34713e259d8>
+		<91e8d95e8b1741b1ab1b63b565d1eb85>[color=dim]@description[/color]</91e8d95e8b1741b1ab1b63b565d1eb85>
+		<1db08de0bd4eecd21e3177d2f0e9d631>@server-name</1db08de0bd4eecd21e3177d2f0e9d631>
+		<2b7d668ec4835bd76663f6a6be3d8f76>@universe-title - @current-level</2b7d668ec4835bd76663f6a6be3d8f76>
+		<01d0603ac2c765258b23bb197a3ab0b2>@player-count / @max-players</01d0603ac2c765258b23bb197a3ab0b2>
+		<3d067bedfe2f4677470dd6ccf64d05ed>Pubblico</3d067bedfe2f4677470dd6ccf64d05ed>
+		<5cd032c4dc0dc65d78568ad0356ae860>@game-type</5cd032c4dc0dc65d78568ad0356ae860>
+		<47f9082fc380ca62d531096aa1d110f1>Privato</47f9082fc380ca62d531096aa1d110f1>
+		<20505e477e438602870617a781a25554>Premere un pulsante</20505e477e438602870617a781a25554>
+		<f8e619d793b9ae8b419ae2ce514708fa>Premere l&apos;ingresso gamepad o il joystick si intende utilizzare [color=special]@todo[/color].</f8e619d793b9ae8b419ae2ce514708fa>
+		<4f3733d97d40b9c54a1bf15723c3ec61>Azioni Oggetto</4f3733d97d40b9c54a1bf15723c3ec61>
+		<151405d135fb0b5f05e43df2569024b0>Disequipaggiare @item-title</151405d135fb0b5f05e43df2569024b0>
+		<8793855ad95ad85aad6e3b4f3d50c15a>Inventario Slot Gratis</8793855ad95ad85aad6e3b4f3d50c15a>
+		<240f9686efc9548a1d556d924c143924>Aggiornamenti</240f9686efc9548a1d556d924c143924>
+		<5d9e9656666928ca32210b06e743e58b>Non fare nulla</5d9e9656666928ca32210b06e743e58b>
+		<6f7e7308a1de015361e9f972d9ee05b9>Torna a Inventario</6f7e7308a1de015361e9f972d9ee05b9>
+		<9471796b3048baf8a7041d8e8e37fbc1>@slots-free / @slots-total Slot (s) disponibile</9471796b3048baf8a7041d8e8e37fbc1>
+		<ace261ed4e1ddece0b91ec8cd666bcc9>0 slot disponibili</ace261ed4e1ddece0b91ec8cd666bcc9>
+		<6bbdf597772ae20086b10738833f0815>Perso Connection</6bbdf597772ae20086b10738833f0815>
+		<aa96c6c7666781d3b7ba2433626e4fbe>Tutti gli altri giocatori hanno lasciato il gioco.</aa96c6c7666781d3b7ba2433626e4fbe>
+		<97ce19d53b5143346a87ccd913e41672>Attendere per i nuovi giocatori</97ce19d53b5143346a87ccd913e41672>
+		<b84591fe85df5fdb5ef46d23d3a720a8>Termina sessione</b84591fe85df5fdb5ef46d23d3a720a8>
+		<b8d352976923e1ce42cdb3e6bd051062>Ritorna al Menu principale</b8d352976923e1ce42cdb3e6bd051062>
+		<fe0047e14c72090c9e4f0dec92d138cf>Nuova abitudine salvare</fe0047e14c72090c9e4f0dec92d138cf>
+		<3ccb991ae2a7dbd3caea95ee1b991916>Creare [color=special]Nuovo Salva[/color]...</3ccb991ae2a7dbd3caea95ee1b991916>
+		<13a3ea59abd9333cdaee9d5d35453716>Statistiche di gioco</13a3ea59abd9333cdaee9d5d35453716>
+		<2b0401abed6389f9e183313bf35e3fd3>Salva anteprima:</2b0401abed6389f9e183313bf35e3fd3>
+		<2be6adfdf7049d69a2a7733536180c76>Slots QuickSave (@quicksave-slot-count)</2be6adfdf7049d69a2a7733536180c76>
+		<a143bb2da5c7a40200586ccff96181d0>Selezionare qualsiasi Sovrascrivi</a143bb2da5c7a40200586ccff96181d0>
+		<55fbd878a920f4bb51097d0bcb889dc0>Salva personalizzato esistente (@manualsave-slot-count)</55fbd878a920f4bb51097d0bcb889dc0>
+		<c0cd4d271afe22373e29dc6895e098b1>[color=normal]@header-text[/color]</c0cd4d271afe22373e29dc6895e098b1>
+		<8114210dd486b87ae5b1dfd3c16bd182>Onda riuscita</8114210dd486b87ae5b1dfd3c16bd182>
+		<2bb25f7ef9772c341ed34c5cef3287f1>Il tuo personaggio non ha fatto attraverso il [color=special]onda[/color] vivo!</2bb25f7ef9772c341ed34c5cef3287f1>
+		<28914603238731eeeec96144eef2b49f>Riprova onda</28914603238731eeeec96144eef2b49f>
+		<ca0ba0479ec3e851b0b711300324952d>Corrente in onda @current-wave</ca0ba0479ec3e851b0b711300324952d>
+		<c7c2f543b8296292576ed57ec295e65a>È possibile ripetere l&apos;onda tutte le volte che lo si desidera.</c7c2f543b8296292576ed57ec295e65a>
+		<7dee404559c09b90dee8a18e13e9e534>Uscita onda</7dee404559c09b90dee8a18e13e9e534>
+		<7517fe4acb034f67897402c6805386a2>Uscire [color=dim]onda[/color] e tornare al sopramondo. Puoi [color=dim]rivisitare[/color] Questa sfida in camera in qualsiasi momento!</7517fe4acb034f67897402c6805386a2>
+		<14a613b5adb42c80ae8eef1f63f8ea00>
+			[color=button]@title[/color]
+[color=lowlight]@date[/color]
+		</14a613b5adb42c80ae8eef1f63f8ea00>
+		<e4501117e1bedcf91a53123d0b0cc7d7>@device-title</e4501117e1bedcf91a53123d0b0cc7d7>
+		<861b1dfdbb173de0f9e57d72b6c284dc>Seleziona periferica</861b1dfdbb173de0f9e57d72b6c284dc>
+		<6795975d2a3ee08c25bd74c360132342>Ripristina impostazioni predefinite</6795975d2a3ee08c25bd74c360132342>
+		<c243c1c5d1c30638dc0872c14a46ee7b>Sei sicuro di voler ripristinare i controlli per la vostra [color=special]@device-name[/color] ai valori predefiniti originali?</c243c1c5d1c30638dc0872c14a46ee7b>
+		<93cba07454f06a4a960172bbd6e2a435>Sì</93cba07454f06a4a960172bbd6e2a435>
+		<416d06bf966d194240144e0a3affac3a>Ripristina impostazioni predefinite</416d06bf966d194240144e0a3affac3a>
+		<bafd7322c6e97d25b6299b5d6fe8920b>No</bafd7322c6e97d25b6299b5d6fe8920b>
+		<ea4788705e6873b424c65e91c2846b19>Cancellare</ea4788705e6873b424c65e91c2846b19>
+		<7fc681a033545c8d1fafba25cae99d75>@upgrade-title</7fc681a033545c8d1fafba25cae99d75>
+		<bb3d6f10a3b1d5178c9428dd6916fef6>Costo:  [color=special]@upgrade-cost oro[/color]</bb3d6f10a3b1d5178c9428dd6916fef6>
+		<6c0730037629fbcb91eedf543d8e57e5>È possibile aggiornare questa voce @upgrades-remaining tempo@upgrades-remaining-pluralizer.</6c0730037629fbcb91eedf543d8e57e5>
+		<e9e63d8bb8f8ec8c0a19ae05299d878b>Costo:  [color=unaffordable]@upgrade-cost oro[/color]</e9e63d8bb8f8ec8c0a19ae05299d878b>
+		<5b22c39cc8a41be3606372d1fb8cd23a>Lei non può permettersi questo aggiornamento adesso. Avete bisogno [color=special]@gold-needed più oro[/color] comprare questo aggiornamento.</5b22c39cc8a41be3606372d1fb8cd23a>
+		<8e84a32dec8d48d64728d69597e40ccc>Completamente aggiornato</8e84a32dec8d48d64728d69597e40ccc>
+		<f9b5cd7c411ee902df7f7f63f51b752f>Non è possibile aggiornare di nuovo questa voce.</f9b5cd7c411ee902df7f7f63f51b752f>
+		<fc55ae63e08970b8fb9b7930b3943856>Non sbloccato</fc55ae63e08970b8fb9b7930b3943856>
+		<259a1859b6210075f5ffb24f14d200ed>Per sbloccare [color=special]@skill-title  @skill-level[/color], Dovete raggiungere [color=title]Livello Character @required-character-level[/color].</259a1859b6210075f5ffb24f14d200ed>
+		<aa8f8ae7430fa236625fbd961559f404>Sei attualmente [color=title]Livello @current-character-level[/color] personaggio.</aa8f8ae7430fa236625fbd961559f404>
+		<cb6654e66ab932148f3f086ee1016d3c>Torna a Skill Albero</cb6654e66ab932148f3f086ee1016d3c>
+		<1c65d561fc50f486e7c6299cfa8c7671>Aggiornamento Panoramica</1c65d561fc50f486e7c6299cfa8c7671>
+		<564b7c9d8683f1a94798e9f7449564e4>Opzioni di aggiornamento</564b7c9d8683f1a94798e9f7449564e4>
+		<4682ce39ad44e0bf8c8661817d5361f6>Item Aggiornamento</4682ce39ad44e0bf8c8661817d5361f6>
+		<70d9be9b139893aa6c69b5e77e614311>Confermare</70d9be9b139893aa6c69b5e77e614311>
+		<d0be6c250c378bf592ea60e6d3f325cb>Annulla Aggiornamento</d0be6c250c378bf592ea60e6d3f325cb>
+		<59637958d4f4538cde415834bffdeeab>Non pronto</59637958d4f4538cde415834bffdeeab>
+		<1876273b55f6f6d7d9d5265fd9bb5908>Non abbastanza oro</1876273b55f6f6d7d9d5265fd9bb5908>
+		<1c26466dc055415396c337965fdee787>Attributi di aggiornamento</1c26466dc055415396c337965fdee787>
+		<80a3851050f79bf662f6ba0e2ce49c72>[color=special]@upgrade-title[/color]</80a3851050f79bf662f6ba0e2ce49c72>
+		<70ce07b6eab71b1eb4a7df8be5809062>[color=special]@upgrade-cost oro[/color]</70ce07b6eab71b1eb4a7df8be5809062>
+		<a2e890068c718e12a6cd03ceec164d60>Conferma aggiornamento</a2e890068c718e12a6cd03ceec164d60>
+		<5fce9f84ae5fbb604b06007ec13c75d5>Costo:  [color=special]@upgrade-cost[/color] oro</5fce9f84ae5fbb604b06007ec13c75d5>
+		<3fa197846c5c56f50e438da98f024bf4>@skill-title: Livello @skill-level</3fa197846c5c56f50e438da98f024bf4>
+		<2bc91a315f676978b3851392988b45c3>Punti abilità Needed:  @required-skill-points</2bc91a315f676978b3851392988b45c3>
+		<c3eda914a05461a478f95b0b2fbd6190>[color=special]Come funziona:[/color]</c3eda914a05461a478f95b0b2fbd6190>
+		<869e252ed2ac855b8aebb767a642d0c7>@skill-overview</869e252ed2ac855b8aebb767a642d0c7>
+		<c58ee47484c37e1fdc907d7ace7ea0ea>[color=dim]Come avrebbe funzionato:[/color]</c58ee47484c37e1fdc907d7ace7ea0ea>
+		<768180b3d8151c74079f88b65babb189>@skill-title: Max Level</768180b3d8151c74079f88b65babb189>
+		<87103aaed2247d1005b782998d3f7cb0>Completamente aggiornato!</87103aaed2247d1005b782998d3f7cb0>
+		<cb4e5262b77cb977ed0d54dcafa093b7>[color=special]Come avrebbe funzionato:[/color]</cb4e5262b77cb977ed0d54dcafa093b7>
+		<1d672d1369fdc7f3a038b6967aa59d36>[color=special]Livello riuscita[/color]</1d672d1369fdc7f3a038b6967aa59d36>
+		<ee96aaf8c5fc3866a98d32da19b3c63b>@content</ee96aaf8c5fc3866a98d32da19b3c63b>
+		<63c2c21e39cfcdee7f678f5af69df6f2>Aggiornare @update-index</63c2c21e39cfcdee7f678f5af69df6f2>
+		<73946750c59a5cd987585fb053cf687f>@update-description</73946750c59a5cd987585fb053cf687f>
+		<6e30cbe4041cf54c26cb8a4a04621502>@response-text</6e30cbe4041cf54c26cb8a4a04621502>
+		<2a624a3776edc82e13911d587932154a>Dispositivi Trovato:  @device-count</2a624a3776edc82e13911d587932154a>
+		<63edde274385877b4eaa2352ca62d571>Torna a Opzioni</63edde274385877b4eaa2352ca62d571>
+		<07e30147ace726c4f6b7432e5cdfd764>Scaricabile Level Imposta ...</07e30147ace726c4f6b7432e5cdfd764>
+		<c0f9ebc62da3e5c9baefa80893b9c208>premere ESC per tornare al menu</c0f9ebc62da3e5c9baefa80893b9c208>
+		<b09825dc6d992046781fb083979414df>[color=title]Controlli[/color]</b09825dc6d992046781fb083979414df>
+		<c53e8325f9778849265cab502d07de22>Personalizza il tuo [color=dim]tastiera[/color] o [color=dim]gamepad[/color] controlli per il gioco.</c53e8325f9778849265cab502d07de22>
+		<de58c8bca3d34dc74d5ba68ea490bb07>Personalizza il tuo [color=dim]tastiera[/color] o [color=dim]gamepad[/color].</de58c8bca3d34dc74d5ba68ea490bb07>
+		<3dc465ac062f55f6f882aad36bb27fcb>[color=title]Giornale della transazione[/color]</3dc465ac062f55f6f882aad36bb27fcb>
+		<2e3ca586b7c1228240dd421908b00acf>Vedere le registrazioni dei vostri rapporti con il popolo [color=special]Lelandria[/color], Insieme con un record di ogni transazione commerciale di impegnarsi.</2e3ca586b7c1228240dd421908b00acf>
+		<a99df27342f5e6a23061a56d1085d8fa>Visualizzare un elenco di transazioni precedenti.</a99df27342f5e6a23061a56d1085d8fa>
+		<e1da5f10f09d953a1b2c3a4496349faa>[color=title]Realizzazioni[/color]</e1da5f10f09d953a1b2c3a4496349faa>
+		<5eca0e59f2a414ca33e4f7d092fa6759>Visualizzare un elenco di [color=dim]Realizzazioni[/color] disponibili in [color=title]Una Lode Runner Story[/color].</5eca0e59f2a414ca33e4f7d092fa6759>
+		<226712f5002af5c0e73406c2904d5762>Visualizzare un elenco di [color=dim]Realizzazioni[/color].</226712f5002af5c0e73406c2904d5762>
+		<f134c7d4f734f28873163a22fd9ee817>[color=title]statistiche di gioco[/color]</f134c7d4f734f28873163a22fd9ee817>
+		<bd9521ed85dc51cfe7a005e557abd507>Analizzare una panoramica statistica dettagliata dei tuoi progressi-to-date nel gioco.</bd9521ed85dc51cfe7a005e557abd507>
+		<12c647905eb26e1ef53d4c65c5f2b7c1>Analizzare una serie di statistiche di gioco.</12c647905eb26e1ef53d4c65c5f2b7c1>
+		<69694a92d9b2deb55c5d0d72827e77b5>Statistiche di gioco</69694a92d9b2deb55c5d0d72827e77b5>
+		<ae35fe5de560db692163e1ab76ebe7d6>Nome personaggio:  [color=special]@character-name[/color]</ae35fe5de560db692163e1ab76ebe7d6>
+		<5aa6e1592dd40daa67338e6eb1ce3a1d>Livello Carattere:  [color=special]@character-level[/color]</5aa6e1592dd40daa67338e6eb1ce3a1d>
+		<b53506e39dbad62ba3414ceb10124fbc>Tempo giocato:  [color=special]@time-played[/color]</b53506e39dbad62ba3414ceb10124fbc>
+		<6958b34532641c7b7bfd89cfa3279e8b>Scava Fatto:  [color=special]@total-digs[/color]</6958b34532641c7b7bfd89cfa3279e8b>
+		<61aabafdc31a25e9da84a6d721646d58>Guys Bad uccisi:  [color=special]@enemies-killed[/color]</61aabafdc31a25e9da84a6d721646d58>
+		<f8f0abeed372b725e673093babf7fa7d>Oro Raccolta:  [color=special]@gold-collected[/color]</f8f0abeed372b725e673093babf7fa7d>
+		<5503800acc1354aa98fd72d83b80d67c>Voci di acquisizione:  [color=special]@items-acquired[/color]</5503800acc1354aa98fd72d83b80d67c>
+		<93c48799598985e4ae07a36a0483b91e>Oro trascorso:  [color=special]@gold-spent[/color]</93c48799598985e4ae07a36a0483b91e>
+		<4e230305b207b8353558568b74e71f37>Amichevoli uccisi:  [color=special]@npcs-killed[/color]</4e230305b207b8353558568b74e71f37>
+		<ffc199909afb7d54f9b76cae2f124765>Incarichi completati:  [color=special]@quests-completed / @quests-possible[/color]</ffc199909afb7d54f9b76cae2f124765>
+		<a87b78ce3a94d3734c9a6431fc23408c>Risultati Completato:  [color=special]@achievements-completed[/color] / @achievements-possible</a87b78ce3a94d3734c9a6431fc23408c>
+		<6e3f6c1dc4dccdf6f9a53f920afe0713>Viaggio veloce</6e3f6c1dc4dccdf6f9a53f920afe0713>
+		<00b60192c0600b2b83e52de7bec2f1aa>Sei sicuro di voler viaggiare [color=special]@map-title[/color]?</00b60192c0600b2b83e52de7bec2f1aa>
+		<226c50ed078b1f5feb6d2495ef23ad85>Personalizzare Controls</226c50ed078b1f5feb6d2495ef23ad85>
+		<6c77c1cd8f22887db78def75d28a7bc6>[color=dim]Imposta gamepad ...[/color]</6c77c1cd8f22887db78def75d28a7bc6>
+		<314d274ceceb797f26503446412fa508>Gamepad Interruttore</314d274ceceb797f26503446412fa508>
+		<a4177fd8a2dbda0b4d6e18eeafd49950>[color=dim]Select device ...[/color]</a4177fd8a2dbda0b4d6e18eeafd49950>
+		<dbaedc5d7bc110413a14920a91b4f655>[color=dim]Torna a opzioni ...[/color]</dbaedc5d7bc110413a14920a91b4f655>
+		<ae254687839916894ca91444db1c8e7f>Quest Aggiornamenti</ae254687839916894ca91444db1c8e7f>
+		<667834dc9d124da7bdda4322370be4bf>Aggiornamenti:  @count</667834dc9d124da7bdda4322370be4bf>
+		<b73129b4b3c70a0dbfc49b939328cdb5>Nessun aggiornamento trovato</b73129b4b3c70a0dbfc49b939328cdb5>
+		<4a7152f5cb2f9de70acde6e8876eb16b>Questa ricerca non ha ancora un aggiornamento.</4a7152f5cb2f9de70acde6e8876eb16b>
+		<9809c661320e563d4d3f245e6ef48c56>Opzioni di abilità</9809c661320e563d4d3f245e6ef48c56>
+		<606a4dc4366a9a3fda314ebf7de88068>Luogo in Slot [color=special]1[/color]</606a4dc4366a9a3fda314ebf7de88068>
+		<5aea8ae8629770927f9bc9e6342aca8b>@slot1-status</5aea8ae8629770927f9bc9e6342aca8b>
+		<209e2276a4ee22ef31a188ba86799aa2>Luogo in Slot [color=special]2[/color]</209e2276a4ee22ef31a188ba86799aa2>
+		<b6c10809c5a1794e22018e801d7c2edf>@slot2-status</b6c10809c5a1794e22018e801d7c2edf>
+		<f3838cd134c28ee34956e72d2faeae55>Torna a Skills</f3838cd134c28ee34956e72d2faeae55>
+		<902b0d55fddef6f8d651fe1035b7d4bd>Errore</902b0d55fddef6f8d651fe1035b7d4bd>
+		<0ec1c59c66d308b9854f2a81367663ed>Il tentativo di salvataggio non riuscito.</0ec1c59c66d308b9854f2a81367663ed>
+		<07bcdde8a19eb41fe588ca23a0e50b0d>Titolo:  [color=special]@title[/color]</07bcdde8a19eb41fe588ca23a0e50b0d>
+		<eecf0c89f6cddbadda538d42c8340047>Errore:  [color=special]@error[/color]</eecf0c89f6cddbadda538d42c8340047>
+		<a60852f204ed8028c1c58808b746d115>Ok</a60852f204ed8028c1c58808b746d115>
+		<6ebbdd8f3aa5a649ed262a73be954142>@data</6ebbdd8f3aa5a649ed262a73be954142>
+		<3240e7707f99456ba21bf809fba6daf1>Selezionare una sessione ...</3240e7707f99456ba21bf809fba6daf1>
+		<c2ca16d048ec66e04bca283eab048ec2>Ospite</c2ca16d048ec66e04bca283eab048ec2>
+		<e7e019b7962105c3d523729086c7af80>Set Livello</e7e019b7962105c3d523729086c7af80>
+		<93ec972c68d5caca43370a9746a08cea>Giocatori</93ec972c68d5caca43370a9746a08cea>
+		<4ee39c61e61144ae8f1ee166e43cb48c>Tipo di gioco</4ee39c61e61144ae8f1ee166e43cb48c>
+		<ce5bf551379459c1c61d2a204061c455>Posizione</ce5bf551379459c1c61d2a204061c455>
+		<2a8427527549b8751af9465ed8c531a8>Selezionare un determinato livello ...</2a8427527549b8751af9465ed8c531a8>
+		<f1e36ba5764b8ddcf6064d977f0482bb>Confermare la selezione</f1e36ba5764b8ddcf6064d977f0482bb>
+		<92c36f679aa250e1cfd90c821ff3a7c8>Sei sicuro di voler aggiornare a [color=special]@skill-title-and-level[/color]?</92c36f679aa250e1cfd90c821ff3a7c8>
+		<7ae62f9c29e54913f1d71aced0af9e3d>Non aggiornare</7ae62f9c29e54913f1d71aced0af9e3d>
+		<8587811159396775c382dd57119fa629>Aggiorna Adesso</8587811159396775c382dd57119fa629>
+		<8f3dd0ef5f89e7c9e2d1aa9c06e9a10d>@skill-title-and-level</8f3dd0ef5f89e7c9e2d1aa9c06e9a10d>
+		<0d76361f679d46c20deee208b6a431b9>Attualmente hai [color=special]@skill-points-available punto abilità@pluralizer[/color] disponibili.</0d76361f679d46c20deee208b6a431b9>
+		<72cfb004e7cfa6e2240693d9edc555c9>@item-title</72cfb004e7cfa6e2240693d9edc555c9>
+		<90ebbe94b8f35de8bc27c3a110aac495>Fornito</90ebbe94b8f35de8bc27c3a110aac495>
+		<3242e87a4e0d0dd3e18c117753ca0a18>Impostazioni Audio</3242e87a4e0d0dd3e18c117753ca0a18>
+		<a546c5928c57ea1468ddc334fe5f0a50>Musica di sottofondo</a546c5928c57ea1468ddc334fe5f0a50>
+		<241b98a5c9bedc31f5dccef6a2a7971f>Effetti sonori</241b98a5c9bedc31f5dccef6a2a7971f>
+		<c9cc8cce247e49bae79f15173ce97354>Salva</c9cc8cce247e49bae79f15173ce97354>
+		<8156166536d8f5f5c28ebc60940798c1>Usate i tasti sinistra / destra per regolare.</8156166536d8f5f5c28ebc60940798c1>
+		<01de5f79c25e11050f5566d1a379838a>Controlla il movimento</01de5f79c25e11050f5566d1a379838a>
+		<a5879696fd83c14b803e58c2fd64677b>Sposta a sinistra</a5879696fd83c14b803e58c2fd64677b>
+		<d3aa5d49bd3e049ce6814636cbd61298>[color=dim]@gamepad-translations.left[/color]</d3aa5d49bd3e049ce6814636cbd61298>
+		<dfcd62d7e45d162977cce3b8a1d95dc8>Sposta a destra</dfcd62d7e45d162977cce3b8a1d95dc8>
+		<5e1c79cddd56438c98404ca092d4e641>[color=dim]@gamepad-translations.right[/color]</5e1c79cddd56438c98404ca092d4e641>
+		<3717ca1e1702edabf06c7cf830e70627>Muoviti</3717ca1e1702edabf06c7cf830e70627>
+		<099815bb6b757701b5aee9cb15c73117>[color=dim]@gamepad-translations.up[/color]</099815bb6b757701b5aee9cb15c73117>
+		<aa8ea843721d50172c76e0c87b43698e>Abbassare</aa8ea843721d50172c76e0c87b43698e>
+		<c2b9c189ed03ab53595d61e0ff51636c>[color=dim]@gamepad-translations.down[/color]</c2b9c189ed03ab53595d61e0ff51636c>
+		<3114af615fee77d8bcfb74d58cf86369>Controlli di scavo</3114af615fee77d8bcfb74d58cf86369>
+		<140e1c53e019e2976105830ab95ecfc9>Dig Sinistra</140e1c53e019e2976105830ab95ecfc9>
+		<0c5f7cea4f5717be676513ffa529d664>[color=dim]@gamepad-translations.dig-left[/color]</0c5f7cea4f5717be676513ffa529d664>
+		<f4f5082dbd27d70bd0d68b32618bb3f5>Dig Destra</f4f5082dbd27d70bd0d68b32618bb3f5>
+		<87e23a51cce1b426458b8d03cf3a5690>[color=dim]@gamepad-translations.dig-right[/color]</87e23a51cce1b426458b8d03cf3a5690>
+		<457ad993b21f334c071e5aaa113cd17d>Controlli di interazione</457ad993b21f334c071e5aaa113cd17d>
+		<f1bf2b6de5d94caf2d5766edaa7b9794>Luogo Bomb</f1bf2b6de5d94caf2d5766edaa7b9794>
+		<88ce8c2c9f5bf495501587b09b291aba>[color=dim]@gamepad-translations.bomb[/color]</88ce8c2c9f5bf495501587b09b291aba>
+		<cd86600624ba842faa9bc4f28d73cccd>Suicide (hold)</cd86600624ba842faa9bc4f28d73cccd>
+		<3deb35fe8e55ad4cdf7f55e74d2cb8dc>[color=dim]@gamepad-translations.suicide[/color]</3deb35fe8e55ad4cdf7f55e74d2cb8dc>
+		<efbc873e4634f3db63d62377d36e5f56>Interagire</efbc873e4634f3db63d62377d36e5f56>
+		<eb2ad6ad74855c0746a1434bf1aa398c>[color=dim]@gamepad-translations.interact[/color]</eb2ad6ad74855c0746a1434bf1aa398c>
+		<6e786c839fc73e8444ebb170eecb7d5f>Minimap (hold)</6e786c839fc73e8444ebb170eecb7d5f>
+		<e7ca45af82785e74f5175d1fd666e1ef>[color=dim]@gamepad-translations.minimap[/color]</e7ca45af82785e74f5175d1fd666e1ef>
+		<3d0ccc70ea4fd2fcad3b3088b834346f>Utilizzare tasti di scelta rapida di abilità</3d0ccc70ea4fd2fcad3b3088b834346f>
+		<ce1c81cff05769f7a1cca2a7e472a5c4>Usa Abilità 1</ce1c81cff05769f7a1cca2a7e472a5c4>
+		<04196fe7a16c209fa7680e8732b7c0de>[color=dim]@gamepad-translations.skill1[/color]</04196fe7a16c209fa7680e8732b7c0de>
+		<0b7dd2fc3ae3496adcfb1f620c87a01e>Usa Abilità 2</0b7dd2fc3ae3496adcfb1f620c87a01e>
+		<ad53ce1f65100b053ea4b778e75573ea>[color=dim]@gamepad-translations.skill2[/color]</ad53ce1f65100b053ea4b778e75573ea>
+		<503038277fcdb25b9c0ea6feaa09bd13>Menu di navigazione</503038277fcdb25b9c0ea6feaa09bd13>
+		<88317dc2afd46885539a64e0f30cde42>ESC / Annulla</88317dc2afd46885539a64e0f30cde42>
+		<7123632ee183b3cd6e278fc7ae7c5a70>[color=dim]@gamepad-translations.escape[/color]</7123632ee183b3cd6e278fc7ae7c5a70>
+		<acc2bf407e51348a4c1352769211dc0f>Immettere / selezionare</acc2bf407e51348a4c1352769211dc0f>
+		<25cfc593810069367b1c0e33e527aceb>[color=dim]@gamepad-translations.enter[/color]</25cfc593810069367b1c0e33e527aceb>
+		<aef9f7faa83217aa82af93c957f2bf26>Menu Sinistra</aef9f7faa83217aa82af93c957f2bf26>
+		<eba62e927b05f3eae29aa7caaa23a3db>[color=dim]@gamepad-translations.menu-left[/color]</eba62e927b05f3eae29aa7caaa23a3db>
+		<7be2cb87f2d8b2e9c661876fc91cbe43>Menù a destra</7be2cb87f2d8b2e9c661876fc91cbe43>
+		<06b368dd772f12c4c100293d6a367e1a>[color=dim]@gamepad-translations.menu-right[/color]</06b368dd772f12c4c100293d6a367e1a>
+		<92352e815d272a91d5c08f4bf254cee1>Menu su</92352e815d272a91d5c08f4bf254cee1>
+		<4370f40294886911917d48a17039927a>[color=dim]@gamepad-translations.menu-up[/color]</4370f40294886911917d48a17039927a>
+		<1a8268d909b94831f8b0c39a86c9fa67>Menu di Down</1a8268d909b94831f8b0c39a86c9fa67>
+		<78abd9d29ff4fa5274d4bbdc855fa144>[color=dim]@gamepad-translations.menu-down[/color]</78abd9d29ff4fa5274d4bbdc855fa144>
+		<6311ae17c1ee52b36e68aaf4ad066387>Altro</6311ae17c1ee52b36e68aaf4ad066387>
+		<966816cc61476db8d6776b725291b10e>[color=dim]Ripristina tutti i controlli[/color]</966816cc61476db8d6776b725291b10e>
+		<da4b2bfa38276b7b73ce95ee81b45eaf>[color=dim]Salva modifiche[/color]</da4b2bfa38276b7b73ce95ee81b45eaf>
+		<859b0f13f162d2c83e7ef806538dba3c>Sovrascrivi Custom Save</859b0f13f162d2c83e7ef806538dba3c>
+		<67ecd29611b68860e5e710175596aa5b>Sei sicuro di voler sovrascrivere salvare l&apos;usanza attuale [color=special]@title[/color]?</67ecd29611b68860e5e710175596aa5b>
+		<23fd0740c7ada6a703466ae2f1401fee>L&apos;ultimo salvataggio di questo slot [color=special]@time-since-last-save[/color] fa.</23fd0740c7ada6a703466ae2f1401fee>
+		<cbfd8da9199bcf0cb538feab1d609de5>Sovrascrittura Quicksave</cbfd8da9199bcf0cb538feab1d609de5>
+		<65ebf6d6ed96cb07229fe2fb858cf62c>Sei sicuro di voler sovrascrivere i dati in [color=special]Quicksave @slot[/color]?</65ebf6d6ed96cb07229fe2fb858cf62c>
+		<369d4f6e9f913fe5d9afcb98a2354c37>Load Errore</369d4f6e9f913fe5d9afcb98a2354c37>
+		<9a3ca918b397049cb0ab00dcccecdcb2>Non sono stati salvati tutti i dati in quella posizione.</9a3ca918b397049cb0ab00dcccecdcb2>
+		<a021c02247afbbb5028ef7f7ab382cb0>Libero uno slot inventario</a021c02247afbbb5028ef7f7ab382cb0>
+		<c276e9b96bb84d06e47fb5d71b07f6fd>Premere un tasto</c276e9b96bb84d06e47fb5d71b07f6fd>
+		<7f5b36c0da66c4a7ef2e2840d405ef79>Premere l&apos;input di tastiera che si intende utilizzare [color=special]@todo[/color].</7f5b36c0da66c4a7ef2e2840d405ef79>
+		<3fbc924beb3b496e7f7959d33b426be7>Puzzle completo!</3fbc924beb3b496e7f7959d33b426be7>
+		<ae0b9e52cca9460eaad152bcf7e89337>Come ricompensa per aver completato con successo questo [color=special]@map-title[/color], Selezionare [color=special]1[/color] premio!</ae0b9e52cca9460eaad152bcf7e89337>
+		<c669145dfabfecdb6c21bd72b52fc1dc>Premi</c669145dfabfecdb6c21bd72b52fc1dc>
+		<f1092342e336fe02cc3a6a810005c97a>[color=special]Articolo aggiornato[/color]</f1092342e336fe02cc3a6a810005c97a>
+		<57ad5bd82662ddf1fc650fc906213ac0>Ingresso selezionato</57ad5bd82662ddf1fc650fc906213ac0>
+		<3594c25d2b6392ddd182c46f2d9491e6>@gamepad-translations.left</3594c25d2b6392ddd182c46f2d9491e6>
+		<b26ca21d16724b495baba8c60701c0d9>[color=dim]Utilizzare questo ingresso per spostare a sinistra.[/color]</b26ca21d16724b495baba8c60701c0d9>
+		<d8f7f64fd461eade7ea7b0fd500b0a1e>@gamepad-translations.right</d8f7f64fd461eade7ea7b0fd500b0a1e>
+		<28a6c8a2d266fd9a647d48053af0d307>[color=dim]Utilizzare questo ingresso per spostare a destra.[/color]</28a6c8a2d266fd9a647d48053af0d307>
+		<c6096a5a78306318c1986a4348527a82>@gamepad-translations.up</c6096a5a78306318c1986a4348527a82>
+		<76b9bf82ef84c50dc583b65eb7140d68>[color=dim]Utilizzare questo ingresso per salire le scale.[/color]</76b9bf82ef84c50dc583b65eb7140d68>
+		<d4fdad0a90c823d290f4c30e70e2e5ef>@gamepad-translations.down</d4fdad0a90c823d290f4c30e70e2e5ef>
+		<d77e05de467f9edb9da5e2943ca34d35>[color=dim]Utilizzare questo ingresso per scendere le scale e di cadere da scimmia a barre.[/color]</d77e05de467f9edb9da5e2943ca34d35>
+		<f8c2a2dc6a36dc1a7882505f79b5604b>@gamepad-translations.dig-left</f8c2a2dc6a36dc1a7882505f79b5604b>
+		<534eb51a5e42682ae8b10c0cc4993611>[color=dim]Utilizzare questo ingresso per scavare a sinistra in qualsiasi momento.[/color]</534eb51a5e42682ae8b10c0cc4993611>
+		<3603d60322a2a7c533ef0361c7e6a43e>@gamepad-translations.dig-right</3603d60322a2a7c533ef0361c7e6a43e>
+		<380328065a0801eb28a826e31ca9ece9>[color=dim]Utilizzare questo ingresso per scavare a destra in qualsiasi momento.[/color]</380328065a0801eb28a826e31ca9ece9>
+		<60163d3a96750db01440c3152b425647>@gamepad-translations.bomb</60163d3a96750db01440c3152b425647>
+		<9b09c0fabeb017cc8dd4e5cbdfffe7b7>[color=dim]Utilizzare questo ingresso per posizionare una bomba nella direzione che si sta.[/color]</9b09c0fabeb017cc8dd4e5cbdfffe7b7>
+		<cc7e78376b3f0efd3780493da5de925d>@gamepad-translations.suicide</cc7e78376b3f0efd3780493da5de925d>
+		<2dbcbac0de017ebc463e86e520666315>[color=dim]Tenere questo ingresso brevemente di uccidere il tuo personaggio, se ti trovi in ​​difficoltà![/color]</2dbcbac0de017ebc463e86e520666315>
+		<9c90d475019d5e75a6456dd0039ed021>@gamepad-translations.interact</9c90d475019d5e75a6456dd0039ed021>
+		<cac43f459bb29c5aec3a513bc81b7bb5>[color=dim]Utilizzare questo ingresso per parlare con gli NPC e di utilizzare le leve.[/color]</cac43f459bb29c5aec3a513bc81b7bb5>
+		<c9b42e8d666dc174934c8cdb6026e21e>@gamepad-translations.minimap</c9b42e8d666dc174934c8cdb6026e21e>
+		<422998922eb2086053e451d2224c2a12>[color=dim]Tenere questo ingresso per visualizzare una minimappa.[/color]</422998922eb2086053e451d2224c2a12>
+		<c1e6e853ce2b1a7297d70b341c9e0fda>Chat (Solo Co-op)</c1e6e853ce2b1a7297d70b341c9e0fda>
+		<de4f333a3f4c44117945f338be9578b6>@gamepad-translations.net-chat</de4f333a3f4c44117945f338be9578b6>
+		<2b1c5215f76fd744006a4eb5caa8fde9>[color=dim]Utilizzare questo ingresso per attivare la console di chat durante il gioco co-op.[/color]</2b1c5215f76fd744006a4eb5caa8fde9>
+		<1547931694abe3469e39a2fcf155781b>Abilità Tasti di scelta rapida</1547931694abe3469e39a2fcf155781b>
+		<35f3570127587868c189de7f0e604541>@gamepad-translations.skill1</35f3570127587868c189de7f0e604541>
+		<3764aba19cb618a4a41d94359a2514e7>[color=dim]Utilizzare questo ingresso per attivare l&apos;abilità nello slot 1.[/color]</3764aba19cb618a4a41d94359a2514e7>
+		<5484625035b04d4f8910c339bdace96d>@gamepad-translations.skill2</5484625035b04d4f8910c339bdace96d>
+		<cc8aedbf3b3ce39c7946847790b0a531>[color=dim]Utilizzare questo ingresso per attivare l&apos;abilità nello slot 2.[/color]</cc8aedbf3b3ce39c7946847790b0a531>
+		<80186cdfc6b70ca080b5b3182f8690e5>@gamepad-translations.escape</80186cdfc6b70ca080b5b3182f8690e5>
+		<f3625597973068ebecd5c15321af3259>[color=dim]Utilizzare questo ingresso per accedere ai menu di pausa o per annullare le azioni.[/color]</f3625597973068ebecd5c15321af3259>
+		<53e81987734e56a42d34d2cbdbbd64b0>@gamepad-translations.enter</53e81987734e56a42d34d2cbdbbd64b0>
+		<a38926dd740fc00085b4105d9cd8d0bd>[color=dim]Utilizzare questo ingresso per selezionare un&apos;opzione di menu.[/color]</a38926dd740fc00085b4105d9cd8d0bd>
+		<8339fe50001c0a114bf8b59a6e3ad040>@gamepad-translations.menu-left</8339fe50001c0a114bf8b59a6e3ad040>
+		<aaae4136a28d440a40587ba9dc3a272d>[color=dim]Utilizzare questo ingresso per spostare a sinistra all&apos;interno di un menu.[/color]</aaae4136a28d440a40587ba9dc3a272d>
+		<bb04a785e4cc89afcef079f4a3e5827a>@gamepad-translations.menu-right</bb04a785e4cc89afcef079f4a3e5827a>
+		<1c840fb16c2106dc1378a7c7434ef446>[color=dim]Utilizzare questo ingresso per spostarsi verso destra all&apos;interno di un menu.[/color]</1c840fb16c2106dc1378a7c7434ef446>
+		<1a3a3a81ebeb20868f32d734ffbe5227>@gamepad-translations.menu-up</1a3a3a81ebeb20868f32d734ffbe5227>
+		<7ad227c95e2988810cd40318848a94f2>[color=dim]Utilizzare questo ingresso per spostarsi all&apos;interno di un menu.[/color]</7ad227c95e2988810cd40318848a94f2>
+		<da032eb70a3beb2b332d0940c892678d>@gamepad-translations.menu-down</da032eb70a3beb2b332d0940c892678d>
+		<f50a16bdfa9e3ef0c817fc6d0fed5915>[color=dim]Utilizzare questo ingresso per spostare verso il basso all&apos;interno di un menu.[/color]</f50a16bdfa9e3ef0c817fc6d0fed5915>
+		<1caac01d5398ce1009439c20cf163365>Seleziona un colore</1caac01d5398ce1009439c20cf163365>
+		<5b26785652fc9c5ce70c93a43e1246c3>@purchase-details</5b26785652fc9c5ce70c93a43e1246c3>
+		<808425e00568efd9eae3f5e6c1b0b687>Nessuna transazione trovato.</808425e00568efd9eae3f5e6c1b0b687>
+		<c9f7b091c88f6966ca6c6461dc55f36c>La connessione al server è scaduta. Stampa [color=special]@some-key[/color] per tornare al menu principale.</c9f7b091c88f6966ca6c6461dc55f36c>
+		<da6026011abdaf2bd63008b50acf7f39>Giocatore singolo</da6026011abdaf2bd63008b50acf7f39>
+		<9b66d21c2de03c32886e5b9959d1b214>Gioca da solo ...</9b66d21c2de03c32886e5b9959d1b214>
+		<89af765a0c8de0080713ad7f09fc2fd9>Co-op modalità</89af765a0c8de0080713ad7f09fc2fd9>
+		<a98a68c3093157e4c63eb06488c9b97a>[color=dim]Gioca in modalità cooperativa ...[/color]</a98a68c3093157e4c63eb06488c9b97a>
+		<bebea0eac8bd12df7826980f78f87263>Livello Search</bebea0eac8bd12df7826980f78f87263>
+		<feda1fd7e07933fb1e2b4d766ba64090>[color=dim]Scarica nuovi livelli ...[/color]</feda1fd7e07933fb1e2b4d766ba64090>
+		<fd20c1050198e1164095fa5ad73e6502>[color=dim]Controlli e altro ...[/color]</fd20c1050198e1164095fa5ad73e6502>
+		<e05608c9f6728a8fa124f1f98ad22b95>Esci dal gioco</e05608c9f6728a8fa124f1f98ad22b95>
+		<fd7f24a74f7c9591fda386778f27ee7d>[color=dim]Arrivederci![/color]</fd7f24a74f7c9591fda386778f27ee7d>
+		<c43c487038c9a3a9384f22183e1736ba>Modalità Storia</c43c487038c9a3a9384f22183e1736ba>
+		<76ef2903d434fb5ddaeebaa191f9ebd8>Gioca la modalità storia ...</76ef2903d434fb5ddaeebaa191f9ebd8>
+		<1c21196c43a27fb73680219ad3be1613>[color=dim]Gioca in modalità cooperativa![/color]</1c21196c43a27fb73680219ad3be1613>
+		<ba2c48de56cc959794adfb2169a7fbe3>Dlc</ba2c48de56cc959794adfb2169a7fbe3>
+		<0ca9364e253a2f8afe73185193870fbf>[color=dim]Impostare i controlli[/color]</0ca9364e253a2f8afe73185193870fbf>
+		<029215559200601977e9b2c30d6854fb>Il tuo personaggio non ce l&apos;ha fatta attraverso il livello vivo!</029215559200601977e9b2c30d6854fb>
+		<ac41e36f982be3a63ae7d38efec8e379>Riprova Level</ac41e36f982be3a63ae7d38efec8e379>
+		<c6f79efab5bd1595ad9c1de5b1d7d116>Inizia dall&apos;inizio</c6f79efab5bd1595ad9c1de5b1d7d116>
+		<566bd491b408e6880c076c6690d4cfad>È possibile ripetere il livello di tutte le volte che lo si desidera.</566bd491b408e6880c076c6690d4cfad>
+		<0d82790b0612935992bd564a17ce37d6>Smettere</0d82790b0612935992bd564a17ce37d6>
+		<9e9043fa825dbc96297f7ea2939eea60>Torna a [color=special]Menu principale[/color]</9e9043fa825dbc96297f7ea2939eea60>
+		<d4401d8e3f913aa684bf68723a7878ac>Uscire dal livello e tornare alla schermata di selezione del livello.</d4401d8e3f913aa684bf68723a7878ac>
+		<6b03e013ce78e7166a99aad9a2f70093>[color=title]Mappe del Mondo[/color]</6b03e013ce78e7166a99aad9a2f70093>
+		<d0b228cf3c4261881789579303b66005>Mappe interattive che guidano a livelli non finiti, camere di puzzle e altro ancora.</d0b228cf3c4261881789579303b66005>
+		<81458d6e5d32f94ae93b02f72b8fbc62>Visualizza una mappa del mondo che si sta esplorando.</81458d6e5d32f94ae93b02f72b8fbc62>
+		<6010870b6defc99af487fb80c11ee204>[color=title]dotare le abilità[/color]</6010870b6defc99af487fb80c11ee204>
+		<95c0eaccaba105068f553d03ac4154dd>Selezionare il vostro [color=special]abilità apprese[/color] assegnare al [color=special]hotkeys uso qualificati[/color].</95c0eaccaba105068f553d03ac4154dd>
+		<f58941d21849db7d85956467da6e63b1>Dotare la vostra [color=special]competenze[/color].</f58941d21849db7d85956467da6e63b1>
+		<c0a40099658cce5f0cdfb30d88ba11cb>[color=title]Salva partita[/color]</c0a40099658cce5f0cdfb30d88ba11cb>
+		<77445d9b1e14a3e3333f3d8f47df810f>Salva i tuoi progressi in corso in uno slot di salvataggio.</77445d9b1e14a3e3333f3d8f47df810f>
+		<6c8046f1babb041284e6e9f1fc5b7139>Salva i tuoi progressi in corso.</6c8046f1babb041284e6e9f1fc5b7139>
+		<83ac35f4bc00adf6366ce5f5e2d4ac60>[color=title]Carica partita[/color]</83ac35f4bc00adf6366ce5f5e2d4ac60>
+		<a239c1f49193121c701d0abd9f911b95>Scegliere di ricaricare un precedente salvataggio, tra cui salvataggi automatici.</a239c1f49193121c701d0abd9f911b95>
+		<ef7e11cf6b2b504e9eae2b57de9881f1>Scegliere per caricare salvare un precedente.</ef7e11cf6b2b504e9eae2b57de9881f1>
+		<519cf52b78c4484f599f1a7272e9a443>[color=normal]Opzioni Quest[/color]</519cf52b78c4484f599f1a7272e9a443>
+		<11d28c064eed7c0a932c0594fbc4e017>[color=button]Quest attivi[/color]</11d28c064eed7c0a932c0594fbc4e017>
+		<aeae078804e07840edc72b13c6e9291b>[color=button]Quest finiti[/color]</aeae078804e07840edc72b13c6e9291b>
+		<b9f8d68e70ccf4c196f4be0272ea6b0f>[color=button]Torna a [color=title]Menu di gioco[/color][/color]</b9f8d68e70ccf4c196f4be0272ea6b0f>
+		<71c8b6000a9e49c03d5dbcbfb6ef1dac>Costo: 0 oro (Puzzle Reward)</71c8b6000a9e49c03d5dbcbfb6ef1dac>
+		<f10f6d66f4f3f7e89be5f3d01087b0c0>[color=special]Particolari dell&apos;articolo:[/color]</f10f6d66f4f3f7e89be5f3d01087b0c0>
+		<7de507c92ab1b20183508656f9f76001>@item-advertisement</7de507c92ab1b20183508656f9f76001>
+		<93b4c465bc1156a473e4849e3317763d>@limit Giocatori</93b4c465bc1156a473e4849e3317763d>
+		<e615446a2d12efdd34da134bb84ba849>Lobby Membri</e615446a2d12efdd34da134bb84ba849>
+		<4e6bd693070f0fcde1db1ac732047bb8>Voti favorevoli Salta:  [color=special]@votes[/color]</4e6bd693070f0fcde1db1ac732047bb8>
+		<196d4ccf1d39956410b2e4da7fb44f21>Menu Lobby</196d4ccf1d39956410b2e4da7fb44f21>
+		<203301632462e5d0207199a3690d54dc>Livello Panoramica</203301632462e5d0207199a3690d54dc>
+		<485cfdf25fde9252186b4f8354a4eb06>Set pronto</485cfdf25fde9252186b4f8354a4eb06>
+		<b4973a6977c981244b993dd1e6cae8b4>Modifica Avatar</b4973a6977c981244b993dd1e6cae8b4>
+		<a8cf458f184d732c50f7d34e8ef6ee3b>Votare a Salta Level</a8cf458f184d732c50f7d34e8ef6ee3b>
+		<c74f8323b11b78ec1739d4ddfafa87dd>Hey, questo è solo un&apos;etichetta di prova che potrebbe servire come una sorta di tooltip dinamicamente aggiornato?</c74f8323b11b78ec1739d4ddfafa87dd>
+		<2d4a1b0430f1749bfe9a291bf0743a78>[color=special]@level-title[/color]</2d4a1b0430f1749bfe9a291bf0743a78>
+		<c2c26a3cbf3dccc02c65377f41c4f585>@level-overview</c2c26a3cbf3dccc02c65377f41c4f585>
+		<8f6ac3ae4a0fd813c48a61c851797106>[color=special]Pronto a giocare[/color]</8f6ac3ae4a0fd813c48a61c851797106>
+		<927fb51a5aeeca00700f934e0e39ae64>Hit questo pulsante quando si è pronti per iniziare il livello. Una volta che tutti i giocatori impostati pronti, il gioco comincia!</927fb51a5aeeca00700f934e0e39ae64>
+		<57edf346ec27808cb2fbafd86b3fd46c>[color=special]Personalizzazione Avatar[/color]</57edf346ec27808cb2fbafd86b3fd46c>
+		<4b2183c0b0eaf5802357337a4d6b9dd9>Modificare il nome multiplayer e selezionare uno schema di colori unico per il vostro avatar Lode Runner!</4b2183c0b0eaf5802357337a4d6b9dd9>
+		<031bde508a419d007d3b043eebca147f>[color=special]Votare a Salta Level[/color]</031bde508a419d007d3b043eebca147f>
+		<a3c19e4a733e429f8928bda2d33d3ace>Se 2 o più giocatori votano per saltare il livello, tutti i giocatori potranno passare al livello successivo immediatamente.</a3c19e4a733e429f8928bda2d33d3ace>
+		<129f5ad4cd71da495a4a2ed7cc1c9632>Imposta Not Ready</129f5ad4cd71da495a4a2ed7cc1c9632>
+		<70ad3572e674aa4a1ec6a20677931c66>[color=special]Abilità Upgraded![/color]</70ad3572e674aa4a1ec6a20677931c66>
+		<0e23578ecd95b36d9bd5a7feaa82dedb>@skill-title  @skill-level</0e23578ecd95b36d9bd5a7feaa82dedb>
+		<5c7ac8cc70bb6d5e7d08c126db041a39>Punti abilità rimanenti:  @skill-points-remaining</5c7ac8cc70bb6d5e7d08c126db041a39>
+		<e474d796d521bda3e23c1536735402b9>@text</e474d796d521bda3e23c1536735402b9>
+		<e391bdf8fa8f77bac69032fe95071810>
+			[color=button]@quest-title[/color]
+Assegnato Quest
+		</e391bdf8fa8f77bac69032fe95071810>
+		<bf17fb4d1e981d66a1f6175b2ac8b384>Mappa del mondo</bf17fb4d1e981d66a1f6175b2ac8b384>
+		<a31f27c7f368b123ee106fef9e8f395c>Visualizza la mappa:  @view-title</a31f27c7f368b123ee106fef9e8f395c>
+		<f6d4a17b27da35c2d90ce13801f36782>Pan</f6d4a17b27da35c2d90ce13801f36782>
+		<4252b72e6ebcd4d4b4c2e46a786f03d2>Zoom</4252b72e6ebcd4d4b4c2e46a786f03d2>
+		<254d8015defce62db17c5eea0146f31a>Modalità ...</254d8015defce62db17c5eea0146f31a>
+		<c2763a687d5677cd0f69a156f7a96ec3>Viaggio ...</c2763a687d5677cd0f69a156f7a96ec3>
+		<1eeb68806a8840c756ff2c7ba85bfb32>@shop-title</1eeb68806a8840c756ff2c7ba85bfb32>
+		<e6b5f0c585c397f566ed3b8ffad8bccd>Purtroppo, sono attualmente fuori inventario. Si prega di riprovare più tardi!</e6b5f0c585c397f566ed3b8ffad8bccd>
+		<671f08e46c28f584240d889e5f22b4a6>Opzioni negozio</671f08e46c28f584240d889e5f22b4a6>
+		<2d6d2f57b9da410a80fe8e33721d0739>Lascia Negozio</2d6d2f57b9da410a80fe8e33721d0739>
+		<e990b6285ed2a575c561235378a5e691>Esaurito</e990b6285ed2a575c561235378a5e691>
+		<24115d526906222ffb89cbec0c984f26>@salutation</24115d526906222ffb89cbec0c984f26>
+		<acece58a20efec915e2a5b29c2cde382>Disponibile inventario</acece58a20efec915e2a5b29c2cde382>
+		<a301fb6c9931e5b86a9b36a31b9c9e6d>Opzioni aggiuntive</a301fb6c9931e5b86a9b36a31b9c9e6d>
+		<98e536e94a845d30f68a1ad816136ff4>Di addio</98e536e94a845d30f68a1ad816136ff4>
+		<32086abbcccbe6dfbf0810909826e0d0>Preferenze volume ...</32086abbcccbe6dfbf0810909826e0d0>
+		<3d23e1e11c824540fb5ae59cadefd5d5>Impostazioni di visualizzazione</3d23e1e11c824540fb5ae59cadefd5d5>
+		<b18cf981a00547e96f99f05c9eb76f93>Preferenza Fullscreen ...</b18cf981a00547e96f99f05c9eb76f93>
+		<6ce4d85a628a88bbdb3ac24a8e5a9c2e>Tastiera</6ce4d85a628a88bbdb3ac24a8e5a9c2e>
+		<aa93ce33ed789cf843c4b9c70fa6f60e>Personalizza le chiavi ...</aa93ce33ed789cf843c4b9c70fa6f60e>
+		<50769e38a1511664e958c52271e16e62>Gamepad</50769e38a1511664e958c52271e16e62>
+		<869410ed57b682e53fe678ccae18f5f2>Configurare gamepad (s) ...</869410ed57b682e53fe678ccae18f5f2>
+		<4994a8ffeba4ac3140beb89e8d41f174>Lingua</4994a8ffeba4ac3140beb89e8d41f174>
+		<059d4ccf4a725d03979dfbc4ab3fc22f>Seleziona la lingua ...</059d4ccf4a725d03979dfbc4ab3fc22f>
+		<0b1739f933e0dea2ac9775cac7a44b6f>@skill-title</0b1739f933e0dea2ac9775cac7a44b6f>
+		<5afaf1679ad0887adebaddb40e0bd3f7>Livello 1</5afaf1679ad0887adebaddb40e0bd3f7>
+		<52ef36e9e6c75fd567976721bb98ccff>Ripristina Checkpoint</52ef36e9e6c75fd567976721bb98ccff>
+		<592fc3702faed305a35c1ca65032f4a7>Sei sicuro di voler caricare il [color=special]dall&apos;ultimo checkpoint[/color]?</592fc3702faed305a35c1ca65032f4a7>
+		<4dc69d3f9b33a09ee2b6f9505e80b3f2>Carico Quicksave</4dc69d3f9b33a09ee2b6f9505e80b3f2>
+		<bbc7b954d091318de41139b491f9a236>Sei sicuro di voler caricare i dati [color=special]Quicksave @slot[/color]?</bbc7b954d091318de41139b491f9a236>
+		<c80bb437f54c6d4a28c0df0b04400b65>Carica Custom Save</c80bb437f54c6d4a28c0df0b04400b65>
+		<015521e83287b4e57f77d53e3aa2eec5>Sei sicuro di voler caricare il salvataggio personalizzato [color=special]@title[/color]?</015521e83287b4e57f77d53e3aa2eec5>
+		<7e7123b0d269ad5d9ec8d12c52a8ed8a>Sbloccare</7e7123b0d269ad5d9ec8d12c52a8ed8a>
+		<dff84f5d5dda60de73246228118fe3a1>[color=special]Panoramica dettagliata[/color]</dff84f5d5dda60de73246228118fe3a1>
+		<18790b3eaad9cb5b5f2d2670c217e304>@skill-details</18790b3eaad9cb5b5f2d2670c217e304>
+		<4f7e9829d05dada846d649c9b814f29f>Aggiornamento a livello @skill-level</4f7e9829d05dada846d649c9b814f29f>
+		<fa15171b90109c33775afee9964a9535>[color=special]Aggiornamento Dettagli[/color]</fa15171b90109c33775afee9964a9535>
+		<0946c826b6fb502e0654e1b24227b8dc>[color=special]Dettagli:[/color]</0946c826b6fb502e0654e1b24227b8dc>
+		<ebcc39462e6620a8cf432194084a5483>Opzioni:</ebcc39462e6620a8cf432194084a5483>
+		<8baf77a05caf6027aafa870682fe3549>
+			Aggiornamento
+[color=dim]@skill-title[/color]
+		</8baf77a05caf6027aafa870682fe3549>
+		<bb815f591d2c6651744f4c41be017b74>
+			Cancellare
+[color=dim]Non pronto[/color]
+		</bb815f591d2c6651744f4c41be017b74>
+		<c644bf5fe969226e49ab244d39622e47>[color=special]Panoramica finale[/color]</c644bf5fe969226e49ab244d39622e47>
+		<09ac965edad58b01d5d33c25cfac3656>
+			Indietro
+[color=dim]Completamente aggiornato[/color]
+		</09ac965edad58b01d5d33c25cfac3656>
+		<d99727a0cc448a3c816c2c75a63ddfac>@message</d99727a0cc448a3c816c2c75a63ddfac>
+		<f69589d7f690c044c424294b07e0a6da>Analisi dei dati ...</f69589d7f690c044c424294b07e0a6da>
+		<63d72051e901c069f8aa1b32aa0c43bb>Gioco</63d72051e901c069f8aa1b32aa0c43bb>
+		<636da1d35e805b00eae0fcd8333f9234>Giocatore</636da1d35e805b00eae0fcd8333f9234>
+		<aa79c5d1cbe3d96218a92481bcfaa39c>Abilità</aa79c5d1cbe3d96218a92481bcfaa39c>
+		<fef46e5063ce3dc78b8ae64fa474241d>Uscita</fef46e5063ce3dc78b8ae64fa474241d>
+		<86aa58d55a65e9a3a3e400a5d2e976fa>Ultimo Checkpoint (Salvataggio automatico)</86aa58d55a65e9a3a3e400a5d2e976fa>
+		<09778947c0b3cf32bc373d01b8778499>Checkpoint Anteprima:</09778947c0b3cf32bc373d01b8778499>
+		<7488306c16bf353c7f86f346ef07e6d4>Carico [color=special]Ultimo Checkpoint[/color]</7488306c16bf353c7f86f346ef07e6d4>
+		<161389ab0cee6aa3374ce7743a3f633a>[color=special]Indietro[/color] al menu principale ...</161389ab0cee6aa3374ce7743a3f633a>
+		<6a4cb717c36743513523b1ed61ec88eb>[color=highlight]Indietro[/color] al menu principale ...</6a4cb717c36743513523b1ed61ec88eb>
+		<3d45e2169dc2f22e617091a92835ee78>[color=normal]Menu hall[/color]</3d45e2169dc2f22e617091a92835ee78>
+		<2d144683345f25c7f3695b258c6bb1f1>
+			[color=special]Livello:[/color]
+Livello 1
+
+[color=special]Panoramica:[/color]
+Raccogliere tutto l'oro del livello per vincere!
+
+Resuscitare compagni caduti toccando il cuore con il loro nome su di essa!
+		</2d144683345f25c7f3695b258c6bb1f1>
+		<b6247aa4b91dfc486f77df241baef60e>
+			[color=special]Set Ready:[/color]
+Quando si è pronti, selezionare questa opzione. Una volta che tutti i giocatori sul suo stato di [color=special]pronto[/color], Il gioco ha inizio!
+		</b6247aa4b91dfc486f77df241baef60e>
+		<078ac2cd60f428b5e35ce0494dfff908>
+			[color=special]Modifica Avatar:[/color]
+Personalizzare l'aspetto del tuo personaggio!
+		</078ac2cd60f428b5e35ce0494dfff908>
+		<5f248c71885150715295b97a256cec56>
+			[color=special]Salta Livello:[/color]
+Se almeno 2 giocatori votano per saltare questo livello, tutti i giocatori potranno passare al livello successivo disponibile.
+		</5f248c71885150715295b97a256cec56>
+		<1905c840c962b2e2436b0dd52f101d87>
+			[color=special]Set Not Ready:[/color]
+Ripristinare lo stato su Non pronto.
+		</1905c840c962b2e2436b0dd52f101d87>
+		<30850b501f98539b1aabaa29fabe41ef>Zoom indietro</30850b501f98539b1aabaa29fabe41ef>
+		<f5ca4abce85e2dddb0342d0bae3a7270>Ingrandire</f5ca4abce85e2dddb0342d0bae3a7270>
+		<f3d8416383c3f15b968f2b28cba03973>Torna al menu</f3d8416383c3f15b968f2b28cba03973>
+		<093c874523efce6d9d62de5732e792d6>
+			La mappa del mondo fornisce un modo rapido per visualizzare in cui sei stato nel mondo.
+
+Schermi con 1 o più barre di oro hanno soltanto una [color=special]oro[/color] colore; schermate avete quasi raggiunto (ma non iscritti) hanno un [color=dim]sbiadito[/color] colore.
+		</093c874523efce6d9d62de5732e792d6>
+		<bcaa27ca4c6b0309ff23601d93e7b2f6>
+			[color=special]Livello:[/color]
+    Livello 1
+
+        [color=special]Panoramica:[/color]
+    Raccogliere tutto l'oro del livello per vincere!
+
+    Resuscitare compagni caduti toccando il cuore con il loro nome su di essa!
+		</bcaa27ca4c6b0309ff23601d93e7b2f6>
+		<355b56405bc4e17e96e9d35fb5c89d3f>
+			[color=special]Set Ready:[/color]
+    Quando si è pronti, selezionare questa opzione. Una volta che tutti i giocatori sul suo stato di [color=special]pronto[/color], Il gioco ha inizio!
+		</355b56405bc4e17e96e9d35fb5c89d3f>
+		<517626ead60b7a70004ca4b8665e14d2>
+			[color=special]Modifica Avatar:[/color]
+    Personalizzare l'aspetto del tuo personaggio!
+		</517626ead60b7a70004ca4b8665e14d2>
+		<cedf2eb77559db39d5a19b3b9e1cee6e>
+			[color=special]Salta Livello:[/color]
+    Se almeno 2 giocatori votano per saltare questo livello, tutti i giocatori potranno passare al livello successivo disponibile.
+		</cedf2eb77559db39d5a19b3b9e1cee6e>
+		<cdd2e08908a1eb7ae4adc9ff86feee52>Sfida Camera Menu</cdd2e08908a1eb7ae4adc9ff86feee52>
+		<efe0c09e8bd7c9b0b4927ce2cd9a53b5>Riprendi Gioco</efe0c09e8bd7c9b0b4927ce2cd9a53b5>
+		<79f920cbecfcd4e00be6f0b1fd1023c8>Continua onda</79f920cbecfcd4e00be6f0b1fd1023c8>
+		<f4bb39e13cfc1105b7c9d4d398f76aba>Attualmente in onda @current-wave</f4bb39e13cfc1105b7c9d4d398f76aba>
+		<e20259c763c9bc9131c1e1b0fed27ace>Uscire Sfida Camera</e20259c763c9bc9131c1e1b0fed27ace>
+		<f1f03055d663e36847510a37548104ef>Uscire [color=title]Sfida Camera[/color] e tornare al sopramondo. Puoi [color=title]rivisitare[/color] Questa sfida in camera in qualsiasi momento.</f1f03055d663e36847510a37548104ef>
+		<8914bc9a94552891a07cffc350239f10>Vuoi utilizzare la modalità a schermo intero?</8914bc9a94552891a07cffc350239f10>
+		<6488cfe09cadeec7693c9114fd3e4f1e>Fullscreen su</6488cfe09cadeec7693c9114fd3e4f1e>
+		<c8f1a6c49e477a73fa066df8fe12b60b>Fullscreen off</c8f1a6c49e477a73fa066df8fe12b60b>
+		<cc60074e3c6cac5d2b5dcb0fa5209437>Per alcuni utenti, la modifica di questa modalità potrebbe richiedere di riavviare il gioco.</cc60074e3c6cac5d2b5dcb0fa5209437>
+		<ec3f08266730de4687ae59f0318e41e2>Inizia New Game</ec3f08266730de4687ae59f0318e41e2>
+		<6a4e61b55a2b9bf11b3531f671c01ca0>Selezionare un set di livello ...</6a4e61b55a2b9bf11b3531f671c01ca0>
+		<a86df58a69f1b3be5818f38881f14c77>Riprendi Story</a86df58a69f1b3be5818f38881f14c77>
+		<6035b386f3b5818b390efbdae031b4ec>
+			Ultimo giocato:  [color=special]@universe-title[/color]
+
+Nome personaggio:  [color=special]@player-name[/color]
+Livello Carattere:  [color=special]@character-level[/color]
+		</6035b386f3b5818b390efbdae031b4ec>
+		<1df60e0b1f81f3f407436e80ebf59dbc>Continua trama ...</1df60e0b1f81f3f407436e80ebf59dbc>
+		<0beec625888c107d9357416952e60ec1>[color=category]Movimento[/color]</0beec625888c107d9357416952e60ec1>
+		<21a80a051ee0c9a5b77a728567e53da0>Livello:  @level</21a80a051ee0c9a5b77a728567e53da0>
+		<2a1b23ddba425aad4e29a1a8b01462c1>@upgrade-msg</2a1b23ddba425aad4e29a1a8b01462c1>
+		<f9c29137e5d96c74955af6f7bb54487f>[color=category]Controllo[/color]</f9c29137e5d96c74955af6f7bb54487f>
+		<8c8606a2697215b1c12cf61c31516f28>[color=category]Inganno[/color]</8c8606a2697215b1c12cf61c31516f28>
+		<3ddccfb01a114e33d89c9dbbb7db9f38>[color=category]Laser Mining[/color]</3ddccfb01a114e33d89c9dbbb7db9f38>
+		<a87e00a6830f4027a0adaa7f39af97f3>[color=category]autodifesa[/color]</a87e00a6830f4027a0adaa7f39af97f3>
+		<285ed88082ea2c2178bca493e6b62e80>[color=category]Bombardiere[/color]</285ed88082ea2c2178bca493e6b62e80>
+		<298131e0755dc4e40fdeffc043c86b42>[color=category]Azione furtiva[/color]</298131e0755dc4e40fdeffc043c86b42>
+		<20f5cb5b2b89078a55f37157d0b9e19e>[color=special]Livello 1[/color]</20f5cb5b2b89078a55f37157d0b9e19e>
+		<7873967803e33145ed7c7b12b449f06d>Hai bisogno di vincere questo livello per arrivare al livello successivo.</7873967803e33145ed7c7b12b449f06d>
+		<9de60539c8fcd3f2d101091964ea8996>Il gioco inizia quando tutti i giocatori impostati pronti.</9de60539c8fcd3f2d101091964ea8996>
+		<c73fcc1743ee619966d5896ef7905e3c>Game Over, l&apos;uomo!</c73fcc1743ee619966d5896ef7905e3c>
+		<899bae404019db35934245546d5f4c5e>@random-taunt</899bae404019db35934245546d5f4c5e>
+		<7580893c0f74d8fac54e270e3f5841f2>Carico Checkpoint</7580893c0f74d8fac54e270e3f5841f2>
+		<9661e359fa355d7d18df6a1220e424b2>Ripristina ultimo salvataggio automatico</9661e359fa355d7d18df6a1220e424b2>
+		<050cd61bd3e959282d70dcefa1d75bd4>Respawn in città</050cd61bd3e959282d70dcefa1d75bd4>
+		<3f704a3095ebc3968f03d631ae4686e4>Ultima visita:  @last-visited-town-title</3f704a3095ebc3968f03d631ae4686e4>
+		<c47feba51303b2e90083cbad190fa306>Puzzle Camera non riuscita</c47feba51303b2e90083cbad190fa306>
+		<e1222faf307683b15d9cbf9a00030597>Il tuo personaggio non ha fatto attraverso il [color=special]Puzzle Room[/color] vivo!</e1222faf307683b15d9cbf9a00030597>
+		<16a7a4fac26cd7dff903634e7115e62e>Riprova Puzzle</16a7a4fac26cd7dff903634e7115e62e>
+		<4deaac3b0996e8dceb26f284724b4d59>È possibile ripetere il puzzle tutte le volte che lo si desidera.</4deaac3b0996e8dceb26f284724b4d59>
+		<6702d087098630a52b449fc5e3c19df7>Uscita di puzzle</6702d087098630a52b449fc5e3c19df7>
+		<5d09d76fa299bffc7e00976f24d38a64>Uscire [color=dim]Puzzle Room[/color] e tornare al sopramondo. Puoi [color=dim]rivisitare[/color] questo puzzle in camera in qualsiasi momento.</5d09d76fa299bffc7e00976f24d38a64>
+		<3905091470c79f7044900c6cd50b026a>Selezionare una Skill</3905091470c79f7044900c6cd50b026a>
+		<771f41ee3d71459de3f496f46d2a9475>No Abilità attiva</771f41ee3d71459de3f496f46d2a9475>
+		<01db3f5f6a0e85674acb0d7e260ea11e>Non hai ancora sbloccato qualsiasi [color=special]abilità attiva[/color] collocare in questo slot.</01db3f5f6a0e85674acb0d7e260ea11e>
+		<5ee85654b927608ac9b5813924eccccf>
+			Indietro
+Torna a Skills
+		</5ee85654b927608ac9b5813924eccccf>
+		<2995ab05ebb3b37dcb5bbddc8805c789>[color=special]@title[/color]</2995ab05ebb3b37dcb5bbddc8805c789>
+		<06a0e1195d391807788c6c9b38b98992>[color=special]Opzione speciale[/color]</06a0e1195d391807788c6c9b38b98992>
+		<b3df8d8edb730044e0e5723030cd6bb0>@response-special-phrase</b3df8d8edb730044e0e5723030cd6bb0>
+		<0e9af5f3a82949a1cf538a399468bd9a>[color=special]Non Disponibile[/color]</0e9af5f3a82949a1cf538a399468bd9a>
+		<e5bb6b0c50e390c07e2266d1ee0dd9ef>@response-error-phrase</e5bb6b0c50e390c07e2266d1ee0dd9ef>
+		<281af30b1a1799d23c2ae80e8f8fae34>[color=dim]Non Disponibile[/color]</281af30b1a1799d23c2ae80e8f8fae34>
+		<c6ba9d2a20fa9b005c521a57c522f01f>Cronologia delle transazioni</c6ba9d2a20fa9b005c521a57c522f01f>
+		<a98574bf79b95d17416cccc592c0fdb2>Preferenza lingua</a98574bf79b95d17416cccc592c0fdb2>
+		<5b916a4103778873b485da5635de5b8b>Scegli una lingua:</5b916a4103778873b485da5635de5b8b>
+		<6114b725a8dc5471f73b7cb8cc6fa667>@quest-title</6114b725a8dc5471f73b7cb8cc6fa667>
+		<3537d6357b72eebfe832263425c92add>[color=special]@skill-title[/color]</3537d6357b72eebfe832263425c92add>
+		<88816d718c17ef6784a8fb6a171a8750>Livello @skill-level</88816d718c17ef6784a8fb6a171a8750>
+		<c2cf9d2479bb131f76de088cfa1982ac>@skill-specs</c2cf9d2479bb131f76de088cfa1982ac>
+		<44056015877d1466a306b4b99046e43a>Selezionate un livello di ...</44056015877d1466a306b4b99046e43a>
+		<fc1e83e542d628b911dccfa4851a8c54>Progress:  @percent-complete</fc1e83e542d628b911dccfa4851a8c54>
+		<2b768eec356d74bd81128432a1adc10b>Sostituire Item:</2b768eec356d74bd81128432a1adc10b>
+		<11cfa8506d76e1d3eed7a80f979bbdef>Nome Avatar</11cfa8506d76e1d3eed7a80f979bbdef>
+		<7d82d8f9d13096c67587270817cc3733>Avatar Colori</7d82d8f9d13096c67587270817cc3733>
+		<f5d6040ed78ca86ddc73296a49b18510>Salva modifiche</f5d6040ed78ca86ddc73296a49b18510>
+		<969a06055eaf8f53b28f937af7580faa>
+			[color=special]Nuovo Quest Added[/color]
+@quest-title
+		</969a06055eaf8f53b28f937af7580faa>
+		<445eccd2f45d70b903abc6704c1de00d>[color=normal]Lobby Membri[/color]</445eccd2f45d70b903abc6704c1de00d>
+		<f677a85253b0957214ec24048fa7e691>[color=normal]Voti favorevoli Salta:  [color=special]@votes[/color][/color]</f677a85253b0957214ec24048fa7e691>
+		<59c31a136b898ce826a254cc0e738a2e>Dispositivo Trovato: 0</59c31a136b898ce826a254cc0e738a2e>
+		<56c0282e23332f5e419bfe17ba8385e6>Nessun dispositivo disponibile</56c0282e23332f5e419bfe17ba8385e6>
+		<18b16583e78237f8991fa04c8bd2bd9c>[color=normal]Opzioni Computer[/color]</18b16583e78237f8991fa04c8bd2bd9c>
+		<a2f78b781e146b025891ff51b2048ebb>@back-button-text</a2f78b781e146b025891ff51b2048ebb>
+		<1b4e0611c9ae712f0eae6f0b7ed5d22c>@header-text</1b4e0611c9ae712f0eae6f0b7ed5d22c>
+		<2415924daa3e49cbc3d9dcdc9b232362>[color=normal]@responses-header-text[/color]</2415924daa3e49cbc3d9dcdc9b232362>
+		<feb6958036c6ce9d74856aff550650c4>[color=normal]tty: // home /@player-name/[/color]</feb6958036c6ce9d74856aff550650c4>
+		<bbf5fd2dd4007c92b271dbd15b099554>[color=special]Livello completo![/color]</bbf5fd2dd4007c92b271dbd15b099554>
+		<ea6152d3f1e1d1603d7eb7d83b5d04f8>[color=special]@item-title[/color]</ea6152d3f1e1d1603d7eb7d83b5d04f8>
+		<14f03e39e56e9e3110de3212db213051>
+			Questo è un semplice suggerimento.
+Ti piace [color=special]@item-title[/color]?
+		</14f03e39e56e9e3110de3212db213051>
+		<7994707177d08605a93128f6fbd20a32>Sei sicuro che si desidera selezionare [color=special]@item-title[/color] e di ritornare [color=special]@overworld-title[/color]?</7994707177d08605a93128f6fbd20a32>
+		<169ed0d5f2a936a91db04a0172af2593>Prendere Voce</169ed0d5f2a936a91db04a0172af2593>
+		<7593f489994e86fd446c315df85a26f0>Ricordate che è possibile selezionare un solo premio.</7593f489994e86fd446c315df85a26f0>
+		<30c578f7d78a54aab736c719edbf6c0f>Riconsiderare ...</30c578f7d78a54aab736c719edbf6c0f>
+		<2a5f0bacafbaeb84895ba52193688efb>Ritorno al menu di selezione premio.</2a5f0bacafbaeb84895ba52193688efb>
+		<dc429ef6bc2baac37c2b942cbaf76b82>La mia reputazione</dc429ef6bc2baac37c2b942cbaf76b82>
+		<8d4012862f2b0640c69bab9b224723e2>[color=dim]@keyboard-translations.left[/color]</8d4012862f2b0640c69bab9b224723e2>
+		<fb187fbc0b088bb5c23b500a96c08ea6>[color=dim]@keyboard-translations.right[/color]</fb187fbc0b088bb5c23b500a96c08ea6>
+		<1c5af90b135ce60b8593f7e4f0a6b449>[color=dim]@keyboard-translations.up[/color]</1c5af90b135ce60b8593f7e4f0a6b449>
+		<3e2ef21c22bcc4c3dc950395bf6a2415>[color=dim]@keyboard-translations.down[/color]</3e2ef21c22bcc4c3dc950395bf6a2415>
+		<fa850589163944f904b59fc824e98345>[color=dim]@keyboard-translations.dig-left[/color]</fa850589163944f904b59fc824e98345>
+		<68a65b6239c47f033327b5dafd503c2f>[color=dim]@keyboard-translations.dig-right[/color]</68a65b6239c47f033327b5dafd503c2f>
+		<2e39098f7c535b40e18a81ac2aff4495>[color=dim]@keyboard-translations.bomb[/color]</2e39098f7c535b40e18a81ac2aff4495>
+		<32095ce79d3681b9e4d66474d2cd1053>[color=dim]@keyboard-translations.suicide[/color]</32095ce79d3681b9e4d66474d2cd1053>
+		<b504ed62ccc7a6d6df9274d24c74684f>[color=dim]@keyboard-translations.interact[/color]</b504ed62ccc7a6d6df9274d24c74684f>
+		<ad7dc8dab2d74a6005f6e98260880e7b>[color=dim]@keyboard-translations.minimap[/color]</ad7dc8dab2d74a6005f6e98260880e7b>
+		<702fcb669c279eba6477cd806db79fcb>[color=dim]@keyboard-translations.net-chat[/color]</702fcb669c279eba6477cd806db79fcb>
+		<962df8f268828db777dad0736cd2c919>[color=dim]@keyboard-translations.skill1[/color]</962df8f268828db777dad0736cd2c919>
+		<90925be141addad8401c2e07cada287b>[color=dim]@keyboard-translations.skill2[/color]</90925be141addad8401c2e07cada287b>
+		<840479114a823208fb7e7cc04ee4b663>Costo:  [color=unaffordable]@item-cost[/color] oro</840479114a823208fb7e7cc04ee4b663>
+		<6af7c5b0df21df9fa46cb68889dba288>Non è abbastanza oro per acquistare questo oggetto.</6af7c5b0df21df9fa46cb68889dba288>
+		<0bcd48681646c1b5953052a9f782464a>Costo:  [color=affordable]@item-cost[/color] oro</0bcd48681646c1b5953052a9f782464a>
+		<fe4e8660aa2e8db49dcf75d5968c9b55>[color=special]salire di livello![/color]</fe4e8660aa2e8db49dcf75d5968c9b55>
+		<abec7944416b874487c6da6d730ca769>Livello Carattere:  [color=title]@character-level[/color]</abec7944416b874487c6da6d730ca769>
+		<15d21efabcad166dbd5a17f1698e2657>Punti abilità:  [color=title]@skill-points[/color]</15d21efabcad166dbd5a17f1698e2657>
+		<fcc02117f1e5a3ca5ea184c618a6cb77>Menu di gioco</fcc02117f1e5a3ca5ea184c618a6cb77>
+		<1a87d8ae53f259644aad23374875641b>Continua Level</1a87d8ae53f259644aad23374875641b>
+		<3e7a7859a2c99af5b969652207573ccb>Uscire dal gioco e tornare alla schermata di selezione del livello.</3e7a7859a2c99af5b969652207573ccb>
+		<337eb8d1a4c9c968ba133d2ad4d1e3d3>Slot Item attrezzata</337eb8d1a4c9c968ba133d2ad4d1e3d3>
+		<ca4f5ff85a3129de125a96e7bbe38269>Disponibile:  @slots</ca4f5ff85a3129de125a96e7bbe38269>
+		<4d0400304485a3be267284bcc3921d6e>Il mio archivio</4d0400304485a3be267284bcc3921d6e>
+		<935b8950c7c9e2c15e38de624018bab2>Conte:  @count</935b8950c7c9e2c15e38de624018bab2>
+		<3ced175af2ca835bee156c64dc616051>Punti abilità insufficienti</3ced175af2ca835bee156c64dc616051>
+		<37f452cc998aaa46ab18b522a3483737>Avete bisogno di almeno [color=special]@required-skill-points[/color] punto abilità@necessary-skill-points-pluralizer per sbloccare [color=special]@skill-title  @skill-level[/color].</37f452cc998aaa46ab18b522a3483737>
+		<d8f35631068e9adaf9a570fc5335aa9b>Attualmente hai [color=special]@skill-points-available[/color] punto abilità@pluralizer.</d8f35631068e9adaf9a570fc5335aa9b>
+		<86ba0c45ad17db9b4371069e27df4a99>[color=normal]Terminal Semplice[/color]</86ba0c45ad17db9b4371069e27df4a99>
+		<bdea74dfb8dc680111c6889873f6c249>[color=title]@category-title[/color]</bdea74dfb8dc680111c6889873f6c249>
+		<297e248be8c3879fee4d5eed9ef165e6>[color=category]@skill-title[/color]</297e248be8c3879fee4d5eed9ef165e6>
+		<b95836ac13adec87e9a60d882df36e84>Imposta Player Limite</b95836ac13adec87e9a60d882df36e84>
+		<387353ab7c15bb44bd3f7fd581cd522d>Seleziona Abilità</387353ab7c15bb44bd3f7fd581cd522d>
+		<6642f414fd92d1cfeec2165afc019e56>
+			Selezionare la specialità di mettere in [color=dim]fessura @slot[/color].
+
+Potrai attivare questa abilità premendo [color=special]@button[/color].
+		</6642f414fd92d1cfeec2165afc019e56>
+		<f75f4fe37cf562e5df5839f1d44cd9b4>No Skill Disponibile</f75f4fe37cf562e5df5839f1d44cd9b4>
+		<85d938239f9bf854bd503c6d4bb0f0d1>Non hai ancora sbloccato tutte le abilità attive da assegnare a questo slot.</85d938239f9bf854bd503c6d4bb0f0d1>
+		<ed3c6de95f334edc0d38ed0100a3a6a4>Modalità Co-op Menu</ed3c6de95f334edc0d38ed0100a3a6a4>
+		<2f4287481c2bf89cd468e988e0a14fd1>Torna a Azione</2f4287481c2bf89cd468e988e0a14fd1>
+		<42ae25231906c83927831e0ef7c317ac>Scollegare ora</42ae25231906c83927831e0ef7c317ac>
+		<4608da8f0dcffb70e30ef92a3f56f8b8>Lascia Session</4608da8f0dcffb70e30ef92a3f56f8b8>
+		<768d3982cb02619df2ba4c9cc2003dad>Scollegare dal gioco?</768d3982cb02619df2ba4c9cc2003dad>
+		<16341c36a0005565541b4a7d49abcaa8>
+			[color=special]Quest finito[/color]
+@quest-title
+		</16341c36a0005565541b4a7d49abcaa8>
+		<62f9dcd8c2e8dcb8c650609a3581760d>Seleziona la tua storia ...</62f9dcd8c2e8dcb8c650609a3581760d>
+		<bf0f2bd92cb83d56974d5f7476862e26>modalità single player</bf0f2bd92cb83d56974d5f7476862e26>
+		<062b51da3112d6b127e91ebfbda9ebfb>modalità cooperativa</062b51da3112d6b127e91ebfbda9ebfb>
+		<004f257cdc9f51ef2c6a38f8ab70d399>Stanza Puzzle</004f257cdc9f51ef2c6a38f8ab70d399>
+		<ae37e98e240570d17765bdf2b814eb27>@overview</ae37e98e240570d17765bdf2b814eb27>
+		<5579ec3baf51fada514d4a870e1e03bc>Inizia Puzzle</5579ec3baf51fada514d4a870e1e03bc>
+		<2ddc893bd498612d3a007e3dd919663e>Raccogliere tutto oro</2ddc893bd498612d3a007e3dd919663e>
+		<11bfdf3182faedd9e5a2d536366d4725>@tooltip-text</11bfdf3182faedd9e5a2d536366d4725>
+		<f1b48d501e9d63d02677d34ada50400b>Lascia Puzzle</f1b48d501e9d63d02677d34ada50400b>
+		<bf47676a49d358d4645dda30a407ea06>@language-title</bf47676a49d358d4645dda30a407ea06>
+		<43cb6ee1bdea77a4ddf1def03cedb1bd>[color=special]Nuovo @skill-title Aggiornamento disponibile![/color]</43cb6ee1bdea77a4ddf1def03cedb1bd>
+		<72c1266f8773ca37694cd54e0d99b23f>È ora possibile aggiornare il [color=title]@skill-title[/color] capacità di [color=title]Livello @level[/color]!</72c1266f8773ca37694cd54e0d99b23f>
+		<6da472d589c81980d3bf49ecd7bcc63e>[color=title]Riprendi Gioco[/color]</6da472d589c81980d3bf49ecd7bcc63e>
+		<ab27aed1f29483e7a23dd2822dad94f2>È anche possibile premere [color=dim]Fuga[/color] per riprendere il gioco.</ab27aed1f29483e7a23dd2822dad94f2>
+		<311b793c13d698d2b9ef9342b45708d0>[color=title]Lascia Gioco[/color]</311b793c13d698d2b9ef9342b45708d0>
+		<91b5f96ff2750460a95fb51656484008>Ritorna alla [color=dim]Menu principale[/color] schermo.</91b5f96ff2750460a95fb51656484008>
+		<8a38df1fda96e1f748073f4565546610>Ritorna alla [color=dim]Menu principale[/color].</8a38df1fda96e1f748073f4565546610>
+		<0d7ae38ed0ab5a9ad91056ab6676499a>Sfida Camera</0d7ae38ed0ab5a9ad91056ab6676499a>
+		<d965652ffe2b1674d4aac048ea6bf07a>Inizia onda</d965652ffe2b1674d4aac048ea6bf07a>
+		<5fd18b48aa387516d1d3a714fb7a6289>Onda @current-wave</5fd18b48aa387516d1d3a714fb7a6289>
+		<097298dc857de9c69a2cf8ebea969ee1>@wave-goal</097298dc857de9c69a2cf8ebea969ee1>
+		<7ab846887eb2dee682b717aeb661d1a7>Lascia Sfida Camera</7ab846887eb2dee682b717aeb661d1a7>
+		<40035b2bd00a9128064136f9335e9eae>È possibile tornare a ripetere questa camera sfida tutte le volte che lo si desidera.</40035b2bd00a9128064136f9335e9eae>
+		<b8726e2eade75513f8f2535d21dd633e>
+			@title
+@date
+		</b8726e2eade75513f8f2535d21dd633e>
+		<7b715146df62fabbc4354be82c8ef0f9>
+			Livello Carattere:  [color=special]@character-level[/color]
+Oro Raccolta:  [color=title]@gold-collected[/color]
+		</7b715146df62fabbc4354be82c8ef0f9>
+		<8dba0709d53d1e02b900e1883dc98b0e>Salvare completo</8dba0709d53d1e02b900e1883dc98b0e>
+		<547c01cd2881b8a5f458c2a5e8b4ea2e>Il vostro gioco salva [color=special]@title[/color] salvato con successo su disco.</547c01cd2881b8a5f458c2a5e8b4ea2e>
+		<7f6a511bdbd1c835d56c33ac955a2b44>Selezionare una visualizzazione</7f6a511bdbd1c835d56c33ac955a2b44>
+		<64ec62de99148ac32179bec9a131e102>Sedi Oro</64ec62de99148ac32179bec9a131e102>
+		<f9a6179ff0f44e8542a241fc84e5728e>Mostra tutte le mappe conosciute, evidenziando quelli che hanno l&apos;oro rimanente.</f9a6179ff0f44e8542a241fc84e5728e>
+		<91ac8fd8408baad32cf98bc6f75d3761>Incomplete Puzzle Camere</91ac8fd8408baad32cf98bc6f75d3761>
+		<4c6f6bef74aae7857d96e6609fdb3f73>Mostra la posizione di qualsiasi nota, camera puzzle incompiuto.</4c6f6bef74aae7857d96e6609fdb3f73>
+		<71fc0758b1e986eedde8efd3bf61cf69>Incomplete Sfide Camere</71fc0758b1e986eedde8efd3bf61cf69>
+		<e982568217864cb98ef7a6ce90c345ab>Mostra la posizione di qualsiasi nota, incompiuta camera sfida.</e982568217864cb98ef7a6ce90c345ab>
+		<a2b4399c11166a48253343e004f72da5>Sei sicuro di voler ripristinare i controlli per la vostra [color=special]tastiera[/color] ai valori predefiniti originali?</a2b4399c11166a48253343e004f72da5>
+		<73e4c72f1f52b08afd97a0145e8b9665>[color=special]Gamepad predefinito Enabled[/color]</73e4c72f1f52b08afd97a0145e8b9665>
+		<3ab21e7cae2b38121de4131477998e8d>@current-device</3ab21e7cae2b38121de4131477998e8d>
+		<e413547444fb9d326448a6d7213499bb>@last-device non trovato ...</e413547444fb9d326448a6d7213499bb>
+		<fd3f42be8c77b6d59badeced4a9c15d1>@skill-manual</fd3f42be8c77b6d59badeced4a9c15d1>
+		<fcee0cbe1f24316b497bb549e5f19b81>Stampa [color=special]@skill-key[/color] utilizzare</fcee0cbe1f24316b497bb549e5f19b81>
+		<69dca7ea302077c157bf66c440dbc5ba>Sblocca più [color=special]competenze attive[/color] utilizzare questo slot!</69dca7ea302077c157bf66c440dbc5ba>
+		<70e2d602be64f4802b831e3917555196>Key Selected</70e2d602be64f4802b831e3917555196>
+		<18a533c3672fc1b36fca422fff41b3d4>@keyboard-translations.left</18a533c3672fc1b36fca422fff41b3d4>
+		<b5003bc3da361401cf9c4d4aab1a0aff>[color=dim]Utilizzare questo tasto per passare a sinistra.[/color]</b5003bc3da361401cf9c4d4aab1a0aff>
+		<5212231bc6c2371938ae4772bf1b3237>@keyboard-translations.right</5212231bc6c2371938ae4772bf1b3237>
+		<6a177d683328a2209cf671e0247542f2>[color=dim]Utilizzare questo tasto per passare alla vostra destra.[/color]</6a177d683328a2209cf671e0247542f2>
+		<e7df305d14931789a9fa63a95174e1f8>@keyboard-translations.up</e7df305d14931789a9fa63a95174e1f8>
+		<5d74f2efda77da4115ed6fb3de3940e1>[color=dim]Utilizzare questo tasto per salire le scale.[/color]</5d74f2efda77da4115ed6fb3de3940e1>
+		<ef2d18a24e9984d145d245506825f225>@keyboard-translations.down</ef2d18a24e9984d145d245506825f225>
+		<50fd09e8aecc51ff42dc654b2cdafbb1>[color=dim]Utilizzare questo tasto per scendere le scale e di cadere da scimmia a barre.[/color]</50fd09e8aecc51ff42dc654b2cdafbb1>
+		<b8e5fbd47f37f87670bc2f503d3d42bb>@keyboard-translations.dig-left</b8e5fbd47f37f87670bc2f503d3d42bb>
+		<37fbe90496550c0d15370688f90f3be4>[color=dim]Utilizzare questo tasto per scavare a sinistra in qualsiasi momento.[/color]</37fbe90496550c0d15370688f90f3be4>
+		<cef9c0442abc274478c0fcecb69f606d>@keyboard-translations.dig-right</cef9c0442abc274478c0fcecb69f606d>
+		<bfd67fa6af5061ef953f5f599ad2410b>[color=dim]Utilizzare questo tasto per scavare a destra in qualsiasi momento.[/color]</bfd67fa6af5061ef953f5f599ad2410b>
+		<82805802e2cbb0f0c7f68a99b96cb9e2>@keyboard-translations.bomb</82805802e2cbb0f0c7f68a99b96cb9e2>
+		<824e757e93c78a33a0312c77a69d6916>[color=dim]Utilizzare questo tasto per mettere una bomba nella direzione che si sta.[/color]</824e757e93c78a33a0312c77a69d6916>
+		<cda356e7e93a7f38217e884431516996>@keyboard-translations.suicide</cda356e7e93a7f38217e884431516996>
+		<21a47c8a81efffd6e1f8e3d672d76bbd>[color=dim]Tenere premuto brevemente questo tasto per uccidere il tuo personaggio, se ti trovi in ​​difficoltà![/color]</21a47c8a81efffd6e1f8e3d672d76bbd>
+		<18340ea7a440c3f722b353b3995eb6c0>@keyboard-translations.interact</18340ea7a440c3f722b353b3995eb6c0>
+		<93b19aa65b0043a10a5f185dcd17c7da>[color=dim]Utilizzare questo tasto per parlare con gli NPC e di utilizzare le leve.[/color]</93b19aa65b0043a10a5f185dcd17c7da>
+		<1cd371c3592f3b356e59d715a3152c5f>@keyboard-translations.minimap</1cd371c3592f3b356e59d715a3152c5f>
+		<7f6d4466da96eb87042fa7b7bd08dd3e>[color=dim]Tenere premuto questo tasto per visualizzare una minimappa.[/color]</7f6d4466da96eb87042fa7b7bd08dd3e>
+		<ac902e119a1bece5cd52d05c9199340a>@keyboard-translations.net-chat</ac902e119a1bece5cd52d05c9199340a>
+		<3fccc8f74b583c5f4ada341134007ddb>[color=dim]Utilizzare questo tasto per attivare la console di chat durante il gioco co-op.[/color]</3fccc8f74b583c5f4ada341134007ddb>
+		<2d9b77e3598b658c4ef9de5309eaffdf>@keyboard-translations.skill1</2d9b77e3598b658c4ef9de5309eaffdf>
+		<c6197a7525c1f064259b8c625307cd01>[color=dim]Utilizzare questo tasto per attivare l&apos;abilità nello slot 1.[/color]</c6197a7525c1f064259b8c625307cd01>
+		<60bcbc11925ba93a1742e190fb64a8ab>@keyboard-translations.skill2</60bcbc11925ba93a1742e190fb64a8ab>
+		<8684bf3f68ccf70195e517120e289597>[color=dim]Utilizzare questo tasto per attivare l&apos;abilità nello slot 2.[/color]</8684bf3f68ccf70195e517120e289597>
+		<34b563856628aa804d6475fa9afa4ec9>[color=special]Nuovo Skill Albero sbloccato![/color]</34b563856628aa804d6475fa9afa4ec9>
+		<67568637719e419dbe8395556d068324>È ora possibile scegliere [color=title]@skill-title1[/color] o [color=title]@skill-title2[/color] dal [color=title]@category-title[/color] albero delle abilità.</67568637719e419dbe8395556d068324>
+		<2305d1f5a721dbc7ecdbbadd7a0e39f7>Ospitare una sessione Co-Op ...</2305d1f5a721dbc7ecdbbadd7a0e39f7>
+		<f9f0512e0f12390ef9f34cfafe784201>preparando a lanciare</f9f0512e0f12390ef9f34cfafe784201>
+		<dc647eb65e6711e155375218212b3964>Password</dc647eb65e6711e155375218212b3964>
+		<274b68192b056e268f128ff63bfcd4a4>n / a</274b68192b056e268f128ff63bfcd4a4>
+		<929c3cde7c0c28cf249221eded6e808d>Opzionale. Se si imposta una password per questa sessione, gli altri giocatori dovranno conoscere la password per la connessione.</929c3cde7c0c28cf249221eded6e808d>
+		<3fcece1c077bb4f4cea2603bddc42203>Player Limite</3fcece1c077bb4f4cea2603bddc42203>
+		<766f14668be2e0ad64c6f11135b7cd05>@max-players Giocatori</766f14668be2e0ad64c6f11135b7cd05>
+		<04cd26f60d8c4008e54478d1b07ab302>È possibile inserire un limite al numero di giocatori che possono connettersi al gioco.</04cd26f60d8c4008e54478d1b07ab302>
+		<47810729c36f95abcd01f210295a8b2c>Inizia Gioco</47810729c36f95abcd01f210295a8b2c>
+		<dedff2788e0b10e3b14465cd5e2f0cf9>Lanciare la nuova sessione di gioco.</dedff2788e0b10e3b14465cd5e2f0cf9>
+		<f1c0c906df1c7466950a02badfe79cd1>[color=special]@player-name[/color]</f1c0c906df1c7466950a02badfe79cd1>
+		<f4a5c75372e464b048c461fae1138178>@player-status</f4a5c75372e464b048c461fae1138178>
+		<a0a6c2ad4b36daf73835a5b787d3db58>Una Lode Runner Story</a0a6c2ad4b36daf73835a5b787d3db58>
+		<d93686566e966ab6a58414040c6ffb8d>scritto da Mike Doty</d93686566e966ab6a58414040c6ffb8d>
+		<967f1afa6dbc991ef9f0943853df4cd3>Scritto da Mike Doty</967f1afa6dbc991ef9f0943853df4cd3>
+		<a63d1381fc3c4dd211a7e2b43f020f0e>[color=title]Il mio archivio[/color]</a63d1381fc3c4dd211a7e2b43f020f0e>
+		<d7b7c5db42f530611faed858835d19b4>Sfoglia la [color=dim]Articoli[/color] avete raccolto e [color=dim]equipaggiare[/color] quelli che meglio si adattano al tuo stile di gioco.</d7b7c5db42f530611faed858835d19b4>
+		<993e20ca58028f9a6cc876f46199db14>Sfoglia e dotare la vostra [color=dim]Articoli[/color].</993e20ca58028f9a6cc876f46199db14>
+		<4ebd9a4355ddb9da4e0a5d6064fdc75e>[color=title]Missioni correnti[/color]</4ebd9a4355ddb9da4e0a5d6064fdc75e>
+		<0c3312344acffa91945f0a63009446c5>Visualizza qualsiasi [color=dim]corrente[/color] ricerca, insieme a qualsiasi quest [color=dim]aggiornare[/color] avete incontrato.</0c3312344acffa91945f0a63009446c5>
+		<b85779230bf34510586231cf11c629df>Visualizzare un elenco di [color=dim]attivo[/color] quest.</b85779230bf34510586231cf11c629df>
+		<487bda843d1500a2984b485da3d8c05b>[color=title]La mia reputazione[/color]</487bda843d1500a2984b485da3d8c05b>
+		<939d25f655210242af2a1f8eb6345a44>Rivedere una storia di come hai trattato [color=dim]persone[/color] e la loro [color=dim]quest[/color], Determinare come la gente di [color=special]Lelandria[/color] attualmente pensare a te.</939d25f655210242af2a1f8eb6345a44>
+		<fc54a54fcc607fffb226ce0ca719fd6b>Leggi la tua reputazione attuale in [color=special]Lelandria[/color].</fc54a54fcc607fffb226ce0ca719fd6b>
+		<0a9f6b2efe9eb4b4850bf2493eb436e2>[color=title]Quest finiti[/color]</0a9f6b2efe9eb4b4850bf2493eb436e2>
+		<f01e92c61ceaa168e837d55941431ecf>Sfoglia un [color=dim]storia[/color] di tutte le missioni che avete completato con successo (o meno).</f01e92c61ceaa168e837d55941431ecf>
+		<61b525238d98341f8d2e50b10ecd9848>Guarda missioni che hanno già [color=special]finito[/color].</61b525238d98341f8d2e50b10ecd9848>
+		<fc368d8b00580f79f54a4910ef235b77>@quest-description</fc368d8b00580f79f54a4910ef235b77>
+		<ffe9dde679d5832eb6c513376af07d2a>@quest-xp</ffe9dde679d5832eb6c513376af07d2a>
+		<9d9cada9fbf325b38c42d298338cdd61>Puzzle Camera Menu</9d9cada9fbf325b38c42d298338cdd61>
+		<0202cbfc12ca678be8f933073ce0d628>Continua Puzzle</0202cbfc12ca678be8f933073ce0d628>
+		<0c38755f01d76a116d11ef16958196c4>
+			Aiuto
+[color=title]Puzzle Camera FAQs[/color]
+		</0c38755f01d76a116d11ef16958196c4>
+		<45d29cabf88acca3e6b2550247a70416>Uscire [color=title]Puzzle Room[/color] e tornare al sopramondo. Puoi [color=title]rivisitare[/color] questo puzzle in camera in qualsiasi momento.</45d29cabf88acca3e6b2550247a70416>
+		<c5e479a888a1548a9ca8822e78bb883f>[color=special]@paragraph-text[/color]</c5e479a888a1548a9ca8822e78bb883f>
+		<72facbbb9f3109d61d10b4e51fbf8ef0>@paragraph-text</72facbbb9f3109d61d10b4e51fbf8ef0>
+		<7b120e336ddd8e06e223313e6f3b5d0c>[color=dim]@paragraph-text[/color]</7b120e336ddd8e06e223313e6f3b5d0c>
+		<c8505ab3d7a6a7e9d39f84abffac89ed>Conferma acquisto</c8505ab3d7a6a7e9d39f84abffac89ed>
+		<843c1e73115acd7e0f721d764d5da8d3>Sei sicuro di voler acquistare [color=special]@item-title[/color] per [color=special]@item-cost oro[/color]?</843c1e73115acd7e0f721d764d5da8d3>
+		<5c094bc8da690150f5b1c588763457aa>Acquista articolo</5c094bc8da690150f5b1c588763457aa>
+		<4c3efc583affba8bb5ad418c9ab527c6>Non Ancora</4c3efc583affba8bb5ad418c9ab527c6>
+		<25e22f89e97761feee15c3ab82b53d59>[color=special]Nuovo competenza acquisita![/color]</25e22f89e97761feee15c3ab82b53d59>
+	</ui>
+</strings>
+

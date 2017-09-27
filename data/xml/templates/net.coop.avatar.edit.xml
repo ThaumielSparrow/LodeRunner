@@ -1,0 +1,70 @@
+<parameters>
+	<data>
+		<parameter>@color-primary</parameter>
+		<parameter>@color-secondary</parameter>
+	</data>
+	<text>
+		<parameter>@player-name</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.coop.avatar.edit'>
+
+    <item-group render-border = '0' per-row = '1'>
+
+        <item disabled = '1'>
+            <label x = '5%' y = '0' width = '95%' align = 'left' value = '[color=normal]Avatar Options[/color]' />
+        </item>
+
+    </item-group>
+
+    <item-group render-border = '1' per-row = '1'>
+
+        <item id = 'spacer' disabled = '1' />
+
+
+        <item render-border = '0' glow = '1'>
+
+            <label x = '5%' y = '0' width = '90%' value = 'Character Name' />
+            <label x = '95%' y = '0' width = '90%' align = 'right' value = '@player-name' />
+
+            <action do = 'edit-name' />
+
+        </item>
+
+
+        <item render-border = '0' glow = '1'>
+
+            <label x = '5%' y = '0' width = '90%' value = 'Primary Color' />
+            <rect x = '95%' y = '0' width = '24' height = '24' align = 'right' color = '@color-primary' />
+
+            <action do = 'edit-avatar-property' property = 'primary' />
+
+        </item>
+
+        <item render-border = '0' glow = '1'>
+
+            <label x = '5%' y = '0' width = '90%' value = 'Secondary Color' />
+            <rect x = '95%' y = '0' width = '24' height = '24' align = 'right' color = '@color-secondary' />
+
+            <action do = 'edit-avatar-property' property = 'secondary' />
+
+        </item>
+
+
+        <item render-border = '1' glow = '1'>
+
+            <label x = '5%' y = '0' width = '90%' value = 'Return to Lobby' />
+            <xaction do = 'update-avatar' />
+            <action do = 'back' />
+
+        </item>
+
+
+        <item id = 'spacer' disabled = '1' />
+        <item id = 'spacer' disabled = '1' />
+        <item id = 'spacer' disabled = '1' />
+
+    </item-group>
+
+</template>

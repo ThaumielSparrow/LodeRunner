@@ -1,0 +1,272 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			152 327 254 332 154 216 216 0 216 216 154 333 255 328 324 0 
+			154 308 308 310 153 0 0 330 0 0 152 0 312 308 314 0 
+			152 313 0 207 154 0 0 144 0 0 152 325 312 314 0 0 
+			333 303 324 328 152 0 0 146 0 0 154 309 306 208 0 0 
+			306 304 307 206 153 0 332 208 334 0 154 0 313 334 0 0 
+			307 308 305 326 154 0 0 0 0 0 152 323 312 312 153 0 
+			0 0 0 311 256 152 0 0 0 154 254 309 0 0 154 0 
+			0 0 0 0 307 333 153 0 152 328 304 0 0 0 153 0 
+			327 152 0 0 0 303 257 154 255 312 0 0 0 154 331 0 
+			305 256 154 0 0 0 303 154 305 0 0 0 154 254 307 0 
+			0 309 332 154 0 0 0 152 0 0 0 153 329 305 0 0 
+			0 0 306 256 153 0 0 153 0 0 153 257 303 0 0 0 
+			0 0 0 309 323 152 0 152 0 154 331 314 0 0 0 0 
+			0 0 0 0 310 256 333 153 332 253 313 0 0 0 0 0 
+			0 0 0 0 0 313 313 154 313 306 0 0 0 0 0 0 
+			0 0 0 0 0 0 303 152 308 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 342 343 0 0 0 0 0 0 0 0 0 344 344 342 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 345 0 0 0 
+			345 0 0 0 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 264 0 0 0 342 0 0 0 0 0 0 0 0 
+			348 346 347 0 0 0 0 0 0 0 0 343 346 346 0 
+			0 0 0 300 341 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 300 0 0 0 0 342 302 0 0 0 0 
+			0 0 0 0 0 300 0 0 341 302 0 0 0 0 345 
+			346 0 0 0 0 0 300 0 302 0 0 0 0 0 302 
+			0 300 340 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 300 0 0 0 0 0 0 345 302 0 0 0 
+			0 0 0 0 300 340 263 0 283 0 302 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '6' y = '4' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'JoAnna' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '7' x = '12' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '3' x = '2' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '0' x = '13' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '3' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '11' x = '4' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '12' x = '9' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '7' x = '1' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '0' x = '1' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '2' x = '5' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '1' x = '9' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:JoAnna' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '3' x = '5' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '4' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '6' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '0' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '1' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '1' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '0' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.g' height = '1' width = '1' behavior = '1' y = '0' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.h' height = '1' width = '1' behavior = '1' y = '4' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'spawn' height = '1' width = '1' behavior = '1' y = '13' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '0' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.75)")
+                   .addHotspot("npc1.g")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.h");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+	<script name = 'onvisit'>
+		// Clear indicators
+        npc("npc1").clearIndicators();
+
+        // If Dave&apos;s item delivery quest is active, then let&apos;s
+        // highlight Joanna as the recipient
+        if ( quest("1.1.npc1.quest").status() == "active" )
+        {
+            // Add indicator, "turn in"
+            npc("npc1").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'npc1.talk'>
+		// This NPC is the target of a delivery quest from 1.1.npc1.
+        // We&apos;ll use the same quest data.
+        #define QUEST "1.1.npc1.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_KILLED_JOANNA "update-killed-joanna"
+        #define UPDATE_KILLED_DAVE "update-killed-dave"
+        #define UPDATE_DELIVERED_ITEM "update-delivered-item"
+        #define UPDATE_BOUGHT_ITEM "update-bought-item"
+        #define UPDATE_RETURNED_TO_DAVE "update-returned-to-dave"
+        #define UPDATE_RETURNED_TO_DAVE_FOR_GOLD "update-returned-to-dave-for-gold"
+        #define UPDATE_KEPT_FROM_DAVE "update-kept-from-dave"
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // idle chat
+            npc("npc1").talk("default");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Player has item, let&apos;s ask for it
+            npc("npc1").talk("quest:in-progress:carrying-item");
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Delivered?
+            if ( quest(QUEST).update(UPDATE_DELIVERED_ITEM).status() == "active" )
+            {
+                // thanks for item
+                npc("npc1").talk("quest:complete:delivered-item");
+            }
+
+            // Paid for, kept it?
+            else
+            {
+                // thanks for gold
+                npc("npc1").talk("quest:complete:bought-item");
+            }
+        }
+
+        // Quest is failed only by killing JoAnna, at which point we clearly can&apos;t talk
+        // to her anyway.  n/a
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "1.1.npc1.quest"
+
+        #define FLAG_KILLED_JOANNA "flag-killed-joanna"
+        #define UPDATE_KILLED_JOANNA_BEFORE "update-killed-joanna-before"
+        #define UPDATE_KILLED_JOANNA_DURING "update-killed-joanna-during"
+        #define UPDATE_KILLED_JOANNA_AFTER_DELIVERY "update-killed-joanna-after-delivery"
+        #define UPDATE_KILLED_JOANNA_AFTER_PURCHASE "update-killed-joanna-after-purchase"
+        #define UPDATE_KILLED_DAVE "update-killed-dave"
+        #define UPDATE_DELIVERED_ITEM "update-delivered-item"
+        #define UPDATE_BOUGHT_ITEM "update-bought-item"
+
+
+        // Always toggle silent flag!
+        quest(QUEST).update(FLAG_KILLED_JOANNA).status("active");
+
+
+        // If quest isn&apos;t even active yet, then we killed her way too soon
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Don&apos;t fail quest, we&apos;ll wait &apos;til we talk to Dave.
+            // Just flag update
+            quest(QUEST).update(UPDATE_KILLED_JOANNA_BEFORE).status("active");
+        }
+
+        // Killing JoAnna updates delivery quest, noting that we killed JoAnna.
+        // Not always a direct failure, maybe take item back to original NPC though.
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we kill Dave, too?  If we did, it&apos;s quest fail.
+            // If not, we can still take the item back to him to complete quest, if we want.
+            if ( quest(QUEST).update(UPDATE_KILLED_DAVE).status() == "active" )
+            {
+                // Killed him.  Dang.
+                quest(QUEST).status("failed");
+            }
+
+            // (Otherwise, we can still go back to Dave, maybe salvage the quest...)
+            else
+            {
+            }
+
+
+            // Always toggle generic killed-in-progress update
+            quest(QUEST).update(UPDATE_KILLED_JOANNA_DURING).status("active");
+        }
+
+        // We can&apos;t fail the quest while JoAnna is still alive, we always have the option of
+        // giving her the item until we kill her.  This means that "already complete" is the last remaining possibility.
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Killed her after delivering or buying?
+            if ( quest(QUEST).update(UPDATE_DELIVERED_ITEM).status() == "active" )
+            {
+                // flag after delivery kill update
+                quest(QUEST).update(UPDATE_KILLED_JOANNA_AFTER_DELIVERY).status("active");
+            }
+
+            // Bought it first
+            else
+            {
+                // flag after purchase update
+                quest(QUEST).update(UPDATE_KILLED_JOANNA_AFTER_PURCHASE).status("active");
+            }
+        }
+
+
+        // Disable talking trigger
+        trigger("npc1.talk").disable();
+	</script>
+</scripts>

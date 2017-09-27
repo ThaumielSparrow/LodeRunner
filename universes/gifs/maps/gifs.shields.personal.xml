@@ -1,0 +1,113 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 218 327 330 154 334 0 0 0 0 0 0 
+			0 0 0 0 0 332 26 24 326 0 218 0 0 0 154 0 0 0 0 0 0 0 
+			0 0 0 0 0 153 0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 
+			0 0 0 0 0 152 0 0 0 0 0 0 331 153 324 333 217 0 0 0 0 0 
+			0 0 0 0 152 325 0 0 0 0 0 0 0 152 0 207 0 217 0 0 0 0 
+			0 0 0 0 152 0 0 0 0 0 0 0 0 154 0 333 0 0 0 0 0 0 
+			323 206 332 330 26 28 25 330 152 333 18 333 18 324 18 303 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 152 0 0 306 0 307 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			264 0 284 263 0 0 0 283 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '1' y = '9' genus = '1' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '4' y = '7' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '14' y = '9' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '9' y = '9' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '6' y = '8' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '12' y = '3' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '4' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '8' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '13' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp4' x = '13' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'personal-shield' entity = 'player1' />
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '30' entity = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '30' entity = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp4' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+		<packet />
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />

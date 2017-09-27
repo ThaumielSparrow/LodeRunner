@@ -1,0 +1,59 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 154 0 0 0 153 0 0 0 0 0 0 0 0 0 0 154 165 0 
+			0 0 154 0 219 0 153 0 0 0 0 0 0 0 0 0 154 192 175 0 
+			0 184 23 186 0 181 29 23 153 0 0 0 153 199 24 154 28 167 0 0 
+			185 167 0 0 0 0 0 167 185 152 0 152 199 164 0 152 0 0 0 0 
+			0 0 0 0 0 0 0 0 167 186 152 180 177 0 0 190 153 0 0 0 
+			0 0 0 153 192 153 0 0 0 0 154 0 0 0 0 0 154 0 191 189 
+			0 0 153 187 172 208 152 0 0 0 152 0 0 0 0 152 194 153 164 179 
+			0 152 192 173 169 180 181 153 198 23 154 180 152 0 154 198 167 152 162 170 
+			154 189 165 0 0 0 161 153 0 0 152 174 198 153 196 176 167 152 209 0 
+			153 217 216 217 218 218 218 154 216 217 153 219 217 154 218 217 216 152 189 190 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 263 0 283 0 263 0 0 0 0 0 0 0 263 0 0 0 283 0 0 
+			0 302 0 0 0 0 0 300 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 302 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 0 0 0 302 
+			0 0 302 0 0 0 300 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '6' x = '8' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '10' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '14' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '5' genus = '5' class = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '8' x = '19' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '2' x = '0' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '1' x = '3' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '3' x = '5' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '6' x = '1' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '5' x = '8' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '6' x = '11' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '8' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '9' x = '4' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '9' x = '15' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '0' x = '19' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '4' x = '18' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '4' x = '14' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '1' x = '13' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '2' x = '9' genus = '6' class = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts />

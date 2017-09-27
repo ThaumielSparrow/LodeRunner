@@ -1,0 +1,17 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop.setup.keyboard'>
+
+    <keyboard id = 'keyboard' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'bottom' render-border = '1' uses-lightbox = '1' on-save = 'submit:keyboard.password' on-cancel = 'hide:keyboard.password' value = '' prompt = 'Create a password for this game:' />
+
+</template>

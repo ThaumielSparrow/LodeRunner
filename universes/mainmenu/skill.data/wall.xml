@@ -1,0 +1,90 @@
+<wall id = 'wall'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Use the [color=title]Wall[/color] skill to place a temporary wall a step in front of your character, keeping enemies at bay.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.shields.wall</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>Use the [color=title]Wall[/color] skill to place a temporary wall a step in front of your character, keeping enemies at bay.</overview>
+			<specs>Wall stands for [color=title]5.0s[/color]
+Recharges in [color=title]25.0s[/color]</specs>
+			<manual />
+			<gif-source>gifs.shields.wall</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Wall[/color], you will lose access to the [color=title]Shield[/color] skill.
+
+As you upgrade the [color=title]Wall[/color] skill, its [color=title]duration[/color] will increase.  The final upgrade turns the wall into a useful [color=title]weapon[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Shield[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>5.0</duration>
+			<recharge measure = 'seconds'>25.0</recharge>
+			<modifiers>
+				<modifier name = 'has-spikes' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The beginning upgrade to [color=title]Wall[/color] extends the [color=title]duration[/color] of the wall and lowers the [color=title]recharge time[/color].</overview>
+			<specs>Wall stands for [color=title]6.0s[/color] (+1.0s)
+Recharges in [color=title]22.0s[/color] (-3.0s)</specs>
+			<manual />
+			<gif-source>gifs.shields.wall</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>6.0</duration>
+			<recharge measure = 'seconds'>22.0</recharge>
+			<modifiers>
+				<modifier name = 'has-spikes' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The last [color=title]Wall[/color] upgrade maximizes the [color=title]duration[/color] of the wall.  The [color=title]Wall[/color] now has [color=title]deadly spikes[/color] on the opposite side.  The spikes will destroy anything that touches them.</overview>
+			<specs>Wall stands for [color=title]7.0s[/color] (+1.0s)
+Recharges in [color=title]20.0s[/color] (-2.0s)
+Wall has deadly [color=title]spikes[/color]</specs>
+			<manual />
+			<gif-source>gifs.shields.wall</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Wall[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Wall[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>7.0</duration>
+			<recharge measure = 'seconds'>20.0</recharge>
+			<modifiers>
+				<modifier name = 'has-spikes' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You unlocked The last [color=title]Wall[/color] upgrade, maximizing the wall's [color=title]duration[/color].  The [color=title]Wall[/color] now has [color=title]deadly spikes[/color] on the opposite side.  The spikes will destroy anything that touches them.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.shields.wall</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</wall>

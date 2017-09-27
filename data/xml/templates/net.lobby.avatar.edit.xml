@@ -1,0 +1,109 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@color-primary</parameter>
+		<parameter>@color-secondary</parameter>
+	</data>
+	<text>
+		<parameter>@player-name</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.lobby.avatar.edit'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1'>
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '18%' y = '0' width = '95%' align = 'left' value = 'Avatar Name' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <label x = '5%' y = '0' width = '90%' value = 'Character Name' />
+                <label x = '95%' y = '0' width = '90%' align = 'right' value = '@player-name' />
+
+                <action do = 'show:edit-avatar.keyboard' />
+
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '18%' y = '0' width = '95%' align = 'left' value = 'Avatar Colors' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <label x = '5%' y = '0' width = '90%' value = 'Primary Color' />
+                <rect x = '95%' y = '0' width = '24' height = '24' align = 'right' explicit-color = '@color-primary' />
+
+                <action do = 'show:edit-avatar.colorpicker' property = 'primary' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <label x = '5%' y = '0' width = '90%' value = 'Secondary Color' />
+                <rect x = '95%' y = '0' width = '24' height = '24' align = 'right' explicit-color = '@color-secondary' />
+
+                <action do = 'show:edit-avatar.colorpicker' property = 'secondary' />
+
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '95%' align = 'left' value = 'Options' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <label x = '5%' y = '0' width = '90%' value = 'Save Changes' />
+                <xaction do = 'update-avatar' />
+                <action do = 'hide:edit-avatar' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

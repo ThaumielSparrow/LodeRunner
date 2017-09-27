@@ -1,0 +1,54 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@slot</parameter>
+		<parameter>@button</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.assign.directory' version = 'normal'>
+
+    <item-group id = 'ext.active-skills' class = 'responses' render-border = '1' valign = 'pack'>
+
+        <item class = 'header' disabled = '1'>
+            <rect x = '0' y = '0' width = '100%' height = '36' />
+            <icon x = '5%' y = '20' valign = 'center' index = '13' />
+            <label class = 'debug1' font = 'high-contrast' x = '15%' y = '18' width = '80%' valign = 'center' value = 'Select Skill' align = '' text-effect = 'blaster:line-by-line' />
+        </item>
+
+        <item class = 'line-break' disabled = '1'>
+            <xicon x = '5%' y = '5' index = '13' />
+            <label x = '5%' y = '5' width = '90%' value = 'Select a skill to place in [color=dim]slot @slot[/color].
+
+You will activate this skill by pressing [color=special]@button[/color].' text-effect = 'blaster:line-by-line' />
+        </item>
+
+    </item-group>
+
+</template>
+
+<template name = 'skills.assign.directory' version = 'na'>
+
+    <item-group id = 'ext.active-skills' class = 'responses' render-border = '1' valign = 'pack'>
+
+        <item class = 'header' disabled = '1'>
+            <rect x = '0' y = '0' width = '100%' height = '36' />
+            <icon x = '5%' y = '20' valign = 'center' index = '13' />
+            <label class = 'debug1' font = 'high-contrast' x = '15%' y = '18' width = '80%' valign = 'center' value = 'No Skill Available' align = '' text-effect = 'blaster:line-by-line' />
+        </item>
+
+        <item class = 'line-break' disabled = '1'>
+            <xicon x = '5%' y = '5' index = '13' />
+            <label x = '5%' y = '5' width = '90%' value = 'You have not yet unlocked any active skill to assign to this slot.' text-effect = 'blaster:line-by-line' />
+        </item>
+
+        <item render-border = '0' glow = '1'>
+            <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+            <label x = '20%' y = '0' width = '75%' value = 'Ok' />
+        </item>
+
+    </item-group>
+
+</template>

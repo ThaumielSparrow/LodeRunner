@@ -1,0 +1,307 @@
+<quests>
+	<quest graphic = '0.3.npc1.quest.png' name = '0.3.npc1.quest' title = 'Talk to Brent'>
+		<description>The [color=dim]Empress of Lelandria[/color] has posted a messenger named [color=dim]Brent[/color] in the area.  Speak with him to learn more about the threat of the [color=dim]Bungeling Empire[/color].</description>
+		<update name = 'update-talked'>You discussed the threat of the [color=dim]Bungeling Empire[/color] with Brent.</update>
+		<update name = 'update-killed-fast'>Before saying a single word to Brent, you killed him!</update>
+		<update name = 'update-killed-after'>Afterwards, you proceeded to needlessly eliminate the messenger.</update>
+	</quest>
+	<quest graphic = '0.4.npc2.quest.png' name = '0.4.npc2.quest' title = 'Perfume Shopping'>
+		<description>A woman in [color=special]Smithsville[/color] has asked you to purchase her a bottle of perfume.  You can find a merchant selling the perfume in [color=special]Amandria[/color].</description>
+		<update name = 'update-extorted'>When accepting the quest, you extorted an extra [color=special]25 gold pieces[/color].</update>
+		<update name = 'update-bought'>You bought the [color=special]perfume[/color].  You should return to [color=special]Smithsville[/color] and deliver it to [color=special]Rochelle[/color]!</update>
+		<update name = 'update-killed-carlos-before'>Before delivering the perfume, you decided to rid the world of [color=special]Carlos[/color], the most handsome character in the game.  How might [color=special]Rochelle[/color] react?</update>
+		<update name = 'update-killed-rochelle-before'>Before getting a chance to know [color=special]Rochelle[/color] very well (if at all!), you sent her packing.  People say she had a fondness for rare perfumes, but you won&apos;t have a chance to confirm that now.</update>
+		<update name = 'update-killed-merchant'>You greased the perfume-selling merchant instead of paying money for perfume.  [color=special]Rochelle[/color] will have to go with Plan B now.</update>
+		<update name = 'update-killed-merchant-after'>After purchasing the expensive fragrance from the merchant, you decided to make sure none of [color=special]Carlos[/color]&apos;s other suitresses would have a chance to buy her own bottle.</update>
+		<update name = 'update-spilled-perfume'>In a classless move, you poured the perfume on the ground instead of delivering it to [color=special]Rochelle[/color].</update>
+		<update name = 'update-delivered'>You successfully delivered the perfume to [color=special]Rochelle[/color].</update>
+		<update name = 'update-delivered-extorted'>You successfully delivered the perfume to [color=special]Rochelle[/color].  Because you had previously extorted [color=special]25 gold pieces[/color] from her, she gave you a slightly less powerful item in return.</update>
+		<update name = 'update-killed-carlos-after'>After delivering the fragrant perfume to [color=special]Rochelle[/color], you decided to render that very perfume useless by snuffing out [color=special]Carlos[/color].</update>
+		<update name = 'update-killed-rochelle-during'>Tiring of her romantic fantasies, you decided to put [color=special]Rochelle[/color] out of commission.</update>
+		<update name = 'update-killed-rochelle-after-delivery'>After doing a favor for [color=special]Rochelle[/color] and receiving a nice item in return, you stamped her out of the game completely.</update>
+		<update name = 'update-killed-rochelle-after-spilling'>Not content to simply humiliate [color=special]Rochelle[/color], you rubbed it in by deciding to terminate her as well.</update>
+	</quest>
+	<quest graphic = '1.1.npc1.quest.png' name = '1.1.npc1.quest' title = 'Item Runner'>
+		<description>A man named [color=special]Dave[/color] wants you to deliver [color=special]$[1.1.npc1.quest:item-title][/color] to a woman in [color=special]Navarra[/color] named [color=special]JoAnna[/color].</description>
+		<update hidden = '1' name = 'flag-killed-dave' />
+		<update hidden = '1' name = 'flag-killed-joanna' />
+		<update name = 'update-extorted'>You decided to charge [color=special]Dave[/color] a little bit extra before accepting his request.</update>
+		<update name = 'update-killed-joanna-before'>Before you heard anything about [color=special]Dave[/color]&apos;s shipping request, you removed his friend [color=special]JoAnna[/color] from the game entirely.  Given the circumstances, [color=special]Dave[/color] did not give you an item to deliver.</update>
+		<update name = 'update-killed-joanna-during'>Instead of giving the item to [color=special]JoAnna[/color], you decided to kill her.  [color=special]Dave[/color] might want the item back now.</update>
+		<update name = 'update-killed-joanna-after-delivery'>You dropped off the item for [color=special]JoAnna[/color], then you dropped [color=special]JoAnna[/color] herself from the game.</update>
+		<update name = 'update-killed-joanna-after-purchase'>For some reason, you killed [color=special]JoAnna[/color] shortly after donating a fair amount of gold to her cause.</update>
+		<update name = 'update-killed-dave-before'>You killed [color=special]Dave[/color] before you even heard about his mission.</update>
+		<update name = 'update-killed-dave'>You decided to get rid of Dave.</update>
+		<update name = 'update-delivered-item'>You kindly delivered the item to [color=special]JoAnna[/color].</update>
+		<update name = 'update-bought-item'>You arranged to give enough gold to [color=special]JoAnna[/color] for her to forget about the item altogether.</update>
+		<update name = 'update-returned-to-dave'>After killing [color=special]JoAnna[/color], you had the decency to return [color=special]$[1.1.npc1.quest:item-title][/color] to its original owner.</update>
+		<update name = 'update-returned-to-dave-for-gold'>You killed [color=special]JoAnna[/color], and then you extorted some extra gold from [color=special]Dave[/color] when he asked for the item back.</update>
+		<update name = 'update-kept-from-dave'>Not only did you kill [color=special]JoAnna[/color], but you also refused to return [color=special]$[1.1.npc1.quest:item-title][/color] to [color=special]Dave[/color] after the fact.</update>
+	</quest>
+	<quest graphic = '1.2.npc2.quest.png' name = '1.2.npc2.quest' title = 'Puzzle of the Shoes'>
+		<description>[color=special]Jackson[/color] from the east side of [color=special]Amandria[/color] wants you to retrieve his lost [color=special]running shoes[/color].  To find them, you must complete the [color=special]puzzle room[/color] near him, then select the shoes as your prize.</description>
+		<update hidden = '1' name = 'flag-killed-jackson' />
+		<update name = 'update-extorted'>You requested half of [color=special]Jackson[/color]&apos;s gold reward as an up-front payment.  He gave it to you.</update>
+		<update name = 'update-took-shoes'>You completed the [color=special]puzzle room[/color] and acquired the missing shoes.  Take them back to [color=special]Jackson[/color] for a reward!</update>
+		<update name = 'update-took-other-unknowingly'>Without knowing any better, you skipped out on [color=special]Jackson[/color]&apos;s shoes in favor of another item.</update>
+		<update name = 'update-took-other'>You did complete the [color=special]puzzle room[/color], but you did not select the [color=special]shoes[/color] as your prize.  How will [color=special]Jackson[/color] react to your decision?</update>
+		<update name = 'update-delivered'>You returned [color=special]Jackson[/color]&apos;s running shoes to him.</update>
+		<update name = 'update-donation-requested'>[color=special]Jackson[/color] wants you to give him enough gold to buy a new replacement pair of running shoes.</update>
+		<update name = 'update-donated'>After unwittingly passing over [color=special]Jackson[/color]&apos;s treasured running shoes, you helped him out by giving him enough gold to buy a new pair.</update>
+		<update name = 'update-declined-reverse-extortion'>[color=special]Jackson[/color] tried to beat you at your own game, offering you a special item at a high price.  You decided to turn him down.</update>
+		<update name = 'update-paid-reverse-extortion'>After you extorted some gold out of [color=special]Jackson[/color] when accepting his quest, he extorted even more gold out of you in the end in exchange for a special item.</update>
+		<update name = 'update-killed-jackson-before'>Knowing nothing of [color=special]Jackson[/color]&apos;s desires beforehand, you put the guy on ice.</update>
+		<update name = 'update-killed-jackson-during'>You grew weary of [color=special]Jackson[/color]&apos;s moaning and killed him.</update>
+		<update name = 'update-killed-jackson-after-delivery'>After doing a nice thing for [color=special]Jackson[/color], you took an opportunity to balance the ledger by destroying him.</update>
+		<update name = 'update-killed-jackson-after-donating'>Realizing [color=special]Jackson[/color] played you like a bit of a sucker for that gold, you decided to give him an extra payment.</update>
+		<update name = 'update-killed-jackson-after-keeping'>First, you devastated [color=special]Jackson[/color] by refusing to give his shoes back.  Next, you literally devastated [color=special]Jackson[/color].</update>
+		<update name = 'update-killed-jackson-after-taking-other'>After taking the wrong item from the puzzle room and forcing [color=special]Jackson[/color] to live the rest of his life without his precious [color=special]running shoes[/color], you felt guilty and decided to kill him.</update>
+		<update name = 'update-kept-shoes'>In the end, you decided not to give [color=special]Jackson[/color] his old [color=special]running shoes[/color].</update>
+	</quest>
+	<quest graphic = '1.3.npc1.quest.png' name = '1.3.npc1.quest' title = 'Currying Favor'>
+		<description>A merchant in [color=special]Amandria[/color] is hoping to steal another merchant&apos;s customer base.  To do this, he needs you to visit [color=special]Edenton[/color] and dispatch the merchant there, [color=special]Nichole[/color].</description>
+		<update hidden = '1' name = 'flag-killed-curry' />
+		<update hidden = '1' name = 'flag-killed-nichole' />
+		<update name = 'update-got-free-bombs'>[color=special]Curry[/color] gave you some free bombs to help you on your mission.</update>
+		<update name = 'update-extorted'>You attempted to extort some free bombs from [color=special]Curry[/color].  He denied you.</update>
+		<update name = 'update-warned-nichole'>In [color=special]Edenton[/color], you decided to give [color=special]Nichole[/color] a heads up about her competitor&apos;s evil plan.</update>
+		<update name = 'update-saved-nichole'>You let [color=special]Nichole[/color] know what you did to [color=special]Curry[/color].  She didn&apos;t react especially favorably, but she did give you a little bit of gold as a way of thanking you.</update>
+		<update name = 'update-killed-nichole:unwittingly'>Before [color=special]Curry[/color] had even taken the time to request your service, you had preemptively destroyed his rival, [color=special]Nichole[/color].</update>
+		<update name = 'update-killed-nichole:after-warning'>After warning [color=special]Nichole[/color], you double crossed her, shutting her down for good.</update>
+		<update name = 'update-killed-nichole:without-warning'>Without much hesitation, you closed the doors on [color=special]Nichole[/color]&apos;s shoppe.  [color=special]Curry[/color] will warmly thank you, no doubt.</update>
+		<update name = 'update-killed-curry-before'>Before fully learning about [color=special]Curry[/color]&apos;s plans to dispose of a competing merchant, you decided to put an end to his merchandising.</update>
+		<update name = 'update-killed-curry-during'>You decided to put an end to [color=special]Curry[/color]&apos;s shady business practices.</update>
+		<update name = 'update-killed-curry-after-complete'>After taking care of [color=special]Curry[/color]&apos;s rival merchant up north, you decided to square up with [color=special]Curry[/color] in the same fashion.</update>
+		<update name = 'update-killed-curry-after-failed'>Concerned that [color=special]Curry[/color] might try to devise another plan to harm [color=special]Nichole[/color], you decided to shut him down for good.</update>
+		<update name = 'update-inventory-upgraded'>In return for your help, [color=special]Curry[/color] upgraded his item inventory.</update>
+		<update name = 'update-inventory-liquidated'>[color=special]Curry[/color] liquidated the entirety of his premium inventory after you clued [color=special]Nichole[/color] in to his evil plan.</update>
+	</quest>
+	<quest graphic = '2.1.npc1.quest.png' name = '2.1.npc1.quest' title = 'Dealing with Kenny'>
+		<description>While chatting with [color=special]Alien[/color] on the south side of [color=special]Edenton[/color], you learned that [color=special]Kenny[/color] runs all of the [color=special]bomb vending machines[/color].  If possible, Alien wants you to visit [color=special]Callistaska[/color] to the west, to kill [color=special]Kenny[/color] and prevent anyone from profiting from violence and destruction.</description>
+		<update hidden = '1' name = 'flag-killed-kenny' />
+		<update hidden = '1' name = 'flag-killed-alien' />
+		<update name = 'update-extorted'>You convinced [color=special]Alien[/color] to send some extra [color=special]gold[/color] with you, pledging to use it to buy [color=dim]Kenny[/color]&apos;s business contract.</update>
+		<update name = 'update-bought-contract'>[color=dim]Kenny[/color] sold you his business contract, putting a peaceful end to his ability to profit from his bomb vending machine.</update>
+		<update name = 'update-extracted-funds'>After buying the business contract, you decided to immediately withdraw all of the business funds.</update>
+		<update name = 'update-lowered-prices'>After buying the business contract, you decided to lower the prices of all [color=special]bomb vending machines[/color] across [color=special]Lelandria[/color].</update>
+		<update name = 'update-killed-kenny-unwittingly'>You killed [color=special]Kenny[/color] before you ever found out about the total extent of his bomb vending machine operation.</update>
+		<update name = 'update-killed-kenny-during'>True to your word, you eliminated [color=special]Kenny[/color].  You should return to south [color=special]Edenton[/color] to collect your reward.</update>
+		<update name = 'update-killed-kenny-after-bought'>After buying your way into the bomb vending machine market, you ruthlessly took out [color=special]Kenny[/color], perhaps seeing him as a potential market competitor.  [color=special]Alien[/color] should congratulate you warmly!</update>
+		<update name = 'update-killed-kenny-after-failing'>Not content to only get rid of [color=special]Alien[/color], you decided to play the same card on [color=special]Kenny[/color] too.</update>
+		<update name = 'update-killed-alien-before'>Disinterested in anything [color=special]Alien[/color] might have had to say about pacifism, you delivered him to his maker.</update>
+		<update name = 'update-killed-alien-during'>Not sharing the same distaste for wanton destruction, or irrationally offended at the intentional typo in his name, you shut [color=special]Alien[/color] up permanently.</update>
+		<update name = 'update-killed-alien-after'>After taking care of business, you paid one last visit to [color=special]Alien[/color], cruelly destroying him.</update>
+		<update name = 'update-alien-egged-you-on'>Although [color=special]Alien[/color] did verbally thank you for buying [color=special]Kenny[/color] out of business, he still wants you to weed [color=special]Kenny[/color] out of the game permanently.</update>
+		<update name = 'update-collected-reward'>You returned to [color=special]Alien[/color] and collected your reward.</update>
+	</quest>
+	<quest graphic = '2.3.npc1.quest.png' name = '2.3.npc1.quest' title = 'The Banker&apos;s Merchant Tax'>
+		<description>A wealthy banker in western [color=special]Edenton[/color] confided in you a secret:  She doesn&apos;t like how much money the merchants have been making selling items for the fight against the [color=dim]Bungeling empire[/color].  To control their wealth, she has asked you to visit at least [color=special]3[/color] merchants, collecting a make-believe [color=special]tax[/color] from each of them.</description>
+		<update hidden = '1' name = 'flag-killed-elizabeth' />
+		<update name = 'update-extorted'>You convinced [color=special]Elizabeth[/color] to give you some free bombs in exchange for collecting the gold.  In the process, you increased the amount of tax money each merchant will pay.</update>
+		<update name = 'update-collected-1'>You have collected one tax.  Collect at least 2 more!</update>
+		<update name = 'update-collected-2'>You have now collected the tax from 2 merchants.  Collect at least 1 more!</update>
+		<update name = 'update-collected-all'>You have collected enough tax money to satisfy [color=special]Elizabeth[/color].  Return all of the tax money to her and collect the item she&apos;s offering as a reward.</update>
+		<update name = 'update-paid-off'>You did not collect all of the tithes, but you paid enough gold out of your own pocket to satisfy [color=special]Elizabeth[/color] and complete the quest.</update>
+		<update name = 'update-paid-all'>Quite nobly, you decided not to collect a tax from any merchant.  Instead, you paid the entire balance by yourself, gaining some extra [color=special]XP[/color] in the process!</update>
+		<update name = 'update-killed-elizabeth-before'>Before hearing about [color=special]Elizabeth[/color]&apos;s offer, you made an offering of her.</update>
+		<update name = 'update-killed-elizabeth-during'>In the end, you decided to kill [color=special]Elizabeth[/color] rather than let her continue taxing the merchants.</update>
+		<update name = 'update-killed-elizabeth-after'>Having completed all of [color=special]Elizabeth[/color]&apos;s dirty work for her, you decided to rid [color=special]Lelandria[/color] of her corruptions.</update>
+		<update name = 'update-delivered-taxes'>You returned all of the tax money you collected to [color=special]Elizabeth[/color].</update>
+	</quest>
+	<quest graphic = '3.1.npc2.quest.png' name = '3.1.npc2.quest' title = 'A Business Decision'>
+		<description>[color=special]Erich[/color] from the central area of [color=special]Navarra[/color] used to sell bombs, until [color=special]Rebecca[/color] set up shop and put him out of business with her bulk rate prices.  Now [color=special]Erich[/color] wants you to put [color=special]Rebecca[/color] out of business, permanently, so that he can get back to work.</description>
+		<update hidden = '1' name = 'flag-killed-erich' />
+		<update hidden = '1' name = 'flag-killed-rebecca' />
+		<update name = 'update-killed-rebecca-before'>Almost as if you had read [color=special]Erich[/color]&apos;s mind before ever speaking to him, you killed [color=special]Rebecca[/color] and shut down her business before [color=special]Erich[/color] even had a chance to ask.</update>
+		<update name = 'update-rejected'>Preferring to keep your hands clean, you turned down [color=special]Erich[/color]&apos;s request.</update>
+		<update name = 'update-erich-requested-liquidation'>[color=special]Erich[/color] still wants you to at least consider purchasing his unsold inventory of bombs.</update>
+		<update name = 'update-rejected:bought-bombs'>You paid [color=special]Erich[/color] for his old bomb inventory.  He didn&apos;t need it any more.</update>
+		<update name = 'update-rejected:bought-bombs:changed-mind'>After buying out [color=special]Erich[/color]&apos;s inventory and precluding him from resuming his bomb merchant work, you changed your mind and put an end to [color=special]Rebecca[/color]&apos;s business.  [color=special]Erich[/color] will not understand.</update>
+		<update name = 'update-rejected:left-bombs'>[color=special]Erich[/color] wanted you to buy his unused inventory, but you turned him down.  Who knows what he would have done with your money?</update>
+		<update name = 'update-rejected:left-bombs:changed-mind'>After initially turning down [color=special]Erich[/color], you changed your mind and put an end to [color=special]Rebecca[/color]&apos;s business forever.  [color=special]Erich[/color] will no doubt thank you profusely!</update>
+		<update name = 'update-accepted:killed-rebecca'>You ruthlessly shut down [color=special]Rebecca[/color]&apos;s bulk-rate sales shop.  Return to [color=special]Erich[/color] at any time to buy bombs from him instead!</update>
+		<update name = 'update-killed-rebecca-after-failing'>[color=special]Rebecca[/color] probably felt a lot safer after you took care of [color=special]Erich[/color].  She apparently didn&apos;t realize that you had the same idea as the other guy!</update>
+		<update name = 'update-killed-erich-before'>Before hearing about [color=special]Erich[/color]&apos;s plot to put [color=special]Rebecca[/color] out of business, you put him out of commission.</update>
+		<update name = 'update-killed-erich-only'>Judging him too dangerous to [color=special]Rebecca[/color], you decided to put [color=special]Erich[/color] out of business.</update>
+		<update name = 'update-killed-erich-also'>After taking out [color=special]Rebecca[/color], you decided to do the same thing to [color=special]Erich[/color].</update>
+		<update name = 'update-erich-opened-shop'>Without [color=special]Rebecca[/color] around to offer fair prices, [color=special]Erich[/color] immediately resumed selling his bombs at hideously high prices.</update>
+	</quest>
+	<quest graphic = '3.3.npc1.quest.png' name = '3.3.npc1.quest' title = 'A Video Game Quiz'>
+		<description>You learned about a quiz that [color=special]Rico[/color] is offering on the south side of [color=special]Navarra[/color].  Completing the quiz will earn you a skill point.</description>
+		<update name = 'update-aced-quiz'>You correctly answered all 3 questions on the quiz, earning the skill point!</update>
+		<update name = 'update-buyout'>Taking no chance of failing, you decided to pay [color=special]Rico[/color] a substantial sum in exchange for the skill point he had offered.</update>
+		<update name = 'update-failed-quiz'>Unfortunately, you did not answer all of [color=special]Rico[/color]&apos;s questions correctly.</update>
+		<update name = 'update-killed-rico-before'>[color=special]Rico[/color] had a few questions to ask you about videogames, according to the rumor mill of [color=special]Lelandria[/color].  You made sure he never asked them.</update>
+		<update name = 'update-killed-rico-during'>Not a fan of quizzes, you decided to expel [color=special]Rico[/color] from the game.</update>
+		<update name = 'update-killed-rico-after-passing'>After acing [color=special]Rico[/color]&apos;s quiz, you decided to give him a test of your own.  He didn&apos;t make it through alive.</update>
+		<update name = 'update-killed-rico-after-failing'>Distraught about failing [color=special]Rico[/color]&apos;s brief quiz, you decided to strike back, knocking him out of the game.</update>
+		<update name = 'update-killed-rico-after-buyout'>After purchasing the skill point from [color=special]Rico[/color] for that substantial sum, you decided to really get your money&apos;s worth out of the guy by putting him offline for good.</update>
+	</quest>
+	<quest graphic = '4.2.npc1.quest.png' name = '4.2.npc1.quest' title = 'The Lost Heirloom'>
+		<description>You&apos;ve learned about a lost [color=special]heirloom[/color] that originally belonged to a woman in [color=special]Semperfalla[/color].  A second woman named [color=special]Jessie[/color] is hoarding it in a town called [color=special]Manderkeen[/color], on the far western edge of the country.  To get the [color=special]heirloom[/color] back, you will have to kill one of the thief&apos;s friends -- [color=special]Amelia[/color] -- who lives in the same town.</description>
+		<update hidden = '1' name = 'flag-killed-erin' />
+		<update hidden = '1' name = 'flag-killed-amelia' />
+		<update hidden = '1' name = 'flag-killed-jessie' />
+		<update name = 'update-killed-amelia-before'>You killed [color=special]Amelia[/color] on a whim, completely unaware that doing so would help you coerce [color=special]Jessie[/color] into giving you the special heirloom.</update>
+		<update name = 'update-killed-amelia-during'>You killed [color=special]Amelia[/color], for no reason other than to scare [color=special]Jessie[/color] into returning the heirloom.</update>
+		<update name = 'update-killed-amelia-after-failing'>After botching the original quest, you decided to go back and destroy [color=special]Amelia[/color].</update>
+		<update name = 'update-killed-jessie-before'>Without knowing better, you killed [color=special]Jessie[/color] and lost any chance to recover the heirloom she stole.</update>
+		<update name = 'update-killed-jessie-prematurely'>Before collecting the heirloom, you decided to kill [color=special]Jessie[/color].  You should probably return to [color=special]Semperfalla[/color] to give [color=special]Erin[/color] the bad news...</update>
+		<update name = 'update-killed-jessie-after-getting-heirloom'>With the heirloom safely in your possession, you killed [color=special]Jessie[/color] to make sure she didn&apos;t try to steal it again.</update>
+		<update name = 'update-killed-jessie-after-failing'>You killed [color=special]Erin[/color] before collecting the heirloom, but that didn&apos;t stop you from going ahead and taking out [color=special]Jessie[/color] all the same.</update>
+		<update name = 'update-got-heirloom'>You successfully retrieved the [color=special]heirloom[/color].  Return to [color=special]Semperfalla[/color] to deliver it to [color=special]Erin[/color]!</update>
+		<update name = 'update-pity-gold'>[color=special]Erin[/color] expressed great disappointment upon hearing that you failed to collect her precious heirloom.  She did give you a little bit of gold for your mistimed vengeance, though.</update>
+		<update name = 'update-took-items'>You received a pair of items from [color=special]Erin[/color] as a reward.</update>
+		<update name = 'update-took-gold'>You asked [color=special]Erin[/color] to give you a substantial [color=special]gold[/color] reward.</update>
+		<update name = 'update-took-xp'>Your effort earned you a generous [color=special]XP[/color] bonus from [color=special]Erin[/color].</update>
+		<update name = 'update-killed-erin-before'>[color=special]Erin[/color] didn&apos;t have time to narrate her ordeal before you killed her.</update>
+		<update name = 'update-killed-erin-during'>Bored of petty squabbling, you decided to kill [color=special]Erin[/color], throwing away any chance of receiving a reward.</update>
+		<update name = 'update-killed-erin-after-failing'>With the heirloom lost forever, you decided you had nothing to lose by killing [color=special]Erin[/color].</update>
+		<update name = 'update-killed-erin-after-delivery'>After putting a lot of work into recovering the heirloom and returning it to [color=special]Erin[/color], you decided to savagely exterminate her.</update>
+	</quest>
+	<quest graphic = '4.3.npc1.quest.png' name = '4.3.npc1.quest' title = 'The Love Letter'>
+		<description>In the town of [color=special]Semperfalla[/color], you met a lovestruck man by the name of [color=special]Timmy[/color].  He gave you a special [color=special]love letter[/color], asking you to deliver it to [color=special]Jill[/color] in the town of [color=special]Ouromova[/color].</description>
+		<update hidden = '1' name = 'flag-killed-jill' />
+		<update hidden = '1' name = 'flag-killed-timmy' />
+		<update name = 'update-killed-jill-before'>Before hearing anything about [color=special]Timmy[/color]&apos;s love for [color=special]Jill[/color], you knocked the woman out of the game.</update>
+		<update name = 'update-killed-jill-before-delivery'>Before delivering the letter to [color=special]Jill[/color], you thoughtlessly put her on ice.  You should probably let [color=special]Timmy[/color] know what happened.</update>
+		<update name = 'update-killed-jill-after-delivery'>After receiving the [color=special]Ring of Eternal Love[/color] from [color=special]Jill[/color], you decided to put an end to her.  [color=special]Timmy[/color] will never know!</update>
+		<update name = 'update-killed-timmy-before'>Before having a chance to find out about [color=special]Timmy[/color]&apos;s romantic fantasy, you kissed him goodbye forever.</update>
+		<update name = 'update-killed-timmy-during'>Unwilling to play matchmaker, you decided to send [color=special]Timmy[/color] packing, forever.</update>
+		<update name = 'update-killed-timmy-after-delivering-ring'>After giving the ring to [color=special]Timmy[/color], you decided to kill him.</update>
+		<update name = 'update-killed-timmy-after-keeping-ring'>[color=special]Timmy[/color] looked pretty miserable without a ring.  You decided, then, to put him out of his misery.</update>
+		<update name = 'update-delivered-letter'>You found [color=special]Jill[/color] and delivered the love letter to her.  She loved the letter, giving you a [color=special]Ring of Eternal Love[/color] to take back to [color=special]Timmy[/color] in [color=special]Semperfalla[/color].</update>
+		<update name = 'update-delivered-letter:delivered-ring'>You delivered the [color=special]Ring of Eternal Love[/color] to [color=special]Timmy[/color], making him the happiest stick figure in all of [color=special]Lelandria[/color].</update>
+		<update name = 'update-delivered-letter:kept-ring'>You lied to [color=special]Timmy[/color], neglecting to tell him anything about the [color=special]Ring of Eternal Love[/color].</update>
+		<update name = 'update-timmy-sad'>[color=special]Timmy[/color] reacted rather unhappily as you confessed your crime.</update>
+		<update name = 'update-timmy-sad-after-lies'>You tried to convince [color=special]Timmy[/color] that a [color=dim]bad guy[/color] had killed [color=special]Jill[/color].  (You were telling the truth, in a way.)  He knew the truth, though.</update>
+	</quest>
+	<quest graphic = '4.3.npc2.quest.png' name = '4.3.npc2.quest' title = 'Everything Must Go'>
+		<description>The merchant [color=special]Sierra[/color], located in northern [color=special]Semperfalla[/color], has asked you to buy everything that she has for sale.  If you can provide her the revenue she needs to settle her outstanding debts, she will reward you with a [color=special]special item[/color] she wouldn&apos;t ordinarily sell.</description>
+		<update hidden = '1' name = 'flag-killed-sierra' />
+		<update name = 'update-killed-sierra-before'>Deeming her quest icon of no regard, you decided to vanquish [color=special]Sierra[/color] before speaking one word to her.</update>
+		<update name = 'update-killed-sierra-during'>Not interested in helping [color=special]Sierra[/color], you decided to find another way to free her of her debts, blatantly killing her.</update>
+		<update name = 'update-killed-sierra-after'>After cleaning out [color=special]Sierra[/color]&apos;s inventory, you cleaned her off of the level.</update>
+		<update name = 'update-killed-sierra-before-collecting-reward'>Instead of returning to [color=special]Sierra[/color] to collect a reward, you decided to destroy her.</update>
+		<update name = 'update-bought-inventory'>You spent a lot of money, buying out [color=special]Sierra[/color]&apos;s entire inventory and thereby helping her to settle her financial situation.  Visit with [color=special]Sierra[/color] one more time to collect your reward.</update>
+	</quest>
+	<quest graphic = '4.4.npc1.quest.png' name = '4.4.npc1.quest' title = 'A Gift of Gold'>
+		<description>[color=special]Lily[/color] wants you to take some gold to her sister, [color=special]Sierra[/color], who sells items on the north side of [color=special]Semperfalla[/color].</description>
+		<update hidden = '1' name = 'flag-killed-lily' />
+		<update hidden = '1' name = 'flag-killed-sierra' />
+		<update name = 'update-extra-gold'>You convinced [color=special]Lily[/color] to give you a little bit of extra gold to take to her sister.</update>
+		<update name = 'update-picked-up-tab'>With honor in spades, you offered to cover the cost of the mission out of your own pocket.  [color=special]Lily[/color] gave you a special item for your gesture.</update>
+		<update name = 'update-killed-sierra-before'>Before [color=special]Lily[/color] mentioned anything about helping out her sister [color=special]Sierra[/color], you put [color=special]Sierra[/color] in the ground for good.</update>
+		<update name = 'update-killed-sierra-during'>Instead of giving [color=special]Sierra[/color] the gold, you gave her a [color=dim]bomb[/color], or something like that, keeping the gold for yourself.</update>
+		<update name = 'update-killed-sierra:lied'>You lied to [color=special]Lily[/color], claiming that one of the [color=dim]bad guys[/color] killed her sister, [color=special]Sierra[/color].</update>
+		<update name = 'update-killed-sierra:confessed'>After hearing your confession, [color=special]Lily[/color] reacted surprisingly calmly, herself confessing that [color=special]Sierra[/color] had been smuggling inventory to the [color=dim]Bungeling empire[/color] all along.</update>
+		<update name = 'update-killed-sierra-after-delivery'>After delivering [color=special]Lily[/color]&apos;s financial gift to [color=special]Sierra[/color], you decided to make sure she would never have a chance to spend any of it.</update>
+		<update name = 'update-killed-sierra-after-failing'>Having already executed [color=special]Lily[/color], you opted to do the same to her financially troubled sister, [color=special]Sierra[/color].</update>
+		<update name = 'update-killed-lily-before'>Before [color=special]Lily[/color] had a chance to send you on your way with her gold, you sent her on her own way.</update>
+		<update name = 'update-killed-lily-during'>Once [color=special]Lily[/color] gave you the gold, you decided you didn&apos;t need to keep her around any longer.</update>
+		<update name = 'update-killed-lily-during-noble'>After acting like a nice player by volunteering to use your own gold to help [color=special]Sierra[/color], you revealed your true nature, brutally exterminating [color=special]Lily[/color] from the game.</update>
+		<update name = 'update-killed-lily-after'>After taking the gold to [color=special]Sierra[/color], you took care of [color=special]Lily[/color] in a slightly less humane fashion, wiping her out of the game.</update>
+		<update name = 'update-killed-lily-after-failing-delivery'>Having already killed [color=special]Sierra[/color] before giving her the gold delivery, you decided to do the same to [color=special]Lily[/color].</update>
+		<update name = 'update-delivered-gold'>You delivered the gold to [color=special]Sierra[/color], helping her to sleep a little more easily at night.</update>
+	</quest>
+	<quest graphic = '5.2.npc1.quest.png' name = '5.2.npc1.quest' title = 'The Siroccan Slayer'>
+		<description>
+			You met a very unbalanced man in the southwest corner of [color=special]Ouromova[/color].  He wants you to kill [color=special]every last person[/color] in the game.  In return, he will reward you [color=special]very well[/color], allegedly.
+
+He did point out that you should not kill him until he's had a chance to reward you.
+		</description>
+		<update hidden = '1' name = 'flag-killed-willy' />
+		<update name = 'update-killed-willy-before'>Before [color=special]Willy[/color] had a chance to tell you to start killing everyone, you killed him.  That&apos;s kind of ironic.</update>
+		<update name = 'update-underway'>You have begun the slaughter.  You have killed $[npc.count.dead] out of $[npc.count.total] possible citizens of [color=special]Lelandria[/color].</update>
+		<update name = 'update-killed-willy-prematurely'>A bit too eager, you put a quick end to [color=special]Willy[/color], ruining your chance of receiving his special rewards.</update>
+		<update name = 'update-almost-done'>Now only [color=special]Willy[/color] remains alive in all of [color=special]Lelandria[/color].  Return to [color=special]Ouromova[/color] to collect your rewards.</update>
+		<update name = 'update-killed-willy-after'>You put a final touch on your work, eliminating [color=special]Willy[/color] and completely ridding the game of all talking characters.</update>
+		<update name = 'update-done'>You have decimated the entire civilian population of [color=special]Lelandria[/color].  Nice work.</update>
+	</quest>
+	<quest graphic = '5.4.npc1.quest.png' name = '5.4.npc1.quest' title = 'One Merchant at a Time'>
+		<description>
+			Talking to [color=special]Logan[/color] on the northwest side of [color=special]Ouromova[/color], you learned that he wants to start working as a [color=special]merchant[/color].  Before he can do so, though, he needs you to convince his neighbor [color=special]Alice[/color] to close her business, as he doesn't want to steal her customers.
+
+[color=special]Logan[/color] has asked you not to hurt [color=special]Alice[/color] if you can avoid it.
+		</description>
+		<update hidden = '1' name = 'flag-killed-logan' />
+		<update hidden = '1' name = 'flag-killed-alice' />
+		<update name = 'update-paid-alice'>Eschewing unnecessary violence, you gave [color=special]Alice[/color] enough gold to allow her to retire from the [color=special]merchant[/color] industry forever.  You can now tell [color=special]Logan[/color] the good news.</update>
+		<update name = 'update-killed-alice-before'>Prior to learning about [color=special]Logan[/color]&apos;s business needs, you put a cruel end to [color=special]Alice[/color].</update>
+		<update name = 'update-killed-alice-during'>You killed [color=special]Alice[/color] in cold blood, certainly putting an end to her days as a [color=special]merchant[/color].  You can now tell [color=special]Logan[/color] about what you&apos;ve done.</update>
+		<update name = 'update-killed-alice-after-buyout'>After paying [color=special]Alice[/color] to close shop, you went back to close shop on [color=special]Alice[/color] in a more definitive fashion.</update>
+		<update name = 'update-killed-alice-after-logan'>Having already killed [color=special]Logan[/color], dashing his dreams of entering into a new merchandising career, you decided to kill [color=special]Alice[/color] as well.</update>
+		<update name = 'update-killed-logan-before'>You didn&apos;t get a chance to speak with [color=special]Logan[/color], as you decided to obliterate him without a word.</update>
+		<update name = 'update-killed-logan-during'>Underwhelmed by [color=special]Logan[/color]&apos;s ambitions, you went into business for yourself and exterminated him.</update>
+		<update name = 'update-killed-logan-after'>After giving [color=special]Logan[/color] a clean avenue to open his new business, you decided to do a little road construction.</update>
+		<update name = 'update-complete:happy'>Thanks to you, [color=special]Logan[/color] realized his life-long dream, beginning work as a [color=special]merchant[/color].  Even better, he ordered some [color=special]extra special items[/color] thanks to your fair handling of [color=special]Alice[/color].</update>
+		<update name = 'update-complete:sad'>Because of you, [color=special]Logan[/color] realized his life-long dream, beginning work as a [color=special]merchant[/color].  Because you killed [color=special]Alice[/color], though, he didn&apos;t have the energy to order the most special items available.</update>
+	</quest>
+	<quest graphic = '6.2.npc2.quest.png' name = '6.2.npc2.quest' title = 'Map of the World'>
+		<description>
+			An avid cartography enthusiast named [color=special]Dani[/color] wants you to provide her with a complete map of the entire world of [color=special]Lelandria[/color].
+
+To date, you have explored $[6.2.npc2.quest:percent-visited]% of [color=special]Lelandria[/color].  Visit every level in the game to complete your map!
+		</description>
+		<update hidden = '1' name = 'flag-killed-dani' />
+		<update name = 'update-killed-dani-before'>Before [color=special]Dani[/color] had mapped out what she wanted from you, you took her off of the map completely.</update>
+		<update name = 'update-killed-dani-during:before-ready'>With no apparent remorse, you put a mean end to [color=special]Dani[/color] and her map lust.</update>
+		<update name = 'update-killed-dani-during:after-ready'>Once you visited every last corner of [color=special]Lelandria[/color], you returned to [color=special]Dani[/color].  Instead of sharing your cartographical records with her, though, you decided to kill her.</update>
+		<update name = 'update-killed-dani-after'>After sharing the details of your expansive traveling with [color=special]Dani[/color], you decided you couldn&apos;t trust her with all of that information and put her down.</update>
+		<update name = 'update-bought-danis-map'>[color=special]Dani[/color] has not visited much of [color=special]Lelandria[/color], but she has seen most of the western portion.  You paid her a little gold to share her geographical knowledge with you.</update>
+		<update name = 'update-completed-map'>You have completed the entire map of [color=special]Lelandria[/color].  Return to the southeast side of [color=special]Callistaska[/color] to share it with [color=special]Dani[/color]!</update>
+		<update name = 'update-complete'>You shared your complete map with [color=special]Dani[/color] and received a [color=special]special item[/color] in return.</update>
+	</quest>
+	<quest graphic = '6.5.npc1.quest.png' name = '6.5.npc1.quest' title = 'Shutting down the Merchants'>
+		<description>
+			While exploring the southwest area of the happy town of [color=special]Callistaska[/color], you encountered a very unhappy man named [color=special]Han[/color].  He told you about how the merchants of [color=special]Lelandria[/color] banished him for failing to make some payments, and he requested that you kill [color=special]every merchant[/color] in the game, in the name of vengeance.
+
+Currently $[merchant.count.living] merchants remain in [color=special]Lelandria[/color].
+		</description>
+		<update hidden = '1' name = 'flag-killed-han' />
+		<update name = 'update-killed-han-before'>[color=special]Han[/color] never had a chance to fully explain his hatred for all of the merchants in the game.  You didn&apos;t let him.</update>
+		<update name = 'update-killed-han-during'>You chose to kill [color=special]Han[/color].</update>
+		<update name = 'update-killed-han-after'>After ridding [color=special]Lelandria[/color] of every last one of its active merchants, you sent [color=special]Han[/color] to join them.</update>
+		<update name = 'update-killed-all-merchants'>Now that you have killed all active merchants in the game, you can return to [color=special]Han[/color] to collect his reward.</update>
+		<update name = 'update-complete'>You gave [color=special]Han[/color] the good news and received some special items in return.</update>
+	</quest>
+	<quest graphic = '7.4.npc2.quest.png' name = '7.4.npc2.quest' title = 'I Didn&apos;t Ask for This'>
+		<description>An unusual man named [color=special]JC[/color] asked you to give him a [color=special]skill point[/color].  He mentioned something about upgrading his augmentations to escape from the western edge of [color=special]Manderkeen[/color].</description>
+		<update name = 'update-gave-point'>Acting charitably, you donated a precious [color=special]skill point[/color] to [color=special]JC[/color].  He didn&apos;t exactly thank you profusely.</update>
+		<update name = 'update-kill-jc'>[color=special]JC[/color] is using one of his [color=special]neural augmentations[/color] to prevent you from killing him.  You probably shouldn&apos;t even try.</update>
+		<update name = 'update-killed-jc'>Ultimately, [color=special]JC[/color] must have been just another delusional [color=special]cosplayer[/color].  You put an end to his games and recovered the [color=special]skill point[/color] you had given him.</update>
+		<update name = 'update-killed-jc-before'>Without taking any time to learn a single thing about [color=special]JC[/color], you sent him back to the cryotube he came from.</update>
+		<update name = 'update-killed-jc-during'>Instead of giving [color=special]JC[/color] the skill point he asked for, you gave him a piece of your mind.  Does that mean he won&apos;t make a cameo in the sequel after all?</update>
+	</quest>
+	<quest graphic = '6.3.npc2.quest.png' name = '6.3.npc2.quest' title = 'Jake, the Snake'>
+		<description>In the western town of [color=special]Callistaska[/color], you spent some time talking to a merchant named [color=special]Biggins[/color].  He told you about a troublemaker named [color=special]Jake[/color] who is blockading access to the best possible items in all of [color=special]Lelandria[/color].  If you kill [color=special]Jake[/color], [color=special]Biggins[/color] can sell you some [color=special]very special items[/color].</description>
+		<update hidden = '1' name = 'flag-killed-jake' />
+		<update hidden = '1' name = 'flag-killed-biggins' />
+		<update name = 'update-killed-jake-before'>You put out [color=special]Jake[/color]&apos;s fire far in advance of hearing anything about the potential benefits of doing so.</update>
+		<update name = 'update-killed-jake-during'>You visited the far western edge of [color=special]Lelandria[/color], found [color=special]Jake[/color], and put him out of his misery.  Return to [color=special]Biggins[/color] to browse his improved inventory!</update>
+		<update name = 'update-killed-jake-after-biggins'>After taking out the infamous [color=special]Biggins[/color], you turned around and made short order of [color=special]Jake[/color] as well.</update>
+		<update name = 'update-killed-biggins-before'>[color=special]Biggins[/color] didn&apos;t live long enough to tell you anything about his quarrel with [color=special]Jake[/color].  You made sure of that.</update>
+		<update name = 'update-killed-biggins-during:before-jake'>Rather than help [color=special]Biggins[/color], you decided to side with [color=special]Jake[/color] and put the merchant himself out of business instead.  [color=special]Jake[/color] will surely reward you handsomely!</update>
+		<update name = 'update-killed-biggins-during:after-jake'>You did just as [color=special]Biggins[/color] requested of you, but you then escalated things by destroying [color=special]Biggins[/color] himself, losing access to the best inventory of items in all of [color=special]Lelandria[/color].</update>
+		<update name = 'update-killed-biggins-after'>You helped [color=special]Biggins[/color] establish his business as the best in all of [color=special]Lelandria[/color].  Then you killed him.</update>
+		<update name = 'update-complete:for-jake'>After some rigamarole, you ultimately received a nice gold reward from [color=special]Jake[/color].</update>
+		<update name = 'update-complete:for-biggins'>[color=special]Biggins[/color] thanked you for your work and gave you access to an improved selection of items.</update>
+		<update name = 'update-jake-donated-gold'>[color=special]Jake[/color] gave you a little bit of gold for not killing him without at least having a conversation about it first.</update>
+		<update name = 'update-jake-suggested-turnabout'>[color=special]Jake[/color] has suggested that you get rid of [color=special]Biggins[/color] instead.  He hinted at some sort of financial reward.</update>
+	</quest>
+	<quest graphic = '7.1.npc1.quest.png' name = '7.1.npc1.quest' title = 'A Lesser Operating System'>
+		<description>A struggling merchant named [color=special]William[/color] has asked you to destroy his competitor, [color=special]Linus[/color].  You will have to visit [color=special]Manderkeen[/color] to decide the fate of these merchants on your own.</description>
+		<update hidden = '1' name = 'flag-killed-william' />
+		<update hidden = '1' name = 'flag-killed-linus' />
+		<update hidden = '1' name = 'flag-heard-williams-quest' />
+		<update name = 'update-killed-william-before'>With a foresight worthy of the most precognitive sage, you put [color=special]William[/color] out of business without any explicit request to do so.</update>
+		<update name = 'update-killed-william-during'>In a brilliant move, you put an end to [color=special]William[/color]&apos;s business, enabling [color=special]Linus[/color] to continue offering his superior items for free.</update>
+		<update name = 'update-killed-william-after-linus'>After removing [color=special]Linus[/color] for no good reason, you tried to rectify your mistake by putting [color=special]William[/color] in the recycle bin.</update>
+		<update name = 'update-killed-william-after-failing'>After taking the misstep of killing [color=special]Linus[/color], you took a step to make amends, resigning [color=special]William[/color] to the same fate.</update>
+		<update name = 'update-killed-william-after-success'>You gave [color=special]William[/color] the good news after completing his job.  Then you completed a job of your own, deleting [color=special]William[/color] from the level.</update>
+		<update name = 'update-killed-linus-before'>For no discernible reason, you removed [color=special]Linus[/color] from the game with no obvious quest reward on the line.</update>
+		<update name = 'update-killed-linus-during'>In a moment short of brilliance, you shut down [color=special]Linus[/color]&apos;s free items store, enabling [color=special]William[/color] to continue his monopoly.  You should report back to [color=special]William[/color] to let him know about what you&apos;ve done.</update>
+		<update name = 'update-killed-linus-after-failing'>Having already gotten rid of [color=special]William[/color], you for some reason decided to get rid of [color=special]Linus[/color] as well.</update>
+		<update name = 'update-william-updated-inventory'>[color=special]William[/color] has modified his inventory to include some [color=special]cheap[/color] items.  You can determine what "cheap" means for yourself, in this case.</update>
+	</quest>
+</quests>

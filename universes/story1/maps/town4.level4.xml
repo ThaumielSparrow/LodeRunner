@@ -1,0 +1,363 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			217 0 0 0 0 0 0 0 0 0 0 0 0 152 0 
+			0 217 0 0 0 0 0 0 0 0 0 0 0 152 0 
+			0 0 217 0 0 0 0 9 0 0 0 0 152 329 0 
+			0 0 0 328 152 26 27 332 152 0 0 0 152 206 109 
+			0 324 0 0 152 0 0 309 325 27 23 29 329 303 0 
+			0 313 0 0 152 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 152 331 152 0 0 0 0 0 0 0 0 0 
+			0 0 0 152 312 324 152 0 0 0 0 0 0 0 0 
+			325 23 25 152 0 306 324 0 330 0 0 0 329 334 326 
+			0 310 304 325 152 0 0 0 0 0 0 328 0 210 312 
+			0 0 307 306 323 152 25 304 152 0 0 0 325 330 0 
+			0 0 0 0 0 152 0 0 152 0 0 0 0 305 0 
+			0 0 0 209 0 152 0 0 152 0 0 0 323 308 0 
+			0 0 0 325 25 25 328 29 323 326 152 24 24 307 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '6' y = '8' modal = '0'>
+		<structure>
+			0 54 0 
+			52 209 54 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 340 0 
+			0 0 0 263 0 0 0 283 0 0 0 0 0 0 0 
+			0 342 0 0 0 0 0 300 263 0 0 0 283 302 0 
+			0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 342 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 344 0 0 0 0 0 0 0 0 0 
+			263 0 0 0 0 300 343 0 0 0 0 0 0 0 0 
+			0 300 0 343 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 347 263 0 0 265 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 263 0 0 265 0 283 0 263 0 0 283 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '10' y = '12' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Lily' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '0' x = '8' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '11' x = '12' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '8' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '3' x = '10' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '1' x = '12' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '7' x = '14' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '12' x = '7' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '8' x = '4' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '7' x = '2' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '4' x = '5' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '2' x = '0' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '1' x = '2' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '8' x = '11' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '10' x = '14' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '10' x = '9' genus = '6' class = '' />
+	<entity x = '1' y = '7' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+<trigger prompt = '@do:activate lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '7' x = '1'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1a' height = '1' width = '1' behavior = '1' y = '7' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1b' height = '1' width = '1' behavior = '1' y = '8' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Lily' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '11' x = '9' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '12' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '7' x = '2'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '2' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '3' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '3' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '2' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.g' height = '1' width = '1' behavior = '1' y = '5' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.h' height = '1' width = '1' behavior = '1' y = '12' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle13' name = 'puzzle13.enter' height = '1' width = '1' behavior = '3' y = '2' x = '7' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle13.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '3' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle13.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle13.enter").loadMap("puzzle13", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("4.4.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active, but player killed Sierra before giving her that gold.
+        elif (
+            quest("4.4.npc1.quest").status() == "active" and
+            quest("4.4.npc1.quest").update("flag-killed-sierra").status() == "active"
+        )
+        {
+            // Ready to "turn in"
+            npc("npc1").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp1a");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "4.4.npc1.quest"
+
+        #define UPDATE_EXTRA_GOLD "update-extra-gold"
+        #define UPDATE_PICKED_UP_TAB "update-picked-up-tab"
+        #define UPDATE_KILLED_SIERRA "update-killed-sierra"
+        #define UPDATE_KILLED_SIERRA:LIED "update-killed-sierra:lied"
+        #define UPDATE_KILLED_SIERRA:CONFESSED "update-killed-sierra:confessed"
+        #define UPDATE_KILLED_LILY "update-killed-lily"
+        #define UPDATE_DELIVERED_GOLD "update-delivered-gold"
+
+        // If we kill Lily before getting the quest, then we fail the quest and can never collect the gold to share with Sierra
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // way too soon
+            quest(QUEST).status("failed");
+
+            // premature kill update
+            quest(QUEST).update("update-killed-lily-before").status("active");
+        }
+
+        // Also, if we kill Lily before turning in (to confess killing), after having killed Sierra (i.e. can no longer complete via delivery), that&apos;s a failure too.
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Killed Sierra too?  No way to win
+            if ( quest(QUEST).update("flag-killed-sierra").status() == "active" )
+            {
+                quest(QUEST).status("failed");
+
+                // If we delivered gold, then quest would already be complete.
+                // So, we must have killed Sierra without delivering the gold...
+                quest(QUEST).update("update-killed-lily-after-failing-delivery").status("active");
+            }
+
+            else
+            {
+                // Did we pretend to be noble?
+                if ( quest(QUEST).update("update-picked-up-tab").status() == "active" )
+                {
+                    // true colors
+                    quest(QUEST).update("update-killed-lily-during-noble").status("active");
+                }
+
+                else
+                {
+                    // premeditated kill
+                    quest(QUEST).update("update-killed-lily-during").status("active");
+                }
+            }
+        }
+
+        // We can kill Lily after completing quest, too
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we deliver the gold to Sierra at one point?
+            if ( quest(QUEST).update("update-delivered-gold").status() == "active" )
+            {
+                // just an update
+                quest(QUEST).update("update-killed-lily-after").status("active");
+            }
+
+            // No, and now we&apos;ve killed Lily, too!
+            else
+            {
+                quest(QUEST).update("update-killed-lily-after-failing-delivery").status("active");
+            }
+        }
+
+        // We can&apos;t fail the quest unless we kill Lily, and once she&apos;s dead we can&apos;t kill her again...
+        else
+        {
+        }
+
+
+        // always hit flag
+        quest(QUEST).update("flag-killed-lily").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "4.4.npc1.quest"
+
+        #define UPDATE_EXTRA_GOLD "update-extra-gold"
+        #define UPDATE_PICKED_UP_TAB "update-picked-up-tab"
+        #define UPDATE_KILLED_SIERRA "update-killed-sierra"
+        #define UPDATE_KILLED_SIERRA:LIED "update-killed-sierra:lied"
+        #define UPDATE_KILLED_SIERRA:CONFESSED "update-killed-sierra:confessed"
+        #define UPDATE_KILLED_LILY "update-killed-lily"
+        #define UPDATE_DELIVERED_GOLD "update-delivered-gold"
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // maybe we killed Sierra already, but that&apos;s ok here.  Lily doesn&apos;t need to know, we can confess afterward.
+            // maybe I change that later, if I want...
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we kill Sierra?  That&apos;s the worst thing to do
+            if ( quest(QUEST).update("flag-killed-sierra").status() == "active" )
+            {
+                // what happened?!
+                npc("npc1").talk("quest:in-progress:killed-sierra");
+            }
+
+            // Otherwise, we haven&apos;t killed Sierra or delivered gold yet.  nag...
+            // (quest completes immediately on delivery)
+            else
+            {
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we kill Sierra, then confess to it to Lily?
+            // that actually earns us completion
+            if ( quest(QUEST).update(UPDATE_KILLED_SIERRA:CONFESSED).status() == "active" )
+            {
+                // lament
+                npc("npc1").talk("quest:complete:confessed");
+            }
+
+            // Did we kill Sierra but not confess?
+            elif ( quest(QUEST).update(UPDATE_KILLED_SIERRA:LIED).status() == "active" )
+            {
+                // what could have happened?
+                npc("npc1").talk("quest:failed:lied"); // quest is actually complete.  I previously considered lying a "failure" but presently I&apos;m going with "complete."
+            }
+
+            // otherwise, we delivered gold and all went well.
+            // maybe we killed sierra long after, she won&apos;t know the difference (for now?)
+            else
+            {
+                npc("npc1").talk("quest:complete");
+            }
+        }
+
+        // Only way to fail this quest is to kill Lily, and once she&apos;s dead she won&apos;t say anything.
+        else
+        {
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.c")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.g")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.h")
+                   .addHotspot("sleep(1.0)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+</scripts>

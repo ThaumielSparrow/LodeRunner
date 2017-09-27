@@ -1,0 +1,83 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@character-name</parameter>
+		<parameter>@character-level</parameter>
+		<parameter>@time-played</parameter>
+		<parameter>@total-digs</parameter>
+		<parameter>@enemies-killed</parameter>
+		<parameter>@gold-collected</parameter>
+		<parameter>@items-acquired</parameter>
+		<parameter>@gold-spent</parameter>
+		<parameter>@npcs-killed</parameter>
+		<parameter>@quests-completed</parameter>
+		<parameter>@quests-possible</parameter>
+		<parameter>@achievements-completed</parameter>
+		<parameter>@achievements-possible</parameter>
+	</text>
+</parameters>
+
+<template name = 'options.statistics'>
+
+    <rowmenu id = 'menu' class = '' x = '@x' y = '50%' width = '@width' height = '@height' valign = 'center' xcenter-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item id = 'invisible-left-column-option' disabled = '1' />
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label id = 'label' x = '20%' y = '0' width = '85%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'right' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Gameplay Statistics' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1' valign = 'pack'>
+
+            <item disabled = '1' class = 'option' fill = 'always' valign = 'pack'>
+
+                <stack valign = 'pack' fill = 'always' x = '10%' width = '40%' height = '100%'>
+                    <label width = '90%' valign = 'pack' value = 'Character Name:  [color=special]@character-name[/color]' />
+                    <label width = '90%' valign = 'pack' value = 'Character Level:  [color=special]@character-level[/color]' />
+                    <label />
+                    <label width = '90%' valign = 'pack' value = 'Time Played:  [color=special]@time-played[/color]' />
+                    <label />
+                    <label width = '90%' valign = 'pack' value = 'Digs Made:  [color=special]@total-digs[/color]' />
+                    <label width = '90%' valign = 'pack' value = 'Bad Guys Killed:  [color=special]@enemies-killed[/color]' />
+                    <label />
+                    <label width = '90%' valign = 'pack' value = 'Gold Collected:  [color=special]@gold-collected[/color]' />
+                    <label width = '90%' valign = 'pack' value = 'Items Acquired:  [color=special]@items-acquired[/color]' />
+                    <label />
+                    <label />
+                    <label />
+                </stack>
+
+                <stack x = '55%' width = '40%'>
+                    <label width = '90%' valign = 'pack' value = 'Gold Spent:  [color=special]@gold-spent[/color]' />
+                    <label width = '90%' valign = 'pack' value = 'Friendlies Killed:  [color=special]@npcs-killed[/color]' />
+                    <label />
+                    <label width = '90%' valign = 'pack' value = 'Quests Completed:  [color=special]@quests-completed / @quests-possible[/color]' />
+                    <label width = '90%' valign = 'pack' value = 'Achievements Completed:  [color=special]@achievements-completed[/color] / @achievements-possible' />
+                </stack>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

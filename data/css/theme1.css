@@ -1,0 +1,1198 @@
+// Base rules
+* {
+    color: rgb(225, 225, 225);
+    bbcode:
+        [color=dim]rgb(175, 175, 175)[/color],
+        [color=normal]rgb(225, 225, 225)[/color],
+        [color=evil]rgb(225, 75, 225)[/color],
+        [color=header]rgb(175, 175, 175)[/color],
+        [color=warning]rgb(225, 25, 25)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(207, 106, 19)[/color],
+        [color=affordable]rgb(192, 160, 40)[/color],
+        [color=unaffordable]rgb(192, 183, 146)[/color]
+}
+
+
+// Special rules used by chatlines during cooperative mode.
+// There is no real "chatline" widget...
+chatline {
+    color: rgb(225, 225, 225);
+    bbcode:
+        [color=special]rgb(207, 106, 19)[/color]
+}
+
+
+*:xactive {
+    bbcode:
+        [color=dim]rgb(175, 75, 75)[/color],
+        [color=normal]rgb(225, 225, 225)[/color],
+        [color=evil]rgb(25, 15, 105)[/color],
+        [color=header]rgb(175, 175, 175)[/color],
+        [color=warning]rgb(225, 25, 125)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(192, 160, 40)[/color]
+}
+
+.inactive-maybe {
+    bbcode:
+        [color=dim]rgb(75, 75, 75)[/color],
+        [color=normal]rgb(175, 175, 175)[/color],
+        [color=evil]rgb(25, 75, 125)[/color],
+        [color=header]rgb(75, 75, 75)[/color],
+        [color=warning]rgb(25, 225, 225)[/color],
+        [color=highlight]rgb(225, 25, 25)[/color],
+        [color=lowlight]rgb(175, 175, 175)[/color],
+        [color=headerx]rgb(45, 45, 45)[/color],
+        [color=special]rgb(225, 225, 225)[/color]
+}
+
+
+// Standard rowmenu group, generic border
+rowmenu, hmenu, hpane.bordered {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+    shadow: rgb(25, 25, 25);
+    shadow-size: 2;
+}
+
+
+// Main menu style stuff
+.main-menu {
+    color: rgb(155, 155, 155);
+}
+
+    .main-menu box.header {
+        margin-bottom: 0;
+    }
+
+        .main-menu .backdrop .header {
+            gradient: "left-to-right";
+            gradient-start: rgb(35, 35, 35);
+            gradient-end: rgb(25, 25, 25);
+            background-alpha: 0.85;
+        }
+
+        .main-menu .backdrop icon.z {
+            color: rgb(225, 225, 225);
+        }
+
+    .main-menu box.title {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .main-menu box.subtitle {
+        margin-top: 0;
+        margin-bottom: 10;
+        padding: 0;
+        color: rgb(175, 175, 175);
+    }
+
+
+    .main-menu box.title:active, .main-menu box.first-title:active {
+        color: rgb(207, 106, 19);
+    }
+
+
+// hpane style data?
+hpane.bordered {
+    border-size: 0;
+    shadow-size: 0;
+}
+
+    hpane.bordered * {
+        border-size: 3;
+        shadow-size: 2;
+    }
+
+    // Alerts (e.g. Are you sure?) have a slightly lighter border
+    rowmenu.alert {
+        border: rgb(125, 125, 125);
+        shadow: rgb(75, 75, 75);
+    }
+
+    // Give tooltip rowmenus some padding
+    rowmenu.tooltip .prompt {
+        padding: 10;
+    }
+
+
+// Tooltips
+.tooltip {
+    border: rgb(207, 106, 19);
+}
+
+    .tooltip box {
+        padding-left: 20;
+        padding-right: 20;
+        padding-top: 10;
+        padding-bottom: 10;
+    }
+
+
+$ .options tooltip, $ tooltip.continue-game {
+    color: rgb(225, 225, 225);
+
+    border-size: 2;
+    shadow-size: 1;
+
+    border: rgb(155, 155, 155);
+    shadow: rgb(75, 75, 75);
+
+    padding-left: 10;
+    padding-right: 10;
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+
+// These cascade from rowmenu already, but what the heck **
+rowmenu group {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+    shadow: rgb(25, 25, 25);
+    shadow-size: 2;
+    padding-bottom: 0;//10;
+}
+
+// By default, any RECT within a rowmenu functions as a "header background" (i.e. for window title bar)
+rowmenu group rect {
+    gradient: "left-to-right";
+    gradient-start: rgb(175, 175, 175);
+    gradient-end: rgb(125, 125, 125);
+    //background-alpha: 0.25;
+}
+
+
+// Title bar styling
+*.title-bar {
+    gradient: "left-to-right";
+    gradient-start: rgb(255, 255, 255);
+    gradient-end: rgb(175, 175, 175);
+    background-alpha: 0.8;
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+
+// Give a little padding to an HMenu's contents
+hmenu {
+    padding-top: 5;
+    padding-bottom: 10;
+    gradient: "top-to-bottom";
+    gradient-start: rgb(75, 75, 75);
+    gradient-end: rgb(25, 25, 25);
+    color: rgb(125, 125, 125);
+    shadow-size: 1;
+    border-size: 2;
+    background-alpha: 0.8;
+    border: rgb(125, 125, 125);
+    shadow: rgb(85, 85, 85);
+}
+
+    // Pause menu navbar has some side padding
+    hmenu.navbar {
+        padding-left: 20;
+        padding-right: 20;
+
+        margin-bottom: 20;
+    }
+
+        hmenu.skills-navbar {
+            padding-left: 50;
+            padding-right: 50;
+        }
+
+        hmenu.inventory-navbar {
+            padding-left: 50;
+            padding-right: 50;
+        }
+
+    // boxs within a navbar have no padding
+    hmenu.navbar box {
+        padding: 0;
+    }
+
+    // Brighter default color for active HMenu
+    hmenu:active {
+        //gradient-start: rgb(245, 245, 245);
+        //gradient-end: rgb(225, 225, 225);
+        color: rgb(205, 205, 205);
+        border: rgb(157, 86, 9);
+        shadow: rgb(107, 56, 5);
+    }
+
+
+    // Make sure the "active" widget in an inactive HMenu has a distinguished color
+    hmenu *.cursor {
+        color: rgb(175, 175, 175);
+    }
+
+    // If the HMenu itself is active, the "active" widget has a different (more prominent) color
+    hmenu:active *.cursor {
+        color: rgb(207, 106, 19);
+    }
+
+        // Dim the icon a bit, though...
+        hmenu:active *.cursor icon {
+            color: rgb(157, 86, 9);
+        }
+
+
+//debug
+rect.debug {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 25, 25);
+    gradient-end: rgb(225, 225, 25);
+}
+
+
+// Audio settings
+$ rect.volume {
+    gradient: "left-to-right";
+    gradient-start: rgb(125, 125, 125);
+    gradient-end:   rgb(207, 106, 19);
+}
+
+
+// debug
+rect.hr-left {
+    gradient: "left-to-right";
+    gradient-start: rgb(125, 125, 125);
+    gradient-end: rgb(225, 225, 225);
+    padding-top: 5;
+    padding-bottom: 5;
+}
+
+rect.hr-right {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 225, 225);
+    gradient-end: rgb(55, 55, 55);
+    padding-top: 5;
+    padding-bottom: 5;
+}
+
+
+$ rect.underline {
+    gradient: "left-to-right";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(225, 225, 225);
+    margin-top: 5;
+    margin-bottom: 5;
+    background-alpha: 0.75;
+}
+
+    $ .option rect.underline-subtle {
+        gradient: "left-to-right";
+        gradient-start: rgb(5, 5, 5);
+        gradient-end: rgb(125, 125, 125);
+        margin-top: 5;
+        margin-bottom: 0;
+        background-alpha: 0.75;
+    }
+
+    $ rect.mainmenu-overline {
+        gradient: "left-to-right";
+        gradient-start: rgb(5, 5, 5);
+        gradient-end: rgb(225, 225, 225);
+        margin-top: 0;
+        margin-bottom: 5;
+        background-alpha: 0.75;
+    }
+
+        $ rect.mainmenu-underline {
+            gradient: "left-to-right";
+            gradient-start: rgb(5, 5, 5);
+            gradient-end: rgb(225, 225, 225);
+            margin-top: 5;
+            margin-bottom: 0;
+            background-alpha: 0.75;
+        }
+
+rect.contrast-separator {
+    gradient: "left-to-right";
+    gradient-start: rgb(125, 125, 125);
+    gradient-end: rgb(82, 55, 20);
+    padding-top: 0;
+    padding-bottom: 0;
+    background-alpha: 0.75;
+}
+
+rect.xunderline {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 25, 25);
+    gradient-end: rgb(25, 225, 25);
+}
+
+
+// Wave progress chart styles
+.progress-chart {
+    gradient: "left-to-right";
+    gradient-start: rgb(0, 0, 0);
+    gradient-end: rgb(0, 0, 0);
+    border-size: 0;
+    shadow-size: 0;
+}
+
+    // Header for the title bar (e.g. "Gold Needed")
+    .progress-chart-item .header {
+        color: rgb(195, 195, 195);
+        padding-bottom: 5;
+    }
+
+    // A border around the progress bar
+    .progress-chart-item rect.progress-bar-border {
+        gradient: "left-to-right";
+        gradient-start: rgb(175, 175, 175);
+        gradient-end: rgb(175, 175, 175);
+    }
+
+    // The background behind a not-filled progress bar
+    .progress-chart-item rect.progress-bar-background {
+        padding-left: 3;
+        padding-right: 3;
+        padding-top: 2;
+        padding-bottom: 2;
+        gradient: "left-to-right";
+        gradient-start: rgb(75, 75, 75);
+        gradient-end: rgb(55, 55, 55);
+    }
+
+    // Gradient and a little padding on each size of the progress bar itself
+    .progress-chart-item rect.progress-bar-allowance, .progress-chart-item rect.progress-bar-requirement, .progress-chart-item rect.progress-bar-limit {
+        padding-left: 3;
+        padding-right: 3;
+        padding-top: 2;
+        padding-bottom: 2;
+        gradient: "left-to-right";
+    }
+
+        .progress-chart-item rect.progress-bar-allowance {
+            gradient-start: rgb(43, 102, 166);
+            gradient-end: rgb(55, 133, 215);
+        }
+
+        .progress-chart-item rect.progress-bar-requirement {
+            gradient-start: rgb(102, 80, 20);
+            gradient-end: rgb(192, 160, 40);
+        }
+
+        .progress-chart-item rect.progress-bar-limit {
+            gradient-start: rgb(154, 33, 6);
+            gradient-end: rgb(225, 25, 25);
+        }
+
+
+    // Gradient and a little padding on each size of the progress bar itself
+    .progress-chart-item rect.progress-bar2 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        gradient: "left-to-right";
+        gradient-start: rgb(225, 25, 25);
+        gradient-end: rgb(225, 225, 25);
+    }
+
+
+// Color the keyboard the appears on screen for save game and such
+keyboard {
+    border: rgb(207, 106, 19);//rgb(175, 175, 175);
+    border-size: 3;
+    shadow: rgb(157, 56, 9);
+    shadow-size: 2;
+    background-alpha: 0.75;
+    //color: rgb(225
+}
+
+
+// Unnecessary?
+.header label {
+    padding: 0;
+}
+
+
+// A group of responses (which typically also contains a header element)
+group.responses box label {
+}
+
+    // Give a respectable bottom margin to the header
+    group.responses box.header {
+        margin-bottom: 10;
+    }
+
+    // Generic rows (the responses, typically) will have a subtle margin as well
+    group.responses box {
+        margin-bottom: 10;
+    }
+
+
+    // Dim the subtitle for these responses
+    group.responses box label.subtitle {
+        color: rgb(125, 125, 125);
+    }
+
+    // Highlight main text on cursor
+    group.responses box label:active {
+        color: rgb(207, 106, 19);
+    }
+
+        // Brighten subtitle a bit on cursor
+        group.responses box label.subtitle:active {
+            color: rgb(175, 175, 175);
+        }
+
+
+
+.pause-menu {
+}
+
+    // Make sure all boxs have a border/shadow size by default
+    .pause-menu rowmenu group box {
+        border-size: 3;
+        shadow-size: 2;
+        margin-bottom: 5;
+    }
+
+    // Set up default border/shadow coloring for pause menu (it uses this styling data to frame each option within each tab)
+    .pause-menu rowmenu {
+        border: rgb(75, 75, 75);
+        border-size: 3;
+        shadow: rgb(25, 25, 25);
+        shadow-size: 2;
+    }
+
+
+    // A little extra margin under each grid option
+    .pause-menu rowmenu box.option {
+        margin-bottom: 15;
+    }
+
+
+    // The border will look different while active
+    .pause-menu rowmenu:active box:active {
+        border: rgb(207, 106, 19);
+        //color: rgb(207, 106, 19);
+    }
+
+
+    // Default grid styling
+    .pause-menu rowmenu {
+        color: rgb(115, 115, 115);
+
+        bbcode:
+            [color=title]rgb(185, 185, 185)[/color],
+            [color=special]rgb(185, 185, 185)[/color]
+    }
+
+        // Default active grid styling
+        .pause-menu rowmenu:active {
+            color: rgb(225, 225, 225);
+
+            bbcode:
+                [color=title]rgb(192, 160, 40)[/color],
+                [color=special]rgb(192, 160, 40)[/color]
+        }
+
+            // Title appears livelier in the active box of an active grid
+            .pause-menu rowmenu:active box:active {
+                bbcode:
+                    [color=title]rgb(207, 106, 19)[/color]
+            }
+
+                // Icons light up when their box is selected in an active grid
+                .pause-menu rowmenu:active box:active icon {
+                    color: rgb(157, 76, 9);
+                }
+
+
+// The grid of skill trees (that lets you pick from all of the categories)
+// has some special styling rules.  Default to dim colors (not focused)
+.skills {
+    color: rgb(145, 145, 145);
+
+    bbcode:
+        [color=skill]rgb(185, 185, 185)[/color],
+        [color=category]rgb(185, 185, 185)[/color]
+}
+
+    // special colors for the boxs
+    .skills box.wrapper {
+        bbcode:
+            [color=special]rgb(175, 175, 175)[/color]
+    }
+
+        // Active box lights up
+        .skills box.wrapper:active {
+            bbcode:
+                [color=special]rgb(207, 106, 19)[/color]
+        }
+
+    // Disabled buttons will appear dim
+    .skills box:disabled {
+        color: rgb(75, 75, 75);
+
+        bbcode:
+            [color=locked]rgb(125, 125, 125)[/color],
+            [color=skill]rgb(125, 125, 125)[/color]
+    }
+
+    // A little bit of extra padding between the skill title and the status
+    .skills .byline {
+        padding-bottom: 5;
+    }
+
+
+    .skills-directory box:active {
+        border: rgb(207, 106, 19);
+        shadow: rgb(107, 59, 9);
+    }
+
+
+    .skills-directory box.wrapper {
+        margin-bottom: 10;
+    }
+
+
+
+// When focused, the skills grid brightens up, comes to life
+grid.skills:active {
+    color: rgb(225, 225, 225);
+
+    bbcode:
+        [color=skill]rgb(192, 160, 40)[/color],
+        [color=category]rgb(192, 160, 40)[/color]
+}
+
+    // Disabled grid cells (not unlocked, or whatever) still look dim, albeit less dim... all black-and-white
+    grid.skills:active box:disabled {
+        color: rgb(125, 125, 125);
+
+        bbcode:
+            [color=locked]rgb(175, 175, 175)[/color],
+            [color=skill]rgb(175, 175, 175)[/color]
+    }
+
+    // The active cursor selection is the liveliest
+    grid.skills:active box:active {
+        bbcode:
+            [color=skill]rgb(207, 106, 19)[/color],
+            [color=category]rgb(207, 106, 19)[/color]
+    }
+
+
+    // Icons light up when their box is selected in an active grid
+    grid.skills:active box:active icon {
+        color: rgb(157, 76, 9);
+    }
+
+
+
+// Active prompts (e.g. press ENTER to talk to so-and-so) will have a modified appearance...
+.prompt, .trigger-tooltip {
+    border: rgb(125, 125, 125);
+    border-size: 2;
+    shadow: rgb(55, 55, 55);
+    shadow-size: 2;
+    padding-top: 5;
+    padding-bottom: 5;
+}
+
+
+// Icons within headers should have "high contrast" (appear dark in the light header)
+box.header icon, .title-bar icon {
+    color: rgb(25, 25, 25);
+}
+
+    .xtitle-bar label {
+        color: rgb(225, 225, 225);
+    }
+
+// Sometimes I just want to give a little extra padding (a line break, essentially) after an item
+.line-break {
+    padding-bottom: 15;
+}
+
+.double-space {
+    margin-bottom: 15;
+}
+
+.spacer {
+    padding-bottom: 5;
+}
+
+    group.spacer {
+        margin-bottom: 5;
+    }
+
+
+// frame stacks should have a border
+stack.frame {
+    border-size: 3;
+    shadow-size: 2;
+}
+
+
+
+// Theme data for the "load game" and "save game" menus
+.saved-game-directory box.saved-game {
+    padding: 0;
+    margin: 10;
+}
+
+    .saved-game-directory stack.frame {
+        border-size: 3;
+        shadow-size: 2;
+    }
+
+    // Highlight border, text on mouseover
+    .saved-game-directory box.saved-game:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+
+    // Always a little padding for the thumbnail
+    .saved-game-directory box.saved-game graphic {
+        padding: 15;
+    }
+
+
+    // Give a bit of spacing to the groups that hold just a header (e.g. Custom Saves (23))
+    .saved-game-directory group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+
+    // The load/save screens have a autosave / newsave box that shows a thumbnail and a button.
+    // These selectors, .byline and .stats, format the text within the button
+    .saved-game .byline {
+        padding-top: 10;
+        padding-bottom: 20;
+        margin: 0;
+    }
+
+    .saved-game .stats {
+        color: rgb(225, 225, 225);
+    }
+
+
+// Theme data for the inventory directory menu
+.inventory-directory box.link {
+    //margin: 10;
+    padding-top: 5;
+    padding-bottom: 5;
+
+    margin-bottom: 10;
+
+    border-size: 3;
+    shadow-size: 2;
+}
+
+    // Highlight border, text on mouseover
+    .inventory-directory box.link:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+        // Except, I want the tooltip text to remain normal
+        .inventory-directory box.link:active tooltip {
+            color: rgb(225, 225, 225);
+            border: rgb(155, 155, 155);
+            shadow: rgb(75, 75, 75);
+        }
+
+    // Spacing for the section headers
+    .inventory-directory group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+
+    // Tooltips
+    .inventory-directory tooltip {
+        margin-bottom: 5;
+    }
+
+        .inventory-directory group box tooltip box {
+            border-size: 3;
+            shadow-size: 2;
+
+            padding-left: 10;
+            padding-right: 10;
+        }
+
+    // Upgrade insert tooltip
+    $ tooltip.upgrade {
+        padding: 10;
+        border-size: 3;
+        shadow-size: 2;
+        color: rgb(225, 225, 225);
+    }
+
+
+// Theme data for shopping directories
+.shop-directory {
+}
+
+    // tooltips
+    .shop-directory .options tooltip {
+        color: rgb(225, 225, 225);
+    }
+
+        .shop-directory .options tooltip {
+            border-size: 3;
+            shadow-size: 2;
+
+            padding-left: 10;
+            padding-right: 10;
+            padding-top: 10;
+        }
+
+        .xshop-directory .options tooltip rect {
+            gradient: "left-to-right";
+            gradient-start: rgb(225, 5, 5);
+            gradient-end: rgb(25, 25, 225);
+        }
+
+
+// Theme data for the quest directory menu
+.quest-directory box.link {
+    padding: 0;
+    padding-top: 10;
+    padding-bottom: 10;
+
+    margin: 10;
+
+    border-size: 3;
+    shadow-size: 2;
+
+    bbcode:
+        [color=special]rgb(175, 175, 255)[/color],
+        [color=unused]rgb(175, 175, 175)[/color]
+}
+
+    // Highlight border, text on mouseover
+    .quest-directory box.link:active {
+        border: rgb(207, 106, 19);
+        color: rgb(225, 225, 225);
+    }
+
+        .quest-directory box.link:active * {
+            bbcode:
+                [color=special]rgb(207, 106, 19)[/color],
+                [color=dim]rgb(207, 106, 19)[/color]
+        }
+
+    // Spacing for the section headers
+    .quest-directory group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+    // debug
+    .quest-directory graphic {
+        padding: 0;
+        margin: 0;
+    }
+
+
+// Inactive / otherwise-disabled theme data for the skill tree menu (showing 2 skills)
+.skill-tree-directory box.skill {
+    //padding: 0;
+    //margin: 10;
+    color: rgb(125, 125, 125);
+}
+
+    // A little spacing between rows
+    .skill-tree-directory box.link {
+        padding: 0;
+        margin: 0;
+
+        padding-top: 5;
+
+        border-size: 3;
+        shadow-size: 2;
+    }
+
+        // Highlight border / text on cursor
+        .skill-tree-directory box.link:active {
+            border: rgb(207, 106, 19);
+            color: rgb(207, 106, 19);
+        }
+
+    // Spacing for section headers
+    .skill-tree-directory group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+    // Locked / otherwise unavailable skills will appear dimmed out (dim colors)
+    .skill-tree-directory box.disabled {
+        color: rgb(105, 105, 105);
+
+        bbcode:
+            [color=special]rgb(145, 145, 145)[/color]
+    }
+
+
+// The active skill directory will render most items in full color
+.skill-tree-directory:active box.skill {
+    padding: 0;
+    margin: 10;
+}
+
+    // Spacing for section headers
+    .skill-tree-directory:active group.header {
+        padding-top: 15;
+        padding-bottom: 5;
+    }
+
+
+    // Locked / otherwise unavailable skills will always appear dimmed out (dim colors)
+    .skill-tree-directory:active box.disabled {
+        color: rgb(105, 105, 105);
+
+        bbcode:
+            [color=special]rgb(145, 145, 145)[/color]
+    }
+
+
+// Worldmap style stuff
+.worldmap-directory {
+}
+
+    // Margin after the map itself
+    .worldmap-directory .map-wrapper {
+        margin-bottom: 10;
+    }
+
+    // The various items in the buttons section need some space
+    .worldmap-directory .buttons box.button {
+        padding-top: 10;
+        padding-bottom: 10;
+
+        margin-bottom: 10;
+    }
+
+    // The active button has a highlighted border / text
+    .worldmap-directory:active box:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+
+// The worldmap "views" selector has a few style points
+.worldmap-views {
+}
+
+    .worldmap-views group {
+        padding-bottom: 10;
+    }
+
+    // Define default gradient data for when we highlight a given box (i.e. active fill)
+    .worldmap-views box.option {
+        gradient: "left-to-right";
+        gradient-start: rgb(175, 175, 175);
+        gradient-end: rgb(175, 175, 175);
+        background-alpha: 0.25;
+        padding-bottom: 5;
+        margin-bottom: 10;
+        color: rgb(175, 175, 175);
+    }
+
+        // Bright base color for active option
+        .worldmap-views box.option:active {
+            color: rgb(225, 225, 225);
+            padding-left: 5;
+        }
+
+    // Spacing for the title
+    .worldmap-views stack .title {
+        padding-top: 5;
+        padding-bottom: 5;
+        //margin-bottom: 10;
+    }
+
+        // Make the text in an active title light up
+        .worldmap-views stack .title:active {
+            color: rgb(207, 106, 19);
+        }
+
+        // I want to diminish the padding on hr rectangle stripes in the views
+        .worldmap-views .hr-left, .worldmap-views .hr-right {
+            padding-top: 0;
+            padding-bottom: 2;
+        }
+
+
+// Standard dialogue widget style
+.dialogue {
+}
+
+    // Tooltips within a dialogue
+    .dialogue .options tooltip {
+        border-size: 3;
+        shadow-size: 2;
+
+        padding: 10;
+        color: rgb(225, 225, 225);
+    }
+
+        .dialogue .options .option tooltip icon {
+            color: rgb(255, 230, 150);
+        }
+
+
+// debug
+.frame group {
+    padding: 20;
+}
+
+.borderless-frame {
+    border-size: 0;
+    shadow-size: 0;
+}
+
+    .borderless-frame group {
+        padding: 20;
+    }
+
+// Common use frame, add a little padding is all
+.frame {
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+
+// Generic button class (e.g. "Back to Main Menu" on load/save game screens)
+box.button {
+    padding-top: 10;
+    padding-bottom: 10;
+
+    border-size: 3;
+    shadow-size: 2;
+}
+
+    // Highlight border / text when selected
+    box.button:active {
+        border: rgb(207, 106, 19);
+        color: rgb(207, 106, 19);
+    }
+
+
+
+// In a save/load directory, the thumbnail preview area should have some padding
+.preview {
+    padding-bottom: 10;
+    border: rgb(25, 25, 25);
+}
+
+    // Also give the ... ???
+    .preview rect {
+        gradient: "left-to-right";
+        gradient-start: rgb(175, 175, 175);
+        gradient-end: rgb(175, 175, 175);
+    }
+
+
+// debug
+.color1 {
+    color: rgb(25, 225, 25);
+}
+.group1 {
+    border: rgb(25, 25, 225);
+    border-size: 2;
+}
+
+
+.my-items-wrapper {
+    padding-left: 20;
+    padding-right: 20;
+}
+
+
+
+// debug
+box.header {
+    gradient: "left-to-right";
+    gradient-start: rgb(255, 255, 255);
+    gradient-end: rgb(175, 175, 175);
+    background-alpha: 0.8;
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+
+// debug
+.separator {
+    margin-bottom: 10;
+}
+
+    .separator rect {
+        gradient: "left-to-right";
+        gradient-start: rgb(75, 75, 75);
+        gradient-end: rgb(75, 75, 75);
+    }
+
+// debug
+rect.debug {
+    gradient: "left-to-right";
+    gradient-start: rgb(225, 75, 75);
+    gradient-end: rgb(225, 75, 75);
+}
+
+
+
+//box.debug1 {
+//    gradient: "left-to-right";
+//    gradient-start: rgb(225, 225, 225);
+//    gradient-end: rgb(225, 225, 225);
+//    background-alpha: 0.75;
+//}
+
+
+// Debug-ish
+.options {
+    margin-bottom: 5;
+}
+
+    .options .title-bar {
+        margin-bottom: 10;
+    }
+
+    .options box.option {
+        gradient: "left-to-right";
+        gradient-start: rgb(175, 175, 175);
+        gradient-end: rgb(175, 175, 175);
+        background-alpha: 0.25;
+        padding-top: 5;
+        padding-bottom: 5;
+        margin-top: 3;
+        margin-bottom: 3;
+        color: rgb(175, 175, 175);
+    }
+
+
+        // Tooltips within an option should not have
+        // the same background color.
+        .options box.option tooltip {
+            gradient-start: rgb(25, 25, 25);
+            gradient-end: rgb(25, 25, 25);
+        }
+
+
+        // Bright base color for active option
+        .options box.option:active {
+            color: rgb(207, 106, 19);
+            border: rgb(207, 106, 19);
+            //padding-left: 5;
+        }
+
+            // Labels within an active option (e.g. dialogue responses) will "indent" a little bit, just for visual flair.
+            .options box.option:active label {
+                padding-left: 5;
+            }
+
+                // Sometimes we might not want to do the "indent active item" thing...
+                .options box.option:active .no-indent * {
+                    padding-left: 0;
+                }
+
+            // An active icon should not appear quite as bright
+            .options box.option:active icon:active {
+                color: rgb(157, 86, 9);
+            }
+
+                // Special "lode runner dude" icons should always be white-ish
+                .options .option icon.lode-runner:active {
+                    color: rgb(225, 225, 225);
+                }
+
+        // Subtitle styles
+        .options .option .subtitle {
+            color: rgb(125, 125, 125);
+        }
+
+            // Brighten subtitle a bit on cursor
+            .options .option .subtitle:active {
+                color: rgb(205, 205, 205);
+            }
+
+        // Disabled options appear pretty dim
+        .options .option .disabled {
+            color: rgb(105, 105, 105);
+        }
+
+            // Maybe brighten it very slightly on cursor
+            .options .option .disabled:active {
+                color: rgb(125, 125, 125);
+            }
+
+        // Certain special options have a fancy coloring
+        .options .option .special {
+            color: rgb(255, 230, 150);
+        }
+
+            // Light up on cursor
+            .options .option .special:active {
+                color: rgb(192, 160, 40);
+            }
+
+
+// Some newsfeeder item style data
+.news .frame {
+    //margin-top: 10;
+    margin-left: 5;
+}
+
+.news .frame {
+    padding-top: 10;
+    //padding-left: 5;
+}
+
+    .news .frame label.subtitle {
+        color: rgb(175, 175, 175);
+    }
+
+
+// (HPane) divider rect, kind of rarely used
+rect.divider {
+    gradient: "top-to-bottom";
+    gradient-start: rgb(5, 5, 5);
+    gradient-end: rgb(175, 175, 175);
+}
+
+
+// Generic content pane (padding inside)
+.content {
+    padding-top: 10;
+    padding-bottom: 10;
+    padding-left: 5;
+    padding-right: 5;
+}
+
+
+// debug
+.faq {
+    border: rgb(35, 35, 35);
+    shadow: rgb(25, 25, 25);
+    color: rgb(125, 125, 125);
+}
+
+
+
+
+
+// debug
+//.pause-menu .skills .min1 {
+//    border: rgb(225, 25, 25);
+//    border-size: 15;
+//}

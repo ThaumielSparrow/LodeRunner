@@ -1,0 +1,365 @@
+<scripts>
+    <script name = 'global.collect-tithe'>
+        addHistoricalRecord("tithes", "Collected a tithe...");
+            debug("script running... global.collect-tithe");
+    </script>
+    <script name = 'global.test1'>
+        addHistoricalRecord("test", "Ran global.test1");
+            debug("script running... global.test1");
+    </script>
+    <script name = 'global.news'>
+        postNewsItem(
+            "Global News",
+            "Entering new level..."
+        );
+    </script>
+    <script name = 'global.map.onload'>
+
+        // Because the player can use the main menu (outside of this universe) to
+        // customize a control (which should satisfy the "I am in Control" achievement),
+        // we'll check on each map load to see if we should "pop" that achievement (e.g. when they start/resume game).
+        if ( hasEditedControls() )
+        {
+            // Execute the achievement hook
+            universe().executeAchievementHook("previously-customized-controls");
+        }
+
+
+        // Any merchant on the active map should import the "tax collection" global conversation,
+        // in case they need it for that particular quest...
+        each( npcsByClass("merchant potential-merchant") )
+        {
+            // Import tax conversation
+            this.importConversation("global.tax");
+        }
+
+        // Does the current map have one or more vending machines?
+        if ( npcsByClass("bomb-vending-machine").count() &gt; 0 )
+        {
+debug( "This map has vending machines!" );
+            // The current map must import the global bomb-machine.shop script
+            map().importScript("global.bomb-machine.shop");
+
+            // The first bomb machine should import the "bomb machine shopping" conversation.
+            // Any other bomb machine's trigger will use this single conversation, so we'll always just use the first machine as the "speaker."
+            each( npcsByClass("bomb-vending-machine").slice(0,1) )
+            {
+                // Import shopping conversation
+                this.importConversation("global.bomb-machine.shop");
+                this.importConversation("global.bomb-machine.shop:discount");
+debug( "....Importing shop conversation!" );
+            }
+        }
+
+debug( "player name... ", map().getName(), session("core.player.entered-name").get() );
+
+        // If the player hasn't provided a name yet, then any "talk" trigger should insert
+        // the global "what's your name" script before its "npc#.talk" script...
+        if (
+            session("core.player.entered-name").get() != "yes"
+        )
+        {
+debug("Must ask for name...");
+            // The current map must import the ask-for-name script
+            map().importScript("global.story.ask-for-name");
+
+            // Loop triggers
+            each( triggersByClass("talk") )
+            {
+debug("...add to trigger...");
+                // Insert hover script
+                this.insertHoverScript(0, "global.story.ask-for-name");
+            }
+        }
+    </script>
+    <script name = 'global.map.load.complete'>
+
+        debug( "looping doors on map:  ", map().getName() );
+
+        // Loop all "door" triggers (class == "door") 
+        each( triggersByClass("door") )
+        {
+            // Validate the need for the door
+            this.validatePuzzleEntrance();
+        }
+
+    </script>
+    <script name = 'global.map.onvisit'>
+        //universe().runScript("global.news");
+        // onvisit fires after onload on an active map, so we have the global conversation imported
+        // and all map memory ready to go.  Now, we want to see if we still need to select one of the
+        // "tax collection" lines at random to use.  (Each merchant only uses one...)
+        each( npcsByClass("merchant potential-merchant") )
+        {
+            if ( this.conversation("global.tax").branch("root").getLinesByClass("request-tax").countActive() > 1 )
+            {
+                // Only one chance to request the tax from each merchant.  Use any line at random
+                this.conversation("global.tax").branch("root").getLinesByClass("request-tax").disable();
+                this.conversation("global.tax").branch("root").getLinesByClass("request-tax").selectRandom(1).enable();
+            }
+        }
+
+        // If this is town map, then update the last-visited town data (for respawning in town after death)
+        if ( progress().map(map().getName()).hasClass("town") )
+        {
+            // Update last visited town map
+            session("core.last-safe-zone.map").set(
+                map().getName()
+            );
+
+            // Update with proper town title
+            session("core.last-safe-zone.title").set(
+                progress().map( map().getName() ).getTitle()
+            );
+
+debug( "Visited a town... ", map().getName() );
+
+            // If the player has unlocked the "I am in Control" achievement, then we'll disable
+            // any "you haven't done it" nags and enable the opposite nags.
+            if ( hasEditedControls() )//achievement("im-in-control").isComplete() )
+            {
+                // Loop all NPCs
+                each( npcsByClass("npc") )
+                {
+                    // Disable "you didn't customize" lines for ALL conversations this NPC uses...
+                    this.getAllLinesByClass("controls-uncustomized").disable().lock();
+
+                    // Enable any "you did customize" lines
+                    this.getAllLinesByClass("controls-customized").enable();
+                }
+            }
+
+            // Opposite logic...
+            else
+            {
+//debug( "Controls NOT customized..." );
+                // Loop all NPCs
+                each( npcsByClass("npc") )
+                {
+//debug( "npc looped..." );
+                    // Enable "you didn't customize" lines for ALL conversations this NPC uses...
+                    this.getAllLinesByClass("controls-uncustomized").enable();
+
+                    // Disable any "you did customize" lines
+                    this.getAllLinesByClass("controls-customized").disable().lock();
+                }
+            }
+
+        }
+
+        // Until the player reaches the first down, we want to slow enemy movement
+        // speed to make the introductory levels a little easier at first...
+        if ( session("training.complete").get() == 0 )
+        {
+            // Scale to a lower base speed.
+            // My parser doesn't parse floats correctly, and this is quite possibly the only time I use a float for a parameter, so I'm hacking it into a string...
+            map().scaleEnemiesSpeed("0.75");
+        }
+
+        else
+        {
+            map().scaleEnemiesSpeed("1.0");
+        }
+
+
+        // Keep player color up-to-date
+        //player().colorify(
+        //    session("core.player1.colors").get("unwrapped") // Don't return quotes on string (hack)
+        //);
+    </script>
+    <script name = 'map.first-visit'>
+
+        // We visited a new map
+        session("worldmap.count.visited").increment(1);
+
+        // Update human readable percentage
+        session("6.2.npc2.quest:percent-visited").set(
+            progress().getMapsByClass("overworld").getPercentVisited()
+        );
+
+        // If we've visited all maps, then we've completed 6.2. Dani's map quest,
+        // and we can turn it in.  (Flag this even if we never accepted the quest.)
+        //if ( session("worldmap.count.visited").get("integer") &gt;= session("worldmap.count.total").get("integer") )
+        if ( progress().getMapsByClass("overworld").countVisited() &gt;= progress().getMapsByClass("overworld").count() )
+        {
+            // flag update
+            quest("6.2.npc2.quest").update("update-completed-map").status("active");
+debug( "You have now visited all maps!" );
+        }
+else
+{
+    debug( "You have not yet visited all maps.", progress().getMapsByClass("overworld").countVisited(), "/", progress().getMapsByClass("overworld").count() );
+}
+
+
+        // Hack in an autosave call
+        // to make sure the worldmap.count.visited counter
+        // stays in sync with the automatic autosave that occurs on every map change.
+        autosave();
+
+    </script>
+
+    <script name = 'npc.ondeath'>
+
+        // One less among the living NPCs
+        session("npc.count.living").increment(-1);
+        session("npc.count.dead").increment(1);
+
+        // Is Willy's kill em all quest active?
+        if ( quest("5.2.npc1.quest").status() == "active" )
+        {
+            // If we just killed the last NPC, then we just completed the quest
+            if ( session("npc.count.living").get("integer") &lt;= 0 )
+            {
+                // quest complete
+                quest("5.2.npc1.quest").status("complete");
+
+
+                // Global script runs first, but I want "finished Willy" update to appear first, so I'm just going
+                // to manually call it here.  We'll redundantly call it again in local ondeath script, but that's ok, it doesn't duplicate
+                quest("5.2.npc1.quest").update("update-killed-willy-after").status("active");
+
+                // final update
+                quest("5.2.npc1.quest").update("update-done").status("active");
+            }
+
+            // If only one is left, then perhaps we've killed everyone except Willy
+            elif ( session("npc.count.living").get("integer") == 1 )
+            {
+                // We didn't kill him prematurely, did we?
+                if ( quest("5.2.npc1.quest").update("flag-killed-willy").status() != "active" )
+                {
+                    // Ok, he's the last one left.  Update quest...
+                    quest("5.2.npc1.quest").update("update-almost-done").status("active");
+                }
+            }
+        }
+    </script>
+    <script name = 'merchant.ondeath'>
+
+        // One less among the living merchants
+        session("merchant.count.living").increment(-1);
+        session("merchant.count.dead").increment(1);
+
+        // Have we killed all of the merchants at this point?
+        if ( session("merchant.count.living").get("integer") == 0 )
+        {
+            // Flag update for Han's quest
+            quest("6.5.npc1.quest").update("update-killed-all-merchants").status("active");
+        }
+
+    </script>
+    <script name = '2.3.npc1:collect-tithe'>
+
+        // Increase player gold by tithe amount
+        player().addGold(
+            session("2.3.npc1:tithe-amount").get()
+        );
+
+        // Track collect tithe total
+        session("2.3.npc1:tithes-collected").increment(1);
+
+        // First tithe?
+        if ( session("2.3.npc1:tithes-collected").equals(1) )
+        {
+            // Flag first update
+            quest("2.3.npc1.quest").update("update-collected-1").status("active");
+        }
+
+        // Second?
+        elif ( session("2.3.npc1:tithes-collected").equals(2) )
+        {
+            // Flag second update
+            quest("2.3.npc1.quest").update("update-collected-2").status("active");
+        }
+
+        // Third and final?
+        elif ( session("2.3.npc1:tithes-collected").equals(3) )
+        {
+            // Flag final collection update
+            quest("2.3.npc1.quest").update("update-collected-all").status("active");
+        }
+
+
+        // Execute a custom "collected-tithe" achievement hook
+        universe().executeAchievementHook("collected-tithe");
+
+    </script>
+    <script name = '2.3.npc1:decline-tithe'>
+
+        // Declining a tithe fails the "collect tax from every merchant" achievement
+        achievement("taxation-without-representation").status("failed");
+
+    </script>
+    <script name = 'global.bomb-machine.shop'>
+
+        // Did the player buy out Kenny's bomb contracts and choose to lower prices?
+        if (
+            quest("2.1.npc1.quest").update("update-lowered-prices").status() == "active"
+        )
+        {
+            // Use the first bomb machine on the map as the "speaker."  (Most maps will have 1 at most, anyway...)
+            each( npcsByClass("bomb-vending-machine").slice(0,1) )
+            {
+                // Use the global "bomb machine shop cheap" conversation
+                this.talk("global.bomb-machine.shop:discount", "shop");
+            }
+        }
+
+        else
+        {
+            // Use the first bomb machine on the map as the "speaker."  (Most maps will have 1 at most, anyway...)
+            each( npcsByClass("bomb-vending-machine").slice(0,1) )
+            {
+                // Use the standard global "bomb machine shop" conversation
+                this.talk("global.bomb-machine.shop", "shop");
+            }
+        }
+    </script>
+    <script name = 'global.npc.ontalk'>
+    </script>
+    <script name = 'global.story.ask-for-name'>
+
+debug( "name...", session("core.player.entered-name").get() );
+
+        // Check again to see if we need to query for player name
+        if ( session("core.player.entered-name").get() != "yes" )
+        {
+            debug("I need to know your name...");
+
+
+            // Activate a dialogue lock to prevent the game
+            // from resuming between the "what's your name?"
+            // conversation and the default conversation.
+            window().increaseDialogueLock();
+
+
+            closestNpc()
+
+                .importConversation("global.ask-for-name")
+
+                .talk("global.ask-for-name");
+
+            // Making a call to .talk() with a bogus conversation will ultimately fail (i.e. does nothing),
+            // but calling it here forces this script to block until the ask-for-name conversation concludes.
+            closestNpc()
+
+                .talk("...");
+
+            // Update player name with the last-entered keyboard value
+            session("core.player1.name").set(
+                session("core.keyboard.value").get("unwrapped")
+            );
+
+            // Toggle flag
+            session("core.player.entered-name").set("yes");
+
+            // Execute a custom "entered-name" achievement hook
+            universe().executeAchievementHook("entered-name");
+
+
+            // Autosave now that we have a character name
+            autosave();
+        }
+    </script>
+</scripts>

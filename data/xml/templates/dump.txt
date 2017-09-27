@@ -1,0 +1,2255 @@
+[color=special]@npc-name[/color] says:
+
+@npc-comment
+
+Select a Response:
+
+[color=special]@npc-name[/color] says:
+
+@npc-comment
+
+press [color=special]@some-key[/color] to continue...
+
+@npc-comment
+
+press [color=special]@some-key[/color] to continue...
+
+[color=special]@npc-name[/color] says:
+
+@npc-comment
+
+Enter a Response:
+
+[color=special]@paragraph-text[/color]
+
+@paragraph-text
+
+[color=dim]@paragraph-text[/color]
+
+[color=normal]Computer Options[/color]
+
+@back-button-text
+
+@header-text
+
+[color=normal]@responses-header-text[/color]
+
+[color=normal]tty://home/@player-name/[/color]
+
+@response-text
+
+[color=normal]Simple Terminal[/color]
+
+@back-button-text
+
+[color=normal]@responses-header-text[/color]
+
+@response-text
+
+@response-text
+
+[color=special]Special Option[/color]
+
+@response-special-phrase
+
+@response-text
+
+[color=special]Not Available[/color]
+
+@response-error-phrase
+
+@response-text
+
+@response-text
+
+[color=special]Special Option[/color]
+
+@response-special-phrase
+
+@response-text
+
+[color=dim]Not Available[/color]
+
+@response-error-phrase
+
+[color=special]@npc-name[/color] says:
+
+@npc-comment
+
+Select a Response:
+
+[color=special]@npc-name[/color] says:
+
+@npc-comment
+
+press [color=special]@some-key[/color] to continue...
+
+Select a Response:
+
+Downloadable Level Sets...
+
+press ESC to return to menu
+
+Revert to Checkpoint
+
+Are you sure you want to load the [color=special]last checkpoint[/color]?
+
+Yes
+
+No
+
+Load Quicksave
+
+Are you sure you want to load the data from [color=special]Quicksave @slot[/color]?
+
+Yes
+
+No
+
+Load Custom Save
+
+Are you sure you want to load the custom save [color=special]@title[/color]?
+
+Yes
+
+No
+
+@title
+@date
+
+Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color]
+
+@title
+@date
+
+Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color]
+
+Load Error
+
+You have not saved any data to that location.
+
+Ok
+
+@title
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+@title
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+Back to [color=special]Game Menu[/color]...
+
+Last Checkpoint (Autosave)
+
+Checkpoint Preview:
+
+Load [color=special]Last Checkpoint[/color]
+
+Game Statistics
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+Quicksave Slots (@quicksave-slot-count)
+
+Existing Custom Saves (@manualsave-slot-count)
+
+Error
+
+Your save attempt failed.
+
+Title:  [color=special]@title[/color]
+
+Error:  [color=special]@error[/color]
+
+Ok
+
+[color=button]@title[/color]
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+[color=button]@title[/color]
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+Overwrite Custom Save
+
+Are you sure you want to overwrite the existing custom save [color=special]@title[/color]?
+
+You last saved to this slot [color=special]@time-since-last-save[/color] ago.
+
+Yes
+
+No
+
+Overwrite Quicksave
+
+Are you sure you want to overwrite the data in [color=special]Quicksave @slot[/color]?
+
+You last saved to this slot [color=special]@time-since-last-save[/color] ago.
+
+Yes
+
+No
+
+@title
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+@title
+[color=lowlight]@date[/color]
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+Back to [color=special]Game Menu[/color]...
+
+New Custom Save
+
+Select one to Change
+
+Create [color=special]New Save[/color]...
+
+Game Statistics
+
+[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]
+
+Save Preview:
+
+Quicksave Slots (@quicksave-slot-count)
+
+Select any to Overwrite
+
+Existing Custom Saves (@manualsave-slot-count)
+
+Select any to Overwrite
+
+Skill Options
+
+Place in Slot [color=special]1[/color]
+
+@slot1-status
+
+Place in Slot [color=special]2[/color]
+
+@slot2-status
+
+Do Nothing
+
+Return to Skills
+
+Skill Options
+
+Place in Slot [color=special]1[/color]
+
+@slot1-status
+
+Place in Slot [color=special]2[/color]
+
+@slot2-status
+
+Do Nothing
+
+Return to Skills
+
+[color=special]@skill-title[/color]
+
+Level @skill-level
+
+@skill-specs
+
+[color=special]@skill-title[/color]
+
+Level @skill-level
+
+@skill-specs
+
+[color=special]@skill-title[/color]
+
+Level @skill-level
+
+@skill-specs
+
+[color=special]@skill-title[/color]
+
+Level @skill-level
+
+@skill-specs
+
+@skill-title
+
+Level 1
+
+Select a Skill
+
+No Active Skill
+
+You have not yet unlocked any [color=special]active skill[/color] to place in this slot.
+
+Back
+Return to Skills
+
+[color=special]@skill-title[/color]
+
+Level 1
+
+@skill-manual
+
+Press [color=special]@skill-key[/color] to use
+
+Empty Slot
+
+Unlock more [color=special]active skills[/color] to use this slot!
+
+[color=special]@skill-title[/color]
+
+Level 1
+
+@skill-manual
+
+Press [color=special]@skill-key[/color] to use
+
+Empty Slot
+
+Unlock more [color=special]active skills[/color] to use this slot!
+
+Back to [color=special]Game Menu[/color]...
+
+Skill Slots
+
+Select one to Change
+
+Acquired Active Skills (@skills-unlocked-count)
+
+
+
+Select a View
+
+Gold Locations
+
+Show all known maps, highlighting those that have gold remaining.
+
+Incomplete Puzzle Rooms
+
+Show the location of any known, unfinished puzzle room.
+
+Incomplete Challenge Rooms
+
+Show the location of any known, unfinished challenge room.
+
+Back to [color=special]Game Menu[/color]...
+
+World Map
+
+Map View:  @view-title
+
+Pan
+
+Zoom
+
+Mode...
+
+Travel...
+
+Back
+
+Game
+
+Player
+
+Skills
+
+Options
+
+Exit
+
+[color=title]Resume Game[/color]
+
+You can also press [color=dim]Escape[/color] to resume your game.
+
+[color=title]Leave Game[/color]
+
+Return to the [color=dim]Main Menu[/color] screen.
+
+[color=title]World Maps[/color]
+
+Interactive maps that guide you to unfinished levels, puzzle rooms, and more.
+
+[color=title]Equip Skills[/color]
+
+Select which of your [color=special]learned skills[/color] to assign to your [color=special]use-skill hotkeys[/color].
+
+[color=title]Save Game[/color]
+
+Save your current progress to a save slot.
+
+[color=title]Load Game[/color]
+
+Choose to reload a previous save, including autosaves.
+
+[color=title]My Items[/color]
+
+Browse the [color=dim]items[/color] you have collected and [color=dim]equip[/color] the ones that best suit your playstyle.
+
+[color=title]Current Quests[/color]
+
+View any [color=dim]current[/color] quest, along with any quest [color=dim]update[/color] you have encountered.
+
+[color=title]My Reputation[/color]
+
+Review a history of how you treated [color=dim]people[/color] and their [color=dim]quests[/color], determining how the people of [color=special]Lelandria[/color] currently think of you.
+
+[color=title]Finished Quests[/color]
+
+Browse a [color=dim]history[/color] of all of the quests you have completed (successfully or otherwise).
+
+[color=title]Controls[/color]
+
+Customize your [color=dim]keyboard[/color] or [color=dim]gamepad[/color] controls for playing the game.
+
+[color=title]Transaction Journal[/color]
+
+See the records of your dealings with the people of [color=special]Lelandria[/color], along with a record of each business transaction you commit.
+
+[color=title]Achievements[/color]
+
+View a list of the [color=dim]Achievements[/color] available in [color=title]A Lode Runner Story[/color].
+
+[color=title]Gameplay Statistics[/color]
+
+Analyze a detailed statistical overview of your progress-to-date in the game.
+
+@text
+
+[color=title]@category-title[/color]
+
+@upgrade-msg
+
+@status
+
+[color=title]@category-title[/color]
+
+[color=title]@category-title[/color]
+
+[color=category]@skill-title[/color]
+
+Level:  @level
+
+[color=category]Movement[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Control[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Deception[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Mining Laser[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Self Defense[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Bombadier[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+[color=category]Stealth[/color]
+
+Level:  @level
+
+@status
+
+@upgrade-msg
+
+Fast Travel
+
+Are you sure you want to travel to [color=special]@map-title[/color]?
+
+Yes
+
+No
+
+Game
+
+Player
+
+Skills
+
+Options
+
+Exit
+
+[color=special]Back[/color] to parent menu...
+
+[color=highlight]Back[/color] to parent menu...
+
+[color=normal]@header-text[/color]
+
+[color=normal]@header-text[/color]
+
+@title
+
+@message
+
+@text
+
+@text
+
+@title
+
+@message
+
+Parsing Data...
+
+Back to [color=special]Game Menu[/color]...
+
+Equipped Item Slots
+
+Available:  @slots
+
+My Items
+
+Count:  @count
+
+Item Actions
+
+Unequip @item-title
+
+Free an Inventory Slot
+
+Upgrades
+
+Options
+
+Do Nothing
+
+Return to Inventory
+
+@item-title
+[color=dim]Equipped[/color]
+
+@item-summary
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+Empty slot
+[color=dim]@count items available[/color]
+
+Select an item below to fill this slot.
+
+@item-title
+[color=dim]Equipped[/color]
+
+@item-summary
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+Empty slot
+[color=dim]@count items available[/color]
+
+Select an item below to fill this slot.
+
+Upgrade Overview
+
+@upgrade-title
+
+Cost:  [color=special]@upgrade-cost gold[/color]
+
+Upgrade Options
+
+Upgrade Item
+
+Confirm
+
+Cancel Upgrade
+
+Not Ready
+
+Upgrade Options
+
+Upgrade Item
+
+Not enough Gold
+
+Cancel Upgrade
+
+Not Ready
+
+Upgrade Attributes
+
+[color=special]@upgrade-title[/color]
+
+Cost
+
+[color=special]@upgrade-cost gold[/color]
+
+Confirm Upgrade
+
+@upgrade-title
+
+Cost:  [color=special]@upgrade-cost[/color] gold
+
+Options
+
+Upgrade Item
+
+Confirm
+
+Cancel Upgrade
+
+Not Ready
+
+@upgrade-title
+
+Cost:  [color=special]@upgrade-cost gold[/color]
+
+You can upgrade this item @upgrades-remaining time@upgrades-remaining-pluralizer.
+
+@upgrade-title
+
+Cost:  [color=unaffordable]@upgrade-cost gold[/color]
+
+You cannot afford this upgrade right now.  You need [color=special]@gold-needed more gold[/color] to buy this upgrade.
+
+Fully Upgraded
+
+You cannot upgrade this item again.
+
+@item-title
+
+Equipped
+
+Replace Item:
+
+Do Nothing
+
+Cancel
+
+Item Actions
+
+Unequip @item-title
+
+Free Inventory Slot
+
+Upgrades
+
+Options
+
+Do Nothing
+
+Return to Inventory
+
+Item Actions
+
+Equip @item-title
+
+@slots-free / @slots-total slot(s) available
+
+Upgrades
+
+Options
+
+Do Nothing
+
+Return to Inventory
+
+Item Actions
+
+Equip @item-title
+
+0 slots available
+
+Upgrades
+
+Options
+
+Do Nothing
+
+Return to Inventory
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+This is a simple tooltip.
+Do you like [color=special]@item-title[/color]?
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+@item-title
+
+[color=special]@item-title[/color]
+
+@item-summary
+
+This is a simple tooltip.
+Do you like [color=special]@item-title[/color]?
+
+Level Failed
+
+Your character did not make it through the level alive!
+
+Options
+
+Retry Level
+
+Start from the beginning
+
+You can retry the level as many times as you wish.
+
+Quit
+
+Return to [color=special]Main Menu[/color]
+
+Exit the level and return to the level selection screen.
+
+Game Menu
+
+Resume Game
+
+Continue Level
+
+Retry Level
+
+Start from the beginning
+
+You can retry the level as many times as you wish.
+
+Quit
+
+Return to [color=special]Main Menu[/color]
+
+Exit the game and return to the level selection screen.
+
+A Lode Runner Story
+
+written by Mike Doty
+
+Written by Mike Doty
+
+@server-name
+
+@universe-title
+
+@player-count / @max-players
+
+Public
+
+@game-type
+
+@server-name
+
+@universe-title
+
+@player-count / @max-players
+
+Private
+
+@game-type
+
+Notification
+
+@message
+
+Ok
+
+Select a Session...
+
+press ESC to return to menu
+
+Host
+
+Level Set
+
+Players
+
+Game Type
+
+Location
+
+Select a Level Set...
+
+press ESC to return to menu
+
+@limit Players
+
+Set Player Limit
+
+Host a Co-Op Session...
+
+preparing to launch
+
+Password
+
+n/a
+
+Optional.  If you set a password for this session, other players will need to know the password in order to connect.
+
+Player Limit
+
+4 Players
+
+You can place a limit on the number of players that can connect to your game.
+
+Begin Game
+
+Launch the new game session.
+
+Host Game
+
+Create a new session
+
+Join Game
+
+Join an existing game
+
+Back
+
+Return to the main menu...
+
+Reset to Defaults
+
+Are you sure you want to reset controls for your [color=special]@device-name[/color] to the original defaults?
+
+Reset to Defaults
+
+Yes
+
+Restore Defaults
+
+No
+
+Cancel
+
+Press any Button
+
+Press the gamepad or joystick input you will use [color=special]@todo[/color].
+
+Movement Controls
+
+Move Left
+
+[color=dim]@gamepad-translations.left[/color]
+
+Move Right
+
+[color=dim]@gamepad-translations.right[/color]
+
+Move Up
+
+[color=dim]@gamepad-translations.up[/color]
+
+Move Down
+
+[color=dim]@gamepad-translations.down[/color]
+
+Digging Controls
+
+Dig Left
+
+[color=dim]@gamepad-translations.dig-left[/color]
+
+Dig Right
+
+[color=dim]@gamepad-translations.dig-right[/color]
+
+Interaction Controls
+
+Place Bomb
+
+[color=dim]@gamepad-translations.bomb[/color]
+
+Suicide (Hold)
+
+[color=dim]@gamepad-translations.suicide[/color]
+
+Interact
+
+[color=dim]@gamepad-translations.interact[/color]
+
+Minimap (Hold)
+
+[color=dim]@gamepad-translations.minimap[/color]
+
+Use Skill Hotkeys
+
+Use Skill 1
+
+[color=dim]@gamepad-translations.skill1[/color]
+
+Use Skill 2
+
+[color=dim]@gamepad-translations.skill2[/color]
+
+Menu Navigation
+
+ESC / Cancel
+
+[color=dim]@gamepad-translations.escape[/color]
+
+ENTER / Select
+
+[color=dim]@gamepad-translations.enter[/color]
+
+Menu Left
+
+[color=dim]@gamepad-translations.menu-left[/color]
+
+Menu Right
+
+[color=dim]@gamepad-translations.menu-right[/color]
+
+Menu Up
+
+[color=dim]@gamepad-translations.menu-up[/color]
+
+Menu Down
+
+[color=dim]@gamepad-translations.menu-down[/color]
+
+Other
+
+Reset to Defaults
+
+[color=dim]Reset all Controls[/color]
+
+Save
+
+[color=dim]Save Changes[/color]
+
+@device-title
+
+Select Device
+
+Device Found:  0
+
+Back
+
+No available device
+
+Devices Found:  @device-count
+
+Back
+
+Return to Options
+
+Reset to Defaults
+
+Are you sure you want to reset controls for your [color=special]keyboard[/color] to the original defaults?
+
+Reset to Defaults
+
+Yes
+
+Restore Defaults
+
+No
+
+Cancel
+
+Press any Key
+
+Press the keyboard input you will use [color=special]@todo[/color].
+
+Movement Controls
+
+Move Left
+
+[color=dim]@keyboard-translations.left[/color]
+
+Move Right
+
+[color=dim]@keyboard-translations.right[/color]
+
+Move Up
+
+[color=dim]@keyboard-translations.up[/color]
+
+Move Down
+
+[color=dim]@keyboard-translations.down[/color]
+
+Digging Controls
+
+Dig Left
+
+[color=dim]@keyboard-translations.dig-left[/color]
+
+Dig Right
+
+[color=dim]@keyboard-translations.dig-right[/color]
+
+Interaction Controls
+
+Place Bomb
+
+[color=dim]@keyboard-translations.bomb[/color]
+
+Suicide (Hold)
+
+[color=dim]@keyboard-translations.suicide[/color]
+
+Interact
+
+[color=dim]@keyboard-translations.interact[/color]
+
+Minimap (Hold)
+
+[color=dim]@keyboard-translations.minimap[/color]
+
+Chat (Co-op Only)
+
+[color=dim]@keyboard-translations.net-chat[/color]
+
+Use Skill Hotkeys
+
+Use Skill 1
+
+[color=dim]@keyboard-translations.skill1[/color]
+
+Use Skill 2
+
+[color=dim]@keyboard-translations.skill2[/color]
+
+Other
+
+Reset to Defaults
+
+[color=dim]Reset all Controls[/color]
+
+Save
+
+[color=dim]Save Changes[/color]
+
+Display Settings
+
+Do you want to use fullscreen mode?
+
+Fullscreen On
+
+Fullscreen Off
+
+For some users, changing this mode might require you to restart the game.
+
+Customize Controls
+
+[color=dim]Set up gamepad...[/color]
+
+Switch Gamepads
+
+[color=dim]Select device...[/color]
+
+Back
+
+[color=dim]Back to options...[/color]
+
+@language-title
+
+Language Preference
+
+Select a language:
+
+Audio Settings
+
+Background Music
+
+Sound Effects
+
+Save
+
+Use the left / right keys to adjust.
+
+Audio Settings
+
+Volume preferences...
+
+Display Settings
+
+Fullscreen preference...
+
+Keyboard
+
+Customize keys...
+
+Gamepads
+
+Configure gamepad(s)...
+
+Language
+
+Select your language...
+
+Back
+
+Return to the main menu...
+
+Start New Game
+
+Begin a new adventure...
+
+Resume Story
+
+Last played:  [color=special]@universe-title[/color]
+
+Character Name:  [color=special]@player-name[/color]
+Character Level:  [color=special]@character-level[/color]
+
+Continue your active adventure...
+
+Back
+
+Return to the main menu...
+
+Story Mode
+
+Play the story mode...
+
+Co-op Mode
+
+[color=dim]Play cooperatively![/color]
+
+Level Search
+
+[color=dim]Download new levels...[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Quit Game
+
+[color=dim]Goodbye![/color]
+
+Story Mode
+
+Play the story mode...
+
+Co-op Mode
+
+[color=dim]Play cooperatively![/color]
+
+DLC
+
+[color=dim]Play cooperatively![/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Options
+
+[color=dim]Set your controls[/color]
+
+Quit Game
+
+[color=dim]Goodbye![/color]
+
+Zoom Out
+
+Zoom In
+
+Back to Menu
+
+The world map provides a quick way to view where you have been in the world.
+
+Screens with 1 or more gold bars remaining have a [color=special]gold[/color] color; screens you have neared (but not entered) have a [color=dim]faded[/color] color.
+
+Select a Level...
+
+Progress:  @percent-complete
+
+@data
+
+Back to [color=special]Game Menu[/color]...
+
+My Reputation
+
+@title
+
+Select a Color
+
+[color=normal]Avatar Options[/color]
+
+Character Name
+
+@player-name
+
+Primary Color
+
+Secondary Color
+
+Return to Lobby
+
+[color=normal]Lobby Menu[/color]
+
+Level Overview
+
+[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Ready
+
+[color=special]Set Ready:[/color]
+When ready, select this option.  Once all players set their status to [color=special]ready[/color], the game begins!
+
+Edit Avatar
+
+[color=special]Edit Avatar:[/color]
+Customize the appearance of your character!
+
+Vote to Skip Level
+
+[color=special]Skip Level:[/color]
+If at least 2 players vote to skip this level, all players will proceed to the next available level.
+
+[color=normal]Lobby Menu[/color]
+
+Level Overview
+
+[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Not Ready
+
+[color=special]Set Not Ready:[/color]
+Revert your status to Not Ready.
+
+[color=special]@player-name[/color]
+
+@player-status
+
+[color=normal]Lobby Members[/color]
+
+[color=normal]Votes to Skip:  [color=special]@votes[/color][/color]
+
+Lobby Members
+
+Votes to Skip:  [color=special]@votes[/color]
+
+[color=normal]Lobby Menu[/color]
+
+Level Overview
+
+[color=special]Level:[/color]
+    Level 1
+
+    [color=special]Overview:[/color]
+    Collect all of the gold in the level to win!
+
+    Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Ready
+
+[color=special]Set Ready:[/color]
+    When ready, select this option.  Once all players set their status to [color=special]ready[/color], the game begins!
+
+Edit Avatar
+
+[color=special]Edit Avatar:[/color]
+    Customize the appearance of your character!
+
+Vote to Skip Level
+
+[color=special]Skip Level:[/color]
+    If at least 2 players vote to skip this level, all players will proceed to the next available level.
+
+[color=special]@map-title[/color] Complete!
+
+As a reward for completing this [color=title]Puzzle Room[/color], you may choose [color=special]one[/color] new item from the list of items below!
+
+[color=special]Claim Your Prize:[/color]
+
+Select a Color
+
+Avatar Name
+
+Character Name
+
+@player-name
+
+Avatar Colors
+
+Primary Color
+
+Secondary Color
+
+Options
+
+Save Changes
+
+Lobby Menu
+
+Level Overview
+
+[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Ready
+
+[color=special]Set Ready:[/color]
+When ready, select this option.  Once all players set their status to [color=special]ready[/color], the game begins!
+
+Edit Avatar
+
+[color=special]Edit Avatar:[/color]
+Customize the appearance of your character!
+
+Vote to Skip Level
+
+[color=special]Skip Level:[/color]
+If at least 2 players vote to skip this level, all players will proceed to the next available level.
+
+Hey, this is just a test label that could serve as some sort of dynamically-updated tooltip?
+
+[color=special]Level 1[/color]
+
+You need to win this level to get to the next level.
+
+Set Ready
+
+The game begins when all players set ready.
+
+[color=normal]Lobby Menu[/color]
+
+Level Overview
+
+[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Not Ready
+
+[color=special]Set Not Ready:[/color]
+Revert your status to Not Ready.
+
+Lobby Members
+
+Votes to Skip:  [color=special]@votes[/color]
+
+[color=normal]Lobby Menu[/color]
+
+Level Overview
+
+[color=special]Level:[/color]
+    Level 1
+
+    [color=special]Overview:[/color]
+    Collect all of the gold in the level to win!
+
+    Resurrect fallen teammates by touching the heart with their name on it!
+
+Set Ready
+
+[color=special]Set Ready:[/color]
+    When ready, select this option.  Once all players set their status to [color=special]ready[/color], the game begins!
+
+Edit Avatar
+
+[color=special]Edit Avatar:[/color]
+    Customize the appearance of your character!
+
+Vote to Skip Level
+
+[color=special]Skip Level:[/color]
+    If at least 2 players vote to skip this level, all players will proceed to the next available level.
+
+Lobby Members
+
+Votes to Skip:  [color=special]@votes[/color]
+
+Lobby Menu
+
+Level Overview
+
+Set Ready
+
+Edit Avatar
+
+Vote to Skip Level
+
+Hey, this is just a test label that could serve as some sort of dynamically-updated tooltip?
+
+[color=special]@level-title[/color]
+
+@level-overview
+
+[color=special]Ready to Play[/color]
+
+Hit this button when you are ready to begin the level.  Once all players set ready, the game begins!
+
+[color=special]Avatar Customization[/color]
+
+Edit your multiplayer name and select a unique color scheme for your Lode Runner avatar!
+
+[color=special]Vote to Skip Level[/color]
+
+If 2 or more players vote to skip the level, all players will move to the next level immediately.
+
+Lobby Members
+
+Votes to Skip:  [color=special]@votes[/color]
+
+Lobby Menu
+
+Level Overview
+
+Set Not Ready
+
+Edit Avatar
+
+Vote to Skip Level
+
+Hey, this is just a test label that could serve as some sort of dynamically-updated tooltip?
+
+[color=special]@level-title[/color]
+
+@level-overview
+
+[color=special]Ready to Play[/color]
+
+Hit this button when you are ready to begin the level.  Once all players set ready, the game begins!
+
+[color=special]Avatar Customization[/color]
+
+Edit your multiplayer name and select a unique color scheme for your Lode Runner avatar!
+
+[color=special]Vote to Skip Level[/color]
+
+If 2 or more players vote to skip the level, all players will move to the next level immediately.
+
+Lost Connection
+
+All other players have quit the game.
+
+Lost Connection
+
+Return to Lobby
+
+Wait for New Players
+
+End Session
+
+Return to Main Menu
+
+Co-op Mode Menu
+
+Resume Game
+
+Back to Action
+
+Disconnect
+
+Leave Session
+
+Disconnect from the game?
+
+Lost Connection
+
+Your connection to the server timed out.  Press [color=special]@some-key[/color] to return to the main menu.
+
+[color=special]New Skill Tree Unlocked![/color]
+
+You can now choose either [color=title]@skill-title1[/color] or [color=title]@skill-title2[/color] from the [color=title]@category-title[/color] skill tree.
+
+[color=special]Default Gamepad Enabled[/color]
+
+@current-device
+
+@last-device not found...
+
+[color=special]@title[/color]
+
+@content
+
+[color=special]Item Upgraded[/color]
+
+@item-title
+
+@upgrade-title
+
+[color=special]Level Up![/color]
+
+You have reached [color=title]Character Level @character-level[/color]!  You gain [color=title]one skill point[/color], giving you a total of [color=title]@skill-points[/color].
+
+Character Level:
+[color=title]Level @character-level[/color]
+
+Skill Points Available:
+[color=title]@skill-points points[/color]
+
+[color=special]Level Complete![/color]
+
+@content
+
+[color=special]Level Failed[/color]
+
+@content
+
+[color=special]New Quest Added[/color]
+@quest-title
+
+[color=special]Quest Finished[/color]
+@quest-title
+
+[color=special]@title[/color]
+
+@quest-title
+
+[color=special]New Quest Update[/color]
+@quest-title
+
+View [color=title]Quest Logs[/color] for details...
+
+[color=special]New Skill Acquired![/color]
+
+@skill-title
+
+Skill points remaining:  @skill-points-remaining
+
+[color=special]Skill Upgraded![/color]
+
+@skill-title @skill-level
+
+Skill points remaining:  @skill-points-remaining
+
+[color=special]New @skill-title Upgrade Available![/color]
+
+You can now upgrade your [color=title]@skill-title[/color] skill to [color=title]Level @level[/color]!
+
+@title
+
+@status
+
+[color=dim]@description[/color]
+
+Gameplay Statistics
+
+Character Name:  [color=special]@character-name[/color]
+
+Character Level:  [color=special]@character-level[/color]
+
+Time Played:  [color=special]@time-played[/color]
+
+Digs Made:  [color=special]@total-digs[/color]
+
+Bad Guys Killed:  [color=special]@enemies-killed[/color]
+
+Gold Collected:  [color=special]@gold-collected[/color]
+
+Items Acquired:  [color=special]@items-acquired[/color]
+
+Gold Spent:  [color=special]@gold-spent[/color]
+
+Friendlies Killed:  [color=special]@npcs-killed[/color]
+
+Quests Completed:  [color=special]@quests-completed / @quests-possible[/color]
+
+Achievements Completed:  [color=special]@achievements-completed[/color] / @achievements-possible
+
+@purchase-details
+
+No transactions found.
+
+Back to [color=special]Game Menu[/color]...
+
+Transaction History
+
+Game Over, Man!
+
+@random-taunt
+
+Options
+
+Load Checkpoint
+
+Revert to Last Autosave
+
+Respawn in Town
+
+Last Visited:  @last-visited-town-title
+
+Puzzle Room Failed
+
+Your character did not make it through the [color=special]Puzzle Room[/color] alive!
+
+Options
+
+Retry Puzzle
+
+Start from the beginning
+
+You can retry the puzzle as many times as you wish.
+
+Exit Puzzle
+
+Return to [color=special]@overworld-title[/color]
+
+Exit the [color=dim]Puzzle Room[/color] and return to the overworld.  You can [color=dim]revisit[/color] this Puzzle Room at any time.
+
+Puzzle Room
+
+@overview
+
+Options
+
+Begin Puzzle
+
+Collect all Gold
+
+@tooltip-text
+
+Leave Puzzle
+
+Return to [color=special]@overworld-title[/color]
+
+You can retry the puzzle as many times as you wish.
+
+Puzzle Room Menu
+
+Resume Game
+
+Continue Puzzle
+
+Retry Puzzle
+
+Start from the beginning
+
+You can retry the puzzle as many times as you wish.
+
+Help
+[color=title]Puzzle Room FAQs[/color]
+
+Exit Puzzle
+
+Return to [color=special]@overworld-title[/color]
+
+Exit the [color=title]Puzzle Room[/color] and return to the overworld.  You can [color=title]revisit[/color] this Puzzle Room at any time.
+
+Confirm Selection
+
+Are you sure you want to select [color=special]@item-title[/color] and to return to [color=special]@overworld-title[/color]?
+
+Options
+
+Take Item
+
+Confirm Selection
+
+Remember that you can only select one prize.
+
+Cancel
+
+Reconsider...
+
+Return to the prize selection menu.
+
+@item-title
+
+Cost:  0 gold  (Puzzle Reward)
+
+[color=special]Item Details:[/color]
+
+@item-advertisement
+
+Puzzle Complete!
+
+As a reward for successfully completing this [color=special]@map-title[/color], please select [color=special]1[/color] prize!
+
+Prizes
+
+Back to [color=special]Game Menu[/color]...
+
+@quest-type Quests (@count)
+
+Select any to View Updates...
+
+[color=button]@quest-title[/color]
+Assigned Quest
+
+[color=normal]Quest Options[/color]
+
+[color=button]Active Quests[/color]
+
+[color=button]Finished Quests[/color]
+
+[color=button]Back to [color=title]Game Menu[/color][/color]
+
+[color=special]Quest Summary[/color]
+@quest-description
+
+[color=special]Update @update-index[/color]
+@update-description
+
+Update @update-index
+
+@update-description
+
+Back to [color=special]Game Menu[/color]...
+
+Quest Updates
+
+Updates:  @count
+
+Back to [color=special]Game Menu[/color]...
+
+Quest Updates
+
+Updates:  @count
+
+No updates found
+
+This quest does not yet have an update.
+
+@quest-title
+
+@quest-description
+
+@quest-xp
+
+@quest-title
+
+@quest-description
+
+@quest-xp
+
+@quest-title
+
+@quest-description
+
+@quest-xp
+
+Save Complete
+
+Your save game [color=special]@title[/color] successfully saved to disk.
+
+Ok
+
+Confirm Purchase
+
+Are you sure you want to buy [color=special]@item-title[/color] for [color=special]@item-cost gold[/color]?
+
+Yes
+
+Buy Item
+
+No
+
+Not Yet
+
+@item-title
+
+Cost:  [color=unaffordable]@item-cost[/color] gold
+
+[color=special]Item Details:[/color]
+
+@item-advertisement
+
+You do not have enough gold to buy this item.
+
+@item-title
+
+Cost:  [color=affordable]@item-cost[/color] gold
+
+[color=special]Item Details:[/color]
+
+@item-advertisement
+
+@shop-title
+
+Unfortunately, I am currently out of inventory.  Please check back later!
+
+Shop Options
+
+Leave Shop
+
+Out of Stock
+
+@shop-title
+
+@salutation
+
+Available Inventory
+
+Additional Options
+
+Leave Shop
+
+Say Goodbye
+
+Select Skill
+
+Select a skill to place in [color=dim]slot @slot[/color].
+
+You will activate this skill by pressing [color=special]@button[/color].
+
+No Skill Available
+
+You have not yet unlocked any active skill to assign to this slot.
+
+Ok
+
+Upgrade Options
+
+Unlock
+
+@skill-title
+
+Cancel
+
+Not Ready
+
+[color=special]Detailed Overview[/color]
+
+@skill-details
+
+Upgrade Options
+
+Upgrade to Level @skill-level
+
+@skill-title
+
+Cancel
+
+Not Ready
+
+[color=special]Upgrade Details[/color]
+
+@skill-details
+
+[color=special]Details:[/color]
+
+@skill-details
+
+Options:
+
+Upgrade
+[color=dim]@skill-title[/color]
+
+Cancel
+[color=dim]Not Ready[/color]
+
+Options
+
+Back
+
+Fully Upgraded
+
+[color=special]Final Overview[/color]
+
+@skill-details
+
+[color=special]Details:[/color]
+
+@skill-details
+
+Options:
+
+Back
+[color=dim]Fully Upgraded[/color]
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=dim]How it would have Worked:[/color]
+
+@skill-overview
+
+@skill-title
+
+Locked
+
+[color=special]How it would have Worked:[/color]
+
+@skill-overview
+
+Locked
+
+@skill-title:  Max Level
+
+Fully Upgraded!
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+@skill-title:  Max
+
+Fully Upgraded!
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+Review Details...
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+Learn More...
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+Upgrade Details...
+
+@skill-title:  Level @skill-level
+
+Skill Points Needed:  @required-skill-points
+
+[color=special]How it would have Worked:[/color]
+
+@skill-overview
+
+@skill-title
+
+Locked
+
+[color=special]How it would have Worked:[/color]
+
+@skill-overview
+
+Locked
+
+@skill-title:  Max Level
+
+Fully Upgraded!
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+@skill-title:  Level @skill-level
+
+Fully Upgraded!
+
+[color=special]How it Works:[/color]
+
+@skill-overview
+
+Review Details...
+
+Back to [color=special]Game Menu[/color]...
+
+Confirm Selection
+
+Are you sure you want to upgrade to [color=special]@skill-title @skill-level[/color]?
+
+Options
+
+Back
+
+Don&apos;t upgrade
+
+Upgrade Now
+
+@skill-title @skill-level
+
+You currently have [color=special]@skill-points-available skill point@pluralizer[/color] available.
+
+Not Unlocked
+
+In order to unlock [color=special]@skill-title @skill-level[/color], you must reach [color=title]Character Level @required-character-level[/color].
+
+You are currently a [color=title]Level @current-character-level[/color] character. 
+
+Options
+
+Back
+
+Return to Skill Tree
+
+Insufficient Skill Points
+
+You need at least [color=special]@required-skill-points[/color] skill point@necessary-skill-points-pluralizer to unlock [color=special]@skill-title @skill-level[/color].
+
+You currently have [color=special]@skill-points-available[/color] skill point@pluralizer.
+
+Options
+
+Back
+
+Return to Skill Tree
+
+Upgrade Complete!
+
+You unlocked [color=title]@skill-title @skill-level[/color].
+
+Options
+
+Back
+
+Upgrade Complete!
+
+You unlocked [color=title]@skill-title @skill-level[/color].
+
+You do not have an empty skill slot available.  To equip [color=title]@skill-title[/color], visit the [color=title]Equip Skills[/color] menu!
+
+Options
+
+Back
+
+Open Equip Skills Menu...?
+
+Upgrade Complete!
+
+You unlocked [color=title]@skill-title @skill-level[/color].
+
+This is your first [color=title]active skill[/color]!  The game has automatically assigned [color=title]@skill-title[/color] to your [color=special]@button-name[/color].
+
+Options
+
+Back
+
+Upgrade Complete!
+
+You unlocked [color=title]@skill-title @skill-level[/color].
+
+This is your second [color=title]active skill[/color]!  The game has automatically assigned [color=title]@skill-title[/color] to your [color=special]@button-name[/color].
+
+Options
+
+Back
+
+Upgrade Complete!
+
+You unlocked [color=title]@skill-title @skill-level[/color].
+
+You presently have [color=title]@skill-title[/color] equipped.  Press [color=special]@button-name[/color] to activate it!
+
+Options
+
+Back
+
+@content
+
+Select your Story...
+
+single player mode
+
+Select a Level Set...
+
+cooperative mode
+
+Wave Failed
+
+Your character did not make it through the [color=special]wave[/color] alive!
+
+Options
+
+Retry Wave
+
+Current on Wave @current-wave
+
+You can retry the wave as many times as you wish.
+
+Exit Wave
+
+Return to [color=special]@overworld-title[/color]
+
+Exit the [color=dim]wave[/color] and return to the overworld.  You can [color=dim]revisit[/color] this Challenge Room at any time!
+
+Challenge Room
+
+@overview
+
+Options
+
+Begin Wave
+
+Wave @current-wave
+
+@wave-goal
+
+Leave Challenge Room
+
+Return to [color=special]@overworld-title[/color]
+
+You can return to retry this Challenge Room as many times as you wish.
+
+Challenge Room Menu
+
+Resume Game
+
+Continue Wave
+
+Retry Wave
+
+Currently on Wave @current-wave
+
+You can retry the wave as many times as you wish.
+
+Exit Challenge Room
+
+Return to [color=special]@overworld-title[/color]
+
+Exit the [color=title]Challenge Room[/color] and return to the overworld.  You can [color=title]revisit[/color] this Challenge Room at any time.
+
+@title
+
+@status
+
+@title
+
+@status
+
+@title
+
+@status

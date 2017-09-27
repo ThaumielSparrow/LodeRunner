@@ -1,0 +1,16 @@
+@arrow1
+
+    @chapter1
+
+        @conversation[id = 'tutorial']
+
+            >>> root
+
+                [l id = 'line1'] To reach the next level, you must use your ^mining laser^!  Press ^@dig-left^ to dig to the ^left^, or press ^@dig-right^ to dig to the ^right^.  You can also press ^@dig-forward^ to dig \
+                                    in the direction your character is currently facing.
+                    -redirect root
+
+                [l id = 'line2'] You might notice that you cannot dig directly beneath a ^ladder^.  Aside from that limitation, you can dig ^wherever^ you want, ^whenever^ you want.  You will never run out of "ammo!"
+                    -redirect root
+
+                [l id = 'line3'] Remember that you can return to previous levels at any time.

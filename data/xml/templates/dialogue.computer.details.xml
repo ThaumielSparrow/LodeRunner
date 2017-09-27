@@ -1,0 +1,18 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'dialogue.computer.details'>
+
+    <item id = 'spacer' disabled = '1' render-border = '0' />
+
+    <item-group id = 'ext.paragraphs' render-border = '0' valign = 'pack' />
+
+    <item id = 'spacer' disabled = '1' render-border = '0' />
+
+</template>

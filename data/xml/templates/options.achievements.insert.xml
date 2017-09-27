@@ -1,0 +1,26 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@status</parameter>
+		<parameter>@description</parameter>
+	</text>
+</parameters>
+
+<template name = 'options.achievements.insert'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+        <stack>
+        <box class = 'option' id = 'move-left' rel = 'root.options.controls.actions.moveleft' fill = 'active'>
+            <label x = '3%' y = '0' align = 'left' width = '90%' value = '@title' />
+            <label x = '85%' y = '0' align = 'center' width = '90%' value = '@status' />
+        </box>
+        <box disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'move-left'>
+            <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]@description[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+        </box>
+        </stack>
+    </insert:item>
+
+</template>

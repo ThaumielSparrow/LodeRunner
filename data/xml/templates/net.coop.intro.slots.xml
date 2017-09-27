@@ -1,0 +1,26 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@votes</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.coop.intro.slots'>
+
+    <item-group render-border = '0' per-row = '2'>
+
+        <item disabled = '1'>
+            <label x = '5%' y = '0' width = '90%' value = '[color=normal]Lobby Members[/color]' />
+        </item>
+
+        <item disabled = '1'>
+            <label x = '95%' y = '0' width = '95%' align = 'right' value = '[color=normal]Votes to Skip:  [color=special]@votes[/color][/color]' />
+        </item>
+
+    </item-group>
+
+    <item-group id = 'ext.player-slots' render-border = '0' per-row = '4' column-padding = '20' />
+
+</template>

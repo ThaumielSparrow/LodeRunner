@@ -1,0 +1,83 @@
+<template name = 'game.worldmap'>
+
+    <rowmenu id = 'directory' class = 'worldmap-directory' width = '@width' height = '@height' uses-focus = '1' uses-scroll = '1' xon-wrap-up = 'show:game.worldmap:step-in-end' xon-wrap-down = 'show:game.worldmap:step-in-beginning' xtunnel-target-id = ''>
+
+        <xitem-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item class = 'button' individual-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label x = '20%' y = '0' width = '75%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'left' />
+            </item>
+
+            <item id = 'invisible-right-column' disabled = '1' />
+
+        </xitem-group>
+
+        <item-group class = 'spacer' render-border = '1' per-row = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'World Map' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Map View:  @view-title' />
+            </item>
+
+            <item id = 'map-wrapper' class = 'map-wrapper' render-border = '1' disabled = '1'>
+                <map id = 'map' x = '50%' y = '0' width = '100%' height = '300' align = 'center' view = '@default-view' zoom = '@default-zoom' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'buttons' render-border = '0' per-row = '5' column-padding = '5'>
+
+            <item class = 'button' individual-border = '1'>
+
+                <icon x = '9%' y = '50%' valign = 'center' index = '4' position = 'absolute' />
+                <label x = '39%' width = '100%' value = 'Pan' />
+
+                <action do = 'commit:game.worldmap.use' mode = 'pan' />
+
+            </item>
+
+            <item class = 'button' individual-border = '1'>
+
+                <icon x = '9%' y = '50%' valign = 'center' index = '18' position = 'absolute' />
+                <label x = '39%' width = '100%' value = 'Zoom' />
+
+                <action do = 'commit:game.worldmap.use' mode = 'zoom' />
+
+            </item>
+
+            <item class = 'button' individual-border = '1'>
+
+                <icon x = '9%' y = '50%' valign = 'center' index = '2' position = 'absolute' />
+                <label x = '39%' width = '100%' value = 'Mode...' />
+
+                <action do = 'show:game.worldmap.views' amount = '-0.25' />
+
+            </item>
+
+            <item class = 'button' individual-border = '1'>
+
+                <icon x = '9%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label x = '39%' width = '100%' value = 'Travel...' />
+
+                <action do = 'commit:game.worldmap.use' mode = 'travel' />
+
+            </item>
+
+            <item class = 'button' individual-border = '1'>
+
+                <icon x = '9%' y = '50%' valign = 'center' index = '19' position = 'absolute' />
+                <label x = '39%' y = '0' width = '75%' value = 'Back' />
+
+                <action do = 'back' slide = 'left' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

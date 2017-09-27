@@ -1,0 +1,616 @@
+<game-state>
+	<session>
+		<variable name = 'False' value = '0' />
+		<variable name = '6.2.npc2.quest:percent-visited' value = '4.76' />
+		<variable name = 'False' value = '5' />
+		<variable name = 'achievements.the-rpg-master.counter' value = '1' />
+		<variable name = 'algebra.x' value = '0' />
+		<variable name = 'algebra.y' value = '0' />
+		<variable name = 'algebra.z' value = '0' />
+		<variable name = 'app.active-map-name' value = 'world0.level4' />
+		<variable name = 'app.load-from-folder' value = '' />
+		<variable name = 'app.max-enemy-count' value = '8' />
+		<variable name = 'app.quests.active' value = 'active' />
+		<variable name = 'app.quests.complete' value = 'complete' />
+		<variable name = 'app.quests.inactive' value = 'inactive' />
+		<variable name = 'app.rebuild-response-menu' value = '0' />
+		<variable name = 'app.transition.from.map' value = '' />
+		<variable name = 'app.transition.from.player-x' value = '' />
+		<variable name = 'app.transition.from.player-y' value = '' />
+		<variable name = 'app.transition.from.waypoint' value = '' />
+		<variable name = 'app.transition.to.map' value = '' />
+		<variable name = 'app.transition.to.waypoint' value = '' />
+		<variable name = 'core.bombs.count' value = '0' />
+		<variable name = 'core.challenge.wave' value = '0' />
+		<variable name = 'core.chapter' value = '1' />
+		<variable name = 'core.constants.death-by-bomb' value = '' />
+		<variable name = 'core.constants.death-by-deadly-tile' value = '' />
+		<variable name = 'core.constants.death-by-enemy' value = '' />
+		<variable name = 'core.constants.death-by-out-of-bounds' value = '' />
+		<variable name = 'core.constants.death-by-planar-shift' value = '' />
+		<variable name = 'core.constants.death-by-tile-fill' value = '' />
+		<variable name = 'core.constants.death-by-vaporization' value = '' />
+		<variable name = 'core.dialogue-response' value = '' />
+		<variable name = 'core.generated-splash' value = '0' />
+		<variable name = 'core.gold.found' value = '35' />
+		<variable name = 'core.gold.wallet' value = '35' />
+		<variable name = 'core.gold.wallet:visible' value = '35' />
+		<variable name = 'core.handled-local-death' value = '0' />
+		<variable name = 'core.is-dummy-session' value = '0' />
+		<variable name = 'core.is-gif' value = '0' />
+		<variable name = 'core.keyboard.value' value = 'KENT' />
+		<variable name = 'core.last-safe-zone.map' value = 'world0.level4' />
+		<variable name = 'core.last-safe-zone.title' value = 'Smithsville' />
+		<variable name = 'core.login-succeeded' value = 'no' />
+		<variable name = 'core.minimap.can-travel' value = 'no' />
+		<variable name = 'core.overworld-title' value = 'Overworld' />
+		<variable name = 'core.player-id' value = '1' />
+		<variable name = 'core.player.entered-name' value = 'yes' />
+		<variable name = 'core.player1.cause-of-death' value = '' />
+		<variable name = 'core.player1.colors' value = '' />
+		<variable name = 'core.player1.inventory-size' value = '2' />
+		<variable name = 'core.player1.level' value = '1' />
+		<variable name = 'core.player1.name' value = 'KENT' />
+		<variable name = 'core.player1.skill-points' value = '0' />
+		<variable name = 'core.player1.skill1' value = '' />
+		<variable name = 'core.player1.skill1:changed' value = '0' />
+		<variable name = 'core.player1.skill2' value = '' />
+		<variable name = 'core.player1.skill2:changed' value = '0' />
+		<variable name = 'core.player1.x' value = '165' />
+		<variable name = 'core.player1.xp' value = '250' />
+		<variable name = 'core.player1.y' value = '456' />
+		<variable name = 'core.puzzle-room-virgin' value = '1' />
+		<variable name = 'core.received-player-id' value = '0' />
+		<variable name = 'core.skills.earth-mover' value = '0' />
+		<variable name = 'core.skills.earth-mover:lastused' value = '0' />
+		<variable name = 'core.skills.earth-mover:locked' value = '0' />
+		<variable name = 'core.skills.earth-mover:recharge-potential' value = '0' />
+		<variable name = 'core.skills.earth-mover:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.earth-mover:timer' value = '0' />
+		<variable name = 'core.skills.earth-mover:timer-drain' value = '0' />
+		<variable name = 'core.skills.earth-mover:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.earth-mover:timer-max' value = '0' />
+		<variable name = 'core.skills.fright' value = '0' />
+		<variable name = 'core.skills.fright:lastused' value = '0' />
+		<variable name = 'core.skills.fright:locked' value = '0' />
+		<variable name = 'core.skills.fright:recharge-potential' value = '0' />
+		<variable name = 'core.skills.fright:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.fright:timer' value = '0' />
+		<variable name = 'core.skills.fright:timer-drain' value = '0' />
+		<variable name = 'core.skills.fright:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.fright:timer-max' value = '0' />
+		<variable name = 'core.skills.hacking' value = '0' />
+		<variable name = 'core.skills.hacking:lastused' value = '0' />
+		<variable name = 'core.skills.hacking:locked' value = '0' />
+		<variable name = 'core.skills.hacking:recharge-potential' value = '0' />
+		<variable name = 'core.skills.hacking:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.hacking:timer' value = '0' />
+		<variable name = 'core.skills.hacking:timer-drain' value = '0' />
+		<variable name = 'core.skills.hacking:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.hacking:timer-max' value = '0' />
+		<variable name = 'core.skills.hologram' value = '0' />
+		<variable name = 'core.skills.hologram:lastused' value = '0' />
+		<variable name = 'core.skills.hologram:locked' value = '0' />
+		<variable name = 'core.skills.hologram:recharge-potential' value = '0' />
+		<variable name = 'core.skills.hologram:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.hologram:timer' value = '0' />
+		<variable name = 'core.skills.hologram:timer-drain' value = '0' />
+		<variable name = 'core.skills.hologram:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.hologram:timer-max' value = '0' />
+		<variable name = 'core.skills.invisibility' value = '0' />
+		<variable name = 'core.skills.invisibility:lastused' value = '0' />
+		<variable name = 'core.skills.invisibility:locked' value = '0' />
+		<variable name = 'core.skills.invisibility:power-drain' value = '' />
+		<variable name = 'core.skills.invisibility:power-drain-while-motionless' value = '' />
+		<variable name = 'core.skills.invisibility:recharge-potential' value = '0' />
+		<variable name = 'core.skills.invisibility:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.invisibility:timer' value = '0' />
+		<variable name = 'core.skills.invisibility:timer-drain' value = '0' />
+		<variable name = 'core.skills.invisibility:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.invisibility:timer-max' value = '0' />
+		<variable name = 'core.skills.jackhammer' value = '0' />
+		<variable name = 'core.skills.jackhammer:lastused' value = '0' />
+		<variable name = 'core.skills.jackhammer:locked' value = '0' />
+		<variable name = 'core.skills.jackhammer:recharge-potential' value = '0' />
+		<variable name = 'core.skills.jackhammer:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.jackhammer:timer' value = '0' />
+		<variable name = 'core.skills.jackhammer:timer-drain' value = '0' />
+		<variable name = 'core.skills.jackhammer:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.jackhammer:timer-max' value = '0' />
+		<variable name = 'core.skills.matrix' value = '0' />
+		<variable name = 'core.skills.matrix:lastused' value = '0' />
+		<variable name = 'core.skills.matrix:locked' value = '0' />
+		<variable name = 'core.skills.matrix:recharge-potential' value = '0' />
+		<variable name = 'core.skills.matrix:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.matrix:timer' value = '0' />
+		<variable name = 'core.skills.matrix:timer-drain' value = '0' />
+		<variable name = 'core.skills.matrix:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.matrix:timer-max' value = '0' />
+		<variable name = 'core.skills.mega-bomb' value = '0' />
+		<variable name = 'core.skills.mega-bomb:lastused' value = '0' />
+		<variable name = 'core.skills.mega-bomb:locked' value = '0' />
+		<variable name = 'core.skills.mega-bomb:recharge-potential' value = '0' />
+		<variable name = 'core.skills.mega-bomb:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.mega-bomb:timer' value = '0' />
+		<variable name = 'core.skills.mega-bomb:timer-drain' value = '0' />
+		<variable name = 'core.skills.mega-bomb:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.mega-bomb:timer-max' value = '0' />
+		<variable name = 'core.skills.personal-shield' value = '0' />
+		<variable name = 'core.skills.personal-shield:lastused' value = '0' />
+		<variable name = 'core.skills.personal-shield:locked' value = '0' />
+		<variable name = 'core.skills.personal-shield:recharge-potential' value = '0' />
+		<variable name = 'core.skills.personal-shield:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.personal-shield:timer' value = '0' />
+		<variable name = 'core.skills.personal-shield:timer-drain' value = '0' />
+		<variable name = 'core.skills.personal-shield:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.personal-shield:timer-max' value = '0' />
+		<variable name = 'core.skills.persuasion' value = '0' />
+		<variable name = 'core.skills.persuasion:lastused' value = '0' />
+		<variable name = 'core.skills.persuasion:locked' value = '0' />
+		<variable name = 'core.skills.persuasion:recharge-potential' value = '0' />
+		<variable name = 'core.skills.persuasion:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.persuasion:timer' value = '0' />
+		<variable name = 'core.skills.persuasion:timer-drain' value = '0' />
+		<variable name = 'core.skills.persuasion:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.persuasion:timer-max' value = '0' />
+		<variable name = 'core.skills.pickpocket' value = '0' />
+		<variable name = 'core.skills.pickpocket:lastused' value = '0' />
+		<variable name = 'core.skills.pickpocket:locked' value = '0' />
+		<variable name = 'core.skills.pickpocket:recharge-potential' value = '0' />
+		<variable name = 'core.skills.pickpocket:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.pickpocket:timer' value = '0' />
+		<variable name = 'core.skills.pickpocket:timer-drain' value = '0' />
+		<variable name = 'core.skills.pickpocket:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.pickpocket:timer-max' value = '0' />
+		<variable name = 'core.skills.remote-bomb' value = '0' />
+		<variable name = 'core.skills.remote-bomb:bombs-remaining' value = '0' />
+		<variable name = 'core.skills.remote-bomb:lastused' value = '0' />
+		<variable name = 'core.skills.remote-bomb:locked' value = '0' />
+		<variable name = 'core.skills.remote-bomb:recharge-potential' value = '0' />
+		<variable name = 'core.skills.remote-bomb:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.remote-bomb:timer' value = '0' />
+		<variable name = 'core.skills.remote-bomb:timer-drain' value = '0' />
+		<variable name = 'core.skills.remote-bomb:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.remote-bomb:timer-max' value = '0' />
+		<variable name = 'core.skills.sprint' value = '0' />
+		<variable name = 'core.skills.sprint:lastused' value = '0' />
+		<variable name = 'core.skills.sprint:locked' value = '0' />
+		<variable name = 'core.skills.sprint:recharge-potential' value = '0' />
+		<variable name = 'core.skills.sprint:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.sprint:timer' value = '0' />
+		<variable name = 'core.skills.sprint:timer-drain' value = '0' />
+		<variable name = 'core.skills.sprint:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.sprint:timer-max' value = '0' />
+		<variable name = 'core.skills.wall' value = '0' />
+		<variable name = 'core.skills.wall:lastused' value = '0' />
+		<variable name = 'core.skills.wall:locked' value = '0' />
+		<variable name = 'core.skills.wall:recharge-potential' value = '0' />
+		<variable name = 'core.skills.wall:recharge-remaining' value = '0' />
+		<variable name = 'core.skills.wall:timer' value = '0' />
+		<variable name = 'core.skills.wall:timer-drain' value = '0' />
+		<variable name = 'core.skills.wall:timer-drain-while-motionless' value = '0' />
+		<variable name = 'core.skills.wall:timer-max' value = '0' />
+		<variable name = 'core.time' value = '1447178379' />
+		<variable name = 'core.time.played' value = '12698' />
+		<variable name = 'core.worldmap.view' value = 'gold' />
+		<variable name = 'core.worldmap.zoom' value = '1.0' />
+		<variable name = 'core.x' value = '0' />
+		<variable name = 'core.xp-bar.message' value = '' />
+		<variable name = 'core.xp-bar.percent-new' value = '0.166667' />
+		<variable name = 'core.xp-bar.percent-old' value = '0.000000' />
+		<variable name = 'core.xp-bar.timer' value = '0' />
+		<variable name = 'core.xp-bar.timer-max' value = '480' />
+		<variable name = 'core.xp-bar.total-earned' value = '250 / 1500 XP' />
+		<variable name = 'core.xp.bonus.completionist' value = '125' />
+		<variable name = 'core.xp.bonus.no-bombs' value = '25' />
+		<variable name = 'core.xp.bonus.pacifist' value = '50' />
+		<variable name = 'core.y' value = '0' />
+		<variable name = 'core.z' value = '0' />
+		<variable name = 'merchant.count.dead' value = '0' />
+		<variable name = 'merchant.count.living' value = '7' />
+		<variable name = 'merchant.count.total' value = '7' />
+		<variable name = 'net.already-voted-to-skip' value = '0' />
+		<variable name = 'net.countdown-in-progress' value = '0' />
+		<variable name = 'net.game-in-progress' value = '0' />
+		<variable name = 'net.level.complete' value = '0' />
+		<variable name = 'net.level.failed' value = '0' />
+		<variable name = 'net.online' value = '0' />
+		<variable name = 'net.password' value = '' />
+		<variable name = 'net.player-limit' value = '4' />
+		<variable name = 'net.player1.avatar.colors' value = 'primary=225,25,25;secondary=225,225,225' />
+		<variable name = 'net.player1.joined' value = '1' />
+		<variable name = 'net.player1.nick' value = 'Player 1' />
+		<variable name = 'net.player1.ready' value = '0' />
+		<variable name = 'net.player1.received-nick' value = '0' />
+		<variable name = 'net.player2.avatar.colors' value = 'primary=25,225,25;secondary=225,225,225' />
+		<variable name = 'net.player2.joined' value = '0' />
+		<variable name = 'net.player2.nick' value = 'Player 2' />
+		<variable name = 'net.player2.ready' value = '0' />
+		<variable name = 'net.player2.received-nick' value = '0' />
+		<variable name = 'net.player3.avatar.colors' value = 'primary=25,25,225;secondary=225,225,225' />
+		<variable name = 'net.player3.joined' value = '0' />
+		<variable name = 'net.player3.nick' value = 'Player 3' />
+		<variable name = 'net.player3.ready' value = '0' />
+		<variable name = 'net.player3.received-nick' value = '0' />
+		<variable name = 'net.player4.avatar.colors' value = 'primary=225,25,225;secondary=225,225,225' />
+		<variable name = 'net.player4.joined' value = '0' />
+		<variable name = 'net.player4.nick' value = 'Player 4' />
+		<variable name = 'net.player4.ready' value = '0' />
+		<variable name = 'net.player4.received-nick' value = '0' />
+		<variable name = 'net.port' value = '' />
+		<variable name = 'net.rebuild-intro-menu' value = '0' />
+		<variable name = 'net.rebuild-intro-menu:curtailed-count' value = '0' />
+		<variable name = 'net.session.id' value = '0' />
+		<variable name = 'net.transition.target' value = '' />
+		<variable name = 'net.votes-to-skip' value = '0' />
+		<variable name = 'npc.count.dead' value = '0' />
+		<variable name = 'npc.count.living' value = '39' />
+		<variable name = 'npc.count.total' value = '39' />
+		<variable name = 'stats.bombs-used' value = '0' />
+		<variable name = 'stats.digs' value = '4' />
+		<variable name = 'stats.enemies-killed' value = '0' />
+		<variable name = 'stats.gold-spent' value = '0' />
+		<variable name = 'stats.items-bought' value = '0' />
+		<variable name = 'stats.skills-unlocked' value = '0' />
+		<variable name = 'sys.input.gamepad.bomb' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.dig-forward' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.dig-left' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.dig-right' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.down' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.enter' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.interact' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.left' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.minimap' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.right' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.skill1' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.skill2' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.suicide' value = 'N/A' />
+		<variable name = 'sys.input.gamepad.up' value = 'N/A' />
+		<variable name = 'sys.input.keyboard.bomb' value = 'B' />
+		<variable name = 'sys.input.keyboard.dig-forward' value = 'SPACE' />
+		<variable name = 'sys.input.keyboard.dig-left' value = 'Z' />
+		<variable name = 'sys.input.keyboard.dig-right' value = 'V' />
+		<variable name = 'sys.input.keyboard.down' value = 'DOWN' />
+		<variable name = 'sys.input.keyboard.enter' value = 'RETURN' />
+		<variable name = 'sys.input.keyboard.interact' value = 'RETURN' />
+		<variable name = 'sys.input.keyboard.left' value = 'LEFT' />
+		<variable name = 'sys.input.keyboard.minimap' value = 'TAB' />
+		<variable name = 'sys.input.keyboard.right' value = 'RIGHT' />
+		<variable name = 'sys.input.keyboard.skill1' value = '1' />
+		<variable name = 'sys.input.keyboard.skill2' value = '2' />
+		<variable name = 'sys.input.keyboard.suicide' value = 'K' />
+		<variable name = 'sys.input.keyboard.up' value = 'UP' />
+		<variable name = 'tmp.link.frames' value = '1' />
+		<variable name = 'training.complete' value = '0' />
+		<variable name = 'worldmap.count.total' value = '105' />
+		<variable name = 'worldmap.count.visited' value = '5' />
+		<variable name = 'xxx' value = '5' />
+	</session>
+	<historical-records>
+		<historical-record type = 'purchases'>
+			<record>acquired-m-as-n</record>
+		</historical-record>
+	</historical-records>
+	<worldmap>
+		<map name = 'town2.level2.connector' completed = '0' gold-remaining = '0' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level2' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level3' completed = '0' gold-remaining = '21' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level4' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level5' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level6' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level1' completed = '0' gold-remaining = '33' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level8' completed = '0' gold-remaining = '36' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle3' completed = '0' gold-remaining = '7' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle2' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle1' completed = '0' gold-remaining = '8' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle7' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle6' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle5' completed = '0' gold-remaining = '7' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle4' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle9' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle8' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town2.level2' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town2.level3' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town2.level1' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world0.level1' completed = '0' gold-remaining = '4' visible = '1' visited = '1' completion-time = '0' />
+		<map name = 'world0.level0' completed = '0' gold-remaining = '10' visible = '1' visited = '1' completion-time = '0' />
+		<map name = 'world0.level3' completed = '0' gold-remaining = '12' visible = '1' visited = '1' completion-time = '0' />
+		<map name = 'world0.level2' completed = '0' gold-remaining = '13' visible = '1' visited = '1' completion-time = '0' />
+		<map name = 'world0.level4' completed = '0' gold-remaining = '9' visible = '1' visited = '1' completion-time = '0' />
+		<map name = 'world5.level7' completed = '0' gold-remaining = '36' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level7' completed = '0' gold-remaining = '5' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level6' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level5' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level4' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level3' completed = '0' gold-remaining = '22' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level2' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level1' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level9' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level8' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level12' completed = '0' gold-remaining = '11' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level13' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level10' completed = '0' gold-remaining = '29' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level11' completed = '0' gold-remaining = '20' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town4.level4' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town4.level1' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town4.level2' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town4.level3' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level11' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level10' completed = '0' gold-remaining = '7' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world7.level7' completed = '0' gold-remaining = '28' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge13' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge12' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge11' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge10' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge17' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge16' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge15' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge14' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level9' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge19' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge18' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge3' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge2' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge1' completed = '0' gold-remaining = '6' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge7' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge6' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge5' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge4' completed = '0' gold-remaining = '9' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge9' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge8' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level3' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level2' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level1' completed = '0' gold-remaining = '31' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level7' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level6' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level5' completed = '0' gold-remaining = '27' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level4' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'gateway' completed = '0' gold-remaining = '5' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town5.level3' completed = '0' gold-remaining = '11' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town5.level2' completed = '0' gold-remaining = '5' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town5.level1' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world6.level8' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town5.level4' completed = '0' gold-remaining = '20' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town7.level1' completed = '0' gold-remaining = '20' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town7.level3' completed = '0' gold-remaining = '14' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town7.level2' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town7.level4' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town3.level1' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town3.level3' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town3.level2' completed = '0' gold-remaining = '11' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle17' completed = '0' gold-remaining = '11' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle16' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle15' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle14' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle13' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle12' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle11' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle10' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level16' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level15' completed = '0' gold-remaining = '22' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level14' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level13' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level12' completed = '0' gold-remaining = '18' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle19' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle18' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level5' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level4' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level7' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level6' completed = '0' gold-remaining = '21' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level1' completed = '0' gold-remaining = '18' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level3' completed = '0' gold-remaining = '18' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level2' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level2' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level3' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level1' completed = '0' gold-remaining = '33' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level9' completed = '0' gold-remaining = '14' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world4.level8' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level4' completed = '0' gold-remaining = '20' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level5' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'challenge20' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level4' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level5' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level6' completed = '0' gold-remaining = '30' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level7' completed = '0' gold-remaining = '26' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level1' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level2' completed = '0' gold-remaining = '7' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level3' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world5.level6' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level8' completed = '0' gold-remaining = '13' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world3.level9' completed = '0' gold-remaining = '14' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town1.level3' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town1.level2' completed = '0' gold-remaining = '10' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town1.level1' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level8' completed = '0' gold-remaining = '20' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level9' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level6' completed = '0' gold-remaining = '16' visible = '1' visited = '0' completion-time = '0' />
+		<map name = 'world1.level7' completed = '0' gold-remaining = '16' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level4' completed = '0' gold-remaining = '18' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level5' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level2' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level3' completed = '0' gold-remaining = '29' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world1.level1' completed = '0' gold-remaining = '17' visible = '1' visited = '0' completion-time = '0' />
+		<map name = 'town5.level3.connector' completed = '0' gold-remaining = '0' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level11' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'world2.level10' completed = '0' gold-remaining = '24' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level2' completed = '0' gold-remaining = '23' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level3' completed = '0' gold-remaining = '15' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'puzzle20' completed = '0' gold-remaining = '17' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level1' completed = '0' gold-remaining = '11' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level6' completed = '0' gold-remaining = '0' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level4' completed = '0' gold-remaining = '19' visible = '0' visited = '0' completion-time = '0' />
+		<map name = 'town6.level5' completed = '0' gold-remaining = '12' visible = '0' visited = '0' completion-time = '0' />
+	</worldmap>
+	<questdata>
+		<active-quests>
+			<active-quest>0.3.npc1.quest</active-quest>
+			<active-quest>0.4.npc2.quest</active-quest>
+		</active-quests>
+		<quest status = '2' name = '0.3.npc1.quest'>
+			<active-updates>
+				<active-update>update-talked</active-update>
+			</active-updates>
+		</quest>
+		<quest status = '1' name = '0.4.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '1.1.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '1.2.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '1.3.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '2.1.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '2.3.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '3.1.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '3.3.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '4.2.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '4.3.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '4.3.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '4.4.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '5.2.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '5.4.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '6.2.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '6.5.npc1.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '7.4.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '6.3.npc2.quest'>
+			<active-updates />
+		</quest>
+		<quest status = '0' name = '7.1.npc1.quest'>
+			<active-updates />
+		</quest>
+	</questdata>
+	<inventory>
+		<acquired>
+			<item upgrades-committed = '0'>
+				<name>beginners-shoes</name>
+				<title>Beginner&apos;s Shoes</title>
+				<quality>1</quality>
+				<cost>0</cost>
+				<upgrades-allowed>1</upgrades-allowed>
+				<description>You move 2% faster.</description>
+				<warehouses>
+					<warehouse>none</warehouse>
+				</warehouses>
+				<upgrade-pools>
+					<upgrade-pool>pool1</upgrade-pool>
+				</upgrade-pools>
+				<attributes>
+					<attribute>
+						<key>dig-length-bonus</key>
+						<value>0.02</value>
+					</attribute>
+					<attribute>
+						<key>player-speed-modifier</key>
+						<value>0.02</value>
+					</attribute>
+				</attributes>
+				<upgrades>
+					<available>
+						<upgrade name = 'pool1.enemygoldpenalty'>
+							<title>-2% Gold-Carrying Enemy Speed</title>
+							<cost>40</cost>
+							<attributes>
+								<attribute>
+									<key>enemy-carrying-gold-movement-penalty</key>
+									<value>-0.02</value>
+								</attribute>
+							</attributes>
+						</upgrade>
+						<upgrade name = 'pool1.enemyexplode2'>
+							<title>4% Chance Dying Enemies Explode</title>
+							<cost>50</cost>
+							<attributes>
+								<attribute>
+									<key>enemy-explode-on-death-chance</key>
+									<value>0.04</value>
+								</attribute>
+							</attributes>
+						</upgrade>
+					</available>
+					<committed />
+				</upgrades>
+			</item>
+		</acquired>
+		<equipped>
+			<item upgrades-committed = '0'>
+				<name>beginners-shoes</name>
+				<title>Beginner&apos;s Shoes</title>
+				<quality>1</quality>
+				<cost>0</cost>
+				<upgrades-allowed>1</upgrades-allowed>
+				<description>You move 2% faster.</description>
+				<warehouses>
+					<warehouse>none</warehouse>
+				</warehouses>
+				<upgrade-pools>
+					<upgrade-pool>pool1</upgrade-pool>
+				</upgrade-pools>
+				<attributes>
+					<attribute>
+						<key>dig-length-bonus</key>
+						<value>0.02</value>
+					</attribute>
+					<attribute>
+						<key>player-speed-modifier</key>
+						<value>0.02</value>
+					</attribute>
+				</attributes>
+				<upgrades>
+					<available>
+						<upgrade name = 'pool1.enemygoldpenalty'>
+							<title>-2% Gold-Carrying Enemy Speed</title>
+							<cost>40</cost>
+							<attributes>
+								<attribute>
+									<key>enemy-carrying-gold-movement-penalty</key>
+									<value>-0.02</value>
+								</attribute>
+							</attributes>
+						</upgrade>
+						<upgrade name = 'pool1.enemyexplode2'>
+							<title>4% Chance Dying Enemies Explode</title>
+							<cost>50</cost>
+							<attributes>
+								<attribute>
+									<key>enemy-explode-on-death-chance</key>
+									<value>0.04</value>
+								</attribute>
+							</attributes>
+						</upgrade>
+					</available>
+					<committed />
+				</upgrades>
+			</item>
+		</equipped>
+	</inventory>
+</game-state>

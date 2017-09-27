@@ -1,0 +1,78 @@
+<parameters>
+	<data>
+		<parameter>@disabled</parameter>
+		<parameter>@skill-icon-index</parameter>
+		<parameter>@category-name</parameter>
+	</data>
+	<text>
+		<parameter>@category-title</parameter>
+		<parameter>@level</parameter>
+		<parameter>@upgrade-msg</parameter>
+		<parameter>@status</parameter>
+		<parameter>@skill-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.skills.insert' version = 'normal'>
+
+    <insert:item id = 'insert' class = 'wrapper' disabled = '@disabled' render-border = '1' min-height = '160'>
+
+        <item>
+            <xicon x = '5%' y = '50%' valign = 'center' index = '@skill-icon-index' position = 'absolute' />
+
+            <stack id = 'details' class = 'frame' y = '10'>
+
+                    <icon x = '50%' y = '0' align = 'center' xvalign = 'center' index = '@skill-icon-index' xposition = 'absolute' />
+                    <label x = '50%' y = '0' align = 'center' value = '[color=title]@category-title[/color]' width = '100%' />
+
+                <rect class = 'underline' x = '2%' y = '0' width = '96%' height = '2' midpoint = '0.5' />
+
+                <xlabel x = '5%' y = '0' value = 'Level:  @level' align = '' />
+
+                <xitem>
+                    <label x = '18%' y = '0' width = '100%' align = '' value = '@upgrade-msg' />
+                    <label x = '95%' y = '0' width = '100%' align = 'right' value = '@status' />
+                </xitem>
+
+            </stack>
+        </item>
+
+        <action do = 'show:skills.tree' param = '@category-name' />
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'gamemenu.tabs.skills.insert' version = 'normal:zebra'>
+
+    <insert:item id = 'insert' class = 'wrapper' disabled = '@disabled' render-border = '1' min-height = '160'>
+
+        <item>
+            <xicon x = '95%' y = '50%' align = 'right' valign = 'center' index = '@skill-icon-index' position = 'absolute' />
+
+            <stack id = 'details' class = 'frame' y = '10'>
+
+                    <icon x = '50%' y = '0' align = 'center' xvalign = 'center' index = '@skill-icon-index' xposition = 'absolute' />
+                    <label x = '50%' y = '0' align = 'center' value = '[color=title]@category-title[/color]' width = '100%' />
+
+                <xitem xclass = 'byline'>
+                    <icon x = '5%' y = '0' xvalign = 'center' index = '@skill-icon-index' position = 'absolute' />
+                    <label x = '32%' y = '0' value = '[color=title]@category-title[/color]' width = '100%' align = '' />
+                </xitem>
+
+                <rect class = 'underline' x = '2%' y = '0' width = '96%' height = '2' midpoint = '0.5' />
+
+                <xitem>
+                    <label x = '82%' y = '0' value = '[color=category]@skill-title[/color]' width = '100%' align = 'right' />
+                    <label x = '5%' y = '0' value = 'Level:  @level' align = '' />
+                </xitem>
+
+            </stack>
+        </item>
+
+        <action do = 'show:skills.tree' param = '@category-name' />
+
+    </insert:item>
+
+</template>

@@ -1,0 +1,269 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 309 154 311 0 0 0 0 0 
+			0 0 0 314 154 303 328 0 0 0 0 
+			0 0 333 308 152 310 309 0 0 0 0 
+			0 0 306 0 154 313 305 0 0 0 0 
+			0 0 311 153 330 304 312 0 0 0 0 
+			0 0 306 154 312 307 309 326 0 0 0 
+			0 0 309 152 0 0 313 314 0 0 0 
+			0 0 306 331 334 152 311 303 0 0 0 
+			0 0 0 309 310 152 314 314 0 0 0 
+			0 0 0 0 309 152 309 314 0 0 0 
+			0 0 0 0 0 154 0 0 0 0 0 
+			153 327 331 253 331 331 328 153 253 0 0 
+			152 0 313 309 308 0 0 154 0 0 0 
+			153 207 0 312 310 325 326 154 0 0 0 
+			328 307 330 304 312 309 310 153 327 0 0 
+			0 311 310 308 308 308 305 152 0 0 0 
+			333 303 304 310 306 306 0 154 0 0 0 
+			311 307 313 314 310 0 328 152 257 0 0 
+			0 305 312 208 310 325 0 154 0 0 0 
+			0 311 307 327 305 0 0 152 0 0 0 
+			0 0 304 313 0 0 333 152 331 0 0 
+			0 0 0 0 0 0 0 154 0 0 0 
+			0 0 0 9 0 0 0 152 0 0 0 
+			0 153 330 329 23 323 23 23 254 0 0 
+			0 153 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 343 0 0 0 
+			0 0 0 348 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 343 0 0 0 0 0 
+			0 0 0 0 300 349 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 300 341 340 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 300 343 0 345 341 345 0 0 0 
+			0 0 346 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 343 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 
+			0 300 0 0 302 0 0 0 0 0 
+			0 0 300 302 0 0 0 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 343 263 0 265 0 0 283 0 
+			0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '4' y = '6' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Rico' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '21' x = '3' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '1' x = '2' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '4' x = '7' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '15' x = '0' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '17' x = '5' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '12' x = '6' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '10' x = '2' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '4' x = '1' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '7' x = '8' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '13' x = '8' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '19' x = '8' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '22' x = '6' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '24' x = '4' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Rico' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '5' x = '3' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '3' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '10' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '10' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '16' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '22' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '12' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle10' name = 'puzzle10.enter' height = '1' width = '1' behavior = '3' y = '22' x = '3' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle10.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '10' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle10.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle10.enter").loadMap("puzzle10", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("3.3.npc1.quest").status() in ("inactive", "active") )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		// Killing Rico before taking the quiz fails the quest
+        #define QUEST "3.3.npc1.quest"
+
+        #define UPDATE_BUYOUT "update-buyout"
+        #define UPDATE_KILLED_RICO_BEFORE "update-killed-rico-before"
+        #define UPDATE_KILLED_RICO_DURING "update-killed-rico-during"
+        #define UPDATE_KILLED_RICO_AFTER_PASSING "update-killed-rico-after-passing"
+        #define UPDATE_KILLED_RICO_AFTER_FAILING "update-killed-rico-after-failing"
+        #define UPDATE_KILLED_RICO_AFTER_BUYOUT "update-killed-rico-after-buyout"
+
+        // Never even started the quest?  Premature kill
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // failed
+            quest(QUEST).status("failed");
+
+            // early kill
+            quest(QUEST).update(UPDATE_KILLED_RICO_BEFORE).status("active");
+        }
+
+        // Quest still in progress, that means we said "maybe later," and thus still killed him too soon (too soon to pass the quest)
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // failed
+            quest(QUEST).status("failed");
+
+            // premeditated kill
+            quest(QUEST).update(UPDATE_KILLED_RICO_DURING).status("active");
+        }
+
+        // Failed the quest already?  Player must have hated him bad
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // already failed, just flag the update
+            quest(QUEST).update(UPDATE_KILLED_RICO_AFTER_FAILING).status("active");
+        }
+
+        // Only other option is completed quest.  Killing him is meaningless, just flags an update
+        else
+        {
+            // Did we pay for the skill point?
+            if ( quest(QUEST).update(UPDATE_BUYOUT).status() == "active" )
+            {
+                // get our money&apos;s worth by killing him too.
+                quest(QUEST).update(UPDATE_KILLED_RICO_AFTER_BUYOUT).status("active");
+            }
+
+            // No, we aced the quiz honestly (or googledly)
+            else
+            {
+                quest(QUEST).update(UPDATE_KILLED_RICO_AFTER_PASSING).status("active");
+            }
+        }
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "3.3.npc1.quest"
+
+        #define UPDATE_BUYOUT "update-buyout"
+        #define UPDATE_KILLED_RICO_BEFORE "update-killed-rico-before"
+        #define UPDATE_KILLED_RICO_DURING "update-killed-rico-during"
+        #define UPDATE_KILLED_RICO_AFTER_PASSING "update-killed-rico-after-passing"
+        #define UPDATE_KILLED_RICO_AFTER_FAILING "update-killed-rico-after-failing"
+
+        // Quest not active, assign it?
+        // Or, quest is active, but we haven&apos;t taken the quiz yet.  It&apos;s all the same here.  "Ready?"
+        if ( quest(QUEST).status() in ("inactive", "active") )
+        {
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // bummer
+            npc("npc1").talk("quest:done:failed");
+        }
+
+        // Success?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Paid for it?
+            if ( quest(QUEST).update(UPDATE_BUYOUT).status() == "active" )
+            {
+                // coward
+                npc("npc1").talk("quest:done:paid");
+            }
+
+            // earned it
+            else
+            {
+                // nice job, unless you used google
+                npc("npc1").talk("quest:done:passed");
+            }
+        }
+	</script>
+	<script name = 'onload'>
+		// npc path
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // indicators????????
+	</script>
+</scripts>

@@ -1,0 +1,369 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 274 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 275 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 273 0 0 0 153 332 29 29 325 0 0 0 0 
+			0 0 323 330 153 331 152 207 0 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 153 0 152 327 330 27 333 325 0 0 0 0 0 0 
+			0 0 0 0 152 0 153 314 306 0 306 303 0 0 0 0 0 216 
+			0 0 0 0 153 0 154 0 308 325 313 0 0 0 0 0 0 0 
+			0 0 0 153 330 324 152 0 0 274 305 325 0 0 0 0 0 0 
+			0 0 0 154 206 304 154 0 9 273 0 0 0 332 0 0 0 0 
+			0 0 154 331 314 309 26 24 327 27 29 25 332 308 0 0 0 0 
+			0 0 152 306 312 0 0 305 308 309 0 313 308 310 0 0 0 0 
+			0 0 153 0 0 0 0 274 0 0 0 306 0 0 0 0 0 0 
+			0 0 325 153 0 0 0 273 0 0 0 0 0 207 0 0 0 0 
+			0 0 310 333 329 24 323 25 25 206 26 327 333 324 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'bar1' x = '14' y = '3' modal = '0'>
+		<structure>
+			0 0 0 
+			0 0 0 
+			216 0 0 
+		</structure>
+	</plane>
+	<plane name = 'bar2' x = '15' y = '3' modal = '0'>
+		<structure>
+			0 0 0 
+			216 0 0 
+			0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'bar3' x = '16' y = '6' modal = '0'>
+		<structure>
+			216 0 
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 263 0 283 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 0 284 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 263 0 0 265 0 0 0 283 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 263 0 265 0 0 265 0 283 0 302 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '5' y = '12' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Han' title = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '13' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '8' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '11' x = '8' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '12' x = '12' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '8' x = '7' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '6' x = '5' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '2' x = '3' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '0' x = '12' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '8' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '5' x = '9' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '10' x = '5' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '12' x = '6' genus = '6' class = '' />
+	<entity x = '11' y = '6' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '3' position = '0' />
+</entities>
+<triggers>
+	<trigger name = 'wp1a' x = '14' y = '0' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1b' x = '14' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2a' x = '15' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2b' x = '15' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3a' x = '16' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3b' x = '16' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '11' y = '6' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to activate lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.talk' x = '4' y = '11' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Han'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '10' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '3' y = '11' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '4' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '3' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.e' x = '8' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle15.enter' x = '8' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle15'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle15.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '10' y = '1' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle15.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle15.enter").loadMap("puzzle15", "origin");
+	</script>
+	<script name = 'lever1.action'>
+		// lever pointing up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // move all 3 bars down simultaneously
+            map().plane("bar1").shiftToY("wp1b", 3.0);
+            +map().plane("bar2").shiftToY("wp2b", 2.75);
+            +map().plane("bar3").shiftToY("wp3b", 2.5);
+        }
+
+        // assume pointing down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // move all 3 bars up simultaneously
+            map().plane("bar1").shiftToY("wp1a", 3.0);
+            +map().plane("bar2").shiftToY("wp2a", 2.8);
+            +map().plane("bar3").shiftToY("wp3a", 2.5);
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define TASK "6.5.npc1.quest"
+
+
+        // Killed him ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // fails quest
+            quest(TASK).status("failed");
+
+            // premature kill update
+            quest(TASK).update("update-killed-han-before").status("active");
+        }
+
+        // Killed him during quest?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Did we kill all of the merchants also?
+            if ( quest(TASK).update("update-killed-all-merchants").status() == "active" )
+            {
+                // Could have just turned it in!
+                quest(TASK).update("update-killed-han-after").status("active");
+            }
+
+            else
+            {
+                // impatient?
+                quest(TASK).update("update-killed-han-during").status("active");
+            }
+
+
+            // Either way, we fail the quest
+            quest(TASK).status("failed");
+        }
+
+        // Killed him after completion, only remaining possibility
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // Just an update
+            quest(TASK).update("update-killed-han-after").status("active");
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-han").status("active");
+
+        // disable talk
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "6.5.npc1.quest"
+
+        #define UPDATE_KILLED_HAN "update-killed-han"
+        #define UPDATE_KILLED_ALL_MERCHANTS "update-killed-all-merchants"
+        #define UPDATE_COMPLETE "update-complete"
+
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Han wants you to kill all of the merchants.
+            // Disable all responses by default
+            npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+            // Did we already kill all known merchants?
+            if ( session("merchant.count.living").get() &lt; 0 )
+            {
+                // Enable already done response
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("already-done").enable();
+            }
+
+            // Nope
+            else
+            {
+                // yes/no options
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("default").enable();
+            }
+
+            // talk quest
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // All merchants dead?  This number can change and stuff, so we check session variable instead of any quest update
+            if ( session("merchant.count.living").get() &lt; 0 )
+            {
+                // great work
+                npc("npc1").talk("quest:in-progress:killed-all-merchants");
+            }
+
+            // nag
+            else
+            {
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // nice job
+            npc("npc1").talk("quest:complete");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // can only fail by killing Han.  no more talking for him.
+            // na then
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+</scripts>

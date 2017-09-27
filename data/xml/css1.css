@@ -1,0 +1,195 @@
+.global.gradient.color1:active {
+	color: 15, 15, 15
+}
+
+.global.gradient.color2:active {
+	color: 45, 45, 45
+}
+
+.global.gradient.color1:inactive {
+	color: 25, 25, 25
+}
+
+.global.gradient.color2:inactive {
+	color: 25, 25, 25
+}
+
+.global.gradient.color1:highlight {
+	color: 10, 10, 10
+}
+
+.global.gradient.color2:highlight {
+	color: 55, 55, 55
+}
+
+.border:active {
+	color: 35, 35, 35
+}
+
+.border:inactive {
+	color: 35, 35, 35
+}
+
+.border:highlight {
+	color: 215, 215, 215
+}
+
+.shadow:active {
+	color: 35, 35, 35
+}
+
+.shadow:inactive {
+	color: 35, 35, 35
+}
+
+.shadow:highlight {
+	color: 125, 125, 125
+}
+
+.text:inactive {
+	color: 75, 75, 75
+}
+
+.text:highlight {
+	color: 184, 56, 17
+}
+
+
+
+.border:active {
+	color: 125, 125, 125
+}
+
+.border:inactive {
+	color: 35, 35, 35
+}
+
+.border:highlight {
+	color: 125, 125, 125
+}
+
+.xhmenu.shadow:active {
+	color: 225, 225, 225
+}
+
+.xhmenu.shadow:inactive {
+	color: 35, 35, 35
+}
+
+.xhmenu.shadow:highlight {
+	color: 125, 125, 125
+}
+
+.text:inactive {
+	color: 75, 75, 75
+}
+
+.text:highlight {
+	color: 237, 77, 24
+}
+
+.border:inactive {
+	color: 155, 155, 155
+}
+
+.border:active {
+	color: 75, 75, 75
+}
+
+.shadow:active {
+	color: 45, 45, 45
+}
+
+.border:inactive {
+	color: 75, 75, 75
+}
+
+.shadow:inactive {
+	color: 45, 45, 45
+}
+
+.border:highlight {
+	color: 225, 225, 225
+}
+
+.shadow:highlight {
+	color: 125, 125, 125
+}
+
+.text:active {
+	color: 175, 175, 175
+}
+
+.text:inactive {
+	color: 225, 225, 225
+}
+
+.text:highlight {
+	color: 225, 225, 225
+}
+
+
+
+.border:active {
+	color: 125, 125, 125
+}
+
+.border:inactive {
+	color: 35, 35, 35
+}
+
+.border:highlight {
+	color: 215, 215, 215
+}
+
+.shadow:highlight {
+	color: 125, 125, 125
+}
+
+.text:inactive {
+	color: 75, 75, 75
+}
+
+.text:highlight {
+	color: 184, 56, 17
+}
+
+.border:active {
+	color: 95, 95, 95
+}
+
+.border:inactive {
+	color: 35, 35, 35
+}
+
+.border:highlight {
+	color: 192, 160, 40
+}
+
+.shadow:highlight {
+	color: 142, 110, 10
+}
+
+.text:active {
+	color: 155, 155, 155
+}
+
+.text:inactive {
+	color: 75, 75, 75
+}
+
+.text:highlight {
+	color: 25, 25, 225
+}
+
+.text:active {
+	color: 237, 77, 24
+}
+
+.text:inactive {
+	color: 225, 225, 225
+}
+
+.text:highlight {
+	color: 225, 225, 225
+}

@@ -1,0 +1,113 @@
+<hotkeys id = 'hotkeys'>
+
+    <hotkey keycode = '114' key-title = 'r'>
+        <old>
+            <action>click:rk.offmap</action>
+            <params>
+                <param key = 'value' value = 'rk.offmap/goto-last' />
+                <param key = 'is-hotkey' value = '1' />
+            </params>
+        </old>
+
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/place-enemy-respawn' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '100' key-title = 'd'>
+        <action>click:other</action>
+        <params>
+            <param key = 'value' value = 'delete-touched-entity' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '116' key-title = 't'>
+        <action>click:other</action>
+        <params>
+            <param key = 'value' value = 'toggle-triggers' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '115' key-title = 's'>
+        <action>click:menu-bar.maps</action>
+        <params>
+            <param key = 'value' value = 'menu-bar.maps/save' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '99' key-title = 'c'>
+        <action>click:menu-bar.planes</action>
+        <params>
+            <param key = 'value' value = 'menu-bar.planes/copy-random' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '118' key-title = 'v'>
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/paste-plane' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '98' key-title = 'b'>
+        <action>widget:toggle-child</action>
+        <params>
+            <param key = 'widget' value = 'rk.offmap' />
+            <param key = 'child' value = 'chk-view-background' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '102' key-title = 'f'>
+
+        <old>
+            <action>widget:toggle-child</action>
+            <params>
+                <param key = 'widget' value = 'rk.offmap' />
+                <param key = 'child' value = 'chk-view-foreground' />
+            </params>
+        </old>
+
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/move-entity' />
+        </params>
+
+    </hotkey>
+
+    <hotkey keycode = '103' key-title = 'g'>
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/place-gold' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '101' key-title = 'e'>
+        <old>
+            <action>click:menu-bar.planes</action>
+            <params>
+                <param key = 'value' value = 'menu-bar.planes/copy-random-from-last-and-paste' />
+            </params>
+        </old>
+
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/place-enemy' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '109' key-title = 'm'>
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/automask' />
+        </params>
+    </hotkey>
+
+    <hotkey keycode = '108' key-title = 'l'>
+        <action>click:rk.generic</action>
+        <params>
+            <param key = 'value' value = 'rk.generic/autodilapidate' />
+        </params>
+    </hotkey>
+
+</hotkeys>

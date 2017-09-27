@@ -1,0 +1,95 @@
+<matrix>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Matrix momentarily slows the movement speed of each [color=title]enemy[/color], buying you time to escape looming posses or to complete advanced digging puzzles.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.movement.matrix</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '3'>
+		<texts>
+			<overview>Matrix momentarily slows the movement speed of each [color=title]enemy[/color], buying you time to escape looming posses or to complete advanced digging puzzles.</overview>
+			<specs>Enemy speed [color=title]50%[/color] for [color=title]2.5s[/color]
+Recharges in [color=title]20 seconds[/color]</specs>
+			<manual />
+			<gif-source>gifs.movement.matrix</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Matrix[/color], you will lose access to the [color=title]Sprint[/color] skill.
+
+As you continue to upgrade [color=title]Matrix[/color], enemies will move even more slowly for even longer durations.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Sprint[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>2.5</duration>
+			<recharge measure = 'seconds'>20.0</recharge>
+			<modifiers>
+				<modifier name = 'frame-delay' value = '2' />
+				<modifier name = 'freeze-radius' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '5'>
+		<texts>
+			<overview>Amplify the power of the [color=title]Matrix[/color] effect, further slowing enemies' speed.</overview>
+			<specs>Enemy speed [color=title]33%[/color] for [color=title]3.0s[/color] (-17% for +0.5s)
+Recharges in [color=title]17 seconds[/color] (-3s)</specs>
+			<manual />
+			<gif-source>gifs.movement.matrix</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>17.0</recharge>
+			<modifiers>
+				<modifier name = 'frame-delay' value = '3' />
+				<modifier name = 'freeze-radius' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '5'>
+		<texts>
+			<overview>Fully enhance the [color=title]Matrix[/color] effect's strength, allowing you to dominate enemies.
+
+Any enemy within a [color=title]radius of 2 blocks[/color] will now freeze completely for [color=title]1 second[/color].</overview>
+			<specs>Enemies move at [color=title]50%[/color] speed for [color=title]2.5s[/color]
+Recharges in [color=title]15 seconds[/color] (-2s)
+Freeze nearby enemies for [color=title]1 second[/color]</specs>
+			<manual />
+			<gif-source>gifs.movement.matrix</gif-source>
+			<inserts>
+				<confirm>
+					<footer>This is the final upgrade.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Matrix[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>4.0</duration>
+			<recharge measure = 'seconds'>15.0</recharge>
+			<modifiers>
+				<modifier name = 'frame-delay' value = '4' />
+				<modifier name = 'freeze-radius' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have fully enhanced the [color=title]Matrix[/color] effect's strength.  Any enemy within a [color=title]radius of 2 blocks[/color] will now freeze completely for [color=title]1 second[/color] when you activate the skill.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.movement.matrix</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</matrix>

@@ -1,0 +1,250 @@
+<maps>
+	<primary-map name = 'world0.level0' />
+	<xprimary-map name = 'gateway' />
+	<background>
+		<map layer = '2' name = 'a.mines.medium' title = 'Untitled Area' height = '20' difficulty = '' gold-count = '0' width = '50' rel = '' y = '120' x = '300' class = '' completion-time = '0' />
+		<map layer = '2' name = 'a.mines.small' title = 'Untitled Area' height = '20' difficulty = '' gold-count = '0' width = '30' rel = '' y = '100' x = '300' class = '' completion-time = '0' />
+		<map layer = '2' name = 'bg1' title = 'Untitled Area' height = '10' difficulty = '' gold-count = '0' width = '10' rel = '' y = '46' x = '11' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge1.bg' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '49' rel = '' y = '776' x = '-44' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge10.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '41' rel = '' y = '1054' x = '-43' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge11.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '39' rel = '' y = '1085' x = '-42' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge12.bg' title = 'Untitled Area' height = '26' difficulty = '' gold-count = '0' width = '39' rel = '' y = '1117' x = '-41' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge13.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '40' rel = '' y = '1143' x = '-40' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge14.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '38' rel = '' y = '1175' x = '-40' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge15.bg' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '41' rel = '' y = '1203' x = '-43' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge16.bg' title = 'Untitled Area' height = '30' difficulty = '' gold-count = '0' width = '44' rel = '' y = '1232' x = '-43' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge17.bg' title = 'Untitled Area' height = '44' difficulty = '' gold-count = '0' width = '42' rel = '' y = '1262' x = '-46' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge18.bg' title = 'Untitled Area' height = '13' difficulty = '' gold-count = '0' width = '44' rel = '' y = '1306' x = '-47' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge19.bg' title = 'Untitled Area' height = '38' difficulty = '' gold-count = '0' width = '42' rel = '' y = '1319' x = '-49' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge2.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '39' rel = '' y = '811' x = '-42' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge20.bg' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '39' rel = '' y = '1357' x = '-48' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge3.bg' title = 'Untitled Area' height = '26' difficulty = '' gold-count = '0' width = '38' rel = '' y = '848' x = '-42' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge4.bg' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '0' width = '43' rel = '' y = '874' x = '-44' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge5.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '40' rel = '' y = '901' x = '-45' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge6.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '38' rel = '' y = '929' x = '-45' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge7.bg' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '41' rel = '' y = '968' x = '-43' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge8.bg' title = 'Untitled Area' height = '28' difficulty = '' gold-count = '0' width = '44' rel = '' y = '999' x = '-45' class = '' completion-time = '0' />
+		<map layer = '2' name = 'challenge9.bg' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '0' width = '42' rel = '' y = '1027' x = '-44' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle1.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '41' rel = '' y = '543' x = '-152' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle10.bg' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '45' rel = '' y = '1030' x = '-155' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle11.bg' title = 'Untitled Area' height = '55' difficulty = '' gold-count = '0' width = '51' rel = '' y = '1085' x = '-157' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle12.bg' title = 'Untitled Area' height = '49' difficulty = '' gold-count = '0' width = '46' rel = '' y = '1140' x = '-156' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle13.bg' title = 'Untitled Area' height = '63' difficulty = '' gold-count = '0' width = '48' rel = '' y = '1195' x = '-159' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle14.bg' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '45' rel = '' y = '1258' x = '-161' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle15.bg' title = 'Untitled Area' height = '45' difficulty = '' gold-count = '0' width = '56' rel = '' y = '1304' x = '-156' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle16.bg' title = 'Untitled Area' height = '67' difficulty = '' gold-count = '0' width = '45' rel = '' y = '1358' x = '-155' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle17.bg' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '52' rel = '' y = '1425' x = '-161' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle18.bg' title = 'Untitled Area' height = '53' difficulty = '' gold-count = '0' width = '45' rel = '' y = '1469' x = '-155' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle19.bg' title = 'Untitled Area' height = '59' difficulty = '' gold-count = '0' width = '46' rel = '' y = '1525' x = '-159' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle2.bg' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '50' rel = '' y = '591' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle20.bg' title = 'Untitled Area' height = '63' difficulty = '' gold-count = '0' width = '51' rel = '' y = '1585' x = '-162' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle3.bg' title = 'Untitled Area' height = '39' difficulty = '' gold-count = '0' width = '51' rel = '' y = '647' x = '-155' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle4.bg' title = 'Untitled Area' height = '45' difficulty = '' gold-count = '0' width = '49' rel = '' y = '701' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle5.bg' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '46' rel = '' y = '755' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle6.bg' title = 'Untitled Area' height = '47' difficulty = '' gold-count = '0' width = '48' rel = '' y = '810' x = '-157' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle7.bg' title = 'Untitled Area' height = '47' difficulty = '' gold-count = '0' width = '46' rel = '' y = '866' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle8.bg' title = 'Untitled Area' height = '49' difficulty = '' gold-count = '0' width = '45' rel = '' y = '920' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'puzzle9.bg' title = 'Untitled Area' height = '44' difficulty = '' gold-count = '0' width = '43' rel = '' y = '975' x = '-154' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town1.bg1' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '0' width = '44' rel = '' y = '-59' x = '14' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town1.bg2' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '0' width = '31' rel = '' y = '-59' x = '56' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town2.bg1' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '51' rel = '' y = '-143' x = '-17' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town3.bg1' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '46' rel = '' y = '-133' x = '89' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town4.bg1' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '33' rel = '' y = '-183' x = '118' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town4.bg2' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '49' rel = '' y = '-189' x = '151' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town5.bg1' title = 'Untitled Area' height = '52' difficulty = '' gold-count = '0' width = '74' rel = '' y = '-227' x = '32' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town6.bg1' title = 'Untitled Area' height = '43' difficulty = '' gold-count = '0' width = '43' rel = '' y = '-81' x = '-92' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town6.bg2' title = 'Untitled Area' height = '42' difficulty = '' gold-count = '0' width = '42' rel = '' y = '-76' x = '-134' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town7.bg1' title = 'Untitled Area' height = '54' difficulty = '' gold-count = '0' width = '55' rel = '' y = '-154' x = '-259' class = '' completion-time = '0' />
+		<map layer = '2' name = 'town7.bg2' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '31' rel = '' y = '-146' x = '-216' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world0.level0.bg' title = 'Untitled Area' height = '47' difficulty = '' gold-count = '0' width = '26' rel = '' y = '-14' x = '-45' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world0.level1.bg' title = 'Untitled Area' height = '38' difficulty = '' gold-count = '0' width = '33' rel = '' y = '1' x = '-65' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world0.level1.bg2' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '0' width = '34' rel = '' y = '-14' x = '-64' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world0.level2.bg' title = 'Untitled Area' height = '67' difficulty = '' gold-count = '0' width = '28' rel = '' y = '-16' x = '-93' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world0.level4.bg' title = 'Untitled Area' height = '48' difficulty = '' gold-count = '0' width = '29' rel = '' y = '-7' x = '-20' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world1.bg1' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '30' rel = '' y = '0' x = '9' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world1.bg2' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '42' rel = '' y = '0' x = '39' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world1.bg3' title = 'Untitled Area' height = '39' difficulty = '' gold-count = '0' width = '32' rel = '' y = '-38' x = '-2' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world1.bg4' title = 'Untitled Area' height = '40' difficulty = '' gold-count = '0' width = '28' rel = '' y = '-38' x = '30' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world1.bg5' title = 'Untitled Area' height = '40' difficulty = '' gold-count = '0' width = '28' rel = '' y = '-38' x = '58' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg1' title = 'Untitled Area' height = '53' difficulty = '' gold-count = '0' width = '28' rel = '' y = '-112' x = '-8' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg2' title = 'Untitled Area' height = '54' difficulty = '' gold-count = '0' width = '30' rel = '' y = '-112' x = '20' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg3' title = 'Untitled Area' height = '60' difficulty = '' gold-count = '0' width = '53' rel = '' y = '-117' x = '50' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg4' title = 'Untitled Area' height = '48' difficulty = '' gold-count = '0' width = '28' rel = '' y = '-168' x = '16' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg5' title = 'Untitled Area' height = '58' difficulty = '' gold-count = '0' width = '37' rel = '' y = '-175' x = '36' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg6' title = 'Untitled Area' height = '59' difficulty = '' gold-count = '0' width = '38' rel = '' y = '-175' x = '72' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world2.bg7' title = 'Untitled Area' height = '22' difficulty = '' gold-count = '0' width = '48' rel = '' y = '-197' x = '62' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg1' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '35' rel = '' y = '-152' x = '-185' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg2' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '73' rel = '' y = '-146' x = '-150' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg3' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '31' rel = '' y = '-111' x = '-195' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg4' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '61' rel = '' y = '-111' x = '-165' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg5' title = 'Untitled Area' height = '18' difficulty = '' gold-count = '0' width = '39' rel = '' y = '-76' x = '-173' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world3.bg6' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '0' width = '26' rel = '' y = '-111' x = '-104' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world4.bg1' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '35' rel = '' y = '-165' x = '-84' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world4.bg2' title = 'Untitled Area' height = '40' difficulty = '' gold-count = '0' width = '37' rel = '' y = '-165' x = '-49' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world4.bg3' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '36' rel = '' y = '-125' x = '-84' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world4.bg4' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '37' rel = '' y = '-125' x = '-49' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world4.bg5' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '0' width = '37' rel = '' y = '-90' x = '-88' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world5.bg1' title = 'Untitled Area' height = '49' difficulty = '' gold-count = '0' width = '34' rel = '' y = '-146' x = '151' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world5.bg2' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '0' width = '42' rel = '' y = '-146' x = '183' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world5.bg3' title = 'Untitled Area' height = '59' difficulty = '' gold-count = '0' width = '29' rel = '' y = '-155' x = '222' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world5.bg4' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '0' width = '41' rel = '' y = '-115' x = '183' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world5.bg5' title = 'Untitled Area' height = '48' difficulty = '' gold-count = '0' width = '38' rel = '' y = '-98' x = '206' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world6.bg1' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '39' rel = '' y = '-89' x = '97' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world6.bg2' title = 'Untitled Area' height = '52' difficulty = '' gold-count = '0' width = '42' rel = '' y = '-89' x = '136' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world6.bg3' title = 'Untitled Area' height = '41' difficulty = '' gold-count = '0' width = '65' rel = '' y = '-121' x = '120' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world6.bg4' title = 'Untitled Area' height = '32' difficulty = '' gold-count = '0' width = '33' rel = '' y = '-152' x = '118' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world7.bg1' title = 'Untitled Area' height = '47' difficulty = '' gold-count = '0' width = '64' rel = '' y = '-264' x = '5' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world7.bg2' title = 'Untitled Area' height = '50' difficulty = '' gold-count = '0' width = '68' rel = '' y = '-264' x = '66' class = '' completion-time = '0' />
+		<map layer = '2' name = 'world7.bg3' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '92' rel = '' y = '-294' x = '19' class = '' completion-time = '0' />
+	</background>
+	<foreground>
+		<map layer = '1' name = 'challenge1' title = 'Challenge Room' height = '16' difficulty = 'Easy' gold-count = '6' width = '26' rel = '' y = '714' x = '-34' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge10' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '20' rel = '' y = '966' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge11' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '21' rel = '' y = '994' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge12' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '21' rel = '' y = '1022' x = '-32' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge13' title = 'Challenge Room' height = '17' difficulty = 'Medium' gold-count = '10' width = '20' rel = '' y = '1047' x = '-31' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge14' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '19' rel = '' y = '1075' x = '-31' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge15' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '19' rel = '' y = '1102' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge16' title = 'Challenge Room' height = '15' difficulty = 'Hard' gold-count = '10' width = '19' rel = '' y = '1127' x = '-34' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge17' title = 'Challenge Room' height = '16' difficulty = 'Hard' gold-count = '10' width = '19' rel = '' y = '1154' x = '-35' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge18' title = 'Challenge Room' height = '15' difficulty = 'Hard' gold-count = '10' width = '19' rel = '' y = '1182' x = '-37' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge19' title = 'Challenge Room' height = '19' difficulty = 'Hard' gold-count = '10' width = '19' rel = '' y = '1210' x = '-38' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge2' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '10' width = '20' rel = '' y = '745' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge20' title = 'Challenge Room' height = '16' difficulty = 'Hard' gold-count = '10' width = '19' rel = '' y = '1242' x = '-39' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge3' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '10' width = '20' rel = '' y = '777' x = '-34' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge4' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '9' width = '20' rel = '' y = '802' x = '-34' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge5' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '10' width = '18' rel = '' y = '827' x = '-34' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge6' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '10' width = '19' rel = '' y = '852' x = '-36' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge7' title = 'Challenge Room' height = '17' difficulty = 'Easy' gold-count = '10' width = '19' rel = '' y = '886' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge8' title = 'Challenge Room' height = '15' difficulty = 'Easy' gold-count = '10' width = '19' rel = '' y = '915' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'challenge9' title = 'Challenge Room' height = '15' difficulty = 'Medium' gold-count = '10' width = '20' rel = '' y = '941' x = '-33' class = '' completion-time = '0' />
+		<map layer = '1' name = 'gateway' title = 'Untitled Area' height = '20' difficulty = '' gold-count = '5' width = '23' rel = '' y = '1397' x = '-197' class = 'debug' completion-time = '0' />
+		<map layer = '1' name = 'puzzle1' title = 'Puzzle Level' height = '14' difficulty = 'Very Easy' gold-count = '8' width = '16' rel = '' y = '500' x = '-130' class = 'puzzle' completion-time = '0' />
+		<map layer = '1' name = 'puzzle10' title = 'Puzzle Level' height = '21' difficulty = 'Medium' gold-count = '16' width = '18' rel = '' y = '950' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle11' title = 'Puzzle Level' height = '25' difficulty = 'Medium' gold-count = '15' width = '21' rel = '' y = '1000' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle12' title = 'Puzzle Level' height = '21' difficulty = 'Very Hard' gold-count = '15' width = '18' rel = '' y = '1050' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle13' title = 'Puzzle Level' height = '34' difficulty = 'Medium' gold-count = '12' width = '18' rel = '' y = '1100' x = '-134' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle14' title = 'Puzzle Level' height = '22' difficulty = 'Medium' gold-count = '12' width = '18' rel = '' y = '1150' x = '-136' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle15' title = 'Puzzle Level' height = '18' difficulty = 'Hard' gold-count = '16' width = '30' rel = '' y = '1200' x = '-134' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle16' title = 'Puzzle Level' height = '37' difficulty = 'Hard' gold-count = '17' width = '21' rel = '' y = '1250' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle17' title = 'Puzzle Level' height = '19' difficulty = 'Hard' gold-count = '11' width = '20' rel = '' y = '1300' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle18' title = 'Puzzle Level' height = '26' difficulty = 'Very Hard' gold-count = '12' width = '18' rel = '' y = '1350' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle19' title = 'Puzzle Level' height = '32' difficulty = 'Hard' gold-count = '17' width = '18' rel = '' y = '1400' x = '-135' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle2' title = 'Puzzle Room' height = '20' difficulty = 'Easy' gold-count = '10' width = '20' rel = '' y = '550' x = '-130' class = 'puzzle' completion-time = '0' />
+		<map layer = '1' name = 'puzzle20' title = 'Puzzle Level' height = '39' difficulty = 'Very Hard' gold-count = '17' width = '22' rel = '' y = '1450' x = '-136' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle3' title = 'Puzzle Level' height = '15' difficulty = 'Easy' gold-count = '7' width = '19' rel = '' y = '600' x = '-130' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle4' title = 'Puzzle Level' height = '19' difficulty = 'Easy' gold-count = '10' width = '18' rel = '' y = '650' x = '-130' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle5' title = 'Puzzle Level' height = '15' difficulty = 'Easy' gold-count = '7' width = '18' rel = '' y = '700' x = '-130' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle6' title = 'Puzzle Level' height = '20' difficulty = 'Easy' gold-count = '16' width = '18' rel = '' y = '750' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle7' title = 'Puzzle Level' height = '20' difficulty = 'Easy' gold-count = '12' width = '18' rel = '' y = '800' x = '-131' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle8' title = 'Puzzle Level' height = '21' difficulty = 'Easy' gold-count = '16' width = '18' rel = '' y = '850' x = '-131' class = '' completion-time = '0' />
+		<map layer = '1' name = 'puzzle9' title = 'Puzzle Level' height = '17' difficulty = 'Medium' gold-count = '17' width = '18' rel = '' y = '900' x = '-132' class = '' completion-time = '0' />
+		<map layer = '1' name = 'town1.level1' title = 'Amandria' height = '15' difficulty = '' gold-count = '15' width = '23' rel = '' y = '-45' x = '20' class = 'overworld town capital' completion-time = '0' />
+		<map layer = '1' name = 'town1.level2' title = 'Amandria' height = '17' difficulty = '' gold-count = '10' width = '23' rel = 'puzzle2' y = '-47' x = '43' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town1.level3' title = 'Amandria' height = '19' difficulty = '' gold-count = '10' width = '14' rel = '' y = '-64' x = '29' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'town2.level1' title = 'Edenton' height = '10' difficulty = '' gold-count = '10' width = '17' rel = '' y = '-106' x = '-2' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'town2.level2' title = 'Edenton' height = '16' difficulty = '' gold-count = '13' width = '23' rel = 'puzzle3' y = '-122' x = '-5' class = 'overworld town capital puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town2.level2.connector' title = 'Edenton' height = '2' difficulty = '' gold-count = '0' width = '2' rel = '' y = '-124' x = '17' class = 'connector' completion-time = '0' />
+		<map layer = '1' name = 'town2.level3' title = 'Edenton' height = '16' difficulty = '' gold-count = '12' width = '20' rel = 'puzzle4' y = '-122' x = '-25' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town3.level1' title = 'Navarra' height = '19' difficulty = '' gold-count = '13' width = '15' rel = '' y = '-120' x = '83' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'town3.level2' title = 'Navarra' height = '17' difficulty = '' gold-count = '11' width = '16' rel = '' y = '-115' x = '98' class = 'overworld town capital' completion-time = '0' />
+		<map layer = '1' name = 'town3.level3' title = 'Navarra' height = '25' difficulty = '' gold-count = '13' width = '11' rel = 'puzzle10' y = '-98' x = '101' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town4.level1' title = 'Semperfalla' height = '14' difficulty = '' gold-count = '10' width = '15' rel = 'puzzle11' y = '-148' x = '116' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town4.level2' title = 'Semperfalla' height = '14' difficulty = '' gold-count = '17' width = '33' rel = '' y = '-156' x = '131' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'town4.level3' title = 'Semperfalla' height = '13' difficulty = '' gold-count = '16' width = '23' rel = 'puzzle12' y = '-169' x = '147' class = 'overworld town capital puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town4.level4' title = 'Semperfalla' height = '14' difficulty = '' gold-count = '15' width = '15' rel = 'puzzle13' y = '-142' x = '145' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town5.level1' title = 'Ouromova' height = '15' difficulty = '' gold-count = '12' width = '17' rel = 'puzzle18' y = '-189' x = '51' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town5.level2' title = 'Ouromova' height = '10' difficulty = '' gold-count = '5' width = '11' rel = 'puzzle14' y = '-174' x = '51' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town5.level3' title = 'Ouromova' height = '26' difficulty = '' gold-count = '11' width = '14' rel = 'puzzle19' y = '-200' x = '68' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town5.level3.connector' title = 'Untitled Area' height = '3' difficulty = '' gold-count = '0' width = '14' rel = '' y = '-203' x = '68' class = 'connector' completion-time = '0' />
+		<map layer = '1' name = 'town5.level4' title = 'Ouromova' height = '14' difficulty = '' gold-count = '20' width = '26' rel = 'puzzle20' y = '-203' x = '42' class = 'overworld town capital puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town6.level1' title = 'Callistaska' height = '10' difficulty = '' gold-count = '11' width = '20' rel = '' y = '-76' x = '-77' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'town6.level2' title = 'Callistaska' height = '21' difficulty = '' gold-count = '23' width = '24' rel = 'puzzle5' y = '-66' x = '-81' class = 'overworld town puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town6.level3' title = 'Callistaska' height = '13' difficulty = '' gold-count = '15' width = '25' rel = 'puzzle6' y = '-63' x = '-106' class = 'overworld town capital puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'town6.level4' title = 'Callistaska' height = '20' difficulty = '' gold-count = '19' width = '18' rel = 'puzzle7' y = '-75' x = '-124' class = 'overworld town puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'town6.level5' title = 'Callistaska' height = '14' difficulty = '' gold-count = '12' width = '18' rel = 'puzzle15' y = '-55' x = '-124' class = 'overworld town puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'town6.level6' title = 'Callistaska' height = '10' difficulty = '' gold-count = '0' width = '10' rel = '' y = '-50' x = '-106' class = 'overworld town dani' completion-time = '0' />
+		<map layer = '1' name = 'town7.level1' title = 'Manderkeen' height = '17' difficulty = '' gold-count = '20' width = '32' rel = 'puzzle8' y = '-126' x = '-196' class = 'overworld town capital puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'town7.level2' title = 'Manderkeen' height = '15' difficulty = '' gold-count = '17' width = '16' rel = 'puzzle17' y = '-133' x = '-212' class = 'overworld town puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'town7.level3' title = 'Manderkeen' height = '19' difficulty = '' gold-count = '14' width = '16' rel = 'puzzle16' y = '-118' x = '-212' class = 'overworld town puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'town7.level4' title = 'Manderkeen' height = '30' difficulty = '' gold-count = '17' width = '18' rel = 'puzzle9' y = '-129' x = '-230' class = 'overworld town puzzle-door dani' completion-time = '0' />
+		<map layer = '1' name = 'world0.level0' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '18' width = '20' rel = '' y = '-9' x = '-82' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world0.level1' title = 'Untitled Area' height = '26' difficulty = '' gold-count = '13' width = '14' rel = '' y = '-6' x = '-62' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world0.level2' title = 'Untitled Area' height = '26' difficulty = '' gold-count = '15' width = '17' rel = '' y = '-6' x = '-48' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world0.level3' title = 'Smithsville' height = '20' difficulty = '' gold-count = '14' width = '14' rel = '' y = '8' x = '-31' class = 'overworld town' completion-time = '0' />
+		<map layer = '1' name = 'world0.level4' title = 'Smithsville' height = '26' difficulty = '' gold-count = '19' width = '20' rel = 'puzzle1' y = '-2' x = '-17' class = 'overworld town capital puzzle-door' completion-time = '0' />
+		<map layer = '1' name = 'world1.level1' title = 'Untitled Area' height = '21' difficulty = '' gold-count = '17' width = '22' rel = 'challenge1' y = '3' x = '3' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world1.level2' title = 'Untitled Area' height = '21' difficulty = '' gold-count = '24' width = '17' rel = '' y = '3' x = '25' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level3' title = 'Untitled Area' height = '21' difficulty = '' gold-count = '29' width = '20' rel = '' y = '3' x = '42' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level4' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '18' width = '20' rel = '' y = '-13' x = '42' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level5' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '19' width = '24' rel = '' y = '-13' x = '18' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level6' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '16' width = '15' rel = '' y = '-13' x = '3' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level7' title = 'Untitled Area' height = '17' difficulty = '' gold-count = '16' width = '16' rel = '' y = '-30' x = '3' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level8' title = 'Untitled Area' height = '17' difficulty = '' gold-count = '20' width = '24' rel = '' y = '-30' x = '19' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world1.level9' title = 'Untitled Area' height = '17' difficulty = '' gold-count = '16' width = '19' rel = 'challenge2' y = '-30' x = '43' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world2.level1' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '16' width = '30' rel = 'challenge3' y = '-80' x = '19' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world2.level10' title = 'Untitled Area' height = '18' difficulty = '' gold-count = '24' width = '24' rel = '' y = '-126' x = '38' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level11' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '24' width = '19' rel = '' y = '-147' x = '19' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level12' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '18' width = '24' rel = '' y = '-140' x = '38' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level13' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '19' width = '29' rel = 'challenge5' y = '-140' x = '62' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world2.level14' title = 'Untitled Area' height = '20' difficulty = '' gold-count = '16' width = '17' rel = '' y = '-160' x = '65' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level15' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '22' width = '27' rel = '' y = '-155' x = '38' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level16' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '19' width = '27' rel = '' y = '-174' x = '62' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level2' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '16' width = '21' rel = '' y = '-80' x = '-2' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level3' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '22' width = '26' rel = '' y = '-96' x = '-2' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level4' title = 'Untitled Area' height = '17' difficulty = '' gold-count = '19' width = '19' rel = '' y = '-97' x = '24' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level5' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '24' width = '27' rel = '' y = '-96' x = '43' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level6' title = 'Untitled Area' height = '18' difficulty = '' gold-count = '19' width = '19' rel = '' y = '-80' x = '49' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level7' title = 'Untitled Area' height = '10' difficulty = '' gold-count = '5' width = '12' rel = '' y = '-96' x = '70' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world2.level8' title = 'Untitled Area' height = '12' difficulty = '' gold-count = '15' width = '32' rel = 'challenge4' y = '-108' x = '51' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world2.level9' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '15' width = '21' rel = '' y = '-124' x = '62' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world3.level1' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '17' width = '22' rel = 'challenge11' y = '-79' x = '-146' class = 'overworld challenge-door dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level10' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '29' width = '33' rel = 'challenge12' y = '-124' x = '-132' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world3.level11' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '20' width = '22' rel = '' y = '-123' x = '-99' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world3.level12' title = 'Untitled Area' height = '5' difficulty = '' gold-count = '11' width = '42' rel = '' y = '-129' x = '-147' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level13' title = 'Untitled Area' height = '23' difficulty = '' gold-count = '15' width = '17' rel = '' y = '-133' x = '-164' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level2' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '7' width = '7' rel = '' y = '-79' x = '-153' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level3' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '24' width = '30' rel = 'challenge20' y = '-94' x = '-172' class = 'overworld challenge-door dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level4' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '15' width = '18' rel = '' y = '-94' x = '-142' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level5' title = 'Untitled Area' height = '19' difficulty = '' gold-count = '19' width = '18' rel = '' y = '-94' x = '-124' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level6' title = 'Untitled Area' height = '20' difficulty = '' gold-count = '30' width = '29' rel = 'challenge19' y = '-109' x = '-106' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world3.level7' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '26' width = '32' rel = '' y = '-109' x = '-138' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level8' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '13' width = '15' rel = '' y = '-109' x = '-153' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world3.level9' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '14' width = '15' rel = '' y = '-124' x = '-147' class = 'overworld dani' completion-time = '0' />
+		<map layer = '1' name = 'world4.level1' title = 'Untitled Area' height = '31' difficulty = '' gold-count = '18' width = '12' rel = '' y = '-129' x = '-37' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level10' title = 'Untitled Area' height = '6' difficulty = '' gold-count = '7' width = '12' rel = '' y = '-98' x = '-37' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level11' title = 'Untitled Area' height = '12' difficulty = '' gold-count = '15' width = '20' rel = '' y = '-88' x = '-77' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level2' title = 'Untitled Area' height = '18' difficulty = '' gold-count = '10' width = '12' rel = '' y = '-147' x = '-37' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level3' title = 'Untitled Area' height = '12' difficulty = '' gold-count = '18' width = '35' rel = 'challenge9' y = '-144' x = '-72' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world4.level4' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '12' width = '19' rel = '' y = '-132' x = '-77' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level5' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '12' width = '21' rel = '' y = '-132' x = '-58' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level6' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '21' width = '29' rel = '' y = '-118' x = '-66' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level7' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '10' width = '11' rel = '' y = '-118' x = '-77' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world4.level8' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '19' width = '20' rel = 'challenge10' y = '-104' x = '-77' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world4.level9' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '14' width = '20' rel = '' y = '-104' x = '-57' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world5.level1' title = 'Untitled Area' height = '30' difficulty = '' gold-count = '33' width = '19' rel = 'challenge16' y = '-128' x = '142' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world5.level2' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '13' width = '17' rel = '' y = '-126' x = '161' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world5.level3' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '15' width = '21' rel = '' y = '-125' x = '178' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world5.level4' title = 'Untitled Area' height = '22' difficulty = '' gold-count = '20' width = '16' rel = 'challenge18' y = '-133' x = '199' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world5.level5' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '24' width = '33' rel = '' y = '-111' x = '182' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world5.level6' title = 'Untitled Area' height = '21' difficulty = '' gold-count = '24' width = '21' rel = 'challenge17' y = '-111' x = '161' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world5.level7' title = 'Untitled Area' height = '40' difficulty = '' gold-count = '36' width = '15' rel = '' y = '-95' x = '194' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level1' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '31' width = '41' rel = '' y = '-73' x = '95' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level2' title = 'Untitled Area' height = '12' difficulty = '' gold-count = '16' width = '22' rel = 'challenge6' y = '-58' x = '92' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world6.level3' title = 'Untitled Area' height = '11' difficulty = '' gold-count = '15' width = '20' rel = '' y = '-46' x = '104' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level4' title = 'Untitled Area' height = '12' difficulty = '' gold-count = '13' width = '22' rel = '' y = '-58' x = '114' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level5' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '27' width = '15' rel = '' y = '-73' x = '136' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level6' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '19' width = '23' rel = 'challenge7' y = '-89' x = '133' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world6.level7' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '17' width = '21' rel = '' y = '-89' x = '112' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level8' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '24' width = '27' rel = '' y = '-105' x = '114' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world6.level9' title = 'Untitled Area' height = '29' difficulty = '' gold-count = '17' width = '12' rel = 'challenge8' y = '-134' x = '114' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world7.level1' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '33' width = '41' rel = 'challenge13' y = '-218' x = '37' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world7.level2' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '16' width = '21' rel = '' y = '-220' x = '78' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world7.level3' title = 'Untitled Area' height = '14' difficulty = '' gold-count = '21' width = '25' rel = 'challenge14' y = '-234' x = '78' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world7.level4' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '24' width = '30' rel = '' y = '-234' x = '48' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world7.level5' title = 'Untitled Area' height = '16' difficulty = '' gold-count = '16' width = '19' rel = '' y = '-234' x = '29' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world7.level6' title = 'Untitled Area' height = '27' difficulty = '' gold-count = '24' width = '19' rel = '' y = '-234' x = '10' class = 'overworld' completion-time = '0' />
+		<map layer = '1' name = 'world7.level7' title = 'Untitled Area' height = '26' difficulty = '' gold-count = '28' width = '14' rel = 'challenge15' y = '-260' x = '25' class = 'overworld challenge-door' completion-time = '0' />
+		<map layer = '1' name = 'world7.level8' title = 'Untitled Area' height = '15' difficulty = '' gold-count = '36' width = '47' rel = '' y = '-249' x = '39' class = 'overworld' completion-time = '0' />
+	</foreground>
+</maps>

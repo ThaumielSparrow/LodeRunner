@@ -1,0 +1,256 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>What do you want, [color=special]$[core.player1.name][/color]?  I don&apos;t have anything to say to you.  I also definitely don&apos;t have anyone&apos;s [color=special]heirloom[/color], if you know what I mean.  Stay away from [color=special]Erin[/color] if you see her in the eastern regions!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I hope you haven&apos;t wasted your time talking to anyone named [color=special]Erin[/color] lately.  I&apos;ll never visit [color=special]Navarra[/color] again!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>What are you looking for, [color=special]$[core.player1.name][/color]?  If you&apos;re looking for a way to customize your controls, then you should look in the [color=special]pause menu[/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>What do you want from me now, [color=special]$[core.player1.name][/color]?  Are you just showing off your fancy customized controls?  I&apos;m not impressed!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I do have an heirloom, [color=special]$[core.player1.name][/color], I admit it.  Do you want me to return it to you?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes.  Return it now!</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I guess [color=special]Erin[/color] didn&apos;t tell you much about me, did she?  She can&apos;t have this [color=special]heirloom[/color], and neither can you!</comment>
+										</line>
+										<line id = 'line2'>
+											<comment>Do you think that I will change my mind, [color=special]$[core.player1.name][/color]?  How many times can you possibly make this useless request?</comment>
+										</line>
+										<line id = 'line3'>
+											<comment>[color=special]$[core.player1.name][/color], you must learn how to take [color=dim]no[/color] for an answer!</comment>
+										</line>
+										<line id = 'line4'>
+											<comment>I&apos;m going to give you [color=special]5 gold pieces[/color].  You&apos;re going to stop selecting this option.</comment>
+											<post-script>player().addGold(5);</post-script>
+										</line>
+										<line id = 'line5'>
+											<comment>You had better stop selecting this option, [color=special]$[core.player1.name][/color].</comment>
+										</line>
+										<line id = 'line6'>
+											<comment>I&apos;m not going to give you any more [color=special]gold[/color].</comment>
+										</line>
+										<line id = 'line7'>
+											<comment>Take this [color=special]1 free bomb[/color] and, please, blow yourself up.</comment>
+											<post-script>player().addBombs(1);</post-script>
+										</line>
+										<line id = 'line8'>
+											<comment>Why haven&apos;t you blown yourself up yet?</comment>
+										</line>
+									</linear>
+									<nags>
+										<line id = 'nag1'>
+											<comment>No.</comment>
+										</line>
+										<line id = 'nag2'>
+											<comment>Never.</comment>
+										</line>
+										<line id = 'nag3'>
+											<comment>Not a chance.</comment>
+										</line>
+										<line id = 'nag4'>
+											<comment>Not happening.</comment>
+										</line>
+										<line id = 'nag5'>
+											<comment>No way.</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '50' branch-id = 'root.pay'>
+								<phrase>I&apos;ll give you [color=special]50 gold pieces[/color] to return it.</phrase>
+								<branch id = 'root.pay'>
+									<linear>
+										<line id = 'line1'>
+											<comment>For this beautiful [color=special]heirloom[/color], you only offer [color=special]50 gold pieces[/color]?  You insult me, [color=special]$[core.player1.name][/color].</comment>
+										</line>
+										<line id = 'line2'>
+											<comment>Did you think I would change my mind if you asked twice, [color=special]$[core.player1.name][/color]?  Give me a little credit, at least!</comment>
+										</line>
+									</linear>
+									<nags>
+										<line id = 'nag1'>
+											<comment>I tire of your incessant purchase attempts, [color=special]$[core.player1.name][/color].  I&apos;ll give you a fair chance, a very reasonable selling point.  You can have this heirloom for the low, low price of [color=special]100,000 gold pieces[/color].  What do you think?</comment>
+											<response min-gold = '100000' branch-id = 'root.pay.buy'>
+												<phrase>I&apos;ll take it!</phrase>
+												<branch id = 'root.pay.buy'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Yeah right, [color=special]$[core.player1.name][/color]!  Don&apos;t try to tell me you didn&apos;t hack your save game file to give yourself this much gold!  Why don&apos;t you go on down there, kill my poor innocent friend [color=special]Amelia[/color], then come back and get the [color=special]heirloom[/color] from me instead of trying to cheat!</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.pay.no'>
+												<phrase>That amount of gold doesn&apos;t even exist in this game, does it?</phrase>
+												<branch id = 'root.pay.no'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>If it does, you certainly haven&apos;t found it yet.  Now get lost!</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>No.  Keep it for now.</phrase>
+								<branch id = 'root.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>I think I will.  Farewell, [color=special]$[core.player1.name][/color]!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2'>
+							<comment>I most certainly do have that heirloom you&apos;re looking for, [color=special]$[core.player1.name][/color].  Should you like me to return it to you now?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes!  I demand you return it immediately!</phrase>
+							</response>
+							<response min-gold = '50' branch-id = 'root.pay'>
+								<phrase>How about I pay you [color=special]50 gold pieces[/color] to return it?</phrase>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>No.  Keep it for now.</phrase>
+							</response>
+						</line>
+						<line id = 'nag3'>
+							<comment>I won&apos;t lie to your face, [color=special]$[core.player1.name][/color]:  I do have that heirloom you&apos;re looking for.  Are you going to ask me to return it to you now?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes!  Hand it over without delay!</phrase>
+							</response>
+							<response min-gold = '50' branch-id = 'root.pay'>
+								<phrase>Let&apos;s make a deal:  I&apos;ll pay you [color=special]50 gold pieces[/color] to return it.</phrase>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>No.  Keep it for now.</phrase>
+							</response>
+						</line>
+						<line id = 'nag4'>
+							<comment>You want me to return this heirloom you&apos;re looking for, [color=special]$[core.player1.name][/color]?  Is this what you&apos;ve come all the way over to [color=special]Manderkeen[/color] to recover?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes!  I demand you return it immediately!</phrase>
+							</response>
+							<response min-gold = '50' branch-id = 'root.pay'>
+								<phrase>How about I pay you [color=special]50 gold pieces[/color] to return it?</phrase>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>No.  Keep it for now.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-amelia'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Did you really get rid of my innocent friend [color=special]Amelia[/color] just to get to this [color=special]heirloom[/color]?  I guess you win, [color=special]$[core.player1.name][/color].  Take this [color=special]heirloom[/color] and leave me alone.</comment>
+							<post-script>quest("4.2.npc1.quest").update("update-got-heirloom").status("active");player().acquireItem("erins-family-heirloom");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:got-heirloom'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You got what you wanted, [color=special]$[core.player1.name][/color].  I hope that makes you happy.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I stole a useless heirloom.  You savagely murdered [color=special]Amelia[/color] just to get it back.  Who&apos;s the real criminal here, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Now that you&apos;ve killed me innocent friend [color=special]Amelia[/color], maybe you&apos;d like to kill the default control scheme as well.  You can do that in the [color=special]pause menu[/color] if you bore of killing people in [color=special]Lelandria[/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Did you customize your gameplay controls before or after you killed [color=special]Amelia[/color], [color=special]$[core.player1.name][/color]?  Let me guess:  you can&apos;t even remember!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:lost-heirloom'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Do you know I [color=dim]stole[/color] this [color=special]heirloom[/color] from some woman on the east side of [color=special]Lelandria[/color]?  I hear she was looking for it, but somebody took her out before she could find it.  I wonder who did that?</comment>
+							<response branch-id = 'root.me'>
+								<phrase>I did it, [color=special]Jessie[/color].</phrase>
+								<branch id = 'root.me'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Did you do that just for me, [color=special]$[core.player1.name][/color]?  I think I owe you a little reward for doing that.  When [color=special]Erin[/color] loaned me this necklace under the false belief that I would return it at some point, she also loaned me [color=special]50 gold pieces[/color].  I&apos;d like to offer you that as recompense for your usefulness!</comment>
+											<post-script>player().addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.lie'>
+								<phrase>I saw one of the [color=dim]bad guys[/color] wipe her out.</phrase>
+								<branch id = 'root.lie'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I will have to flag one of them down to thank them for their great service.  Everyone around here disparages the [color=special]bad guys[/color], but I think they&apos;re doing a lot of [color=special]good things[/color] in [color=special]Lelandria[/color].  Just like you, [color=special]$[core.player1.name][/color], in a way!</comment>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thankfully, I won&apos;t have to worry about [color=special]Erin[/color] trying to recollect this [color=special]heirloom[/color] now.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>What do you need, [color=special]$[core.player1.name][/color]?  I&apos;m too busy treasuring this beautiful [color=special]heirloom[/color] to bother myself with your kind.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>
+								Because I have this beautiful [color=special]heirloom[/color], I don't care about missing out on any of the other great things in this game!
+
+I notice that you haven't yet customized your gameplay controls in the [color=special]pause menu[/color].  You must have an [color=special]heirloom[/color] that you love just as much!
+							</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>
+								You have everything, [color=special]$[core.player1.name][/color]:  lots of gold, fame, and even customized controls!
+
+Well, you don't have this beautiful [color=special]heirloom[/color].  I love it so much, and the death of [color=special]Erin[/color] means that I will never, ever have to return it!
+							</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

@@ -1,0 +1,150 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Thanks for visiting us here in $Navarra$, $player$.  I bet you've noticed a lot of the danger and violence in $Lelandria$.  The ^Bungeling empire^ is threatening every mile of our beautiful country.
+
+                    Not too long ago, we all lived peacefully, in harmony.  Everything feels so different now, though.  I wish the ^bad guys^ would leave.
+                    -redirect root
+
+                [l id = 'line2'] Something else bothers me even more, though, $player$.
+
+                    A merchant $somewhere to the west$ decided to install a series of $bomb vending machines$ in numerous \
+                    locations.  You probably have seen some of them already.  Maybe you even bought some bombs from them, $player$.
+
+                    The guy who installed the machines -- a guy named ^Kenny^ -- is deviously profiting from the violence in our once-quiet land.  Instead of \
+                    trying to negotiate with the ^Bungeling empire^, we are selling bombs!
+                    -redirect root
+
+                [l id = 'line3' class = 'prompt'] If you happen to visit $Callistaska$ in your travels, find ^Kenny^.  Find him and destroy him!  I know it won't \
+                    stop people from using his $bomb vending machines$, but at least no one will profit from them.
+
+                    If you do get rid of him, stop back to see me.  I want to reward whomever takes that guy out with a very $special item$.
+
+                    +yes[class = 'default'] I'll see what I can do.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thanks, $player$!  Once you have gotten rid of ^Kenny^, stop back by and I'll give you that $special item$ I talked about.
+
+                                @post-script
+                                    quest("2.1.npc1.quest").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +idea[class = 'default'] I have a better idea.  Give me $50 gold pieces$ and I'll buy him out of business.
+
+                        >>> root.idea
+
+                            [l id = 'line1'] Do you think that would work, $player$?  You'd still profit from the vending machines yourself after buying his contracts, and \
+                                I don't know if I'd like that any better.  However, I do suppose you need all of the $gold$ you can get to save us from the ^Bungeling emperor^.
+
+                                Here, $player$.  Take these $50 gold pieces$ and see what you can do.  Honestly, I really want you to get rid of ^Kenny^, whatever you end up \
+                                doing.  I'll have that $special item$ waiting for you if you do it.
+
+                                @post-script
+                                    quest("2.1.npc1.quest").status("active");
+                                    quest("2.1.npc1.quest").update("update-extorted").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addGold(50);
+
+                    +done[class = 'complete'] That guy?  I already took him out.
+
+                        >>> root.done
+
+                            [l id = 'line1'] You did a great job, $player$.  I didn't even realize you had gotten rid of him already!
+
+                                As a reward, I have a $special item$ for you.  I chose it at random from my best selection, and I think you'll really \
+                                like it.  Put it to good use, and try to save us all from the ^Bungeling emperor^!
+                                @post-script
+                                    map().runScript("npc1.quest-complete");
+                                    npc("npc1").clearIndicators();
+
+                    +no[class = 'global'] Let me check back in later.
+
+                        >>> root.no
+
+                            [n id = 'nag1'] Stop back by if you want to discuss this matter further, $player$.
+
+                            [n id = 'nag2'] Give me a shout when you're ready to talk about this again, $player$.
+
+                [n id = 'nag1' class = 'prompt'] $player$, have you had a chance to visit $Callistaska$ yet?  The evil ^Kenny^ is still profiting from those infernal $bomb vending machines$, which only \
+                    further adds to his capital and allows him to continue installing more and more $bomb vending machines$.
+
+                    Please get rid of him, then stop back to see me.  I want to reward whomever takes that guy out with a very $special item$!
+
+                    +yes[class = 'default'] I'll see what I can do.
+
+                    +idea[class = 'default'] I have a better idea.  Give me $50 gold pieces$ and I'll buy him out of business.
+
+                    +done[class = 'complete'] That guy?  I already took him out.
+
+                    +no[class = 'global'] Let me check back in later.
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Last I heard, ^Kenny^ was selling merchandise over in $Callistaska$, just a little bit to the $southwest$ of here.  Take him out if you can, $player$!
+
+                [n id = 'nag2'] I think you can find $Callistaska$ just a little ways $southwest$ of here, $player$.  We need to get rid of ^Kenny^ for good!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you have any trouble making it down to $Callistaska$ on your way to get rid of $Kenny$, you should consider \
+                    customizing your controls in the $pause menu$.  If you don't want to do that, though, the default $@bomb$ will work perfectly fine for dropping a bomb on him!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] If you hold down the $@left$ key to keep moving toward the west, you will eventually enter the town of $Callistaska$.  \
+                    Once you get there, you should take care of $Kenny$ to stop him from making any more money with his ^bomb vending machines^!
+
+
+        @conversation[id = 'quest:in-progress:bought-contract']
+
+            >>> root
+
+                [n id = 'nag1' class = 'default'] You bought the contract, huh, $player$?  I'm glad to hear that, but I fear ^Kenny^ still has a lot of resources at his disposal.  I'd \
+                    hate to see him start another business venture of a similar kind!
+
+                [n id = 'nag2' class = 'default'] ^Kenny^ won't have enough money to start another business soon, but one day he might amass another great wealth.  You should think about \
+                    going back and finishing the job!
+
+                [n id = 'nag3' class = 'lowered-prices'] I hear you lowered the prices at the $bomb vending machines$ after buying the contract, $player$.  I don't know if I would have done \
+                    that.  Have you thought about getting rid of ^Kenny^ just to be safe?
+
+                [n id = 'nag4' class = 'lowered-prices'] More people will want to buy bombs now that you've lowered the prices, $player$.  I don't know if you did the right thing. \
+                    Have you thought about getting rid of ^Kenny^ as a way of compensating for your mistake?
+
+
+        @conversation[id = 'quest:in-progress:killed-kenny']
+
+            >>> root
+
+                [l id = 'line1'] I just got word about what you did to ^Kenny^.  You cannot overestimate how much this means to me, $player$!
+
+                    As I promised, I have a $special item$ for you.  I chose it at random from my best selection, and I think you'll really \
+                    like it.  Put it to good use, and try to save us all from the ^Bungeling emperor^!
+
+                    @post-script
+                        map().runScript("npc1.quest-complete");
+                        npc("npc1").clearIndicators();
+
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] You did everyone in $Lelandria$ a great service, $player$.  I'm glad that guy isn't polluting our land with black capitalism anymore!
+
+                [n id = 'nag2'] Now that you've gotten rid of that evil ^Kenny^, we can finally start thinking about shutting down those $bomb vending machines$ of his.  Thanks again, $player$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You didn't even wait to customize your controls before getting rid of $Kenny$, did you, $player$?  What incredible \
+                    selflessness!  Now that you have purified $Lelandria$ of its most sinister businessman, you should consider customizing your controls in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] A great number of would-be heroes have previously attempted to eliminate $Kenny$ for me.  All of them failed because all of \
+                    them entered battle using the default gameplay controls.
+
+                    Where they failed, though, you succeeded!  Your specially-configured controls allowed you to surprise $Kenny$.  Now you can turn your focus to the remainder of the ^bad guys^, and you will undoubtedly \
+                    defeat them just as easily!

@@ -1,0 +1,257 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								You have proven yourself a very capable gold collector, [color=special]$[core.player1.name][/color].  For that reason, I think you can help me collect a payment.
+
+On a recent visit to the far western edge of [color=special]Lelandria[/color], I loaned a precious family heirloom to a friend of mine named [color=special]Jessie[/color].
+
+At the time, she promised to return it within a few days.  She made that promise over a year ago!
+							</comment>
+						</line>
+						<line redirect = 'root' id = 'line2'>
+							<comment>
+								I've tried everything I know, but I haven't found a way to get my [color=special]heirloom[/color] back from [color=special]Jessie[/color]!  You can't convince her directly, [color=special]$[core.player1.name][/color].  She will steadfastly resist any attempt at coercion or bribery.
+
+I do have an idea, though...
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>
+								[color=special]Jessie[/color] has a good friend named [color=special]Amelia[/color] somewhere near where she lives, maybe a level away?  If you strike down [color=special]Amelia[/color] as a warning of sorts, I think [color=special]Jessie[/color] will finally get the message and cough up that [color=special]heirloom[/color].
+
+I know you'll have to get your hands dirty on this one, [color=special]$[core.player1.name][/color].  If you don't feel comfortable doing this, I'll understand.  However, I have a [color=special]pair of special items[/color] that I will give to you if you can get that [color=special]heirloom[/color] back for me!
+
+Do you understand, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response class = 'sorry' branch-id = 'root.sorry'>
+								<phrase>I have bad news.  I already killed [color=special]Jessie[/color].</phrase>
+								<branch id = 'root.sorry'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I guess you couldn&apos;t have known, [color=special]$[core.player1.name][/color].  I&apos;ll give you [color=special]50 gold pieces[/color] for your premature vengeance, but I&apos;ll never get my [color=special]heirloom[/color] back now.</comment>
+											<post-script>quest("4.2.npc1.quest").status("failed");quest("4.2.npc1.quest").update("update-pity-gold").status("active");npc("npc1").clearIndicators();player().addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.yes'>
+								<phrase>Yes.</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Good luck, [color=special]$[core.player1.name][/color]!</comment>
+											<post-script>quest("4.2.npc1.quest").status("active");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.no-comprendo'>
+								<phrase>Not at all.</phrase>
+								<branch id = 'root.no-comprendo'>
+									<linear />
+									<nags>
+										<line redirect = 'root' id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You&apos;ll have to visit the far western edge of [color=special]Lelandria[/color] to find my [color=special]heirloom[/color].  You know what you have to do.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>If you take [color=special]Amelia[/color] out of the picture, then [color=special]Jessie[/color] will surely give the [color=special]heirloom[/color] to you.  I know she&apos;s somewhere in [color=special]Manderkeen[/color], far on the western edge of our land!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Maybe you can assassinate [color=special]Amelia[/color] in a gentle manner, [color=special]$[core.player1.name][/color].  Instead of using the default [color=special]@bomb[/color] to blast her to pieces, you might think about using [color=special]@dig-left[/color]  or [color=special]@dig-right[/color] to gently dig the ground in front of her?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I wish we didn&apos;t have to involve [color=special]Amelia[/color] in this affair, [color=special]$[core.player1.name][/color].  You remember when you customized your controls, though, don&apos;t you?  Sometimes you have to change things to get the results you want.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-jessie-prematurely'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>
+								I didn't tell you to kill [color=special]Jessie[/color], I told you to get the [color=special]heirloom[/color] from her.  I'll never get it back now, [color=special]$[core.player1.name][/color]!
+
+I'll give you [color=special]50 gold pieces[/color] for your effort, because you did ensure that she'll never steal another family heirloom.  However, I can't offer you anything more substantial than that without my now-lost family heirloom.  Thanks for trying...
+							</comment>
+							<post-script>quest("4.2.npc1.quest").status("failed");quest("4.2.npc1.quest").update("update-pity-gold").status("active");npc("npc1").clearIndicators();player().addGold(50);</post-script>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:got-heirloom'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>I know you had to do some bad things to get that [color=special]heirloom[/color] back, [color=special]$[core.player1.name][/color].  I can&apos;t overstate my appreciation at this point!  Please, let me know how you&apos;d like me to repay you for your effort, [color=special]$[core.player1.name][/color]!</comment>
+							<response branch-id = 'root.items'>
+								<phrase>I&apos;d like those [color=special]2 special items[/color] you were talking about.</phrase>
+								<branch id = 'root.items'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Absolutely, [color=special]$[core.player1.name][/color]!  I&apos;ve been holding on to these for quite a while.  I&apos;m sure they&apos;ll help you greatly in your quest against the [color=dim]Bungeling empire[/color]!</comment>
+											<post-script>quest("4.2.npc1.quest").status("complete");quest("4.2.npc1.quest").update("update-took-items").status("active");npc("npc1").clearIndicators();player().acquireRandomItem("erins-hasty-rock-shoes", "erins-sinister-refilling-thorns", "erins-brutal-thorns-of-safety", "erins-replenishing-respawn-inhibitor");player().acquireRandomItem("erins-hasty-rock-shoes", "erins-sinister-refilling-thorns", "erins-brutal-thorns-of-safety", "erins-replenishing-respawn-inhibitor");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.gold'>
+								<phrase>I&apos;d like a large pile of gold instead.  [color=special]500 gold[/color] sounds about right.</phrase>
+								<branch id = 'root.gold'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I think you&apos;ve earned that kind of a payday, [color=special]$[core.player1.name][/color].  Take these [color=special]500 gold pieces[/color] and use them as you wish!</comment>
+											<post-script>quest("4.2.npc1.quest").status("complete");quest("4.2.npc1.quest").update("update-took-gold").status("active");npc("npc1").clearIndicators();player().addGold(500);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.xp'>
+								<phrase>I&apos;d like a little bit of extra [color=special]XP[/color], if you don&apos;t mind.</phrase>
+								<branch id = 'root.xp'>
+									<linear>
+										<line id = 'line1'>
+											<comment>You&apos;ve got it, [color=special]$[core.player1.name][/color].  In addition to your normal [color=special]XP[/color] bonus for completing a quest, I&apos;m adding in an extra [color=special]250 XP[/color].  Good luck against the [color=dim]Bungeling empire[/color]!</comment>
+											<post-script>quest("4.2.npc1.quest").status("complete");quest("4.2.npc1.quest").update("update-took-xp").status("active");npc("npc1").clearIndicators();player().addXP(250);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<post-script>player().dropItem("erins-family-heirloom");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:took-items'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>How are you liking those [color=special]items[/color] I gave you, [color=special]$[core.player1.name][/color]?  I hope you&apos;re finding them useful!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I saved those [color=special]items[/color] for a hero like you, [color=special]$[core.player1.name][/color].  Thanks for rescuing my [color=special]heirloom[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Those items might work even better if you customize your controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I heard a rumor that you customized your controls already, [color=special]$[core.player1.name][/color].  Do you know that you can customize items, too, by upgrading them?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:took-gold'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You sure do like gold, [color=special]$[core.player1.name][/color]!  Don&apos;t let the [color=dim]bad guys[/color] find out you have so much!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Make sure to spend that [color=dim]gold[/color] I gave you with care, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You sure do have a lot of gold for someone who hasn&apos;t even customized their controls in the [color=special]pause menu[/color], [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>With your combination of vast gold reserves and finely customized controls, I expect you to embarrass the [color=dim]bad guys[/color] on your way to saving [color=special]Lelandria[/color] from the [color=dim]Bungeling empire[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:took-xp'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Did that extra [color=special]XP[/color] I gave you help you to level up, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I think you made the right call going for the [color=special]XP bonus[/color], just between you and me!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>While you&apos;re in the [color=special]pause menu[/color] spending your skill points, you can also choose to customize your gameplay controls!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I like how you decided to configure your controls, [color=special]$[core.player1.name][/color].  Of course, I expected no less from you after you made the wise decision to request bonus XP!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;ll never see my precious [color=special]heirloom[/color] again.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wish you could have recovered that [color=special]heirloom[/color] for me, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You should have customized your controls in the [color=special]pause menu[/color] before attempting my quest, [color=special]$[core.player1.name][/color].  You might have had better results!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>What went wrong with the quest, [color=special]$[core.player1.name][/color]?  You configured your controls exactly how you wanted them.  What went wrong?!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '10' id = 'nag1'>
+							<comment>I know nothing.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wish the sun would come out.  Ever since the [color=dim]Bungeling emperor[/color] created this neverending eclipse, the world has fallen under a terrible blackness!</comment>
+						</line>
+						<line priority = '5' id = 'nag3'>
+							<comment>I can&apos;t find a way to get back to the west end of town.  I think you have to go all the way north, but I can&apos;t tolerate the higher altitude!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Please save us from the [color=dim]Bungeling empire[/color], [color=special]$[core.player1.name][/color].  If the [color=dim]bad guys[/color] give you too much trouble, think about customizing your controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>The [color=dim]Bungeling emperor[/color] no doubt has received intelligence reports about how well you have customized your controls, [color=special]$[core.player1.name][/color].  At last, that terrible [color=dim]emperor[/color] will have a little fear of his own!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

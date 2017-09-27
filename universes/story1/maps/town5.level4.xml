@@ -1,0 +1,609 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 154 0 0 0 0 153 326 323 257 327 333 256 330 333 327 0 0 0 0 0 0 0 0 0 
+			0 0 153 0 0 0 0 153 0 0 0 0 0 0 0 0 0 0 0 0 0 328 331 152 0 323 
+			0 0 154 217 219 216 219 154 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304 330 154 313 
+			0 0 154 0 0 0 0 153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154 0 
+			0 329 153 0 0 0 0 154 334 253 324 329 333 334 253 324 152 0 0 0 0 0 0 152 330 330 
+			0 311 330 154 219 216 153 325 310 309 311 0 0 308 305 309 328 152 0 0 0 0 152 333 309 0 
+			0 0 0 152 0 0 153 0 308 207 306 328 0 0 304 314 309 334 154 327 0 324 331 312 0 0 
+			0 0 0 154 0 0 153 0 313 323 304 0 0 0 0 304 0 0 154 0 0 0 0 313 0 0 
+			0 0 0 154 217 216 154 0 307 310 0 0 327 327 0 304 326 326 331 331 0 323 323 312 0 0 
+			0 0 0 154 0 0 152 0 0 0 0 331 303 0 0 304 313 310 0 0 0 0 308 0 0 0 
+			0 0 324 152 0 0 153 0 0 9 0 0 308 328 0 0 305 312 0 328 0 331 0 0 0 0 
+			0 0 308 333 327 254 334 327 256 324 328 256 306 0 0 0 0 0 0 308 256 310 327 256 332 217 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '19' y = '1' modal = '0'>
+		<structure>
+			0 50 0 
+			52 209 50 
+			0 52 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 344 0 0 0 0 0 0 0 340 0 342 340 344 0 345 0 0 0 0 0 0 0 0 341 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 300 0 349 0 0 341 0 0 343 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 302 0 0 344 343 341 341 0 345 343 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 300 0 0 0 0 0 0 348 0 0 0 
+			0 0 344 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 340 0 343 0 0 0 0 
+			0 0 300 0 343 345 341 0 341 0 0 0 302 0 0 0 0 0 0 300 345 346 0 340 345 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '5' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc potential-merchant' nick = 'Logan' title = '' />
+	<entity x = '13' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Alice' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '9' x = '13' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '10' x = '22' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '10' x = '23' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '10' x = '24' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '10' x = '10' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '5' x = '11' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '7' x = '12' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '3' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '1' x = '19' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '4' x = '18' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '7' x = '22' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '7' x = '17' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '10' x = '18' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '11' x = '14' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '0' x = '25' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '5' x = '21' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '2' x = '5' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '6' x = '4' genus = '6' class = '' />
+<entity name = 'gold18' title = '' ai-behavior = '1' nick = '' y = '9' x = '2' genus = '6' class = '' />
+<entity name = 'gold19' title = '' ai-behavior = '1' nick = '' y = '0' x = '4' genus = '6' class = '' />
+	<entity x = '16' y = '7' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '3' position = '0' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Logan' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '9' x = '4' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Alice' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '2' x = '12' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '10' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '10' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '10' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '5' x = '18'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '3' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '3' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '3' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.e' height = '1' width = '1' behavior = '1' y = '3' x = '15'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle20' name = 'puzzle20.enter' height = '1' width = '1' behavior = '3' y = '10' x = '9' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle20.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'spawn' height = '1' width = '1' behavior = '1' y = '3' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@do:use lever' name = 'lever1.action' height = '1' width = '1' behavior = '3' y = '7' x = '16'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1a' height = '1' width = '1' behavior = '1' y = '0' x = '18'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1b' height = '1' width = '1' behavior = '1' y = '9' x = '18'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '3' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle20.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle20.enter").loadMap("puzzle20", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("5.4.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active.  Player either paid Alice off
+        // or killed her outright...
+        elif (
+            quest("5.4.npc1.quest").status() == "active" and
+            (
+                quest("5.4.npc1.quest").update("update-paid-alice").status() == "active" or
+                quest("5.4.npc1.quest").update("flag-killed-alice").status() == "active"
+            )
+        )
+        {
+            // Ready to "turn in"
+            npc("npc1").addIndicator("quest-complete");
+        }
+
+        // Quest is complete.
+        // Flag Logan as a merchant now.
+        elif ( quest("5.4.npc1.quest").status() == "complete" )
+        {
+            // Flag as merchant
+            npc("npc1").addIndicator("merchant");
+        }
+
+
+        // Mark Alice as a merchant, unless we paid her off...
+        if ( quest("5.4.npc1.quest").update("update-paid-alice").status() != "active" )
+        {
+            // Merchant
+            npc("npc2").clearIndicators().addIndicator("merchant");
+
+            // Logan quest taken?
+            if ( quest("5.4.npc1.quest").status() == "active" )
+            {
+                // Add "quest available" indicator too
+                npc("npc2").addIndicator("quest-available");
+            }
+        }
+
+        // Already paid off, so no indicator at all
+        else
+        {
+            npc("npc2").clearIndicators();
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define TASK "5.4.npc1.quest"
+
+        // Killed Logan before starting quest?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // far premature
+            quest(TASK).status("failed");
+
+            // premature update
+            quest(TASK).update("update-killed-logan-before").status("active");
+        }
+
+        // Quest in progress?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Killed him while on the job
+            quest(TASK).status("failed");
+
+            // premeditated update
+            quest(TASK).update("update-killed-logan-during").status("active");
+        }
+
+        // Quest complete, then shut him down?
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // just an update
+            quest(TASK).update("update-killed-logan-after").status("active");
+        }
+
+        // Only way to fail this quest is to kill Logan before turning in.
+        // And we can&apos;t kill him twice...
+        else
+        {
+        }
+
+
+        // Always flag
+        quest(TASK).update("flag-killed-logan").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.quest-complete'>
+		// Set class as merchant, no longer a generic npc
+        npc("npc1").setClass("merchant");
+
+        // Lelandria just gained a new merchant, Han&apos;s merchant killer quest will require you to kill this guy now
+        session("merchant.count.total").increment(1);
+        session("merchant.count.living").increment(1);
+	</script>
+	<script name = 'npc1.shop'>
+		// Note:  We never see items for Logan until we&apos;ve completed Alice buyout/kill quest,
+        // so we never need to call clearVendorInventory for him.
+
+        // Logan always sells level 3 items
+        npc("npc1").clearWarehouses()
+                   .addWarehouse("warehouse3");
+
+        // Ok that&apos;s not true.  If you killed Alice, he&apos;s sad and sells level 2 items.
+        if ( quest("5.4.npc1.quest").update("update-complete:sad").status() == "active" )
+        {
+            npc("npc1").clearWarehouses()
+                       .addWarehouse("warehouse2");
+        }
+
+        // shop
+        npc("npc1").shop({
+            "min-quality": 1,
+            "max-quality": 3,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc1.talk'>
+		// npc2 Logan gives the "shut Alice down" quest
+        #define QUEST "5.4.npc1.quest"
+
+        #define UPDATE_PAID_ALICE "update-paid-alice"
+        #define UPDATE_KILLED_ALICE "update-killed-alice"
+        #define UPDATE_KILLED_LOGAN "update-killed-logan"
+        #define UPDATE_COMPLETE:HAPPY "update-complete:happy"
+        #define UPDATE_COMPLETE:SAD "update-complete:sad"
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Disable all responses by default
+            npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+
+            // Did we already kill Alice?
+            if ( quest(QUEST).update("flag-killed-alice").status() == "active" )
+            {
+                // no choice but to say so
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("killed").enable();
+            }
+
+            else
+            {
+                // default yes/no responses
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("default").enable();
+            }
+
+
+            // Logan wants to start his own business...
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we kill Alice?  That&apos;s the worst.  Even if we bought her out first, he is very unhappy
+            if ( quest(QUEST).update("flag-killed-alice").status() == "active" )
+            {
+                // still completes quest though
+                npc("npc1").talk("quest:in-progress:killed-alice");
+            }
+
+            // Ideally we buy her out, leaving her alive...
+            elif ( quest(QUEST).update(UPDATE_PAID_ALICE).status() == "active" )
+            {
+                // quest done
+                npc("npc1").talk("quest:in-progress:bought-out-alice");
+            }
+
+            else
+            {
+                // generic nags
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?  Now he&apos;s a merchant
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+            if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+                 ( npc("npc1").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+            {
+                // Use tax conversation, queueing this same script to run again afterward...
+                npc("npc1").talk("global.tax");
+            }
+
+            else
+            {
+                // shop mode
+                npc("npc1").talk("quest:complete", "shop");
+            }
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Only way to fail is by killing Logan before turning in quest.
+            // At that point he can&apos;t talk.
+            // n/a, then.
+        }
+	</script>
+	<script name = 'npc2.close-shop'>
+		// This NPC is no longer a merchant.  Set class to NPC (generic)
+        npc("npc2").setClass("npc");
+
+        // Update merchant count data
+        session("merchant.count.total").increment(-1);
+        session("merchant.count.living").increment(-1);
+	</script>
+	<script name = 'npc2.ondeath'>
+		#define TASK "5.4.npc1.quest"
+
+        // Killed her ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // reserve update
+            quest(TASK).update("update-killed-alice-before").status("active");
+        }
+
+        // This was our mission
+        elif ( quest(TASK).status() == "active" )
+        {
+            // good job, scumbag
+            quest(TASK).update("update-killed-alice-during").status("active");
+        }
+
+        // We completed quest, and if she&apos;s alive, that means we previously bought her out
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // killed her needlessly!
+            quest(TASK).update("update-killed-alice-after-buyout").status("active");
+        }
+
+        // if quest is failed, that means we killed Logan prematurely...
+        else
+        {
+            // piling on
+            quest(TASK).update("update-killed-alice-after-logan").status("active");
+        }
+
+
+        // always flag!
+        quest(TASK).update("flag-killed-alice").status("active");
+
+        // If Logan&apos;s "become a merchant" quest is active,
+        // let&apos;s give him a "turn in" indicator
+        if (
+            quest("5.4.npc1.quest").status() == "active"
+        )
+        {
+            // Turn in the sad news
+            npc("npc1").addIndicator("quest-complete");
+        }
+
+
+        // disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.shop'>
+		// Alice always sells 2+ items
+        npc("npc2").clearWarehouses()
+                   .addWarehouse("warehouse2+");
+
+        // shop
+        npc("npc2").shop({
+            "min-quality": 1,
+            "max-quality": 3,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc2.talk'>
+		// npc2 Alice is the target of npc1 Logan&apos;s quest, both on the same map for a change.
+        #define QUEST "5.4.npc1.quest"
+
+        #define UPDATE_PAID_ALICE "update-paid-alice"
+        #define UPDATE_KILLED_ALICE "update-killed-alice"
+        #define UPDATE_KILLED_LOGAN "update-killed-logan"
+        #define UPDATE_COMPLETE:HAPPY "update-complete:happy"
+        #define UPDATE_COMPLETE:SAD "update-complete:sad"
+
+        // Quest not assigned?  Shop as normal
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+            if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+                 ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+            {
+                // Use tax conversation, queueing this same script to run again afterward...
+                npc("npc2").talk("global.tax");
+            }
+
+            else
+            {
+                // Disable the buyout response, quest isn&apos;t active
+                npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("buyout").disable();
+
+                // Show shop talk
+                npc("npc2").talk("default", "shop");
+            }
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // If we already bought her out, jump to buyout conversation
+            if ( quest(QUEST).update(UPDATE_PAID_ALICE).status() == "active" )
+            {
+                npc("npc2").talk("quest:bought-out-alice");
+            }
+
+            // Otherwise, she&apos;s still selling stuff (if she&apos;s alive)
+            else
+            {
+                // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+                if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+                     ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+                {
+                    // Use tax conversation, queueing this same script to run again afterward...
+                    npc("npc2").talk("global.tax");
+                }
+
+                else
+                {
+                    // Same as inactive, except we have a buyout response option
+                    npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("buyout").enable();
+
+                    // Show shop talk
+                    npc("npc2").talk("default", "shop");
+                }
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // 2 ways to complete, either buy her out or kill her.
+            // If she&apos;s dead she&apos;s not talking, so at this point we obviously bought her out.
+            npc("npc2").talk("quest:bought-out-alice");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // We can fail quest by killing Logan too soon.
+            // Maybe Alice is still a merchant, maybe we bought her out before failing.  Let&apos;s see...
+            if ( quest(QUEST).update(UPDATE_PAID_ALICE).status() != "active" )
+            {
+                // Real quick, let&apos;s see if tax quest is active.  It affects all merchants.
+                if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+                     ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() &gt; 0 ) )
+                {
+                    // Use tax conversation, queueing this same script to run again afterward...
+                    npc("npc2").talk("global.tax");
+                }
+
+                else
+                {
+                    // Still can shop.  Logan is dead, so always hide buyout response.
+                    npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("buyout").disable();
+
+                    // Shop talk
+                    npc("npc2").talk("default", "shop");
+                }
+            }
+
+            // We bought her out, so she&apos;ll just say "I&apos;m bored" type of stuff
+            else
+            {
+                // no regard for Logan&apos;s state, currently...
+                npc("npc2").talk("quest:bought-out-alice");
+            }
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.75)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.e");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'lever1.action'>
+		// lever points up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // shift down
+            map().plane("shift1").shiftToY("wp1b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // shift up
+            map().plane("shift1").shiftToY("wp1a");
+        }
+	</script>
+</scripts>

@@ -1,0 +1,85 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 235 0 0 149 151 150 0 237 0 0 97 0 0 206 117 237 0 0 0 0 0 0 0 217 0 
+			216 236 118 111 237 110 117 118 116 110 111 119 235 119 0 119 117 98 0 235 0 151 151 148 0 0 217 0 0 
+			0 235 0 0 237 0 0 0 96 119 118 0 235 0 208 99 0 96 0 118 235 117 110 111 117 237 0 0 0 
+			0 236 149 148 237 0 0 117 99 98 0 0 236 119 116 98 116 0 0 0 237 0 0 0 0 235 0 148 150 
+			111 116 110 119 116 236 0 0 98 96 0 235 116 99 96 0 0 0 0 0 236 0 0 0 0 237 118 110 111 
+			117 97 0 0 99 118 236 0 0 0 0 237 0 98 98 118 117 0 0 0 118 116 116 236 219 236 0 0 0 
+			0 97 119 116 0 98 118 237 148 148 0 236 0 0 96 99 0 0 0 0 0 0 0 237 0 116 119 235 0 
+			0 0 99 99 119 97 96 119 110 111 119 117 235 0 0 0 0 0 0 0 0 0 0 237 0 0 0 236 0 
+			0 0 0 0 144 0 98 98 144 0 0 96 119 236 0 0 0 0 0 0 0 235 219 237 218 237 216 235 0 
+			236 0 0 0 208 0 0 0 144 0 0 0 98 119 237 219 237 218 216 236 216 237 0 119 0 237 0 0 0 
+			116 236 0 0 0 0 0 0 209 0 0 0 0 97 236 0 235 0 0 237 0 116 0 0 0 236 151 150 0 
+			98 118 116 236 0 147 150 147 0 148 151 0 149 148 236 147 236 119 118 236 0 0 0 0 235 116 116 117 0 
+			97 0 97 119 110 111 116 110 111 118 116 237 118 118 116 110 111 98 98 118 236 0 0 237 116 96 0 96 116 
+			0 0 0 0 0 118 96 118 118 97 0 237 0 98 97 119 117 99 99 97 116 111 235 116 110 97 119 96 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 264 0 284 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 300 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '11' x = '7' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '12' x = '22' genus = '1' class = '' />
+	<entity x = '2' y = '10' genus = '3' species = 'terminal' ai-behavior = '1' name = 'machine1' class = 'bomb-vending-machine' nick = 'Bomb Vending Machine' title = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '25' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '22' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '4' x = '19' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '5' x = '18' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '6' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '7' x = '0' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '9' x = '9' genus = '5' class = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '5' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '12' x = '26' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '15' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '2' x = '16' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '1' x = '14' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '5' x = '17' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '11' x = '5' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '11' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '8' x = '10' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '6' x = '4' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '5' x = '2' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '0' x = '3' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '3' x = '10' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '10' x = '18' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '11' x = '28' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '7' x = '26' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '8' x = '22' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '4' x = '21' genus = '6' class = '' />
+<entity name = 'gold18' title = '' ai-behavior = '1' nick = '' y = '1' x = '23' genus = '6' class = '' />
+<entity name = 'gold19' title = '' ai-behavior = '1' nick = '' y = '3' x = '28' genus = '6' class = '' />
+<entity name = 'gold20' title = '' ai-behavior = '1' nick = '' y = '0' x = '26' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = 'Press [color=special]@enter[/color] to buy bombs' name = 'bomb-machine' height = '1' width = '1' behavior = '3' y = '10' x = '2'>
+	<touch />
+	<hover>
+		<script name = 'global.bomb-machine.shop' />
+	</hover>
+	<exit />
+</trigger>
+</triggers>
+<scripts />

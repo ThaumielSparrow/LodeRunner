@@ -1,0 +1,212 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'net.lobby.options' version = 'not-ready'>
+
+    <rowmenu id = 'menu' class = 'lobby-options' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <xrect width = '100%' height = '32' />
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Lobby Menu' align = '' />
+            </item>
+
+        </item-group>
+
+        <item class = 'spacer' disabled = '1' />
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20' homogenize = '1'>
+
+            <item id = 'tunnel' render-border = '1'>
+
+            <xrect class = 'divider' x = '50%' y = '50%' align = 'center' valign = 'center' width = '2' height = '80%' midpoint = '0.5' position = 'absolute' />
+
+                    <rowmenu width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '1' on-change = 'options.change'>
+
+                        <item-group class = 'options'>
+
+                            <item class = 'option' fill = 'active' rel = 'level-overview'>
+
+                                <contents>
+                                    <icon x = '5%' y = '0' index = '13' />
+                                    <label x = '18%' y = '0' width = '90%' value = 'Level Overview' />
+                                    <action do = '' />
+                                </contents>
+
+                                <xtooltip align = 'right'>
+                                    <item>
+                                        <icon x = '0' y = '0' index = '13' />
+                                        <label x = '12%' y = '0' width = '85%' value = '[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!' />
+                                    </item>
+                                </xtooltip>
+
+                            </item>
+
+                            <item class = 'option' fill = 'active' rel = 'set-ready'>
+
+                                <contents>
+                                    <icon x = '5%' y = '0' index = '12' />
+                                    <label x = '18%' y = '0' width = '90%' value = 'Set Ready' />
+                                    <action do = 'update-ready-status' is-ready = '1' />
+                                </contents>
+
+                                <xtooltip align = 'right'>
+                                    <item>
+                                        <icon x = '0' y = '0' index = '13' />
+                                        <label x = '12%' y = '0' width = '85%' value = '[color=special]Set Ready:[/color]
+When ready, select this option.  Once all players set their status to [color=special]ready[/color], the game begins!' />
+                                    </item>
+                                </xtooltip>
+
+                            </item>
+
+                            <item class = 'option' fill = 'active'>
+
+                                <contents>
+                                    <icon x = '5%' y = '0' index = '21' />
+                                    <label x = '18%' y = '0' width = '90%' value = 'Edit Avatar' />
+                                    <action do = 'show:edit-avatar' />
+                                </contents>
+
+                                <xtooltip align = 'right'>
+                                    <item>
+                                        <icon x = '0' y = '0' index = '13' />
+                                        <label x = '12%' y = '0' width = '85%' value = '[color=special]Edit Avatar:[/color]
+Customize the appearance of your character!' />
+                                    </item>
+                                </xtooltip>
+
+                            </item>
+
+                            <item class = 'option' fill = 'active'>
+
+                                <contents>
+                                    <icon x = '5%' y = '0' index = '24' />
+                                    <label x = '18%' y = '0' width = '90%' value = 'Vote to Skip Level' />
+                                    <action do = 'vote-to-skip' />
+                                </contents>
+
+                                <xtooltip align = 'right'>
+                                    <item>
+                                        <icon x = '0' y = '0' index = '13' />
+                                        <label x = '12%' y = '0' width = '85%' value = '[color=special]Skip Level:[/color]
+If at least 2 players vote to skip this level, all players will proceed to the next available level.' />
+                                    </item>
+                                </xtooltip>
+
+                            </item>
+
+                        </item-group>
+
+                    </rowmenu>
+
+            </item>
+
+                    <item id = 'faqs' class = 'faq' render-border = '1'>
+
+                        <label x = '5%' y = '0' valign = '' width = '90%' value = 'Hey, this is just a test label that could serve as some sort of dynamically-updated tooltip?' />
+
+                        <stack id = 'level-overview' class = 'frame' display = 'hidden'>
+
+                            <item>
+                                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                                <label x = '18%' y = '0' width = '90%' value = '[color=special]Level 1[/color]' />
+                            </item>
+
+                            <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                            <label x = '5%' y = '0' width = '90%' value = 'You need to win this level to get to the next level.' />
+
+                        </stack>
+
+                        <stack id = 'set-ready' display = 'hidden'>
+                            <label x = '5%' y = '0' width = '90%' value = 'Set Ready' />
+                            <label x = '5%' y = '0' width = '90%' value = 'The game begins when all players set ready.' />
+                        </stack>
+
+                    </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'net.coop.intro.options' version = 'ready'>
+
+    <item-group render-border = '0' per-row = '1'>
+
+        <item disabled = '1'>
+            <label x = '5%' y = '0' width = '95%' align = 'left' value = '[color=normal]Lobby Menu[/color]' />
+        </item>
+
+    </item-group>
+
+    <item-group render-border = '1' per-row = '1'>
+
+        <item id = 'spacer' disabled = '1' />
+
+        <item render-border = '0' glow = '1'>
+
+            <contents>
+                <icon x = '5%' y = '0' index = '13' />
+                <label x = '18%' y = '0' width = '90%' value = 'Level Overview' />
+                <action do = '' />
+            </contents>
+
+            <tooltip align = 'right'>
+                <item>
+                    <icon x = '0' y = '0' index = '13' />
+                    <label x = '12%' y = '0' width = '85%' value = '[color=special]Level:[/color]
+Level 1
+
+[color=special]Overview:[/color]
+Collect all of the gold in the level to win!
+
+Resurrect fallen teammates by touching the heart with their name on it!' />
+                </item>
+            </tooltip>
+
+        </item>
+
+        <item render-border = '0' glow = '1'>
+
+            <contents>
+                <icon x = '5%' y = '0' index = '12' />
+                <label x = '18%' y = '0' width = '90%' value = 'Set Not Ready' />
+                <action do = 'update-ready-status' is-ready = '0' />
+            </contents>
+
+            <tooltip align = 'right'>
+                <item>
+                    <icon x = '0' y = '0' index = '13' />
+                    <label x = '12%' y = '0' width = '85%' value = '[color=special]Set Not Ready:[/color]
+Revert your status to Not Ready.' />
+                </item>
+            </tooltip>
+
+        </item>
+
+        <item id = 'spacer' disabled = '1' />
+
+    </item-group>
+
+</template>

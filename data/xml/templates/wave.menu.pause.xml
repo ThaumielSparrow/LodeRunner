@@ -1,0 +1,82 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@current-wave</parameter>
+		<parameter>@overworld-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'wave.menu.pause'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'left' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Challenge Room Menu' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Resume Game' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Continue Wave' />
+                </stack>
+
+                <action do = 'resume-wave' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Retry Wave' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Currently on Wave @current-wave' />
+                    </stack>
+
+                    <action do = 'retry-wave' />
+
+                </contents>
+                <tooltip align = 'right' render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = 'You can retry the wave as many times as you wish.' />
+                </tooltip>
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Exit Challenge Room' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Return to [color=special]@overworld-title[/color]' />
+                    </stack>
+
+                    <action do = 'leave-wave' />
+
+                </contents>
+                <tooltip align = 'right' render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = 'Exit the [color=title]Challenge Room[/color] and return to the overworld.  You can [color=title]revisit[/color] this Challenge Room at any time.' />
+                </tooltip>
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,319 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'intro'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color]!  I&apos;ve been waiting for you to make it this far.  My highness, the [color=special]High Empress of Lelandria[/color], posted me in this area to warn you about the latest threat from the [color=dim]Bungeling Empire[/color].</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>You probably have some past experience with these guys, but in case you need a refresher or want to know a little more, you can ask me anything!</comment>
+							<response branch-id = 'root.faq'>
+								<phrase>Tell me about the bad guys.  How do they behave?</phrase>
+								<branch id = 'root.faq'>
+									<linear />
+									<nags>
+										<line redirect = 'root' id = 'nag1'>
+											<comment>All of the bad guys behave exactly the same way:  they will chase you down and try to kill you!  Keep a safe distance from them at all times.  If they touch you, you&apos;ll be history!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.defense'>
+								<phrase>Can I fight back against the bad guys?</phrase>
+								<branch id = 'root.defense'>
+									<linear />
+									<nags>
+										<line redirect = 'root' id = 'nag1'>
+											<comment>
+												You can't attack the bad guys directly.  Using your [color=special]mining laser[/color], though, you can dig traps in the ground for the bad guys to fall in.
+
+If a bad guy falls into a trap, you can safely run over his head.  Take care, though, as the bad guys won't stay stuck in the trap for very long!
+											</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.details'>
+								<phrase>I&apos;d like to ask more specific questions than these...</phrase>
+								<branch id = 'root.details'>
+									<linear />
+									<nags>
+										<line id = 'nag1' class = 'free-item'>
+											<comment>Ask me anything you&apos;d like to know, [color=special]$[core.player1.name][/color].  After you&apos;ve finished quizzing me about the [color=dim]bad guys[/color], I&apos;ll give you a cool [color=special]item[/color] to help you on your way.</comment>
+											<response branch-id = 'root.details.gold'>
+												<phrase>Do the enemies collect gold?</phrase>
+												<branch id = 'root.details.gold'>
+													<linear />
+													<nags>
+														<line redirect = 'root.details' id = 'nag1'>
+															<comment>
+																They do!  If an enemy touches a piece of gold, he will hold onto it indefinitely.
+
+When an enemy is carrying a piece of gold, you will notice that he changes color.  If you can manage to trap one of these gold-carrying bad guys in the ground with your mining laser, he will drop the piece of gold that he is carrying.
+															</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.details.kill'>
+												<phrase>What happens when I "kill" a bad guy?</phrase>
+												<branch id = 'root.details.kill'>
+													<linear />
+													<nags>
+														<line redirect = 'root.details' id = 'nag1'>
+															<comment>Unfortunately, the sinister [color=dim]Bungeling Emperor[/color] has a virtually endless supply of henchmen at his disposal.  Although you can gain a temporary reprieve from danger by destroying an enemy, a replacement will quickly respawn into the game to take his place.</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.details.item'>
+												<phrase>Show me the item.  How does it work?</phrase>
+												<branch id = 'root.details.item'>
+													<linear />
+													<nags>
+														<line redirect = 'root.free-item' id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+										<line id = 'nag2' class = 'default'>
+											<comment>I hope you liked the item I gave you, [color=special]$[core.player1.name][/color].  Ask me anything you&apos;d like to know!</comment>
+											<response branch-id = 'root.details.gold'>
+												<phrase>Do the enemies collect gold?</phrase>
+											</response>
+											<response branch-id = 'root.details.kill'>
+												<phrase>What happens when I "kill" a bad guy?</phrase>
+											</response>
+											<response branch-id = 'root.details.done'>
+												<phrase>That&apos;s all for now.</phrase>
+												<branch id = 'root.details.done'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+				<branch id = 'root.free-item'>
+					<linear>
+						<line redirect = 'root.free-item' id = 'line1'>
+							<comment>
+								As you play through the game, [color=special]$[core.player1.name][/color], you'll find a lot of interesting [color=special]items[/color].  Each [color=special]item[/color] will affect you in different ways.  For example, one item might increase your running speed, and another item might slow down the enemies.  Useful, huh?!
+
+You'll find a lot more people in [color=special]Lelandria[/color] that have [color=special]items[/color] for you, [color=special]$[core.player1.name][/color].  A lot of people will ask you to do little favors for them.  Other people work as [color=special]merchants[/color], selling you their items outright for a price.
+							</comment>
+						</line>
+						<line id = 'line2' class = 'prompt'>
+							<comment>I want to let you choose which item you&apos;d like to have, [color=special]$[core.player1.name][/color].  I have a ton of introductory items available, but I&apos;ll just select a couple of them at random and let you choose.  You&apos;ll be finding a lot better items than my simple trinkets soon, [color=special]$[core.player1.name][/color], so don&apos;t worry too much about which one sounds better!</comment>
+							<response branch-id = 'root.free-item.item1'>
+								<phrase>I want the [color=special]Beginner&apos;s Shoes[/color].</phrase>
+								<branch id = 'root.free-item.item1'>
+									<linear />
+									<nags>
+										<line redirect = 'root.free-item' id = 'nag1'>
+											<comment />
+											<post-script>player().acquireItem("beginners-shoes");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.free-item.item2'>
+								<phrase>I&apos;ll take that [color=special]Beginner&apos;s Shovel[/color].</phrase>
+								<branch id = 'root.free-item.item2'>
+									<linear />
+									<nags>
+										<line redirect = 'root.free-item' id = 'nag1'>
+											<comment />
+											<post-script>player().acquireItem("beginners-shovel");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.free-item.item3'>
+								<phrase>Give me the [color=special]Beginner&apos;s Gambling Ring[/color], please.</phrase>
+								<branch id = 'root.free-item.item3'>
+									<linear />
+									<nags>
+										<line redirect = 'root.free-item' id = 'nag1'>
+											<comment />
+											<post-script>player().acquireItem("beginners-gambling-ring");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.free-item.item4'>
+								<phrase>I&apos;d like the [color=special]Beginner&apos;s Trap Glue[/color].</phrase>
+								<branch id = 'root.free-item.item4'>
+									<linear />
+									<nags>
+										<line redirect = 'root.free-item' id = 'nag1'>
+											<comment />
+											<post-script>player().acquireItem("beginners-trap-glue");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.free-item.item5'>
+								<phrase>Let&apos;s try the [color=special]Beginner&apos;s Heavy Anvil[/color].</phrase>
+								<branch id = 'root.free-item.item5'>
+									<linear />
+									<nags>
+										<line redirect = 'root.free-item' id = 'nag1'>
+											<comment />
+											<post-script>player().acquireItem("beginners-heavy-anvil");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'line3'>
+							<comment>
+								I just deposited the item you requested into your inventory, [color=special]$[core.player1.name][/color].  Make sure to view your inventory in the [color=special]pause menu[/color] to analyze how your new item works, and then equip it for use!
+
+Also, don't forget to experiment with upgrading the item too.  I gave you a very rudimentary offering, but you might find it more useful than you'd expect if you purchase an upgrade that suits your playstyle!
+							</comment>
+							<post-script>quest("0.3.npc1.quest").status("complete");quest("0.3.npc1.quest").update("update-talked").status("active");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'generic'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'controls-uncustomized'>
+							<comment>Welcome to [color=special]Lelandria[/color], [color=special]$[core.player1.name][/color].  Why haven&apos;t you tried to [color=special]customize your controls[/color] yet, if you don&apos;t mind me asking?  You can do it right now in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line id = 'line2' class = 'controls-uncustomized'>
+							<comment>Don&apos;t you want to unlock the achievement for customizing your controls, [color=special]$[core.player1.name][/color]?  You only have to edit one of them!</comment>
+						</line>
+						<line id = 'line3' class = 'controls-uncustomized'>
+							<comment>
+								You continue to insist on using the default controls, [color=special]$[core.player1.name][/color]?  I understand.  You want one of us to give you a good reason to spend the time in your [color=special]pause menu[/color] updating your controls.
+
+Yes, I will give you these [color=special]10 gold pieces[/color] I have been saving just for this occasion!
+							</comment>
+							<post-script>player().addGold(10);postNewsItem("Pity Gold Received", "10 Gold Pieces");</post-script>
+						</line>
+						<line id = 'line4' class = 'controls-uncustomized'>
+							<comment>Please, [color=special]$[core.player1.name][/color]!  I had to risk my life to recover those gold pieces from the [color=dim]bad guys[/color]!  For that, you could surely take the time to update your controls in the [color=special]pause menu[/color], couldn&apos;t you?  The very future of [color=special]Lelandria[/color] hangs in the balance!</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'controls-uncustomized'>
+							<comment>The [color=dim]Bungeling Emperor[/color] subjects all of his troops to a rigorous set of training exercises that focus on the power of [color=special]customizing controls[/color].  Only after each [color=dim]bad guy[/color] has learned that power can they enlist in his terrible army and begin tormenting our beautiful land!</comment>
+						</line>
+						<line id = 'nag2' class = 'controls-uncustomized'>
+							<comment>You still haven&apos;t customized your controls yet, have you, [color=special]$[core.player1.name][/color]?  I wish I had paid more attention in school on the day they talked about how to [color=special]customize controls[/color].  I didn&apos;t, though, and now I don&apos;t know how to move to the [color=special]right[/color] at all!</comment>
+						</line>
+						<line id = 'nag3' class = 'controls-customized'>
+							<comment>I see you spent a little time customizing your control settings, [color=special]$[core.player1.name][/color].  What did you decide to set the [color=special]bomb[/color] key to?  [color=special]@bomb[/color], huh?  I should have thought of that myself!</comment>
+						</line>
+						<line id = 'nag4' class = 'controls-customized'>
+							<comment>
+								Everyone is talking about the great work you're doing, [color=special]$[core.player1.name][/color].  All of the other [color=dim]heroes[/color] that have arrived here have ultimately failed, but all of my friends agree that [color=special]you[/color] will succeed!
+
+We also agree that the time you took to [color=special]customize your controls[/color] will make all the difference in this fight against the [color=dim]Bungeling empire[/color].
+							</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+	<terminal1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thank you for using the [color=dim]Lelandria Information Terminal[/color].  Please enter your query.</comment>
+							<response branch-id = 'root.badguys'>
+								<phrase>I&apos;m looking for the [color=dim]bad guys[/color].  Where will I find them?</phrase>
+								<branch id = 'root.badguys'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>The [color=dim]Bungeling Emperor[/color] has dispatched a formidable group of [color=dim]bad guys[/color] throughout every land of [color=special]Lelandria[/color].  Once you travel through the next town of [color=special]Smithsville[/color], you&apos;ll come face-to-face with your dangerous adversaries.</comment>
+											<response branch-id = 'root.badguys.towns'>
+												<phrase>Tell me more about [color=special]Smithsville[/color].</phrase>
+												<branch id = 'root.badguys.towns'>
+													<linear />
+													<nags>
+														<line redirect = 'root.badguys' id = 'nag1'>
+															<comment>
+																Travel a little bit farther to the east to reach the small town of [color=special]Smithsville[/color].
+
+You should look for [color=special]town areas[/color] when you need a moment to escape from the [color=dim]bad guys[/color].  Although you will encounter endless waves of [color=dim]bad guys[/color] in the wild, each town remains [color=special]safe[/color] from the hostile invaders.
+															</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.badguys.back'>
+												<phrase>Back...</phrase>
+												<branch id = 'root.badguys.back'>
+													<linear />
+													<nags>
+														<line redirect = 'root' id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.gold'>
+								<phrase>What can I do with all of this gold I&apos;m collecting?</phrase>
+								<branch id = 'root.gold'>
+									<linear />
+									<nags>
+										<line redirect = 'root' id = 'nag1'>
+											<comment>
+												As you visit each of the towns throughout [color=special]Lelandria[/color], you will eventually meet a number of [color=special]merchants[/color] willing to sell you useful items.  You can use the gold you collect during your adventure to purchase items from the [color=special]merchants[/color].
+
+You might find some other uses for your gold inventory, too!
+											</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Goodbye.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</terminal1>
+</characters>

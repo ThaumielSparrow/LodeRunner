@@ -1,0 +1,353 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Have you been to [color=special]Ouromova[/color] yet, [color=special]$[core.player1.name][/color]?  I only ask because I want to send this [color=special]love letter[/color] to my good friend [color=special]Jill[/color].  With all of the [color=dim]bad guys[/color] running wild, I feel like I have to let her know how I feel...</comment>
+						</line>
+						<line id = 'line2' class = 'prompt'>
+							<comment>If you see her, [color=special]$[core.player1.name][/color], please talk to her and give her this letter!</comment>
+							<response class = 'default' branch-id = 'root.accept'>
+								<phrase>I&apos;ll take the letter to her, [color=special]Timmy[/color].</phrase>
+								<branch id = 'root.accept'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks, [color=special]$[core.player1.name][/color]!  Let me know how she feels about the letter, too!</comment>
+											<post-script>quest("4.3.npc1.quest").status("active");npc("npc1").clearIndicators();session("4.3.npc1.received-letter").set("yes");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.delay'>
+								<phrase>I don&apos;t have time for this right now.</phrase>
+								<branch id = 'root.delay'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>When you have more time, [color=special]$[core.player1.name][/color], please see me again so I can give you the letter to deliver!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'sorry' branch-id = 'root.sorry'>
+								<phrase>It turns out I actually killed her recently, [color=special]Timmy[/color].</phrase>
+								<branch id = 'root.sorry'>
+									<linear>
+										<line id = 'line1'>
+											<comment>How could you, [color=special]$[core.player1.name][/color]?!  I thought you were going to save us from the [color=dim]Bungeling Emperor[/color], but you&apos;re just as bad as him!</comment>
+											<post-script>quest("4.3.npc1.quest").status("failed");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>[color=special]$[core.player1.name][/color], do you have time to deliver this letter to my friend [color=special]Jill[/color] yet?  I love her, but I can&apos;t risk delivering it to her myself, not with so many [color=dim]bad guys[/color] running around!</comment>
+							<response class = 'default' branch-id = 'root.accept'>
+								<phrase>I&apos;ll take the letter to her now, [color=special]Timmy[/color].</phrase>
+							</response>
+							<response class = 'default' branch-id = 'root.delay'>
+								<phrase>I still don&apos;t have time for this.</phrase>
+							</response>
+							<response class = 'sorry' branch-id = 'root.sorry'>
+								<phrase>It turns out I actually killed her recently, [color=special]Timmy[/color].</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Have you found [color=special]Jill[/color] and given her my letter yet, [color=special]$[core.player1.name][/color]?  You should find her in [color=special]Ouromova[/color], I think!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I know [color=special]Jill[/color] is living in [color=special]Ouromova[/color] these days.  Try to find her there if you can, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Please deliver that letter to [color=special]Jill[/color] for me, [color=special]$[core.player1.name][/color]!  It means even more to me than whether or not you customize your gameplay controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Do you have an update on when you&apos;ll deliver that letter for me, [color=special]$[core.player1.name][/color]?  Your customized controls give you a great advantage, but you haven&apos;t used that advantage to deliver my letter yet!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-jill'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>[color=special]$[core.player1.name][/color], have you had a chance to talk to [color=special]Jill[/color]?  How is she doing?</comment>
+							<response branch-id = 'root.confess'>
+								<phrase>I killed her.  My bad.</phrase>
+								<branch id = 'root.confess'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I don&apos;t understand why you would do that, [color=special]$[core.player1.name][/color]!  I don&apos;t think I will ever find anyone else around here that looks anything like her!</comment>
+											<post-script>quest("4.3.npc1.quest").status("failed");quest("4.3.npc1.quest").update("update-timmy-sad").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.lie'>
+								<phrase>I saw one of the [color=dim]bad guys[/color] kill her.</phrase>
+								<branch id = 'root.lie'>
+									<linear>
+										<line redirect = 'root.lie' id = 'line1'>
+											<comment>No!  Please tell me you&apos;re lying, [color=special]$[core.player1.name][/color]!  Wait a minute...</comment>
+										</line>
+										<line id = 'line2'>
+											<comment>We both know that you never see [color=dim]bad guys[/color] in the [color=special]town areas[/color]!  You&apos;re totally lying to me!  I can&apos;t believe you killed her, [color=special]$[core.player1.name][/color]!  I can&apos;t believe it!</comment>
+											<post-script>quest("4.3.npc1.quest").status("failed");quest("4.3.npc1.quest").update("update-timmy-sad-after-lies").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:delivered-letter'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Did you talk to [color=special]Jill[/color] yet, [color=special]$[core.player1.name][/color]?  Did you give her the [color=special]love letter[/color] I gave to you?</comment>
+							<response branch-id = 'root.deliver'>
+								<phrase>She loved the letter, [color=special]Timmy[/color].  She asked me to give you this [color=special]Ring of Eternal Love[/color].</phrase>
+								<branch id = 'root.deliver'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												This is the happiest day of my life, [color=special]$[core.player1.name][/color]!  I can't thank you enough for what you've done!
+
+Please, take this [color=special]1 free bomb[/color] in return for your efforts.  I was keeping it just in case she needed something more convincing than a love letter, but you can have it now!
+											</comment>
+											<post-script>quest("4.3.npc1.quest").status("complete");quest("4.3.npc1.quest").update("update-delivered-letter:delivered-ring").status("active");npc("npc1").clearIndicators();player().addBombs(1);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.keep'>
+								<phrase>She liked the letter, but she didn&apos;t give me a [color=special]Ring of Eternal Love[/color] or anything like that.</phrase>
+								<branch id = 'root.keep'>
+									<linear>
+										<line id = 'line1'>
+											<comment>It sounds like she&apos;s going to play hard-to-get, doesn&apos;t it?  I&apos;ll have to figure out a new plan to win her over.  Still, thanks for delivering the letter for me, [color=special]$[core.player1.name][/color]!</comment>
+											<post-script>quest("4.3.npc1.quest").status("complete");quest("4.3.npc1.quest").update("update-delivered-letter:kept-ring").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:delivered-ring'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								When I gave you that bomb, [color=special]$[core.player1.name][/color], I saw the look on your face.  Yes, I was going to use that bomb to coerce [color=special]Jill[/color] into marrying me against her free will. And yes, you're right, I do have a lot more bombs.  I was obviously going to need a lot of them to keep her with me until the ink dried.
+
+I'll share some more of them with you, because you clearly expected something more than 1 lousy bomb for completing that quest for me...
+							</comment>
+							<post-script>player().addBombs(20);</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>One of these days, I will have a wonderful wedding with [color=special]Jill[/color], once you take care of the [color=dim]Bungeling empire[/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I still can&apos;t believe it worked, [color=special]$[core.player1.name][/color].  Why don&apos;t you take this [color=special]1 gold piece[/color] as an extra thank you?</comment>
+							<post-script>player().addGold(1);</post-script>
+						</line>
+						<line id = 'nag3'>
+							<comment>I wonder how I ever managed to find an infinite gold cheat.</comment>
+						</line>
+						<line id = 'nag4'>
+							<comment>Every once in a while I just give some gold away, don&apos;t I?  If you talk to me enough, you can have all of the gold you want!</comment>
+						</line>
+						<line id = 'nag5'>
+							<comment>You only have a 20% chance of getting a gold bar from me as a result of my excessive jubilance.  How desperately do you want some more gold, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:kept-ring'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;m thinking of using this [color=special]bomb[/color] I bought to coerce her into loving me.  What do you think, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I just need to find a way to force [color=special]Jill[/color] to love me.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I can&apos;t believe I had you of all people deliver that letter, [color=special]$[core.player1.name][/color].  When [color=special]Jill[/color] noticed that I had sent an amateur -- someone who has not even customized their controls in the [color=special]pause menu[/color] -- she probably decided then and there to move on with her life!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I know you&apos;ve spent some time in the control customization screen, [color=special]$[core.player1.name][/color].  By any chance, did you see a key in there that could force [color=special]Jill[/color] to marry me after all?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You killed the only woman I ever loved, [color=special]$[core.player1.name][/color].  Why?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I should have taken that love letter to her myself.  Maybe I didn&apos;t really love her after all...</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>People like you don&apos;t deserve access to [color=special]bombs[/color], [color=special]$[core.player1.name][/color].  Someone should make a law that forbids anyone who hasn&apos;t customized their controls in the [color=special]pause menu[/color] from having bombs!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>If I had the power, [color=special]$[core.player1.name][/color], I would disable the [color=special]@bomb[/color] key on your input device of choice.  I would!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>Before we do business, [color=special]$[core.player1.name][/color], I need to tell you something.</comment>
+						</line>
+						<line transition = '1' id = 'line2'>
+							<comment>
+								The terrible threat of all of the [color=dim]bad guys[/color] has really cut into my sales.  My clients just don't feel safe traveling, nor should they!  I have a lot of debts to pay, and I need to sell out my remaining merchandise in order to do so.
+
+[color=special]$[core.player1.name][/color], if you buy everything in my inventory, I'll reward you with a very special item I've been saving for a rainy day.
+							</comment>
+							<post-script>quest("4.3.npc2.quest").status("active");quest("4.3.npc2.quest:items-purchased").set("0");npc("npc2").clearIndicators().addIndicator("merchant");map().runScript("npc2.talk");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'bought-out'>
+							<comment>Thank you for your generous business, [color=special]$[core.player1.name][/color].  At this time, I&apos;d like to reward you with one of my [color=special]most rare items[/color].  Enjoy!</comment>
+							<post-script>player().acquireRandomItem("sierras-lucky-thief-stopper", "sierras-lazy-respawn-inhibitor", "sierras-clinking-parachute-of-aptitude");quest("4.3.npc2.quest").status("complete");npc("npc2").clearIndicators();</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'shop'>
+							<comment>Welcome to my little shoppe, [color=special]$[core.player1.name][/color].  Tell me what you need.</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to do some shopping, [color=special]Sierra[/color].</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '50' class = 'funds funds-normal' branch-id = 'root.funds50'>
+								<phrase>Your sister [color=special]Lily[/color] asked me to give you these [color=special]50 gold pieces[/color].</phrase>
+								<branch id = 'root.funds50'>
+									<linear>
+										<line id = 'line1'>
+											<comment>This will help me a lot, [color=special]$[core.player1.name][/color]!  I&apos;ll invest this money in inventory upgrades, giving you access to some better items.  Please give my gratitude to [color=special]Lily[/color]!</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-delivered-gold").status("active");npc("npc2").clearIndicators();player().subtractGold(50);map().runScript("npc2.upgrade-inventory");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response min-gold = '75' class = 'funds funds-extra' branch-id = 'root.funds75'>
+								<phrase>Your sister [color=special]Lily[/color] asked me to give you these [color=special]75 gold pieces[/color].</phrase>
+								<branch id = 'root.funds75'>
+									<linear>
+										<line id = 'line1'>
+											<comment>This will help me a lot, [color=special]$[core.player1.name][/color]!  I&apos;ll invest this money in inventory upgrades, giving you access to some better items.  Please give my gratitude to [color=special]Lily[/color]!</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-delivered-gold").status("active");npc("npc2").clearIndicators().addIndicator("merchant");player().subtractGold(75).addXP(50, "XP Bonus");map().runScript("npc2.upgrade-inventory");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Goodbye, for now.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2' class = 'bought-out'>
+							<comment>Thanks for buying my inventory out, [color=special]$[core.player1.name][/color].</comment>
+							<response min-gold = '50' class = 'funds funds-normal' branch-id = 'root.funds50late'>
+								<phrase>Your sister [color=special]Lily[/color] asked me to give you these [color=special]50 gold pieces[/color].</phrase>
+								<branch id = 'root.funds50late'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>A little bit too little, too late on this one, [color=special]$[core.player1.name][/color].  Still, I&apos;ll pocket that gold in case I need it for a future business venture.</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-delivered-gold").status("active");npc("npc2").clearIndicators();player().subtractGold(50);</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '75' class = 'funds funds-extra' branch-id = 'root.funds75late'>
+								<phrase>Your sister [color=special]Lily[/color] asked me to give you these [color=special]75 gold pieces[/color].</phrase>
+								<branch id = 'root.funds75late'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>A little bit too little, too late on this one, [color=special]$[core.player1.name][/color].  Still, I&apos;ll pocket that gold in case I need it for a future business venture.  Thanks for bringing so much of it, by the way!</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-delivered-gold").status("active");npc("npc2").clearIndicators();player().subtractGold(75).addXP(50, "XP Bonus");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Goodbye, for now.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

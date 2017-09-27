@@ -1,0 +1,1133 @@
+<template>
+
+    <achievement>
+
+        <name>#</name>
+        <title>#</title>
+        <description>#</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                </script>
+            </hook>
+
+            <hook>
+                <name>#</name>
+                <script>
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+</template>
+
+<achievements>
+
+    <achievement>
+
+        <name>achievement-1</name>
+        <title>I Love Gold</title>
+        <description>Collect 100 gold pieces</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    if ( achievement("achievement-1").status() == "complete" )
+                    {
+                        session("tmp.achievement.get-status").set("complete???");
+                    }
+
+                    else
+                    {
+                        session("tmp.achievement.get-status").setConcat(
+                            session("core.gold.found").get(), " / ", "100", achievement("achievement-1").status()
+                        );
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>collect-gold</name>
+                <script>
+                    if ( session("core.gold.found").get() &gt;= 100 )
+                    {
+                        // achievement done
+                        achievement("achievement-1").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>im-in-control</name>
+        <title>I am in Control</title>
+        <description>Customize at least one of the game controls.  You can change it back immediately if you want to!</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume incomplete if get-status query is necessary
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>previously-customized-controls</name>
+                <script>
+                    // achievement done
+                    achievement("im-in-control").status("complete");
+
+                    // Loop all NPCs to flip controls-related dialogue lines
+                    each( npcsByClass("npc") )
+                    {
+                        // Disable "you didn't customize" lines for ALL conversations this NPC uses...
+                        this.getAllLinesByClass("controls-uncustomized").disable();
+
+                        // Enable any "you did customize" lines
+                        this.getAllLinesByClass("controls-customized").enable();
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>customized-controls</name>
+                <script>
+                    // achievement done
+                    achievement("im-in-control").status("complete");
+
+                    // Loop all NPCs to flip controls-related dialogue lines
+                    each( npcsByClass("npc") )
+                    {
+                        // Disable "you didn't customize" lines for ALL conversations this NPC uses...
+                        this.getAllLinesByClass("controls-uncustomized").disable();
+
+                        // Enable any "you did customize" lines
+                        this.getAllLinesByClass("controls-customized").enable();
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>been-here-before</name>
+        <title>Been Here Before</title>
+        <description>Successfully visit every level in the game without using your mining laser.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Never commited a dig?  If not, check progress
+                    if ( session("stats.digs").get() == 0 )
+                    {
+                        // If not complete or failed, assume we should show how many maps visited / how many possible
+                        session("tmp.achievement.get-status").setConcat(
+                            progress().getMapsByClass("overworld").countVisited(),
+                            " / ",
+                            progress().getMapsByClass("overworld").count(),
+                            " visited"
+                        );
+                    }
+
+                    // Otherwise, set as failed
+                    else
+                    {
+                        // fail
+                        achievement("been-here-before").status("failed");
+
+                        // one-time status update
+                        session("tmp.achievement.get-status").set("Failed");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>dig</name>
+                <script>
+                    // Digging fails the achievement
+                    achievement("been-here-before").status("failed");
+                </script>
+            </hook>
+
+            <hook>
+                <name>new-level</name>
+                <script>
+                    // Have we now visited every possible level?
+                    if (
+                        progress().getMapsByClass("overworld").countVisited() &gt;= progress().getMapsByClass("overworld").count()
+                    )
+                    {
+                        // Never commited a dig?
+                        if ( session("stats.digs").get() == 0 )
+                        {
+                            // achievement complete
+                            achievement("been-here-before").status("complete");
+                        }
+
+                        // Failed achievement
+                        else
+                        {
+                            // fail
+                            achievement("been-here-before").status("failed");
+                        }
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>achievement-3</name>
+        <title>Get Rich Quick</title>
+        <description>Collect 100 bars of gold in the overworld within the first 5 minutes of a new game.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Do we have any time left?
+                    if ( hasTimeRemaining(5) )
+                    {
+                        // Display how much time remains
+                        session("tmp.achievement.get-status").setConcat(
+                            getMinutesRemaining(5), // How long until we reach the 5 minute mark of gameplay?
+                            " left" // e.g. 3:47 left
+                        );
+                    }
+
+                    // If not, we failed
+                    else
+                    {
+                        // Fail achievement
+                        achievement("achievement-3").status("failed");
+
+                        // One last return
+                        session("tmp.achievement.get-status").set("Failed");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>collect-gold</name>
+                <script>
+                    // Do we have time left?
+                    if ( hasTimeRemaining(5) )
+                    {
+                        // Collected all of the needed gold yet?
+                        if ( session("core.gold.found").get() &gt;= 100 )
+                        {
+                            // achievement complete
+                            achievement("achievement-3").status("complete");
+                        }
+                    }
+
+                    // Did we reach the time limit?
+                    else
+                    {
+                        // achievement failed
+                        achievement("achievement-3").status("failed");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>party-of-five</name>
+        <title>Party of Five</title>
+        <description>Simultaneously destroy 5 bad guys with one bomb.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // If not complete (checked in app), assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>killed-bad-guy-x5</name>
+                <script>
+                    // Complete achievement
+                    achievement("party-of-five").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>impulse-buy</name>
+        <title>Impulse Buy</title>
+        <description>Purchase an item from one of the merchants.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume incomplete if get-status query is necessary
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>bought-item</name>
+                <script>
+                    // Flag achievement as complete
+                    achievement("impulse-buy").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>taxation-without-representation</name>
+        <title>Taxation without Representation</title>
+        <description>After talking to [color=special]Elizabeth[/color], collect a tax from every merchant in the game.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // If still active, display the number of tithes collect out of the number possible
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.taxation-without-representation.counter").get(),
+                        " / ",
+                        session("merchant.count.total").get()
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>collected-tithe</name>
+                <script>
+                    // Increment achievement stat counter
+                    session("achievements.taxation-without-representation.counter").increment(1);
+
+                    // Have we collected one for every merchant?
+                    if (
+                        session("achievements.taxation-without-representation.counter").get() &gt;= session("merchant.count.total").get()
+                    )
+                    {
+                        // achievement complete
+                        achievement("taxation-without-representation").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>gravedigger</name>
+        <title>Gravedigger</title>
+        <description>Kill 25 bad guys in a single game.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // If not complete, assume we need n / 25
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.gravedigger.counter").get(),
+                        " / ",
+                        "25"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>killed-bad-guy</name>
+                <script>
+                    // Increment counter
+                    session("achievements.gravedigger.counter").increment(1);
+
+                    // Reached 25?
+                    if ( session("achievements.gravedigger.counter").get() &gt;= 25 )
+                    {
+                        // achievement complete
+                        achievement("gravedigger").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>long-term-savings</name>
+        <title>Long Term Savings</title>
+        <description>Amass a total of at least 2000 gold pieces in your wallet.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume we haven't reached the mark; display n / 2000
+                    session("tmp.achievement.get-status").setConcat(
+                        session("core.gold.wallet").get(),
+                        " / ",
+                        "2000"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>wallet-changed</name>
+                <script>
+                    // Reached 2000 gold pieces?
+                    if ( session("core.gold.wallet").get() &gt;= 2000 )
+                    {
+                        // achievement complete!
+                        achievement("long-term-savings").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>double-down</name>
+        <title>Double Down</title>
+        <description>Reach character level 10.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume not complete, render n / 10
+                    session("tmp.achievement.get-status").setConcat(
+                        session("core.player1.level").get(),
+                        " / ",
+                        "10"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>leveled-up</name>
+                <script>
+                    // Reached level 10?
+                    if ( session("core.player1.level").get() &gt;= 10 )
+                    {
+                        // achievement complete
+                        achievement("double-down").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>fear-mongering</name>
+        <title>Fear Mongering</title>
+        <description>Use the [color=special]Fright[/color] skill to scare a bad guy into a set of spikes.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>killed-scared-bad-guy-with-spikes</name>
+                <script>
+                    // Achievement done!
+                    achievement("fear-mongering").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>no-one-gets-hurt</name>
+        <title>No One Gets Hurt</title>
+        <description>Complete a level without killing any of the bad guys on that level.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>level-complete</name>
+                <script>
+                    // Did we complete without killing a bad guy?
+                    if ( map().getParam("stats.enemies-killed") == 0 )
+                    {
+                        // achievement complete
+                        achievement("no-one-gets-hurt").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>repeat-customer</name>
+        <title>Repeat Customer</title>
+        <description>Use the bomb vending machines to purchase 500 bombs in a single playthrough.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Assume incomplete, render n / 500
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.repeat-customer.counter").get(),
+                        " / ",
+                        "500"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>bought-bombs</name>
+                <script>
+                    // Have we now bought at least 500?
+                    if ( session("achievements.repeat-customer.counter").get() &gt;= 500 )
+                    {
+                        // achievement complete
+                        achievement("repeat-customer").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>indiscriminate</name>
+        <title>Indiscriminate</title>
+        <description>Kill one of the friendly townsfolk.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>killed-npc</name>
+                <script>
+                    // achievement complete!
+                    achievement("indiscriminate").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>whats-my-name</name>
+        <title>What&apos;s My Name?!</title>
+        <description>Pick a name for your character.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>entered-name</name>
+                <script>
+                    // achievement done!
+                    achievement("whats-my-name").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>learning-the-ropes</name>
+        <title>Learning the Ropes</title>
+        <description>Complete 5 Puzzle Rooms.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / 5
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.learning-the-ropes.counter").get(),
+                        " / ",
+                        "5"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>puzzle-complete</name>
+                <script>
+                    // increment counter
+                    session("achievements.learning-the-ropes.counter").increment(1);
+
+                    // completed 5?
+                    if ( session("achievements.learning-the-ropes.counter").get() &gt;= 5 )
+                    {
+                        // achievement complete!
+                        achievement("learning-the-ropes").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>not-bad</name>
+        <title>Not Bad!</title>
+        <description>Complete 5 Challenge Levels.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / 5
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.not-bad.counter").get(),
+                        " / ",
+                        "5"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>challenge-complete</name>
+                <script>
+                    // increment counter
+                    session("achievements.not-bad.counter").increment(1);
+
+                    // completed 5?
+                    if ( session("achievements.not-bad.counter").get() &gt;= 5 )
+                    {
+                        // achievement complete!
+                        achievement("not-bad").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>best-in-the-world</name>
+        <title>Best in the World</title>
+        <description>Complete all Challenge Levels and Puzzle Rooms in a single playthrough.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / (20 + 20)
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.best-in-the-world.counter").get(),
+                        " / ",
+                        "40"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>puzzle-complete</name>
+                <script>
+                    // increment counter
+                    session("achievements.best-in-the-world.counter").increment(1);
+
+                    // completed all 40?
+                    if ( session("achievements.best-in-the-world.counter").get() &gt;= 40 )
+                    {
+                        // achievement complete
+                        achievement("best-in-the-world").status("complete");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>challenge-complete</name>
+                <script>
+                    // increment counter
+                    session("achievements.best-in-the-world.counter").increment(1);
+
+                    // completed all 40?
+                    if ( session("achievements.best-in-the-world.counter").get() &gt;= 40 )
+                    {
+                        // achievement complete
+                        achievement("best-in-the-world").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>you-got-in-the-way</name>
+        <title>You Got in the Way</title>
+        <description>Use a lever to move a platform that ultimately crushes a friendly townperson.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>killed-npc-by-planar-shift</name>
+                <script>
+                    // achievement complete!
+                    achievement("you-got-in-the-way").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>better-than-new</name>
+        <title>Better than New</title>
+        <description>Upgrade an item in your inventory.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>upgraded-item</name>
+                <script>
+                    // achievement complete!
+                    achievement("better-than-new").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>skilled-labor</name>
+        <title>Skilled Labor</title>
+        <description>Unlock your first skill in any category.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>unlocked-skill</name>
+                <script>
+                    // achievement complete
+                    achievement("skilled-labor").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>multitalented</name>
+        <title>Multitalented</title>
+        <description>Fully upgrade 2 separate skills during the same playthrough.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / 2
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.multitalented.counter").get(),
+                        " / ",
+                        "2"
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>upgraded-skill-to-level-3</name>
+                <script>
+                    // increment counter
+                    session("achievements.multitalented.counter").increment(1);
+
+                    // 2 fully upgraded?
+                    if ( session("achievements.multitalented.counter").get() &gt;= 2 )
+                    {
+                        // achievement complete!
+                        achievement("multitalented").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>i-want-it-all</name>
+        <title>I Want It All</title>
+        <description>Buy the entire inventory from any merchant in the game.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete
+                    session("tmp.achievement.get-status").set("Incomplete");
+                </script>
+            </hook>
+
+            <hook>
+                <name>bought-all-items</name>
+                <script>
+                    // achievement complete
+                    achievement("i-want-it-all").status("complete");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>the-rpg-master</name>
+        <title>The RPG Master</title>
+        <description>Successfully complete all of the quests in one playthrough.  (Be nice!)</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / #
+                    session("tmp.achievement.get-status").setConcat(
+                        session("achievements.the-rpg-master.counter").get(),
+                        " / ",
+                        universe().countQuests()
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>completed-quest</name>
+                <script>
+                    // increment counter
+                    session("achievements.the-rpg-master.counter").increment(1);
+
+                    // completed all possible?
+                    if (
+                        session("achievements.the-rpg-master.counter").get() &gt;= universe().countQuests()
+                    )
+                    {
+                        // achievement complete!
+                        achievement("the-rpg-master").status("complete");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>failed-quest</name>
+                <script>
+                    // fail achievement
+                    achievement("the-rpg-master").status("failed");
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>the-one-true-lode-runner</name>
+        <title>The One True Lode Runner</title>
+        <description>Complete every level in the overworld without unlocking a skill or using a bomb in one playthrough.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // check for failure (in case we loaded a game and haven't triggered
+                    // a failure hook yet)
+                    if (
+                        session("stats.bombs-used").get() &gt; 0 or
+                        session("stats.skills-unlocked").get() &gt; 0
+                    )
+                    {
+                        // fail
+                        achievement("the-one-true-lode-runner").status("failed");
+
+                        // one last status update
+                        session("tmp.achievement.get-status").set("Failed");
+                    }
+
+                    // otherwise, assume incomplete
+                    else
+                    {
+                        // assume incomplete
+                        session("tmp.achievement.get-status").set("Incomplete");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>unlocked-skill</name>
+                <script>
+                    // fail achievement
+                    achievement("the-one-true-lode-runner").status("failed");
+                </script>
+            </hook>
+
+            <hook>
+                <name>placed-bomb</name>
+                <script>
+                    // fail achievement
+                    achievement("the-one-true-lode-runner").status("failed");
+                </script>
+            </hook>
+
+            <hook>
+                <name>level-complete</name>
+                <script>
+                    // have we completed all levels now?
+                    if (
+                        progress().getMapsByClass("overworld").countWithoutGold() &gt;= progress().getMapsByClass("overworld").count()
+                    )
+                    {
+                        // Did we use a bomb or unlock a skill at any point?
+                        if (
+                            session("stats.bombs-used").get() &gt; 0 or
+                            session("stats.skills-unlocked").get() &gt; 0
+                        )
+                        {
+                            // fail
+                            achievement("the-one-true-lode-runner").status("failed");
+                        }
+
+                        // If not:  CONGRATULATIONS!!!
+                        else
+                        {
+                            // achievement complete!
+                            achievement("the-one-true-lode-runner").status("complete");
+                        }
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>the-collector</name>
+        <title>The Collector</title>
+        <description>Collect all of the gold in the overworld in a single playthrough.</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // assume incomplete; render n / #
+                    session("tmp.achievement.get-status").setConcat(
+                        progress().getMapsByClass("overworld").countWithoutGold(),
+                        " / ",
+                        progress().getMapsByClass("overworld").count()
+                    );
+                </script>
+            </hook>
+
+            <hook>
+                <name>level-complete</name>
+                <script>
+                    // have we completed all levels now?
+                    if (
+                        progress().getMapsByClass("overworld").countWithoutGold() &gt;= progress().getMapsByClass("overworld").count()
+                    )
+                    {
+                        // achievement complete!
+                        achievement("the-collector").status("complete");
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+    <achievement>
+
+        <name>speed-runner</name>
+        <title>Speed Runner</title>
+        <description>Collect all of the gold in the overworld in a single playthrough in 4 hours, 30 minutes or less.  (Timer pauses during dialogue sequences and menu use.)</description>
+
+        <hooks>
+
+            <hook>
+                <name>get-status</name>
+                <script>
+                    // Do we have any time left?
+                    if ( hasTimeRemaining(270) )
+                    {
+                        // Display how much time remains
+                        session("tmp.achievement.get-status").setConcat(
+                            getMinutesRemaining(270), // How long until we reach the 270 minute mark of gameplay?
+                            " left" // e.g. 3:47 left
+                        );
+                    }
+
+                    // If not, we failed
+                    else
+                    {
+                        // Fail achievement
+                        achievement("speed-runner").status("failed");
+
+                        // One last return
+                        session("tmp.achievement.get-status").set("Failed");
+                    }
+                </script>
+            </hook>
+
+            <hook>
+                <name>level-complete</name>
+                <script>
+                    // have we completed all levels now?
+                    if (
+                        progress().getMapsByClass("overworld").countWithoutGold() &gt;= progress().getMapsByClass("overworld").count()
+                    )
+                    {
+                        // Did we complete all of the levels within the given time limit?
+                        if ( hasTimeRemaining(270) )
+                        {
+                            // achievement complete!
+                            achievement("speed-runner").status("complete");
+                        }
+
+                        // If not, let's fail the achievement now
+                        else
+                        {
+                            // achievement failed, too slow
+                            achievement("speed-runner").status("complete");
+                        }
+                    }
+                </script>
+            </hook>
+
+        </hooks>
+
+    </achievement>
+
+</achievements>

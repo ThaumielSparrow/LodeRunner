@@ -1,0 +1,21 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1'] Hi, $player$!  Do you know that my friend $Jessie$ on the north side of town has a $beautiful heirloom$?  I think she ^stole it^ from somebody, though.
+
+                [l id = 'line2'] I think she ^stole it^ from someone named $Erin$ over in $Navarra$.  I don't know for sure, though.  Maybe you should ask?
+
+                [n id = 'nag1'] Hi, $player$!  I hope you're not having any trouble with the ^bad guys^!
+
+                [n id = 'nag2'] I wish I could do something to help you against the ^bad guys^, $player$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I asked $Jessie$ if I could wear that $heirloom$ she allegedly stole.  However, she told me \
+                    that I couldn't because I hadn't properly customized my controls in the $pause menu$.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Some time ago, I asked $Jessie$ if I could wear the $heirloom$ she purportedly stole from a woman east of \
+                    here.  Unfortunately, she told me that I couldn't because she disapproved of the way I had customized my gameplay controls in the $pause menu$!

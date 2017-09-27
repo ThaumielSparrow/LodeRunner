@@ -1,0 +1,29 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '10' id = 'nag1'>
+							<comment>Look at all of these levers!  If you use them properly, you can access all of the gold on this level!</comment>
+						</line>
+						<line priority = '9' id = 'nag2'>
+							<comment>Do you know that you can complete [color=special]every level[/color] in this game without using a single bomb?</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>Everyone around here seems to have some kind of problem.  Some guy the other day asked me to deliver a [color=special]love letter[/color] for him!  Can you believe that?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you&apos;re going to figure out this lever puzzle, [color=special]$[core.player1.name][/color], you might want to customize your controls in the [color=special]pause menu[/color] before you begin!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I made a small bet with a friend of mine, [color=special]$[core.player1.name][/color].  I bet him that you would never take the time to customize your controls, but you proved me wrong.  Please take these [color=special]5 gold pieces[/color].</comment>
+							<post-script>player().addGold(5);</post-script>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

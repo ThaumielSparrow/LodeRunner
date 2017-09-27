@@ -1,0 +1,113 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@character-level</parameter>
+		<parameter>@gold-collected</parameter>
+		<parameter>@quicksave-slot-count</parameter>
+		<parameter>@manualsave-slot-count</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.save'>
+
+    <rowmenu id = 'save-game' class = 'saved-game-directory' width = '@width' height = '@height' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label class = 'debug1' id = 'label' x = '20%' y = '0' width = '75%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'left' />
+            </item>
+
+            <item id = 'invisible-right-column-option' disabled = '1' />
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'New Custom Save' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Select one to Change' />
+            </item>
+
+        </item-group>
+
+        <item-group per-row = '2' column-padding = '20'>
+
+            <item class = 'saved-game' render-border = '1'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '1'>
+
+                        <item class = 'byline'>
+                            <icon x = '5%' y = '0' index = '25' position = 'absolute' />
+                            <label x = '20%' y = '0' width = '75%' value = 'Create [color=special]New Save[/color]...' />
+                        </item>
+
+                        <item>
+                            <icon x = '5%' y = '2' index = '13' />
+                            <label x = '20%' y = '0' width = '75%' value = 'Game Statistics' />
+                        </item>
+
+                        <item>
+                            <label x = '20%' y = '0' width = '75%' value = '[color=lowlight]Character Level:  [color=special]@character-level[/color]
+Gold Collected:  [color=title]@gold-collected[/color][/color]' />
+                        </item>
+
+                </stack>
+
+                <action do = 'show:game.save.keyboard' overwrite = '0' />
+
+            </item>
+
+            <item class = 'preview' disabled = '1'>
+
+                <rowmenu disabled = '1' uses-focus = '0' render-border = '0' height = '-1'>
+                    <item render-border = '0'>
+                        <xrect x = '50%' y = '0' width = '160' height = '28' align = 'center' />
+                        <label xfont = 'high-contrast' id = 'label' x = '50%' y = '14' width = '75%' value = 'Save Preview:' align = 'center' valign = 'center' />
+                    </item>
+                    <item render-border = '0'>
+                        <rect x = '50%' y = '0' width = '162' height = '122' align = 'center' />
+                        <graphic filename = 'tmp/temp_surface.resized.png' file-width = '160' file-height = '120' x = '50%' y = '1' width = '100%' height = '0' align = 'center' />
+                    </item>
+                </rowmenu>
+
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Quicksave Slots (@quicksave-slot-count)' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Select any to Overwrite' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.quicksaves' render-border = '0' per-row = '2' column-padding = '20' />
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Existing Custom Saves (@manualsave-slot-count)' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Select any to Overwrite' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.manualsaves' render-border = '0' per-row = '2' column-padding = '20' />
+
+    </rowmenu>
+
+</template>

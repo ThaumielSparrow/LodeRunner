@@ -1,0 +1,12 @@
+@arrow1
+
+    @chapter1
+
+        @conversation[id = 'tutorial']
+
+            >>> root
+
+                [l id = 'line1'] Climb the ^ladders^ to reach the top part of this level.  Press ^@up^ to climb ladders.
+                    -redirect root
+
+                [l id = 'line2'] Use the monkey bars at the top to cross over into the next level.

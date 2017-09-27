@@ -1,0 +1,228 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1'] Hi, $player$!  Have you noticed that most people around here have a lot to say?  Every time you talk to them, they start in on something else!
+
+                [l id = 'line2'] Personally, I think people talk as much as they do just to keep their mind off of the ^Bungeling Emperor^.  I've seen his powerful bad guys destroy many of my friends.
+
+                [l id = 'line3'] By the way, $player$, have you tried to complete the $puzzle room$ on this level yet?  I hear you win a special prize for completing puzzle rooms, but I've never figured out how to beat one of them.
+
+                [l id = 'line4'] I'm a little bit tired of talking to you, $player$.  I think you should be trying to save us from the bad guys right now.
+
+                [l id = 'line5'] $player$, why do you keep pestering me?  I really have to concentrate to stay on this predefined path, and you're not helping matters.  What do I have \
+                    to do to get you to leave me alone, $player$?
+
+                    +gold Give me 20 pieces of gold.
+
+                        >>> root.gold
+
+                            [l id = 'line1'] If I give you gold just because you asked for it, then you'll just keep asking for more.  Forget it, $player$!
+
+                    +item Give me a cool item.
+
+                        >>> root.item
+
+                            [l id = 'line1'] You expect a cool item from one of the first NPCs in the game?  I have only a few meager possessions, but you can probably use anything \
+                                against the ^Bungeling empire^.  I'll give you one of my old items at random, but I don't think it'll impress you very much!
+
+                                @post-script
+                                    player().acquireRandomItem("carloss-heavy-bracelet", "carloss-lucky-headband", "carloss-baby-turtle");
+
+                    +bye Sorry.  I'll leave you alone.
+
+                        >>> root.bye
+
+                            [l id = 'line1'] I don't really believe you, $player$.  Let me give you these $10 gold pieces$, just to make sure you mean it!
+
+                                @post-script
+                                    player().addGold(10);
+
+                [n id = 'nag1'] I am currently saying meaningless things in random order.
+
+                [n id = 'nag2'] Notice that I am saying meaningless things in random order.
+
+                [n id = 'nag3'] If you keep talking to me, you will see only meaningless things in random order.
+
+                [n id = 'nag4'] The meaningless things I say, I say them randomly.
+
+                [n id = 'nag5'] At random, I will say one of a handful of meaningless phrases.
+
+                [n id = 'nag6'] Talking to me will get you nothing but meaningless phrases uttered at random.
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:killed-carlos-prematurely']
+
+            >>> root
+
+                [n id = 'nag1'] You know, I haven't seen Carlos around lately.
+
+                [n id = 'nag2'] I wonder what ever happened to Carlos.  Did I ever mention that I used to have strong feelings for him?  Before you blew him up, of course!
+
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Welcome to our humble town, $player$!  My name is $Rochelle$.  I would offer to show you around town, but we don't even have a single $merchant$ to buy things from!
+
+                    I'd like to ask you a favor, $player$, but I don't feel like I know you well enough yet.  Maybe if we get to know each other a little bit better, I'll feel more comfortable...
+
+                [l id = 'line2'] Thanks for taking such an interest in me, $player$.  I almost feel like I can trust you with anything.  All of these ^bad guys^ that are running around in the wild areas, though, \
+                    scare me pretty bad!
+
+                    I really appreciate having you around to talk to in times like this.  Maybe you can stop by again soon?  I want to ask you about that favor, but I'm still trying to find the words...
+
+                [l id = 'line3'] $player$, I have to talk to you about something.  Have you talked to $Carlos$ up there?  I can't stop looking at him!
+
+                    I don't feel confident enough to approach him yet, though.  If I had a nice $perfume$, I would feel much more at ease.
+                    -redirect root
+
+                [n id = 'nag1'] Have you visited $Amandria$ yet?  If you go there, you should find a merchant that is selling my favorite perfume.
+
+                    Do you think you can help me, $player$?  I will surely reward you with a wonderful and useful item!
+
+                    +yes I'll do my best.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thank you so very much, $player$!
+
+                                @post-script
+                                    quest("0.4.npc2.quest").status("active");
+                                    npc("npc2").clearIndicators();
+
+                    +extort If you front me $25 gold pieces$, I will get right on that.
+
+                        >>> root.extort
+
+                            [l id = 'line1'] I don't have much money, $player$, but take these $25 pieces of gold$ as an early token of gratitude.  Please hurry back with the perfume!
+
+                                @post-script
+                                    quest("0.4.npc2.quest").status("active");
+                                    quest("0.4.npc2.quest").update("update-extorted").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().addGold(25);
+
+                    +later Maybe later...
+
+                        >>> root.later
+
+                            [n id = 'nag1']
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Have you had a chance to visit $Amandria$ yet, $player$?  You will find a merchant there selling the perfume!
+
+                [n id = 'nag2'] I would go to $Amandria$ myself to buy the perfume I want, but all of the ^bad guys^ make traveling so treacherous!
+
+
+        @conversation[id = 'quest:in-progress:killed-carlos']
+
+            >>> root
+
+                [n id = 'nag1'] I haven't seen $Carlos$ around lately, $player$!  I hope he's doing okay!  Please make sure to bring that $perfume$ to me still!
+
+                [n id = 'nag2'] Where has $Carlos$ gone, I wonder?  If you bring me that $perfume$, maybe he will come back!
+
+
+        @conversation[id = 'quest:complete:killed-carlos']
+
+            >>> root
+
+                [n id = 'nag1'] I think $Carlos$ has gone on a vacation.  Maybe he didn't like the smell of this wonderful perfume.  Do you think I sent you after the wrong perfume, $player$?
+
+                [n id = 'nag2'] $player$, I can't find Carlos anymore.  I don't know what to do with all of this perfume now!
+
+
+        @conversation[id = 'quest:in-progress:bought-perfume']
+
+            >>> root
+
+                [l id = 'line1' class = 'default'] You bought the perfume, $player$!  I can't believe it!  I bet $Carlos$ will absolutely love this perfume.  Can I have it now, please?!
+
+                    +yes Here you go, $Rochelle$.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Thank you so much, $player$!
+
+                                I don't think I could ever truly repay you for your kindness, but I can at least offer you this $special item$.  Hopefully it can help you \
+                                against the ^Bungeling empire^!
+
+                                @pre-script
+                                    player().dropItem("rochelles-perfume");
+
+                                @post-script
+                                    map().runScript("npc2.quest.complete");
+
+                    +no Oops!  Looks like I just spilled it!
+
+                        >>> root.no
+
+                            [l id = 'line1'] No!  Why did you do that, $player$?!  Why would you spend the gold to buy the perfume, then spill it on the ground right in front of me?!
+
+                                @post-script
+                                    player().dropItem("rochelles-perfume");
+                                    quest("0.4.npc2.quest").status("failed");
+                                    quest("0.4.npc2.quest").update("update-spilled-perfume").status("active");
+
+                [l id = 'line2' class = 'extorted'] You bought the perfume, $player$.  I didn't know if you'd actually follow through on your word, not after you \
+                    pilfered that extra gold from me when you took the job.
+
+                    All the same, I bet $Carlos$ will absolutely love this perfume.  Can I have it now, please?!
+
+                    +yes-extorted Here you go, $Rochelle$.
+
+                        >>> root.yes-extorted
+
+                            [l id = 'line1'] Thank you so much, $player$!
+
+                                I would have liked to repay you for your kindness, but I believe I already paid you pretty well.  I love this perfume, though, so I'm \
+                                going to offer you this $not-so-special item$ as a token of my indifference.
+
+                                Hopefully it can help you in your quest to extort gold out of everyone else in $Lelandria$.
+
+                                @pre-script
+                                    player().dropItem("rochelles-perfume");
+
+                                @post-script
+                                    map().runScript("npc2.quest.complete");
+
+                    +no Oops!  Looks like I just spilled it!
+
+        @conversation[id = 'quest:failed:spilled-perfume']
+
+            >>> root
+
+                [n id = 'nag1'] I can still smell the perfume on the ground around here.  $player$, why did you do that to me?!
+
+                [n id = 'nag2'] I had another $Carlos dream$ last night, $player$.  I will never have a $Carlos$ in my life without that perfume.
+
+        @conversation[id = 'quest:complete:delivered-perfume']
+
+            >>> root
+
+                [n id = 'nag1'] Thanks for bringing me this perfume, $player$!  I haven't had a chance to woo $Carlos$ just yet.
+
+                [n id = 'nag2'] I hope you didn't spend too much money on this fabulous perfume, $player$.  Carlos might not even like it!
+
+
+        @conversation[id = 'quest:failed:killed-merchant']
+
+            >>> root
+
+                [n id = 'nag1'] I hear you didn't have a chance to get that perfume for me, $player$.  I wish you had found a way!
+
+                [n id = 'nag2'] Believe it or not, $player$, no one else I know of in $Lelandria$ sells that perfume.  I wish you had bought a bottle of it for me!
+

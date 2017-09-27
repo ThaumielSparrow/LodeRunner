@@ -1,0 +1,25 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@map-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'net.coop.pause'>
+
+    <item render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '5' index = '27' />
+        <label x = '17%' y = '5' width = '80%' value = '[color=special]@map-title[/color] Complete!' />
+        <label x = '17%' y = '40' width = '78%' value = 'As a reward for completing this [color=title]Puzzle Room[/color], you may choose [color=special]one[/color] new item from the list of items below!' />
+    </item>
+
+    <item disabled = '1' render-border = '0'>
+        <icon x = '5%' y = '5' index = '26' />
+        <label x = '17%' y = '5' width = '80%' value = '[color=special]Claim Your Prize:[/color]' />
+    </item>
+
+    <item-group id = 'ext.item-list' render-border = '0' />
+
+</template>

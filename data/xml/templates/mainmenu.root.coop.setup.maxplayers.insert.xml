@@ -1,0 +1,22 @@
+<parameters>
+	<data>
+		<parameter>@limit</parameter>
+	</data>
+	<text>
+		<parameter>@limit</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop.setup.maxplayers.insert'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+        <label x = '16%' y = '0' width = '80%' value = '@limit Players' />
+
+        <action do = 'submit:maxplayers' limit = '@limit' />
+        <action do = 'back' />
+
+    </insert:item>
+
+</template>

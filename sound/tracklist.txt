@@ -1,0 +1,17 @@
+////////////////////
+// Tracklist definitions
+//
+// Edit this file at your own risk. -Magikarps r kewl.
+
+background1.ogg
+background3.ogg
+background2.ogg
+background11.ogg
+background8.ogg
+background4.ogg
+background5.ogg
+background10b.ogg
+background6.ogg
+background12.ogg
+background7.ogg
+background9.ogg

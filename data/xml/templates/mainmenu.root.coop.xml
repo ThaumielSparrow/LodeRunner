@@ -1,0 +1,71 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' center-vertically = '1' uses-focus = '1'>
+
+        <item-group>
+
+            <item class = 'first-title' id = 'testid1' rel = 'root.coop.host'>
+                <hidden id = 'replay-file' rel = 'root.coop.host.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Host Game' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'app-directive' directive = 'app:multiplayer.new' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Create a new session' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '-180' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid2' rel = 'root.coop.join'>
+                <hidden id = 'replay-file' rel = 'root.coop.join.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Join Game' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'app-directive' directive = 'app:multiplayer.browser' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid2'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Join an existing game' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid3' rel = 'root.coop.back'>
+                <hidden id = 'replay-file' rel = 'root.coop.back.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Main Menu...' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '100' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

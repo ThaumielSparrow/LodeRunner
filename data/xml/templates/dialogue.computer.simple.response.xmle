@@ -1,0 +1,9 @@
+<template name = 'dialogue.computer.simple.response'>
+
+    <item individual-border = '1' glow = '0'>
+        <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+        <label x = '15%' y = '0' width = '80%' value = '@response-text' />
+        <action do = 'response' response-id = '' />
+    </item>
+
+</template>

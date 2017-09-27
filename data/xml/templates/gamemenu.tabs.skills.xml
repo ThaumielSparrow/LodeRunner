@@ -1,0 +1,114 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@disabled</parameter>
+	</data>
+	<text>
+		<parameter>@level</parameter>
+		<parameter>@status</parameter>
+		<parameter>@upgrade-msg</parameter>
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.skills'>
+
+    <rowmenu id = 'tab' class = 'skills' width = '@width' height = '@height' uses-focus = '1' on-wrap-up = 'tab-abort' on-wrap-down = 'tab-abort'>
+
+        <item-group id = 'ext.skills' class = 'skills-directory' per-row = '3' column-padding = '15' />
+
+    </rowmenu>
+
+</template>
+
+
+<xtemplate name = 'gamemenu.root.skills' rel = '**I think this is obselete'>
+
+    <grid name = 'root.skill-trees' class = 'skills' title = 'Skills' height-ratio = '0.6' content-align = 'left'>
+
+        <item name = '.skill-trees.movement' category = 'movement' cols = '2' rows = '1' x = '0' y = '0' disabled = '@disabled'>
+
+            <icon x = '5%' y = '50%' valign = 'center' index = '2' position = 'absolute' />
+            <rect class = 'debug' x = '10' y = '50%' width = '12' height = '24' valign = 'center' position = 'absolute' />
+            <rect class = 'debug' x = '22' y = '50%' width = '12' height = '24' xvalign = 'center' position = 'absolute' />
+
+            <stack x = '0' y = '0' width = '100%'>
+
+                <item>
+                    <label x = '18%' y = '5' value = '[color=category]Movement[/color]' width = '100%' align = '' />
+                    <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+                </item>
+
+                <item>
+                    <label x = '95%' y = '5' width = '100%' align = 'right' value = '@status' />
+                    <label x = '18%' y = '5' width = '100%' align = '' value = '@upgrade-msg' />
+                </item>
+
+            </stack>
+
+            <action do = 'show:skills.tree' param = 'movement' />
+        </item>
+
+        <item name = '.skill-trees.control' category = 'control' cols = '2' rows = '1' x = '2' y = '0' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '10' />
+            <label x = '18%' y = '5' value = '[color=category]Control[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'control' />
+        </item>
+
+        <item name = '.skill-trees.deception' category = 'deception' cols = '2' rows = '1' x = '0' y = '1' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '11' />
+            <label x = '18%' y = '5' value = '[color=category]Deception[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label class = 'xdebug1' x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'deception' />
+        </item>
+
+        <item name = '.skill-trees.laser' category = 'laser' cols = '2' rows = '1' x = '2' y = '1' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '5' />
+            <label x = '18%' y = '5' value = '[color=category]Mining Laser[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'laser' />
+        </item>
+
+        <item name = '.skill-trees.defense' category = 'shield' cols = '2' rows = '1' x = '0' y = '2' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '0' />
+            <label x = '18%' y = '5' value = '[color=category]Self Defense[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'shield' />
+        </item>
+
+        <item name = '.skill-trees.bombs' category = 'bombadier' cols = '2' rows = '1' x = '2' y = '2' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '1' />
+            <label x = '18%' y = '5' value = '[color=category]Bombardier[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'bombadier' />
+        </item>
+
+        <item name = '.skill-trees.stealth' category = 'stealth' cols = '2' rows = '1' x = '0' y = '3' disabled = '@disabled'>
+            <icon x = '5%' y = '5' index = '20' />
+            <label x = '18%' y = '5' value = '[color=category]Stealth[/color]' width = '100%' align = '' />
+            <label x = '95%' y = '5' value = 'Level:  @level' align = 'right' />
+            <xrect x = '5%' y = '28' width = '30%' height = '1' />
+            <label x = '95%' y = '35' width = '100%' align = 'right' value = '@status' />
+            <label x = '18%' y = '35' width = '100%' align = '' value = '@upgrade-msg' />
+            <action do = 'show:skills.tree' param = 'stealth' />
+        </item>
+
+    </grid>
+
+</xtemplate>

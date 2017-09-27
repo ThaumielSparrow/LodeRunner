@@ -1,0 +1,180 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								I can't believe you've made it this far already, [color=special]$[core.player1.name][/color]!
+
+Have you talked to my sister, [color=special]Sierra[/color], just on the north side of this town?  I haven't had a chance to speak with her recently, and I'm worried about her business.
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>I want to make sure she&apos;s doing okay.  Please take these [color=special]50 gold pieces[/color] to her, [color=special]$[core.player1.name][/color].</comment>
+							<response branch-id = 'root.accept'>
+								<phrase>No problem.  I&apos;ll get right on it.</phrase>
+								<branch id = 'root.accept'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thank you so much, [color=special]$[core.player1.name][/color]!  Here, take these [color=special]50 gold pieces[/color] to give to her, and I&apos;ll give you [color=special]5 free bombs[/color] in case you run into [color=dim]bad guys[/color] on the way up there.  I appreciate this!</comment>
+											<post-script>quest("4.4.npc1.quest").status("active");npc("npc1").clearIndicators();session("4.4.npc1.quest:received-gold").set("yes");player().addBombs(5).addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.more'>
+								<phrase>I bet she could use more than that, how about [color=special]75 gold pieces[/color]?</phrase>
+								<branch id = 'root.more'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I bet you&apos;re right.  Take these [color=special]75 gold pieces[/color] and make sure she&apos;s doing okay, won&apos;t you, [color=special]$[core.player1.name][/color]?</comment>
+											<post-script>quest("4.4.npc1.quest").status("active");quest("4.4.npc1.quest").update("update-extra-gold").status("active");npc("npc1").clearIndicators();session("4.4.npc1.quest:received-gold").set("yes");player().addGold(75);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.cover'>
+								<phrase>I&apos;ve collected a lot of gold already.  Let me pay for this one myself, [color=special]Lily[/color].</phrase>
+								<branch id = 'root.cover'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Wow, [color=special]$[core.player1.name][/color]!  I can&apos;t believe you&apos;d do that for me!  Please take this [color=special]special item[/color] before you go.  I&apos;ve been saving it for a [color=special]hero[/color] like you, [color=special]$[core.player1.name][/color].  It has a lot of special attributes.  A couple of them sound a little bit dangerous, such as the increased enemy speed, but I think you&apos;ll like it all the same!</comment>
+											<post-script>quest("4.4.npc1.quest").status("active");quest("4.4.npc1.quest").update("update-picked-up-tab").status("active");npc("npc1").clearIndicators();session("4.4.npc1.quest:received-gold").set("yes");player().acquireItem("lilys-shovel-of-sevenfold");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color].  If you are looking for my sister [color=special]Sierra[/color], you can find her just a little bit north of here.  Make sure she gets that gold, okay?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I appreciate your help in getting a little bit of gold to my sister [color=special]Sierra[/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You don&apos;t need to travel very far to visit my sister, [color=special]$[core.player1.name][/color].  I think you can make it there without needing to customize your controls in the [color=special]pause menu[/color].</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I bet customizing your gameplay controls helped you a lot, [color=special]$[core.player1.name][/color].  You can help my sister [color=special]Sierra[/color] just as much by taking that gold to her!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-sierra'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>How is my sister [color=special]Sierra[/color] doing, [color=special]$[core.player1.name][/color]?  I haven&apos;t heard from her in a long time!</comment>
+							<response branch-id = 'root.lie'>
+								<phrase>I guess the [color=dim]Bungeling empire[/color] finally got her.</phrase>
+								<branch id = 'root.lie'>
+									<linear>
+										<line id = 'line1'>
+											<comment>That&apos;s probably what happened, isn&apos;t it, [color=special]$[core.player1.name][/color]?  I wish we could have done more to help her.  I had better keep this special item to protect myself from those [color=dim]bad guys[/color].</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-killed-sierra:lied").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.confess'>
+								<phrase>I decided to kill her, [color=special]Lily[/color].</phrase>
+								<branch id = 'root.confess'>
+									<linear>
+										<line redirect = 'root.confess' id = 'line1'>
+											<comment>
+												I... don't know what to say, [color=special]$[core.player1.name][/color].  I never told anyone this, but I found out a while back that [color=special]Sierra[/color] was secretly smuggling inventory to the [color=dim]Bungeling emperor[/color]. You must have figured that out somehow, [color=special]$[core.player1.name][/color].
+
+I didn't want to tell anyone about Sierra because she's my loving sister, but I guess I don't have to keep secrets any more.  Too bad things didn't work out better for her!
+											</comment>
+										</line>
+										<line id = 'line2'>
+											<comment>I&apos;m going to give you this [color=special]strange item[/color] my sister received from the [color=dim]Bungeling emperor[/color].  The [color=dim]bad guys[/color] were going to use it, which means it has some really bad properties, like making the [color=dim]bad guys[/color] faster.  It has some other interesting properties too, though.  Try it and see!</comment>
+											<post-script>quest("4.4.npc1.quest").status("complete");quest("4.4.npc1.quest").update("update-killed-sierra:confessed").status("active");npc("npc1").clearIndicators();player().acquireRandomItem("lilys-shoes-of-chance", "lilys-terrible-accelerating-shovel");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:lied'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I hope you get revenge on the [color=dim]Bungeling empire[/color] for what they did to my sister, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>The [color=dim]Bungeling empire[/color] must pay for what they did to my sister [color=special]Sierra[/color].  Don&apos;t let them get away with this!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Make the [color=dim]Bungeling empire[/color] pay for their crimes by continuing to defeat them with the default gameplay controls!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Make the [color=dim]Bungeling empire[/color] pay for their crimes by continuing to defeat them with your customized gameplay controls!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:confessed'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I have no idea how you discovered that my sister [color=special]Sierra[/color] was smuggling inventory to the [color=dim]emperor[/color].  I&apos;m sure you didn&apos;t just randomly kill her.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>My dear sister, working for the [color=dim]Bungeling emperor[/color] all along.  I still can hardly believe it!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You should think about customizing your controls in the [color=special]pause menu[/color], [color=special]$[core.player1.name][/color].  My dear sister, who worked with the [color=dim]bad guys[/color] all along, always said that they had a lot of trouble dealing with people who customized their controls!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>When I last talked to [color=special]Sierra[/color], she confided to me that the [color=dim]bad guys[/color] have a lot of trouble dealing with people who customize their controls.  Knowing you, I don&apos;t have any doubt that you&apos;ll save us all from the [color=dim]Bungeling emperor[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Thanks for looking out for my sister, [color=special]$[core.player1.name][/color]!  I really appreciate your help.</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;m glad to know my sister won&apos;t have to worry about money for a little while.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>That gold you give to my sister [color=special]Sierra[/color] will really help her sleep more easily, [color=special]$[core.player1.name][/color].  Thank you for helping!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Now that you have taken such good care of my sister, [color=special]$[core.player1.name][/color], you should think about taking care of yourself.  You can choose to customize your controls in the [color=special]pause menu[/color] at any time!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>When my sister told me about the gold you brought her, she made a point to compliment your customized gameplay controls.  I thought you&apos;d appreciate hearing about it!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

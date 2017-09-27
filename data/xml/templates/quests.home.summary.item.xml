@@ -1,0 +1,32 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@quest-description</parameter>
+		<parameter>@update-index</parameter>
+		<parameter>@update-description</parameter>
+	</text>
+</parameters>
+
+<template name = 'quests.home.summary.item' version = 'summary'>
+
+    <item render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+        <label x = '15%' y = '0' width = '80%' value = '[color=special]Quest Summary[/color]
+@quest-description' />
+    </item>
+
+</template>
+
+
+<template name = 'quests.home.summary.item' version = 'update'>
+
+    <item render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+        <label x = '15%' y = '0' width = '80%' value = '[color=special]Update @update-index[/color]
+@update-description' />
+    </item>
+
+</template>
+

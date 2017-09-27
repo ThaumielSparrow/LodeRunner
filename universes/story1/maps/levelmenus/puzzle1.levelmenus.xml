@@ -1,0 +1,156 @@
+<instructions align = 'right'>
+    <item name = '' title = '' render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '5' index = '27' />
+        <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room 1[/color]' />
+        <zzzlabel x = '95%' y = '5' width = '100%' align = 'right' value = '[color=dim](Incomplete)[/color]' />
+        <label x = '17%' y = '45' width = '78%' value = 'Welcome to [color=dim]Puzzle Room 1[/color]!  Collect [color=dim]every[/color] bar of gold to complete the puzzle.  Take as much [color=dim]time[/color] as you need.' />
+        <xlabel x = '95%' y = '0' value = '[color=warning]Not Completed[/color]' align = 'right' />
+    </item>
+    <item name = '' title = '' render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '5' index = '13' />
+        <label x = '17%' y = '5' width = '78%' value = '[color=special]Puzzle Room Options and Details[/color]' />
+    </item>
+    <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+        <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+        <label x = '17%' y = '5' width = '78%' value = 'Can I use [color=dim]Bombs[/color] or [color=dim]Skills[/color] in Puzzle Rooms?' />
+        <action do = 'show-submenu' name = 'faq-skills' />
+    </item>
+    <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+        <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+        <label x = '17%' y = '5' width = '78%' value = 'What happens when I complete a puzzle?' />
+        <action do = 'show-submenu' name = 'faq-reward' />
+    </item>
+    <xitem name = '' title = '' render-border = '0' disabled = '0'>
+        <label x = '5%' y = '5' value = 'Does finishing quickly yield better rewards?' />
+    </xitem>
+    <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+        <contents>
+            <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+            <label x = '17%' y = '5' width = '78%' value = 'Leave Puzzle Room' />
+            <action do = 'exit-puzzle' />
+        </contents>
+        <tooltip>
+            <item>
+                <label x = '0' y = '0' width = '100%' value = 'Exit the [color=dim]Puzzle Room[/color] and return to the overworld.  You can [color=dim]return[/color] to this Puzzle Room at any time.' />
+            </item>
+        </tooltip>
+    </item>
+    <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+        <contents>
+            <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+            <label x = '17%' y = '5' width = '78%' value = 'Begin Puzzle!' />
+            <action do = 'begin-puzzle' />
+        </contents>
+        <tooltip>
+            <item>
+                <label x = '25%' y = '0' width = '100%' align = 'center' value = '[color=dim]Bombs Available:  
+[color=evil]0 bombs[/color][/color]' />
+                <label x = '75%' y = '0' width = '100%' align = 'center' value = '[color=dim]Puzzle Status:
+[color=normal]Not completed[/color][/color]' />
+            </item>
+        </tooltip>
+    </item>
+    <submenus>
+        <submenu name = 'faq-skills'>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '78%' value = '[color=special]Can I use Bombs or Skills in Puzzle...[/color]' />
+                <label x = '17%' y = '45' width = '78%' value = 'You cannot use your [color=dim]Skills[/color] within the confines of a Puzzle Map.  Once you return to the [color=dim]outside world[/color], you may resume using your Skills.
+
+Some puzzle maps may provide you [color=dim]Bombs[/color] to use within the puzzle.  This map, however, provides no bomb.  You must solve this puzzle by digging.' />
+                <xlabel x = '95%' y = '5' width = '100%' align = 'right' value = '[color=dim](Incomplete)[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room Options[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+                <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+                <label x = '17%' y = '5' width = '78%' value = 'Back to Puzzle Room Overview' />
+                <action do = 'back' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+                <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+                <label x = '17%' y = '5' width = '78%' value = 'Begin Puzzle!' />
+                <action do = '' />
+            </item>
+        </submenu>
+        <submenu name = 'faq-reward'>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]What happens when I complete a puzzle?[/color]' />
+                <label x = '17%' y = '45' width = '78%' value = 'When you complete a puzzle, you can keep all of the [color=dim]gold[/color] you collected, and you will also receive a small [color=dim]XP[/color] bonus.
+
+In addition, you will earn a new [color=dim]Inventory Item[/color] each time you complete a puzzle.  As you complete more challenging puzzles throughout the game, you will receive more powerful items.' />
+                <xlabel x = '95%' y = '5' width = '100%' align = 'right' value = '[color=dim](Incomplete)[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room Options[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+                <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+                <label x = '17%' y = '5' width = '78%' value = 'Back to Puzzle Room Overview' />
+                <action do = 'back' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-5'>
+                <icon x = '5%' y = '5' index = '28' display = 'on-focus' position = 'absolute' />
+                <label x = '17%' y = '5' width = '78%' value = 'Begin Puzzle!' />
+                <action do = 'begin-puzzle' />
+            </item>
+        </submenu>
+    </submenus>
+</instructions>
+<puzzle-victory align = 'right' min-quality = '1' max-quality = '5'>
+    <item name = '' title = '' render-border = '0' disabled = '1'>
+        <icon x = '5%' y = '5' index = '27' />
+        <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room 1 - [/color]Complete!' />
+        <label x = '17%' y = '40' width = '78%' value = 'As a reward for completing the first [color=dim]puzzle room[/color], you may choose [color=dim]one[/color] new item from the list below!' />
+    </item>
+    <submenus>
+        <submenu name = 'faq-skills'>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]Can I use Bombs or Skills in Puzzle...[/color]' />
+                <label x = '5%' y = '45' width = '90%' value = 'You cannot use your [color=dim]Skills[/color] within the confines of a Puzzle Map.  Once you return to the [color=dim]outside world[/color], you may resume using your Skills.
+
+Some puzzle maps may provide you [color=dim]Bombs[/color] to use within the puzzle.  This map, however, provides no bomb.  You must solve this puzzle by digging.' />
+                <xlabel x = '95%' y = '5' width = '100%' align = 'right' value = '[color=dim](Incomplete)[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room Options[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-10'>
+                <label x = '5%' y = '5' value = 'Back to Puzzle Room Overview' />
+                <action do = 'back' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-10'>
+                <label x = '5%' y = '5' value = 'Begin Puzzle!' />
+                <action do = '' />
+            </item>
+        </submenu>
+        <submenu name = 'faq-reward'>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]What happens when I complete a puzzle?[/color]' />
+                <label x = '5%' y = '45' width = '90%' value = 'When you complete a puzzle, you can keep all of the [color=dim]gold[/color] you collected, and you will also receive a small [color=dim]XP[/color] bonus.
+
+In addition, you will earn a new [color=dim]Inventory Item[/color] each time you complete a puzzle.  As you complete more challenging puzzles throughout the game, you will receive more powerful items.' />
+                <xlabel x = '95%' y = '5' width = '100%' align = 'right' value = '[color=dim](Incomplete)[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '1'>
+                <icon x = '5%' y = '5' index = '13' />
+                <label x = '17%' y = '5' width = '80%' value = '[color=special]Puzzle Room Options[/color]' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-10'>
+                <label x = '5%' y = '5' value = 'Back to Puzzle Room Overview' />
+                <action do = 'back' />
+            </item>
+            <item name = '' title = '' render-border = '0' disabled = '0' glow = '1' extra-padding = '-10'>
+                <label x = '5%' y = '5' value = 'Begin Puzzle!' />
+                <action do = '' />
+            </item>
+        </submenu>
+    </submenus>
+</puzzle-victory>

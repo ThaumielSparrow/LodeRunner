@@ -1,0 +1,124 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@path</parameter>
+	</data>
+	<text>
+		<parameter>@slot</parameter>
+		<parameter>@title</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.load.confirm' version = 'autosave'>
+
+    <rowmenu id = 'load.confirm' class = 'alert' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '1' halign = 'center' valign = 'center'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Revert to Checkpoint' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <label class = 'frame' x = '5%' y = '0' width = '90%' value = 'Are you sure you want to load the [color=special]last checkpoint[/color]?' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'commit:game.load.load' path = '@path' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'game.load.confirm' version = 'quicksave'>
+
+    <rowmenu id = 'load.confirm' class = 'alert' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '1' halign = 'center' valign = 'center'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Load Quicksave' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <label class = 'frame' x = '5%' y = '0' width = '90%' value = 'Are you sure you want to load the data from [color=special]Quicksave @slot[/color]?' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'commit:game.load.load' path = '@path' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'game.load.confirm' version = 'manualsave'>
+
+    <rowmenu id = 'load.confirm' class = 'alert' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '1' halign = 'center' valign = 'center'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Load Custom Save' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+                <label class = 'frame' x = '5%' y = '0' width = '90%' value = 'Are you sure you want to load the custom save [color=special]@title[/color]?' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Yes' />
+                <action do = 'commit:game.load.load' path = '@path' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'No' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

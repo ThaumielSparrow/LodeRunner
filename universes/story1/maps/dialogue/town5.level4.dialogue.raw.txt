@@ -1,0 +1,181 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Have you spent any time shopping with $Alice$ yet, $player$?  She does a good job, but I think I could do a better job.  I don't want \
+                    to directly compete with her, though.  I wouldn't make enough money, so currently I'm not working as a $merchant$.
+
+                    If she went out of business, though...
+                    -redirect root
+
+                [l id = 'line2' class = 'prompt'] Look, $player$.  I like $Alice$, and I don't want to see anything bad happen to her.  If you can, find a way to shut her down without \
+                    hurting her.  Hopefully you don't have to send her packing!
+
+                    Once you have taken care of things, I will eagerly show you how much better work I can do as a $merchant$!
+
+                    +ok[class = 'default'] I'll get it done, $Logan$.
+
+                        >>> root.ok
+
+                            [l id = 'line1']
+                                @post-script
+                                    quest("5.4.npc1.quest").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +later[class = 'default'] Not right now...
+
+                        >>> root.later
+
+                            [n id = 'nag1']
+
+                    +killed[class = 'killed'] I already killed her, $Logan$.
+
+                        >>> root.killed
+
+                            [l id = 'line1'] I didn't want to see that happen, $player$!  What reason did you have to do that to $Alice$, one of the nicest girls in town?  I thought \
+                                you were going to fight against the ^Bungeling empire^, not alongside them!
+
+                                Still, I will take this opportunity to start my own $merchant business$.  Given the circumstances, I don't feel like importing special items, but you should still \
+                                appreciate the $items$ I'm carrying.  Please stop by anytime!
+
+                                @post-script
+                                    quest("5.4.npc1.quest").status("complete");
+                                    quest("5.4.npc1.quest").update("update-complete:sad").status("active");
+                                    npc("npc1").clearIndicators().addIndicator("merchant");
+                                    map().runScript("npc1.quest-complete");
+
+                [n id = 'nag1' class = 'prompt'] $player$, I don't want anything bad to happen to $Alice$, but I need her to stop selling items so that I can take over the market. \
+                    Can you help me out yet?
+
+                    +ok[class = 'default'] I'll get to it now, $Logan$.
+
+                    +later[class = 'default'] Not right now...
+
+                    +killed[class = 'killed'] I decided to kill her, $Logan$.
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Have you found a way to put $Alice$ out of business without hurting her, $player$?
+
+                [n id = 'nag2'] I'd love to work as a $merchant$, but I can't do so while $Alice$ is selling items.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Go ahead and customize your gameplay controls in the $pause menu$ when you have a chance.  $Alice$ increased \
+                    her sales by $200%$ when she customized her controls, and I bet I can do even better if I start up a shoppe of my own!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I like what you've done with your customized controls, $player$.  I might have to try those out some day!
+
+
+        @conversation[id = 'quest:in-progress:killed-alice']
+
+            >>> root
+
+                [l id = 'line1'] Did you think I wouldn't see that, $player$?  I told you I didn't want anything bad to happen to $Alice$.  I guess I should have known better.
+
+                    Still, I will take this opportunity to start my own $merchant business$.  Given the circumstances, I didn't have enough time to import special items, but you will still \
+                    love the $items$ I'm carrying.  Please stop by anytime!
+
+                    @post-script
+                        quest("5.4.npc1.quest").status("complete");
+                        quest("5.4.npc1.quest").update("update-complete:sad").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        map().runScript("npc1.quest-complete");
+
+
+        @conversation[id = 'quest:in-progress:bought-out-alice']
+
+            >>> root
+
+                [l id = 'line1'] Thanks for taking care of things with grace, $player$.  I do like $Alice$, and I'm glad she'll be staying around as a civilian.
+
+                    Like I said before, I'm going to go ahead and start working as a $merchant$ now.  Knowing $Alice$ would be sticking around, I took the time \
+                    to order some $extra special$ items that you will totally love!  Make sure to stop back to see what I have in stock!
+
+                    @post-script
+                        quest("5.4.npc1.quest").status("complete");
+                        quest("5.4.npc1.quest").update("update-complete:happy").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        map().runScript("npc1.quest-complete");
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] Welcome to my new shoppe, $player$.  What can I do for you?
+
+                    +shop Let me see what you're selling.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc1.shop");
+
+                    +bye Let's talk later...
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' class = 'prompt'] Good day, $player$.  How can I help you today?
+
+                    +shop I want to buy some new gear.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +buyout[class = 'buyout' min-gold = '250'] I'd like to pay you $250 gold pieces$ to close shop.
+
+                        >>> root.buyout
+
+                            [l id = 'line1'] I have to admit, $player$, that I haven't been doing a lot of business lately.  My usual customers can't travel as freely with all of the \
+                                ^bad guys^ running amok.  I wish I could refuse your offer, but I could really use that kind of money.
+
+                                I think we have a deal, $player$!  Thanks for the generous offer you made me.  Good luck against the ^Bungeling empire^!
+
+                                @post-script
+                                    quest("5.4.npc1.quest").update("update-paid-alice").status("active");
+                                    npc("npc1").clearIndicators().addIndicator("quest-complete");
+                                    npc("npc2").removeIndicator("merchant");
+                                    map().runScript("npc2.close-shop");
+
+                    +bye I'll be seeing you, $Alice$.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+        @conversation[id = 'quest:bought-out-alice']
+
+            >>> root
+
+                [n id = 'nag1'] Hi, $player$.  I don't have a lot to do anymore, but I hope you're taking care of the ^bad guys^ for us!
+
+                [n id = 'nag2'] I hear $Logan$ set up a new business down there.  Good for him!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Now that I am not selling items, I have plenty of time to customize my movement controls in the $pause menu$.  Have \
+                    you tried it out yet, $player$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] After you gave me so many gold pieces to close my shoppe, I decided to hire a consultant to help me customize my movement \
+                    controls.  I bet you didn't need any help when you changed yours, though!
+

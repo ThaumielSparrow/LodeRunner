@@ -1,0 +1,47 @@
+<maps>
+	<primary-map name = 'level3' />
+	<background>
+		<map layer = '2' name = 'level1.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '38' rel = '' y = '1' x = '-6' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level10.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '42' rel = '' y = '8' x = '338' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level11.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '38' rel = '' y = '5' x = '380' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level12.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '37' rel = '' y = '8' x = '418' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level13.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '38' rel = '' y = '8' x = '455' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level14.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '37' rel = '' y = '7' x = '493' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level15.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '38' rel = '' y = '8' x = '530' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level16.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '52' rel = '' y = '8' x = '568' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level17.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '30' rel = '' y = '8' x = '620' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level18.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '47' rel = '' y = '8' x = '650' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level19.bg' title = 'Untitled Area' height = '38' difficulty = '' gold-count = '0' width = '47' rel = '' y = '6' x = '697' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level2.bg' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '40' rel = '' y = '3' x = '32' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level20.bg' title = 'Untitled Area' height = '53' difficulty = '' gold-count = '0' width = '38' rel = '' y = '7' x = '744' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level3.bg' title = 'Untitled Area' height = '33' difficulty = '' gold-count = '0' width = '36' rel = '' y = '6' x = '72' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level4.bg' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '38' rel = '' y = '9' x = '108' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level5.bg' title = 'Untitled Area' height = '35' difficulty = '' gold-count = '0' width = '38' rel = '' y = '9' x = '146' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level6.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '40' rel = '' y = '9' x = '184' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level7.bg' title = 'Untitled Area' height = '34' difficulty = '' gold-count = '0' width = '37' rel = '' y = '9' x = '224' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level8.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '38' rel = '' y = '7' x = '261' class = '' completion-time = '0' />
+		<map layer = '2' name = 'level9.bg' title = 'Untitled Area' height = '36' difficulty = '' gold-count = '0' width = '39' rel = '' y = '8' x = '299' class = '' completion-time = '0' />
+	</background>
+	<foreground>
+		<map layer = '1' name = 'level1' title = 'Level 1' height = '15' difficulty = '' gold-count = '9' width = '20' rel = '' y = '6' x = '0' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level10' title = 'Level 10' height = '15' difficulty = '' gold-count = '13' width = '20' rel = '' y = '14' x = '315' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level11' title = 'Level 11' height = '15' difficulty = '' gold-count = '13' width = '20' rel = '' y = '14' x = '350' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level12' title = 'Level 12' height = '15' difficulty = '' gold-count = '13' width = '20' rel = '' y = '14' x = '385' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level13' title = 'Level 13' height = '15' difficulty = '' gold-count = '18' width = '20' rel = '' y = '14' x = '420' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level14' title = 'Level 14' height = '15' difficulty = '' gold-count = '13' width = '20' rel = '' y = '14' x = '455' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level15' title = 'Level 15' height = '15' difficulty = '' gold-count = '16' width = '20' rel = '' y = '14' x = '490' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level16' title = 'Level 16' height = '15' difficulty = '' gold-count = '25' width = '40' rel = '' y = '14' x = '525' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level17' title = 'Level 17' height = '15' difficulty = '' gold-count = '11' width = '20' rel = '' y = '14' x = '567' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level18' title = 'Level 18' height = '15' difficulty = '' gold-count = '21' width = '40' rel = '' y = '14' x = '595' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level19' title = 'Level 19' height = '15' difficulty = '' gold-count = '26' width = '40' rel = '' y = '14' x = '637' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level2' title = 'Level 2' height = '15' difficulty = '' gold-count = '12' width = '20' rel = '' y = '9' x = '35' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level20' title = 'Level 20' height = '30' difficulty = '' gold-count = '24' width = '20' rel = '' y = '14' x = '680' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level3' title = 'Level 3' height = '15' difficulty = '' gold-count = '14' width = '20' rel = '' y = '10' x = '70' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level4' title = 'Level 4' height = '15' difficulty = '' gold-count = '12' width = '20' rel = '' y = '14' x = '105' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level5' title = 'Level 5' height = '15' difficulty = '' gold-count = '14' width = '20' rel = '' y = '14' x = '140' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level6' title = 'Level 6' height = '15' difficulty = '' gold-count = '17' width = '21' rel = '' y = '14' x = '175' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level7' title = 'Level 7' height = '15' difficulty = '' gold-count = '12' width = '20' rel = '' y = '14' x = '210' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level8' title = 'Level 8' height = '15' difficulty = '' gold-count = '13' width = '20' rel = '' y = '14' x = '245' class = '' completion-time = '0' />
+		<map layer = '1' name = 'level9' title = 'Level 9' height = '15' difficulty = '' gold-count = '17' width = '20' rel = '' y = '14' x = '280' class = '' completion-time = '0' />
+	</foreground>
+</maps>

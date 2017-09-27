@@ -1,0 +1,26 @@
+<scripts>
+    <script name = 'global.map.onload'>
+
+        // Define how many bombs each player gets.
+        // Individual levels can overwrite this?
+        distributeBombs({
+            "per-slot": [0, 0, 0, 0]
+        });
+
+    </script>
+    <script name = 'global.map.load.complete'>
+    </script>
+    <script name = 'global.coop.ready'>
+
+        // Most levels in this level set
+        // don't have enemies.  I'll set preferred
+        // targets explicitly in the levels that do...
+
+        // Because these are introductory / training levels,
+        // we will reduce enemy base speed.
+        map().scaleEnemiesSpeed("0.75");
+
+    </script>
+    <script name = 'global.map.onvisit'>
+    </script>
+</scripts>

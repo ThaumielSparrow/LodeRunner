@@ -1,0 +1,14 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@text</parameter>
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.skills.insert.detail' version = 'normal'>
+
+    <label id = 'detail' x = '50%' y = '0' align = 'center' width = '90%' value = '@text' />
+
+</template>

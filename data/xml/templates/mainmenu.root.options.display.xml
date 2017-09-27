@@ -1,0 +1,56 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.display'>
+
+    <rowmenu id = 'prompt' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1' rel = 'prompt'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Display Settings' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1' class = 'options'>
+
+            <item disabled = '1'>
+                <label x = '10%' y = '0' width = '80%' value = 'Do you want to use fullscreen mode?' />
+            </item>
+
+            <item rel = 'spacer' disabled = '1'>
+                <label />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' align = '' width = '90%' value = 'Fullscreen On' />
+                <action do = 'fullscreen:set' setting = '1' />
+                <action do = 'hide' />
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' align = '' width = '90%' value = 'Fullscreen Off' />
+                <action do = 'fullscreen:set' setting = '0' />
+                <action do = 'hide' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1'>
+            <label x = '50%' width = '90%' align = 'center' value = 'For some users, changing this mode might require you to restart the game.' />
+        </item>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,17 @@
+// Example file of mods.
+// Remove the ".sample" from the filename
+// to enable.
+
+$ .frame {
+    gradient-start: rgb(225, 175, 175);
+    gradient-end: rgb(175, 175, 175);
+    background-alpha: 0.5;
+    color: rgb(25, 225, 25);
+}
+$ group {
+    background-color: rgb(25, 25, 225);
+    gradient-start: rgb(225, 25, 25);
+    gradient-end: rgb(175, 175, 175);
+    background-alpha: 0.5;
+    color: rgb(25, 225, 25);
+}

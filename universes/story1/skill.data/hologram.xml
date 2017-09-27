@@ -1,0 +1,115 @@
+<hologram id = 'hologram'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Cast out a [color=title]holographic decoy[/color] that looks just like you, stealing each enemy's attention for a moment.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.deception.hologram</map>
+                <replay-file>gifs.deception.hologram.animation.txt</replay-file>
+                <active-skill>hologram</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '3' cost = '1'>
+		<texts>
+			<overview>Cast out a [color=title]holographic decoy[/color] that looks just like you, stealing each enemy's attention for a moment.</overview>
+			<specs>Lifespan of [color=title]3.0s[/color]
+Recharges in [color=title]15s[/color]</specs>
+			<manual>Press @key to deploy a temporary hologram that runs in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.deception.hologram</map>
+                <replay-file>gifs.deception.hologram.animation.txt</replay-file>
+                <active-skill>hologram</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Hologram[/color], you will lose access to the [color=title]Fright[/color] skill.
+
+As you upgrade the [color=title]Hologram[/color], it will gain the ability to collect [color=title]gold[/color] and to [color=title]explode when hitting walls[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Fright[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>15.0</recharge>
+			<modifiers>
+				<modifier name = 'collect-gold' value = '0' />
+				<modifier name = 'explode-on-impact' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '4' cost = '2'>
+		<texts>
+			<overview>The first upgrade to [color=dim]Hologram[/color] increases the lifespan of the [color=dim]decoy[/color].  As well, the Hologram gains the ability to [color=title]collect gold[/color].</overview>
+			<specs>Lifespan of [color=title]3.5s[/color] (+0.5s)
+Recharges in [color=title]12.0s[/color] (-3.0s)
+Collects [color=title]gold[/color]</specs>
+			<manual>Press @key to deploy a hologram that will [color=title]collect any gold[/color] it touches.</manual>
+			<gif-data>
+                <map>gifs.deception.hologram</map>
+                <replay-file>gifs.deception.hologram.animation.txt</replay-file>
+                <active-skill>hologram</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.5</duration>
+			<recharge measure = 'seconds'>12.0</recharge>
+			<modifiers>
+				<modifier name = 'collect-gold' value = '1' />
+				<modifier name = 'explode-on-impact' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>Hologram's highest upgrade tops out the decoy's [color=dim]lifespan[/color].  In addition to collecting [color=title]gold[/color], the Hologram will now [color=title]explode[/color] when it hits a wall.</overview>
+			<specs>Lifespan of [color=title]4.0s[/color] (+0.5s)
+Recharges in [color=title]10.0s[/color] (-2.0s)
+Collects [color=title]gold[/color]
+[color=title]Explodes[/color] upon wall collision</specs>
+			<manual>Press @key to deploy a hologram that collects gold and [color=title]explodes into walls[/color]!</manual>
+			<gif-data>
+                <map>gifs.deception.hologram</map>
+                <replay-file>gifs.deception.hologram.animation.txt</replay-file>
+                <active-skill>hologram</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Hologram[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Hologram[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>4.0</duration>
+			<recharge measure = 'seconds'>10.0</recharge>
+			<modifiers>
+				<modifier name = 'collect-gold' value = '1' />
+				<modifier name = 'explode-on-impact' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have maxed out the [color=title]Hologram[/color] skill, maximizing its [color=dim]lifespan[/color].  It now both collects [color=title]gold[/color] and also [color=title]explodes[/color] when it runs into a wall.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.deception.hologram</map>
+                <replay-file>gifs.deception.hologram.animation.txt</replay-file>
+                <active-skill>hologram</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</hologram>

@@ -1,0 +1,17 @@
+<parameters>
+	<data>
+		<parameter>@rel</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+	</text>
+</parameters>
+
+<template name = 'navbar.option' version = 'normal'>
+
+    <item rel = '@rel'>
+        <icon x = '0' y = '0' index = '13' />
+        <label x = '25' y = '2' width = '100%' align = '' value = '@title' />
+    </item>
+
+</template>

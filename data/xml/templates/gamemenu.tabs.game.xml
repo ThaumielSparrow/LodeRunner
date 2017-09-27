@@ -1,0 +1,129 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@box-height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.game'>
+
+    <rowmenu id = 'tab' class = 'skills' width = '@width' height = '@height' uses-focus = '1' on-wrap-up = 'tab-abort' on-wrap-down = 'tab-abort'>
+
+        <item-group per-row = '2' column-padding = '20'>
+
+            <item class = 'min1' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item content-align = 'left'>
+                        <icon x = '5%' y = '5' index = '2' />
+                        <label class = 'debug1' x = '18%' y = '7' value = '[color=title]World Maps[/color]' width = '100%' align = '' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' value = 'Interactive maps that guide you to unfinished levels, puzzle rooms, and more.' width = '90%' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' value = 'View a map of the world you are exploring.' width = '90%' />
+                        </else>
+                    </languages>
+
+                </stack>
+
+                <action do = 'show:game.worldmap' />
+
+            </item>
+
+            <item class = 'z' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item xcontent-align = 'right'>
+                        <icon x = '95%' y = '5' index = '4' align = 'right' />
+                        <label x = '82%' y = '7' value = '[color=title]Equip Skills[/color]' width = '100%' align = 'right' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' value = 'Select which of your [color=special]learned skills[/color] to assign to your [color=special]use-skill hotkeys[/color].' width = '90%' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' value = 'Equip your [color=special]skills[/color].' width = '90%' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:game.skills' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '3' />
+                        <label x = '18%' y = '7' value = '[color=title]Save Game[/color]' width = '100%' align = '' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' value = 'Save your current progress to a save slot.' width = '90%' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' value = 'Save your current progress.' width = '90%' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:game.save' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' index = '6' align = 'right' />
+                        <label x = '82%' y = '7' value = '[color=title]Load Game[/color]' width = '100%' align = 'right' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' value = 'Choose to reload a previous save, including autosaves.' width = '90%' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' value = 'Choose to load a previous save.' width = '90%' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:game.load' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,108 @@
+<params>
+	<param key = 'layer' value = '1' />
+    <param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			230 215 211 207 207 213 212 213 0 0 0 233 215 212 0 
+			222 227 26 23 224 220 228 24 23 27 227 28 225 220 224 
+			202 203 0 0 0 0 0 0 0 0 0 0 0 205 200 
+			205 0 0 0 0 0 0 0 215 213 0 0 0 0 205 
+			0 231 0 0 0 0 0 154 228 223 152 0 0 0 0 
+			154 228 0 215 214 233 152 224 209 0 226 153 0 0 213 
+			152 202 154 228 225 29 153 23 221 226 204 223 152 0 223 
+			153 202 153 0 204 203 154 0 0 0 204 204 222 153 205 
+			152 205 154 228 209 0 154 212 233 0 0 212 214 154 205 
+			154 29 203 23 220 224 222 27 29 225 231 228 223 154 205 
+			152 0 0 0 201 205 0 0 0 204 227 205 0 154 0 
+			152 219 217 216 219 219 0 0 0 219 216 217 218 152 217 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 263 0 0 283 0 263 0 0 0 265 0 283 0 0 
+			0 302 0 0 0 0 0 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 263 0 0 0 283 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 265 0 283 0 263 0 0 283 0 0 0 0 302 
+			0 0 0 0 0 302 0 0 0 300 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '8' y = '4' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '9' y = '6' genus = '6' ai-behavior = '1' name = 'gold.uid.0' nick = '' title = '' />
+	<entity x = '3' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.1' nick = '' title = '' />
+	<entity x = '1' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.2' nick = '' title = '' />
+	<entity x = '5' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.3' nick = '' title = '' />
+	<entity x = '10' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.4' nick = '' title = '' />
+	<entity x = '12' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.5' nick = '' title = '' />
+	<entity x = '11' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.6' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '8' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+    <script name = 'onload'>
+
+        map().setParams({
+            "overview": "Collect all of the gold, dude.",
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        showPuzzleIntro();
+
+    </script>
+
+    <script name = 'oncomplete'>
+
+        #define QUEST "1.2.npc2.quest"
+
+        #define UPDATE_TOOK_SHOES "update-took-shoes"
+        #define UPDATE_TOOK_OTHER "update-took-other"
+        #define UPDATE_TOOK_OTHER_UNKNOWINGLY "update-took-other-unknowingly"
+
+        // Did the player take the running shoes?
+        if ( player().hasItem("running-shoes") )
+        {
+            // Update quest
+            quest(QUEST).update(UPDATE_TOOK_SHOES).status("active");
+        }
+
+        // Nope, took something else.
+        else
+        {
+            // Did the player know better?
+            if ( quest(QUEST).status() == "active" )
+            {
+                // Update quest, bad greedy choice
+                quest(QUEST).update(UPDATE_TOOK_OTHER).status("active");
+            }
+
+            // No, they had no fair warning
+            else
+            {
+                quest(QUEST).update(UPDATE_TOOK_OTHER_UNKNOWINGLY).status("active");
+            }
+        }
+
+    </script>
+</scripts>

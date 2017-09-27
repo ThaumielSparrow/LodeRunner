@@ -1,0 +1,93 @@
+<pickpocket id = 'pickpocket'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Use the [color=title]Pickpocket[/color] skill to steal [color=title]gold[/color] straight out of a nearby [color=title]enemy[/color]'s hands (without trapping them in the ground).</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.stealth.pickpocket</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>Use the [color=title]Pickpocket[/color] skill to steal [color=title]gold[/color] straight out of a nearby [color=title]enemy[/color]'s hands (without trapping them in the ground).</overview>
+			<specs>Pickpocket radius of [color=title]4 tiles[/color]
+Recharges in [color=title]30.0s[/color]</specs>
+			<manual />
+			<gif-source>gifs.stealth.pickpocket</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Pickpocket[/color], you will lose access to the [color=title]Invisibility[/color] skill.
+
+Higher levels of [color=title]Pickpocket[/color] increase the [color=title]effective range[/color] of the skill and allow you to pickpocket [color=title]NPCs[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Invisibility[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>30.0</recharge>
+			<modifiers>
+				<modifier name = 'effective-radius' value = '4' />
+				<modifier name = 'can-pickpocket-npcs' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>Obtaining the first upgrade to [color=title]Pickpocket[/color] doubles the skill's range, allowing you to steal gold from enemies approximately [color=title]halfway[/color] across the screen.</overview>
+			<specs>Pickpocket radius of [color=title]6 tiles[/color] (+2)
+Recharges in [color=title]27.0s[/color] (-3.0s)</specs>
+			<manual />
+			<gif-source>gifs.stealth.pickpocket</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>27.0</recharge>
+			<modifiers>
+				<modifier name = 'effective-radius' value = '6' />
+				<modifier name = 'can-pickpocket-npcs' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The final upgrade to [color=title]Pickpocket[/color] extends the range of the skill to [color=title]infinity[/color].  Also, the [color=title]Pickpocket[/color] skill will now attempt to steal [color=title]gold or items[/color] from friendly people in [color=title]town areas[/color].</overview>
+			<specs>Unlimited Pickpocket radius
+Recharges in [color=title]24.0s[/color] (-3.0s)
+Pickpocket [color=title]NPCs[/color]</specs>
+			<manual />
+			<gif-source>gifs.stealth.pickpocket</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Pickpocket[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Pickpocket[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>24.0</recharge>
+			<modifiers>
+				<modifier name = 'effective-radius' value = '1000' />
+				<modifier name = 'can-pickpocket-npcs' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>Having acquired the final upgrade to [color=title]Pickpocket[/color], you now have an [color=title]infinite[/color] pickpocket range.  Also, the [color=title]Pickpocket[/color] skill now attempts to steal [color=title]gold or items[/color] from friendly people in [color=title]town areas[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.stealth.pickpocket</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</pickpocket>

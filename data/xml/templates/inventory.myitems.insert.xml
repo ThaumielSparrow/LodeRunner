@@ -1,0 +1,260 @@
+<parameters>
+	<data>
+		<parameter>@item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+		<parameter>@item-summary</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.myitems.insert' version = 'equipped'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '5%' y = '9' index = '8' position = 'absolute' />
+                    <label x = '17%' y = '0' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '17%' y = '0' width = '83%' value = 'Equipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'left' item-name = '@item-name' template-version = 'equipped' />
+
+        </contents>
+
+        <tooltip align = 'top-left' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+        <xtooltip align = 'top-left' delay = '30' lifespan = '600' width = '95%'>
+            <item>
+                <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]
+
+@item-summary' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert' version = 'not-equipped'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '5%' y = '50%' valign = 'center' index = '12' position = 'absolute' />
+                    <label x = '17%' y = '0' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '17%' y = '0' width = '83%' value = 'Not Equipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'left' item-name = '@item-name' template-version = 'not-equipped' />
+
+        </contents>
+
+        <tooltip align = 'top-left' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert' version = 'not-equipped:no-free-slot'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '5%' y = '9' index = '12' position = 'absolute' />
+                    <label x = '17%' y = '0' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '17%' y = '0' width = '83%' value = 'Not Equipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'left' item-name = '@item-name' template-version = 'not-equipped:no-free-slot' />
+
+        </contents>
+
+        <tooltip align = 'top-left' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+        <xtooltip align = 'top-left' delay = '30' lifespan = '600' width = '95%'>
+            <item>
+                <label x = '0' y = '0' width = '100%' value = 'This is a simple tooltip.
+Do you like [color=special]@item-title[/color]?' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>
+
+
+
+
+<template name = 'inventory.myitems.insert' version = 'equipped:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '95%' y = '9' align = 'right' index = '8' position = 'absolute' />
+                    <label x = '83%' y = '0' align = 'right' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '83%' y = '0' align = 'right' width = '83%' value = 'aEquipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'right' item-name = '@item-name' template-version = 'equipped' />
+
+        </contents>
+
+        <tooltip align = 'top-right' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+        <xtooltip align = 'top-right' delay = '30' lifespan = '600' width = '95%'>
+            <item>
+                <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]
+
+@item-summary' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert' version = 'not-equipped:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '95%' y = '50%' align = 'right' valign = 'center' index = '12' position = 'absolute' />
+                    <label x = '83%' y = '0' align = 'right' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '83%' y = '0' align = 'right' width = '83%' value = 'Not Equipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'right' item-name = '@item-name' template-version = 'not-equipped' />
+
+        </contents>
+
+        <tooltip align = 'top-right' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert' version = 'not-equipped:no-free-slot:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item>
+                    <icon x = '95%' y = '9' align = 'right' index = '12' position = 'absolute' />
+                    <label x = '83%' y = '0' align = 'right' width = '83%' value = '@item-title' />
+                </item>
+
+                <xlabel class = 'subtitle' x = '83%' y = '0' align = 'right' width = '83%' value = 'Not Equipped' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.all.options' side = 'right' item-name = '@item-name' template-version = 'not-equipped:no-free-slot' />
+
+        </contents>
+
+        <tooltip align = 'top-right' delay = '30' lifespan = '600' width = '95%'>
+            <stack class = 'frame' render-border = '1'>
+                <item>
+                    <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]' />
+                </item>
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+                <label x = '15%' y = '0' width = '80%' value = '@item-summary' />
+            </stack>
+        </tooltip>
+        <xtooltip align = 'top-right' delay = '30' lifespan = '600' width = '95%'>
+            <item>
+                <label x = '0' y = '0' width = '100%' value = 'This is a simple tooltip.
+Do you like [color=special]@item-title[/color]?' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>

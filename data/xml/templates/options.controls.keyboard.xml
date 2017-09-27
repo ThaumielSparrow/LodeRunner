@@ -1,0 +1,262 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@keyboard-translations.left</parameter>
+		<parameter>@keyboard-translations.right</parameter>
+		<parameter>@keyboard-translations.up</parameter>
+		<parameter>@keyboard-translations.down</parameter>
+		<parameter>@keyboard-translations.dig-left</parameter>
+		<parameter>@keyboard-translations.dig-right</parameter>
+		<parameter>@keyboard-translations.bomb</parameter>
+		<parameter>@keyboard-translations.suicide</parameter>
+		<parameter>@keyboard-translations.interact</parameter>
+		<parameter>@keyboard-translations.minimap</parameter>
+		<parameter>@keyboard-translations.net-chat</parameter>
+		<parameter>@keyboard-translations.skill1</parameter>
+		<parameter>@keyboard-translations.skill2</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.controls.keyboard2'>
+
+    <rowmenu id = 'menu' class = '' x = '@x' y = '50%' width = '@width' height = '@height' valign = 'center' xcenter-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label id = 'label' x = '20%' y = '0' width = '85%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'left' />
+            </item>
+
+            <item id = 'invisible-right-column-option' disabled = '1' />
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Movement Controls' align = '' text-effect = 'blaster:line-by-line' />
+                <label font = 'high-contrast' x = '85%' y = '0' align = 'center' width = '90%' value = 'Selected Key' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' id = 'move-left' rel = 'root.options.controls.actions.moveleft' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Move Left' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.left' />
+                <action do = 'show:edit-keyboard-control' key = 'left' todo = 'to move left' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'move-left'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to move to your left.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'option' id = 'move-right' rel = 'root.options.controls.actions.moveright' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Move Right' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.right' />
+                <action do = 'show:edit-keyboard-control' key = 'right' todo = 'to move right' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'move-right'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to move to your right.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'move-up' rel = 'root.options.controls.actions.moveup' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Move Up' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.up' />
+                <action do = 'show:edit-keyboard-control' key = 'up' todo = 'to climb ladders' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'move-up'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to climb up ladders.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'move-down' rel = 'root.options.controls.actions.movedown' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Move Down' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.down' />
+                <action do = 'show:edit-keyboard-control' key = 'down' todo = 'to descend ladders and drop from monkey bars' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'move-down'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to climb down ladders and to drop from monkey bars.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Digging Controls' align = '' text-effect = 'blaster:line-by-line' />
+                <label font = 'high-contrast' x = '85%' y = '0' align = 'center' width = '90%' value = 'Selected Key' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' id = 'dig-left' rel = 'root.options.controls.actions.digleft' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Dig Left' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.dig-left' />
+                <action do = 'show:edit-keyboard-control' key = 'dig-left' todo = 'to dig to your left' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'dig-left'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to dig to your left at any time.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'dig-right' rel = 'root.options.controls.actions.digright' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Dig Right' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.dig-right' />
+                <action do = 'show:edit-keyboard-control' key = 'dig-right' todo = 'to dig to your right' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'dig-right'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to dig to your right at any time.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Interaction Controls' align = '' text-effect = 'blaster:line-by-line' />
+                <label font = 'high-contrast' x = '85%' y = '0' align = 'center' width = '90%' value = 'Selected Key' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' id = 'bomb' rel = 'root.options.controls.actions.bomb' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Place Bomb' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.bomb' />
+                <action do = 'show:edit-keyboard-control' key = 'bomb' todo = 'to place a bomb' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'bomb'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to place a bomb in the direction you are facing.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'suicide' rel = 'root.options.controls.actions.suicide' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Suicide (Hold)' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.suicide' />
+                <action do = 'show:edit-keyboard-control' key = 'suicide' todo = 'to suicide if you get stuck' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'suicide'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Hold this key briefly to kill your character if you get stuck![/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'interact' rel = 'root.options.controls.actions.interact' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Interact' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.interact' />
+                <action do = 'show:edit-keyboard-control' key = 'interact' todo = 'to talk to NPCs and interact with the world' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'interact'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to talk to NPCs and to use levers.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'minimap' rel = 'root.options.controls.actions.interact' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Minimap (Hold)' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.minimap' />
+                <action do = 'show:edit-keyboard-control' key = 'minimap' todo = 'to view a minimap during live gameplay' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'minimap'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Hold this key to display a minimap.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'net-chat' rel = 'root.options.controls.actions.interact' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Chat (Co-op Only)' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.net-chat' />
+                <action do = 'show:edit-keyboard-control' key = 'net-chat' todo = 'to begin chatting with other players in cooperative mode' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'net-chat'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to activate the chat console during co-op play.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Skill Hotkeys' align = '' text-effect = 'blaster:line-by-line' />
+                <label font = 'high-contrast' x = '85%' y = '0' align = 'center' width = '90%' value = 'Selected Key' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' id = 'use-skill1' rel = 'root.options.controls.actions.useskill1' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Use Skill 1' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.skill1' />
+                <action do = 'show:edit-keyboard-control' key = 'skill1' todo = 'to use the skill in slot 1' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'use-skill1'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to activate the skill in slot 1.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+
+            <item class = 'option' id = 'use-skill2' rel = 'root.options.controls.actions.useskill2' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Use Skill 2' />
+                <label x = '85%' y = '0' align = 'center' width = '90%' value = '@keyboard-translations.skill2' />
+                <action do = 'show:edit-keyboard-control' key = 'skill2' todo = 'to use the skill in slot 2' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'use-skill2'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Use this key to activate the skill in slot 2.[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Other' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' id = 'do-reset' rel = 'root.options.controls.actions.doreset' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Reset to Defaults' />
+                <action do = 'play-sound' sound = 'confirm' />
+                <action do = 'show:reset-keyboard-controls' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'do-reset'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Reset all Controls[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'option' id = 'do-save' rel = 'root.options.controls.actions.dosave' fill = 'active'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = 'Save' />
+                <action do = 'game:save-controls' message = 'Keyboard controls saved' />
+                <action do = 'back' slide = 'left' />
+            </item>
+            <item disabled = '1' class = 'line-break' xvisibility = 'with-parent' parent-id = 'do-save'>
+                <label x = '3%' y = '0' align = 'left' width = '90%' value = '[color=dim]Save Changes[/color]' text-effect = 'blaster:line-by-line' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

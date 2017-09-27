@@ -1,0 +1,208 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] You have proven yourself a very capable gold collector, $player$.  For that reason, I think you can help me collect a payment.
+
+                    On a recent visit to the far western edge of $Lelandria$, I loaned a precious family heirloom to a friend of mine named $Jessie$.
+
+                    At the time, she promised to return it within a few days.  She made that promise over a year ago!
+                    -redirect root
+
+                [l id = 'line2'] I've tried everything I know, but I haven't found a way to get my $heirloom$ back from $Jessie$!  You can't convince her directly, $player$.  She will steadfastly resist any attempt at coercion or bribery.
+
+                    I do have an idea, though...
+                    -redirect root
+
+                [n id = 'nag1' class = 'prompt'] $Jessie$ has a good friend named $Amelia$ somewhere near where she lives, maybe a level away?  If you strike down $Amelia$ as a warning of sorts, I think $Jessie$ will finally get the message and cough up that $heirloom$.
+
+                    I know you'll have to get your hands dirty on this one, $player$.  If you don't feel comfortable doing this, I'll understand.  However, I have a $pair of special items$ that I will give to you if you can get that $heirloom$ back for me!
+
+                    Do you understand, $player$?
+
+                    +sorry[class = 'sorry'] I have bad news.  I already killed $Jessie$.
+
+                        >>> root.sorry
+
+                            [l id = 'line1'] I guess you couldn't have known, $player$.  I'll give you $50 gold pieces$ for your premature vengeance, but I'll never get my $heirloom$ back now.
+
+                                @post-script
+                                    quest("4.2.npc1.quest").status("failed");
+                                    quest("4.2.npc1.quest").update("update-pity-gold").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addGold(50);
+
+                    +yes[class = 'default'] Yes.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] Good luck, $player$!
+
+                                @post-script
+                                    quest("4.2.npc1.quest").status("active");
+
+                    +no-comprendo[class = 'default'] Not at all.
+
+                        >>> root.no-comprendo
+
+                            [n id = 'nag1']
+                                -redirect root
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] You'll have to visit the far western edge of $Lelandria$ to find my $heirloom$.  You know what you have to do.
+
+                [n id = 'nag2'] If you take $Amelia$ out of the picture, then $Jessie$ will surely give the $heirloom$ to you.  I know she's somewhere in $Manderkeen$, far on the western edge of our land!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Maybe you can assassinate $Amelia$ in a gentle manner, $player$.  Instead of using the default $@bomb$ to \
+                    blast her to pieces, you might think about using $@dig-left$  or $@dig-right$ to gently dig the ground in front of her?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I wish we didn't have to involve $Amelia$ in this affair, $player$.  You remember when you customized your controls, \
+                    though, don't you?  Sometimes you have to change things to get the results you want.
+
+
+        @conversation[id = 'quest:in-progress:killed-jessie-prematurely']
+
+            >>> root
+
+                [n id = 'nag1'] I didn't tell you to kill $Jessie$, I told you to get the $heirloom$ from her.  I'll never get it back now, $player$!
+
+                    I'll give you $50 gold pieces$ for your effort, because you did ensure that she'll never steal another family heirloom.  However, I can't \
+                    offer you anything more substantial than that without my now-lost family heirloom.  Thanks for trying...
+
+                    @post-script
+                        quest("4.2.npc1.quest").status("failed");
+                        quest("4.2.npc1.quest").update("update-pity-gold").status("active");
+                        npc("npc1").clearIndicators();
+                        player().addGold(50);
+
+
+        @conversation[id = 'quest:in-progress:got-heirloom']
+
+            >>> root
+
+                [l id = 'line1'] I know you had to do some bad things to get that $heirloom$ back, $player$.  I can't overstate my appreciation at this point!  Please, let me know how you'd like me to repay you for your effort, $player$!
+
+                    +items I'd like those $2 special items$ you were talking about.
+
+                        >>> root.items
+
+                            [l id = 'line1'] Absolutely, $player$!  I've been holding on to these for quite a while.  I'm sure they'll help you greatly in your quest against the ^Bungeling empire^!
+
+                                @post-script
+                                    quest("4.2.npc1.quest").status("complete");
+                                    quest("4.2.npc1.quest").update("update-took-items").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().acquireRandomItem("erins-hasty-rock-shoes", "erins-sinister-refilling-thorns", "erins-brutal-thorns-of-safety", "erins-replenishing-respawn-inhibitor");
+                                    player().acquireRandomItem("erins-hasty-rock-shoes", "erins-sinister-refilling-thorns", "erins-brutal-thorns-of-safety", "erins-replenishing-respawn-inhibitor");
+
+                    +gold I'd like a large pile of gold instead.  $500 gold$ sounds about right.
+
+                        >>> root.gold
+
+                            [l id = 'line1'] I think you've earned that kind of a payday, $player$.  Take these $500 gold pieces$ and use them as you wish!
+                                [+500 gold]
+
+                                @post-script
+                                    quest("4.2.npc1.quest").status("complete");
+                                    quest("4.2.npc1.quest").update("update-took-gold").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addGold(500);
+
+                    +xp I'd like a little bit of extra $XP$, if you don't mind.
+
+                        >>> root.xp
+
+                            [l id = 'line1'] You've got it, $player$.  In addition to your normal $XP$ bonus for completing a quest, I'm adding in an extra $250 XP$.  Good luck against the ^Bungeling empire^!
+
+                                @post-script
+                                    quest("4.2.npc1.quest").status("complete");
+                                    quest("4.2.npc1.quest").update("update-took-xp").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().addXP(250);
+
+                    @post-script
+                        player().dropItem("erins-family-heirloom");
+
+
+        @conversation[id = 'quest:complete:took-items']
+
+            >>> root
+
+                [n id = 'nag1'] How are you liking those $items$ I gave you, $player$?  I hope you're finding them useful!
+
+                [n id = 'nag2'] I saved those $items$ for a hero like you, $player$.  Thanks for rescuing my $heirloom$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Those items might work even better if you customize your controls in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I heard a rumor that you customized your controls already, $player$.  Do you know that you can customize items, too, by \
+                    upgrading them?
+
+
+        @conversation[id = 'quest:complete:took-gold']
+
+            >>> root
+
+                [n id = 'nag1'] You sure do like gold, $player$!  Don't let the ^bad guys^ find out you have so much!
+
+                [n id = 'nag2'] Make sure to spend that ^gold^ I gave you with care, $player$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You sure do have a lot of gold for someone who hasn't even customized their controls in the $pause menu$, $player$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] With your combination of vast gold reserves and finely customized controls, I expect you to embarrass the ^bad guys^ on your \
+                    way to saving $Lelandria$ from the ^Bungeling empire^!
+
+
+        @conversation[id = 'quest:complete:took-xp']
+
+            >>> root
+
+                [n id = 'nag1'] Did that extra $XP$ I gave you help you to level up, $player$?
+
+                [n id = 'nag2'] I think you made the right call going for the $XP bonus$, just between you and me!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] While you're in the $pause menu$ spending your skill points, you can also choose to customize your gameplay controls!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I like how you decided to configure your controls, $player$.  Of course, I expected no less from you after you made the \
+                    wise decision to request bonus XP!
+
+
+        @conversation[id = 'quest:failed']
+
+            >>> root
+
+                [n id = 'nag1'] I'll never see my precious $heirloom$ again.
+
+                [n id = 'nag2'] I wish you could have recovered that $heirloom$ for me, $player$.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You should have customized your controls in the $pause menu$ before attempting my quest, $player$.  You might have had better results!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] What went wrong with the quest, $player$?  You configured your controls exactly how you wanted them.  What went wrong?!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' priority = '10'] I know nothing.
+
+                [n id = 'nag2'] I wish the sun would come out.  Ever since the ^Bungeling emperor^ created this neverending eclipse, the world has fallen under a terrible blackness!
+
+                [n id = 'nag3' priority = '5'] I can't find a way to get back to the west end of town.  I think you have to go all the way north, but I can't tolerate the higher altitude!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Please save us from the ^Bungeling empire^, $player$.  If the ^bad guys^ give you too \
+                    much trouble, think about customizing your controls in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] The ^Bungeling emperor^ no doubt has received intelligence reports about how well you have \
+                    customized your controls, $player$.  At last, that terrible ^emperor^ will have a little fear of his own!

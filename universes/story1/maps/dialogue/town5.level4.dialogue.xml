@@ -1,0 +1,233 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Have you spent any time shopping with [color=special]Alice[/color] yet, [color=special]$[core.player1.name][/color]?  She does a good job, but I think I could do a better job.  I don't want to directly compete with her, though.  I wouldn't make enough money, so currently I'm not working as a [color=special]merchant[/color].
+
+If she went out of business, though...
+							</comment>
+						</line>
+						<line id = 'line2' class = 'prompt'>
+							<comment>
+								Look, [color=special]$[core.player1.name][/color].  I like [color=special]Alice[/color], and I don't want to see anything bad happen to her.  If you can, find a way to shut her down without hurting her.  Hopefully you don't have to send her packing!
+
+Once you have taken care of things, I will eagerly show you how much better work I can do as a [color=special]merchant[/color]!
+							</comment>
+							<response class = 'default' branch-id = 'root.ok'>
+								<phrase>I&apos;ll get it done, [color=special]Logan[/color].</phrase>
+								<branch id = 'root.ok'>
+									<linear>
+										<line id = 'line1'>
+											<comment />
+											<post-script>quest("5.4.npc1.quest").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.later'>
+								<phrase>Not right now...</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'killed' branch-id = 'root.killed'>
+								<phrase>I already killed her, [color=special]Logan[/color].</phrase>
+								<branch id = 'root.killed'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I didn't want to see that happen, [color=special]$[core.player1.name][/color]!  What reason did you have to do that to [color=special]Alice[/color], one of the nicest girls in town?  I thought you were going to fight against the [color=dim]Bungeling empire[/color], not alongside them!
+
+Still, I will take this opportunity to start my own [color=special]merchant business[/color].  Given the circumstances, I don't feel like importing special items, but you should still appreciate the [color=special]items[/color] I'm carrying.  Please stop by anytime!
+											</comment>
+											<post-script>quest("5.4.npc1.quest").status("complete");quest("5.4.npc1.quest").update("update-complete:sad").status("active");npc("npc1").clearIndicators().addIndicator("merchant");map().runScript("npc1.quest-complete");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>[color=special]$[core.player1.name][/color], I don&apos;t want anything bad to happen to [color=special]Alice[/color], but I need her to stop selling items so that I can take over the market. Can you help me out yet?</comment>
+							<response class = 'default' branch-id = 'root.ok'>
+								<phrase>I&apos;ll get to it now, [color=special]Logan[/color].</phrase>
+							</response>
+							<response class = 'default' branch-id = 'root.later'>
+								<phrase>Not right now...</phrase>
+							</response>
+							<response class = 'killed' branch-id = 'root.killed'>
+								<phrase>I decided to kill her, [color=special]Logan[/color].</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Have you found a way to put [color=special]Alice[/color] out of business without hurting her, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I&apos;d love to work as a [color=special]merchant[/color], but I can&apos;t do so while [color=special]Alice[/color] is selling items.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Go ahead and customize your gameplay controls in the [color=special]pause menu[/color] when you have a chance.  [color=special]Alice[/color] increased her sales by [color=special]200%[/color] when she customized her controls, and I bet I can do even better if I start up a shoppe of my own!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I like what you&apos;ve done with your customized controls, [color=special]$[core.player1.name][/color].  I might have to try those out some day!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-alice'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Did you think I wouldn't see that, [color=special]$[core.player1.name][/color]?  I told you I didn't want anything bad to happen to [color=special]Alice[/color].  I guess I should have known better.
+
+Still, I will take this opportunity to start my own [color=special]merchant business[/color].  Given the circumstances, I didn't have enough time to import special items, but you will still love the [color=special]items[/color] I'm carrying.  Please stop by anytime!
+							</comment>
+							<post-script>quest("5.4.npc1.quest").status("complete");quest("5.4.npc1.quest").update("update-complete:sad").status("active");npc("npc1").clearIndicators().addIndicator("merchant");map().runScript("npc1.quest-complete");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:bought-out-alice'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Thanks for taking care of things with grace, [color=special]$[core.player1.name][/color].  I do like [color=special]Alice[/color], and I'm glad she'll be staying around as a civilian.
+
+Like I said before, I'm going to go ahead and start working as a [color=special]merchant[/color] now.  Knowing [color=special]Alice[/color] would be sticking around, I took the time to order some [color=special]extra special[/color] items that you will totally love!  Make sure to stop back to see what I have in stock!
+							</comment>
+							<post-script>quest("5.4.npc1.quest").status("complete");quest("5.4.npc1.quest").update("update-complete:happy").status("active");npc("npc1").clearIndicators().addIndicator("merchant");map().runScript("npc1.quest-complete");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Welcome to my new shoppe, [color=special]$[core.player1.name][/color].  What can I do for you?</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>Let me see what you&apos;re selling.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc1.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Let&apos;s talk later...</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>Good day, [color=special]$[core.player1.name][/color].  How can I help you today?</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I want to buy some new gear.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '250' class = 'buyout' branch-id = 'root.buyout'>
+								<phrase>I&apos;d like to pay you [color=special]250 gold pieces[/color] to close shop.</phrase>
+								<branch id = 'root.buyout'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I have to admit, [color=special]$[core.player1.name][/color], that I haven't been doing a lot of business lately.  My usual customers can't travel as freely with all of the [color=dim]bad guys[/color] running amok.  I wish I could refuse your offer, but I could really use that kind of money.
+
+I think we have a deal, [color=special]$[core.player1.name][/color]!  Thanks for the generous offer you made me.  Good luck against the [color=dim]Bungeling empire[/color]!
+											</comment>
+											<post-script>quest("5.4.npc1.quest").update("update-paid-alice").status("active");npc("npc1").clearIndicators().addIndicator("quest-complete");npc("npc2").removeIndicator("merchant");map().runScript("npc2.close-shop");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;ll be seeing you, [color=special]Alice[/color].</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:bought-out-alice'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Hi, [color=special]$[core.player1.name][/color].  I don&apos;t have a lot to do anymore, but I hope you&apos;re taking care of the [color=dim]bad guys[/color] for us!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I hear [color=special]Logan[/color] set up a new business down there.  Good for him!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Now that I am not selling items, I have plenty of time to customize my movement controls in the [color=special]pause menu[/color].  Have you tried it out yet, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>After you gave me so many gold pieces to close my shoppe, I decided to hire a consultant to help me customize my movement controls.  I bet you didn&apos;t need any help when you changed yours, though!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

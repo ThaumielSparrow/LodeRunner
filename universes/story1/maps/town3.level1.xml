@@ -1,0 +1,547 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 218 217 216 0 0 216 218 218 0 0 0 
+			0 323 153 256 0 0 0 326 332 0 0 0 255 153 324 
+			0 0 152 0 0 0 0 0 0 0 0 0 0 153 0 
+			26 256 152 325 323 253 324 152 331 323 323 152 327 152 253 
+			0 303 154 303 0 0 303 152 303 303 0 152 0 152 0 
+			0 0 153 0 0 0 0 152 0 0 0 152 0 153 0 
+			0 0 153 323 329 154 332 323 253 0 253 323 324 153 0 
+			0 0 153 0 0 154 0 313 313 334 312 313 0 153 0 
+			0 0 152 0 0 331 152 0 312 207 312 0 152 331 333 
+			0 0 152 0 0 0 154 0 0 328 0 0 154 0 0 
+			0 0 152 326 323 323 255 153 0 0 0 153 254 29 324 
+			0 152 253 313 0 303 305 153 0 0 0 153 309 303 0 
+			23 324 303 0 0 0 307 253 154 0 152 253 313 0 0 
+			0 0 0 0 0 0 0 308 154 0 153 309 0 0 152 
+			326 333 218 0 0 0 0 311 326 152 324 310 0 153 327 
+			0 0 0 216 0 0 0 0 0 154 0 0 154 323 309 
+			0 0 0 0 328 23 257 323 323 253 334 255 331 303 0 
+			0 0 0 0 0 303 303 303 303 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 345 344 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 283 0 0 342 0 343 0 342 0 0 0 340 0 0 
+			0 300 0 302 0 0 300 0 347 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 344 0 343 340 0 0 340 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 302 0 0 340 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 340 341 0 340 0 0 0 0 0 263 0 283 
+			0 0 0 302 0 300 0 0 0 0 0 0 0 302 0 
+			0 283 302 0 0 0 300 0 0 0 0 341 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			340 302 0 0 0 0 0 300 342 0 0 302 0 0 345 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 345 302 
+			0 0 0 0 263 0 283 342 0 0 0 0 0 302 0 
+			0 0 0 0 0 300 0 0 302 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '6' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Rebecca' title = '' />
+	<entity x = '11' y = '16' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Erich' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '7' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '16' x = '7' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '12' x = '4' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '15' x = '3' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '9' x = '1' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '6' x = '6' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '10' x = '13' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '14' x = '9' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '13' x = '14' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '1' x = '10' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '3' x = '8' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '5' x = '4' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '1' x = '1' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '@talk:Rebecca' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '2' x = '5' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Erich' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '15' x = '10' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '3' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '1' x = '12'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '1' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '1' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '3' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '3' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '16' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '10' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '10' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '16' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.e' height = '1' width = '1' behavior = '1' y = '10' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.f' height = '1' width = '1' behavior = '1' y = '10' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.g' height = '1' width = '1' behavior = '1' y = '14' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '6' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.g")
+                   .addHotspot("npc2.f")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.g")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(0.5)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'onvisit'>
+		// Default Rebecca to merchant
+        npc("npc1").clearIndicators().addIndicator("merchant");
+
+        // If Erich&apos;s quest is known, let&apos;s identify Rebecca as a target
+        // unless the player killed Erich first.
+        if (
+            quest("3.1.npc2.quest").status() != "inactive" and
+            quest("3.1.npc2.quest").update("flag-killed-erich").status() != "active"
+        )
+        {
+            // Mark as target
+            npc("npc1").addIndicator("target");
+        }
+
+
+        // Clear quest indicators
+        npc("npc2").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("3.1.npc2.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc2").addIndicator("quest-available");
+        }
+
+        // Quest is still active/failed, and we didn&apos;t buy his unsold inventory.
+        // We also didn&apos;t kill Rebecca.  He keeps wanting us to buy his old stuff...
+        elif (
+            quest("3.1.npc2.quest").update("flag-killed-rebecca").status() != "active" and
+           quest("3.1.npc2.quest").status() in ("active", "failed") and
+            quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status() != "active"
+        )
+        {
+            // Please buy the bombs, he says...
+            npc("npc2").addIndicator("quest-available");
+        }
+
+        // Quest is active and we killed Rebecca
+        elif (
+            quest("3.1.npc2.quest").update("flag-killed-rebecca").status() == "active" and
+           quest("3.1.npc2.quest").status() == "active"
+        )
+        {
+            // Ready to turn in
+            npc("npc2").addIndicator("quest-complete");
+        }
+
+        // Quest is complete, we put him in business (i.e. didn&apos;t liquidate)
+        elif (
+            quest("3.1.npc2.quest").status() == "complete" and
+            quest("3.1.npc2.quest").update("update-erich-opened-shop").status() == "active"
+        )
+        {
+            // Mark Erich as merchant
+            npc("npc2").addIndicator("merchant");
+        }
+	</script>
+	<script name = 'npc2.talk'>
+		#define QUEST "3.1.npc2.quest"
+
+        #define FLAG_KILLED_REBECCA "flag-killed-rebecca"
+
+        #define UPDATE_KILLED_REBECCA_BEFORE "update-killed-rebecca-before"
+        #define UPDATE_BOUGHT "update-rejected:bought-bombs"
+        #define UPDATE_REJECTED "update-rejected"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS "update-rejected:bought-bombs"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS:CHANGED_MIND "update-rejected:bought-bombs:changed-mind"
+        #define UPDATE_REJECTED:LEFT_BOMBS "update-rejected:left-bombs"
+        #define UPDATE_REJECTED:LEFT_BOMBS:CHANGED_MIND "update-rejected:left-bombs:changed-mind"
+        #define UPDATE_REJECTED:KILLED_REBECCA "update-rejected:killed-rebecca"
+        #define UPDATE_ACCEPTED:KILLED_REBECCA "update-accepted:killed-rebecca"
+        #define UPDATE_KILLED_ERICH_ONLY "update-killed-erich-only"
+        #define UPDATE_KILLED_ERICH_ALSO "update-killed-erich-also"
+
+        // Quest not assigned?  Ask for help
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Disable all responses by default
+            npc("npc2").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+
+            // Already killed Rebecca?
+            if ( quest(QUEST).update(FLAG_KILLED_REBECCA).status() == "active" )
+            {
+                // Enable early completion response
+                npc("npc2").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("already-done").enable();
+            }
+
+            // Nope, still available
+            else
+            {
+                // default responses
+                npc("npc2").conversation("quest:pending:assign").branch("root").getLinesByClass("prompt").getResponsesByClass("default").enable();
+            }
+
+
+            // Talk quest
+            npc("npc2").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() in ("active", "failed") )
+        {
+            // Have we killed Rebecca yet?
+            if ( quest(QUEST).update(UPDATE_ACCEPTED:KILLED_REBECCA).status() == "active" )
+            {
+                // good job!
+                npc("npc2").talk("quest:in-progress:killed-rebecca");
+            }
+
+            // Nope, keep at it...
+            else
+            {
+                // Did we previously turn down his request?
+                // If so, then he&apos;ll keep trying to sell us his liquidated inventory...
+                if ( quest(QUEST).update(UPDATE_REJECTED:BOUGHT_BOMBS).status() == "active" )
+                {
+                    // Did we go back and kill Rebecca after all this?
+                    if ( quest(QUEST).update(UPDATE_REJECTED:BOUGHT_BOMBS:CHANGED_MIND).status() == "active" )
+                    {
+                        // He wonders why!
+                        npc("npc2").talk("quest:failed:liquidated:killed-rebecca");
+                    }
+
+                    // No, but we still didn&apos;t do him any favor
+                    else
+                    {
+                        npc("npc2").talk("quest:failed:liquidated");
+                    }
+                }
+
+                // No, apparently we didn&apos;t buy his bombs.  He&apos;ll keep trying to sell &apos;em...
+                elif ( quest(QUEST).update(UPDATE_REJECTED:LEFT_BOMBS).status() == "active" )
+                {
+                    // ... unless we changed our minds and killed Rebecca after all
+                    if ( quest(QUEST).update(UPDATE_REJECTED:LEFT_BOMBS:CHANGED_MIND).status() == "active" )
+                    {
+                        // He&apos;ll be entering the bomb business after all...
+                        npc("npc2").talk("quest:failed:not-liquidated:killed-rebecca");
+                    }
+
+                    // Rebecca&apos;s still around.  He&apos;ll try liquidating over and over...
+                    else
+                    {
+                        npc("npc2").talk("quest:failed:not-liquidated");
+                    }
+                }
+
+                else
+                {
+                   // nag
+                    npc("npc2").talk("quest:in-progress");
+                }
+            }
+        }
+
+        // Quest complete?  Time to sell bombs at high prices
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we complete the quest by buying out his inventory?
+            if ( quest(QUEST).update(UPDATE_BOUGHT).status() == "active" )
+            {
+                // Did we change our mind and end up killing Rebecca anyway, after he ran out of inventory?
+                if ( quest(QUEST).update(FLAG_KILLED_REBECCA).status() == "active" )
+                {
+                    // What could have been!
+                    npc("npc2").talk("quest:failed:liquidated:killed-rebecca");
+                }
+
+                // Otherwise, it&apos;s a generic "too bad" conversation
+                else
+                {
+                    // I used to fail the quest on buyout, so the conversation id is awkward
+                    npc("npc2").talk("quest:failed:liquidated");
+                }
+            }
+
+            // If not, then we must have killed Rebecca for him
+            else
+            {
+                // Talk in shopping mode, selling bombs now...
+                npc("npc2").talk("quest:complete", "shop");
+            }
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Otherwise, I guess we killed the guy, and he won&apos;t talk anyway.
+            // n/a, then.
+        }
+	</script>
+	<script name = 'npc2.ondeath'>
+		// Killing Erich too early fails quest.
+        // Killing him after just adds a little update.
+        #define QUEST "3.1.npc2.quest"
+
+        #define FLAG_KILLED_ERICH "flag-killed-erich"
+
+        #define UPDATE_KILLED_ERICH_BEFORE "update-killed-erich-before"
+        #define UPDATE_REJECTED "update-rejected"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS "update-rejected:bought-bombs"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS:CHANGED_MIND "update-rejected:bought-bombs:changed-mind"
+        #define UPDATE_REJECTED:LEFT_BOMBS "update-rejected:left-bombs"
+        #define UPDATE_REJECTED:LEFT_BOMBS:CHANGED_MIND "update-rejected:left-bombs:changed-mind"
+        #define UPDATE_REJECTED:KILLED_REBECCA "update-rejected:killed-rebecca"
+        #define UPDATE_ACCEPTED:KILLED_REBECCA "update-accepted:killed-rebecca"
+        #define UPDATE_KILLED_ERICH_ONLY "update-killed-erich-only"
+        #define UPDATE_KILLED_ERICH_ALSO "update-killed-erich-also"
+
+        // Quest inactive?  Way too soon!
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // fail quest
+            quest(QUEST).status("failed");
+
+            // premature
+            quest(QUEST).update(UPDATE_KILLED_ERICH_BEFORE).status("active");
+        }
+
+        // Quest not complete?  We failed it, then...
+        elif ( quest(QUEST).status() != "complete" )
+        {
+            // fail quest
+            quest(QUEST).status("failed");
+
+            // Quest in progress?  Did we save Rebecca?
+            if ( session("3.1.npc2.quest:killed-rebecca").notEquals("yes") )
+            {
+                // Killed only him (so far...)
+                quest(QUEST).update(UPDATE_KILLED_ERICH_ONLY).status("active");
+            }
+
+            // Killed em all
+            else
+            {
+                quest(QUEST).update(UPDATE_KILLED_ERICH_ALSO).status("active");
+            }
+        }
+
+        // Otherwise, just note that we also killed Erich.
+        else
+        {
+            // completion still counts, this is just after the whistle
+            quest(QUEST).update(UPDATE_KILLED_ERICH_ALSO).status("active");
+        }
+
+
+        // Toggle flag
+        quest(QUEST).update(FLAG_KILLED_ERICH).status("active");
+
+        // Rebecca is no longer an official target
+        npc("npc1").removeIndicator("target");
+
+
+        // Disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "3.1.npc2.quest"
+
+        #define UPDATE_KILLED_ERICH_ONLY "update-killed-erich-only"
+
+        // Disable thank you line by default
+        npc("npc1").conversation("bombs").branch("root").getLinesByClass("killed-erich").disable();
+
+        // We&apos;ll enable the thank-you line if we killed Erich.
+        if ( quest(QUEST).update(UPDATE_KILLED_ERICH_ONLY).status() == "active" )
+        {
+            // It&apos;s a linear line, so we can enable it every time, but it&apos;ll only appear once.
+            npc("npc1").conversation("bombs").branch("root").getLinesByClass("killed-erich").enable();
+        }
+
+        // Talk...
+        npc("npc1").talk("bombs", "shop");
+	</script>
+	<script name = 'npc1.ondeath'>
+		// Killing Rebecca helps complete the quest, unless it&apos;s already been failed
+        // and Erich is dead.
+        #define QUEST "3.1.npc2.quest"
+
+        #define FLAG_KILLED_REBECCA "flag-killed-rebecca"
+
+        #define UPDATE_KILLED_REBECCA_BEFORE "update-killed-rebecca-before"
+        #define UPDATE_KILLED_REBECCA_AFTER_FAILING "update-killed-rebecca-after-failing"
+        #define UPDATE_REJECTED "update-rejected"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS "update-rejected:bought-bombs"
+        #define UPDATE_REJECTED:BOUGHT_BOMBS:CHANGED_MIND "update-rejected:bought-bombs:changed-mind"
+        #define UPDATE_REJECTED:LEFT_BOMBS "update-rejected:left-bombs"
+        #define UPDATE_REJECTED:LEFT_BOMBS:CHANGED_MIND "update-rejected:left-bombs:changed-mind"
+        #define UPDATE_REJECTED:KILLED_REBECCA "update-rejected:killed-rebecca"
+        #define UPDATE_ACCEPTED:KILLED_REBECCA "update-accepted:killed-rebecca"
+
+
+        // Set a session variable for this quest
+        session("3.1.npc2.quest:killed-rebecca").set("yes");
+
+
+        // Did we kill her ahead of schedule?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Just flag early kill update for now
+            quest(QUEST).update(UPDATE_KILLED_REBECCA_BEFORE).status("active");
+        }
+
+        // Is quest active, or already completed via liquidation?
+        elif ( quest(QUEST).status() in ("active", "complete") )
+        {
+            // If we never rejected Erich (straight up accepted mission),
+            // then we did a really good job.
+            if ( quest(QUEST).update(UPDATE_REJECTED).status() != "active" )
+            {
+                // accepted mission, followed through
+                quest(QUEST).update(UPDATE_ACCEPTED:KILLED_REBECCA).status("active");
+            }
+
+            // Did we liquidate the guy&apos;s inventory after rejecting him?
+            elif ( quest(QUEST).update(UPDATE_REJECTED:BOUGHT_BOMBS).status() == "active" )
+            {
+                quest(QUEST).update(UPDATE_REJECTED:BOUGHT_BOMBS:CHANGED_MIND).status("active");
+            }
+
+            // No, we didn&apos;t.  He can go back into business after all!
+            elif ( quest(QUEST).update(UPDATE_REJECTED:LEFT_BOMBS).status() == "active" )
+            {
+                quest(QUEST).update(UPDATE_REJECTED:LEFT_BOMBS:CHANGED_MIND).status("active");
+            }
+        }
+
+        // If we failed the quest (which we can only do by killing Erich before Rebecca),
+        // then let&apos;s just note this as an update
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Update
+            quest(QUEST).update(UPDATE_KILLED_REBECCA_AFTER_FAILING).status("active");
+        }
+
+        // Quest can&apos;t be complete... we can only complete it by killing Rebecca, and then
+        // of course we can&apos;t kill her again, so that status never applies.
+        else
+        {
+        }
+
+
+        // Toggle flag
+        quest(QUEST).update(FLAG_KILLED_REBECCA).status("active");
+
+        // Disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+</scripts>

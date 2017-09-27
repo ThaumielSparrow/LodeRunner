@@ -1,0 +1,143 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1'] How's it going, $player$?
+
+                [n id = 'nag2'] Are you looking for a merchant, $player$?  Stay away from that guy in $Callistaska$.  I don't like him!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you're looking for a place to customize your gameplay controls, make sure you don't look for \
+                    it in $Callistaska$!  Try the $pause menu$ instead!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I hear that the merchants in $Callistaska$ charge an extra 500 gold pieces on every item they sell to players \
+                    that have customized their controls.  You'd better stay away from there!
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [l id = 'line1'] Please don't kill me, $player$.  I have a lot of money.  Here, take these $15 gold pices$ and spare my life!
+
+                    @post-script
+                        quest("6.3.npc2.quest").update("update-jake-donated-gold").status("active");
+                        player().addGold(15);
+
+                [l id = 'line2'] Ok, look.  That guy $Biggins$ never liked me.  He blames all of his problems on me.  I never did anything to him.  To prove that I'm a nice guy, \
+                    let me give you another $15 gold pieces$ for sparing my life.
+
+                    @post-script
+                        player().addGold(15);
+
+                [l id = 'line3'] Maybe you should pixelize $Biggins$ instead of me, $player$.  I'm just making a suggestion.  Also, I'm just giving you these $15 gold pieces$ because \
+                    I like helping people.  I could probably help you a lot more if I didn't have to worry about $Biggins$ down there in $Callistaska$.
+
+                    @post-script
+                        quest("6.3.npc2.quest").update("update-jake-suggested-turnabout").status("active");
+                        player().addGold(15);
+
+                [n id = 'nag1'] Thanks for not killing me yet, $player$.  I appreciate it.
+
+                [n id = 'nag2'] A lot of people would have used a bomb by now, $player$.  Thanks for your kindness!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Would you like me to help you customize your gameplay controls, $player$?  I'd be happy to \
+                    help you in the $pause menu$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I want to give you a few more gold pieces, because I really respect the work you did \
+                    customizing your gameplay controls!
+
+                    @post-script
+                        player().addGold(10);
+
+
+        @conversation[id = 'quest:killed-biggins']
+
+            >>> root
+
+                [l id = 'line1'] Hey, $player$!  I heard about what you did to $Biggins$!  I promised you more gold if you took care of him, and I always make good on my promises.
+
+                    Please enjoy this $1 gold piece$!
+
+                    @post-script
+                        player().addGold(1);
+
+                [l id = 'line2'] Okay, I understand your anger, $player$.  I will make this right, right now.  Please enjoy an additional $500 gold pieces$!
+
+                    @post-script
+                        player().addGold(500);
+                        quest("6.3.npc2.quest").status("complete");
+                        quest("6.3.npc2.quest").update("update-complete:for-jake").status("active");
+                        npc("npc1").clearIndicators();
+
+                [n id = 'nag1'] What more do you want from me, $player$?  I've given you a very handsome reward for taking care of $Biggins$.
+
+                [n id = 'nag2'] If you think I'm going to give you more gold, then you're wrong, $player$!  I gave you a bunch already!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] $Biggins$ probably didn't respect you either.  He always made fun of me for not customizing my controls in \
+                    the $pause menu$.  You taught him a great lesson in respect!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Do you know that $Biggins$ tried to add an excise tax to the $pause menu$?  Yeah!  He wanted to receive some kind \
+                    of fee every time someone customized their controls.  Doesn't that sound awful?!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] $player$, do you have a spare $skill point$ to share with me?
+
+                    If I can simply augment myself a little more, I might find the strength to leap across that gorge and make my way to a better place.  I need the $skill point$ first, \
+                    though.  Can you help me out, $player$?
+
+                    +yes[min-skill-points = '1'] Here, $JC$.  I can spare you $1 skill point$.
+
+                        >>> root.yes
+
+                            [l id = 'line1'] I knew that I could convince you to give me a skill point.  This new neural persuasion augmentation is working exactly as I expected!
+
+                                You can leave me now, $player$.  Thanks to this incredibly powerful augmentation, I installed a special command in your subconscious mind to prevent you from harming me!
+
+                                @post-script
+                                    quest("7.4.npc2.quest").status("active");
+                                    quest("7.4.npc2.quest").update("update-gave-point").status("active");
+                                    quest("7.4.npc2.quest").update("update-kill-jc").status("active");
+                                    npc("npc2").clearIndicators();
+                                    session("core.player1.skill-points").increment(-1);
+
+                    +no I'll have to get back to you on that one.
+
+                        >>> root.no
+
+                            [n id = 'nag1'] Please hurry, $player$.  I need that $skill point$ very desperately!
+
+                                @post-script
+                                    quest("7.4.npc2.quest").status("active");
+
+                [n id = 'nag1'] I still need a skill point to escape this place, $player$.  Can you spare a $skill point$ for me yet?
+
+                    +yes[min-skill-points = '1'] Here, $JC$.  I can now spare you $1 skill point$.
+
+                    +no I'll have to get back to you on that one.
+
+
+        @conversation[id = 'quest:in-progress:gave-skill-point']
+
+            >>> root
+
+                [n id = 'nag1'] You can't defeat me in verbal combat, $player$.  You should leave before I trick you out of another one of your skill points.
+
+                [n id = 'nag2'] Remember when I tricked you into giving me one of your skill points, $player$?  Come back and see me sometime!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You haven't customized your gameplay controls in the $pause menu$ yet, I see.  You probably don't have \
+                    any augmentations, either.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Your customized gameplay controls will not help you against me, $player$.
+

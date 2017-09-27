@@ -1,0 +1,92 @@
+<persuasion id = 'persuasion'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Persuasion [color=title]automatically[/color] takes effect during [color=title]dialogue sequences[/color].  Using Persuasion allows you to exert an unusual amount of [color=dim]control[/color] over the people you talk to, enabling special [color=title]dialogue responses[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.control.persuasion</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>Persuasion [color=title]automatically[/color] takes effect during [color=title]dialogue sequences[/color].  Using Persuasion allows you to exert an unusual amount of [color=dim]control[/color] over the people you talk to, enabling special [color=title]dialogue responses[/color].</overview>
+			<specs>NPCs find you [color=title]mildly persuasive[/color]</specs>
+			<manual />
+			<gif-source>gifs.control.persuasion</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Persuasion[/color], you will lose access to the [color=title]Hacking[/color] skill.
+
+Further upgrades to [color=title]Persuasion[/color] will lower [color=title]shoppe prices[/color] and increase your overall [color=title]persuasiveness[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Hacking[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>By upgrading [color=title]Persuasion[/color] skill to Level 2, you will gain a small [color=dim]discount[/color] in all shoppes.
+
+You will also obtain access to more [color=title]dialogue response[/color] options.</overview>
+			<specs>NPCs find you [color=title]highly persuasive[/color]
+Shoppe prices lower by [color=title]10%[/color]</specs>
+			<manual />
+			<gif-source>gifs.control.persuasion</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The final upgrade to [color=dim]Persuasion[/color] more than doubles the discount you receive in shoppes.
+
+At this level, you will have access to [color=title]all dialogue responses[/color].</overview>
+			<specs>NPCs find you [color=title]irresistibly persuasive[/color]
+Shoppe prices lower by [color=title]25%[/color] (+15%)</specs>
+			<manual />
+			<gif-source>gifs.control.persuasion</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Persuasion[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Persuasion[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>0.0</recharge>
+			<modifiers>
+				<modifier name = 'effectiveness' value = '3' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have mastered The [color=title]Persuasion[/color] skill.  You receive the highest possible [color=title]discount[/color] in shoppes, and you have access to all [color=title]dialogue responses[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.control.persuasion</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</persuasion>

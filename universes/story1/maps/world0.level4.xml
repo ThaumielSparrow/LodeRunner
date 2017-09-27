@@ -1,0 +1,450 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 328 257 0 0 324 257 329 323 0 0 
+			0 154 334 218 218 219 216 154 0 254 308 0 0 0 0 0 312 0 0 0 
+			0 153 311 0 0 0 0 154 0 0 0 0 0 0 0 0 307 153 257 334 
+			0 153 147 147 0 0 0 153 325 0 0 0 0 0 0 0 0 152 307 0 
+			323 328 254 325 323 154 256 152 310 0 0 0 0 0 0 0 0 153 0 0 
+			0 312 314 0 310 154 314 153 0 0 219 218 218 0 0 217 219 153 330 0 
+			0 0 312 0 0 152 0 154 327 332 0 0 0 331 153 0 0 325 307 255 
+			0 0 308 153 324 254 327 254 309 0 0 0 329 314 154 0 0 0 313 0 
+			0 0 0 153 0 314 0 0 0 0 0 0 147 147 152 0 0 0 0 0 
+			0 0 0 154 0 0 0 0 0 0 0 154 330 255 330 0 0 0 0 0 
+			0 0 331 255 333 153 217 153 217 216 218 152 0 0 147 147 330 0 0 0 
+			217 219 216 312 304 256 0 154 0 0 0 327 253 326 255 328 305 326 0 0 
+			0 0 0 0 308 0 0 154 328 0 0 0 314 309 312 308 0 0 0 0 
+			0 326 0 0 0 0 0 154 0 0 0 0 0 307 0 0 0 0 0 0 
+			0 0 0 218 219 218 0 152 0 324 253 218 0 0 0 0 0 0 0 0 
+			254 153 333 0 0 0 324 154 253 207 304 0 218 0 0 0 0 0 0 0 
+			311 154 0 0 0 0 0 152 313 330 0 0 0 217 0 0 9 0 327 327 
+			311 253 0 0 0 0 0 152 0 310 334 0 0 0 219 323 255 327 308 0 
+			313 0 153 253 219 217 219 154 0 0 0 0 0 0 0 304 308 209 312 256 
+			313 330 325 311 0 0 0 153 0 216 0 0 209 152 0 311 312 257 0 0 
+			0 0 0 0 0 0 324 323 153 0 332 254 253 323 152 0 311 303 329 0 
+			0 0 0 0 0 0 0 312 152 334 310 311 0 0 152 0 313 311 0 0 
+			330 253 0 0 0 0 0 0 154 0 0 0 0 0 152 0 0 0 0 0 
+			0 311 330 219 217 0 0 0 154 331 253 333 334 255 330 152 0 0 0 0 
+			0 0 0 0 0 324 326 254 334 307 0 311 309 0 312 331 334 257 0 0 
+			0 0 0 0 0 0 311 0 0 303 329 305 0 0 0 0 306 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 300 0 0 0 0 0 
+			0 0 344 0 0 0 0 0 0 345 347 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 346 0 
+			342 341 341 342 345 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 300 0 0 
+			0 0 300 0 0 0 345 0 0 0 0 0 300 0 0 0 0 0 302 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 344 0 342 0 0 0 0 0 
+			0 0 300 0 341 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 340 0 0 0 0 0 342 340 342 342 0 346 302 0 0 
+			0 0 0 0 0 0 0 0 340 0 0 0 300 75 346 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 340 343 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 300 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 347 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 349 0 
+			300 0 343 302 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 0 300 0 0 347 302 0 0 0 0 300 347 0 0 
+			0 344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 340 0 0 0 0 0 0 0 340 340 340 0 344 0 0 0 0 0 
+			0 0 0 0 0 300 0 340 344 0 0 0 302 0 300 0 0 302 0 0 
+			0 0 0 0 0 0 302 0 0 300 343 0 0 0 0 0 302 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '12' y = '22' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Rochelle' title = '' />
+	<entity x = '4' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Carlos' title = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '21' x = '1' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '23' x = '16' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '19' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '19' x = '5' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '14' x = '2' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '12' x = '1' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '16' x = '10' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '15' x = '13' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '19' x = '18' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '17' x = '19' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '9' x = '16' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '12' x = '18' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '13' x = '9' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '5' x = '13' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '6' x = '6' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '3' x = '3' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '6' class = '' />
+<entity name = 'gold18' title = '' ai-behavior = '1' nick = '' y = '1' x = '18' genus = '6' class = '' />
+<entity name = 'gold19' title = '' ai-behavior = '1' nick = '' y = '5' x = '19' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '3' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '6' x = '7'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '5' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '5' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '1' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '22' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '19' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '23' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '22' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.e' height = '1' width = '1' behavior = '1' y = '19' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'town.faq' height = '26' width = '1' behavior = '2' y = '0' x = '2'>
+	<touch>
+		<script name = 'town.faq.touch' />
+	</touch>
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Carlos' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '21' x = '5' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Rochelle' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '21' x = '11' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle1' name = 'puzzle1.enter' height = '1' width = '1' behavior = '3' y = '16' x = '16' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle1.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'spawn' height = '1' width = '1' behavior = '1' y = '10' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '9' x = '4'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle1.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle1.enter").loadMap("puzzle1", "origin");
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "0.4.npc2.quest"
+
+        #define UPDATE_KILLED_CARLOS_BEFORE "update-killed-carlos-before"
+        #define UPDATE_KILLED_CARLOS_AFTER "update-killed-carlos-after"
+
+        // Have we delivered the perfume to Rochelle yet?
+        if ( quest(QUEST).status() == "complete" )
+        {
+            // Flag killed-after update
+            quest(QUEST).update(UPDATE_KILLED_CARLOS_AFTER).status("active");
+        }
+
+        // Nope, we got him fast!
+        else
+        {
+            // Flag killed-before update
+            quest(QUEST).update(UPDATE_KILLED_CARLOS_BEFORE).status("active");
+        }
+	</script>
+	<script name = 'npc1.talk'>npc("npc1").talk("default");</script>
+	<script name = 'npc2.ondeath'>
+		#define QUEST "0.4.npc2.quest"
+        #define UPDATE_KILLED_BEFORE "update-killed-rochelle-before"
+        #define UPDATE_KILLED_DURING "update-killed-rochelle-during"
+        #define UPDATE_SPILLED_PERFUME "update-spilled-perfume"
+        #define UPDATE_KILLED_AFTER_DELIVERY "update-killed-rochelle-after-delivery"
+        #define UPDATE_KILLED_AFTER_SPILLING "update-killed-rochelle-after-spilling"
+
+        // Quest never even started, huh?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Fail quest
+            quest(QUEST).status("failed");
+
+            // Killed before quest
+            quest(QUEST).update(UPDATE_KILLED_BEFORE).status("active");
+        }
+
+        else
+        {
+            // Quest not yet complete?  Killed her too soon, then, or killed her after already failing quest.  Same update
+            if ( quest(QUEST).status() != "complete" )
+            {
+                // Fail quest
+                quest(QUEST).status("failed");
+
+                // Did we fail by spilling the perfume?
+                if ( quest(QUEST).update(UPDATE_SPILLED_PERFUME).status() == "active" )
+                {
+                    // Bad player
+                    quest(QUEST).update(UPDATE_KILLED_AFTER_SPILLING).status("active");
+                }
+
+                // Killed during quest, or after failing quest in some other way (e.g. killing merchant) (same update)
+                else
+                {
+                    quest(QUEST).update(UPDATE_KILLED_DURING).status("active");
+                }
+            }
+
+            // Gratuitous post-quest-complete kill
+            else
+            {
+                // Just an update
+                quest(QUEST).update(UPDATE_KILLED_AFTER_DELIVERY).status("active");
+            }
+        }
+	</script>
+	<script name = 'npc2.quest.complete'>
+		#define QUEST "0.4.npc2.quest"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_DELIVERED "update-delivered"
+        #define UPDATE_DELIVERED_EXTORTED "update-delivered-extorted"
+
+        // Did we extort gold when accepting the quest?
+        if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+        {
+            // A poorer reward
+            quest(QUEST).status("complete");
+            quest(QUEST).update(UPDATE_DELIVERED_EXTORTED).status("active");
+
+            // Pick one at random
+            player().acquireRandomItem("rochelles-cheap-digging-shoes", "rochelles-old-hoarding-wand", "rochelles-stale-trap-glue");
+        }
+
+        // Nope, good job
+        else
+        {
+            // Normal reward
+            quest(QUEST).status("complete");
+            quest(QUEST).update(UPDATE_DELIVERED).status("active");
+
+            // Pick one at random
+            player().acquireRandomItem("rochelles-digging-shoes", "rochelles-hoarding-wand", "rochelles-heavy-trap-glue");
+        }
+
+        // Drop the item we brought her
+        player().dropItem("rochelles-perfume");
+	</script>
+	<script name = 'npc2.talk'>
+		// Define params
+        #define QUEST "0.4.npc2.quest"
+
+        #define UPDATE_KILLED_CARLOS_BEFORE "update-killed-carlos-before"
+        #define UPDATE_KILLED_CARLOS_AFTER "update-killed-carlos-after"
+        #define UPDATE_KILLED_MERCHANT "update-killed-merchant"
+        #define UPDATE_EXTORTED "update-extorted"
+
+        debug( "YOU ARE TALKING TO ME!" );
+        debug( "Yo... let&apos;s add param support like this, in this level&apos;s script...YOU ARE TALKING TO ME!" );
+        //npc("npc2").talk("quest:pending:assign");
+
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            debug( "Yo... what&apos;s up?" );
+            // If we already killed Carlos...
+            if ( quest(QUEST).update("update-killed-carlos-before").status() == "active" )
+            {
+                npc("npc2").talk("quest:killed-carlos-prematurely");
+            }
+
+            else
+            {
+                npc("npc2").talk("quest:pending:assign");
+            }
+        }
+
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // If we have the perfume, she&apos;ll ask for it
+            if ( quest(QUEST).update("update-bought").status() == "active" )
+            {
+                // Assume
+                npc("npc2").conversation("quest:in-progress:bought-perfume").branch("root").getLinesByClass("*").disable();
+
+                // Do we want the extortion line?
+                if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+                {
+                    // More hostile dialogue
+                    npc("npc2").conversation("quest:in-progress:bought-perfume").branch("root").getLinesByClass("extorted").enable();
+                }
+
+                // Standard line
+                else
+                {
+                    // Thanks, player!
+                    npc("npc2").conversation("quest:in-progress:bought-perfume").branch("root").getLinesByClass("extorted").enable();
+                }
+
+                // Enter conversation
+                npc("npc2").talk("quest:in-progress:bought-perfume");
+
+
+                // Clear indicators
+                npc("npc2").clearIndicators();
+            }
+
+            // Otherwise, nag...
+            else
+            {
+                // If we killed Carlos, she&apos;ll insist she still wants the perfume
+                if ( quest(QUEST).update("update-killed-carlos-before").status() == "active" )
+                {
+                    npc("npc2").talk("quest:in-progress:killed-carlos");
+                }
+
+                // Otherwise, generic nag
+                else
+                {
+                    npc("npc2").talk("quest:in-progress");
+                }
+            }
+        }
+
+        // Delivered perfume
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we kill Carlos too?
+            if ( (quest(QUEST).update(UPDATE_KILLED_CARLOS_BEFORE).status() == "active") or (quest(QUEST).update(UPDATE_KILLED_CARLOS_AFTER).status() == "active") )
+            {
+                // too bad about that
+                npc("npc2").talk("quest:complete:killed-carlos");
+            }
+
+            // love the perfume
+            else
+            {
+                npc("npc2").talk("quest:complete:delivered-perfume");
+            }
+        }
+
+        // Fail by killing merchant or by spilling perfume
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Killed merchant?
+            if ( quest(QUEST).update(UPDATE_KILLED_MERCHANT).status() == "active" )
+            {
+                npc("npc2").talk("quest:failed:killed-merchant");
+            }
+
+            // Must&apos;ve spilled fume
+            else
+            {
+                npc("npc2").talk("quest:failed:spilled-perfume");
+            }
+        }
+	</script>
+	<script name = 'onload'>
+		// debug
+        debug( "This is a test of the new event controller running..." );
+        debug( "I need a neat way of session(key) in the scripts.  universe.session, is that what I want?" );
+
+        // Set npc1 path
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e");
+
+        session("xxx").set("5");
+        range(
+            session("xxx").get(),
+            7
+        )
+        {
+            debug("range test");
+        }
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // Set npc2 path
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.5)")    // Brief pause
+                   .addHotspot("npc2.c")
+                   .addHotspot("npc2.d")
+                   .addHotspot("npc2.e")
+                   .addHotspot("sleep(2.5)");   // Brief pause
+        // Trigger should follow walking npc
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'onvisit'>
+		// Clear quest indicators
+        npc("npc2").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("0.4.npc2.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc2").addIndicator("quest-available");
+        }
+
+        // Quest is active, and player has the perfume?
+        elif (
+            quest("0.4.npc2.quest").status() == "active" and
+            quest("0.4.npc2.quest").update("update-bought").status() == "active"
+        )
+        {
+            // Ready to complete
+            npc("npc2").addIndicator("quest-complete");
+        }
+	</script>
+</scripts>

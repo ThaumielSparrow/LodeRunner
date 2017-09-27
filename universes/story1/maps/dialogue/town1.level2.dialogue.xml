@@ -1,0 +1,555 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '5' id = 'nag1'>
+							<comment>Have you tried entering that puzzle room yet, [color=special]$[core.player1.name][/color]?  I did try solving it one time, but I never could master the technique of [color=special]digging bricks beneath bridges[/color].  Maybe you can do it!</comment>
+						</line>
+						<line priority = '0' id = 'nag2'>
+							<comment>We are all rooting for you to defeat the [color=dim]Bungeling emperor[/color]&apos;s henchmen and save [color=special]Lelandria[/color].  On the side, I&apos;m rooting for you to use one of your bombs on [color=special]Jackson[/color] down there.  I have nothing to reward you with, regrettably.</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>Do you know that the original ruler of [color=special]Lelandria[/color] had a different name for this place?  Yeah!  He called it [color=special]graph[/color].  What a strange name to choose!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Have you gotten used to the game controls by now, [color=special]$[core.player1.name][/color]?  You can choose to customize them in the [color=special]pause menu[/color] at any time!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>With your expertly set control scheme, [color=special]$[core.player1.name][/color], you should have no trouble at all in the puzzle room on this level!  You might have already completed it, even!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'kept-shoes'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '10' id = 'nag1'>
+							<comment>Don&apos;t tell anyone, [color=special]$[core.player1.name][/color], but I personally think those shoes look much better on you than they ever looked on [color=special]Jackson[/color].  I think you&apos;ll find them very useful against the [color=dim]bad guys[/color], too!</comment>
+						</line>
+						<line priority = '5' id = 'nag2'>
+							<comment>On second thought, I don&apos;t care what you say to [color=special]Jackson[/color].  I never cared much for the guy!</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>I thought about trying to steal [color=special]Jackson[/color]&apos;s shoes from the puzzle room one time.  After I got ahold of them, I would have sold them to him at a highly exorbinant price.  Unfortunately, I never mastered the art of [color=special]digging bricks directly beneath bridges[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Be careful not to lose those shoes that you stole from [color=special]Jackson[/color].  Between you and me, I think he would have never lost them if he had taken the time to customize his controls in the [color=special]pause menu[/color].  Have you thought about trying that, too?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Do you know that [color=special]Jackson[/color] never even took the time to customize his controls?  He can only blame himself, then, for how easily he lost his precious [color=special]shoes[/color] in that puzzle room.  Only a true hero like you, [color=special]$[core.player1.name][/color] -- with your smartly customized controls and your expert strategy -- only you deserve to wear such fine shoes!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'killed-jackson'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line priority = '10' id = 'nag1'>
+							<comment>I saw what you did to [color=special]Jackson[/color] down there.  Don&apos;t feel too bad about it, [color=special]$[core.player1.name][/color].  The [color=dim]bad guys[/color] were going to get him sooner or later, anyway!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>[color=special]Jackson[/color] liked to steal gold too, just like the [color=dim]bad guys[/color].  He lost those shoes of his when he was trying to figure out how to get all of the gold out of that puzzle room!</comment>
+						</line>
+						<line id = 'nag3'>
+							<comment>Have you talked to [color=special]Isabella[/color] just next door?  She made good money selling new outfits to [color=special]Jackson[/color].  Never underestimate the profit potential bred within desperate materialism!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>After thinking about things longer, I&apos;ve become even [color=special]more[/color] impressed at how quickly you decided to kill [color=special]Jackson[/color].  You didn&apos;t even delay long enough to customize your controls before dispatching him from this world!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I wish I had been there when you pressed [color=special]@bomb[/color] to explode him down there, [color=special]$[core.player1.name][/color].  Wait -- did you simply let him walk off the level by digging the ground in front of him?  I really wish I had seen it, either way!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:pending:available'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								How's it going, [color=special]$[core.player1.name][/color]?  I hope you're not having too much trouble fending off the troops from the  [color=dim]Bungeling empire[/color]!
+
+On another topic, I'd like to ask you for a small favor.  Have you visited the puzzle room up there yet?  I lost my [color=special]running shoes[/color] in there, and I'd really love to have them back.
+							</comment>
+						</line>
+						<line id = 'prompt'>
+							<comment>
+								If you find a way to complete that [color=special]puzzle room[/color], please make sure to select my [color=special]running shoes[/color] as your prize, then bring them back to me for a nice piece of coin!
+
+Do you think you can do that for me, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response class = 'default' branch-id = 'root.yes'>
+								<phrase>I&apos;ll see what I can do, [color=special]Jackson[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks, [color=special]$[core.player1.name][/color]!  Good luck in the [color=special]puzzle room[/color]!</comment>
+											<post-script>quest("1.2.npc2.quest").status("active");npc("npc2").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.extort'>
+								<phrase>How about giving me half of the gold up front?</phrase>
+								<branch id = 'root.extort'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I&apos;ll trust you on this one, [color=special]$[core.player1.name][/color].  Here, make good use of these [color=special]32 gold pieces[/color], and please get my shoes for me!</comment>
+											<post-script>quest("1.2.npc2.quest").status("active");quest("1.2.npc2.quest").update("update-extorted").status("active");npc("npc2").clearIndicators();player().addGold(32);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'completed' branch-id = 'root.already-completed'>
+								<phrase>I already completed that puzzle room.</phrase>
+								<branch id = 'root.already-completed'>
+									<linear>
+										<line transition = '1' id = 'line1'>
+											<comment />
+											<post-script queued = '1'>npc("npc2").talk("quest:in-progress:took-shoes");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'failed' branch-id = 'root.already-failed'>
+								<phrase>I already completed that puzzle room, but I didn&apos;t take the shoes.</phrase>
+								<branch id = 'root.already-failed'>
+									<linear />
+									<nags>
+										<line redirect = 'request-donation' transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>quest("1.2.npc2.quest").status("active");quest("1.2.npc2.quest").update("update-donation-requested").status("active");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line redirect = 'request-donation' transition = '1' id = 'nag1'>
+							<comment />
+						</line>
+					</nags>
+				</branch>
+				<branch id = 'request-donation'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I guess you couldn't have known better, [color=special]$[core.player1.name][/color].  At this point, I will probably have to order a new pair on an online auction site for a terribly marked up price, and I just don't have enough money for that right now.
+
+Do you think you could shoot me a few pence of your own, [color=special]$[core.player1.name][/color]?  It'd really mean a lot to me!
+							</comment>
+							<response min-gold = '50' branch-id = 'request-donation.yes'>
+								<phrase>Sure, [color=special]Jackson[/color].  I can spare you [color=special]50 gold pieces[/color].</phrase>
+								<branch id = 'request-donation.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thank you, [color=special]$[core.player1.name][/color]!  With this windfall, I can finally afford to buy some new [color=special]shoes[/color] to replace the ones I lost in that puzzle room! Please, [color=special]$[core.player1.name][/color], accept this [color=special]special item[/color] for your generous donation!</comment>
+											<post-script>quest("1.2.npc2.quest").status("complete");quest("1.2.npc2.quest").update("update-donated").status("active");npc("npc2").clearIndicators();player().subtractGold(50);player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'request-donation.no'>
+								<phrase>Maybe later...</phrase>
+								<branch id = 'request-donation.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>If you change your mind, [color=special]$[core.player1.name][/color], please let me know!</comment>
+										</line>
+										<line id = 'nag2'>
+											<comment>Please come back if you change your mind, [color=special]$[core.player1.name][/color]!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>
+								I know you couldn't have known that I wanted those shoes, [color=special]$[core.player1.name][/color].  I've been looking at some online auction sites, but I just can't outbid the automated bots that outbid me at the last second of the auction.
+
+If I had a little more gold, I think I could win, though.  Can you help me out yet, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response min-gold = '50' branch-id = 'request-donation.yes'>
+								<phrase>Here you go, [color=special]Jackson[/color].  Have [color=special]50 gold pieces[/color], on me.</phrase>
+							</response>
+							<response branch-id = 'request-donation.no'>
+								<phrase>Maybe later...</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'beta'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Awesome job!  Yeah!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'extorted'>
+							<comment>Why haven&apos;t you completed the [color=special]puzzle room[/color] yet, [color=special]$[core.player1.name][/color]?  I gave you a lot of gold, and I thought you would solve it promptly.</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'default'>
+							<comment>Have you tried to complete the [color=special]puzzle room[/color] yet, [color=special]$[core.player1.name][/color]?  For each and every puzzle room you complete, you get to pick an item as a prize!</comment>
+						</line>
+						<line id = 'nag2' class = 'default'>
+							<comment>If you can complete the [color=special]puzzle room[/color] up there, you can take my [color=special]running shoes[/color] as a prize and return them to me!</comment>
+						</line>
+						<line id = 'nag3' class = 'extorted'>
+							<comment>Hurry up, [color=special]$[core.player1.name][/color].  Finish that [color=special]puzzle room[/color] and bring me my shoes!  I didn&apos;t give you that gold advance out of the goodness of my heart!</comment>
+						</line>
+						<line id = 'nag4' class = 'extorted'>
+							<comment>If you think I will give you more gold if you keep pestering me, you&apos;re wrong, [color=special]$[core.player1.name][/color]!  Bring me my shoes!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:took-shoes'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'default'>
+							<comment>
+								You did it, [color=special]$[core.player1.name][/color]!  You completed the [color=special]puzzle Room[/color], and I see that you have my [color=special]running shoes[/color]!
+
+Please, can I have them now?
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Here you go, [color=special]Jackson[/color].  Enjoy!</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												All right!  I never thought I'd see these beautiful [color=special]running shoes[/color] again, but you got it done!  Please, accept these [color=special]64 gold pieces[/color] as a reward for your hard work!
+
+In addition, I'd like to offer you one of the cool items I've been saving as a quest reward.  I hope you like it!
+											</comment>
+											<post-script>quest("1.2.npc2.quest").status("complete");quest("1.2.npc2.quest").update("update-delivered").status("active");npc("npc2").clearIndicators();player().addGold(64).dropItem("jacksons-running-shoes");player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>These actually look really good on me.  I think I&apos;ll keep them.</phrase>
+								<branch id = 'root.no'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I can&apos;t really blame you, [color=special]$[core.player1.name][/color]. They feel good, they look good!  Of course, I won&apos;t be giving you any gold, seeing as you&apos;ve decided to keep the [color=special]shoes[/color] for yourself...</comment>
+											<post-script>quest("1.2.npc2.quest").status("failed");quest("1.2.npc2.quest").update("update-kept-shoes").status("active");npc("npc2").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+						<line id = 'line2' class = 'extorted'>
+							<comment>
+								You finally solved the [color=special]puzzle room[/color], [color=special]$[core.player1.name][/color]!  I wonder if you would have solved it as quickly if I hadn't given you half of the gold up front, though.
+
+Whatever the answer, I still appreciate your great effort, [color=special]$[core.player1.name][/color]!  Can I have the shoes now?
+							</comment>
+							<response branch-id = 'root.yes-extorted'>
+								<phrase>Here you go, [color=special]Jackson[/color].  Give me the rest of my [color=special]payment[/color].</phrase>
+								<branch id = 'root.yes-extorted'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												Enjoy the remainder of the bounty I promised you, [color=special]32 gold pieces[/color].  Ordinarily I would have thrown in an item, too, but your extortion left a bad taste in my mouth.
+
+Then again, that's nothing a little bit of [color=special]gold[/color] couldn't rinse right out.  What do you think, [color=special]$[core.player1.name][/color]?
+											</comment>
+											<response min-gold = '100' branch-id = 'root.yes-extorted.yes'>
+												<phrase>Reverse extortion, huh?  You win.  I&apos;ll give you [color=special]100 gold pieces[/color] for your [color=special]special item[/color].</phrase>
+												<branch id = 'root.yes-extorted.yes'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>
+																Thanks for your contribution to my gold reserves, [color=special]$[core.player1.name][/color].  I actually make a lot of money this way, goading various travelers into giving me a ton of gold after they hang on to a pair of shoes.
+
+I'm going to need a few minutes to buy another pair for [color=special]5 gold pieces[/color] and plant them in the puzzle room for the next hero that comes along, but first let me give you one of the standard quest reward items!
+															</comment>
+															<post-script>quest("1.2.npc2.quest").update("update-paid-reverse-extortion").status("active");player().subtractGold(100).dropItem("jacksons-running-shoes");player().acquireRandomItem("jacksons-skilful-shovel", "jacksons-clinking-respawn-inhibitor", "jacksons-gum-shoes");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.yes-extorted.pass'>
+												<phrase>Don&apos;t worry about it.</phrase>
+												<branch id = 'root.yes-extorted.pass'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>quest("1.2.npc2.quest").update("update-declined-reverse-extortion").status("active");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<post-script>quest("1.2.npc2.quest").update("update-delivered").status("active");quest("1.2.npc2.quest").status("complete");npc("npc2").clearIndicators();player().addGold(32);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no-extorted'>
+								<phrase>These actually look really good on me.  I think I&apos;ll keep them, along with your down payment.</phrase>
+								<branch id = 'root.no-extorted'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I hear what you&apos;re saying, [color=special]$[core.player1.name][/color], but I don&apos;t like it.  Sadly, I have no real power to make you regret your greed.  Perhaps you&apos;ll use the money you [color=dim]stole[/color] from me to buy a bomb, and then you might blow yourself up with the bomb.  I can only hope!</comment>
+											<post-script>quest("1.2.npc2.quest").status("failed");quest("1.2.npc2.quest").update("update-kept-shoes").status("active");npc("npc2").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:took-other-item'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'controls-uncustomized'>
+							<comment>
+								[color=special]$[core.player1.name][/color], what have you done?!  You didn't pick the right item when you completed the [color=special]puzzle room[/color]!
+
+Maybe if you had taken the time to customize your controls in the [color=special]pause menu[/color] you would have picked the right item, but you've ruined everything now!
+
+You can forget about our agreement!
+							</comment>
+							<post-script>quest("1.2.npc2.quest").status("failed");npc("npc2").clearIndicators();</post-script>
+						</line>
+						<line id = 'line2' class = 'controls-customized'>
+							<comment>
+								[color=special]$[core.player1.name][/color], what have you done?!  You didn't pick the right item when you completed the [color=special]puzzle room[/color]!
+
+Don't try to tell me you didn't know any better, either.  I know you've customized your controls, and you know exactly how they work, [color=special]$[core.player1.name][/color]!
+
+You can forget about our agreement!
+							</comment>
+							<post-script>quest("1.2.npc2.quest").status("failed");npc("npc2").clearIndicators();</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:took-other-item'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I would have given you the gold, [color=special]$[core.player1.name][/color], but you didn&apos;t bring back my [color=special]running shoes[/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>My [color=special]running shoes[/color] would look a lot better on you than whatever other item you selected instead!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You [color=special]still[/color] haven&apos;t customized your controls, [color=special]$[core.player1.name][/color]?  I wonder who will suffer next as you pretend to save us from the [color=dim]Bungeling empire[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Next time you promise to help somebody recover a lost item, [color=special]$[core.player1.name][/color], I hope you can find a way to hold true to your word.  Maybe you need to make some additional customizations to your controls in the [color=special]pause menu[/color], because the settings you chose last time just didn&apos;t get the job done!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:kept-shoes'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I hope you&apos;re making good use of those [color=special]running shoes[/color], [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I remember how [color=special]fast[/color] I used to run while wearing those [color=special]running shoes[/color].  I miss them so much!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Do you realize, [color=special]$[core.player1.name][/color], that I paid a lot of gold pieces to a cobbler to custom fit those shoes for my feet? Wow!  You wouldn&apos;t know anything about [color=special]customization[/color], though, would you?  You haven&apos;t even customized your controls in the [color=special]pause menu[/color] yet!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Do you remember the time you spent customizing your controls in the [color=special]pause menu[/color], [color=special]$[core.player1.name][/color]?  I spent that same amount of time getting a custom fit for those [color=special]shoes[/color] you kept from me!  I really wish you had given them to me!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:donated'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Thanks for that gold you gave me, [color=special]$[core.player1.name][/color]!  I finally won an online auction, meaning I should have some perfect new shoes in a matter of days!</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I thought about asking you for a few more pieces of gold so that I could spring for overnight shipping, but you probably wouldn&apos;t have gone for that.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>When will my new [color=special]shoes[/color] finally get here?  I can hardly wait!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>
+								Thanks for that gold, [color=special]$[core.player1.name][/color].  I need just a little bit more to buy some custom fit shoelaces, though.  If you will give me [color=special]25 gold pieces[/color], then I will tell you where you can customize your controls!
+
+What do you say, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response min-gold = '25' branch-id = 'root.yes'>
+								<phrase>Sure, [color=special]Jackson[/color].  Take this gold!</phrase>
+								<branch id = 'root.yes'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>
+												Thanks a lot, [color=special]$[core.player1.name][/color]!
+
+As I promised, I will now tell you where you can customize your controls.  I wrote it all down somewhere, but I can't remember where I put my journal!  I suspect that if you gave me another [color=special]10 gold pieces[/color] I would immediately remember where I put it!
+											</comment>
+											<response min-gold = '10' branch-id = 'root.yes.sucker'>
+												<phrase>Not a problem, [color=special]Jackson[/color].  Here you go!</phrase>
+												<branch id = 'root.yes.sucker'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>
+																I've found it, [color=special]$[core.player1.name][/color]!  I've found the journal.  I know exactly where I made the note about where you can go to customize your controls, but unfortunately I have a hard time reading in low light conditions.  If you would just give me one more [color=special]gold piece[/color], I could use its shiny aura to help me read this journal entry.
+
+Please help, [color=special]$[core.player1.name][/color]!
+															</comment>
+															<response min-gold = '1' branch-id = 'root.yes.sucker.crazy'>
+																<phrase>I&apos;m happy to help, [color=special]Jackson[/color].</phrase>
+																<branch id = 'root.yes.sucker.crazy'>
+																	<linear />
+																	<nags>
+																		<line id = 'nag1'>
+																			<comment>
+																				Thanks, [color=special]$[core.player1.name][/color].  I can read it easily now!
+
+Listen closely!  You can customize your controls in the [color=special]pause menu[/color].  You can also do it in the [color=special]main menu[/color], but you would have to quit this game session to do that!
+																			</comment>
+																			<pre-script>player().subtractGold(1);</pre-script>
+																		</line>
+																	</nags>
+																</branch>
+															</response>
+															<response min-gold = '50' branch-id = 'root.yes.sucker.crazier'>
+																<phrase>Why stop there, [color=special]Jackson[/color]?  I&apos;ll give you [color=special]50 gold pieces[/color]!</phrase>
+																<branch id = 'root.yes.sucker.crazier'>
+																	<linear />
+																	<nags>
+																		<line id = 'nag1'>
+																			<comment>
+																				You're starting to scare me, [color=special]$[core.player1.name][/color].  I feel like I must have somehow offended your delicate sensibilities, but I promise you that I am only trying to help you to customize your controls!
+
+Here, [color=special]$[core.player1.name][/color].  I'm going to give you all of the gold back right now.  Also, you can customize your controls in the [color=special]pause menu[/color].  You can also do it in the [color=special]main menu[/color], but you would have to quit this game session to do that!
+																			</comment>
+																			<pre-script>player().addGold(35);</pre-script>
+																		</line>
+																	</nags>
+																</branch>
+															</response>
+															<response branch-id = 'root.yes.sucker.no'>
+																<phrase>This ends now, [color=special]Jackson[/color].  No more gold!</phrase>
+																<branch id = 'root.yes.sucker.no'>
+																	<linear />
+																	<nags>
+																		<line id = 'nag1'>
+																			<comment>[color=special]$[core.player1.name][/color], I told you about how much trouble I have reading in these low light conditions.  I don&apos;t think I can read this journal entry.  Unfortunately, you&apos;re going to have to figure out where to customize your controls on your own now!</comment>
+																		</line>
+																	</nags>
+																</branch>
+															</response>
+															<pre-script>player().subtractGold(10);</pre-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.yes.no'>
+												<phrase>I&apos;m not giving you any more gold, [color=special]Jackson[/color].</phrase>
+												<branch id = 'root.yes.no'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>I don&apos;t blame you for giving up now, [color=special]$[core.player1.name][/color].  You probably gave up just as easily when it came time to customize your controls!  Ha ha ha ha ha!</comment>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<pre-script>player().subtractGold(25);</pre-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>No thanks, [color=special]Jackson[/color].  I don&apos;t need help with that!</phrase>
+								<branch id = 'root.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>You already know that you can customize your controls using the [color=special]pause menu[/color], then?  Please don&apos;t tell anybody else!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>
+								You already customized your controls, didn't you, [color=special]$[core.player1.name][/color]?
+
+What a shame.
+
+I had this incredibly [color=special]elaborate discussion[/color] ready -- you would pay me increasing amounts of gold, and in return I would have finally told you that you can customize your controls in the [color=special]pause menu[/color].  Regrettably, you have already customized your controls and thus I can't run that by you.
+
+Have you considered temporarily renaming your [color=special]controls.xml[/color] file and then returning to me once more?
+							</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I love these [color=special]running shoes[/color], [color=special]$[core.player1.name][/color]!  I think they make me a little faster!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>These [color=special]running shoes[/color] make all the difference, [color=special]$[core.player1.name][/color].  Thanks for bringing them back to me!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>[color=special]$[core.player1.name][/color], did I ever tell you that I had these [color=special]shoes[/color] custom fit?  I think that everyone should have the chance to customize things, even the simple things like gameplay controls.  You could probably do that in the [color=special]pause menu[/color] right now!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I wouldn&apos;t have lost so much sleep over these shoes if I hadn&apos;t spent so many gold pieces having them custom fit recently! You probably know exactly what I mean after using the [color=special]pause menu[/color] to custom fit your gameplay controls!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

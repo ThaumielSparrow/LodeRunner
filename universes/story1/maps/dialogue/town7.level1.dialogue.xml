@@ -1,0 +1,210 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'thanks'>
+							<comment>
+								I hear you took care of [color=special]Linus[/color] for me, [color=special]$[core.player1.name][/color].  Great job!
+
+As we previously agreed, I have stocked some cheaper items for you to choose from.
+
+In addition, if I ever need to ruthlessly eliminate another competitor, I will know exactly whom to call!  Ha ha ha!
+							</comment>
+							<post-script>quest("7.1.npc1.quest").status("complete");quest("7.1.npc1.quest").update("update-william-updated-inventory").status("active");npc("npc1").clearIndicators().addIndicator("merchant");npc("npc1").clearVendorInventory();</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'shop'>
+							<comment>Finally, another customer!  Buy something, will ya?</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I want to buy some overpriced items.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc1.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.quest' id = 'quest' class = 'better-deal'>
+								<phrase>What can I do to get a better deal here?</phrase>
+								<branch id = 'root.quest'>
+									<linear>
+										<line redirect = 'root.quest' id = 'line1'>
+											<comment>Have you talked to [color=special]Linus[/color] on the other side of town, [color=special]$[core.player1.name][/color]?  His business is thriving, for reasons unknown to me!  I have repeatedly increased my prices in a desperate attempt to make my products look desirable, but it isn&apos;t working.</comment>
+											<pre-script>quest("7.1.npc1.quest").update("flag-heard-williams-quest").status("active");</pre-script>
+										</line>
+									</linear>
+									<nags>
+										<line id = 'nag1' class = 'prompt'>
+											<comment>Listen, [color=special]$[core.player1.name][/color].  I don&apos;t like to engage in shady business practices, but I have no choice.  If you can get rid of [color=special]Linus[/color] for me, I will find some cheaper items for you.</comment>
+											<response class = 'default' branch-id = 'root.quest.accept'>
+												<phrase>I&apos;ll put it on my todo list.</phrase>
+												<branch id = 'root.quest.accept'>
+													<linear>
+														<line id = 'line1'>
+															<comment>A wise decision, [color=special]$[core.player1.name][/color]!  Check back in when you&apos;ve taken care of business for me.</comment>
+															<post-script>quest("7.1.npc1.quest").status("active");npc("npc1").clearIndicators().addIndicator("merchant");</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response class = 'already-done' branch-id = 'root.quest.already-done'>
+												<phrase>Actually, I got rid of him a long time ago.</phrase>
+												<branch id = 'root.quest.already-done'>
+													<linear>
+														<line id = 'line1'>
+															<comment>You really know how this system operates, don&apos;t you?  In compensation for your efforts, I found some cheaper items for you to browse in my inventory.  Thanks again for helping me to maintain my monopoly!  Ha ha ha!</comment>
+															<post-script>quest("7.1.npc1.quest").status("complete");quest("7.1.npc1.quest").update("update-william-updated-inventory").status("active");npc("npc1").clearIndicators().addIndicator("merchant");npc("npc1").clearVendorInventory();</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response class = 'default' branch-id = 'root.quest.later'>
+												<phrase>I don&apos;t want this on my record right now, William.</phrase>
+												<branch id = 'root.quest.later'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;ll talk to you later...</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2' class = 'shop-cheaper'>
+							<comment>Just like I promised, [color=special]$[core.player1.name][/color]!  Cheaper items!</comment>
+							<response branch-id = 'root.shop-cheaper'>
+								<phrase>I want to buy some cheap, junky items.</phrase>
+								<branch id = 'root.shop-cheaper'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc1.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;ll talk to you later.  Fix your software.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1' class = 'thanks'>
+							<comment>
+								Hi, [color=special]$[core.player1.name][/color], do you have a minute?
+
+I couldn't help but overhear the conversation where [color=special]William[/color] asked you to stamp me out.  Of course, I also saw what you did to him afterward. Personally, I would never ask you to preemptively reformat him instead, but I very much appreciate what you did.
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'shop'>
+							<comment>Good day, [color=special]$[core.player1.name][/color].  I hope you find my inventory worthwhile!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>Let me see your free items.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '50' branch-id = 'root.donate'>
+								<phrase>I&apos;d like to donate [color=special]50 gold[/color] to your platform.</phrase>
+								<branch id = 'root.donate'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks for the donation, [color=special]$[core.player1.name][/color]!  If I can rummage together about [color=special]100 more gold pieces[/color], I can recompile my inventory system to include better items!</comment>
+											<post-script>player().subtractGold(50);</post-script>
+										</line>
+										<line id = 'line2'>
+											<comment>I really appreciate your continued generosity, [color=special]$[core.player1.name][/color]!  I won&apos;t forget your charitibility!  With just [color=special]50 more gold pieces[/color], I will have enough capital to upgrade my inventory.</comment>
+											<post-script>player().subtractGold(50);</post-script>
+										</line>
+										<line id = 'line3'>
+											<comment>At last, [color=special]$[core.player1.name][/color], I have the financial wherewithal to upgrade my inventory!  Make sure to take a look at my newest items when you have time!</comment>
+											<post-script>session("7.2.npc2:finished-donating").set("yes");npc("npc2").clearVendorInventory();player().subtractGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Farewell, Linus.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2' class = 'shop-better'>
+							<comment>Good day, [color=special]$[core.player1.name][/color].  I hope you find my inventory worthwhile!</comment>
+							<response branch-id = 'root.shop-better'>
+								<phrase>Let me see your free upgraded items.</phrase>
+								<branch id = 'root.shop-better'>
+									<linear />
+									<nags>
+										<line transition = '1' id = 'nag1'>
+											<comment />
+											<post-script>map().runScript("npc2.shop");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Farewell, Linus.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

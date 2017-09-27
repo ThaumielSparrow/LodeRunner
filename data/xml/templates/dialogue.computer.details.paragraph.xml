@@ -1,0 +1,41 @@
+<parameters>
+	<data>
+		<parameter>@icon-index</parameter>
+	</data>
+	<text>
+		<parameter>@paragraph-text</parameter>
+	</text>
+</parameters>
+
+<template name = 'dialogue.computer.details.paragraph' version = 'icon'>
+
+    <item disabled = '1'>
+
+        <icon x = '5%' y = '0' index = '@icon-index' />
+        <label x = '15%' y = '0' width = '80%' value = '[color=special]@paragraph-text[/color]' />
+
+    </item>
+
+</template>
+
+
+<template name = 'dialogue.computer.details.paragraph' version = 'no-icon'>
+
+    <item disabled = '1'>
+
+        <label x = '5%' y = '0' width = '90%' value = '@paragraph-text' />
+
+    </item>
+
+</template>
+
+
+<template name = 'dialogue.computer.details.paragraph' version = 'quote'>
+
+    <item disabled = '1'>
+
+        <label x = '5%' y = '0' width = '90%' value = '[color=dim]@paragraph-text[/color]' />
+
+    </item>
+
+</template>

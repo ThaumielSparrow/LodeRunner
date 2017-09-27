@@ -1,0 +1,74 @@
+	<params>
+		<stats.enemies-killed>0</stats.enemies-killed>
+		<stats.bombs-used>0</stats.bombs-used>
+		<stats.skills-used>0</stats.skills-used>
+	</params>
+	<entities>
+		<player rel = 'session data' />
+		<entity status = '2' class = '' name = 'arrow1' alive = '1' corpsed = 'False'>
+			<indicators>
+				<indicator active = '0' name = 'quest-complete' />
+				<indicator active = '0' name = 'merchant' />
+				<indicator active = '0' name = 'target' />
+				<indicator active = '0' name = 'quest-available' />
+			</indicators>
+		</entity>
+		<entity status = '2' class = '' name = 'arrow2' alive = '1' corpsed = 'False'>
+			<indicators>
+				<indicator active = '0' name = 'quest-complete' />
+				<indicator active = '0' name = 'merchant' />
+				<indicator active = '0' name = 'target' />
+				<indicator active = '0' name = 'quest-available' />
+			</indicators>
+		</entity>
+		<entity status = '2' class = '' name = 'arrow3' alive = '1' corpsed = 'False'>
+			<indicators>
+				<indicator active = '0' name = 'quest-complete' />
+				<indicator active = '0' name = 'merchant' />
+				<indicator active = '0' name = 'target' />
+				<indicator active = '0' name = 'quest-available' />
+			</indicators>
+		</entity>
+		<entity status = '1' name = 'gold.uid.0' corpsed = 'False' raw-x = '120' raw-y = '384' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.1' corpsed = 'False' raw-x = '264' raw-y = '120' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.2' corpsed = 'False' raw-x = '240' raw-y = '408' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.3' corpsed = 'False' raw-x = '144' raw-y = '456' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.4' corpsed = 'False' raw-x = '192' raw-y = '240' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.5' corpsed = 'False' raw-x = '240' raw-y = '216' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.6' corpsed = 'False' raw-x = '24' raw-y = '480' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.7' corpsed = 'False' raw-x = '72' raw-y = '288' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.8' corpsed = 'False' raw-x = '96' raw-y = '240' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.9' corpsed = 'False' raw-x = '168' raw-y = '144' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold.uid.10' corpsed = 'False' raw-x = '72' raw-y = '96' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '2' name = 'gold.uid.11' corpsed = 'False' raw-x = '24' raw-y = '168' alive = '1' collected = 'True' class = '' carried = 'True' />
+		<entity status = '2' name = 'gold.uid.12' corpsed = 'False' raw-x = '168' raw-y = '360' alive = '1' collected = 'True' class = '' carried = 'True' />
+		<entity status = '1' name = 'gold.uid.13' corpsed = 'False' raw-x = '0' raw-y = '264' alive = '1' collected = 'False' class = '' carried = 'False' />
+		<entity status = '1' name = 'gold1' corpsed = 'False' raw-x = '144' raw-y = '48' alive = '1' collected = 'False' class = '' carried = 'False' />
+	</entities>
+	<triggers>
+		<trigger active = 'False' name = 'wp.lesson1' />
+		<trigger active = 'False' name = 'wp.lesson2' />
+		<trigger active = 'False' name = 'wp.lesson3' />
+		<trigger active = 'False' name = 'done' />
+	</triggers>
+	<planes>
+		<plane />
+		<plane shift-x = '0' shift-y = '0' slide-y = '624' slide-x = '408' active = '1' name = 'mask' />
+	</planes>
+	<digs>
+		<dig trap-timer = '63' trap-occupants = '0' tx = '12' ty = '23' tile-backup = '222' trap-timer-delay = '0' trap-fill-pattern = '4' tile = '0' />
+	</digs>
+	<ai />
+	<conversations>
+		<npc name = 'arrow1'>
+			<conversation id = 'tutorial'>
+				<branch linear-position = '0' id = 'root'>
+					<line active = '1' unread = '0' id = 'line1' total-reads = '0' />
+					<line active = '1' unread = '0' id = 'line2' total-reads = '0' />
+					<line active = '1' unread = '0' id = 'line3' total-reads = '0' />
+				</branch>
+			</conversation>
+		</npc>
+		<npc name = 'arrow2' />
+		<npc name = 'arrow3' />
+	</conversations>

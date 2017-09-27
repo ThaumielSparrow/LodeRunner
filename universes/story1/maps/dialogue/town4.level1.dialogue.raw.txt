@@ -1,0 +1,24 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' priority = '10'] Look at all of these levers!  If you use them properly, you can access all of the gold on this level!
+
+                [n id = 'nag2' priority = '9'] Do you know that you can complete $every level$ in this game without using a single bomb?
+
+                [n id = 'nag3'] Everyone around here seems to have some kind of problem.  Some guy the other day asked me to deliver a $love letter$ for him!  \
+                                Can you believe that?
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you're going to figure out this lever puzzle, $player$, you might want to customize your controls in the \
+                    $pause menu$ before you begin!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I made a small bet with a friend of mine, $player$.  I bet him that you would never take the time to customize \
+                    your controls, but you proved me wrong.  Please take these $5 gold pieces$.
+
+                    @post-script
+                        player().addGold(5);
+

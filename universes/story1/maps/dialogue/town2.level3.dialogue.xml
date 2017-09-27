@@ -1,0 +1,210 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Welcome to [color=special]Navarra[/color], [color=special]$[core.player1.name][/color].  My name is [color=special]Elizabeth[/color].  I work as a banker, controlling various financial institutions throughout all of [color=special]Lelandria[/color].
+
+I have a lot of money, [color=special]$[core.player1.name][/color], but I'm always looking for more.  Most of the peasants around here don't have much money, but the [color=special]merchants[/color] are really rolling in gold, thanks to the threat of the [color=dim]Bungeling empire[/color].
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								I'd like to get my hands on some of that gold, [color=special]$[core.player1.name][/color].  You can help!  I'd like you to visit at least [color=special]3 merchants[/color] and inform them of a new tax I'm enforcing.  Collect their [color=dim]tithes[/color] and return the gold to me.
+
+I'll make sure to reward you with a very special [color=special]item[/color] when you're done, of course.
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Sure thing, ma&apos;am!</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I like your attitude, [color=special]$[core.player1.name][/color].  If you&apos;d like, you can collect a tithe from every merchant in the game, netting yourself a neat little profit in all of this.  I just need [color=special]3 tithes[/color] to satisfy my lust for gold, though!</comment>
+											<post-script>quest("2.3.npc1.quest").status("active");session("2.3.npc1:tithe-amount").set(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>Throw in some [color=special]free bombs[/color] and you&apos;ve got a deal.</phrase>
+								<branch id = 'root.extort'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I don't do [color=dim]free[/color], [color=special]$[core.player1.name][/color].  Take these [color=special]5 bombs[/color], but now I'll need you to ask for a little bit more gold from each merchant to cover the cost of what I'm giving you.
+
+I do suspect you'll get the job done.
+											</comment>
+											<post-script>quest("2.3.npc1.quest").status("active");quest("2.3.npc1.quest").update("update-extorted").status("active");session("2.3.npc1:tithe-amount").set(75);player().addBombs(5);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Not right now.</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Come back if you change your mind, [color=special]$[core.player1.name][/color].  We can both benefit from this arrangement!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Welcome back, [color=special]$[core.player1.name][/color].  I&apos;m still looking for somebody to collect that new [color=special]tax[/color] for me.  Have you had enough time to think it over?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes.  I&apos;ll collect the taxes for you now.</phrase>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>Throw in some [color=special]free bombs[/color] and you&apos;ve got a deal.</phrase>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Still not ready.</phrase>
+							</response>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Have you made up your mind yet, [color=special]$[core.player1.name][/color]?  You&apos;re definitely not too busy customizing your controls in the [color=special]pause menu[/color] yet.  You must have plenty of spare time, then, to collect that new [color=special]tax[/color] for me!</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes.  I&apos;ll collect the taxes for you now.</phrase>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>Throw in some [color=special]free bombs[/color] and you&apos;ve got a deal.</phrase>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Still not ready.</phrase>
+							</response>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I&apos;m still waiting for your decision, [color=special]$[core.player1.name][/color].  Don&apos;t try to tell me you&apos;re too busy customizing your controls; I can tell you&apos;ve already done that.  Will you finally agree to collect that new [color=special]tax[/color] for me?</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Yes.  I&apos;ll collect the taxes for you now.</phrase>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>Throw in some [color=special]free bombs[/color] and you&apos;ve got a deal.</phrase>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Still not ready.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Keep collecting those tithes, [color=special]$[core.player1.name][/color].  I don&apos;t want those merchants getting so wealthy that they no longer need me to lend them money at high interest rates!</comment>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;m still working on it.  Goodbye.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '150' class = 'pay normal collected0' branch-id = 'root.pay'>
+								<phrase>I didn&apos;t collect any of the tithes yet, but here&apos;s enough gold to make you happy.</phrase>
+							</response>
+							<response min-gold = '100' class = 'pay normal collected1' branch-id = 'root.pay'>
+								<phrase>I only collected one of the tithes, but here&apos;s enough gold to split the difference.</phrase>
+							</response>
+							<response min-gold = '50' class = 'pay normal collected2' branch-id = 'root.pay'>
+								<phrase>I collected two of the tithes, and here&apos;s enough gold to cover the last one.</phrase>
+							</response>
+							<response min-gold = '225' class = 'pay extorted collected0' branch-id = 'root.pay'>
+								<phrase>I didn&apos;t collect any of the tithes yet, but here&apos;s enough gold to make you happy.</phrase>
+							</response>
+							<response min-gold = '150' class = 'pay extorted collected1' branch-id = 'root.pay'>
+								<phrase>I only collected one of the tithes, but here&apos;s enough gold to split the difference.</phrase>
+							</response>
+							<response min-gold = '75' class = 'pay extorted collected2' branch-id = 'root.pay'>
+								<phrase>I collected two of the tithes, and here&apos;s enough gold to cover the last one.</phrase>
+								<branch id = 'root.pay'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												You didn't do the job like I asked, but in the end you have what I wanted.  This gold will do just fine, [color=special]$[core.player1.name][/color]!
+
+I think this [color=special]special item[/color] will suit you very well, a player that likes to take [color=special]shortcuts[/color] to get results quickly.
+											</comment>
+											<post-script>player().acquireRandomItem("elizabeths-shoes-of-fiery-haste", "elizabeths-weighted-hoarder-cuffs", "elizabeths-lazy-magician-wand");map().runScript("npc1.quest-complete");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:collected-tithes'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I see that you&apos;ve collected a number of tithes for me, [color=special]$[core.player1.name][/color].  Do you have the gold on hand?</comment>
+							<response min-gold = '150' branch-id = 'root.done'>
+								<phrase>Here you go, [color=special]Elizabeth[/color].</phrase>
+								<branch id = 'root.done'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Many thanks once again, [color=special]$[core.player1.name][/color], for your hard work on this task.  As we agreed, I have a [color=special]special item[/color] that will suit you very well, a player that takes the time to do a job right.  Enjoy!</comment>
+											<post-script>player().acquireRandomItem("elizabeths-greedy-respawn-inhibitor", "elizabeths-advanced-slagging-glue", "elizabeths-trusty-thief-shovel");map().runScript("npc1.quest-complete");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>I&apos;ll get back to you later, ma&apos;am.</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Suit yourself, [color=special]$[core.player1.name][/color].  Let me know when you have the [color=special]tithes[/color] ready for me.</comment>
+										</line>
+										<line id = 'nag2'>
+											<comment>I need that tithe money, [color=special]$[core.player1.name][/color].  Bring it to me when you have it!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I enjoyed doing business with you, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Thanks for helping me amass more gold, [color=special]$[core.player1.name][/color].  I am always looking for more!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>The merchants around here will file complaints against me when they discover the truth about that phony tax.  Wait until they learn that a player using the default gameplay controls cheated them out of all that gold!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Cheating all of those merchants out of their gold took even less time than customizing your controls, didn&apos;t it, [color=special]$[core.player1.name][/color]? We&apos;ll have to try this again if I make it to the sequel alive!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

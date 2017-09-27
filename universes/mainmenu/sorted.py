@@ -1,0 +1,55 @@
+import os
+import subprocess
+
+s = """snow [ ] 22	135	root.story
+snow [ ] 22	152	root.coop
+snow [ ] 22	169	root.dlc
+snow [ ] 22	186	root.options
+snow [ ] 22	203	root.quit
+
+jungle [ ] 41	135	root.story.new
+jungle [ ] 41	152	root.story.continue
+jungle [ ] 41	169	root.story.back
+
+mines [ ] 60	135	root.coop.host
+mines [ ] 60	152	root.coop.join
+mines [ ] 60	169	root.coop.back
+
+jungle [ ] 79	135	root.options.audio
+jungle [ ] 79	152	root.options.keyboard
+jungle [ ] 79	169	root.options.gamepads
+jungle [ ] 79	186	root.options.back
+
+snow [ ] 98	135	root.options.gamepads.customize
+snow [ ] 98	152	root.options.gamepads.switch
+snow [ ] 98	169	root.options.gamepads.back
+
+mines [ ] 117	135	root.options.gamepads.switch.back
+
+mines [ ] 136	135	root.options.controls.actions.moveleft
+mines [ ] 136	152	root.options.controls.actions.moveright
+mines [ ] 136	169	root.options.controls.actions.moveup
+mines [ ] 136	186	root.options.controls.actions.movedown
+mines [ ] 136	203	root.options.controls.actions.digleft
+mines [ ] 136	220	root.options.controls.actions.digright
+mines [ ] 136	237	root.options.controls.actions.bomb
+mines [ ] 136	254	root.options.controls.actions.suicide
+mines [ ] 136	271	root.options.controls.actions.interact
+mines [ ] 136	288	root.options.controls.actions.useskill1
+mines [ ] 136	305	root.options.controls.actions.useskill2
+mines [ ] 136	322	root.options.controls.actions.doreset
+mines [ ] 136	339	root.options.controls.actions.dosave"""
+
+for line in [line for line in s.split("\n") if line != ""]:
+
+    (a, b) = line.split(" ", 1)
+    y = b.split("\t")[-1]
+
+    theme = a
+    filename = "universes/mainmenu/maps/%s.bg.xml" % y
+
+    print (theme, filename)
+
+    subprocess.Popen([
+        "background.generator.py", "-i", filename, "-theme", theme
+    ])

@@ -1,0 +1,355 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'bombs']
+
+            >>> root
+
+                [l id = 'line1' class = 'killed-erich'] $player$, I want to take a moment to thank you for protecting me from $Erich$.  He has been trying to shut my business down ever since I introduced my bulk rate prices.
+                    -redirect root
+
+                [n id = 'nag1'] Thanks for stopping by, $player$.  I believe in selling things in bulk to save you money.  Take a look!
+
+                    +shop I'd like to look at your bombs.
+
+                        >>> root.shop
+
+                            [n id = 'nag1'] How many would you like, $player$?
+
+                                +buy10[min-gold = '50'] I'll take $10 bombs$ for 50 gold.
+
+                                    >>> root.shop.buy10
+
+                                        [n id = 'nag1'] Thanks for shopping, $player$.  Come back anytime!
+                                            @post-script
+                                                player().subtractGold(50).addBombs(10);
+                                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "Rebecca", "@g": 50 });
+
+                                +buy25[min-gold = '100'] I'll take $25 bombs$ for 100 gold.
+
+                                    >>> root.shop.buy25
+
+                                        [n id = 'nag1'] Wow, $player$, you really like to use bombs!  I hope these last a long time for you!
+                                            @post-script
+                                                player().subtractGold(100).addBombs(25);
+                                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "25 bombs", "@n": "Rebecca", "@g": 100 });
+
+                                +none Not right now...
+
+                                    >>> root.shop.none
+
+                                        [n id = 'nag1']
+
+                    +bye Have a good one...
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Do you know that I used to run my own $bomb$ selling business, $player$?
+
+                    Yes, before $Rebecca$ and her bulk discounts, I sold individual bombs at cost.  I couldn't compete with her, though, and I had to close my doors!
+
+                    With the recent invasion by the ^Bungeling empire^, though, I really want to get back into business, to capitalize on the high demand for bombs...
+                    -redirect root
+
+                [l id = 'line2' class = 'prompt'] $player$, I won't lie to you.  I charge more than $Rebecca$ charges for bombs.  A lot more.  Promise to take her down for me, though, and I'll give you $15 free bombs$ to get you started.
+
+                    I'd like to give you time to think this over, $player$, but you know how business works.  I need to know what you're thinking...
+
+                    +already-done[class = 'already-done'] Oh, $her$?  I already sent her packing, man.
+
+                        >>> root.already-done
+
+                            [l id = 'line1'] Ordinarily I would question the logic of blowing people up without any given incentive.  In this case though, it worked out great for me, so who cares!?
+
+                                Please enjoy these $15 free bombs$, and come back any time to buy more, $player$!
+
+                                @post-script
+                                    quest("3.1.npc2.quest").status("complete");
+                                    quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");
+                                    npc("npc2").clearIndicators().addIndicator("merchant");
+                                    player().addBombs(15);
+                                    addHistoricalRecordUsingLabel("purchases", "received-m-from-n-for-s:message", { "@m": "15 free bombs", "@n": "Erich", "@s": "killing Rebecca before he even asked you to do so" });
+
+                    +accept[class = 'default'] I'll go take care of her immediately.
+
+                        >>> root.accept
+
+                            [l id = 'line1'] Wonderful news!  Once you've taken care of business for me, stop back by and I'll give you those $15 free bombs$.
+
+                                @post-script
+                                    quest("3.1.npc2.quest").status("active");
+
+                    +reject[class = 'default'] I'm sorry, $Erich$, but I don't care to help you.  Not now, not ever.
+
+                        >>> root.reject
+
+                            [l id = 'line1'] That's a shame, $player$, but I won't question your reasons.  I will make you one more offer, though.
+
+                                I have $27 bombs$ left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell \
+                                the lot of them to you for $175 gold pieces$.  What do you say, $player$?  $27 bombs$ for $175 gold$?
+
+                                @pre-script
+                                    session("3.1.npc2.quest:liquidation-price").set(175);
+
+                                +yes[id = 'buy' min-gold = '175'] Here you go, $Erich$.  I'll take them.
+
+                                    >>> root.reject.yes
+
+                                        [l id = 'line1'] Thanks for helping me out at least a little bit, $player$.  I still wish you would have agreed to \
+                                            get rid of $Rebecca$ for me.  You do have ^27 more bombs^ now, you know...
+
+                                            @post-script
+                                                quest("3.1.npc2.quest").status("complete");
+                                                quest("3.1.npc2.quest").update("update-rejected").status("active");
+                                                quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");
+                                                npc("npc2").clearIndicators();
+                                                player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);
+                                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price]" });
+
+                                +pass I can't spare that kind of gold right now, $Erich$.  Maybe later.
+
+                                    >>> root.reject.pass
+
+                                        [n id = 'nag1']
+
+                                            @post-script
+                                                quest("3.1.npc2.quest").status("active");
+                                                quest("3.1.npc2.quest").update("update-rejected").status("active");
+                                                quest("3.1.npc2.quest").update("update-rejected:left-bombs").status("active");
+                                                quest("3.1.npc2.quest").update("update-erich-requested-liquidation").status("active");
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Let me know when you're taken care of $Rebecca$ for me, $player$.  I'll understand if you want to buy some of her bulk-priced inventory first.
+
+                [n id = 'nag2'] I can't wait until you put $Rebecca$ out of business.  Maybe you can buy one of her bombs and then blow her up with it!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] $player$, I notice that you haven't customized your controls in the $pause menu$ yet.  If you didn't \
+                    already know how to $drop a bomb$, you can press $@bomb$ to do so.  $Bombs$ easily kill anything in their immediate vicinity.  You can test one out on $Rebecca$ to see!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I can see that you already know how to drop a $bomb$.  Do you ever worry that your $@bomb$ input isn't working \
+                    properly?  You should probably go test it out near $Rebecca$ to double check!
+
+
+
+        @conversation[id = 'quest:in-progress:killed-rebecca']
+
+            >>> root
+
+                [l id = 'line1'] I heard everything from down here, $player$!  Now that you've cleared out my aggressive competition, I can freely market \
+                    by bombs without worrying about people getting good deals across town.
+
+                    You can stop by any time you'd like, $player$.  Also, do make good use of these $15 free bombs$ I promised you!
+
+                    @post-script
+                        quest("3.1.npc2.quest").status("complete");
+                        quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");
+                        npc("npc2").clearIndicators().addIndicator("merchant");
+                        player().addBombs(15);
+
+
+        @conversation[id = 'quest:failed:liquidated']
+
+            >>> root
+
+                [n id = 'nag1'] I could have made a lot more money off of those bombs if you'd taken care of $Rebecca$ for me, $player$.
+
+                [n id = 'nag2'] Every time I see $Rebecca$ make a sale, I can't help but to think that I could be making that sale for more money.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you had done what I wanted, I would have charged you a little extra gold when I started selling bombs.  I've \
+                    noticed that people who don't customize their controls in the $pause menu$ don't pay much attention to prices, either!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] When I first met you, I thought I had finally met someone who understood how to get a business off the ground.  Not \
+                    a lot of people take the time to customize their controls in the $pause menu$, but you did!
+
+                    I misjudged you, though.  If you had used your skills to eliminate $Rebecca$, I would have nearly as much gold as the ^Bungeling emperor^ himself by now!
+
+
+        @conversation[id = 'quest:failed:liquidated:killed-rebecca']
+
+            >>> root
+
+                [l id = 'line1'] I don't understand you, $player$.  You originally rejected my plan to get rid of $Rebecca$, then you bought out my entire unused inventory.
+
+                    After all of that, you changed your mind and got rid of her anyway!  If I hadn't liquidated my bomb supply, I could get right back in business!
+
+                [n id = 'nag1'] I hope you're making good use of my bombs, $player$.  I wish I still had some.
+
+                [n id = 'nag2'] Make me proud, $player$.  If I can't sell bombs, then at least $Rebecca$ can't sell bombs anymore either.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Your confusing behavior during this job, $player$, makes me wonder if you're struggling with the default gameplay \
+                    controls.  Maybe you need to customize them in the $pause menu$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Your psychotic behavior during this job, $player$, makes me wonder if you need to spend some more time customizing your \
+                    gameplay controls in the $pause menu$.  I don't know what else could explain your puzzling indecision!
+
+
+        @conversation[id = 'quest:failed:not-liquidated']
+
+            >>> root
+
+                [l id = 'line1'] $player$, have you decided to reconsider my offer yet?
+
+                    I still have $27 bombs$ left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell \
+                    the lot of them to you for $149 gold pieces$.
+
+                    That's a generous discount from my previous offer.  I can't imagine I'd lower it any further.  What do you say, $player$?  $27 bombs$ for $149 gold$?
+
+                    @post-script
+                        session("3.1.npc2.quest:liquidation-price").set(149);
+
+                    +buy[id = 'buy' min-gold = '149'] Here you go, $Erich$.  I'll take them.
+
+                        >>> root.buy
+
+                            [l id = 'line1'] Thanks for helping me out at least a little bit, $player$.  I still wish you would have agreed to \
+                                get rid of $Rebecca$ for me.  You do have ^27 more bombs^ now, you know...
+
+                                @post-script
+                                    quest("3.1.npc2.quest").status("complete");
+                                    quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);
+                                    addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price]" });
+
+
+                    +pass I'm still not interested.
+
+                        >>> root.pass
+
+                            [n id = 'nag1']
+
+
+                [l id = 'line2'] $player$, I'm still offering that old inventory for sale.  I'm going to have to offer you a serious discount to get you to buy them, apparently.
+
+                    I still have $27 bombs$ left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell \
+                    the lot of them to you for $109 gold pieces$.
+
+                    That's a huge discount from my previous offers.  I can't imagine I'd lower it any further, for real.  What do you say, $player$?  $27 bombs$ for $109 gold$?
+
+                    @post-script
+                        session("3.1.npc2.quest:liquidation-price").set(109);
+
+                    +buy[id = 'buy' min-gold = '109'] Here you go, $Erich$.  I'll take them.
+
+                    +pass I'm still not interested.  Keep trying, though.
+
+
+                [l id = 'line3'] $player$, you know the deal by now.  I'm offering $27 bombs$, unsold from my previous time as a bomb merchant.  You can have them all \
+                    for only $50 gold pieces$.
+
+                    I can't imagine I'd lower that price any further.  Don't play with me, $player$.  I'm offering you an incredible deal, and you'd better take it right now.
+
+                    @post-script
+                        session("3.1.npc2.quest:liquidation-price").set(50);
+
+                    +buy[id = 'buy' min-gold = '50'] Here you go, $Erich$.  I'll take them.
+
+                    +pass I'm still not interested.  Give me a better deal.
+
+                [n id = 'nag1'] I told you, $player$.  I told you I wouldn't give you a better deal than the last one.  I was offering you $27 bombs$ for less than $2 gold each$, on average! \
+                    And you spat it in my face!
+
+                    I've decided to jack up the price to $1000 gold$ for the $27 bombs$.  What do you think, $player$?  Sound about right?
+
+                    @post-script
+                        session("3.1.npc2.quest:liquidation-price").set(1000);
+
+                    +buy-rich[id = 'buy' min-gold = '1000'] Here you go, $Erich$.  I'm sorry for snubbing your previous offers.
+
+                        >>> root.buy-rich
+
+                            [l id = 'line1'] I can't believe you fell for it, $player$!  Everyone called me crazy.  They said no one would ever pay so much money for bombs, but just one spendy customer \
+                                makes all the difference!
+
+                                Of course, I'd love to keep you as a repeat customer.  To butter you up, I'm throwing in this $very rare item$ as a special thank you for your cavalier \
+                                approach to gold management.  Thanks again!
+
+                                @post-script
+                                    quest("3.1.npc2.quest").status("complete");
+                                    quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");
+                                    npc("npc2").clearIndicators();
+                                    player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);
+                                    player().acquireItem("erichs-ultimate-pearl-of-extortion");
+                                    addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price] (Ouch!)" });
+
+                    +pass I'm still not interested.
+
+
+        @conversation[id = 'quest:failed:not-liquidated:killed-rebecca']
+
+            >>> root
+
+                [l id = 'line1'] $player$, you came through for me after all!  I can't make good on that free bombs thing we talked about, but I'll happily let you take a look at my bomb sales any time!
+
+                    @post-script
+                        quest("3.1.npc2.quest").status("complete");
+                        quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");
+                        npc("npc2").clearIndicators().addIndicator("merchant");
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] I'm rolling in the dough at these prices, $player$!
+
+                    +buy1[min-gold = '25'] I'll take one bomb for $25 gold$.
+
+                        >>> root.x
+
+                            [n id = 'nag1'] test
+
+                        >>> root.buy1
+
+                            [n id = 'nag1'] Thanks for the gold, $player$!  Here's your bomb!
+                                -redirect root.bought1
+
+                            [n id = 'nag2'] Much appreciated, $player$!  Enjoy your bomb!
+                                -redirect root.bought1
+
+                        >>> root.bought1
+
+                            [n id = 'nag1']
+                                @post-script
+                                    player().subtractGold(25).addBombs(1);
+                                    addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "1 bomb", "@n": "Erich", "@g": "25" });
+
+                    +buy2[min-gold = '49'] Give me two bombs for $49 gold$.
+
+                        >>> root.buy2
+
+                            [n id = 'nag1'] Everyone loves a bulk discount, right?  Here's your 2 bombs!
+                                -redirect root.bought2
+
+                            [n id = 'nag2'] Thanks for buying 2 this time, $player$!
+                                -redirect root.bought2
+
+                        >>> root.bought2
+
+                            [n id = 'nag1']
+                                @post-script
+                                    player().subtractGold(49).addBombs(2);
+                                    addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "2 bombs", "@n": "Erich", "@g": "49" });
+
+                    +bye I'll buy my bombs somewhere else.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+

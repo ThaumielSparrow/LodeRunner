@@ -1,0 +1,115 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' center-vertically = '1' uses-focus = '1'>
+
+        <item-group render-border = '0'>
+
+            <item class = 'first-title' id = 'testid1' rel = 'root.options.audio'>
+                <hidden id = 'replay-file' rel = 'root.options.audio.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Audio Settings' />
+                </stack>
+                <action do = 'show:audio-settings' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Volume preferences...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+            </item>
+
+            <item class = 'title' id = 'testid4' rel = 'root.options.display'>
+                <hidden id = 'replay-file' rel = 'root.options.display.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Display Settings' />
+                </stack>
+                <action do = 'show:display-settings' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid4'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Fullscreen preference...' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+            </item>
+
+            <item class = 'title' id = 'testid2' rel = 'root.options.keyboard'>
+                <hidden id = 'replay-file' rel = 'root.options.keyboard.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Keyboard' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.options.controls.keyboard2' keyboard-translations = 'on' rel = 'root.options.controls.actions.moveleft' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid2'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Customize keys...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+            </item>
+
+            <item class = 'title' id = 'testid3' rel = 'root.options.gamepads'>
+                <hidden id = 'replay-file' rel = 'root.options.gamepads.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Gamepads' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.options.gamepads' rel = 'root.options.gamepads.customize' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Configure gamepad(s)...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+            </item>
+
+            <item class = 'title' id = 'testid6' rel = 'root.options.language'>
+                <hidden id = 'replay-file' rel = 'root.options.language.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Language' />
+                </stack>
+                <action do = 'show:language-settings' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid6'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Select your language...' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid5' rel = 'root.options.back'>
+                <hidden id = 'replay-file' rel = 'root.options.back.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' />
+                </stack>
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid5'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Main Menu...' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

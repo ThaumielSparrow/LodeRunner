@@ -1,0 +1,252 @@
+<primary-map name = 'gifs.movement.sprint' />
+<maps>
+    <background />
+    <foreground>
+	    <map name = 'gifs.movement.matrix' title = 'Untitled Area' x = '3' y = '3' width = '16' height = '19' gold-count = '3' />
+	    <map name = 'gifs.movement.sprint' title = 'Untitled Area' x = '-3' y = '26' width = '31' height = '10' gold-count = '4' />
+	    <map name = 'gifs.laser.jackhammer' title = 'Untitled Area' x = '51' y = '7' width = '22' height = '14' gold-count = '5' />
+	    <map name = 'gifs.bombs.mega' title = 'Untitled Area' x = '24' y = '52' width = '17' height = '14' gold-count = '5' />
+	    <map name = 'gifs.bombs.remote' title = 'Untitled Area' x = '-77' y = '14' width = '23' height = '13' gold-count = '4' />
+	    <map name = 'gifs.shields.bomb' title = 'Untitled Area' x = '62' y = '44' width = '18' height = '15' gold-count = '6' />
+	    <map name = 'anewmap1' title = 'Untitled Area' x = '108' y = '9' width = '10' height = '10' gold-count = '3' />
+	    <map name = 'gifs.control.persuasion' title = 'Untitled Area' x = '-51' y = '12' width = '20' height = '15' gold-count = '4' />
+	    <map name = 'gifs.stealth.invisibility' title = 'Untitled Area' x = '-27' y = '14' width = '21' height = '15' gold-count = '4' />
+	    <map name = 'gifs.control.hacking' title = 'Untitled Area' x = '4' y = '41' width = '15' height = '12' gold-count = '4' />
+	    <map name = 'gifs.shields.wall' title = 'Untitled Area' x = '80' y = '-15' width = '15' height = '15' gold-count = '5' />
+	    <map name = 'gifs.shields.personal' title = 'Untitled Area' x = '33' y = '34' width = '22' height = '16' gold-count = '4' />
+	    <map name = 'gifs.deception.hologram' title = 'Untitled Area' x = '27' y = '3' width = '21' height = '15' gold-count = '5' />
+	    <map name = 'coop.loop.1' title = 'Untitled Area' x = '106' y = '39' width = '15' height = '10' gold-count = '3' />
+	    <map name = 'tiletests' title = 'Untitled Area' x = '83' y = '23' width = '21' height = '24' gold-count = '0' />
+	    <map name = 'gifs.deception.fright' title = 'Untitled Area' x = '31' y = '18' width = '18' height = '15' gold-count = '5' />
+	    <map name = 'gifs.stealth.pickpocket' title = 'Untitled Area' x = '83' y = '48' width = '17' height = '15' gold-count = '5' />
+	    <map name = 'gifs.laser.earthmover' title = 'Untitled Area' x = '57' y = '26' width = '25' height = '15' gold-count = '5' />
+	    <map name = 'particletest' title = 'Untitled Area' x = '90' y = '2' width = '18' height = '17' gold-count = '3' />
+	    <map name = 'gifs.covert.disguise' title = 'Untitled Area' x = '-23' y = '37' width = '19' height = '14' gold-count = '4' />
+	    <map name = 'coop.loop.2' title = 'Untitled Area' x = '124' y = '39' width = '17' height = '10' gold-count = '3' />
+	    <map name = 'coop.loop.3' title = 'Untitled Area' x = '105' y = '51' width = '10' height = '10' gold-count = '0' />
+	    <map name = 'coop.loop.4' title = 'Untitled Area' x = '127' y = '56' width = '10' height = '10' gold-count = '0' />
+    </foreground>
+</maps>
+<session>
+	<variable key = 'app.active-map-name' default = '' value = 'coop.loop.2' />
+    <variable key = 'core.is-gif' default = '1' value = '1' />
+	<variable key = 'core.player1.skill1' default = '' value = 'sprint' />
+	<variable key = 'core.skills.matrix:timer-drain' default = '0' value = '0' />
+	<variable key = 'app.transition.from.waypoint' default = '' value = '' />
+	<variable key = 'net.player-limit' default = '4' value = '4' />
+	<variable key = 'core.skills.invisibility:locked' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-tile-fill' default = '' value = '1' />
+	<variable key = 'core.skills.persuasion:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking' default = '0' value = '1' />
+	<variable key = 'core.player1.cause-of-death' default = '' value = '' />
+	<variable key = 'core.skills.sprint:lastused' default = '0' value = '0' />
+	<variable key = 'core.player1.skill1:changed' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:locked' default = '0' value = '0' />
+	<variable key = 'app.transition.to.map' default = '' value = '' />
+	<variable key = 'core.skills.fright:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.player1.xp' default = '0' value = '0' />
+	<variable key = 'core.player1.skill2' default = '' value = 'remote-bomb' />
+	<variable key = 'core.skills.bomb-shield:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.timer' default = '0' value = '0' />
+	<variable key = 'core.login-succeeded' default = 'no' value = 'no' />
+	<variable key = 'core.skills.diguise:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'app.transition.from.map' default = '' value = '' />
+	<variable key = 'core.skills.disguise:timer' default = '0' value = '0' />
+	<variable key = 'net.player3.nick' default = 'mike3' value = 'mike3' />
+	<variable key = 'core.skills.diguise:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:locked' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.percent-old' default = '0.0' value = '0.0' />
+	<variable key = 'core.skills.pickpocket:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket' default = '0' value = '0' />
+	<variable key = 'net.player4.joined' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise' default = '0' value = '1' />
+	<variable key = 'net.game-in-progress' default = '0' value = '0' />
+	<variable key = 'core.player1.y' default = '0' value = '0' />
+	<variable key = 'core.player1.x' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion' default = '0' value = '0' />
+	<variable key = 'core.dialogue-response' default = '' value = '' />
+	<variable key = 'core.constants.death-by-enemy' default = '' value = '2' />
+	<variable key = 'core.skills.hacking:locked' default = '0' value = '0' />
+	<variable key = 'core.gold.wallet' default = '0' value = '25' />
+	<variable key = 'net.player1.joined' default = '1' value = '1' />
+	<variable key = 'core.skills.sprint:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:timer-max' default = '0' value = '0' />
+	<variable key = 'net.player1.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb' default = '0' value = '1' />
+	<variable key = 'core.skills.personal-shield:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:timer-max' default = '0' value = '0' />
+	<variable key = 'net.player3.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:lastused' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:locked' default = '0' value = '0' />
+	<variable key = 'core.player1.name' default = 'player1' value = 'mike' />
+	<variable key = 'core.skills.wall:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.player4.nick' default = 'mike4' value = 'mike4' />
+	<variable key = 'core.skills.matrix:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:lastused' default = '0' value = '0' />
+	<variable key = 'app.transition.to.waypoint' default = '' value = '' />
+	<variable key = 'app.rebuild-response-menu' default = '0' value = '0' />
+	<variable key = 'app.quests.inactive' default = 'inactive' value = 'inactive' />
+	<variable key = 'core.skills.disguise:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer-max' default = '0' value = '0' />
+	<variable key = 'core.player1.skill-points' default = '0' value = '10' />
+	<variable key = 'core.skills.pickpocket:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:timer-max' default = '0' value = '0' />
+	<variable key = 'core.last-safe-zone.title' default = '' value = '' />
+	<variable key = 'core.skills.earth-mover' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.player1.inventory-size' default = '2' value = '2' />
+	<variable key = 'core.skills.fright:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:recharge-potential' default = '0' value = '0' />
+	<variable key = 'app.transition.from.player-x' default = '' value = '' />
+	<variable key = 'app.transition.from.player-y' default = '' value = '' />
+	<variable key = 'core.skills.wall:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.player-id' default = '1' value = '1' />
+	<variable key = 'core.skills.mega-bomb:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:locked' default = '0' value = '0' />
+	<variable key = 'core.time' default = '0' value = '1356836958' />
+	<variable key = 'core.skills.remote-bomb:locked' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.message' default = '' value = '' />
+	<variable key = 'core.last-safe-zone.map' default = '' value = '' />
+	<variable key = 'core.skills.earth-mover:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:bombs-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.fright' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:lastused' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-vaporization' default = '' value = '7' />
+	<variable key = 'core.skills.jackhammer:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:locked' default = '0' value = '0' />
+	<variable key = 'core.player1.skill2:changed' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield' default = '0' value = '0' />
+	<variable key = 'core.gold.found' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:power-drain-while-motionless' default = '' value = '' />
+	<variable key = 'core.skills.pickpocket:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.y' default = '0' value = '0' />
+	<variable key = 'core.x' default = '0' value = '0' />
+	<variable key = 'core.z' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:lastused' default = '0' value = '0' />
+	<variable key = 'net.player2.nick' default = 'mike2' value = 'mike2' />
+	<variable key = 'app.quests.complete' default = 'complete' value = 'complete' />
+	<variable key = 'core.skills.sprint' default = '0' value = '1' />
+	<variable key = 'core.constants.death-by-planar-shift' default = '' value = '3' />
+	<variable key = 'core.skills.disguise:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.percent-new' default = '0.0' value = '0.0' />
+	<variable key = 'core.skills.mega-bomb:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.rebuild-intro-menu' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer-max' default = '0' value = '0' />
+	<variable key = 'net.player4.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'app.load-from-folder' default = '' value = '' />
+	<variable key = 'core.skills.matrix:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.player2.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer-drain' default = '0' value = '0' />
+	<variable key = 'app.quests.active' default = 'active' value = 'active' />
+	<variable key = 'net.player3.joined' default = '0' value = '0' />
+	<variable key = 'net.player1.nick' default = 'mike' value = 'mike' />
+	<variable key = 'core.bombs.count' default = '0' value = '5' />
+	<variable key = 'core.skills.mega-bomb:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.wall' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.diguise' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-bomb' default = '' value = '6' />
+	<variable key = 'core.skills.earth-mover:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer' default = '0' value = '0' />
+	<variable key = 'algebra.z' default = '0' value = '0' />
+	<variable key = 'algebra.y' default = '0' value = '' />
+	<variable key = 'algebra.x' default = '0' value = '1' />
+	<variable key = 'core.constants.death-by-out-of-bounds' default = '' value = '4' />
+	<variable key = 'core.skills.personal-shield:locked' default = '0' value = '0' />
+	<variable key = 'core.chapter' default = '1' value = '1' />
+	<variable key = 'core.skills.persuasion:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.is-dummy-session' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-deadly-tile' default = '' value = '5' />
+	<variable key = 'core.skills.sprint:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:power-drain' default = '' value = '' />
+	<variable key = 'core.skills.invisibility:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer-drain' default = '0' value = '0' />
+	<variable key = 'net.player2.joined' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.player1.level' default = '1' value = '2' />
+</session>
+<quests>
+</quests>
+<items>
+</items>

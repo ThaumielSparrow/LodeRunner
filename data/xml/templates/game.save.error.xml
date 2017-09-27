@@ -1,0 +1,48 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@error</parameter>
+	</text>
+</parameters>
+
+<template name = 'game.save.error'>
+
+    <rowmenu id = 'alert' class = 'alert' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Error' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'line-break' disabled = '1'>
+
+                <stack class = 'frame'>
+                    <label class = 'line-break' x = '5%' y = '0' width = '90%' value = 'Your save attempt failed.' />
+
+                    <label x = '5%' y = '0' width = '90%' value = 'Title:  [color=special]@title[/color]' />
+                    <label x = '5%' y = '0' width = '90%' value = 'Error:  [color=special]@error[/color]' />
+                </stack>
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '15%' y = '0' width = '75%' value = 'Ok' />
+                <action do = 'back' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,123 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 234 0 0 0 0 0 147 147 0 0 0 232 209 0 0 
+			0 0 0 0 116 117 0 0 208 0 116 117 119 0 0 0 119 117 0 0 
+			0 0 148 151 0 0 0 0 119 119 96 153 219 217 219 217 218 99 0 0 
+			0 0 117 119 0 0 0 150 147 0 0 152 0 0 0 0 0 0 0 0 
+			0 0 96 154 219 218 154 111 119 117 110 111 118 0 0 148 0 232 0 0 
+			0 0 0 153 0 0 153 0 0 0 0 210 98 116 217 117 116 119 0 0 
+			0 0 117 153 0 116 119 119 110 153 0 116 99 0 0 210 0 0 0 0 
+			0 0 96 152 117 97 0 0 0 153 0 99 0 119 0 116 119 152 0 0 
+			0 0 96 154 0 99 154 111 118 118 0 0 0 96 0 96 96 153 0 0 
+			0 0 0 153 0 0 154 0 0 0 0 0 116 99 0 0 0 153 0 0 
+			0 0 209 152 150 154 118 154 232 218 219 0 149 147 150 231 0 153 147 0 
+			0 0 116 119 117 117 98 119 119 0 0 116 117 110 118 119 111 116 117 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 0 302 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 302 0 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 302 0 0 300 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '15' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '16' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '14' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '12' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '11' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '4' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '9' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '2' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '10' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '18' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '8' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "Although you cannot crawl under these bridges, you can dig the tiles beneath them.",
+            "tooltip": "Collect all of the gold to earn a new item.",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["jacksons-running-shoes"]
+        });
+
+        showPuzzleIntro();
+	</script>
+    <script name = 'oncomplete'>
+
+        #define QUEST "1.2.npc2.quest"
+
+        #define UPDATE_TOOK_SHOES "update-took-shoes"
+        #define UPDATE_TOOK_OTHER "update-took-other"
+        #define UPDATE_TOOK_OTHER_UNKNOWINGLY "update-took-other-unknowingly"
+
+        // Did the player take the running shoes?
+        if ( player().hasItem("jacksons-running-shoes") )
+        {
+            // Update quest
+            quest(QUEST).update(UPDATE_TOOK_SHOES).status("active");
+        }
+
+        // Nope, took something else.
+        else
+        {
+            // Did the player know better?
+            if ( quest(QUEST).status() == "active" )
+            {
+                // Update quest, bad greedy choice
+                quest(QUEST).update(UPDATE_TOOK_OTHER).status("active");
+            }
+
+            // No, they had no fair warning
+            else
+            {
+                quest(QUEST).update(UPDATE_TOOK_OTHER_UNKNOWINGLY).status("active");
+            }
+        }
+
+    </script>
+</scripts>

@@ -1,0 +1,16 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'generic.wrappers.directory'>
+
+    <item-group id = 'ext.members' render-border = '0'>
+        <item id = 'spacer' disabled = '1' />
+    </item-group>
+
+</template>

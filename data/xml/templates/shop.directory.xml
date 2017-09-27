@@ -1,0 +1,138 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@shop-title</parameter>
+		<parameter>@salutation</parameter>
+	</text>
+</parameters>
+
+<template name = 'shop.directory' version = 'out-of-items'>
+
+    <rowmenu id = 'menu' class = 'shop-directory' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' valign = 'top' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = '@shop-title' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <label x = '17%' y = '5' width = '80%' value = 'Unfortunately, I am currently out of inventory.  Please check back later!' />
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Shop Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '5' width = '90%' value = 'Leave Shop' />
+                    <label class = 'subtitle' x = '17%' y = '5' width = '90%' value = 'Out of Stock' />
+                </stack>
+
+                <action do = 'resume-game' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'shop.directory' version = 'default'>
+
+    <rowmenu id = 'menu' class = 'shop-directory' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' valign = 'top' uses-focus = '1' uses-scroll = '1'>
+
+        <x>
+                <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                    <item disabled = '1' class = 'title-bar' fill = 'always'>
+                        <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                        <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = '@shop-title' />
+                    </item>
+
+                </item-group>
+
+                <item-group render-border = '1'>
+
+                    <item disabled = '1' class = 'frame'>
+                        <label x = '5%' y = '0' width = '90%' value = '@salutation' />
+                    </item>
+
+                </item-group>
+
+        <item id = 'spacer' disabled = '1' class = 'line-break' />
+        </x>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Available Inventory' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.inventory' class = 'options' render-border = '1' />
+
+
+        <item id = 'spacer' disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Additional Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+<contents>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Leave Shop' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Say Goodbye' />
+                </stack>
+
+                <action do = 'resume-game' />
+</contents>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,48 @@
+earth-mover.xml
+Press @key to dig [color=title]2[/color] tiles horizontally in the direction you are facing.
+Press @key to dig [color=title]3[/color] tiles horizontally in the direction you are facing.
+Press @key to dig [color=title]3[/color] tiles horizontally in the direction you are facing.
+fright.xml
+Press @key to momentarily frighten all enemies, causing them to flee in fear.
+Press @key to momentarily frighten all enemies, causing them to flee in great fear!
+Press @key to momentarily frighten all enemies, causing them to flee in terrible fear and possibly [color=title]explode[/color]!
+hologram.xml
+Press @key to deploy a temporary hologram that runs in the direction you are facing.
+Press @key to deploy a hologram that will [color=title]collect any gold[/color] it touches.
+Press @key to deploy a hologram that collects gold and [color=title]explodes into walls[/color]!
+invisibility.xml
+Press @key to become invisible for a blink of an eye.  Enemies will seek your last known position.
+Press @key to become invisible for a short time.  Enemies continue to seek your last known position.
+Press @key to become invisible for a modest duration.  Enemies always seek your last known position.
+jackhammer.xml
+Press @key to dig [color=title]2[/color] tiles vertically in the direction you are facing.
+Press @key to dig [color=title]3[/color] tiles vertically in the direction you are facing.
+Press @key to dig [color=title]3[/color] tiles vertically in the direction you are facing.
+matrix.xml
+Press @key to enter matrix mode.  Enemies will move in slow motion.
+Press @key to enter matrix mode.  Enemies will move in slow motion.
+Press @key to enter matrix mode.  [color=title]Nearby[/color] enemies will completely freeze!
+mega-bomb.xml
+Press @key to create a mega bomb in the direction you are facing.  This requires [color=title]2[/color] bombs.
+Press @key to create a mega bomb in the direction you are facing.  This now requires only [color=title]1[/color] bomb.
+Press @key to create a monster mega bomb.  This will require [color=title]3[/color] bombs!
+personal-shield.xml
+Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.
+Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.
+Press @key to activate a personal shield.  It protects you from all forms of damage for a limited time.
+pickpocket.xml
+Press @key to make a pickpocket attempt.  You will instantly steal any gold a [color=title]nearby[/color] enemy is carrying!
+Press @key to make a pickpocket attempt.  You will instantly steal any gold a [color=title]nearby[/color] enemy is carrying!
+Press @key to make a pickpocket attempt.  You will instantly steal all gold that [color=title]any[/color] enemy is carrying!
+remote-bomb.xml
+Press @key to set down a [color=title]remote bomb[/color].  You will hear 3 beeps indicating that the bomb will remain [color=title]dormant[/color] until detonation.||Press @key a second time to activate detonation.
+Press @key to set down a [color=title]remote bomb[/color].  If you place a second bomb before detonating the first bomb, it too will remain [color=title]dormant[/color] until detonation.||Press @key a second time to activate detonation on one or both bombs.
+Press @key to set down a [color=title]remote bomb[/color].  If you place a second and/or third bomb before detonating the first bomb, they too will remain [color=title]dormant[/color] until detonation.||Press @key a second time to activate detonation on all remote bombs.
+sprint.xml
+Press @key to run faster for a short time.  The speed increase only applies to [color=title]left/right[/color] movement.
+Press @key to run faster for a short time.  The speed increase only applies to [color=title]left/right[/color] movement.
+Press @key to run faster for a short time.  The speed increase only applies to [color=title]left/right[/color] movement.
+wall.xml
+Press @key to place a temporary wall in the direction you are facing.
+Press @key to place a temporary wall in the direction you are facing.
+Press @key to place a temporary wall with [color=title]spikes[/color] in the direction you are facing!

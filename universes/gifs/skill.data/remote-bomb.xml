@@ -1,0 +1,90 @@
+<remote-bomb>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Place a [color=title]bomb[/color] that does not explode until you [color=title]manually detonate[/color] the bomb.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.bombs.remote</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2'>
+		<texts>
+			<overview>Place a [color=title]bomb[/color] that does not explode until you [color=title]manually detonate[/color] the bomb.</overview>
+			<specs>Place [color=title]one[/color] remote bomb</specs>
+			<manual>Press the assigned skill key to place a [color=title]remote-controlled bomb[/color].  You will hear 3 beeps, signalling that the bomb will remain [color=title]dormant[/color] until you detonate it.  At any time, you can press the assigned skill key a second time to [color=title]detonate[/color] the bomb.</manual>
+			<gif-source>gifs.bombs.remote</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Remote Bomb[/color], you will lose access to the [color=title]Mega Bomb[/color] skill.
+
+As you upgrade this skill, you will gain the ability to place [color=title]multiple remote bombs[/color] and to then detonate all of them simultaneously.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Mega Bomb[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>5.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-concurrent-bombs' value = '0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2'>
+		<texts>
+			<overview>The first [color=title]Remote Bomb[/color] upgrade allows you to place up to [color=title]2 remote bombs[/color] before triggering the detonation.</overview>
+			<specs>Place [color=title]two[/color] remote bombs (+1)</specs>
+			<manual />
+			<gif-source>gifs.bombs.remote</gif-source>
+			<inserts>
+				<receipt>
+					<footer>After you place one [color=title]remote bomb[/color], the next [color=title]regular bomb[/color] you place will automatically become a [color=dim]remote bomb[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>2.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-concurrent-bombs' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2'>
+		<texts>
+			<overview>The last upgrade to [color=title]Remote Bomb[/color] enables you to place up to [color=title]3 remote bombs[/color] before triggering the detonation.</overview>
+			<specs>Place [color=title]three[/color] remote bombs (+1)</specs>
+			<manual />
+			<gif-source>gifs.bombs.remote</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Remote Bomb[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>After you place one [color=title]remote bomb[/color], the next [color=title]2 regular bombs[/color] you place will automatically become [color=dim]remote bombs[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>5.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-concurrent-bombs' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have obtained the highest upgrade to [color=title]Remote Bomb[/color], enabling you to place up to [color=title]3 remote bombs[/color] before triggering the detonation.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.bombs.remote</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</remote-bomb>

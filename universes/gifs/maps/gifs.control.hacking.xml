@@ -1,0 +1,123 @@
+<params>
+	<param key = 'layer' value = '1' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 217 152 334 333 216 0 0 0 0 0 0 
+			0 0 0 216 0 152 0 0 0 218 0 0 0 0 0 
+			0 0 0 0 154 325 326 0 0 0 0 0 0 0 0 
+			0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 154 332 326 25 27 328 152 333 329 0 0 
+			153 326 24 25 25 312 0 0 0 0 152 0 310 330 0 
+			152 0 0 0 0 0 0 0 0 0 152 0 0 314 333 
+			154 0 0 0 0 0 0 154 331 25 26 324 0 0 0 
+			0 0 0 0 0 0 0 154 0 0 0 307 328 0 0 
+			0 0 0 0 0 0 0 154 0 0 0 0 303 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 0 283 0 0 0 0 0 
+			0 263 0 0 0 283 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 302 
+			0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '2' y = '6' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '8' y = '5' genus = '3' species = 'terminal' ai-behavior = '5' name = '' nick = '' title = '' />
+	<entity x = '6' y = '5' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '9' y = '5' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '7' y = '4' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '8' y = '7' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'terminal.access' x = '6' y = '5' width = '3' height = '2' behavior = '3' prompt = 'sudo gold' show-icon = '0'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '7' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '10' y = '5' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '10' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold1' />
+			<event message = 'deactivate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold2' />
+			<event message = 'deactivate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold3' />
+			<event message = 'deactivate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold4' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal.access' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '45' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate' type = 'trigger-message' target = 'terminal.access' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '45' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal.access' entity = 'player1' />
+			<event message = 'activate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold1' />
+			<event message = 'activate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold2' />
+			<event message = 'activate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold3' />
+			<event message = 'activate' type = 'entity-message' target = 'terminal.access' param = '' entity = 'gold4' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '45' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />

@@ -1,0 +1,98 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] How did you find me down here, $player$?  Never mind that.  I have toiled in this place for too long.
+
+                    It all started when I fell behind on payments to one of the $merchants$ around here.  When I couldn't make my payments, they banished me to this location.
+                    -redirect root
+
+                [l id = 'line2'] I've never managed to figure out how to reach that $switch$ up there, so I can't escape.  I don't care about escaping any more, though.
+
+                    I want vengeance.  $player$, you must destroy every merchant you can find in all of $Lelandria$.  You must make them pay for my suffering!
+                    -redirect root
+
+                [l id = 'line3' class = 'prompt'] Will you help me, $player$?  Will you bomb every merchant in $Lelandria$ to hell?
+
+                    +accept[class = 'default'] Absolutely.  It'll be my pleasure!
+
+                        >>> root.accept
+
+                            [l id = 'line1'] I can't wait, $player$.  Without the terrible corruption of merchandising in this land, everyone in $Lelandria$ will live a better life.  Except for the merchants themselves, naturally!
+
+                                @post-script
+                                    quest("6.5.npc1.quest").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +later[class = 'default'] Not right now, $Han$.
+
+                        >>> root.later
+
+                            [n id = 'nag1'] Don't leave me here like this, $player$.  Come back if you change your mind!
+
+                    +already-done[class = 'already-done'] I don't like merchants either, $Han$.  They're all gone already!
+
+                        >>> root.already-done
+
+                            [l id = 'line1' transition = '1']
+                                @post-script[queued = '1']
+                                    npc("npc1").talk("quest:in-progress:killed-all-merchants");
+
+                [n id = 'nag1' class = 'prompt'] I need you to get revenge on the $merchants$ for banishing me to this level, $player$.  Will you bomb every merchant to hell for me now?
+
+                    +accept[class = 'default'] Absolutely.  I'm going to get to work!
+
+                    +later[class = 'default'] Not yet, $Han$.
+
+                    +already-done[class = 'already-done'] I don't like merchants either, $Han$.  They're all gone already!
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] I see that you are still working on ridding $Lelandria$ of every last merchant.  Get rid of the $[merchant.count.living] remaining merchant(s), the one(s) who \
+                    unjustly sentenced me to this cruel fate!  Check all the towns!  Check everywhere!  Please!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you customize your controls in the $pause menu$, you might kill the $[merchant.count.living] remaining \
+                    merchant(s) more quickly.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] If you see one of the $[merchant.count.living] remaining merchant(s), $player$, please use your \
+                    $@bomb$ control liberally!
+
+
+        @conversation[id = 'quest:in-progress:killed-all-merchants']
+
+            >>> root
+
+                [l id = 'line1'] You did it, $player$!  You exterminated every last $merchant$ from the entire game!  I can't put into words just how much that means to me!
+
+                    I have a couple of $very special items$ to share with you.  I stole these from the merchants, and they didn't take kindly to that.  Thanks to you, I'll never owe a one of them one single cent!
+
+                    @post-script
+                        quest("6.5.npc1.quest").status("complete");
+                        quest("6.5.npc1.quest").update("update-complete").status("active");
+                        npc("npc1").clearIndicators();
+                        player().acquireItem("hans-solar-flaring-respawn-inhibitor");
+                        player().acquireRandomItem("hans-skilled-turtle-molasses", "hans-clinking-tunic-of-plenty", "hans-torturing-shovel", "hans-feathery-shovel-of-lag");
+                        player().acquireRandomItem("hans-skilled-turtle-molasses", "hans-clinking-tunic-of-plenty", "hans-torturing-shovel", "hans-feathery-shovel-of-lag");
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] I bet those bomb machines are doing great business now that you've wiped out every merchant in $Lelandria$.
+
+                [n id = 'nag2'] I wish you could rescue me from this place, $player$.  Unfortunately, my predefined path will leave me trapped here forever.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I can't customize my movement controls in the $pause menu$, and therefore I will remain on this level \
+                    until the end of time.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Thanks for using your specially-configured gameplay controls to get rid of all of the merchants in \
+                    $Lelandria$.  I will never forget it!
+

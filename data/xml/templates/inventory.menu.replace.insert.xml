@@ -1,0 +1,25 @@
+<parameters>
+	<data>
+		<parameter>@old-item-name</parameter>
+		<parameter>@new-item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.menu.replace.insert'>
+
+    <insert:item id = 'insert' class = 'option' xfill = 'active'>
+
+        <stack>
+            <label x = '15%' y = '0' width = '80%' value = '@item-title' />
+            <label class = 'subtitle' x = '15%' y = '0' width = '80%' value = 'Equipped' />
+        </stack>
+
+        <action do = 'game:replace-item' old-item-name = '@old-item-name' new-item-name = '@new-item-name' />
+        <action do = 'back' pages = '2' />
+
+    </insert:item>
+
+</template>

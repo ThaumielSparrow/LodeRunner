@@ -1,0 +1,93 @@
+<invisibility>
+	<data tier = 'locked'>
+		<texts>
+			<overview>[color=title]Invisibility[/color] allows you to hide from enemies for a short span of time.  During this interval, the enemies will seek your [color=title]last known position[/color].</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.stealth.invisibility</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2'>
+		<texts>
+			<overview>[color=title]Invisibility[/color] allows you to hide from enemies for a short span of time.  During this interval, the enemies will seek your [color=title]last known position[/color].</overview>
+			<specs>Remain Invisible for [color=title]2.0s[/color]
+Recharges in [color=title]45.0s[/color]</specs>
+			<manual />
+			<gif-source>gifs.stealth.invisibility</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Invisibility[/color], you will lose access to the [color=title]Pickpocket[/color] skill.
+
+This skill has a very high [color=title]recharge time[/color].  Future upgrades to [color=title]Invisibility[/color] will diminish that recharge time.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Pickpocket[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>2.0</duration>
+			<recharge measure = 'seconds'>45.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '2' />
+				<modifier name = 'timer-drain-while-motionless' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2'>
+		<texts>
+			<overview>The first upgrade to [color=title]Invisibility[/color] slightly extends the duration of the effect.  In addition, the skill will now [color=title]recharge[/color] more quickly.</overview>
+			<specs>Remain Invisible for [color=title]3.0s[/color] (+1.0s)
+Recharges in [color=title]40.0s[/color] (-5.0s)</specs>
+			<manual />
+			<gif-source>gifs.stealth.invisibility</gif-source>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>40.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '2' />
+				<modifier name = 'timer-drain-while-motionless' value = '2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2'>
+		<texts>
+			<overview>The last upgrade for [color=title]Invisibility[/color] extends the overall duration of the skill.  Additionally, [color=title]standing still[/color] while invisible will save [color=title]50%[/color] of the [color=title]timer drain[/color], allowing you to milk extra time out of the skill.</overview>
+			<specs>Remain Invisible for [color=title]4.0s[/color] (+1.0s)
+Recharges in [color=title]36.0s[/color] (-4.0s)
+[color=title]50% power drain[/color] when not moving</specs>
+			<manual />
+			<gif-source>gifs.stealth.invisibility</gif-source>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Invisibility[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Invisibility[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>4.0</duration>
+			<recharge measure = 'seconds'>36.0</recharge>
+			<modifiers>
+				<modifier name = 'timer-drain' value = '2' />
+				<modifier name = 'timer-drain-while-motionless' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You unlocked the last upgrade for [color=title]Invisibility[/color], maximizing the overall duration of the skill.  Additionally, [color=title]standing still[/color] while invisible saves [color=title]50%[/color] of the [color=title]timer drain[/color], allowing you to milk extra time out of the skill.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.stealth.invisibility</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</invisibility>

@@ -1,0 +1,216 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' xvalign = 'center' center-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group>
+
+            <item class = 'first-title' id = 'testid1' rel = 'root.story'>
+                <hidden id = 'replay-file' rel = 'root.story.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Single Player' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.story' rel = 'root.story.new' replay-file = 'root.story.new.input.txt' continue-game-check = 'on' />
+            </item>
+            <item id = 'test1sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Play solo...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+            </item>
+
+            <item class = 'title' id = 'testid2' rel = 'root.coop'>
+                <hidden id = 'replay-file' rel = 'root.coop.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Co-op Mode' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.coop' rel = 'root.coop.host' replay-file = 'root.coop.host.input.txt' />
+            </item>
+            <item id = 'test2sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid2'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Play cooperatively...[/color]' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid3' rel = 'root.dlc'>
+                <hidden id = 'replay-file' rel = 'root.dlc.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Level Search' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'app-directive' directive = 'app:get-dlc-listing' />
+            </item>
+            <item id = 'test3sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Download new levels...[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid4' rel = 'root.options'>
+                <hidden id = 'replay-file' rel = 'root.options.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'transition' target = 'mainmenu.root.options' rel = 'root.options.audio' replay-file = 'root.options.audio.input.txt' />
+            </item>
+            <item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid4'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Controls and more...[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid5' rel = 'root.quit'>
+                <hidden id = 'replay-file' rel = 'root.quit.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Quit Game' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'app-directive' directive = 'app:quit' />
+            </item>
+            <item id = 'test5sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid5'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Goodbye![/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+
+<xtemplate>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' valign = 'center' xcenter-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group>
+
+            <item class = 'first-title' id = 'testid1'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Story Mode' alpha-factor-start = '0.6' />
+                <action do = 'transition' target = 'mainmenu.root.story' />
+            </item>
+            <item id = 'test1sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Play the story mode...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+            </item>
+
+            <item class = 'title' id = 'testid2'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Co-op Mode' alpha-factor-start = '0.6' />
+                <action do = 'transition' target = 'mainmenu.root.coop' />
+            </item>
+            <item id = 'test2sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid2'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Play cooperatively![/color]' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' />
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid3'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'DLC' alpha-factor-start = '0.6' />
+            </item>
+            <item id = 'test3sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Play cooperatively![/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid4'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+                <action do = 'transition' target = 'mainmenu.root.options' />
+            </item>
+            <item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid4'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+<item class = 'title' id = 'j1'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'j1'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'j2'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'j2'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'j3'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'j3'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'j4'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'j4'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'ji'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'ji'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'jo'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'jo'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+<item class = 'title' id = 'jp'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Options' alpha-factor-start = '0.6' />
+    <action do = 'transition' target = 'mainmenu.root.options' />
+</item>
+<item id = 'test4sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'jp'>
+    <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Set your controls[/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+    <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+</item>
+
+            <item class = 'title' id = 'testid5'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Quit Game' alpha-factor-start = '0.6' />
+                <action do = 'quit-game' />
+            </item>
+            <item id = 'test5sub' disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid5'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = '[color=dim]Goodbye![/color]' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</xtemplate>

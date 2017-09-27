@@ -1,0 +1,70 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'linear' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 211 211 0 0 0 0 0 211 0 0 0 0 211 211 0 0 
+			0 194 183 0 0 195 0 0 185 181 0 0 180 192 185 0 0 
+			0 0 211 0 211 0 0 0 0 0 211 211 0 211 0 0 0 
+			154 207 186 152 180 184 152 110 196 153 190 194 153 184 181 154 0 
+			153 180 171 153 177 165 152 165 177 152 177 207 152 0 0 154 0 
+			154 172 176 152 0 211 152 0 160 152 167 196 152 188 111 154 0 
+			153 0 167 154 110 185 154 211 0 152 172 0 152 164 163 152 0 
+			153 0 0 152 161 178 154 182 0 153 0 0 153 167 178 153 0 
+			154 184 0 152 174 0 152 169 197 153 0 195 153 0 168 152 0 
+			154 163 189 152 0 0 154 207 162 154 184 174 153 211 0 152 0 
+			152 0 0 153 0 196 152 190 163 154 0 0 154 182 0 152 0 
+			153 189 189 153 196 171 153 165 167 152 187 196 153 179 181 152 0 
+			153 211 0 154 0 211 152 211 0 154 0 211 153 0 211 154 0 
+			195 180 186 110 180 180 187 195 181 197 184 110 111 189 180 193 0 
+			0 172 163 169 173 165 0 164 160 164 172 174 0 162 177 0 0 
+			0 0 0 175 167 0 0 0 178 169 0 0 0 169 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+        </structure>
+    </plane>
+</planes>
+<entities>
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '12' x = '11' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '10' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '2' x = '2' genus = '1' class = '' />
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '9' x = '5' genus = '2' class = '' />
+<entity name = 'player2' title = '' ai-behavior = '1' nick = '' y = '12' x = '4' genus = '2' class = '' />
+<entity name = 'player3' title = '' ai-behavior = '1' nick = '' y = '12' x = '7' genus = '2' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '13' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '8' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '5' genus = '5' class = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '8' x = '10' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '10' x = '14' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '12' x = '8' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '10' x = '11' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '4' x = '13' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '2' x = '14' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '2' x = '8' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '2' x = '4' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '8' x = '2' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '6' x = '1' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '5' x = '5' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '12' x = '1' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '7' x = '8' genus = '6' class = '' />
+<entity name = 'player1.respawn' title = '' ai-behavior = '1' nick = '' y = '7' x = '1' genus = '12' class = '' />
+<entity name = 'player2.respawn' title = '' ai-behavior = '1' nick = '' y = '6' x = '7' genus = '12' class = '' />
+<entity name = 'player3.respawn' title = '' ai-behavior = '1' nick = '' y = '7' x = '11' genus = '12' class = '' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'controller' height = '1' width = '1' behavior = '1' y = '9' x = '5'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts />

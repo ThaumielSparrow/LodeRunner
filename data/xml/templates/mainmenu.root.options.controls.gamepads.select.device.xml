@@ -1,0 +1,27 @@
+<parameters>
+	<data>
+		<parameter>@n</parameter>
+		<parameter>@device-title</parameter>
+	</data>
+	<text>
+		<parameter>@device-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.controls.gamepads.select.device'>
+
+    <wrapper id = 'insert'>
+
+        <item class = 'title' id = 'testid.@n' rel = 'root.generic'>
+            <label x = '0' y = '0' align = 'right' width = '90%' value = '@device-title' />
+
+            <action do = 'game:select-gamepad' device-title = '@device-title' />
+            <action do = 'back' />
+        </item>
+        <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid.@n'>
+            <label x = '0' y = '0' align = 'right' width = '90%' value = 'Select Device' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+        </item>
+
+    </wrapper>
+
+</template>

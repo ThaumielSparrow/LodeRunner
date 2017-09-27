@@ -1,0 +1,424 @@
+<primary-map name = 'world0.level0' />
+<maps>
+	<background>
+<map layer = '2' name = 'a.jungle.small' title = 'Untitled Area' height = '20' width = '30' gold-count = '0' y = '100' x = '210' />
+<map layer = '2' name = 'world0.level4.bg' title = 'Untitled Area' height = '47' width = '29' gold-count = '0' y = '39' x = '-32' />
+<map layer = '2' name = 'world0.level1.bg2' title = 'Untitled Area' height = '16' width = '34' gold-count = '0' y = '13' x = '-93' />
+<map layer = '2' name = 'bg1' title = 'Untitled Area' height = '10' width = '10' gold-count = '0' y = '46' x = '11' />
+<map layer = '2' name = 'world0.level1.bg' title = 'Untitled Area' height = '38' width = '33' gold-count = '0' y = '27' x = '-93' />
+<map layer = '2' name = 'a.town.medium' title = 'Untitled Area' height = '20' width = '50' gold-count = '0' y = '120' x = '300' />
+<map layer = '2' name = 'a.jungle.medium' title = 'Untitled Area' height = '20' width = '50' gold-count = '0' y = '120' x = '210' />
+<map layer = '2' name = 'world0.level0.bg' title = 'Untitled Area' height = '47' width = '26' gold-count = '0' y = '17' x = '-118' />
+<map layer = '2' name = 'world0.level2.bg' title = 'Untitled Area' height = '67' width = '28' gold-count = '0' y = '20' x = '-60' />
+<map layer = '2' name = 'a.town.small' title = 'Untitled Area' height = '20' width = '30' gold-count = '0' y = '100' x = '300' />
+<map layer = '2' name = 'a.jungle.large' title = 'Untitled Area' height = '20' width = '20' gold-count = '0' y = '140' x = '210' />
+	</background>
+	<foreground>
+<map layer = '1' name = 'puzzle1' title = 'Untitled Area' height = '13' width = '15' gold-count = '7' y = '43' x = '-8' />
+<map layer = '1' name = 'demomap2' title = 'Untitled Area' height = '14' width = '21' gold-count = '3' y = '53' x = '7' />
+<map layer = '1' name = 'demomap1' title = 'Untitled Area' height = '10' width = '19' gold-count = '3' y = '43' x = '10' />
+<map layer = '1' name = 'map76' title = 'False' height = '16' width = '29' gold-count = '5' y = '-140' x = '62' />
+<map layer = '1' name = 'map77' title = 'False' height = '29' width = '19' gold-count = '5' y = '-147' x = '19' />
+<map layer = '1' name = 'map74' title = 'False' height = '18' width = '24' gold-count = '14' y = '-126' x = '38' />
+<map layer = '1' name = 'map75' title = 'False' height = '14' width = '24' gold-count = '2' y = '-140' x = '38' />
+<map layer = '1' name = 'map72' title = 'False' height = '14' width = '15' gold-count = '3' y = '-142' x = '145' />
+<map layer = '1' name = 'map73' title = 'False' height = '16' width = '21' gold-count = '3' y = '-124' x = '62' />
+<map layer = '1' name = 'map70' title = 'False' height = '14' width = '33' gold-count = '3' y = '-156' x = '131' />
+<map layer = '1' name = 'map71' title = 'False' height = '13' width = '23' gold-count = '3' y = '-169' x = '147' />
+<map layer = '1' name = 'world0.level1' title = 'Untitled Area' height = '22' width = '14' gold-count = '12' y = '28' x = '-78' />
+<map layer = '1' name = 'world0.level0' title = 'Untitled Area' height = '29' width = '20' gold-count = '18' y = '21' x = '-98' />
+<map layer = '1' name = 'world0.level3' title = 'Untitled Area' height = '20' width = '14' gold-count = '14' y = '38' x = '-47' />
+<map layer = '1' name = 'world0.level2' title = 'Untitled Area' height = '26' width = '17' gold-count = '14' y = '24' x = '-64' />
+<map layer = '1' name = 'world0.level4' title = 'Untitled Area' height = '26' width = '20' gold-count = '0' y = '45' x = '-33' />
+<map layer = '1' name = 'map78' title = 'False' height = '15' width = '27' gold-count = '3' y = '-155' x = '38' />
+<map layer = '1' name = 'map79' title = 'False' height = '20' width = '17' gold-count = '2' y = '-160' x = '65' />
+<map layer = '1' name = 'map43' title = 'False' height = '15' width = '15' gold-count = '3' y = '-109' x = '-153' />
+<map layer = '1' name = 'map42' title = 'False' height = '15' width = '30' gold-count = '3' y = '-94' x = '-172' />
+<map layer = '1' name = 'map41' title = 'False' height = '19' width = '18' gold-count = '11' y = '-94' x = '-124' />
+<map layer = '1' name = 'map40' title = 'False' height = '15' width = '18' gold-count = '4' y = '-94' x = '-142' />
+<map layer = '1' name = 'map47' title = 'False' height = '15' width = '33' gold-count = '10' y = '-124' x = '-132' />
+<map layer = '1' name = 'map46' title = 'False' height = '15' width = '15' gold-count = '1' y = '-124' x = '-147' />
+<map layer = '1' name = 'map45' title = 'False' height = '20' width = '29' gold-count = '5' y = '-109' x = '-106' />
+<map layer = '1' name = 'map44' title = 'False' height = '15' width = '32' gold-count = '4' y = '-109' x = '-138' />
+<map layer = '1' name = 'map49' title = 'False' height = '16' width = '7' gold-count = '1' y = '-79' x = '-153' />
+<map layer = '1' name = 'map48' title = 'False' height = '14' width = '22' gold-count = '11' y = '-123' x = '-99' />
+<map layer = '1' name = 'temp3' title = 'Untitled Area' height = '10' width = '10' gold-count = '0' y = '35' x = '38' />
+<map layer = '1' name = 'temp2' title = 'False' height = '11' width = '14' gold-count = '0' y = '24' x = '55' />
+<map layer = '1' name = 'temp1' title = 'False' height = '11' width = '17' gold-count = '0' y = '24' x = '38' />
+<map layer = '1' name = 'house1' title = 'False' height = '42' width = '43' gold-count = '10' y = '15' x = '73' />
+<map layer = '1' name = 'map58' title = 'False' height = '17' width = '16' gold-count = '5' y = '-115' x = '98' />
+<map layer = '1' name = 'map59' title = 'False' height = '10' width = '12' gold-count = '1' y = '-96' x = '70' />
+<map layer = '1' name = 'map54' title = 'False' height = '19' width = '16' gold-count = '2' y = '-118' x = '-212' />
+<map layer = '1' name = 'map55' title = 'False' height = '30' width = '18' gold-count = '2' y = '-129' x = '-230' />
+<map layer = '1' name = 'map56' title = 'False' height = '18' width = '15' gold-count = '1' y = '-120' x = '83' />
+<map layer = '1' name = 'map57' title = 'False' height = '25' width = '11' gold-count = '7' y = '-98' x = '101' />
+<map layer = '1' name = 'map50' title = 'False' height = '5' width = '42' gold-count = '1' y = '-129' x = '-147' />
+<map layer = '1' name = 'map51' title = 'False' height = '15' width = '17' gold-count = '0' y = '-133' x = '-164' />
+<map layer = '1' name = 'map52' title = 'False' height = '17' width = '32' gold-count = '5' y = '-126' x = '-196' />
+<map layer = '1' name = 'map53' title = 'False' height = '15' width = '16' gold-count = '9' y = '-133' x = '-212' />
+<map layer = '1' name = 'map29' title = 'False' height = '14' width = '19' gold-count = '1' y = '-132' x = '-77' />
+<map layer = '1' name = 'map28' title = 'False' height = '14' width = '11' gold-count = '10' y = '-118' x = '-77' />
+<map layer = '1' name = 'map21' title = 'False' height = '16' width = '20' gold-count = '12' y = '-122' x = '-25' />
+<map layer = '1' name = 'map20' title = 'False' height = '16' width = '23' gold-count = '13' y = '-122' x = '-5' />
+<map layer = '1' name = 'map23' title = 'False' height = '14' width = '21' gold-count = '1' y = '-132' x = '-58' />
+<map layer = '1' name = 'map22' title = 'False' height = '31' width = '12' gold-count = '18' y = '-129' x = '-37' />
+<map layer = '1' name = 'map25' title = 'False' height = '6' width = '12' gold-count = '7' y = '-98' x = '-37' />
+<map layer = '1' name = 'map24' title = 'False' height = '14' width = '29' gold-count = '6' y = '-118' x = '-66' />
+<map layer = '1' name = 'map27' title = 'False' height = '16' width = '20' gold-count = '4' y = '-104' x = '-77' />
+<map layer = '1' name = 'map26' title = 'False' height = '14' width = '20' gold-count = '4' y = '-104' x = '-57' />
+<map layer = '1' name = 'asdf' title = 'False' height = '15' width = '23' gold-count = '15' y = '-45' x = '20' />
+<map layer = '1' name = 'map38' title = 'False' height = '14' width = '18' gold-count = '0' y = '-55' x = '-124' />
+<map layer = '1' name = 'map39' title = 'False' height = '16' width = '22' gold-count = '1' y = '-79' x = '-146' />
+<map layer = '1' name = 'map32' title = 'False' height = '12' width = '20' gold-count = '15' y = '-88' x = '-77' />
+<map layer = '1' name = 'map33' title = 'False' height = '10' width = '20' gold-count = '5' y = '-76' x = '-77' />
+<map layer = '1' name = 'map30' title = 'False' height = '12' width = '35' gold-count = '4' y = '-144' x = '-72' />
+<map layer = '1' name = 'map31' title = 'False' height = '18' width = '12' gold-count = '3' y = '-147' x = '-37' />
+<map layer = '1' name = 'map36' title = 'False' height = '10' width = '10' gold-count = '0' y = '-50' x = '-106' />
+<map layer = '1' name = 'map37' title = 'False' height = '20' width = '18' gold-count = '19' y = '-75' x = '-124' />
+<map layer = '1' name = 'map34' title = 'False' height = '21' width = '24' gold-count = '21' y = '-66' x = '-81' />
+<map layer = '1' name = 'map35' title = 'False' height = '13' width = '25' gold-count = '1' y = '-63' x = '-106' />
+<map layer = '1' name = 'map89' title = 'False' height = '14' width = '25' gold-count = '3' y = '-234' x = '78' />
+<map layer = '1' name = 'map88' title = 'False' height = '16' width = '30' gold-count = '11' y = '-234' x = '48' />
+<map layer = '1' name = 'map87' title = 'False' height = '16' width = '19' gold-count = '3' y = '-234' x = '29' />
+<map layer = '1' name = 'map86' title = 'False' height = '14' width = '21' gold-count = '7' y = '-220' x = '78' />
+<map layer = '1' name = 'map85' title = 'False' height = '15' width = '41' gold-count = '9' y = '-218' x = '37' />
+<map layer = '1' name = 'map84' title = 'False' height = '10' width = '11' gold-count = '3' y = '-174' x = '51' />
+<map layer = '1' name = 'map83' title = 'False' height = '12' width = '26' gold-count = '4' y = '-203' x = '42' />
+<map layer = '1' name = 'map82' title = 'False' height = '16' width = '14' gold-count = '2' y = '-200' x = '68' />
+<map layer = '1' name = 'map81' title = 'False' height = '15' width = '17' gold-count = '3' y = '-189' x = '51' />
+<map layer = '1' name = 'map80' title = 'False' height = '14' width = '27' gold-count = '6' y = '-174' x = '62' />
+<map layer = '1' name = 'map98' title = 'False' height = '16' width = '33' gold-count = '12' y = '-111' x = '182' />
+<map layer = '1' name = 'map99' title = 'False' height = '40' width = '15' gold-count = '19' y = '-95' x = '194' />
+<map layer = '1' name = 'map90' title = 'False' height = '27' width = '19' gold-count = '7' y = '-234' x = '10' />
+<map layer = '1' name = 'map91' title = 'False' height = '26' width = '14' gold-count = '16' y = '-260' x = '25' />
+<map layer = '1' name = 'map92' title = 'False' height = '15' width = '47' gold-count = '11' y = '-249' x = '39' />
+<map layer = '1' name = 'map93' title = 'False' height = '30' width = '19' gold-count = '16' y = '-128' x = '142' />
+<map layer = '1' name = 'map94' title = 'False' height = '15' width = '17' gold-count = '4' y = '-126' x = '161' />
+<map layer = '1' name = 'map95' title = 'False' height = '21' width = '21' gold-count = '9' y = '-111' x = '161' />
+<map layer = '1' name = 'map96' title = 'False' height = '14' width = '21' gold-count = '6' y = '-125' x = '178' />
+<map layer = '1' name = 'map97' title = 'False' height = '22' width = '16' gold-count = '7' y = '-133' x = '199' />
+<map layer = '1' name = 'map10' title = 'False' height = '17' width = '24' gold-count = '20' y = '-30' x = '19' />
+<map layer = '1' name = 'map11' title = 'False' height = '17' width = '19' gold-count = '16' y = '-30' x = '43' />
+<map layer = '1' name = 'map12' title = 'False' height = '16' width = '30' gold-count = '16' y = '-80' x = '19' />
+<map layer = '1' name = 'map13' title = 'False' height = '16' width = '21' gold-count = '16' y = '-80' x = '-2' />
+<map layer = '1' name = 'map14' title = 'False' height = '18' width = '19' gold-count = '19' y = '-80' x = '49' />
+<map layer = '1' name = 'map15' title = 'False' height = '16' width = '27' gold-count = '24' y = '-96' x = '43' />
+<map layer = '1' name = 'map16' title = 'False' height = '17' width = '19' gold-count = '19' y = '-97' x = '24' />
+<map layer = '1' name = 'map17' title = 'False' height = '16' width = '26' gold-count = '21' y = '-96' x = '-2' />
+<map layer = '1' name = 'map18' title = 'False' height = '12' width = '32' gold-count = '3' y = '-108' x = '51' />
+<map layer = '1' name = 'map19' title = 'False' height = '10' width = '17' gold-count = '8' y = '-106' x = '-2' />
+<map layer = '1' name = 'fake1' title = 'Untitled Area' height = '16' width = '20' gold-count = '13' y = '48' x = '39' />
+<map layer = '1' name = 'map65' title = 'False' height = '16' width = '23' gold-count = '5' y = '-89' x = '133' />
+<map layer = '1' name = 'map64' title = 'False' height = '12' width = '22' gold-count = '4' y = '-58' x = '114' />
+<map layer = '1' name = 'map67' title = 'False' height = '29' width = '12' gold-count = '4' y = '-134' x = '114' />
+<map layer = '1' name = 'map66' title = 'False' height = '16' width = '27' gold-count = '6' y = '-105' x = '114' />
+<map layer = '1' name = 'map61' title = 'False' height = '29' width = '15' gold-count = '7' y = '-73' x = '136' />
+<map layer = '1' name = 'map60' title = 'False' height = '15' width = '41' gold-count = '7' y = '-73' x = '95' />
+<map layer = '1' name = 'map63' title = 'False' height = '12' width = '22' gold-count = '5' y = '-58' x = '92' />
+<map layer = '1' name = 'map62' title = 'False' height = '16' width = '21' gold-count = '4' y = '-89' x = '112' />
+<map layer = '1' name = 'map69' title = 'False' height = '14' width = '15' gold-count = '4' y = '-148' x = '116' />
+<map layer = '1' name = 'map68' title = 'False' height = '11' width = '20' gold-count = '1' y = '-46' x = '104' />
+<map layer = '1' name = 'map2' title = 'Untitled Area' height = '21' width = '17' gold-count = '23' y = '3' x = '25' />
+<map layer = '1' name = 'map3' title = 'Untitled Area' height = '10' width = '10' gold-count = '0' y = '2' x = '-16' />
+<map layer = '1' name = 'map1' title = 'Untitled Area' height = '21' width = '22' gold-count = '13' y = '3' x = '3' />
+<map layer = '1' name = 'map6' title = 'False' height = '21' width = '20' gold-count = '29' y = '3' x = '42' />
+<map layer = '1' name = 'map7' title = 'Untitled Area' height = '16' width = '24' gold-count = '19' y = '-13' x = '18' />
+<map layer = '1' name = 'map4' title = 'Untitled Area' height = '16' width = '15' gold-count = '16' y = '-13' x = '3' />
+<map layer = '1' name = 'map5' title = 'Untitled Area' height = '16' width = '35' gold-count = '0' y = '24' x = '3' />
+<map layer = '1' name = 'asdf3' title = 'False' height = '17' width = '23' gold-count = '10' y = '-47' x = '43' />
+<map layer = '1' name = 'asdf2' title = 'False' height = '19' width = '10' gold-count = '8' y = '-64' x = '29' />
+<map layer = '1' name = 'map8' title = 'False' height = '16' width = '20' gold-count = '18' y = '-13' x = '42' />
+<map layer = '1' name = 'map9' title = 'False' height = '17' width = '16' gold-count = '16' y = '-30' x = '3' />
+	</foreground>
+</maps>
+<session>
+	<variable key = 'app.active-map-name' default = '' value = 'world0.level0' />
+	<variable key = 'core.puzzle-room-virgin' default = '1' value = '1' />
+	<variable key = 'sys.input.right' default = 'RIGHT' value = 'RIGHT' />
+	<variable key = 'core.skills.matrix:timer-drain' default = '0' value = '0' />
+	<variable key = 'app.transition.from.waypoint' default = '' value = '' />
+	<variable key = 'net.player-limit' default = '4' value = '4' />
+	<variable key = 'core.skills.invisibility:locked' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-tile-fill' default = '' value = '1' />
+	<variable key = 'net.countdown-in-progress' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking' default = '0' value = '0' />
+	<variable key = 'core.player1.cause-of-death' default = '' value = '' />
+	<variable key = 'core.skills.sprint:lastused' default = '0' value = '0' />
+	<variable key = 'core.player1.skill1' default = '' value = '' />
+	<variable key = 'core.player1.skill1:changed' default = '0' value = '0' />
+	<variable key = 'net.already-voted-to-skip' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield' default = '0' value = '0' />
+	<variable key = 'core.worldmap.zoom' default = '1.0' value = '1.0' />
+	<variable key = 'core.skills.persuasion:locked' default = '0' value = '0' />
+	<variable key = 'app.transition.to.map' default = '' value = '' />
+	<variable key = 'core.skills.fright:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.player1.xp' default = '0' value = '0' />
+	<variable key = 'core.y' default = '0' value = '0' />
+	<variable key = 'core.player1.skill2' default = '' value = '' />
+	<variable key = 'net.transition.target' default = '' value = '' />
+	<variable key = 'core.skills.bomb-shield:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.timer' default = '0' value = '0' />
+	<variable key = 'core.login-succeeded' default = 'no' value = 'no' />
+	<variable key = 'core.skills.invisibility:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'app.transition.from.map' default = '' value = '' />
+	<variable key = 'core.skills.disguise:timer' default = '0' value = '0' />
+	<variable key = 'net.player3.nick' default = 'Player 3' value = 'Player 3' />
+	<variable key = 'core.generated-splash' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:locked' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.percent-old' default = '0.0' value = '0.0' />
+	<variable key = 'core.skills.fright:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket' default = '0' value = '0' />
+	<variable key = 'net.player4.joined' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise' default = '0' value = '0' />
+	<variable key = 'net.game-in-progress' default = '0' value = '0' />
+	<variable key = 'core.player1.y' default = '0' value = '0' />
+	<variable key = 'core.player1.x' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion' default = '0' value = '0' />
+	<variable key = 'sys.input.dig-right' default = 'V' value = 'V' />
+	<variable key = 'core.dialogue-response' default = '' value = '' />
+	<variable key = 'core.constants.death-by-enemy' default = '' value = '2' />
+	<variable key = 'core.skills.hacking:locked' default = '0' value = '0' />
+	<variable key = 'core.gold.wallet' default = '0' value = '60' />
+	<variable key = 'net.player1.joined' default = '1' value = '1' />
+	<variable key = 'core.skills.sprint:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:timer-max' default = '0' value = '0' />
+	<variable key = 'net.player1.avatar.colors' default = 'primary=225,25,25;secondary=225,225,225' value = 'primary=225,25,25;secondary=225,225,225' />
+	<variable key = 'net.player1.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer' default = '0' value = '0' />
+	<variable key = 'session.map1.jenny.respawn-count' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb' default = '0' value = '0' />
+	<variable key = 'net.player4.received-nick' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield' default = '0' value = '0' />
+	<variable key = 'net.player3.avatar.colors' default = '' value = '' />
+	<variable key = 'core.skills.remote-bomb:timer' default = '0' value = '0' />
+	<variable key = 'net.votes-to-skip' default = '0' value = '0' />
+	<variable key = 'net.player3.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:locked' default = '0' value = '0' />
+	<variable key = 'sys.input.dig-left' default = 'Z' value = 'Z' />
+	<variable key = 'core.player1.name' default = 'mike' value = 'mike' />
+	<variable key = 'core.skills.wall:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.player4.nick' default = 'Player 4' value = 'Player 4' />
+	<variable key = 'core.skills.matrix:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:lastused' default = '0' value = '0' />
+	<variable key = 'app.transition.to.waypoint' default = '' value = '' />
+	<variable key = 'app.rebuild-response-menu' default = '0' value = '0' />
+	<variable key = 'app.quests.inactive' default = 'inactive' value = 'inactive' />
+	<variable key = 'core.skills.disguise:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer-max' default = '0' value = '0' />
+	<variable key = 'session.world0.level3.talked-brent' default = 'no' value = 'no' />
+	<variable key = 'core.player1.skill-points' default = '0' value = '5' />
+	<variable key = 'core.skills.pickpocket:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:timer-max' default = '0' value = '0' />
+	<variable key = 'core.last-safe-zone.title' default = '' value = '' />
+	<variable key = 'core.skills.earth-mover' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.player1.inventory-size' default = '2' value = '2' />
+	<variable key = 'session.quest.act1.internet.sonny' default = 'alive' value = 'alive' />
+	<variable key = 'core.skills.fright:recharge-potential' default = '0' value = '0' />
+	<variable key = 'sys.input.left' default = 'LEFT' value = 'LEFT' />
+	<variable key = 'core.skills.hologram:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:recharge-potential' default = '0' value = '0' />
+	<variable key = 'app.transition.from.player-x' default = '' value = '' />
+	<variable key = 'app.transition.from.player-y' default = '' value = '' />
+	<variable key = 'core.skills.wall:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.player-id' default = '1' value = '1' />
+	<variable key = 'core.skills.mega-bomb:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer' default = '0' value = '0' />
+	<variable key = 'core.skills.persuasion:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.received-player-id' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.time' default = '0' value = '1367604241' />
+	<variable key = 'core.skills.remote-bomb:locked' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.message' default = '' value = '' />
+	<variable key = 'core.last-safe-zone.map' default = '' value = '' />
+	<variable key = 'core.skills.earth-mover:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.earth-mover:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:bombs-remaining' default = '0' value = '0' />
+	<variable key = 'net.player1.received-nick' default = '0' value = '0' />
+	<variable key = 'net.player2.avatar.colors' default = 'primary=25,225,25;secondary=225,225,225' value = 'primary=25,225,25;secondary=225,225,225' />
+	<variable key = 'core.skills.fright' default = '0' value = '0' />
+	<variable key = 'session.map1.player1.in-panic-room' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:locked' default = '0' value = '0' />
+	<variable key = 'net.online' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.bomb-shield:lastused' default = '0' value = '0' />
+	<variable key = 'session.map1.jenny.wallet' default = '15' value = '15' />
+	<variable key = 'core.constants.death-by-vaporization' default = '' value = '7' />
+	<variable key = 'net.player4.avatar.colors' default = '' value = '' />
+	<variable key = 'core.skills.hacking:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:locked' default = '0' value = '0' />
+	<variable key = 'core.player1.skill2:changed' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'sys.input.up' default = 'UP' value = 'UP' />
+	<variable key = 'core.skills.fright:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.player3.received-nick' default = '0' value = '0' />
+	<variable key = 'core.gold.found' default = '0' value = '0' />
+	<variable key = 'session.map1.jenny.relationship' default = 'friendly' value = 'friendly' />
+	<variable key = 'core.skills.bomb-shield:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:power-drain-while-motionless' default = '' value = '' />
+	<variable key = 'core.skills.pickpocket:locked' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:timer-drain' default = '0' value = '0' />
+	<variable key = 'core.handled-local-death' default = '0' value = '0' />
+	<variable key = 'core.skills.personal-shield:recharge-potential' default = '0' value = '0' />
+	<variable key = 'net.player2.received-nick' default = '0' value = '0' />
+	<variable key = 'core.x' default = '0' value = '0' />
+	<variable key = 'core.z' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:lastused' default = '0' value = '0' />
+	<variable key = 'net.player2.nick' default = 'Player 2' value = 'Player 2' />
+	<variable key = 'app.quests.complete' default = 'complete' value = 'complete' />
+	<variable key = 'core.skills.sprint' default = '0' value = '0' />
+	<variable key = 'core.worldmap.view' default = 'gold' value = 'gold' />
+	<variable key = 'core.constants.death-by-planar-shift' default = '' value = '3' />
+	<variable key = 'core.skills.disguise:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.rebuild-intro-menu:curtailed-count' default = '0' value = '0' />
+	<variable key = 'core.xp-bar.percent-new' default = '0.0' value = '0.0' />
+	<variable key = 'core.skills.mega-bomb:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'net.rebuild-intro-menu' default = '0' value = '0' />
+	<variable key = 'sys.input.skill1' default = '1' value = '1' />
+	<variable key = 'core.skills.personal-shield:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer-max' default = '0' value = '0' />
+	<variable key = 'net.player4.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'app.load-from-folder' default = '' value = '' />
+	<variable key = 'core.skills.matrix:recharge-potential' default = '0' value = '0' />
+	<variable key = 'sys.input.down' default = 'DOWN' value = 'DOWN' />
+	<variable key = 'core.is-gif' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:timer-drain' default = '0' value = '0' />
+	<variable key = 'net.player2.ready' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'sys.input.skill2' default = '2' value = '2' />
+	<variable key = 'sys.input.interact' default = 'RETURN' value = 'RETURN' />
+	<variable key = 'core.skills.wall:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility:timer-drain' default = '0' value = '0' />
+	<variable key = 'app.quests.active' default = 'active' value = 'active' />
+	<variable key = 'net.level.failed' default = '0' value = '0' />
+	<variable key = 'core.overworld-title' default = 'Overworld' value = 'Overworld' />
+	<variable key = 'net.player1.nick' default = 'mike' value = 'mike' />
+	<variable key = 'core.bombs.count' default = '0' value = '5' />
+	<variable key = 'core.skills.mega-bomb:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.wall' default = '0' value = '0' />
+	<variable key = 'net.player3.joined' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:timer-max' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.invisibility' default = '0' value = '0' />
+	<variable key = 'core.skills.hologram:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-bomb' default = '' value = '6' />
+	<variable key = 'core.skills.earth-mover:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.wall:timer' default = '0' value = '0' />
+	<variable key = 'algebra.z' default = '0' value = '0' />
+	<variable key = 'algebra.y' default = '0' value = '0' />
+	<variable key = 'algebra.x' default = '0' value = '0' />
+	<variable key = 'core.constants.death-by-out-of-bounds' default = '' value = '4' />
+	<variable key = 'net.password' default = '' value = '' />
+	<variable key = 'core.skills.personal-shield:locked' default = '0' value = '0' />
+	<variable key = 'core.chapter' default = '1' value = '1' />
+	<variable key = 'core.skills.persuasion:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:recharge-remaining' default = '0' value = '0' />
+	<variable key = 'core.is-dummy-session' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.sprint:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.mega-bomb:recharge-potential' default = '0' value = '0' />
+	<variable key = 'core.skills.disguise:timer-max' default = '0' value = '0' />
+	<variable key = 'net.level.complete' default = '0' value = '0' />
+	<variable key = 'sys.input.bomb' default = 'B' value = 'B' />
+	<variable key = 'core.skills.invisibility:power-drain' default = '' value = '' />
+	<variable key = 'core.skills.invisibility:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'session.quest.act1.internet' default = 'inactive' value = 'inactive' />
+	<variable key = 'core.skills.mega-bomb:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.matrix' default = '0' value = '0' />
+	<variable key = 'core.skills.pickpocket:timer-drain' default = '0' value = '0' />
+	<variable key = 'net.player2.joined' default = '0' value = '0' />
+	<variable key = 'core.skills.fright:timer' default = '0' value = '0' />
+	<variable key = 'core.skills.hacking:lastused' default = '0' value = '0' />
+	<variable key = 'core.skills.remote-bomb:lastused' default = '0' value = '0' />
+	<variable key = 'sys.input.suicide' default = 'K' value = 'K' />
+	<variable key = 'core.constants.death-by-deadly-tile' default = '' value = '5' />
+	<variable key = 'core.skills.earth-mover:timer-drain-while-motionless' default = '0' value = '0' />
+	<variable key = 'core.skills.jackhammer:locked' default = '0' value = '0' />
+	<variable key = 'core.player1.level' default = '1' value = '2' />
+</session>
+<quests>
+	<quest name = 'amandria-internet' title = 'Modem Maintenance'>
+		<description>The modem in [color=special]Desiree[/color]'s home office has gone offline.  She has asked you to reboot the modem so that she can regain access to the bridge controls.</description>
+		<update name = 'keycode'>
+			Per your insistence, [color=special]Desiree[/color] has revealed the passcode to the Bridge Administration controls:  [color=special]0451[/color].
+		</update>
+		<update name = 'modem.fixed'>
+			You rebooted the modem successfully.  Let [color=special]Desiree[/color] know so that she can reward you for your efforts.
+		</update>
+		<update name = 'modem.destroyed'>
+			You decided to destroy the modem entirely.  The least you can do is to tell [color=special]Desiree[/color] about what you have done.
+		</update>
+		<update name = 'sonny.destroyed'>
+			While investigating the secret 2nd floor of [color=special]Desiree[/color]'s abide, you found (and killed!) one of her captives.
+		</update>
+	</quest>
+	<quest name = 'world0-level3-debrief' title = 'Talk to Brent'>
+		<description>The [color=dim]Empress of Lelandria[/color] has posted a messenger named [color=dim]Brent[/color] in the area.  Speak with him to learn more about the threat of the [color=dim]Bungeling Empire[/color].</description>
+		<update name = 'update-talked'>
+			You discussed the threat of the [color=dim]Bungeling Empire[/color] with Brent.
+		</update>
+		<update name = 'update-killed-fast'>
+			Before saying a single world to Brent, you killed him!
+		</update>
+		<update name = 'update-killed-after'>
+			Afterwards, you proceeded to needlessly eliminate the messenger.
+		</update>
+	</quest>
+</quests>
+<item-data>
+	<items>
+	</items>
+	<upgrade-pools>
+	</upgrade-pools>
+</item-data>

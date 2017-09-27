@@ -1,0 +1,39 @@
+<metadata>
+    <version>1.0</version>
+    <params>
+        <param id = 'title'>Syndication - Part I</param>
+        <param id = 'min-players'>1</param>
+        <param id = 'max-players'>3</param>
+        <param id = 'type'>linear</param>
+    </params>
+    <subtitles>
+        <subtitle>Fight your way through 20 remastered levels from [color=special]Lode Runner '07[/color].</subtitle>
+    </subtitles>
+    <preview-maps>
+        <preview-map duration = '3' measure = 'seconds' script = 'on-preview'>level1</preview-map>
+        <preview-map duration = '1' measure = 'seconds' script = 'on-preview'>level2</preview-map>
+        <preview-map duration = '1.5' measure = 'seconds' script = 'on-preview'>level3</preview-map>
+    </preview-maps>
+    <selectable-levels>
+        <selectable-level replay-file = 'level1.txt'>level1</selectable-level>
+        <selectable-level replay-file = 'level2.txt'>level2</selectable-level>
+        <selectable-level replay-file = 'level3.txt'>level3</selectable-level>
+        <selectable-level replay-file = 'level4.txt'>level4</selectable-level>
+        <selectable-level replay-file = 'level5.txt'>level5</selectable-level>
+        <selectable-level replay-file = 'level6.txt'>level6</selectable-level>
+        <selectable-level replay-file = 'level7.txt'>level7</selectable-level>
+        <selectable-level replay-file = 'level8.txt'>level8</selectable-level>
+        <selectable-level replay-file = 'level9.txt'>level9</selectable-level>
+        <selectable-level replay-file = 'level10.txt'>level10</selectable-level>
+        <selectable-level replay-file = 'level11.txt'>level11</selectable-level>
+        <selectable-level replay-file = 'level12.txt'>level12</selectable-level>
+        <selectable-level replay-file = 'level13.txt'>level13</selectable-level>
+        <selectable-level replay-file = 'level14.txt'>level14</selectable-level>
+        <selectable-level replay-file = 'level15.txt'>level15</selectable-level>
+        <selectable-level replay-file = 'level16.txt'>level16</selectable-level>
+        <selectable-level replay-file = 'level17.txt'>level17</selectable-level>
+        <selectable-level replay-file = 'level18.txt'>level18</selectable-level>
+        <selectable-level replay-file = 'level19.txt'>level19</selectable-level>
+        <selectable-level replay-file = 'level20.txt'>level20</selectable-level>
+    </selectable-levels>
+</metadata>

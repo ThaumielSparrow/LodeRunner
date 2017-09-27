@@ -1,0 +1,16 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@text</parameter>
+	</text>
+</parameters>
+
+<template name = 'generic.insert.xml' version = 'default'>
+
+    <insert:item disabled = '1'>
+        <label x = '5%' y = '0' width = '90%' value = '@text' />
+    </insert:item>
+
+</template>

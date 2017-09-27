@@ -1,0 +1,27 @@
+<maps>
+	<primary-map name = 'map1' />
+	<background>
+		<map layer = '2' name = 'map1.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '35' rel = '' y = '-8' x = '5' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map10.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '37' rel = '' y = '-8' x = '247' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map2.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '30' rel = '' y = '-8' x = '40' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map3.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '25' rel = '' y = '-8' x = '70' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map4.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '25' rel = '' y = '-8' x = '95' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map5.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '25' rel = '' y = '-8' x = '120' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map6.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '26' rel = '' y = '-8' x = '145' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map7.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '25' rel = '' y = '-8' x = '171' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map8.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '25' rel = '' y = '-8' x = '196' class = '' completion-time = '0' />
+		<map layer = '2' name = 'map9.bg' title = 'Untitled Area' height = '37' difficulty = '' gold-count = '0' width = '26' rel = '' y = '-8' x = '221' class = '' completion-time = '0' />
+	</background>
+	<foreground>
+		<map layer = '1' name = 'map1' title = 'Human Pyramids' height = '19' difficulty = '' gold-count = '3' width = '20' rel = '' y = '-2' x = '11' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map10' title = 'Walking on Enemies' height = '19' difficulty = '' gold-count = '5' width = '20' rel = '' y = '-2' x = '225' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map2' title = 'Digging from Above' height = '19' difficulty = '' gold-count = '6' width = '20' rel = '' y = '-2' x = '40' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map3' title = 'Sacrifice' height = '19' difficulty = '' gold-count = '6' width = '20' rel = '' y = '-2' x = '64' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map4' title = 'New Players with Bombs' height = '19' difficulty = '' gold-count = '8' width = '20' rel = '' y = '-2' x = '87' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map5' title = 'Team Drills' height = '19' difficulty = '' gold-count = '6' width = '20' rel = '' y = '-2' x = '110' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map6' title = 'Angry Enemy #1' height = '19' difficulty = '' gold-count = '5' width = '20' rel = '' y = '-2' x = '133' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map7' title = 'Angry Enemy #2' height = '19' difficulty = '' gold-count = '5' width = '20' rel = '' y = '-2' x = '156' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map8' title = 'Angry Enemies' height = '19' difficulty = '' gold-count = '7' width = '20' rel = '' y = '-2' x = '179' class = '' completion-time = '0' />
+		<map layer = '1' name = 'map9' title = 'AI Manipulation' height = '19' difficulty = '' gold-count = '0' width = '20' rel = '' y = '-2' x = '202' class = '' completion-time = '0' />
+	</foreground>
+</maps>

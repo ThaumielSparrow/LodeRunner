@@ -1,0 +1,152 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Welcome to $Navarra$, $player$.  My name is $Elizabeth$.  I work as a banker, controlling various financial institutions throughout all of $Lelandria$.
+
+                    I have a lot of money, $player$, but I'm always looking for more.  Most of the peasants around here don't have much money, but \
+                    the $merchants$ are really rolling in gold, thanks to the threat of the ^Bungeling empire^.
+                    -redirect root
+
+                [l id = 'line2'] I'd like to get my hands on some of that gold, $player$.  You can help!  I'd like you to visit at least $3 merchants$ and \
+                    inform them of a new tax I'm enforcing.  Collect their ^tithes^ and return the gold to me.
+
+                    I'll make sure to reward you with a very special $item$ when you're done, of course.
+
+                    +yes Sure thing, ma'am!
+
+                        >>> root.yes
+
+                            [l id = 'line1'] I like your attitude, $player$.  If you'd like, you can collect a tithe from every merchant in the game, netting yourself a neat little profit \
+                                in all of this.  I just need $3 tithes$ to satisfy my lust for gold, though!
+
+                                @post-script
+                                    quest("2.3.npc1.quest").status("active");
+                                    session("2.3.npc1:tithe-amount").set(50);
+
+                    +extort Throw in some $free bombs$ and you've got a deal.
+
+                        >>> root.extort
+
+                            [l id = 'line1'] I don't do ^free^, $player$.  Take these $5 bombs$, but now I'll need you to ask for a little bit more gold from each merchant to cover the cost of what I'm giving you.
+
+                                I do suspect you'll get the job done.
+
+                                @post-script
+                                    quest("2.3.npc1.quest").status("active");
+                                    quest("2.3.npc1.quest").update("update-extorted").status("active");
+                                    session("2.3.npc1:tithe-amount").set(75);
+                                    player().addBombs(5);
+
+                    +later Not right now.
+
+                        >>> root.later
+
+                            [n id = 'nag1'] Come back if you change your mind, $player$.  We can both benefit from this arrangement!
+
+                [n id = 'nag1'] Welcome back, $player$.  I'm still looking for somebody to collect that new $tax$ for me.  Have you had enough time to think it over?
+
+                    +yes Yes.  I'll collect the taxes for you now.
+
+                    +extort Throw in some $free bombs$ and you've got a deal.
+
+                    +later Still not ready.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Have you made up your mind yet, $player$?  You're definitely not too busy customizing your controls \
+                    in the $pause menu$ yet.  You must have plenty of spare time, then, to collect that new $tax$ for me!
+
+                    +yes Yes.  I'll collect the taxes for you now.
+
+                    +extort Throw in some $free bombs$ and you've got a deal.
+
+                    +later Still not ready.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I'm still waiting for your decision, $player$.  Don't try to tell me you're too busy customizing your controls; I can \
+                    tell you've already done that.  Will you finally agree to collect that new $tax$ for me?
+
+                    +yes Yes.  I'll collect the taxes for you now.
+
+                    +extort Throw in some $free bombs$ and you've got a deal.
+
+                    +later Still not ready.
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Keep collecting those tithes, $player$.  I don't want those merchants getting so wealthy that they no longer need me to lend them money at high interest rates!
+
+                    +bye I'm still working on it.  Goodbye.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+                    +pay[class = 'pay normal collected0' min-gold = '150'] I didn't collect any of the tithes yet, but here's enough gold to make you happy.
+
+                    +pay[class = 'pay normal collected1' min-gold = '100'] I only collected one of the tithes, but here's enough gold to split the difference.
+
+                    +pay[class = 'pay normal collected2' min-gold = '50'] I collected two of the tithes, and here's enough gold to cover the last one.
+
+                    +pay[class = 'pay extorted collected0' min-gold = '225'] I didn't collect any of the tithes yet, but here's enough gold to make you happy.
+
+                    +pay[class = 'pay extorted collected1' min-gold = '150'] I only collected one of the tithes, but here's enough gold to split the difference.
+
+                    +pay[class = 'pay extorted collected2' min-gold = '75'] I collected two of the tithes, and here's enough gold to cover the last one.
+
+                        >>> root.pay
+
+                            [l id = 'line1'] You didn't do the job like I asked, but in the end you have what I wanted.  This gold will do just fine, $player$!
+
+                                I think this $special item$ will suit you very well, a player that likes to take $shortcuts$ to get results quickly.
+
+                                @post-script
+                                    player().acquireRandomItem("elizabeths-shoes-of-fiery-haste", "elizabeths-weighted-hoarder-cuffs", "elizabeths-lazy-magician-wand");
+                                    map().runScript("npc1.quest-complete");
+
+
+
+        @conversation[id = 'quest:in-progress:collected-tithes']
+
+            >>> root
+
+                [n id = 'nag1'] I see that you've collected a number of tithes for me, $player$.  Do you have the gold on hand?
+
+                    +done[min-gold = '150'] Here you go, $Elizabeth$.
+
+                        >>> root.done
+
+                            [l id = 'line1'] Many thanks once again, $player$, for your hard work on this task.  As we agreed, I have a $special item$ that will suit you very well, a player \
+                                that takes the time to do a job right.  Enjoy!
+
+                                @post-script
+                                    player().acquireRandomItem("elizabeths-greedy-respawn-inhibitor", "elizabeths-advanced-slagging-glue", "elizabeths-trusty-thief-shovel");
+                                    map().runScript("npc1.quest-complete");
+
+                    +later I'll get back to you later, ma'am.
+
+                        >>> root.later
+
+                            [n id = 'nag1'] Suit yourself, $player$.  Let me know when you have the $tithes$ ready for me.
+
+                            [n id = 'nag2'] I need that tithe money, $player$.  Bring it to me when you have it!
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] I enjoyed doing business with you, $player$.
+
+                [n id = 'nag2'] Thanks for helping me amass more gold, $player$.  I am always looking for more!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] The merchants around here will file complaints against me when they discover the truth \
+                    about that phony tax.  Wait until they learn that a player using the default gameplay controls cheated them out of all that gold!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Cheating all of those merchants out of their gold took even less time than customizing your controls, didn't it, $player$? \
+                    We'll have to try this again if I make it to the sequel alive!

@@ -1,0 +1,25 @@
+// Base rules
+* {
+    color: rgb(225, 225, 225);
+    bbcode:
+        [color=special]rgb(207, 106, 19)[/color],
+        [color=affordable]rgb(192, 160, 40)[/color],
+        [color=unaffordable]rgb(192, 183, 146)[/color]
+}
+
+rowmenu-group {
+    border: rgb(75, 75, 75);
+    border-size: 3;
+}
+
+hmenu:active {
+    border: rgb(225, 75, 75);
+    padding-bottom: 50;
+}
+
+stack {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}

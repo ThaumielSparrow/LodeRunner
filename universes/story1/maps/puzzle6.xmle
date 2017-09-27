@@ -1,0 +1,98 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 215 215 0 0 0 214 0 0 
+			0 0 0 0 0 0 0 0 154 190 199 183 210 197 0 196 214 0 
+			0 0 0 0 0 0 0 154 187 172 0 0 195 161 210 178 195 0 
+			0 0 0 0 0 0 152 185 167 0 0 0 0 177 186 165 0 0 
+			0 0 0 0 215 214 154 213 0 0 85 0 84 163 175 176 193 0 
+			0 0 192 187 181 198 152 188 196 209 177 84 169 176 163 161 0 0 
+			0 0 0 0 161 0 153 165 0 183 0 0 166 178 168 0 0 0 
+			0 0 0 181 175 152 198 179 193 174 183 191 172 177 0 0 0 0 
+			0 0 0 164 0 152 170 0 179 174 177 168 0 0 0 0 0 0 
+			0 216 190 178 194 153 0 183 161 0 0 0 0 0 197 195 0 0 
+			0 0 0 170 166 195 152 0 162 186 0 0 191 180 173 0 0 0 
+			0 0 0 171 169 0 153 0 0 0 0 0 144 0 0 0 0 0 
+			0 0 0 208 0 0 153 0 0 0 0 0 144 190 198 0 0 196 
+			0 186 0 194 210 195 153 216 197 0 0 0 208 212 214 0 191 160 
+			0 168 190 169 183 176 154 212 212 0 0 0 211 195 198 194 175 0 
+			0 0 0 0 0 179 193 192 193 189 180 186 188 164 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 193 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 289 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 289 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 289 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 289 302 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 302 
+			0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 289 302 0 
+			0 0 0 0 0 300 0 0 289 0 0 0 0 302 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '8' y = '14' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '14' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '13' y = '13' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '15' y = '15' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '10' y = '16' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '14' y = '3' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '16' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '12' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '7' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '11' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+	<entity x = '9' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.10' class = '' nick = '' title = '' />
+	<entity x = '3' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.11' class = '' nick = '' title = '' />
+	<entity x = '2' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.12' class = '' nick = '' title = '' />
+	<entity x = '1' y = '14' genus = '6' ai-behavior = '1' name = 'gold.uid.13' class = '' nick = '' title = '' />
+	<entity x = '5' y = '6' genus = '6' ai-behavior = '1' name = 'gold.uid.14' class = '' nick = '' title = '' />
+	<entity x = '9' y = '18' genus = '6' ai-behavior = '1' name = 'gold.uid.15' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '3' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "Don't forget about the piece of gold at the very bottom of the map!",
+            "tooltip": "You have 3 bombs at your disposal.  Use them wisely!",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        map().setWaveAllowances({
+            "bombs": 3
+        });
+
+        showPuzzleIntro();
+	</script>
+</scripts>

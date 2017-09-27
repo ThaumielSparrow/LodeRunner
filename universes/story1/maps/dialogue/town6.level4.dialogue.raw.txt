@@ -1,0 +1,47 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1'] When I moved here, $player$, the $Empress of Lelandria$ promised me control of an important gate.  Do you see a gate \
+                                 around here?  I don't!
+
+                [l id = 'line2'] The $Empress$ told me that the $gate$ would block access to "Act II," whatever that means!  In the end, she must have \
+                                 decided against closing off certain portions of the game world to people like you.
+
+                [l id = 'line3'] If you ask me, you're worse than the ^bad guys^.  At least they can only steal one piece of gold at a time!
+
+                [l id = 'line4'] Oh, right.  You are "saving" our gold for us, keeping it safe from those ^bad guys^.  I've heard it all \
+                                            before, $player$.  How about proving it by giving some of that gold back to the citizenry?
+
+                    +yes[min-gold = '25'] Here you go, $Carlie$.  I can spare $25 gold pieces$.
+
+                        >>> root.yes
+
+                            [n id = 'nag1'] You surprise me, $player$, this one time.  I've been holding onto these $10 bombs$ for long enough.  I want you to have them.
+
+                                @post-script
+                                    player().subtractGold(25);
+                                    player().addBombs(10);
+
+                    +no I can't do that right now.
+
+                        >>> root.no
+
+                            [n id = 'nag1'] Why am I not surprised?
+
+                [n id = 'nag1'] If you ask me, you're worse than the ^bad guys^.  At least they can only steal one piece of gold at a time!
+
+                [n id = 'nag2'] I wish I had control of that gate.  I would have charged you a lot of gold to get it open, $player$.
+
+                [n id = 'nag3'] If you go stand on top of one of these ladders for $82 minutes$ or longer without moving, I will give you \
+                    $592 gold pieces$.  I'm not making this up!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Don't worry about customizing your gameplay controls in the $pause menu$.  We all know \
+                    that you only came here for the gold.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Tell me which took longer, $player$:  customizing your controls in the $pause menu$ or \
+                    deciding how to spend all of the $gold pieces$ you have been stealing from us?

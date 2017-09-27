@@ -1,0 +1,85 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 329 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 208 332 0 
+			0 0 0 0 0 0 152 328 24 153 28 330 333 0 0 
+			0 0 0 0 0 154 332 303 310 152 0 303 0 0 0 
+			0 0 0 0 0 152 0 0 310 154 0 0 0 0 0 
+			0 0 0 0 0 327 334 154 210 152 325 334 0 0 0 
+			0 0 0 0 0 0 0 152 324 154 210 311 331 0 0 
+			0 0 0 0 0 0 0 154 0 153 334 0 311 0 0 
+			0 0 0 0 0 152 323 154 25 154 0 329 311 0 0 
+			0 0 0 0 152 334 314 153 0 153 0 310 304 330 0 
+			0 0 152 330 327 313 0 152 0 154 0 0 0 0 0 
+			0 154 324 28 27 314 154 324 328 28 28 327 154 0 0 
+			0 153 0 0 0 0 154 0 0 0 0 0 153 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 343 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 342 0 
+			0 0 0 0 0 0 0 263 0 0 0 283 302 0 0 
+			0 0 0 0 0 0 344 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 344 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 340 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 344 302 0 0 0 0 300 0 302 0 
+			0 0 0 340 345 0 0 0 0 0 0 0 0 0 0 
+			0 0 263 0 0 265 0 341 263 0 0 283 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '11' y = '0' genus = '1' ai-behavior = '1' name = 'enemy1' nick = '' title = '' />
+	<entity x = '3' y = '10' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '8' y = '2' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '11' y = '8' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '2' y = '10' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '10' y = '11' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '8' y = '10' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '7' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<xevent type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate-skill' type = 'entity-message' target = 'wp1' param = 'wall' entity = 'player1' />
+			<xevent message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'enemy1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '210' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

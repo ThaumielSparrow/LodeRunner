@@ -1,0 +1,28 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'dialogue.wrappers.response' version = 'normal'>
+
+    <item-group id = 'ext.responses' css-class = 'responses' render-border = '1' valign = 'bottom' uses-title-bar = '1'>
+
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '8%' y = '0' index = '29' position = 'absolute' />
+            <label font = 'high-contrast' x = '20%' y = '0' width = '80%' value = 'Select a Response:' align = '' text-effect = 'blaster:line-by-line' />
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'dialogue.wrappers.response' version = 'computer'>
+
+    <item-group id = 'ext.responses' render-border = '0' />
+
+</template>

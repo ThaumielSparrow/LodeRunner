@@ -1,0 +1,80 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 119 110 111 118 117 0 0 
+			0 0 0 0 0 0 0 219 216 0 0 209 0 0 0 
+			0 0 0 118 152 116 119 0 0 118 153 116 118 0 0 
+			0 0 0 0 154 219 219 219 0 0 154 0 0 0 0 
+			0 154 116 116 118 0 0 0 119 208 116 119 0 0 0 
+			0 153 0 97 98 116 0 119 98 97 0 0 0 0 0 
+			0 154 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 302 0 0 300 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 300 0 0 0 300 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '3' y = '6' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '3' y = '4' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '7' y = '7' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+	<entity x = '10' y = '2' genus = '6' ai-behavior = '1' name = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp1' x = '10' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '6' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp3' x = '2' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+		<packet />
+		<packet />
+	</script>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

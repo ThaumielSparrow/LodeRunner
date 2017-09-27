@@ -1,0 +1,243 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@item-name</parameter>
+		<parameter>@upgrade-name</parameter>
+		<parameter>@y</parameter>
+	</data>
+	<text>
+		<parameter>@upgrade-title</parameter>
+		<parameter>@upgrade-cost</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.item.upgrade.confirm' version = 'affordable'>
+
+    <rowmenu id = 'menu' x = '@x' y = '0' width = '@width' height = '@height' halign = 'left' valign = 'top' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrade Overview' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack class = 'frame'>
+                    <label class = 'spacer' x = '5%' y = '0' width = '90%' value = '@upgrade-title' />
+                    <label x = '5%' y = '0' width = '90%' value = 'Cost:  [color=special]@upgrade-cost gold[/color]' />
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' valign = 'pack' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrade Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' align = '' width = '75%' value = 'Upgrade Item' />
+                    <label class = 'subtitle' x = '17%' y = '0' align = '' width = '75%' value = 'Confirm' />
+                </stack>
+
+                <action do = 'game:upgrade-item' item-name = '@item-name' upgrade-name = '@upgrade-name' />
+                <action do = 'back' slide = 'down' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' align = '' width = '75%' value = 'Cancel Upgrade' />
+                    <label class = 'subtitle' x = '17%' y = '0' align = '' width = '75%' value = 'Not Ready' />
+                </stack>
+
+                <action do = 'back' slide = 'down' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'inventory.item.upgrade.confirm' version = 'unaffordable'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'bottom' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group per-row = '2' column-padding = '20' homogenize = '1'>
+
+            <item id = 'tunnel' render-border = '0'>
+
+                <rowmenu x = '0' y = '0' width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '1'>
+
+                    <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                        <item disabled = '1' class = 'title-bar' fill = 'always'>
+                            <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                            <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrade Options' />
+                        </item>
+
+                    </item-group>
+
+                    <item-group class = 'options' render-border = '1'>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '17%' y = '0' align = '' width = '75%' value = 'Upgrade Item' />
+                                <label class = 'disabled' x = '17%' y = '0' align = '' width = '75%' value = 'Not enough Gold' />
+                            </stack>
+
+                        </item>
+
+                        <item class = 'option' fill = 'active'>
+
+                            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                            <stack>
+                                <label x = '17%' y = '0' align = '' width = '75%' value = 'Cancel Upgrade' />
+                                <label class = 'subtitle' x = '17%' y = '0' align = '' width = '75%' value = 'Not Ready' />
+                            </stack>
+
+                            <action do = 'back' slide = 'down' />
+
+                        </item>
+
+                    </item-group>
+
+                </rowmenu>
+
+            </item>
+
+            <item disabled = '1' render-border = '1'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '50%' align = 'right' valign = 'center' index = '13' position = 'absolute' />
+                        <label x = '85%' y = '0' align = 'right' width = '80%' value = 'Upgrade Attributes' />
+                    </item>
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <label class = 'line-break' x = '95%' y = '0' align = 'right' width = '90%' value = '[color=special]@upgrade-title[/color]' />
+
+                    <item class = 'line-break' />
+
+                    <item>
+                        <icon x = '95%' y = '50%' align = 'right' valign = 'center' index = '13' position = 'absolute' />
+                        <label x = '85%' y = '0' align = 'right' width = '80%' value = 'Cost' />
+                    </item>
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <label x = '95%' y = '0' align = 'right' width = '90%' value = '[color=special]@upgrade-cost gold[/color]' />
+
+                </stack>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+
+
+<template name = 'inventory.item.upgrade.confirm' version = 'old'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1'>
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '75%' value = 'Confirm Upgrade' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+
+                <stack class = 'frame'>
+                    <label xclass = 'spacer' x = '5%' y = '0' width = '90%' value = '@upgrade-title' />
+                    <label x = '5%' y = '0' width = '90%' value = 'Cost:  [color=special]@upgrade-cost[/color] gold' />
+                </stack>
+
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '75%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' align = '' width = '75%' value = 'Upgrade Item' />
+                    <label class = 'subtitle' x = '17%' y = '0' align = '' width = '75%' value = 'Confirm' />
+                </stack>
+
+                <action do = 'inventory.item.upgrade' item-name = '@item-name' upgrade-name = '@upgrade-name' />
+                <action do = 'back' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' align = '' width = '75%' value = 'Cancel Upgrade' />
+                    <label class = 'subtitle' x = '17%' y = '0' align = '' width = '75%' value = 'Not Ready' />
+                </stack>
+
+                <action do = 'back' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

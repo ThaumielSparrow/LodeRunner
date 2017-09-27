@@ -1,0 +1,19 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'wave.progress.chart'>
+
+    <rowmenu id = 'wave-progress-chart' class = 'progress-chart' x = '50%' y = '475' width = '@width' height = '@height' halign = 'center' valign = 'bottom' shrinkwrap = '1' uses-focus = '0' uses-lightbox = '0'>
+
+        <item-group id = 'ext.members' x = '50%' halign = 'center' render-border = '0' uses-title-bar = '0' per-row = '4' column-padding = '20' homogenize = '1' fit-width = '1' />
+
+    </rowmenu>
+
+</template>

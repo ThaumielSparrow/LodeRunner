@@ -1,0 +1,130 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@box-height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.inventories'>
+
+    <rowmenu id = 'tab' class = 'skills' width = '@width' height = '@height' uses-focus = '1' on-wrap-up = 'tab-abort' on-wrap-down = 'tab-abort'>
+
+        <item-group per-row = '2' column-padding = '20'>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '21' />
+                        <label x = '18%' y = '7' value = '[color=title]My Items[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Browse the [color=dim]items[/color] you have collected and [color=dim]equip[/color] the ones that best suit your playstyle.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'Browse and equip your [color=dim]items[/color].' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:inventories.inventory' sort = 'alpha' descending = '0' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' align = 'right' index = '13' />
+                        <label x = '82%' y = '7' align = 'right' value = '[color=title]Current Quests[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'View any [color=dim]current[/color] quest, along with any quest [color=dim]update[/color] you have encountered.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'View a list of [color=dim]active[/color] quests.' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:quests.active' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '14' />
+                        <label x = '18%' y = '7' value = '[color=title]My Reputation[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Review a history of how you treated [color=dim]people[/color] and their [color=dim]quests[/color], determining how the people of [color=special]Lelandria[/color] currently think of you.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'Read about your current reputation in [color=special]Lelandria[/color].' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:inventories.reputation' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' align = 'right' index = '8' />
+                        <label x = '82%' y = '7' align = 'right' value = '[color=title]Finished Quests[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Browse a [color=dim]history[/color] of all of the quests you have completed (successfully or otherwise).' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'View quests you have already [color=special]finished[/color].' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:quests.finished' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

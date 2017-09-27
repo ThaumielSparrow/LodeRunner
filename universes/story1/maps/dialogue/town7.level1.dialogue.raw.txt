@@ -1,0 +1,158 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1' class = 'thanks'] I hear you took care of $Linus$ for me, $player$.  Great job!
+
+                    As we previously agreed, I have stocked some cheaper items \
+                    for you to choose from.
+
+                    In addition, if I ever need to ruthlessly eliminate another competitor, I will know exactly whom to call!  Ha ha ha!
+
+                    @post-script
+                        quest("7.1.npc1.quest").status("complete");
+                        quest("7.1.npc1.quest").update("update-william-updated-inventory").status("active");
+                        npc("npc1").clearIndicators().addIndicator("merchant");
+                        npc("npc1").clearVendorInventory();
+
+                [n id = 'nag1' class = 'shop'] Finally, another customer!  Buy something, will ya?
+
+                    +shop I want to buy some overpriced items.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc1.shop");
+
+                    +quest[id = 'quest' class = 'better-deal'] What can I do to get a better deal here?
+
+                        >>> root.quest
+
+                            [l id = 'line1'] Have you talked to $Linus$ on the other side of town, $player$?  His business is thriving, for reasons unknown to me!  I have repeatedly increased my prices in a \
+                                desperate attempt to make my products look desirable, but it isn't working.
+                                -redirect root.quest
+
+                                @pre-script
+                                    quest("7.1.npc1.quest").update("flag-heard-williams-quest").status("active");
+
+                            [n id = 'nag1' class = 'prompt'] Listen, $player$.  I don't like to engage in shady business practices, but I have no choice.  If you can get rid of $Linus$ for me, I will find some cheaper items for you.
+
+                                +accept[class = 'default'] I'll put it on my todo list.
+
+                                    >>> root.quest.accept
+
+                                        [l id = 'line1'] A wise decision, $player$!  Check back in when you've taken care of business for me.
+
+                                            @post-script
+                                                quest("7.1.npc1.quest").status("active");
+                                                npc("npc1").clearIndicators().addIndicator("merchant");
+
+                                +already-done[class = 'already-done'] Actually, I got rid of him a long time ago.
+
+                                    >>> root.quest.already-done
+
+                                        [l id = 'line1'] You really know how this system operates, don't you?  In compensation for your efforts, I found some cheaper items for you to browse in my \
+                                            inventory.  Thanks again for helping me to maintain my monopoly!  Ha ha ha!
+
+                                            @post-script
+                                                quest("7.1.npc1.quest").status("complete");
+                                                quest("7.1.npc1.quest").update("update-william-updated-inventory").status("active");
+                                                npc("npc1").clearIndicators().addIndicator("merchant");
+                                                npc("npc1").clearVendorInventory();
+
+                                +later[class = 'default'] I don't want this on my record right now, William.
+
+                                    >>> root.quest.later
+
+                                        [n id = 'nag1']
+
+                    +bye I'll talk to you later...
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+                [n id = 'nag2' class = 'shop-cheaper'] Just like I promised, $player$!  Cheaper items!
+
+                    +shop-cheaper I want to buy some cheap, junky items.
+
+                        >>> root.shop-cheaper
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc1.shop");
+
+                    +bye I'll talk to you later.  Fix your software.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1' class = 'thanks'] Hi, $player$, do you have a minute?
+
+                    I couldn't help but overhear the conversation where $William$ asked you to stamp me out.  Of course, I also saw what you did to him afterward. \
+                    Personally, I would never ask you to preemptively reformat him instead, but I very much appreciate what you did.
+
+                [n id = 'nag1' class = 'shop'] Good day, $player$.  I hope you find my inventory worthwhile!
+
+                    +shop Let me see your free items.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +donate[min-gold = '50'] I'd like to donate $50 gold$ to your platform.
+
+                        >>> root.donate
+
+                            [l id = 'line1'] Thanks for the donation, $player$!  If I can rummage together about $100 more gold pieces$, I can recompile my inventory system to include better items!
+
+                                @post-script
+                                    player().subtractGold(50);
+
+                            [l id = 'line2'] I really appreciate your continued generosity, $player$!  I won't forget your charitibility!  With just $50 more gold pieces$, I will have enough capital to upgrade my inventory.
+
+                                @post-script
+                                    player().subtractGold(50);
+
+                            [l id = 'line3'] At last, $player$, I have the financial wherewithal to upgrade my inventory!  Make sure to take a look at my newest items when you have time!
+
+                                @post-script
+                                    session("7.2.npc2:finished-donating").set("yes");
+                                    npc("npc2").clearVendorInventory();
+                                    player().subtractGold(50);
+
+                    +bye Farewell, Linus.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+                [n id = 'nag2' class = 'shop-better'] Good day, $player$.  I hope you find my inventory worthwhile!
+
+                    +shop-better Let me see your free upgraded items.
+
+                        >>> root.shop-better
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +bye Farewell, Linus.

@@ -1,0 +1,4 @@
+town3.level1.xml:351:            if ( session("3.1.npc2.quest:killed-rebecca").get() != "yes" )
+town4.level3.xml:301:            if ( session("4.4.npc1.quest:received-gold").get() == "yes" )
+town5.level1.xml:197:        if ( session("4.3.npc1.received-letter").equals("yes") )
+town7.level1.xml:228:        if ( session("7.2.npc2:finished-donating").get() == "yes" )

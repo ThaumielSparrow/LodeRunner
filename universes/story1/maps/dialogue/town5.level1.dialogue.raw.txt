@@ -1,0 +1,53 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1'] Hi, $player$.  I moved here when the ^bad guys^ showed up.  Have you seen a handsome man named $Timmy$ around these parts, a little bit to the $east$, by any chance?
+
+                [n id = 'nag1'] I wonder where $Timmy$ and everyone else went when the ^bad guys^ showed up.  I hope everyone is doing okay!
+
+                [n id = 'nag2'] I like this place, but I don't know how long we can stay here.  I miss $Timmy$ a lot, too.  Please save us from the ^Bungeling empire^, $player$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] After the ^bad guys^ showed up, I had to abandon my previous home to move here for safety.  I haven't \
+                    had time to $customize$ anything yet because I forgot to bring my $pause menu$ with me.  Do you still have access to yours, $player$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I tried to convince $Timmy$ to customize his movement controls once, but he never took the time to try it out.  After \
+                    you save $Lelandria$, maybe you'll have time to walk him through the process!
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [l id = 'line1'] Did you get this letter from $Timmy$? Let me take a moment to read it...
+                    -redirect root
+
+                [l id = 'line2'] Thank you so much for delivering this to me, $player$!  I've waited for this day, waited so long!  Please take this \
+                    $Ring of Eternal Love$ back to $Timmy$ so that he knows I feel just as strongly as he does!
+
+                    Thank you, $player$!
+
+                    @post-script
+                        quest("4.3.npc1.quest").update("update-delivered-letter").status("active");
+                        npc("npc1").clearIndicators();
+                        player().acquireItem("the-ring-of-eternal-love");
+
+
+        @conversation[id = 'quest:delivered-letter']
+
+            >>> root
+
+                [n id = 'nag1'] I can't wait to reunite with $Timmy$.  Please keep him safe from the ^Bungeling empire^!
+
+                [n id = 'nag2'] Why don't the ^bad guys^ just leave us alone?  I have a wedding to plan!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] If you decide to customize your gameplay controls in the $pause menu$, $player$, you can also take a look \
+                    at the ring before you deliver it to $Timmy$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Did you have any trouble when you customized your controls, $player$?  I remember $Timmy$ always had a really hard \
+                    time figuring it out.
+

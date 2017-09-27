@@ -1,0 +1,190 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Thanks for visiting us here in [color=special]Navarra[/color], [color=special]$[core.player1.name][/color].  I bet you've noticed a lot of the danger and violence in [color=special]Lelandria[/color].  The [color=dim]Bungeling empire[/color] is threatening every mile of our beautiful country.
+
+Not too long ago, we all lived peacefully, in harmony.  Everything feels so different now, though.  I wish the [color=dim]bad guys[/color] would leave.
+							</comment>
+						</line>
+						<line redirect = 'root' id = 'line2'>
+							<comment>
+								Something else bothers me even more, though, [color=special]$[core.player1.name][/color].
+
+A merchant [color=special]somewhere to the west[/color] decided to install a series of [color=special]bomb vending machines[/color] in numerous locations.  You probably have seen some of them already.  Maybe you even bought some bombs from them, [color=special]$[core.player1.name][/color].
+
+The guy who installed the machines -- a guy named [color=dim]Kenny[/color] -- is deviously profiting from the violence in our once-quiet land.  Instead of trying to negotiate with the [color=dim]Bungeling empire[/color], we are selling bombs!
+							</comment>
+						</line>
+						<line id = 'line3' class = 'prompt'>
+							<comment>
+								If you happen to visit [color=special]Callistaska[/color] in your travels, find [color=dim]Kenny[/color].  Find him and destroy him!  I know it won't stop people from using his [color=special]bomb vending machines[/color], but at least no one will profit from them.
+
+If you do get rid of him, stop back to see me.  I want to reward whomever takes that guy out with a very [color=special]special item[/color].
+							</comment>
+							<response class = 'default' branch-id = 'root.yes'>
+								<phrase>I&apos;ll see what I can do.</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks, [color=special]$[core.player1.name][/color]!  Once you have gotten rid of [color=dim]Kenny[/color], stop back by and I&apos;ll give you that [color=special]special item[/color] I talked about.</comment>
+											<post-script>quest("2.1.npc1.quest").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.idea'>
+								<phrase>I have a better idea.  Give me [color=special]50 gold pieces[/color] and I&apos;ll buy him out of business.</phrase>
+								<branch id = 'root.idea'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												Do you think that would work, [color=special]$[core.player1.name][/color]?  You'd still profit from the vending machines yourself after buying his contracts, and I don't know if I'd like that any better.  However, I do suppose you need all of the [color=special]gold[/color] you can get to save us from the [color=dim]Bungeling emperor[/color].
+
+Here, [color=special]$[core.player1.name][/color].  Take these [color=special]50 gold pieces[/color] and see what you can do.  Honestly, I really want you to get rid of [color=dim]Kenny[/color], whatever you end up doing.  I'll have that [color=special]special item[/color] waiting for you if you do it.
+											</comment>
+											<post-script>quest("2.1.npc1.quest").status("active");quest("2.1.npc1.quest").update("update-extorted").status("active");npc("npc1").clearIndicators();player().addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'complete' branch-id = 'root.done'>
+								<phrase>That guy?  I already took him out.</phrase>
+								<branch id = 'root.done'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												You did a great job, [color=special]$[core.player1.name][/color].  I didn't even realize you had gotten rid of him already!
+
+As a reward, I have a [color=special]special item[/color] for you.  I chose it at random from my best selection, and I think you'll really like it.  Put it to good use, and try to save us all from the [color=dim]Bungeling emperor[/color]!
+											</comment>
+											<post-script>map().runScript("npc1.quest-complete");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'global' branch-id = 'root.no'>
+								<phrase>Let me check back in later.</phrase>
+								<branch id = 'root.no'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Stop back by if you want to discuss this matter further, [color=special]$[core.player1.name][/color].</comment>
+										</line>
+										<line id = 'nag2'>
+											<comment>Give me a shout when you&apos;re ready to talk about this again, [color=special]$[core.player1.name][/color].</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>
+								[color=special]$[core.player1.name][/color], have you had a chance to visit [color=special]Callistaska[/color] yet?  The evil [color=dim]Kenny[/color] is still profiting from those infernal [color=special]bomb vending machines[/color], which only further adds to his capital and allows him to continue installing more and more [color=special]bomb vending machines[/color].
+
+Please get rid of him, then stop back to see me.  I want to reward whomever takes that guy out with a very [color=special]special item[/color]!
+							</comment>
+							<response class = 'default' branch-id = 'root.yes'>
+								<phrase>I&apos;ll see what I can do.</phrase>
+							</response>
+							<response class = 'default' branch-id = 'root.idea'>
+								<phrase>I have a better idea.  Give me [color=special]50 gold pieces[/color] and I&apos;ll buy him out of business.</phrase>
+							</response>
+							<response class = 'complete' branch-id = 'root.done'>
+								<phrase>That guy?  I already took him out.</phrase>
+							</response>
+							<response class = 'global' branch-id = 'root.no'>
+								<phrase>Let me check back in later.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Last I heard, [color=dim]Kenny[/color] was selling merchandise over in [color=special]Callistaska[/color], just a little bit to the [color=special]southwest[/color] of here.  Take him out if you can, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I think you can find [color=special]Callistaska[/color] just a little ways [color=special]southwest[/color] of here, [color=special]$[core.player1.name][/color].  We need to get rid of [color=dim]Kenny[/color] for good!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you have any trouble making it down to [color=special]Callistaska[/color] on your way to get rid of [color=special]Kenny[/color], you should consider customizing your controls in the [color=special]pause menu[/color].  If you don&apos;t want to do that, though, the default [color=special]@bomb[/color] will work perfectly fine for dropping a bomb on him!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>If you hold down the [color=special]@left[/color] key to keep moving toward the west, you will eventually enter the town of [color=special]Callistaska[/color].  Once you get there, you should take care of [color=special]Kenny[/color] to stop him from making any more money with his [color=dim]bomb vending machines[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:bought-contract'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1' class = 'default'>
+							<comment>You bought the contract, huh, [color=special]$[core.player1.name][/color]?  I&apos;m glad to hear that, but I fear [color=dim]Kenny[/color] still has a lot of resources at his disposal.  I&apos;d hate to see him start another business venture of a similar kind!</comment>
+						</line>
+						<line id = 'nag2' class = 'default'>
+							<comment>[color=dim]Kenny[/color] won&apos;t have enough money to start another business soon, but one day he might amass another great wealth.  You should think about going back and finishing the job!</comment>
+						</line>
+						<line id = 'nag3' class = 'lowered-prices'>
+							<comment>I hear you lowered the prices at the [color=special]bomb vending machines[/color] after buying the contract, [color=special]$[core.player1.name][/color].  I don&apos;t know if I would have done that.  Have you thought about getting rid of [color=dim]Kenny[/color] just to be safe?</comment>
+						</line>
+						<line id = 'nag4' class = 'lowered-prices'>
+							<comment>More people will want to buy bombs now that you&apos;ve lowered the prices, [color=special]$[core.player1.name][/color].  I don&apos;t know if you did the right thing. Have you thought about getting rid of [color=dim]Kenny[/color] as a way of compensating for your mistake?</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-kenny'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I just got word about what you did to [color=dim]Kenny[/color].  You cannot overestimate how much this means to me, [color=special]$[core.player1.name][/color]!
+
+As I promised, I have a [color=special]special item[/color] for you.  I chose it at random from my best selection, and I think you'll really like it.  Put it to good use, and try to save us all from the [color=dim]Bungeling emperor[/color]!
+							</comment>
+							<post-script>map().runScript("npc1.quest-complete");npc("npc1").clearIndicators();</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You did everyone in [color=special]Lelandria[/color] a great service, [color=special]$[core.player1.name][/color].  I&apos;m glad that guy isn&apos;t polluting our land with black capitalism anymore!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Now that you&apos;ve gotten rid of that evil [color=dim]Kenny[/color], we can finally start thinking about shutting down those [color=special]bomb vending machines[/color] of his.  Thanks again, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You didn&apos;t even wait to customize your controls before getting rid of [color=special]Kenny[/color], did you, [color=special]$[core.player1.name][/color]?  What incredible selflessness!  Now that you have purified [color=special]Lelandria[/color] of its most sinister businessman, you should consider customizing your controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>
+								A great number of would-be heroes have previously attempted to eliminate [color=special]Kenny[/color] for me.  All of them failed because all of them entered battle using the default gameplay controls.
+
+Where they failed, though, you succeeded!  Your specially-configured controls allowed you to surprise [color=special]Kenny[/color].  Now you can turn your focus to the remainder of the [color=dim]bad guys[/color], and you will undoubtedly defeat them just as easily!
+							</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

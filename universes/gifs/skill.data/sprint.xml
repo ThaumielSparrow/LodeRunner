@@ -1,0 +1,98 @@
+<sprint>
+	<data tier = 'locked'>
+		<texts>
+			<overview>Sprint increases your [color=title]lateral movement speed[/color], allowing for quicker travel and easier enemy evasion.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.movement.sprint</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '3'>
+		<texts>
+			<overview>Sprint increases your [color=title]lateral movement speed[/color], allowing for quicker travel and easier enemy evasion.</overview>
+			<specs>[color=title]20%[/color] speed bonus for [color=title]3s[/color]
+Recharges in [color=title]10 seconds[/color]</specs>
+			<manual>Activate Sprint to increase your speed by [color=title]20%[/color] for [color=title]3s[/color].</manual>
+			<gif-source>gifs.movement.sprint</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Sprint[/color], you will lose access to the [color=title]Matrix[/color] skill.
+
+Higher levels of [color=title]Sprint[/color] offer small [color=title]speed increases[/color] while incrementally decreasing the base [color=title]recharge time[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Matrix[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.0</duration>
+			<recharge measure = 'seconds'>10.0</recharge>
+			<modifiers>
+				<modifier name = 'kill-all-enemies' value = '1' />
+				<modifier name = 'sprint-power-factor' value = '1.2' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '4'>
+		<texts>
+			<overview>The first upgrade to Sprint increases the [color=title]rate[/color] and [color=title]duration[/color] of your sprint by small amounts.  It also reduces the [color=title]recharge time[/color] by 2 seconds.</overview>
+			<specs>[color=title]30%[/color] speed bonus for [color=title]3.5s[/color] (+10% for +0.5s)
+Recharges in [color=title]8 seconds[/color] (-2s)</specs>
+			<manual />
+			<gif-source>gifs.movement.sprint</gif-source>
+			<inserts>
+				<confirm>
+					<header>If you unlock Sprint, you will lose access to the [color=title]Matrix[/color] skill.
+
+Future upgrades to Sprint will extend the duration for which you can sprint as well as shorten the recharge time.</header>
+				</confirm>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>3.5</duration>
+			<recharge measure = 'seconds'>8.0</recharge>
+			<modifiers>
+				<modifier name = 'kill-all-enemies' value = '0' />
+				<modifier name = 'sprint-power-factor' value = '1.3' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '6'>
+		<texts>
+			<overview>The final upgrade to Sprint maximizes the [color=title]speed bonus[/color] and [color=title]duration[/color] of the skill.  The [color=title]recharge time[/color] will also decrease by a small amount.</overview>
+			<specs>[color=title]50%[/color] speed bonus for [color=title]4.0s[/color] (+20% for +0.5s)
+Recharges in [color=title]6 seconds[/color] (-2s)</specs>
+			<manual />
+			<gif-source>gifs.movement.sprint</gif-source>
+			<inserts>
+				<confirm>
+					<footer>This is the final upgrade.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Sprint[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>4.0</duration>
+			<recharge measure = 'seconds'>6.0</recharge>
+			<modifiers>
+				<modifier name = 'kill-all-enemies' value = '0' />
+				<modifier name = 'sprint-power-factor' value = '1.5' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have fully upgraded Sprint.  You have the maximum possible [color=title]speed bonus[/color] and [color=title]duration[/color] of the skill.</overview>
+			<specs />
+			<manual />
+			<gif-source>gifs.movement.sprint</gif-source>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</sprint>

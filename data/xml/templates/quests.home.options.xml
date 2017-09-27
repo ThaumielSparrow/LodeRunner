@@ -1,0 +1,41 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'inventory.home.options'>
+
+    <item disabled = '1' render-border = '0'>
+        <label x = '3%' y = '0' width = '90%' value = '[color=normal]Quest Options[/color]' />
+    </item>
+
+    <item-group render-border = '1' per-row = '3'>
+
+        <xitem disabled = '1' />
+        <xitem disabled = '1' />
+
+        <item glow = '1'>
+            <attributes directory-type = 'active-quests' />
+            <label x = '50%' y = '0' align = 'center' width = '90%' value = '[color=button]Active Quests[/color]' />
+            <action do = 'show-quests.focus:listing' />
+        </item>
+
+        <item glow = '1'>
+            <attributes directory-type = 'finished-quests' />
+            <label x = '50%' y = '0' align = 'center' width = '90%' value = '[color=button]Finished Quests[/color]' />
+            <action do = 'show-quests.focus:listing' />
+        </item>
+
+        <item glow = '1'>
+            <attributes directory-type = 'n/a' />
+            <label x = '50%' y = '0' align = 'center' width = '90%' value = '[color=button]Back to [color=title]Game Menu[/color][/color]' />
+            <action do = 'back' />
+        </item>
+
+    </item-group>
+
+</template>

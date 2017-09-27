@@ -1,0 +1,2087 @@
+Ready
+a.jungle.large.xml
+
+a.jungle.medium.xml
+
+a.jungle.small.xml
+
+a.mines.medium.xml
+
+a.mines.small.xml
+
+a.snow.medium.xml
+
+a.snow.small.xml
+
+a.town.medium.xml
+
+a.town.small.xml
+
+bg1.xml
+
+demomap1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'hide' type = 'entity-message' target = '' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'fyi.next'>
+		<packet>
+			<event msg = 'DEBUG - Entered fyi.next trigger' type = 'debug' />
+			<event type = 'dismiss-fyi' id = 'fyi1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'fyi' param = '' entity = 'gold.uid.0' />
+		</packet>
+	</script>
+	<script name = 'fyi.start'>
+		<packet>
+			<event conversation = 'test1' type = 'dialogue-fyi' id = 'fyi1' entity = 'npc1' />
+		</packet>
+	</script>
+
+demomap2.xml
+	<script name = 'fyi.end'>
+		<packet>
+			<event type = 'dismiss-fyi' id = 'fyi1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'fyi.end' param = '' entity = 'gold.uid.0' />
+        </packet>
+	</script>
+
+fake1.xml
+
+house1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'term3' param = '' entity = 'term3' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'modem.online' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event type = 'planar-slide' slide = '0.targeted' plane = 'slide1' speed = '5000' target = 'tide3' />
+			<event type = 'planar-slide' slide = '0.targeted' plane = 'slide2' speed = '5000' target = 'tide3' />
+			<event type = 'planar-slide' slide = '0.targeted' plane = 'slide3' speed = '5000' target = 'tide3' />
+		</packet>
+		<packet>
+			<event message = 'set-passcode' type = 'entity-message' target = 'modem.offline' param = '0451' entity = 'term1' />
+			<event message = 'set-passcode' type = 'entity-message' target = 'modem.offline' param = '0451' entity = 'term2' />
+		</packet>
+		<packet>
+			<event message = 'advertisement' type = 'trigger-message' target = 'modem.offline' param = 'Busted Modem' entity = 'npc1' />
+			<event message = 'advertisement' type = 'trigger-message' target = 'term1' param = 'Bridge Administration' entity = 'npc1' />
+			<event message = 'advertisement' type = 'trigger-message' target = 'term2' param = 'Bridge Administration' entity = 'npc1' />
+			<event message = 'advertisement' type = 'trigger-message' target = 'term5' param = 'Desiree&apos;s Private Computer' entity = 'npc1' />
+			<event message = 'advertisement' type = 'trigger-message' target = 'sonny' param = 'Help!!' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'make-disposable' type = 'entity-message' target = 'crusher.wp1' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'modem.reboot'>
+		<packet />
+	</script>
+	<script name = 'term2.hide-ads'>
+		<packet>
+			<event message = 'advertisement' type = 'trigger-message' target = 'term2' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'modem.access.offline'>
+		<packet>
+			<event conversation = 'generic.offline' type = 'dialogue' entity = 'term4' />
+		</packet>
+	</script>
+	<script name = 'bridge.raise'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide1' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide2' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide3' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' plane = 'shift1' type = 'planar-shift' target = 'tide2' collides = '1' />
+			<event speed = '1.2' plane = 'shift2' type = 'planar-shift' target = 'tide2' collides = '1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'modem.access.online'>
+		<packet />
+	</script>
+	<script name = 'term1.login'>
+		<packet>
+			<event variable = 'core.x' statistic = 'is-locked' type = 'fetch-stat' entity = 'term1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'show-hack-panel' type = 'entity-message' target = 'modem.offline' param = '' entity = 'term1' />
+					<event type = 'call-script' script = 'term1.watchdog' />
+				</event>
+				<event type = 'condition-else'>
+					<event type = 'call-script' script = 'term1.access' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'cage.crush'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '0.75' slide = '2' plane = 'gate1' type = 'planar-slide' target = 'modem.offline' />
+		</packet>
+		<packet>
+			<event speed = '0.5' plane = 'crusher1' type = 'planar-shift' target = 'crusher.wp1' collides = '1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'modem.overload'>
+		<packet />
+	</script>
+	<script name = 'term1.access'>
+		<packet>
+			<event conversation = 'generic' type = 'dialogue' entity = 'term1' />
+		</packet>
+	</script>
+	<script name = 'bridge.lower'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide1' type = 'planar-slide' target = 'tide4' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide2' type = 'planar-slide' target = 'tide4' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide3' type = 'planar-slide' target = 'tide4' />
+			<event speed = '1.2' plane = 'shift1' type = 'planar-shift' target = 'tide4' collides = '1' />
+			<event speed = '1.2' plane = 'shift2' type = 'planar-shift' target = 'tide4' collides = '1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'term5.access'>
+		<packet>
+			<event conversation = 'generic' type = 'dialogue' entity = 'term5' />
+		</packet>
+	</script>
+	<script name = 'term1.hide-ads'>
+		<packet>
+			<event message = 'advertisement' type = 'trigger-message' target = 'term1' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'gate.open'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '0.75' slide = '0' plane = 'gate1' type = 'planar-slide' target = 'modem.offline' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'bridge.secret'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide1' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide2' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide3' type = 'planar-slide' target = 'tide2' />
+			<event speed = '1.2' plane = 'shift1' type = 'planar-shift' target = 'tide2' collides = '1' />
+			<event speed = '1.2' plane = 'shift2' type = 'planar-shift' target = 'tide2' collides = '1' />
+		</packet>
+		<packet>
+			<event speed = '1.2' slide = '0.targeted' plane = 'slide3' type = 'planar-slide' target = 'tide1' />
+			<event speed = '1.2' plane = 'shift2' type = 'planar-shift' target = 'tide1' collides = '1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'term3.access'>
+		<packet>
+			<event conversation = 'generic' type = 'dialogue' entity = 'term3' />
+		</packet>
+	</script>
+	<script name = 'term1.watchdog'>
+		<packet>
+			<event variable1 = 'core.login-succeeded' operator = '==' variable2 = 'app.active-map-name' raw-value = 'yes' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'unlock' type = 'entity-message' target = 'modem.offline' param = '' entity = 'term1' />
+					<event message = 'unlock' type = 'entity-message' target = 'modem.offline' param = '' entity = 'term2' />
+					<event type = 'call-script' script = 'term1.access' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+	</script>
+
+map3.xml
+
+map5.xml
+	<script name = 'door1b.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event message = 'zap-target' type = 'entity-message' target = 'door1a' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+		<packet />
+	</script>
+	<script name = 'door1a.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event message = 'zap-target' type = 'entity-message' target = 'door1b' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+		<packet />
+	</script>
+
+puzzle1.xml
+
+temp1.xml
+
+temp2.xml
+
+temp3.xml
+
+town1.bg1.xml
+
+town1.bg2.xml
+
+town1.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<xevent message = 'advertisement' type = 'trigger-message' target = 'ad1' param = 'Welcome to Amandria' entity = '' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(2); npc1.b; npc1.c; sleep(1); npc1.d; npc1.e; sleep(1.5); npc1.f; npc1.g; sleep(2.5)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.b' param = 'npc2.a; sleep(2.5); npc2.b; sleep(0.5); npc2.c0; npc2.c; sleep(2.0); npc2.d; sleep(1.0)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'dave.talk'>
+		<packet>
+			<event conversation = 'generic' type = 'dialogue' entity = 'npc1' />
+		</packet>
+	</script>
+
+town1.level2.xml
+	<script name = 'onload'>
+		<packet />
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1); npc1.b; sleep(1.5); npc1.c; sleep(0.5); npc1.b; npc1.d; sleep(1.5); npc1.e; sleep(2.0)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1); npc2.b; npc2.c; sleep(1.5); npc2.d; npc2.e; sleep(2.0); npc2.f; npc2.d; sleep(0.5)' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet>
+			<event variable = 'QUEST.STATUS.COMPLETE' switch-type = 'quest-status' quest = '1.2.npc2.quest' type = 'condition-switch'>
+				<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.y' type = 'vars-set' value = '0' />
+					<event conversation = 'quest:pending:available' type = 'disable-lines-by-class' class = '*' entity = 'npc2' />
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-took-shoes' format = 'string' />
+					<event variable1 = 'algebra.y' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event variable = 'algebra.y' type = 'vars-set' value = '1' />
+						</event>
+					</event>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-took-other' format = 'string' />
+					<event variable1 = 'algebra.y' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event variable = 'algebra.y' type = 'vars-set' value = '2' />
+						</event>
+					</event>
+					<event variable = 'algebra.y' switch-type = 'variable' quest = '1.2.npc2.quest' type = 'condition-switch'>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '1' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'completed' entity = 'npc2' />
+						</event>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '2' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'failed' entity = 'npc2' />
+						</event>
+						<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '0' type = 'condition-when'>
+							<event conversation = 'quest:pending:available' type = 'enable-lines-by-class' class = 'default' entity = 'npc2' />
+						</event>
+					</event>
+					<event conversation = 'quest:pending:available' type = 'dialogue' entity = 'npc2' />
+				</event>
+				<event variable = 'QUEST.STATUS.FAILED' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-spilled-perfume' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:failed:spilled-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:failed:killed-merchant' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:complete:killed-carlos' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:complete:delivered-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.IN.PROGRESS' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-bought' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:in-progress:bought-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event variable = 'algebra.x' quest = '1.2.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+							<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+								<event type = 'condition-then'>
+									<event conversation = 'quest:in-progress:killed-carlos' type = 'dialogue' entity = 'npc2' />
+								</event>
+								<event type = 'condition-else'>
+									<event conversation = 'quest:in-progress' type = 'dialogue' entity = 'npc2' />
+								</event>
+							</event>
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'desiree.talk'>
+		<packet>
+			<event variable = 'session.quest.act1.internet' type = 'condition-switch'>
+				<event variable = 'app.active-map-name' raw-value = 'inactive' type = 'condition-when'>
+					<event conversation = 'quest' type = 'dialogue' entity = 'npc2' />
+				</event>
+				<event variable = 'app.active-map-name' raw-value = 'active' type = 'condition-when'>
+					<event conversation = 'quest-in-progress' type = 'dialogue' entity = 'npc2' />
+				</event>
+			</event>
+		</packet>
+	</script>
+
+town1.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1); npc1.b; sleep(0.75); npc1.c; sleep(1.0); npc1.d; sleep(0.5)' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event variable = 'QUEST.STATUS.COMPLETE' type = 'condition-switch' switch-type = 'quest-status' quest = '0.4.npc2.quest'>
+				<event variable = 'QUEST.STATUS.IN.PROGRESS' raw-value = '' type = 'condition-when'>
+					<event message = 'add-to-vendor-inventory' type = 'entity-message' target = 'npc1.a' param = 'rochelles-perfume' entity = 'npc1' />
+				</event>
+				<event variable = 'QUEST.STATUS.FAILED' raw-value = '' type = 'condition-when' />
+			</event>
+		</packet>
+	</script>
+	<script name = 'npc1.ondeath'>
+		<packet>
+			<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-bought' format = 'string' />
+			<event variable = 'algebra.x' type = 'condition-switch'>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-when' />
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'inactive' type = 'condition-when'>
+					<event flag = 'failed' quest = '0.4.npc2.quest' type = 'flag-quest' />
+					<event flag = 'active' quest = '0.4.npc2.quest' type = 'flag-quest-update' update = 'update-killed-merchant' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet>
+            <event message = 'set-warehouses' type = 'entity-message' target = 'npc1.a' param = 'warehouse-test' entity = 'npc1' />
+			<event conversation = 'default' type = 'dialogue-shop' entity = 'npc1' />
+		</packet>
+	</script>
+
+town2.bg1.xml
+
+town2.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.5); npc1.b; sleep(1); npc1.c; sleep(1.25); npc1.d; sleep(0.5)' entity = 'npc1' />
+		</packet>
+	</script>
+
+town2.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; sleep(0.5); npc1.c0; npc1.c; sleep(1.5); npc1.d; sleep(2.0); npc1.a; sleep(0.75); npc1.b; npc1.e; sleep(1.5)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1.25); npc2.b; sleep(0.75); npc2.c; npc2.d; sleep(1.5); npc2.e; sleep(1.0); npc2.d; npc2.c; sleep(0.5); npc2.a; npc2.e; sleep(1.0)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town2.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.5); npc1.b; npc1.c; sleep(1.0); npc1.a; npc1.d; sleep(2.5); npc1.c; sleep(0.5)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town3.bg1.xml
+
+town3.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.25); npc1.b; sleep(0.5); npc1.c; sleep(0.5); npc1.d; npc1.e; npc1.f; sleep(1.5); npc1.e; sleep(0.5)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(0.5); npc2.b; sleep(1.5); npc2.c; sleep(0.5); npc2.g; npc2.f; npc2.e; sleep(1.25); npc2.f; sleep(0.5); npc2.g; sleep(0.75); npc2.d; sleep(0.5)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town3.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.75); npc1.b; npc1.c; sleep(1.25); npc1.d; npc1.e; npc1.f; sleep(1.75); npc1.g; npc1.e; npc1.h' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town3.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event type = 'set-npc-indicator' value = '1' key = 'quest-available' entity = 'npc1' />
+			<event type = 'set-npc-indicator' value = '1' key = 'merchant' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; sleep(0.5); npc1.c; sleep(1.25); npc1.b; npc1.d; sleep(1.0); npc1.e; sleep(1.5); npc1.d; sleep(0.75); npc1.f; sleep(1.25); npc1.b; sleep(1.0)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet>
+			<event variable = 'QUEST.STATUS.COMPLETE' quest = '3.3.npc1.quest' type = 'condition-switch' switch-type = 'quest-status'>
+				<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '' type = 'condition-when'>
+					<event conversation = 'quest:pending:assign' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event variable = 'QUEST.STATUS.FAILED' raw-value = '' type = 'condition-when'>
+					<event conversation = 'quest:done:failed' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '3.3.npc1.quest' type = 'fetch-update-status' update = 'update-buyout' format = 'string' />
+					<event variable = 'algebra.x' type = 'condition-switch'>
+						<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-when'>
+							<event conversation = 'quest:done:paid' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'inactive' type = 'condition-when'>
+							<event conversation = 'quest:done:passed' type = 'dialogue' entity = 'npc1' />
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+	</script>
+
+town4.bg1.xml
+
+town4.bg2.xml
+
+town4.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<event position = 'footer-left' message = 'Offer 100xp bonus for not using bombs...' type = 'shout' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; sleep(0.5); npc1.c; sleep(1.25); npc1.d; sleep(1.0); npc1.e; sleep(0.5); npc1.c; sleep(0.5); npc1.b; sleep(0.75)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'lever2.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '2' type = 'lever-has-position' entity = 'lever2' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2a' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2b' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town4.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.75); npc1.b; sleep(1.25); npc1.c; sleep(0.75); npc1.d; sleep(1.0); npc1.d2; npc1.b; sleep(0.5); npc1.c; npc1.e; sleep(1.0)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'npc2.a2; npc2.g; sleep(1.25); npc2.b; npc2.c; sleep(1.75); npc2.c2; npc2.d; npc2.e; npc2.f0; npc2.f; npc2.g; sleep(1.0)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '2' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'shift1' speed = '1.5' target = 'wp1a' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'shift1' speed = '1.5' target = 'wp1b' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'lever2.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '0' type = 'lever-has-position' entity = 'lever2' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever2' />
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever2b' />
+					<event type = 'planar-shift' plane = 'shift2' speed = '1.5' target = 'wp2b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever2' />
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever2b' />
+					<event type = 'planar-shift' plane = 'shift2' speed = '1.5' target = 'wp2a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+
+town4.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.75); npc1.b; sleep(0.5); npc1.c; sleep(1.25); npc1.d; npc1.e; sleep(0.75); npc1.f; sleep(1.0)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(0.5); npc2.b; npc2.c; sleep(0.75); npc2.b; sleep(0.5); npc2.d; sleep(1.25); npc2.b' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'lever2.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '1' type = 'lever-has-position' entity = 'lever2' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2a' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2b' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+
+town4.level4.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.75); npc1.b; sleep(0.5); npc1.c; sleep(1.25); npc1.d; sleep(0.75); npc1.e; npc1.c; npc1.f; sleep(1.0); npc1.g; sleep(0.5); npc1.h; sleep(1.0)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town5.bg1.xml
+
+town5.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; sleep(0.75); npc1.c; sleep(1.0); npc1.d; sleep(0.75); npc1.c; npc1.e; sleep(1.25)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '1.0' plane = 'shift1' type = 'planar-shift' target = 'wp1a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+	</script>
+	<script name = 'lever2.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '2' type = 'lever-has-position' entity = 'lever2' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2a' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever2' />
+					<event speed = '1.0' plane = 'shift2' type = 'planar-shift' target = 'wp2b' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+
+town5.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.5); npc1.b; sleep(0.5); npc1.c; sleep(2.0); npc1.b; sleep(0.5)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town5.level3.xml
+	<script name = 'terminal1.access'>
+		<packet />
+	</script>
+	<script name = 'lever3.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '2' type = 'lever-has-position' entity = 'lever3' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever3' />
+					<event type = 'planar-shift' plane = 'shift3' speed = '1.0' target = 'wp3a' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever3' />
+					<event type = 'planar-shift' plane = 'shift3' speed = '1.0' target = 'wp3b' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'shift1' speed = '1.0' target = 'wp1b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'shift1' speed = '1.0' target = 'wp1a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+	</script>
+	<script name = 'lever2.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever2' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever2' />
+					<event type = 'planar-shift' plane = 'shift2' speed = '1.0' target = 'wp2b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever2' />
+					<event type = 'planar-shift' plane = 'shift2' speed = '1.0' target = 'wp2a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+	</script>
+
+town5.level4.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.25); npc1.b; sleep(0.75); npc1.c; sleep(1.75); npc1.b; sleep(0.5)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(0.75); npc2.b; sleep(1.25); npc2.c; sleep(0.5); npc2.d; sleep(0.75); npc2.e; sleep(1.0); npc2.b; sleep(0.75); npc2.e' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town6.bg1.xml
+
+town6.bg2.xml
+
+town6.level1.xml
+
+town6.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.5); npc1.b; sleep(1.0); npc1.c; npc1.d; sleep(0.5); npc1.e; npc1.f; sleep(1.5)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(0.75); npc2.b; sleep(1.0); npc2.a; npc2.c0; sleep(0.25); npc2.c; sleep(1.25); npc2.e; sleep(2.5); npc2.d; sleep(0.5); npc2.e; sleep(0.5)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '0.75' plane = 'shift1' type = 'planar-shift' target = 'wp2' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '0.75' plane = 'shift1' type = 'planar-shift' target = 'wp1' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town6.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(2.0); npc1.b; sleep(0.75); npc1.d; sleep(1.0); npc1.e; npc1.a; sleep(0.25); npc1.c; sleep(1.0)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1.0); npc2.a; npc2.c; sleep(1.5); npc2.d; sleep(0.75); npc2.e; npc2.a; sleep(0.75); npc2.f; sleep(1.5)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '3' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'right' entity = 'lever1' />
+					<event speed = '0.75' plane = 'shift1' type = 'planar-shift' target = 'wp2' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'left' entity = 'lever1' />
+					<event speed = '0.75' plane = 'shift1' type = 'planar-shift' target = 'wp1' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town6.level4.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.75); npc1.b; sleep(0.5); npc1.c; sleep(1.0); npc1.d; sleep(1.5); npc1.c; sleep(0.25); npc1.b; sleep(1.0); npc1.e; sleep(1.5)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '2' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever1' />
+					<event speed = '0.5' plane = 'block1' type = 'planar-shift' target = 'wp1' collides = '1' />
+					<event speed = '0.5' slide = '0' plane = 'slide1' type = 'planar-slide' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever1' />
+					<event speed = '0.5' plane = 'block1' type = 'planar-shift' target = 'wp2' collides = '1' />
+					<event speed = '0.5' slide = '2' plane = 'slide1' type = 'planar-slide' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town6.level5.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; sleep(0.75); npc1.c; sleep(0.75); npc1.d; sleep(1.0); npc1.c; sleep(0.75); npc1.d; npc1.b; sleep(1.0); npc1.e; sleep(0.5)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'lever1.action'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event variable = 'core.x' position = '0' type = 'lever-has-position' entity = 'lever1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'down' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'bar1' speed = '1.5' target = 'wp1b' collides = '1' />
+					<event type = 'planar-shift' plane = 'bar2' speed = '1.5' target = 'wp2b' collides = '1' />
+					<event type = 'planar-shift' plane = 'bar3' speed = '1.5' target = 'wp3b' collides = '1' />
+				</event>
+				<event type = 'condition-else'>
+					<event message = 'lever-position' type = 'entity-message' target = 'lever1' param = 'up' entity = 'lever1' />
+					<event type = 'planar-shift' plane = 'bar1' speed = '1.5' target = 'wp1a' collides = '1' />
+					<event type = 'planar-shift' plane = 'bar2' speed = '1.5' target = 'wp2a' collides = '1' />
+					<event type = 'planar-shift' plane = 'bar3' speed = '1.5' target = 'wp3a' collides = '1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town6.level6.xml
+
+town7.bg1.xml
+
+town7.bg2.xml
+
+town7.level1.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.5); npc1.c; sleep(0.5); npc1.b; sleep(1.0); npc1.c; sleep(0.25); npc1.b; sleep(0.75)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1.0); npc2.b; sleep(0.5); npc2.c; sleep(0.75); npc2.a; npc2.d; sleep(1.5)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town7.level2.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(1.0); npc1.b; npc1.c; npc1.d; npc1.e; sleep(2.0); npc1.f; sleep(1.25); npc1.g' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town7.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.5); npc1.b; sleep(0.75); npc1.a; sleep(0.25); npc1.c; sleep(0.75); npc1.d; sleep(1.0); npc1.e; sleep(0.5); npc1.c; sleep(0.25)' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+town7.level4.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'sleep(0.5); npc1.b; npc1.c; sleep(1.25); npc1.d; sleep(0.75); npc1.e; npc1.f; sleep(1.5); npc1.d; sleep(0.75)' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'sleep(1.5); npc2.c; sleep(0.25); npc2.b; sleep(1.25); npc2.c; npc2.b; sleep(0.75)' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet />
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+world0.level0.bg.xml
+
+world0.level0.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'hide' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+			<event message = 'hide' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+			<event message = 'hide' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow3' />
+			<event message = 'set-direction' type = 'entity-message' target = '' param = '2' entity = 'arrow1' />
+			<event message = 'set-direction' type = 'entity-message' target = '' param = '1' entity = 'arrow2' />
+			<event message = 'set-direction' type = 'entity-message' target = '' param = '1' entity = 'arrow3' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson1.touch'>
+		<packet>
+			<event message = 'activate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson1.pre.touch'>
+		<packet>
+			<event conversation = 'tutorial' type = 'dialogue-fyi' id = 'tutorial1' entity = 'arrow1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson1.pre' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson1.exit'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+            <event type = 'dismiss-fyi' id = 'tutorial1' />
+        </packet>
+		<packet>
+			<event message = 'fade-out' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+        </packet>
+        <packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+			<event message = 'activate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+		</packet>
+		<packet />
+	</script>
+	<script name = 'wp.next.touch'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.next' param = '' entity = 'arrow1' />
+        </packet>
+		<packet>
+			<event message = 'fade-out' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+        </packet>
+        <packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'wp.arrow3' param = '' entity = 'arrow3' />
+		</packet>
+	</script>
+	<script name = 'wp.arrow3.touch'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.arrow3' param = '' entity = 'arrow1' />
+        </packet>
+		<packet>
+			<event message = 'fade-out' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+        </packet>
+		<packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'wp.arrow3' param = '' entity = 'arrow2' />
+			<event message = 'activate' type = 'entity-message' target = 'wp.arrow3' param = '' entity = 'arrow3' />
+		</packet>
+	</script>
+
+world0.level1.bg2.xml
+
+world0.level1.bg.xml
+
+world0.level1.xml
+	<script name = 'onload'>
+		<packet />
+	</script>
+	<script name = 'exit1'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'exit1' param = '' entity = 'arrow0' />
+		</packet>
+		<packet>
+			<event message = 'fade-out' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow1' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson2.touch'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson2' param = '' entity = 'arrow0' />
+            <event type = 'dismiss-fyi' id = 'tutorial2' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow0' />
+			<event message = 'activate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson1.touch'>
+		<packet>
+            <event type = 'dismiss-fyi' id = 'tutorial1' />
+			<event message = 'set-direction' type = 'entity-message' target = '' param = '1' entity = 'arrow1' />
+			<event message = 'set-direction' type = 'entity-message' target = 'exit1' param = '0' entity = 'arrow0' />
+			<event conversation = 'tutorial' type = 'dialogue-fyi' id = 'tutorial2' entity = 'arrow1' />
+			<event message = 'deactivate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow0' />
+			<event message = 'deactivate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson1' param = '' entity = 'arrow0' />
+			<event message = 'activate' type = 'entity-message' target = 'exit1' param = '' entity = 'arrow0' />
+		</packet>
+	</script>
+
+world0.level2.bg.xml
+
+world0.level2.xml
+	<script name = 'onload'>
+		<x>
+			<packet>
+				<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+			</packet>
+			<packet>
+				<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'player1' />
+			</packet>
+			<packet>
+				<event message = 'seek-target' type = 'entity-message' target = 'wp4' param = '' entity = 'player1' />
+			</packet>
+		</x>
+		<packet>
+			<event message = 'set-direction' type = 'entity-message' target = 'wp2' param = '2' entity = 'arrow1' />
+			<event message = 'set-direction' type = 'entity-message' target = 'wp2' param = '2' entity = 'arrow2' />
+			<event message = 'hide' type = 'entity-message' target = 'wp2' param = '2' entity = 'arrow2' />
+			<event message = 'set-direction' type = 'entity-message' target = 'wp2' param = '1' entity = 'arrow3' />
+			<event message = 'hide' type = 'entity-message' target = 'wp2' param = '1' entity = 'arrow3' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson3.touch'>
+		<packet>
+			<event type = 'dismiss-fyi' id = 'tutorial3' />
+			<event message = 'fade-out' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson3' param = '' entity = 'arrow1' />
+		</packet>
+		<packet>
+            <event message = 'deactivate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+			<event message = 'activate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow3' />
+		</packet>
+	</script>
+	<script name = 'done.touch'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'done' param = '' entity = 'arrow1' />
+			<event message = 'fade-out' type = 'entity-message' target = 'done' param = '' entity = 'arrow3' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'entity-message' target = 'done' param = '' entity = 'arrow3' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson2.touch'>
+		<packet>
+			<event type = 'dismiss-fyi' id = 'tutorial3' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson2' param = '' entity = 'arrow1' />
+			<event message = 'fade-out' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+		</packet>
+		<packet>
+            <event message = 'deactivate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+			<event message = 'activate' type = 'entity-message' target = 'wp.lesson1' param = '' entity = 'arrow2' />
+		</packet>
+	</script>
+	<script name = 'wp.lesson1.touch'>
+		<packet>
+            <event type = 'dismiss-fyi' id = 'tutorial2' />
+			<event conversation = 'tutorial' type = 'dialogue-fyi' id = 'tutorial3' entity = 'arrow1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'wp.lesson1' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+
+world0.level3.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc1.talk' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'npc1.ondeath'>
+		<packet>
+			<event variable1 = 'session.world0.level3.talked-brent' operator = '==' variable2 = 'algebra.x' raw-value = 'no' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event flag = 'active' quest = 'world0-level3-debrief' type = 'flag-quest-update' update = 'update-killed-fast' />
+					<event flag = 'completed' quest = 'world0-level3-debrief' type = 'flag-quest' />
+				</event>
+				<event type = 'condition-else'>
+					<event flag = 'active' quest = 'world0-level3-debrief' type = 'flag-quest-update' update = 'update-killed-after' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'safezone.exit'>
+		<packet>
+			<event message = 'set-speed' type = 'entity-message' target = 'npc1.talk' param = 'default' entity = 'enemy1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'safezone' param = '' entity = 'arrow1' />
+		</packet>
+	</script>
+	<script name = 'safezone.touch'>
+		<packet>
+			<event type = 'dismiss-fyi' id = 'tutorial3' />
+		</packet>
+	</script>
+	<script name = 'onbirth'>
+		<packet>
+			<event message = 'set-direction' type = 'entity-message' target = '' param = '2' entity = 'arrow1' />
+			<event message = 'set-speed' type = 'entity-message' target = '' param = '0' entity = 'enemy1' />
+			<event message = 'set-speed' type = 'entity-message' target = '' param = '0' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'quest.touch'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'quest' param = '' entity = 'arrow1' />
+			<event flag = 'active' quest = 'world0-level3-debrief' type = 'flag-quest' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet>
+			<event conversation = 'intro' type = 'dialogue' entity = 'npc1' />
+			<event variable = 'session.world0.level3.talked-brent' type = 'vars-set' value = 'yes' />
+		</packet>
+	</script>
+
+world0.level4.bg.xml
+
+world0.level4.xml
+	<script name = 'onload'>
+		<packet>
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc1.a' param = 'npc1.b;npc1.c;npc1.d;npc1.e' entity = 'npc1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'npc2.a' param = 'npc2.b; sleep(1.5); npc2.c; npc2.d; npc2.e; sleep(2.5)' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'follow' type = 'trigger-message' target = 'npc2.talk' param = '' entity = 'npc2' />
+		</packet>
+	</script>
+	<script name = 'npc2.ondeath'>
+		<packet>
+			<event flag = 'failed' quest = '0.4.npc2.quest' type = 'flag-quest' />
+			<event flag = 'active' quest = '0.4.npc2.quest' type = 'flag-quest-update' update = 'update-killed-rochelle' />
+		</packet>
+	</script>
+	<script name = 'town.faq.touch'>
+		<packet />
+	</script>
+	<script name = 'npc2.quest.complete'>
+		<packet>
+			<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-extorted' format = 'string' />
+			<event variable = 'algebra.x' type = 'condition-switch'>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-when'>
+					<event flag = 'complete' quest = '0.4.npc2.quest' type = 'flag-quest' />
+					<event flag = 'active' quest = '0.4.npc2.quest' type = 'flag-quest-update' update = 'update-delivered-extorted' />
+				</event>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = 'inactive' type = 'condition-when'>
+					<event flag = 'complete' quest = '0.4.npc2.quest' type = 'flag-quest' />
+					<event flag = 'active' quest = '0.4.npc2.quest' type = 'flag-quest-update' update = 'update-delivered' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'npc2.talk'>
+		<packet>
+			<event variable = 'QUEST.STATUS.COMPLETE' type = 'condition-switch' switch-type = 'quest-status' quest = '0.4.npc2.quest'>
+				<event variable = 'QUEST.STATUS.INACTIVE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:killed-carlos-prematurely' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:pending:assign' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.FAILED' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-spilled-perfume' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:failed:spilled-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:failed:killed-merchant' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.COMPLETE' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:complete:killed-carlos' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'quest:complete:delivered-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+					</event>
+				</event>
+				<event variable = 'QUEST.STATUS.IN.PROGRESS' raw-value = '' type = 'condition-when'>
+					<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-bought' format = 'string' />
+					<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'quest:in-progress:bought-perfume' type = 'dialogue' entity = 'npc2' />
+						</event>
+						<event type = 'condition-else'>
+							<event variable = 'algebra.x' quest = '0.4.npc2.quest' type = 'fetch-update-status' update = 'update-killed-carlos' format = 'string' />
+							<event variable1 = 'algebra.x' operator = '==' variable2 = 'QUEST.STATUS.COMPLETE' raw-value = 'active' type = 'condition-if'>
+								<event type = 'condition-then'>
+									<event conversation = 'quest:in-progress:killed-carlos' type = 'dialogue' entity = 'npc2' />
+								</event>
+								<event type = 'condition-else'>
+									<event conversation = 'quest:in-progress' type = 'dialogue' entity = 'npc2' />
+								</event>
+							</event>
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'npc1.ondeath'>
+		<packet>
+			<event flag = 'active' quest = '0.4.npc2.quest' type = 'flag-quest-update' update = 'update-killed-carlos' />
+		</packet>
+	</script>
+	<script name = 'npc1.talk'>
+		<packet />
+	</script>
+
+world1.bg1.xml
+
+world1.bg2.xml
+
+world1.bg3.xml
+
+world1.bg4.xml
+
+world1.bg5.xml
+
+world1.level1.xml
+	<script name = 'terminal2.access'>
+		<packet>
+			<event conversation = 'online' type = 'dialogue' entity = 'terminal2' />
+		</packet>
+	</script>
+	<script name = 'terminal2.clearance-check'>
+		<packet>
+			<event variable = 'core.x' statistic = 'enemies-left' type = 'fetch-stat' entity = 'narrator' />
+			<event variable1 = 'core.x' operator = '>' variable2 = 'app.active-map-name' raw-value = '0' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event conversation = 'clearance/unsafe' type = 'dialogue' entity = 'terminal2' />
+				</event>
+				<event type = 'condition-else'>
+					<event type = 'call-script' script = 'terminal2.open-gate' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'terminal2.open-gate'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '1.0' slide = '0' plane = 'gate1' type = 'planar-slide' target = '' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+		<packet />
+	</script>
+	<script name = 'jenny.talk1'>
+		<packet>
+			<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event conversation = 'talk1.friendly' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event type = 'condition-else'>
+					<event variable1 = 'session.map1.jenny.respawn-count' operator = '==' variable2 = 'app.active-map-name' raw-value = '0' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'talk1.hostile/no-kills' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'talk1.hostile/some-kills' type = 'dialogue' entity = 'npc1' />
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+		<packet />
+		<packet />
+		<packet />
+		<packet />
+	</script>
+	<script name = 'terminal1.access'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event conversation = 'basic' type = 'dialogue' entity = 'terminal1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'watcher1' param = '' entity = 'npc1' />
+			<event type = 'cutscene' behavior = 'begin' />
+			<event position = 'footer-left' message = 'The story begins...' type = 'shout' />
+			<event speed = '1000' slide = '0' plane = 'gate1' type = 'planar-slide' target = '' />
+			<event message = 'deactivate' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc2' />
+			<event message = 'advertisement' type = 'trigger-message' target = 'terminal1.login' param = 'Secure Terminal' entity = 'npc1' />
+			<event message = 'assign-respawn-region' type = 'entity-message' target = 'respawn-region3' param = '' entity = 'npc1' />
+            <event message = 'set-speed' type = 'entity-message' target = '' param = '1.85' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'set-passcode' type = 'entity-message' target = 'respawn-region1' param = '12345' entity = 'terminal1' />
+			<event message = 'add-hotspot' type = 'entity-message' target = 'walk4' param = 'walk1; walk2; walk3; walk4; walk1; terminal1.login; wp4; terminal1.login; walk2; terminal1.login; walk1; wp2; walk2; walk3; wp2' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'jenny.talk1' param = '' entity = 'npc1' />
+			<event message = 'follow' type = 'trigger-message' target = 'jenny.talk4' param = '' entity = 'npc1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal1.login' param = '' entity = 'narrator' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal2.login' param = '' entity = 'narrator' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal2.investigate' param = '' entity = 'narrator' />
+			<event message = 'follow' type = 'trigger-message' target = 'jenny.talk5' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'jenny.talk4' param = '' entity = 'narrator' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'jenny.talk5' param = '' entity = 'narrator' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event conversation = 'greeting' type = 'dialogue' entity = 'npc1' />
+		</packet>
+		<packet>
+            <event message = 'set-speed' type = 'entity-message' target = '' param = 'default' entity = 'npc1' />
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'jenny.talk5'>
+		<packet>
+			<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event conversation = 'talk5.friendly' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event type = 'condition-else'>
+					<event conversation = 'talk5.hostile' type = 'dialogue' entity = 'npc1' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'jenny.talk4'>
+		<packet>
+			<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event conversation = 'talk4.friendly' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event type = 'condition-else'>
+					<event conversation = 'talk4.hostile' type = 'dialogue' entity = 'npc1' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'onload.old'>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp3' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'terminal2.login' param = '' entity = 'npc1' />
+		</packet>
+		<packet />
+		<packet>
+			<event disposable = 'yes' type = 'spawn-random-enemy' target = 'respawn-region1' param = 'random-enemy1' />
+			<event disposable = 'yes' type = 'spawn-random-enemy' target = 'respawn-region2' param = 'random-enemy2' />
+			<event message = 'activate' type = 'trigger-message' target = 'watcher1' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event speed = '0.5' slide = '2' plane = 'gate1' type = 'planar-slide' target = '' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'terminal1.watchdog'>
+		<packet>
+			<event variable1 = 'core.login-succeeded' operator = '==' variable2 = 'app.active-map-name' raw-value = 'yes' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'unlock' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'terminal1' />
+					<event type = 'call-script' script = 'terminal1.access' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+	</script>
+	<script name = 'watcher1.action'>
+		<packet>
+			<event variable = 'core.x' entity = 'npc1' type = 'fetch-stat' statistic = 'enemies-left' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '0' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'deactivate' type = 'trigger-message' target = 'watcher1' param = '' entity = 'npc1' />
+					<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+						<event type = 'condition-then'>
+							<event conversation = 'talk3.friendly' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event type = 'condition-else'>
+							<event conversation = 'talk3.hostileA' type = 'dialogue' entity = 'npc1' />
+						</event>
+					</event>
+					<event message = 'deactivate' type = 'trigger-message' target = 'terminal1.ooo' param = '' entity = 'narrator' />
+					<event message = 'deactivate' type = 'trigger-message' target = 'terminal2.ooo' param = '' entity = 'narrator' />
+					<event message = 'activate' type = 'trigger-message' target = 'terminal1.login' param = '' entity = 'narrator' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+	</script>
+	<script name = 'watchdog1.loop'>
+		<packet>
+			<event variable = 'core.x' statistic = 'gold-left' type = 'fetch-stat' entity = 'narrator' />
+			<event variable1 = 'core.x' operator = '<=' variable2 = 'app.active-map-name' raw-value = '3' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'deactivate' type = 'trigger-message' target = 'watchdog1' param = '' entity = 'narrator' />
+					<event position = 'footer-left' message = '?????' type = 'shout' />
+					<event variable = 'session.map1.player1.in-panic-room' type = 'trigger-contains' target = 'wp.panic-room' entity = 'player1' />
+					<event type = 'call-script' script = 'watchdog1.result1' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+		<packet />
+		<packet />
+		<packet />
+		<packet />
+	</script>
+	<script name = 'jim.shocked'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event message = 'activate' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp4' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event conversation = 'ch1.shocked' type = 'dialogue' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'terminal2.login' param = '' entity = 'npc2' />
+			<event speed = '0.75' slide = '0' plane = 'gate1' type = 'planar-slide' target = '' />
+		</packet>
+		<packet>
+			<event conversation = 'ch1.shocked' type = 'dialogue' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'watchdog1.result1'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+			<event message = 'clear-hotspots' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event conversation = 'talk2.friendly' type = 'dialogue' entity = 'npc1' />
+				</event>
+				<event type = 'condition-else'>
+					<event conversation = 'talk2.hostile' type = 'dialogue' entity = 'npc1' />
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'terminal2.login' param = '' entity = 'npc1' />
+			<event variable1 = 'session.map1.player1.in-panic-room' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+				</event>
+				<event type = 'condition-else' />
+			</event>
+		</packet>
+		<packet>
+			<event type = 'planar-slide' slide = '2' plane = 'gate1' speed = '0.5' target = '' />
+		</packet>
+		<packet>
+			<event disposable = 'yes' type = 'spawn-random-enemy' target = 'respawn-region1' param = 'random-enemy1' />
+			<event disposable = 'yes' type = 'spawn-random-enemy' target = 'respawn-region2' param = 'random-enemy2' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'terminal2.ooo' param = '' entity = 'narrator' />
+			<event message = 'activate' type = 'trigger-message' target = 'terminal2.investigate' param = '' entity = 'narrator' />
+		</packet>
+		<packet>
+			<event message = 'activate' type = 'trigger-message' target = 'watcher1' param = '' entity = 'narrator' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'jenny.talk1' param = '' entity = 'npc1' />
+			<event message = 'activate' type = 'trigger-message' target = 'jenny.talk4' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp5' param = '' entity = 'npc1' />
+		</packet>
+	</script>
+	<script name = 'jenny.respawn'>
+		<packet>
+			<event conversation = 'talk.respawn' type = 'dialogue' entity = 'npc1' />
+			<event variable = 'session.map1.jenny.respawn-count' amount = '1' type = 'vars-plus' />
+		</packet>
+	</script>
+	<script name = 'jim.vaporize'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event type = 'planar-slide' slide = '2' plane = 'gate1' speed = '0.75' target = '' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'respawn-region1' param = '60' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'die' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc2' />
+		</packet>
+		<packet>
+			<event type = 'planar-slide' slide = '0' plane = 'gate1' speed = '0.5' target = '' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'terminal1.vaporize'>
+		<packet>
+			<event message = 'make-disposable' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc1' />
+			<event message = 'die' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'npc1' />
+			<event position = 'footer-left' message = 'very evil...' type = 'shout' />
+		</packet>
+		<packet>
+			<event type = 'call-script' script = 'jim.shocked' />
+		</packet>
+	</script>
+	<script name = 'jenny.talk3:transition1'>
+		<packet>
+			<event conversation = 'talk3.hostileB' type = 'dialogue' entity = 'npc1' />
+			<event position = 'footer-left' message = '?????' type = 'shout' />
+		</packet>
+	</script>
+	<script name = 'terminal1.login'>
+		<packet>
+			<event variable = 'core.x' statistic = 'is-locked' type = 'fetch-stat' entity = 'terminal1' />
+			<event variable1 = 'core.x' operator = '==' variable2 = 'app.active-map-name' raw-value = '1' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event message = 'show-hack-panel' type = 'entity-message' target = 'respawn-region1' param = '' entity = 'terminal1' />
+					<event type = 'call-script' script = 'terminal1.watchdog' />
+				</event>
+				<event type = 'condition-else'>
+					<event type = 'call-script' script = 'terminal1.access' />
+				</event>
+			</event>
+		</packet>
+	</script>
+	<script name = 'terminal1.open-gate'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event speed = '1.0' slide = '0' plane = 'gate1' type = 'planar-slide' target = '' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event conversation = 'greeting' type = 'dialogue' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+	</script>
+	<script name = 'terminal2.nerf'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+		</packet>
+		<packet>
+			<event frames = '120' type = 'sleep' />
+		</packet>
+		<packet>
+			<event message = 'die' type = 'entity-message' target = 'jenny.talk1' param = '' entity = 'random-enemy1' />
+			<event message = 'die' type = 'entity-message' target = 'jenny.talk1' param = '' entity = 'random-enemy2' />
+		</packet>
+		<packet>
+			<event frames = '60' type = 'sleep' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet />
+		<packet />
+		<packet />
+	</script>
+	<script name = 'terminal2.investigate/result'>
+		<packet>
+			<event conversation = 'offline' type = 'dialogue' entity = 'terminal2' />
+		</packet>
+	</script>
+	<script name = 'jenny.terminal2_reaction'>
+		<packet>
+			<event variable1 = 'session.map1.jenny.relationship' operator = '==' variable2 = 'app.active-map-name' raw-value = 'friendly' type = 'condition-if'>
+				<event type = 'condition-then'>
+					<event variable = 'core.z' type = 'condition-switch'>
+						<event variable = 'app.active-map-name' raw-value = 'nice' type = 'condition-when'>
+							<event conversation = 'terminal2_reaction.friendly/nice' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event variable = 'app.active-map-name' raw-value = 'mean' type = 'condition-when'>
+							<event conversation = 'terminal2_reaction.friendly/mean' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event variable = 'app.active-map-name' raw-value = 'extort' type = 'condition-when'>
+							<event variable1 = 'session.map1.jenny.wallet' operator = '>=' variable2 = 'app.active-map-name' raw-value = '10' type = 'condition-if'>
+								<event type = 'condition-then'>
+									<event conversation = 'terminal2_reaction.friendly/extort/win' type = 'dialogue' entity = 'npc1' />
+								</event>
+								<event type = 'condition-else'>
+									<event conversation = 'terminal2_reaction.friendly/extort/lose' type = 'dialogue' entity = 'npc1' />
+								</event>
+							</event>
+						</event>
+					</event>
+				</event>
+				<event type = 'condition-else'>
+					<event variable = 'core.z' type = 'condition-switch'>
+						<event variable = 'app.active-map-name' raw-value = 'nice' type = 'condition-when'>
+							<event conversation = 'terminal2_reaction.hostile/nice' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event variable = 'app.active-map-name' raw-value = 'mean' type = 'condition-when'>
+							<event conversation = 'terminal2_reaction.hostile/mean' type = 'dialogue' entity = 'npc1' />
+						</event>
+						<event variable = 'app.active-map-name' raw-value = 'extort' type = 'condition-when'>
+							<event variable1 = 'session.map1.jenny.wallet' operator = '>=' variable2 = 'app.active-map-name' raw-value = '10' type = 'condition-if'>
+								<event type = 'condition-then'>
+									<event conversation = 'terminal2_reaction.hostile/extort/win' type = 'dialogue' entity = 'npc1' />
+								</event>
+								<event type = 'condition-else'>
+									<event conversation = 'terminal2_reaction.hostile/extort/lose' type = 'dialogue' entity = 'npc1' />
+								</event>
+							</event>
+						</event>
+					</event>
+				</event>
+			</event>
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'jenny.talk4' param = '' entity = 'narrator' />
+			<event message = 'activate' type = 'trigger-message' target = 'jenny.talk5' param = '' entity = 'narrator' />
+		</packet>
+	</script>
+
+world1.level2.xml
+
+world1.level3.xml
+
+world1.level4.xml
+
+world1.level5.xml
+
+world1.level6.xml
+
+world1.level7.xml
+
+world1.level8.xml
+
+world1.level9.xml
+
+world2.bg1.xml
+
+world2.bg2.xml
+
+world2.bg3.xml
+
+world2.bg4.xml
+
+world2.bg5.xml
+
+world2.bg6.xml
+
+world2.bg7.xml
+
+world2.level10.xml
+
+world2.level11.xml
+
+world2.level12.xml
+	<script name = 'puzzle1'>
+		<packet>
+			<event spawn = 'origin' type = 'load-map' name = 'puzzle1' />
+		</packet>
+	</script>
+
+world2.level13.xml
+
+world2.level14.xml
+
+world2.level15.xml
+
+world2.level16.xml
+
+world2.level1.xml
+
+world2.level2.xml
+
+world2.level3.xml
+
+world2.level4.xml
+
+world2.level5.xml
+
+world2.level6.xml
+
+world2.level7.xml
+
+world2.level8.xml
+
+world2.level9.xml
+
+world3.bg1.xml
+
+world3.bg2.xml
+
+world3.bg3.xml
+
+world3.bg4.xml
+
+world3.bg5.xml
+
+world3.bg6.xml
+
+world3.level10.xml
+
+world3.level11.xml
+
+world3.level12.xml
+
+world3.level13.xml
+
+world3.level1.xml
+
+world3.level2.xml
+
+world3.level3.xml
+
+world3.level4.xml
+
+world3.level5.xml
+
+world3.level6.xml
+
+world3.level7.xml
+
+world3.level8.xml
+
+world3.level9.xml
+
+world4.bg1.xml
+
+world4.bg2.xml
+
+world4.bg3.xml
+
+world4.bg4.xml
+
+world4.bg5.xml
+
+world4.level10.xml
+
+world4.level11.xml
+
+world4.level1.xml
+
+world4.level2.xml
+
+world4.level3.xml
+
+world4.level4.xml
+
+world4.level5.xml
+
+world4.level6.xml
+
+world4.level7.xml
+
+world4.level8.xml
+
+world4.level9.xml
+
+world5.bg1.xml
+
+world5.bg2.xml
+
+world5.bg3.xml
+
+world5.bg4.xml
+
+world5.bg5.xml
+
+world5.level1.xml
+
+world5.level2.xml
+
+world5.level3.xml
+
+world5.level4.xml
+
+world5.level5.xml
+
+world5.level6.xml
+
+world5.level7.xml
+
+world6.bg1.xml
+
+world6.bg2.xml
+
+world6.bg3.xml
+
+world6.bg4.xml
+
+world6.level1.xml
+
+world6.level2.xml
+
+world6.level3.xml
+
+world6.level4.xml
+
+world6.level5.xml
+
+world6.level6.xml
+
+world6.level7.xml
+
+world6.level8.xml
+
+world6.level9.xml
+
+world7.bg1.xml
+
+world7.bg2.xml
+
+world7.bg3.xml
+
+world7.level1.xml
+
+world7.level2.xml
+
+world7.level3.xml
+
+world7.level4.xml
+
+world7.level5.xml
+
+world7.level6.xml
+
+world7.level7.xml
+
+world7.level8.xml
+

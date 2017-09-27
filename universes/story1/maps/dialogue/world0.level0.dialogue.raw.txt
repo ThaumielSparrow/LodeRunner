@@ -1,0 +1,12 @@
+@arrow1
+
+    @chapter1
+
+        @conversation[id = 'tutorial']
+
+            >>> root
+
+                [l id = 'line1'] Welcome to ^A Lode Runner Story^!  Explore the world, using ^@left^ to move to your left, then using ^@right^ to move to your right.
+                    -redirect root
+
+                [l id = 'line2'] You're doing great!  Follow the arrows until you reach the next level.

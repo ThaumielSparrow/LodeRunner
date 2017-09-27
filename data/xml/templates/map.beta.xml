@@ -1,0 +1,44 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'map.beta'>
+
+    <item-group per-row = '3' render-border = '1'>
+
+        <item cols = '1' rows = '1' x = '0' y = '6' glow = '1'>
+            <icon x = '10%' y = '5' index = '17' />
+            <label x = '30%' y = '5' width = '90%' value = 'Zoom Out' />
+            <action do = 'world-map-zoom-out' />
+        </item>
+
+        <item cols = '1' rows = '1' x = '1' y = '6' glow = '1'>
+            <icon x = '10%' y = '5' index = '18' />
+            <label x = '30%' y = '5' width = '90%' value = 'Zoom In' />
+            <action do = 'world-map-zoom-in' />
+        </item>
+
+        <item cols = '1' rows = '1' x = '2' y = '6' glow = '1'>
+            <icon x = '10%' y = '5' index = '19' />
+            <label x = '30%' y = '5' width = '90%' value = 'Back to Menu' />
+            <action do = 'back' />
+        </item>
+
+    </item-group>
+
+    <item id = 'map' cols = '3' rows = '4' x = '0' y = '2' disabled = '1'>
+        <worldmap x = '1%' y = '0' width = '98%' height = '150' />
+    </item>
+
+    <item cols = '3' rows = '2' x = '0' y = '0' disabled = '1'>
+        <label x = '5%' y = '5' width = '90%' value = 'The world map provides a quick way to view where you have been in the world.
+
+Screens with 1 or more gold bars remaining have a [color=special]gold[/color] color; screens you have neared (but not entered) have a [color=dim]faded[/color] color.' />
+    </item>
+
+</template>

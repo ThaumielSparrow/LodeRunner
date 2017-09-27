@@ -1,0 +1,2850 @@
+<skilltrees>
+    <movement>
+        <sprint>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.sprint' align = 'center' />
+                        <label -skill-name = 'sprint' -category-name = 'movement' x = '90%' y = '130' value = '[color=dim]Sprint - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'sprint' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.sprint' align = 'center' />
+                        <label -skill-name = 'sprint' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Sprint[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'sprint' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.sprint' align = 'center' />
+                        <label -skill-name = 'sprint' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Sprint[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'sprint' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.sprint' align = 'center' />
+                        <label -skill-name = 'sprint' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Sprint[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'sprint' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.sprint' align = 'center' />
+                        <label -skill-name = 'sprint' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Sprint[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'sprint' -category-name = 'movement' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item name = '' title = '' cols = '1' rows = '1' x = '0' y = '0'>
+                        <gif x = '5%' y = '5' param = 'gifs.movement.sprint' />
+                        <label x = '5%' y = '124' value = '[color=special]Sprint[/color]' width = '100%' align = '' />
+                        <label x = '36%' y = '124' value = '([color=warning]Locked[/color])' width = '100%' align = 'right' />
+                        <label x = '40%' y = '5' width = '55%' value = '[color=dim]Briefly increase your lateral movement speed for quicker travel and easier enemy evasion.[/color]' />
+                        <label x = '40%' y = '80' width = '55%' value = '[color=dim]Current Level:[/color]  [color=evil]n/a[/color]
+
+[color=special]Note:[/color]  This skill is now [color=warning]unavailable[/color].' />
+                        <label x = '95%' y = '80' width = '55%' value = '[color=dim]Next Level:[/color]  [color=warning]Locked[/color]' align = 'right' />
+                        <action do = 'upgrade' category = 'movement' skill = 'sprint' required-level = '1' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Sprint[/color] (Level 1)
+[color=dim]Required Character Level:[/color]  3
+
+Sprint briefly increases your [color=dim]lateral movement speed[/color], allowing for quicker travel and easier enemy evasion.
+
+Higher levels of [color=dim]Sprint[/color] offer small [color=dim]speed increases[/color] while incrementally decreasing the base [color=dim]recharge time[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '[color=dim]Current - n/a[/color]' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+
+[color=dim]Speed:[/color]  [color=evil]+ 20%[/color]
+[color=dim]Duration:[/color]  [color=evil]3s[/color]
+[color=dim]Recharge:[/color]  [color=evil]10s[/color]' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Sprint[/color] (Level 2)
+[color=dim]Required Character Level:[/color]  5
+
+The first upgrade to Sprint increases the [color=dim]rate[/color] and [color=dim]duration[/color] of your sprint by a small amount.
+
+It also reduces the [color=dim]recharge time[/color] by 1 second.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+
+[color=dim]Speed:[/color]  [color=special]+ 20%[/color]
+[color=dim]Duration:[/color]  [color=special]3s[/color]
+[color=dim]Recharge:[/color]  [color=special]10s[/color]' align = '' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+
+[color=dim]Speed:[/color]  [color=evil]+ 25%[/color]
+[color=dim]Duration:[/color]  [color=evil]4s[/color]
+[color=dim]Recharge:[/color]  [color=evil]9s[/color]' align = 'right' />
+                        <xrect x = '50%' y = '20' width = '40%' height = '1' />
+                        <xaction do = 'upgrade' category = 'movement' skill = 'sprint' required-level = '1' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item name = '' title = '' cols = '1' rows = '1' x = '0' y = '0'>
+                        <label x = '5%' y = '0' width = '90%' value = '[color=special]Sprint[/color]
+
+Sprint briefly increases your [color=dim]lateral movement[/color], allowing for quicker travel and easier enemy evasion.
+
+[color=dim]Level 1:[/color]  Run slightly faster.
+
+[color=dim]Level 2:[/color]  Run a bit faster.
+
+[color=dim]Level 3:[/color]  Run very fast!' />
+                        <xaction do = 'upgrade' category = 'movement' skill = 'sprint' required-level = '1' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item name = '' title = '' cols = '1' rows = '1' x = '0' y = '0'>
+                        <label x = '5%' y = '0' width = '90%' value = '[color=special]Sprint[/color]
+
+Sprint briefly increases your [color=dim]lateral movement[/color], allowing for quicker travel and easier enemy evasion.
+
+[color=dim]Level 1:[/color]  Run slightly faster.
+
+[color=dim]Level 2:[/color]  Run a bit faster.
+
+[color=dim]Level 3:[/color]  Run very fast!' />
+                        <xaction do = 'upgrade' category = 'movement' skill = 'sprint' required-level = '1' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Sprint
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'sprint' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Sprint[/color][color=dim], you will lose access to the[/color] [color=evil]Matrix[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Sprint
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'sprint' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <xitem name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Sprint[/color][color=dim], you will lose access to the[/color] [color=evil]Matrix[/color] [color=dim]ability.[/color]' />
+                    </xitem>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Sprint[/color]; as a result, you cannot unlock [color=evil]Matrix[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Sprint[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </sprint>
+        <matrix>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.matrix' align = 'center' />
+                        <label -skill-name = 'matrix' -category-name = 'movement' x = '90%' y = '130' value = '[color=dim]Matrix - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'matrix' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.matrix' align = 'center' />
+                        <label -skill-name = 'matrix' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Matrix[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'matrix' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.matrix' align = 'center' />
+                        <label -skill-name = 'matrix' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Matrix[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'matrix' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.matrix' align = 'center' />
+                        <label -skill-name = 'matrix' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Matrix[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'matrix' -category-name = 'movement' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.movement.matrix' align = 'center' />
+                        <label -skill-name = 'matrix' -category-name = 'movement' x = '90%' y = '130' value = '[color=special]Matrix[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'matrix' -category-name = 'movement' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Matrix[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Sprint[/color] skill, you lost access to this branch of the [color=dim]Movement[/color] skill tree.' />
+                    </item>
+                    <xitem name = '' title = '' cols = '4' rows = '3' x = '0' y = '3'>
+                        <gif x = '5%' y = '5' param = 'gifs.movement.matrix' />
+                        <label x = '103' y = '124' value = '[color=special]Matrix[/color]' width = '100%' align = 'center' />
+                        <label x = '40%' y = '5' width = '55%' value = '[color=dim]Slow down objects and enemies in the world around you while you yourself move at full speed.[/color]' />
+                        <label x = '40%' y = '80' width = '55%' value = '[color=dim]Current Level:[/color]  [color=evil]n/a[/color]
+
+[color=special]Note:[/color]  This skill is now [color=warning]unavailable[/color].' />
+                        <label x = '95%' y = '80' width = '55%' value = '[color=dim]Next Level:[/color]  [color=warning]Locked[/color]' align = 'right' />
+                    </xitem>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Matrix[/color] (Level 1)
+[color=dim]Required Character Level:[/color]  3
+
+Matrix dramatically slows the movement speed of every [color=dim]enemy[/color] on the screen, allowing you time to [color=dim]escape[/color] looming posses or to complete advanced [color=dim]digging puzzles[/color].
+
+Higher levels of [color=dim]Matrix[/color] improve the power of the effect (slowing enemies to a [color=dim]crawl[/color]) while slowly decreasing the skill&apos;s [color=dim]recharge time[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '[color=dim]Current - n/a[/color]' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+
+[color=dim]Enemy Speed:[/color]  [color=evil]60%[/color]
+[color=dim]Duration:[/color]  [color=evil]4s[/color]
+[color=dim]Recharge:[/color]  [color=evil]25s[/color]' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Matrix[/color] (Level 2)
+[color=dim]Required Character Level:[/color]  3
+
+This upgrade to the [color=dim]Matrix[/color] skill amplifies the power of the effect, slowing enemies&apos; speed by an additional [color=dim]15%[/color].
+
+Additionally, you will gain a small increase in the effect&apos;s [color=dim]duration[/color], plus an appreciable decrease in the overall [color=dim]recharge time[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '[color=dim]Current - [/color][color=special]Level 1[/color]
+
+[color=dim]Enemy Speed:[/color]  [color=special]60%[/color]
+[color=dim]Duration:[/color]  [color=special]4s[/color]
+[color=dim]Recharge:[/color]  [color=special]25s[/color]' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+
+[color=dim]Enemy Speed:[/color]  [color=evil]45%[/color]
+[color=dim]Duration:[/color]  [color=evil]4.5s[/color]
+[color=dim]Recharge:[/color]  [color=evil]22.5s[/color]' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Matrix[/color] (Level 3)
+[color=dim]Required Character Level:[/color]  15
+
+The final upgrade to the [color=dim]Matrix[/color] skill again enhances the effect&apos;s strength while offering small improvements to its [color=dim]duration[/color] and [color=dim]recharge time[/color].
+
+Moreover, any enemy within a radius of 2 blocks will now [color=dim]freeze completely[/color] for 1 second.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0' extra-padding = '-20'>
+                        <label x = '5%' y = '0' width = '40%' value = '[color=dim]Current - [/color][color=special]Level 2[/color]
+
+[color=dim]Enemy Speed:[/color]  [color=special]45%[/color]
+[color=dim]Duration:[/color]  [color=special]4.5s[/color]
+[color=dim]Recharge:[/color]  [color=special]22.5s[/color]' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+
+[color=dim]Enemy Speed:[/color]  [color=evil]35%[/color]
+[color=dim]Duration:[/color]  [color=evil]5s[/color]
+[color=dim]Recharge:[/color]  [color=evil]20s[/color]' align = 'right' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '95%' y = '0' width = '90%' value = '[color=dim]Nearby enemies freeze for[/color] [color=evil]1s[/color]' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '200'>
+                    <item name = '' title = '' cols = '4' rows = '3' x = '0' y = '3'>
+                        <gif x = '5%' y = '0' param = 'gifs.movement.matrix' />
+                        <label x = '103' y = '124' value = '[color=special]Matrix[/color]' width = '100%' align = 'center' />
+                        <label x = '40%' y = '5' width = '55%' value = 'Slow down objects and enemies in the world around you while you yourself move at full speed.' />
+                        <label x = '40%' y = '80' width = '55%' value = 'Current Level:  [color=special]2[/color]
+[color=dim]Duration:[/color][color=evil] [/color] [color=special]4s[/color]' />
+                        <label x = '95%' y = '80' width = '55%' value = 'Next Level:  [color=evil]3[/color]
+[color=dim]Duration:[/color][color=evil] [/color] [color=evil]5s[/color]' align = 'right' />
+                        <action do = 'upgrade' category = 'movement' skill = 'matrix' required-level = '1' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item name = '' title = '' cols = '4' rows = '3' x = '0' y = '3'>
+                        <gif x = '5%' y = '0' param = 'gifs.movement.matrix' />
+                        <label x = '103' y = '124' value = '[color=special]Sprint[/color]' width = '100%' align = 'center' />
+                        <label x = '40%' y = '5' width = '55%' value = 'Slow down objects and enemies in the world around you while you yourself move at full speed.' />
+                        <label x = '40%' y = '80' width = '55%' value = 'Current Level:  [color=special]3[/color]
+[color=dim]Duration:[/color][color=evil] [/color] [color=special]5s[/color]' />
+                        <label x = '95%' y = '80' width = '55%' value = 'Next Level:  [color=evil]n/a[/color]' align = 'right' />
+                        <action do = 'upgrade' category = 'movement' skill = 'matrix' required-level = '1' />
+                    </item>
+                </billboard>
+            </billboards>
+            <prompts>
+                <prompt level = '0'>
+                    <alert>The [color=special]Matrix[/color] skill will briefly slow down every object in the world around you; you alone will continue to move in [color=special]real-time[/color].
+
+Future upgrades can increase the [color=special]power[/color] of the effect (slowing enemies to a crawl) and extend the [color=special]duration[/color] of the matrix effect.
+
+[color=warning]Note:[/color]  [color=dim]If you commit to Matrix, you will forfeit the ability to acquire the[/color] [color=evil]Sprint[/color] [color=dim]skill.[/color]
+
+Are you sure?</alert>
+                    <choices>
+                        <choice do = 'upgrade-skill' param = 'matrix'>Yes!</choice>
+                        <choice do = 'back'>No!!!</choice>
+                    </choices>
+                </prompt>
+            </prompts>
+
+
+
+            <xbillboards>
+                <billboard level = '-1'>
+                    <item name = '' title = '' cols = '4' rows = '3' x = '0' y = '3'>
+                        <gif x = '5%' y = '5' param = 'gifs.movement.matrix' />
+                        <label x = '103' y = '124' value = '[color=special]Matrix[/color]' width = '100%' align = 'center' />
+                        <label x = '40%' y = '5' width = '55%' value = '[color=dim]Slow down objects and enemies in the world around you while you yourself move at full speed.[/color]' />
+                        <label x = '40%' y = '80' width = '55%' value = '[color=dim]Current Level:[/color]  [color=evil]n/a[/color]
+
+[color=special]Note:[/color]  This skill is now [color=warning]unavailable[/color].' />
+                        <label x = '95%' y = '80' width = '55%' value = '[color=dim]Next Level:[/color]  [color=warning]Locked[/color]' align = 'right' />
+                        <action do = 'upgrade' category = 'movement' skill = 'matrix' required-level = '1' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item name = '' title = '' cols = '4' rows = '3' x = '0' y = '3'>
+                        <gif x = '5%' y = '5' param = 'gifs.movement.matrix' />
+                        <label x = '103' y = '124' value = '[color=special]Matrix[/color]' width = '100%' align = 'center' />
+                        <label x = '40%' y = '5' width = '55%' value = 'Slow down objects and enemies in the world around you while you yourself move at full speed.' />
+                        <label x = '40%' y = '80' width = '55%' value = 'Current Level:  [color=evil]n/a[/color]
+[color=dim]Duration:[/color][color=evil] [/color] [color=evil]3s[/color]' />
+                        <label x = '95%' y = '80' width = '55%' value = 'Next Level:  [color=evil]1[/color]
+[color=dim]Duration:[/color][color=evil] [/color] [color=evil]4s[/color]' align = 'right' />
+                        <action do = 'upgrade' category = 'movement' skill = 'matrix' required-level = '1' />
+                    </item>
+                </billboard>
+            </xbillboards>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Sprint[/color]; as a result, you cannot unlock [color=evil]Matrix[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Sprint[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </matrix>
+        <item name = '' title = '' cols = '4' rows = '1' x = '0' y = '6'>
+            <icon x = '3%' y = '0' index = '19' />
+            <label x = '9%' y = '0' value = '[color=special]Back[/color] to Skill Trees Overview' width = '100%' />
+            <label x = '95%' y = '0' align = 'right' width = '100%' value = 'Skill Points Available:  [color=warning]1[/color]' />
+            <action do = 'root' />
+        </item>
+    </movement>
+	<control>
+		<persuasion>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.persuasion' align = 'center' />
+                        <label -skill-name = 'persuasion' -category-name = 'control' x = '90%' y = '130' value = '[color=dim]Persuasion - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'persuasion' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.persuasion' align = 'center' />
+                        <label -skill-name = 'persuasion' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Persuasion[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'persuasion' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.persuasion' align = 'center' />
+                        <label -skill-name = 'persuasion' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Persuasion[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'persuasion' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.persuasion' align = 'center' />
+                        <label -skill-name = 'persuasion' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Persuasion[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'persuasion' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.persuasion' align = 'center' />
+                        <label -skill-name = 'persuasion' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Persuasion[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'persuasion' -category-name = 'control' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Persuasion[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Hacking[/color] skill, you lost access to this branch of the [color=dim]Control[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Persuasion[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+As a passive skill, Persuasion [color=dim]automatically[/color] takes effect during [color=dim]dialogue sequences[/color], allowing you to exert an unusual amount of [color=dim]control[/color] over the people you talk to.
+
+Further upgrades to the [color=dim]Persuasion[/color] skill can lower [color=dim]shoppe prices[/color] and increase your overall [color=dim]persuasiveness[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+Moderately persuasive' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Persuasion[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+By upgrading your [color=dim]Persuasion[/color] skill to Level 2, you will receive a [color=dim]15% discount[/color] in all shoppes.
+
+You will also obtain access to Level 2 Persuasion dialogue response options.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+Moderately Persuasive' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+Highly Persuasive
+[color=dim]Shoppe Discount:[/color][color=evil] [/color] 15%' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Persuasion[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+The final upgrade to [color=dim]Persuasion[/color] doubles the discount you receive in shoppes to [color=dim]30%[/color].
+
+At this level, you will have access to all dialogue options.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+Highly Persuasive
+[color=dim]Shoppe Discount:[/color][color=evil] [/color] 15%' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+Irresistibly Persuasive
+[color=dim]Shoppe Discount:[/color][color=evil] [/color] 30%' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Persuasion
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'persuasion' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Persuasion[/color][color=dim], you will lose access to the[/color] [color=evil]Hacking[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Persuasion
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'persuasion' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Persuasion
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'persuasion' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Persuasion[/color]; as a result, you cannot unlock [color=evil]Persuasion[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Persuasion[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </persuasion>
+		<hacking>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.hacking' align = 'center' />
+                        <label -skill-name = 'hacking' -category-name = 'control' x = '90%' y = '130' value = '[color=dim]Hacking - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hacking' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.hacking' align = 'center' />
+                        <label -skill-name = 'hacking' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Hacking[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hacking' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.hacking' align = 'center' />
+                        <label -skill-name = 'hacking' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Hacking[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hacking' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.hacking' align = 'center' />
+                        <label -skill-name = 'hacking' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Hacking[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hacking' -category-name = 'control' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.control.hacking' align = 'center' />
+                        <label -skill-name = 'hacking' -category-name = 'control' x = '90%' y = '130' value = '[color=special]Hacking[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hacking' -category-name = 'control' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hacking[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Persuasion[/color] skill, you lost access to this branch of the [color=dim]Control[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hacking[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+The [color=dim]Hacking[/color] skill works passively, automatically revealing portions of terminal [color=dim]keycodes[/color] and unlocking advanced options when accessing [color=dim]terminals[/color].
+
+Higher levels of this skill reveal [color=dim]longer portions[/color] of passcodes (revealing entire short codes and great portions of longer codes), occasionally yielding special [color=dim]experience bonuses[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+Reveal 2 Digits
+Access low-security options' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hacking[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+At Level 2, the [color=dim]Hacking[/color] skill reveals an additional digit in each passcode.
+
+You will also gain access to increasingly secure [color=dim]terminal options[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+Reveal 2 Digits
+Access low-security options' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+Reveal 3 Digits
+Access medium-security options' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hacking[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+The fully upgraded [color=dim]Hacking[/color] skill reveals [color=dim]5 digits[/color] of any code, oftentimes providing you the entire keycode in the process.
+
+At this level, you will also have access to every [color=dim]secure terminal option[/color] you encounter.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+Reveal 3 Digits
+Access medium-security options' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+Reveal 5 digits
+Access all secure options' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Hacking
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hacking' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Hacking[/color][color=dim], you will lose access to the[/color] [color=evil]Persuasion[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Hacking
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hacking' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Hacking
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hacking' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Hacking[/color]; as a result, you cannot unlock [color=evil]Hacking[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Hacking[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </hacking>
+	</control>	<deception>
+		<hologram>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.hologram' align = 'center' />
+                        <label -skill-name = 'hologram' -category-name = 'deception' x = '90%' y = '130' value = '[color=dim]Hologram - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hologram' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.hologram' align = 'center' />
+                        <label -skill-name = 'hologram' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Hologram[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hologram' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.hologram' align = 'center' />
+                        <label -skill-name = 'hologram' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Hologram[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hologram' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.hologram' align = 'center' />
+                        <label -skill-name = 'hologram' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Hologram[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hologram' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.hologram' align = 'center' />
+                        <label -skill-name = 'hologram' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Hologram[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'hologram' -category-name = 'deception' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hologram[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Fright[/color] skill, you lost access to this branch of the [color=dim]Deception[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#[color=special]Hologram[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+Cast out a [color=dim]holographic decoy[/color] that looks just like you, stealing each enemy&apos;s attention for a moment.
+
+When fully upgraded, the decoy will [color=dim]explode[/color] like a bomb upon expiration.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hologram[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The first upgrade to [color=dim]Hologram[/color] increases the lifespan of the [color=dim]decoy[/color] by an additional second.
+
+It also drops the overall [color=dim]recharge time[/color] by [color=dim]10%[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Duration:[/color][color=evil]  4s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 27.5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Hologram[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+Hologram&apos;s ultimate upgrade further increases the decoy&apos;s [color=dim]lifespan[/color] while once again decreasing the [color=dim]recharge time[/color] by [color=dim]10%[/color].
+
+More importantly, this upgrade causes the decoy to [color=dim]explode[/color] just like a bomb when its lifespan expires.  This explosion [color=dim]can blow you up[/color] as well!' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Duration:[/color][color=evil]  4s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 27.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Duration:[/color][color=evil]  5s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s
+Explodes after 5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Hologram
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hologram' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Hologram[/color][color=dim], you will lose access to the[/color] [color=evil]Fright[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Hologram
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hologram' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Hologram
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'hologram' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Hologram[/color]; as a result, you cannot unlock [color=evil]Hologram[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Hologram[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </hologram>
+		<fright>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.fright' align = 'center' />
+                        <label -skill-name = 'fright' -category-name = 'deception' x = '90%' y = '130' value = '[color=dim]Fright - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'fright' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.fright' align = 'center' />
+                        <label -skill-name = 'fright' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Fright[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'fright' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.fright' align = 'center' />
+                        <label -skill-name = 'fright' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Fright[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'fright' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.fright' align = 'center' />
+                        <label -skill-name = 'fright' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Fright[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'fright' -category-name = 'deception' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.deception.fright' align = 'center' />
+                        <label -skill-name = 'fright' -category-name = 'deception' x = '90%' y = '130' value = '[color=special]Fright[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'fright' -category-name = 'deception' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Fright[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Hologram[/color] skill, you lost access to this branch of the [color=dim]Deception[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Fright[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Fright[/color] allows you to cast a momentary sense of [color=dim]panic[/color] upon your foes.  Each foe will flee your presence at any cost.
+
+Future upgrades to this skill can increase the [color=dim]speed[/color] of each fleeing enemy and offer further salient improvements.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Flee Speed:[/color][color=evil] [/color] 100%
+[color=dim]Duration:[/color][color=evil] [/color] 2.5s
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Fright[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The first upgrade to [color=dim]Fright[/color] increases your enemies&apos; flee speed by [color=dim]15%[/color].
+
+The [color=dim]duration[/color] of the skill remains the same.  The [color=dim]recharge time[/color], however, falls by [color=dim]10%[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Flee Speed:[/color][color=evil] [/color] 100%
+[color=dim]Duration:[/color][color=evil] [/color] 2.5s
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Flee Speed:[/color][color=evil] [/color] 115%
+[color=dim]Duration:[/color][color=evil] [/color] 2.5s
+[color=dim]Recharge:[/color][color=evil] [/color] 27.5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Fright[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Fright[/color]&apos;s final upgrade dramatically increases the power of the skill.  First, you receive modest upgrades in [color=dim]flee speed[/color], [color=dim]duration[/color], and [color=dim]recharge time[/color].
+
+Most notably, however, you also gain a [color=dim]10%[/color] chance of causing an enemy to [color=dim]spontaneously explode[/color] in pure terror.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Flee Speed:[/color][color=evil] [/color] 115%
+[color=dim]Duration:[/color][color=evil] [/color] 2.5s
+[color=dim]Recharge:[/color][color=evil] [/color] 27.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Flee Speed:[/color][color=evil] [/color] 125%
+[color=dim]Duration:[/color][color=evil] [/color] 3.5s
+[color=dim]Recharge:[/color][color=evil]  25s[/color]
+10% chance of explosion' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Fright
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'fright' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Fright[/color][color=dim], you will lose access to the[/color] [color=evil]Hologram[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Fright
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'fright' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Fright
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'fright' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Fright[/color]; as a result, you cannot unlock [color=evil]Fright[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Fright[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </fright>
+	</deception>	<shield>
+		<wall>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <xgif x = '50%' y = '0' param = 'gifs.shield.wall' align = 'center' />
+                        <label -skill-name = 'wall' -category-name = 'shield' x = '90%' y = '130' value = '[color=dim]Wall - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'wall' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <xgif x = '50%' y = '0' param = 'gifs.shield.wall' align = 'center' />
+                        <label -skill-name = 'wall' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Wall[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'wall' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <xgif x = '50%' y = '0' param = 'gifs.shield.wall' align = 'center' />
+                        <label -skill-name = 'wall' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Wall[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'wall' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <xgif x = '50%' y = '0' param = 'gifs.shield.wall' align = 'center' />
+                        <label -skill-name = 'wall' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Wall[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'wall' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <xgif x = '50%' y = '0' param = 'gifs.shield.wall' align = 'center' />
+                        <label -skill-name = 'wall' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Wall[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'wall' -category-name = 'shield' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Wall[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]personal-shield[/color] skill, you lost access to this branch of the [color=dim]Shield[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Wall[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+Use the [color=dim]Wall[/color] skill to place a temporary wall a step in front of your character.  It functions very similarly to a [color=dim]bomb[/color], but it does not explode.
+
+As you upgrade the [color=dim]Wall[/color] skill its [color=dim]duration[/color] will increase.  The final upgrade turns the wall into a useful [color=dim]weapon[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 40s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Wall[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The beginning upgrade to [color=dim]Wall[/color] extends the duration of the device by [color=dim]2 seconds[/color].
+
+Concurrently, the skill&apos;s [color=dim]recharge time[/color] falls by [color=dim]2.5 seconds[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 40s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Duration:[/color][color=evil]  5s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 37.5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Wall[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+Per usual, the final upgrade to [color=dim]Wall[/color] extends its [color=dim]duration[/color] and drops its [color=dim]recharge time[/color].
+
+More valuably, though, this upgrade applies [color=dim]deadly spikes[/color] to the other side of the wall.  The spikes will destroy anything that touches them.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Duration:[/color][color=evil]  5s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 37.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Duration:[/color][color=evil]  7s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 35s
+[color=dim]Bonus:[/color][color=evil] [/color] Spikes' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Wall
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'wall' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Wall[/color][color=dim], you will lose access to the[/color] [color=evil]personal-shield[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Wall
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'wall' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Wall
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'wall' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Wall[/color]; as a result, you cannot unlock [color=evil]Wall[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Wall[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </wall>
+		<personal-shield>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.shields.personal' align = 'center' />
+                        <label -skill-name = 'personal-shield' -category-name = 'shield' x = '90%' y = '130' value = '[color=dim]Shield - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'personal-shield' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.shields.personal' align = 'center' />
+                        <label -skill-name = 'personal-shield' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Shield[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'personal-shield' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.shields.personal' align = 'center' />
+                        <label -skill-name = 'personal-shield' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Shield[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'personal-shield' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.shields.personal' align = 'center' />
+                        <label -skill-name = 'personal-shield' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Shield[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'personal-shield' -category-name = 'shield' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.shields.personal' align = 'center' />
+                        <label -skill-name = 'personal-shield' -category-name = 'shield' x = '90%' y = '130' value = '[color=special]Shield[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'personal-shield' -category-name = 'shield' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Shield[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]wall[/color] skill, you lost access to this branch of the [color=dim]Shield[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Shield[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Shield[/color] grants you limited invincibility against all damage in the game.  Its power will constantly decrease over time, and any [color=dim]damage[/color] you absorb will accelerate that decrease.
+
+Upgrading the [color=dim]Shield[/color] skill will fortify the initial strength of the shield.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Base Duration:[/color][color=evil]  7s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 45s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Shield[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The alpha [color=dim]Shield[/color] upgrade extends the [color=dim]base duration[/color] of the effect by [color=dim]2 seconds[/color] while slightly ebbing the overall [color=dim]recharge time[/color].
+
+In tandem, this upgrade will reduce the damage you absorb by [color=dim]10%[/color], allowing the [color=dim]Shield[/color] to withstand more punishment.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Base Duration:[/color][color=evil]  7s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 45s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Base Duration:[/color][color=evil]  9s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 42.5s
+[color=dim]Absorbs:[/color][color=evil] [/color] 10%' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Shield[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+Fully upgrading the [color=dim]Shield[/color] skill maximizes the [color=dim]base duration[/color] and takes another [color=dim]2.5 seconds[/color] off of the [color=dim]recharge time[/color].
+
+The Level 3 [color=dim]Shield[/color] also reduces absorbed damage by [color=dim]25%[/color].  The [color=dim]Shield[/color] will thus withstand much more punishment.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Base Duration:[/color][color=evil]  9s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 42.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Base Duration:[/color][color=evil]  10s[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 40s
+[color=dim]Absorbs:[/color][color=evil] [/color] 25%' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Shield
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'personal-shield' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Shield[/color][color=dim], you will lose access to the[/color] [color=evil]wall[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Shield
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'personal-shield' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Shield
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'personal-shield' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Shield[/color]; as a result, you cannot unlock [color=evil]Shield[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Shield[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </personal-shield>
+	</shield>	<bombadier>
+		<remote-bomb>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.remote' align = 'center' />
+                        <label -skill-name = 'remote-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=dim]Remote Bomb - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'remote-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.remote' align = 'center' />
+                        <label -skill-name = 'remote-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Remote Bomb[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'remote-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.remote' align = 'center' />
+                        <label -skill-name = 'remote-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Remote Bomb[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'remote-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.remote' align = 'center' />
+                        <label -skill-name = 'remote-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Remote Bomb[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'remote-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.remote' align = 'center' />
+                        <label -skill-name = 'remote-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Remote Bomb[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'remote-bomb' -category-name = 'bombadier' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Remote Bomb[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim][/color] skill, you lost access to this branch of the [color=dim]Bombadier[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Remote Bomb[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+The [color=dim]Remote Bomb[/color] skill lets you place a [color=dim]bomb[/color] that does not explode until you detonate the bomb.
+
+As you upgrade this skill, you will have the opportunity to place multiple remote bombs before detonating all of them simultaneously.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+1 Remote Bomb
+[color=dim]Recharge:[/color][color=evil] [/color] 35s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Remote Bomb[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The first [color=dim]Remote Bomb[/color] upgrade allows you to place [color=dim]2 remote bombs[/color].  It also lowers the [color=dim]recharge time[/color] by a small amount.
+
+After you place one [color=dim]remote bomb[/color], the next [color=dim]regular bomb[/color] you place will automatically become a [color=dim]remote bomb[/co]or].  Activing [color=dim]Remote Bomb[/color] after placing the first [color=dim]bomb[/color] will detonate all bombs.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+1 Remote Bomb
+[color=dim]Recharge:[/color][color=evil] [/color] 35s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+2 Remote Bombs
+[color=dim]Recharge:[/color][color=evil] [/color] 32.5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Remote Bomb[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+With the last upgrade to [color=dim]Remote Bomb[/color], you obtain an even lower [color=dim]recharge time[/color] time, along with a possible [color=dim]3rd remote bomb[/color].
+
+Remember, the [color=dim]first two[/color] regular bombs you place after dropping a [color=dim]remote bomb[/color] will automatically convert into the [color=dim]2nd[/color] and [color=dim]3rd[/color] remote bombs.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+2 Remote Bombs
+[color=dim]Recharge:[/color][color=evil] [/color] 32.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+3 Remote Bombs
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Remote Bomb
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'remote-bomb' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Remote Bomb[/color][color=dim], you will lose access to the[/color] [color=evil][/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Remote Bomb
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'remote-bomb' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Remote Bomb
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'remote-bomb' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Remote Bomb[/color]; as a result, you cannot unlock [color=evil]Remote Bomb[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Remote Bomb[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </remote-bomb>
+		<mega-bomb>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.mega' align = 'center' />
+                        <label -skill-name = 'mega-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=dim]Mega Bomb - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'mega-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.mega' align = 'center' />
+                        <label -skill-name = 'mega-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Mega Bomb[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'mega-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.mega' align = 'center' />
+                        <label -skill-name = 'mega-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Mega Bomb[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'mega-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.mega' align = 'center' />
+                        <label -skill-name = 'mega-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Mega Bomb[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'mega-bomb' -category-name = 'bombadier' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.bombs.mega' align = 'center' />
+                        <label -skill-name = 'mega-bomb' -category-name = 'bombadier' x = '90%' y = '130' value = '[color=special]Mega Bomb[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'mega-bomb' -category-name = 'bombadier' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Mega Bomb[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Remote Bomb[/color] skill, you lost access to this branch of the [color=dim]Bombadier[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Mega Bomb[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+As its name suggests, [color=dim]Mega Bomb[/color] supercharges the power of your bomb, increasing the blast radius by one tile in every direction.
+
+To fuel this incredible explosion, you will initially need [color=dim]2 bombs[/color] for every use of the [color=dim]Mega Bomb[/color] skill.  Future upgrades remove this requirement.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Radius:[/color][color=evil] [/color] +1
+[color=dim]Recharge:[/color][color=evil]  40s[/color]
+[color=dim]Fuel:[/color][color=evil] [/color] 2 Bombs' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Mega Bomb[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The first upgrade to [color=dim]Mega Bomb[/color] reduces the fuel requirement to [color=dim]1 bomb[/color].
+
+Likewise, the upgrade reduces the [color=dim]recharge time[/color] by [color=dim]2 seconds[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Radius:[/color][color=evil] [/color] +1
+[color=dim]Recharge:[/color][color=evil]  40s[/color]
+[color=dim]Fuel:[/color][color=evil] [/color] 2 Bombs' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Radius:[/color][color=evil] [/color] +1
+[color=dim]Recharge:[/color][color=evil]  38s[/color]
+[color=dim]Fuel:[/color][color=evil] [/color] 1 Bomb' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Mega Bomb[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+If you brave the final upgrade to [color=dim]Mega Bomb[/color], you will destroy entire levels.  You will probably blow yourself up, and your framerate might suffer during the ridiculous explosion.
+
+You will need 3 bombs for each use of Level 3 [color=dim]Mega Bomb[/color].  Make sure you [color=dim]think this through[/color]!' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Radius:[/color][color=evil] [/color] +1
+[color=dim]Recharge:[/color][color=evil]  38s[/color]
+[color=dim]Fuel:[/color][color=evil] [/color] 1 Bomb' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Radius:[/color][color=evil] [/color] +3
+[color=dim]Recharge:[/color][color=evil]  30s[/color]
+[color=dim]Fuel:[/color][color=evil] [/color] 3 Bombs' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Mega Bomb
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'mega-bomb' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Mega Bomb[/color][color=dim], you will lose access to the[/color] [color=evil]Remote Bomb[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Mega Bomb
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'mega-bomb' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Mega Bomb
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'mega-bomb' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Mega Bomb[/color]; as a result, you cannot unlock [color=evil]Mega Bomb[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Mega Bomb[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </mega-bomb>
+	</bombadier>	<stealth>
+		<pickpocket>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.pickpocket' align = 'center' />
+                        <label -skill-name = 'pickpocket' -category-name = 'stealth' x = '90%' y = '130' value = '[color=dim]Pickpocket - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'pickpocket' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.pickpocket' align = 'center' />
+                        <label -skill-name = 'pickpocket' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Pickpocket[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'pickpocket' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.pickpocket' align = 'center' />
+                        <label -skill-name = 'pickpocket' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Pickpocket[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'pickpocket' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.pickpocket' align = 'center' />
+                        <label -skill-name = 'pickpocket' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Pickpocket[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'pickpocket' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.pickpocket' align = 'center' />
+                        <label -skill-name = 'pickpocket' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Pickpocket[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'pickpocket' -category-name = 'stealth' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Pickpocket[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Invisibility[/color] skill, you lost access to this branch of the [color=dim]Stealth[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Pickpocket[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+Using the [color=dim]Pickpocket[/color] skill, you can steal [color=dim]gold[/color] straight out of an [color=dim]enemy[/color]&apos;s hands without trapping him in the ground.
+
+Higher levels of pickpocket increase the [color=dim]effective range[/color] of the skill and, ultimately, attempt to pickpocket [color=dim]townspeople[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Radius:[/color][color=evil]  6 tiles[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Pickpocket[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+Obtaining the first upgrade to [color=dim]Pickpocket[/color] doubles the skill&apos;s range, allowing you to steal gold from enemies approximately halfway across the screen.
+
+With this upgrade, the [color=dim]recharge time[/color] drops by [color=dim]10%[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Radius:[/color][color=evil]  6 tiles[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Radius:[/color][color=evil]  12 tiles[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 22.5s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Pickpocket[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+The final upgrade to [color=dim]Pickpocket[/color] extends the range of the skill to [color=dim]infinity[/color].  You can steal gold from an enemy at any distance.
+
+Also, the [color=dim]Pickpocket[/color] skill will attempt to steal [color=dim]gold[/color] or [color=dim]items[/color] from friendly people in [color=dim]town areas[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Radius:[/color][color=evil]  12 tiles[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 22.5s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Radius:[/color][color=evil]  Infinity[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 20s
+Pickpocket NPCs' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Pickpocket
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'pickpocket' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Pickpocket[/color][color=dim], you will lose access to the[/color] [color=evil]Invisibility[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Pickpocket
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'pickpocket' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Pickpocket
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'pickpocket' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Pickpocket[/color]; as a result, you cannot unlock [color=evil]Pickpocket[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Pickpocket[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </pickpocket>
+		<invisibility>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.invisibility' align = 'center' />
+                        <label -skill-name = 'invisibility' -category-name = 'stealth' x = '90%' y = '130' value = '[color=dim]Invisibility - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'invisibility' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.invisibility' align = 'center' />
+                        <label -skill-name = 'invisibility' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Invisibility[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'invisibility' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.invisibility' align = 'center' />
+                        <label -skill-name = 'invisibility' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Invisibility[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'invisibility' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.invisibility' align = 'center' />
+                        <label -skill-name = 'invisibility' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Invisibility[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'invisibility' -category-name = 'stealth' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.stealth.invisibility' align = 'center' />
+                        <label -skill-name = 'invisibility' -category-name = 'stealth' x = '90%' y = '130' value = '[color=special]Invisibility[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'invisibility' -category-name = 'stealth' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Invisibility[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Pickpocket[/color] skill, you lost access to this branch of the [color=dim]Stealth[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Invisibility[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Invisibility[/color] makes you invisible to enemies for a short span of time.  While you remain [color=dim]invisible[/color], the enemies will seek your [color=dim]last known position[/color].
+
+This skill has a very high [color=dim]recharge time[/color].  Higher levels of this skill offer marked reductions to that statistic.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge Time:[/color][color=evil] [/color] 70s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Invisibility[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The first upgrade to [color=dim]Invisibility[/color] extends the duration of the effect by [color=dim]0.5 seconds[/color].
+
+In addition, the [color=dim]recharge time[/color] on the skill drops by [color=dim]10 seconds[/color] with this upgrade.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Duration:[/color][color=evil]  3s[/color]
+[color=dim]Recharge Time:[/color][color=evil] [/color] 70s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Duration:[/color][color=evil] [/color] 3.5s
+[color=dim]Recharge Time:[/color][color=evil] [/color] 60s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Invisibility[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+The highest upgrade for [color=dim]Invisibility[/color] adds [color=dim]0.5 seconds[/color] to the overall duration of the skill and reduces the [color=dim]recharge time[/color] by another [color=dim]10 seconds[/color].
+
+Additionally, any time you spend [color=dim]standing still[/color] while [color=dim]invisible[/color] will only expend [color=dim]50%[/color] of the [color=dim]timer[/color], allowing you to milk extra time out of the skill.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Duration:[/color][color=evil] [/color] 3.5s
+[color=dim]Recharge Time:[/color][color=evil] [/color] 60s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Duration:[/color][color=evil]  4s[/color]
+[color=dim]Recharge Time:[/color][color=evil] [/color] 50s
+50% Standstill Bonus' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Invisibility
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'invisibility' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Invisibility[/color][color=dim], you will lose access to the[/color] [color=evil]Pickpocket[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Invisibility
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'invisibility' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Invisibility
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'invisibility' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Invisibility[/color]; as a result, you cannot unlock [color=evil]Invisibility[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Invisibility[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </invisibility>
+	</stealth>	<laser>
+		<jackhammer>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.jackhammer' align = 'center' />
+                        <label -skill-name = 'jackhammer' -category-name = 'laser' x = '90%' y = '130' value = '[color=dim]Jackhammer - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'jackhammer' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.jackhammer' align = 'center' />
+                        <label -skill-name = 'jackhammer' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Jackhammer[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'jackhammer' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.jackhammer' align = 'center' />
+                        <label -skill-name = 'jackhammer' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Jackhammer[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'jackhammer' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.jackhammer' align = 'center' />
+                        <label -skill-name = 'jackhammer' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Jackhammer[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'jackhammer' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.jackhammer' align = 'center' />
+                        <label -skill-name = 'jackhammer' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Jackhammer[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'jackhammer' -category-name = 'laser' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Jackhammer[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim][/color] skill, you lost access to this branch of the [color=dim]Mining Laser[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Jackhammer[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+The [color=dim]Jackhammer[/color] skill allows you to dig [color=dim]multiple tiles[/color] into the ground with a single blast of your mining laser.
+
+Future upgrades to this skill will increase the [color=dim]depth[/color] of each dig, among other simple improvements.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Dig depth:[/color][color=evil]  2[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Jackhammer[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Jackhammer[/color]&apos;s opening upgrade increases the depth of each dig by [color=dim]one tile[/color].
+
+As an added bonus, the skill&apos;s [color=dim]recharge time[/color] decreases by [color=dim]5 seconds[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Dig depth:[/color][color=evil]  2[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Dig depth:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Jackhammer[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+The final upgrade for the [color=dim]Jackhammer[/color] skill substantially reduces the overall [color=dim]recharge time[/color].
+
+Furthermore, each tile you dig with this skill will remain unfilled for [color=dim]20%[/color] longer.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Dig depth:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Dig depth:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 15s
+Digs last 20% longer' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Jackhammer
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'jackhammer' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Jackhammer[/color][color=dim], you will lose access to the[/color] [color=evil][/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Jackhammer
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'jackhammer' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Jackhammer
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'jackhammer' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Jackhammer[/color]; as a result, you cannot unlock [color=evil]Jackhammer[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Jackhammer[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </jackhammer>
+		<earth-mover>
+            <previews>
+                <preview level = '-1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.earthmover' align = 'center' />
+                        <label -skill-name = 'earth-mover' -category-name = 'laser' x = '90%' y = '130' value = '[color=dim]Earth Mover - Locked[/color]' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'earth-mover' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '0'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.earthmover' align = 'center' />
+                        <label -skill-name = 'earth-mover' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Earth Mover[/color] - Level 1' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'earth-mover' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '1'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.earthmover' align = 'center' />
+                        <label -skill-name = 'earth-mover' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Earth Mover[/color] - Level 2' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'earth-mover' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '2'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.earthmover' align = 'center' />
+                        <label -skill-name = 'earth-mover' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Earth Mover[/color] - Level 3' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'earth-mover' -category-name = 'laser' -required-character-level = '1' />
+                    </item>
+                </preview>
+                <preview level = '3'>
+                    <item name = '' title = ''>
+                        <gif x = '50%' y = '0' param = 'gifs.mining.earthmover' align = 'center' />
+                        <label -skill-name = 'earth-mover' -category-name = 'laser' x = '90%' y = '130' value = '[color=special]Earth Mover[/color] - Fully Upgraded' width = '100%' align = 'right' />
+                        <action do = 'show-tree-options' -skill-name = 'earth-mover' -category-name = 'laser' -required-character-level = '1000' />
+                    </item>
+                </preview>
+            </previews>
+            <billboards>
+                <billboard level = '-1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Earth Mover[/color] (Level 1)
+[color=dim]Required Character Level:  n/a[/color]
+
+After unlocking the [color=dim]Jackhammer[/color] skill, you lost access to this branch of the [color=dim]Mining Laser[/color] skill tree.' />
+                    </item>
+                </billboard>
+                <billboard level = '0'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Earth Mover[/color] (Level 1)
+[color=dim]Required Character Level:  [/color]#
+
+Using [color=dim]Earthmover[/color] gives you the power to dig [color=dim]multiple tiles[/color] ahead of you with one blast of your mining laser.
+
+Further upgrades to [color=dim]Earthmover[/color] will increase the [color=dim]distance[/color] of each dig while offering other small perks.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - n/a' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 1[/color]
+[color=dim]Dig distance:[/color][color=evil]  2[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '1'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Earth Mover[/color] (Level 2)
+[color=dim]Required Character Level:  [/color]#
+
+The beginning upgrade to [color=dim]Earthmover[/color] extends the range of the dig by an extra [color=dim]one tile[/color].
+
+In conjunction, this upgrade reduces the [color=dim]recharge time[/color] by [color=dim]5 seconds[/color].' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 1[/color]
+[color=dim]Dig distance:[/color][color=evil]  2[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 30s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 2[/color]
+[color=dim]Dig distance:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '2'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '[color=special]Earth Mover[/color] (Level 3)
+[color=dim]Required Character Level:  [/color]#
+
+[color=dim]Earthmover[/color]&apos;s ultimate upgrade greatly reduces the skill&apos;s total [color=dim]recharge time[/color].
+
+As well, each tile you dig with [color=dim]Earthmover[/color] will remain unfilled for [color=dim]20%[/color] longer.' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = 'Current - [color=special]Level 2[/color]
+[color=dim]Dig distance:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 25s' />
+                        <label x = '95%' y = '0' width = '40%' value = 'Next - [color=evil]Level 3[/color]
+[color=dim]Dig distance:[/color][color=evil]  3[/color]
+[color=dim]Recharge:[/color][color=evil] [/color] 15s
+Digs last 20% longer' align = 'right' />
+                    </item>
+                </billboard>
+                <billboard level = '3'>
+                    <item id = 'details' name = '' title = '' disabled = '1' render-border = '0'>
+                        <label id = 'textarea' x = '5%' y = '0' width = '90%' value = '#DESC3' />
+                    </item>
+                    <item name = '' title = '' disabled = '1' render-border = '0'>
+                        <label x = '5%' y = '0' width = '40%' value = '#PREV3' />
+                        <label x = '95%' y = '0' width = '40%' value = '#NEXT3' align = 'right' />
+                    </item>
+                </billboard>
+            </billboards>
+            <rowmenu-data>
+                <rowmenu level = '0'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Unlock Earth Mover
+[color=dim]Upgrade to Level 1[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'earth-mover' -level = '1' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = '' disabled = '1'>
+                        <label x = '5%' y = '0' width = '90%' value = 'Note:
+
+[color=dim]By unlocking[/color] [color=special]Earth Mover[/color][color=dim], you will lose access to the[/color] [color=evil]Jackhammer[/color] [color=dim]ability.[/color]' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '1'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Earth Mover
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'earth-mover' -level = '2' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+                <rowmenu level = '2'>
+                    <item name = '' title = '' extra-padding = '15'>
+                        <icon x = '5%' y = '0' index = '19' />
+                        <label x = '20%' y = '0' width = '75%' value = '[color=special]Back[/color] to parent menu...' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                    <item name = '' title = ''>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Upgrade Earth Mover
+[color=dim]Upgrade to Level 2[/color]' />
+                        <action do = 'upgrade-skill' -skill-name = 'earth-mover' -level = '3' />
+                    </item>
+                    <item name = '' title = '' extra-padding = '100'>
+                        <icon x = '5%' y = '7' index = '25' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Do Nothing
+[color=dim]Return to Skill Tree[/color]' />
+                        <action do = 'hide-tree-options' />
+                    </item>
+                </rowmenu>
+            </rowmenu-data>
+            <messages>
+                <message type = 'locked'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have already unlocked [color=dim]Earth Mover[/color]; as a result, you cannot unlock [color=evil]Earth Mover[/color].' />
+                    </item>
+                </message>
+                <message type = 'insufficient-character-level'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You must reach [color=dim]Character Level 5[/color] before you can unlock this skill.' />
+                    </item>
+                </message>
+                <message type = 'insufficient-skill-points'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You do not have a [color=dim]skill point[/color] available to spend.' />
+                    </item>
+                </message>
+                <message type = 'fully-upgraded'>
+                    <item name = '' title = '' render-border = '0'>
+                        <icon x = '2%' y = '7' index = '24' />
+                        <label x = '15%' y = '0' width = '85%' value = 'You have fully upgraded [color=dim]Earth Mover[/color] to its highest possible level.' />
+                    </item>
+                </message>
+            </messages>
+        </earth-mover>
+	</laser>
+</skilltrees>

@@ -1,0 +1,440 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'bombs'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1' class = 'killed-erich'>
+							<comment>[color=special]$[core.player1.name][/color], I want to take a moment to thank you for protecting me from [color=special]Erich[/color].  He has been trying to shut my business down ever since I introduced my bulk rate prices.</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Thanks for stopping by, [color=special]$[core.player1.name][/color].  I believe in selling things in bulk to save you money.  Take a look!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>I&apos;d like to look at your bombs.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>How many would you like, [color=special]$[core.player1.name][/color]?</comment>
+											<response min-gold = '50' branch-id = 'root.shop.buy10'>
+												<phrase>I&apos;ll take [color=special]10 bombs[/color] for 50 gold.</phrase>
+												<branch id = 'root.shop.buy10'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for shopping, [color=special]$[core.player1.name][/color].  Come back anytime!</comment>
+															<post-script>player().subtractGold(50).addBombs(10);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "Rebecca", "@g": 50 });</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '100' branch-id = 'root.shop.buy25'>
+												<phrase>I&apos;ll take [color=special]25 bombs[/color] for 100 gold.</phrase>
+												<branch id = 'root.shop.buy25'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Wow, [color=special]$[core.player1.name][/color], you really like to use bombs!  I hope these last a long time for you!</comment>
+															<post-script>player().subtractGold(100).addBombs(25);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "25 bombs", "@n": "Rebecca", "@g": 100 });</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response branch-id = 'root.shop.none'>
+												<phrase>Not right now...</phrase>
+												<branch id = 'root.shop.none'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Have a good one...</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Do you know that I used to run my own [color=special]bomb[/color] selling business, [color=special]$[core.player1.name][/color]?
+
+Yes, before [color=special]Rebecca[/color] and her bulk discounts, I sold individual bombs at cost.  I couldn't compete with her, though, and I had to close my doors!
+
+With the recent invasion by the [color=dim]Bungeling empire[/color], though, I really want to get back into business, to capitalize on the high demand for bombs...
+							</comment>
+						</line>
+						<line id = 'line2' class = 'prompt'>
+							<comment>
+								[color=special]$[core.player1.name][/color], I won't lie to you.  I charge more than [color=special]Rebecca[/color] charges for bombs.  A lot more.  Promise to take her down for me, though, and I'll give you [color=special]15 free bombs[/color] to get you started.
+
+I'd like to give you time to think this over, [color=special]$[core.player1.name][/color], but you know how business works.  I need to know what you're thinking...
+							</comment>
+							<response class = 'already-done' branch-id = 'root.already-done'>
+								<phrase>Oh, [color=special]her[/color]?  I already sent her packing, man.</phrase>
+								<branch id = 'root.already-done'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												Ordinarily I would question the logic of blowing people up without any given incentive.  In this case though, it worked out great for me, so who cares!?
+
+Please enjoy these [color=special]15 free bombs[/color], and come back any time to buy more, [color=special]$[core.player1.name][/color]!
+											</comment>
+											<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");npc("npc2").clearIndicators().addIndicator("merchant");player().addBombs(15);addHistoricalRecordUsingLabel("purchases", "received-m-from-n-for-s:message", { "@m": "15 free bombs", "@n": "Erich", "@s": "killing Rebecca before he even asked you to do so" });</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.accept'>
+								<phrase>I&apos;ll go take care of her immediately.</phrase>
+								<branch id = 'root.accept'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Wonderful news!  Once you&apos;ve taken care of business for me, stop back by and I&apos;ll give you those [color=special]15 free bombs[/color].</comment>
+											<post-script>quest("3.1.npc2.quest").status("active");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.reject'>
+								<phrase>I&apos;m sorry, [color=special]Erich[/color], but I don&apos;t care to help you.  Not now, not ever.</phrase>
+								<branch id = 'root.reject'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												That's a shame, [color=special]$[core.player1.name][/color], but I won't question your reasons.  I will make you one more offer, though.
+
+I have [color=special]27 bombs[/color] left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell the lot of them to you for [color=special]175 gold pieces[/color].  What do you say, [color=special]$[core.player1.name][/color]?  [color=special]27 bombs[/color] for [color=special]175 gold[/color]?
+											</comment>
+											<response min-gold = '175' id = 'buy' branch-id = 'root.reject.yes'>
+												<phrase>Here you go, [color=special]Erich[/color].  I&apos;ll take them.</phrase>
+												<branch id = 'root.reject.yes'>
+													<linear>
+														<line id = 'line1'>
+															<comment>Thanks for helping me out at least a little bit, [color=special]$[core.player1.name][/color].  I still wish you would have agreed to get rid of [color=special]Rebecca[/color] for me.  You do have [color=dim]27 more bombs[/color] now, you know...</comment>
+															<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-rejected").status("active");quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");npc("npc2").clearIndicators();player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price]" });</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response branch-id = 'root.reject.pass'>
+												<phrase>I can&apos;t spare that kind of gold right now, [color=special]Erich[/color].  Maybe later.</phrase>
+												<branch id = 'root.reject.pass'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>quest("3.1.npc2.quest").status("active");quest("3.1.npc2.quest").update("update-rejected").status("active");quest("3.1.npc2.quest").update("update-rejected:left-bombs").status("active");quest("3.1.npc2.quest").update("update-erich-requested-liquidation").status("active");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<pre-script>session("3.1.npc2.quest:liquidation-price").set(175);</pre-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Let me know when you&apos;re taken care of [color=special]Rebecca[/color] for me, [color=special]$[core.player1.name][/color].  I&apos;ll understand if you want to buy some of her bulk-priced inventory first.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I can&apos;t wait until you put [color=special]Rebecca[/color] out of business.  Maybe you can buy one of her bombs and then blow her up with it!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>[color=special]$[core.player1.name][/color], I notice that you haven&apos;t customized your controls in the [color=special]pause menu[/color] yet.  If you didn&apos;t already know how to [color=special]drop a bomb[/color], you can press [color=special]@bomb[/color] to do so.  [color=special]Bombs[/color] easily kill anything in their immediate vicinity.  You can test one out on [color=special]Rebecca[/color] to see!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I can see that you already know how to drop a [color=special]bomb[/color].  Do you ever worry that your [color=special]@bomb[/color] input isn&apos;t working properly?  You should probably go test it out near [color=special]Rebecca[/color] to double check!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-rebecca'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I heard everything from down here, [color=special]$[core.player1.name][/color]!  Now that you've cleared out my aggressive competition, I can freely market by bombs without worrying about people getting good deals across town.
+
+You can stop by any time you'd like, [color=special]$[core.player1.name][/color].  Also, do make good use of these [color=special]15 free bombs[/color] I promised you!
+							</comment>
+							<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");npc("npc2").clearIndicators().addIndicator("merchant");player().addBombs(15);</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:liquidated'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I could have made a lot more money off of those bombs if you&apos;d taken care of [color=special]Rebecca[/color] for me, [color=special]$[core.player1.name][/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Every time I see [color=special]Rebecca[/color] make a sale, I can&apos;t help but to think that I could be making that sale for more money.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you had done what I wanted, I would have charged you a little extra gold when I started selling bombs.  I&apos;ve noticed that people who don&apos;t customize their controls in the [color=special]pause menu[/color] don&apos;t pay much attention to prices, either!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>
+								When I first met you, I thought I had finally met someone who understood how to get a business off the ground.  Not a lot of people take the time to customize their controls in the [color=special]pause menu[/color], but you did!
+
+I misjudged you, though.  If you had used your skills to eliminate [color=special]Rebecca[/color], I would have nearly as much gold as the [color=dim]Bungeling emperor[/color] himself by now!
+							</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:liquidated:killed-rebecca'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I don't understand you, [color=special]$[core.player1.name][/color].  You originally rejected my plan to get rid of [color=special]Rebecca[/color], then you bought out my entire unused inventory.
+
+After all of that, you changed your mind and got rid of her anyway!  If I hadn't liquidated my bomb supply, I could get right back in business!
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I hope you&apos;re making good use of my bombs, [color=special]$[core.player1.name][/color].  I wish I still had some.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Make me proud, [color=special]$[core.player1.name][/color].  If I can&apos;t sell bombs, then at least [color=special]Rebecca[/color] can&apos;t sell bombs anymore either.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Your confusing behavior during this job, [color=special]$[core.player1.name][/color], makes me wonder if you&apos;re struggling with the default gameplay controls.  Maybe you need to customize them in the [color=special]pause menu[/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Your psychotic behavior during this job, [color=special]$[core.player1.name][/color], makes me wonder if you need to spend some more time customizing your gameplay controls in the [color=special]pause menu[/color].  I don&apos;t know what else could explain your puzzling indecision!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:not-liquidated'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								[color=special]$[core.player1.name][/color], have you decided to reconsider my offer yet?
+
+I still have [color=special]27 bombs[/color] left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell the lot of them to you for [color=special]149 gold pieces[/color].
+
+That's a generous discount from my previous offer.  I can't imagine I'd lower it any further.  What do you say, [color=special]$[core.player1.name][/color]?  [color=special]27 bombs[/color] for [color=special]149 gold[/color]?
+							</comment>
+							<response min-gold = '149' id = 'buy' branch-id = 'root.buy'>
+								<phrase>Here you go, [color=special]Erich[/color].  I&apos;ll take them.</phrase>
+								<branch id = 'root.buy'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks for helping me out at least a little bit, [color=special]$[core.player1.name][/color].  I still wish you would have agreed to get rid of [color=special]Rebecca[/color] for me.  You do have [color=dim]27 more bombs[/color] now, you know...</comment>
+											<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");npc("npc2").clearIndicators();player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price]" });</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.pass'>
+								<phrase>I&apos;m still not interested.</phrase>
+								<branch id = 'root.pass'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<post-script>session("3.1.npc2.quest:liquidation-price").set(149);</post-script>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								[color=special]$[core.player1.name][/color], I'm still offering that old inventory for sale.  I'm going to have to offer you a serious discount to get you to buy them, apparently.
+
+I still have [color=special]27 bombs[/color] left in my inventory, unsold from my previous endeavors.  I won't be needing them anymore, obviously.  I'll sell the lot of them to you for [color=special]109 gold pieces[/color].
+
+That's a huge discount from my previous offers.  I can't imagine I'd lower it any further, for real.  What do you say, [color=special]$[core.player1.name][/color]?  [color=special]27 bombs[/color] for [color=special]109 gold[/color]?
+							</comment>
+							<response min-gold = '109' id = 'buy' branch-id = 'root.buy'>
+								<phrase>Here you go, [color=special]Erich[/color].  I&apos;ll take them.</phrase>
+							</response>
+							<response branch-id = 'root.pass'>
+								<phrase>I&apos;m still not interested.  Keep trying, though.</phrase>
+							</response>
+							<post-script>session("3.1.npc2.quest:liquidation-price").set(109);</post-script>
+						</line>
+						<line id = 'line3'>
+							<comment>
+								[color=special]$[core.player1.name][/color], you know the deal by now.  I'm offering [color=special]27 bombs[/color], unsold from my previous time as a bomb merchant.  You can have them all for only [color=special]50 gold pieces[/color].
+
+I can't imagine I'd lower that price any further.  Don't play with me, [color=special]$[core.player1.name][/color].  I'm offering you an incredible deal, and you'd better take it right now.
+							</comment>
+							<response min-gold = '50' id = 'buy' branch-id = 'root.buy'>
+								<phrase>Here you go, [color=special]Erich[/color].  I&apos;ll take them.</phrase>
+							</response>
+							<response branch-id = 'root.pass'>
+								<phrase>I&apos;m still not interested.  Give me a better deal.</phrase>
+							</response>
+							<post-script>session("3.1.npc2.quest:liquidation-price").set(50);</post-script>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>
+								I told you, [color=special]$[core.player1.name][/color].  I told you I wouldn't give you a better deal than the last one.  I was offering you [color=special]27 bombs[/color] for less than [color=special]2 gold each[/color], on average! And you spat it in my face!
+
+I've decided to jack up the price to [color=special]1000 gold[/color] for the [color=special]27 bombs[/color].  What do you think, [color=special]$[core.player1.name][/color]?  Sound about right?
+							</comment>
+							<response min-gold = '1000' id = 'buy' branch-id = 'root.buy-rich'>
+								<phrase>Here you go, [color=special]Erich[/color].  I&apos;m sorry for snubbing your previous offers.</phrase>
+								<branch id = 'root.buy-rich'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I can't believe you fell for it, [color=special]$[core.player1.name][/color]!  Everyone called me crazy.  They said no one would ever pay so much money for bombs, but just one spendy customer makes all the difference!
+
+Of course, I'd love to keep you as a repeat customer.  To butter you up, I'm throwing in this [color=special]very rare item[/color] as a special thank you for your cavalier approach to gold management.  Thanks again!
+											</comment>
+											<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-rejected:bought-bombs").status("active");npc("npc2").clearIndicators();player().subtractGold( session("3.1.npc2.quest:liquidation-price").get() ).addBombs(27);player().acquireItem("erichs-ultimate-pearl-of-extortion");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "27 bombs", "@n": "Erich", "@g": "$[3.1.npc2.quest:liquidation-price] (Ouch!)" });</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.pass'>
+								<phrase>I&apos;m still not interested.</phrase>
+							</response>
+							<post-script>session("3.1.npc2.quest:liquidation-price").set(1000);</post-script>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:not-liquidated:killed-rebecca'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>[color=special]$[core.player1.name][/color], you came through for me after all!  I can&apos;t make good on that free bombs thing we talked about, but I&apos;ll happily let you take a look at my bomb sales any time!</comment>
+							<post-script>quest("3.1.npc2.quest").status("complete");quest("3.1.npc2.quest").update("update-erich-opened-shop").status("active");npc("npc2").clearIndicators().addIndicator("merchant");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;m rolling in the dough at these prices, [color=special]$[core.player1.name][/color]!</comment>
+							<response min-gold = '25' branch-id = 'root.buy1'>
+								<phrase>I&apos;ll take one bomb for [color=special]25 gold[/color].</phrase>
+								<branch id = 'root.x'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>test</comment>
+										</line>
+									</nags>
+								</branch>
+								<branch id = 'root.buy1'>
+									<linear />
+									<nags>
+										<line redirect = 'root.bought1' id = 'nag1'>
+											<comment>Thanks for the gold, [color=special]$[core.player1.name][/color]!  Here&apos;s your bomb!</comment>
+										</line>
+										<line redirect = 'root.bought1' id = 'nag2'>
+											<comment>Much appreciated, [color=special]$[core.player1.name][/color]!  Enjoy your bomb!</comment>
+										</line>
+									</nags>
+								</branch>
+								<branch id = 'root.bought1'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+											<post-script>player().subtractGold(25).addBombs(1);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "1 bomb", "@n": "Erich", "@g": "25" });</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response min-gold = '49' branch-id = 'root.buy2'>
+								<phrase>Give me two bombs for [color=special]49 gold[/color].</phrase>
+								<branch id = 'root.buy2'>
+									<linear />
+									<nags>
+										<line redirect = 'root.bought2' id = 'nag1'>
+											<comment>Everyone loves a bulk discount, right?  Here&apos;s your 2 bombs!</comment>
+										</line>
+										<line redirect = 'root.bought2' id = 'nag2'>
+											<comment>Thanks for buying 2 this time, [color=special]$[core.player1.name][/color]!</comment>
+										</line>
+									</nags>
+								</branch>
+								<branch id = 'root.bought2'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+											<post-script>player().subtractGold(49).addBombs(2);addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "2 bombs", "@n": "Erich", "@g": "49" });</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;ll buy my bombs somewhere else.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

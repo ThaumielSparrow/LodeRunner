@@ -1,0 +1,158 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' priority = '10'] If you keep heading to the west, you'll eventually reach the town of $Manderkeen$.  \
+                                                Sounds like a plan, oh bearded one!
+
+                [n id = 'nag2'] I tried to buy some bombs from $Biggins$ yesterday, but I couldn't understand what he was saying!
+
+                [n id = 'nag3'] I hope you can get rid of the ^bad guys^ soon, $player$.  I really miss being able to travel without fearing for my life!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You can use the $pause menu$ to customize your controls at any time, $player$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Keep an eye out for the town of $Manderkeen$ as you move to the west with your customized \
+                    controls, $player$.
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1' class = 'prompt'] Yo, $player$.  Looking to buy some nukes, dog?
+
+                    +bombs Sure, show me your $bomb$ prices.
+
+                        >>> root.bombs
+
+                            [n id = 'nag1'] This is a Cool Spot, man.  What do you dig, $player$?
+
+                                +buy5 5 bombs for 20 gold
+
+                                    >>> root.bombs.buy5
+
+                                        [n id = 'nag1']
+                                            -redirect root
+
+                                            @post-script
+                                                player().subtractGold(20).addBombs(5);
+                                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "Biggins", "@g": "20" });
+
+                                +buy10 10 bombs for 35 gold
+
+                                    >>> root.bombs.buy10
+
+                                        [n id = 'nag1']
+                                            -redirect root
+
+                                            @post-script
+                                                player().subtractGold(35).addBombs(10);
+                                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "Biggins", "@g": "35" });
+
+                                +back I changed my mind, dog.
+
+                                    >>> root.bombs.back
+
+                                        [n id = 'nag1']
+                                            -redirect root
+
+                    +shop[class = 'shop'] I'd rather see your $items$, sir.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +shop-better[class = 'shop-better'] I want to check out your $upgraded$ inventory, sir.
+
+                        >>> root.shop-better
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +quest[class = 'quest'] Do you have better items?
+
+                        >>> root.quest
+
+                            [l id = 'line1'] I don't have access to better items at the moment, $player$, but maybe you can help me out with that problem.
+
+                                If you keep heading $west$, you'll find a guy named $Jake$ up in $Manderkeen$.  He has a lot of contacts in the shipping world, \
+                                and he's using them to deny me access to some really great $items$.
+                                -redirect root.quest
+
+                            [l id = 'line2' class = 'prompt'] If you were to scatter his pixels, I bet I could bring in some very excellent items for you.  What do you say, $player$?
+
+                                +yes[class = 'default'] I'll give him your regards.
+
+                                    >>> root.quest.yes
+
+                                        [l id = 'line1'] Please do!  If you'd like, you can use this $1 free bomb$ to dispose of him, too!
+
+                                            @post-script
+                                                quest("6.3.npc2.quest").status("active");
+                                                npc("npc2").clearIndicators().addIndicator("merchant");
+                                                player().addBombs(1);
+
+                                +later[class = 'default'] I don't have time for this.
+
+                                    >>> root.quest.later
+
+                                        [n id = 'nag1'] Let me know if you change your mind, $player$.
+
+                                +already-done[class = 'already-done'] I knew I had a good reason for killing him when I did.
+
+                                    >>> root.quest.already-done
+
+                                        [l id = 'line1'] You already got rid of him, $player$?  Your foresight truly impresses me!
+
+                                            Let's see... yes!  I have access to a slew of new and improved $items$!  Thanks for helping me out on this one, $player$!
+
+                                            @pre-script
+                                                map().executeScript("npc2.clear-inventory");
+
+                                            @post-script
+                                                quest("6.3.npc2.quest").status("complete");
+                                                quest("6.3.npc2.quest").update("update-complete:for-biggins").status("active");
+                                                npc("npc2").clearIndicators().addIndicator("merchant");
+
+                            [n id = 'nag1' class = 'prompt'] $player$, I still need you to get rid of $Jake$.  If you vanquish him, I'll gain access to a better inventory of items from my \
+                                suppliers.  Do you have time to do it yet?
+
+                                +yes[class = 'default'] I'll give him your regards.
+
+                                +later[class = 'default'] I don't have time for this.
+
+                                +already-done[class = 'already-done'] I actually decided to go and kill him after all.  I didn't even have to use a map to get there!
+
+                    +bye Later, $Biggins$.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [l id = 'line1' transition = '1'] I just got word from my warehouses, $player$:  I have full permission to sell you some $new and improved items$.  No doubt I owe this all \
+                    to you.  Thanks for getting rid of that punk $Jake$ for me!
+
+                    @pre-script
+                        map().executeScript("npc2.clear-inventory");
+
+                    @post-script
+                        quest("6.3.npc2.quest").status("complete");
+                        quest("6.3.npc2.quest").update("update-complete:for-biggins").status("active");
+                        npc("npc2").clearIndicators().addIndicator("merchant");
+                        map().runScript("npc2.talk");

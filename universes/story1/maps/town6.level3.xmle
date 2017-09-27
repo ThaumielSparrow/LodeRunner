@@ -1,0 +1,459 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 326 323 154 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 154 217 217 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 208 0 0 153 0 0 0 0 0 324 0 153 0 0 208 0 0 0 0 0 0 0 
+			0 0 0 328 326 154 333 325 0 0 0 0 0 332 331 154 323 325 0 0 0 0 0 0 0 
+			0 0 0 0 0 152 0 314 0 0 152 0 0 307 0 152 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 154 0 0 0 0 154 0 0 0 0 152 0 0 0 0 0 0 0 0 0 
+			153 0 0 0 219 154 0 0 0 0 152 0 0 0 0 153 219 0 0 0 0 0 153 328 26 
+			326 26 25 324 0 331 154 0 219 154 329 154 219 0 152 328 0 332 23 23 327 28 333 303 0 
+			0 0 0 0 0 0 152 330 0 154 274 154 0 324 152 0 0 0 0 0 0 0 0 0 0 
+			0 0 153 331 331 326 331 313 0 154 273 154 0 314 325 327 326 325 153 0 0 0 0 0 0 
+			0 153 324 303 0 0 0 0 154 327 323 326 154 0 0 0 0 306 332 153 0 0 0 0 0 
+			0 154 218 219 218 218 217 152 334 307 304 312 331 153 216 219 216 219 218 152 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '9' y = '2' modal = '0'>
+		<structure>
+			154 49 153 
+			51 210 51 
+			0 53 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 
+			263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 302 0 263 0 0 265 0 283 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '2' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Maria' title = '' />
+	<entity x = '20' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Biggins' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '0' x = '11' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '16' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '1' x = '9' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '3' x = '5' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '8' x = '7' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '10' x = '10' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '11' x = '4' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '9' x = '5' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '7' x = '1' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '9' x = '16' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '7' x = '19' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '6' x = '23' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '11' x = '15' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '12' x = '18' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '12' x = '0' genus = '6' class = '' />
+	<entity x = '4' y = '3' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '3' />
+</entities>
+<triggers>
+	<trigger name = 'lever1' x = '4' y = '3' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to activate lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '7' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '11' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.talk' x = '1' y = '6' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Maria'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.talk' x = '19' y = '6' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Biggins'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc2.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '5' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '4' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '1' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '9' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.a' x = '14' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.b' x = '19' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.c' x = '13' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.d' x = '11' y = '10' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.e' x = '11' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.f' x = '23' y = '6' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.e' x = '6' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle6.enter' x = '10' y = '0' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle6'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle6.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'spawn' x = '16' y = '9' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '17' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle6.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle6.enter").loadMap("puzzle6", "origin");
+	</script>
+	<script name = 'lever1.action'>
+		// Lever pointing left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // slide platform right
+            map().plane("shift1").shiftToX("wp2");
+        }
+
+        // Pointing right, assume...
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // slide platform left
+            map().plane("shift1").shiftToX("wp1");
+        }
+	</script>
+	<script name = 'npc1.talk' />
+	<script name = 'npc2.clear-inventory'>npc("npc2").clearVendorInventory();</script>
+	<script name = 'npc2.ondeath'>
+		#define TASK "6.3.npc2.quest"
+
+
+        // Did we kill Biggins ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // fail quest
+            quest(TASK).status("failed");
+
+            // premature update
+            quest(TASK).update("update-killed-biggins-before").status("active");
+        }
+
+        // We killed him while on the job?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Had we already killed JAKE?
+            if ( quest(TASK).update("flag-killed-jake").status() == "active" )
+            {
+                // Fails quest, can't turn in to either guy
+                quest(TASK).status("failed");
+
+                // Hated them both, I guess
+                quest(TASK).update("update-killed-biggins-during:after-jake").status("active");
+            }
+
+            // No
+            else
+            {
+                // We can still turn in this quest to JAKE, so let's just hit the update flag
+                quest(TASK).update("update-killed-biggins-during:before-jake").status("active");
+            }
+        }
+
+        // Killed him after completing the quest?  This would mean we completed it for Biggins, killing Jake
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // Just an update
+            quest(TASK).update("update-killed-biggins-after").status("active");
+        }
+
+        // We can only fail quest by killing both Biggins AND Jake.
+        // Biggins never can die while quest is already failed.
+        else
+        {
+        }
+
+
+        // flag
+        quest(TASK).update("flag-killed-biggins").status("active");
+
+        // disable talk
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.shop'>
+		#define QUEST "6.3.npc2.quest"
+
+        #define UPDATE_KILLED_JAKE "update-killed-jake"
+
+        // default to warehouse 2+
+        npc("npc2").clearWarehouses()
+                   .addWarehouse("warehouse2+");
+
+        // Did we end up killing Jake?  Make sure we're set on warehouse 3
+        if ( quest(QUEST).update(UPDATE_KILLED_JAKE).status() == "active" )
+        {
+            npc("npc2").clearWarehouses()
+                       .addWarehouse("warehouse3");
+        }
+
+        // shop
+        npc("npc2").shop({
+            "min-quality": 1,
+            "max-quality": 3,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc2.talk'>
+		#define QUEST "6.3.npc2.quest"
+
+        #define UPDATE_KILLED_JAKE "update-killed-jake"
+        #define UPDATE_KILLED_BIGGINS_INSTEAD "update-killed-biggins-instead"
+        #define UPDATE_COMPLETE:FOR_JAKE "update-complete:for-jake"
+        #define UPDATE_COMPLETE:FOR_BIGGINS "update-complete:for-biggins"
+
+        // Real quick, let's see if tax quest is active.  It affects all merchants.
+        if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+             ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() > 0 ) )
+        {
+            // Use tax conversation, queueing this same script to run again afterward...
+            npc("npc2").talk("global.tax");
+        }
+
+        else
+        {
+            // Assume we won't have access to quest response.  We'll enable it if not assigned yet
+            npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("quest").disable();
+
+            // Assume ordinary shopping
+            npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("shop").enable();
+            npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("shop-better").disable();
+
+            // Quest not assigned?
+            if ( quest(QUEST).status() == "inactive" )
+            {
+                // enable quest response option, i.e. ask for better items
+                npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("quest").enable();
+
+
+                // disable all quest proposal responses by default
+                npc("npc2").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+
+                // Did we already kill Jake?
+                if ( quest(QUEST).update("flag-killed-jake").status() == "active" )
+                {
+                    // enable appropriate responses
+                    npc("npc2").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("already-done").enable();
+                }
+
+                // no, show yes/no quest responses instead
+                else
+                {
+                    // enable appropriate responses
+                    npc("npc2").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("default").enable();
+                }
+
+
+                // Take shop first.  Player can move into quest at their leisure, settings will hold
+                npc("npc2").talk("default", "shop");
+            }
+
+            // Quest in progress?
+            elif ( quest(QUEST).status() == "active" )
+            {
+                // Did we end up killing Jake?  Let's say thanks
+                if ( quest(QUEST).update("flag-killed-jake").status() == "active" )
+                {
+                    // quick thank you, completes quest
+                    npc("npc2").talk("quest:complete", "shop");
+                }
+
+                // No, shop normally.  No nagging, currently.
+                else
+                {
+                    npc("npc2").talk("default", "shop");
+                }
+            }
+
+            // Quest complete?
+            elif ( quest(QUEST).status() == "complete" )
+            {
+                // upgraded warehouse access when shopping
+                npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("shop-better").enable();
+                npc("npc2").conversation("default").branch("root").getLinesByClass("prompt").getResponsesByClass("shop").disable();
+
+                // same old shopping, but with better items
+                npc("npc2").talk("default", "shop");
+            }
+
+            // Quest failed?
+            elif ( quest(QUEST).status() == "failed" )
+            {
+                // Only way to fail quest is to kill Biggins.  He won't talk then.
+                // na then
+            }
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.a")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.0)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc2.a")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.e")
+                   .addHotspot("npc2.a")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.f")
+                   .addHotspot("sleep(1.5)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+</scripts>

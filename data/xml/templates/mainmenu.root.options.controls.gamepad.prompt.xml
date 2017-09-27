@@ -1,0 +1,44 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@key</parameter>
+	</data>
+	<text>
+		<parameter>@todo</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.controls.gamepad.prompt'>
+
+    <rowmenu id = 'prompt' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1' rel = 'prompt'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Press any Button' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item>
+
+                <stack class = 'frame'>
+                    <label x = '50%' y = '0' align = 'center' width = '90%' value = 'Press the gamepad or joystick input you will use [color=special]@todo[/color].' />
+                </stack>
+
+                <gamepad-listener do = 'game:update-gamepad-control' key = '@key' />
+                <gamepad-listener do = 'hide' />
+
+                <listener do = 'abort:edit-gamepad-control' listen-forever = '1' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

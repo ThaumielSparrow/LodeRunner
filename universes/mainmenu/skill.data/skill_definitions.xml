@@ -1,0 +1,474 @@
+<skill-definitions>
+	<categories>
+		<movement min-character-level = '2' max-upgrade-level = '3'>
+			<sprint>
+				<stats level = '1' min-character-level = '3'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>10.0</recharge>
+					<modifiers>
+                        <modifier name = 'kill-all-enemies' value = '1' />
+                        <modifier name = 'sprint-power-factor' value = '1.2' />
+                    </modifiers>
+                    <description>[color=title]20%[/color] speed bonus for [color=title]3s[/color]
+Recharges in [color=title]10 seconds[/color]</description>
+                    <manual>Activate Sprint to increase your speed by [color=title]20%[/color] for [color=title]3s[/color].</manual>
+				</stats>
+				<stats level = '2' min-character-level = '4'>
+					<duration measure = 'seconds'>3.5</duration>
+					<recharge measure = 'seconds'>8.0</recharge>
+					<modifiers>
+                        <modifier name = 'kill-all-enemies' value = '0' />
+                        <modifier name = 'sprint-power-factor' value = '1.3' />
+                    </modifiers>
+                    <description>[color=title]30%[/color] speed bonus for [color=title]3.5s[/color] (+10% for +0.5s)
+Recharges in [color=title]8 seconds[/color] (-2s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '6'>
+					<duration measure = 'seconds'>4.0</duration>
+					<recharge measure = 'seconds'>6.0</recharge>
+					<modifiers>
+                        <modifier name = 'kill-all-enemies' value = '0' />
+                        <modifier name = 'sprint-power-factor' value = '1.5' />
+                    </modifiers>
+                    <description>[color=title]50%[/color] speed bonus for [color=title]4.0s[/color] (+20% for +0.5s)
+Recharges in [color=title]6 seconds[/color] (-2s)</description>
+				</stats>
+			</sprint>
+			<matrix>
+				<stats level = '1' min-character-level = '3'>
+					<duration measure = 'seconds'>2.5</duration>
+					<recharge measure = 'seconds'>20.0</recharge>
+                    <modifiers>
+                        <modifier name = 'frame-delay' value = '2' />
+                        <modifier name = 'freeze-radius' value = '0' />
+                    </modifiers>
+                    <description>Enemy speed [color=title]50%[/color] for [color=title]2.5s[/color]
+Recharges in [color=title]20 seconds[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '5'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>17.0</recharge>
+                    <modifiers>
+                        <modifier name = 'frame-delay' value = '3' />
+                        <modifier name = 'freeze-radius' value = '0' />
+                    </modifiers>
+                    <description>Enemy speed [color=title]33%[/color] for [color=title]3.0s[/color] (-17% for +0.5s)
+Recharges in [color=title]17 seconds[/color] (-3s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '5'>
+					<duration measure = 'seconds'>4.0</duration>
+					<recharge measure = 'seconds'>15.0</recharge>
+                    <modifiers>
+                        <modifier name = 'frame-delay' value = '4' />
+                        <modifier name = 'freeze-radius' value = '2' />
+                    </modifiers>
+                    <description>Enemies move at [color=title]50%[/color] speed for [color=title]2.5s[/color]
+Recharges in [color=title]15 seconds[/color] (-2s)
+Freeze nearby enemies for [color=title]1 second[/color]</description>
+				</stats>
+			</matrix>
+		</movement>
+		<control min-character-level = '2' max-upgrade-level = '3'>
+			<hacking>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '1' />
+                        <modifier name = 'digits' value = '2' />
+                    </modifiers>
+                    <description>Reveal [color=title]2 digits[/color]
+Access low-security options</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '2' />
+                        <modifier name = 'digits' value = '3' />
+                    </modifiers>
+                    <description>Reveal [color=title]3 digits[/color] (+1)
+Access medium-security options</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '3' />
+                        <modifier name = 'digits' value = '5' />
+                    </modifiers>
+                    <description>Reveal [color=title]5 digits[/color] (+2)
+Access all secure options</description>
+				</stats>
+			</hacking>
+			<persuasion>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '1' />
+                    </modifiers>
+                    <description>NPCs find you [color=title]mildly persuasive[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '2' />
+                    </modifiers>
+                    <description>NPCs find you [color=title]highly persuasive[/color]
+Shoppe prices lower by [color=title]10%[/color]</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>0.0</recharge>
+                    <modifiers>
+                        <modifier name = 'effectiveness' value = '3' />
+                    </modifiers>
+                    <description>NPCs find you [color=title]irresistibly persuasive[/color]
+Shoppe prices lower by [color=title]25%[/color] (+15%)</description>
+				</stats>
+			</persuasion>
+		</control>
+		<deception min-character-level = '4' max-upgrade-level = '3'>
+			<hologram>
+				<stats level = '1' min-character-level = '3'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>15.0</recharge>
+                    <modifiers>
+                        <modifier name = 'collect-gold' value = '0' />
+                        <modifier name = 'explode-on-impact' value = '0' />
+                    </modifiers>
+                    <description>Lifespan of [color=title]3.0s[/color]
+Recharges in [color=title]15s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '4'>
+					<duration measure = 'seconds'>3.5</duration>
+					<recharge measure = 'seconds'>12.0</recharge>
+					<modifiers>
+                        <modifier name = 'collect-gold' value = '1' />
+                        <modifier name = 'explode-on-impact' value = '0' />
+                    </modifiers>
+                    <description>Lifespan of [color=title]3.5s[/color] (+0.5s)
+Recharges in [color=title]12.0s[/color] (-3.0s)
+Collects [color=title]gold[/color]</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>4.0</duration>
+					<recharge measure = 'seconds'>10.0</recharge>
+					<modifiers>
+                        <modifier name = 'collect-gold' value = '1' />
+                        <modifier name = 'explode-on-impact' value = '1' />
+                    </modifiers>
+                    <description>Lifespan of [color=title]4.0s[/color] (+0.5s)
+Recharges in [color=title]10.0s[/color] (-2.0s)
+Collects [color=title]gold[/color]
+[color=title]Explodes[/color] upon wall collision</description>
+				</stats>
+			</hologram>
+			<fright>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>1.5</duration>
+					<recharge measure = 'seconds'>25.0</recharge>
+					<modifiers>
+                        <modifier name = 'power-factor' value = '1.0' />
+                        <modifier name = 'chance-to-spontaneously-explode' value = '0' />
+                    </modifiers>
+                    <description>Enemies flee for [color=title]1.5s[/color]
+Recharges in [color=title]25.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>2.5</duration>
+					<recharge measure = 'seconds'>21.0</recharge>
+					<modifiers>
+                        <modifier name = 'power-factor' value = '1.25' />
+                        <modifier name = 'chance-to-spontaneously-explode' value = '0' />
+                    </modifiers>
+                    <description>Enemies flee for [color=title]2.5s[/color] (+1.0s)
+Enemies flee at [color=title]125%[/color] speed (+25%)
+Recharges in [color=title]21.0s[/color] (-4.0s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>18.0</recharge>
+					<modifiers>
+                        <modifier name = 'power-factor' value = '1.5' />
+                        <modifier name = 'chance-to-spontaneously-explode' value = '0.15' />
+                    </modifiers>
+                    <description>Enemies flee for [color=title]3.0s[/color] (+0.5s)
+Enemies flee at [color=title]150%[/color] speed (+25%)
+Recharges in [color=title]18.0s[/color] (-3.0s)
+Chance to spontaneously explode at [color=title]15%[/color]</description>
+				</stats>
+			</fright>
+		</deception>
+		<laser min-character-level = '6' max-upgrade-level = '3'>
+			<jackhammer>
+				<stats level = '1' min-character-level = '4'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>25.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '2' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.0' />
+                    </modifiers>
+                    <description>Dig [color=title]2 tiles[/color] into the ground
+Recharges in [color=title]25.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>20.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '3' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.1' />
+                    </modifiers>
+                    <description>Dig [color=title]3 tiles[/color] into the ground (+1)
+Recharges in [color=title]20.0s[/color] (-5.0s)
+Tiles refill [color=title]10%[/color] more slowly</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>15.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '3' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.25' />
+                    </modifiers>
+                    <description>Dig [color=title]3 tiles[/color] into the ground
+Recharges in [color=title]15.0s[/color] (-5.0s)
+Tiles refill [color=title]25%[/color] more slowly (+15%)</description>
+				</stats>
+			</jackhammer>
+			<earth-mover>
+				<stats level = '1' min-character-level = '3'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>5.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '2' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.0' />
+                    </modifiers>
+                    <description>Dig [color=title]2 tiles[/color] across the ground
+Recharges in [color=title]25.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>20.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '3' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.1' />
+                    </modifiers>
+                    <description>Dig [color=title]3 tiles[/color] across the ground (+1)
+Recharges in [color=title]20.0s[/color] (-5.0s)
+Tiles refill [color=title]10%[/color] more slowly</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>15.0</recharge>
+					<modifiers>
+                        <modifier name = 'dig-power' value = '3' />
+                        <modifier name = 'dig-duration-multiplier' value = '1.25' />
+                    </modifiers>
+                    <description>Dig [color=title]3 tiles[/color] into the ground
+Recharges in [color=title]15.0s[/color] (-5.0s)
+Tiles refill [color=title]25%[/color] more slowly (+15%)</description>
+				</stats>
+			</earth-mover>
+		</laser>
+		<shield min-character-level = '8' max-upgrade-level = '3'>
+			<personal-shield>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>2.0</duration>
+					<recharge measure = 'seconds'>3.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '1000' />
+                        <modifier name = 'timer-drain-while-motionless' value = '1000' />
+                        <modifier name = 'timer-drain-penalty-per-damage-point' value = '6000' />
+                    </modifiers>
+                    <description>Shield base duration of [color=title]2.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>2.5</duration>
+					<recharge measure = 'seconds'>2.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '1000' />
+                        <modifier name = 'timer-drain-while-motionless' value = '1000' />
+                        <modifier name = 'timer-drain-penalty-per-damage-point' value = '4500' />
+                    </modifiers>
+                    <description>Shield base duration of [color=title]2.5s[/color] (+0.5s)
+Shield absorbs [color=title]25%[/color] of damage</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>2.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '1000' />
+                        <modifier name = 'timer-drain-while-motionless' value = '1000' />
+                        <modifier name = 'timer-drain-penalty-per-damage-point' value = '3000' />
+                    </modifiers>
+                    <description>Shield base duration of [color=title]3.0s[/color] (+0.5s)
+Shield absorbs [color=title]50%[/color] of damage (+25%)</description>
+				</stats>
+			</personal-shield>
+			<wall>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>5.0</duration>
+					<recharge measure = 'seconds'>25.0</recharge>
+					<modifiers>
+                        <modifier name = 'has-spikes' value = '1' />
+                    </modifiers>
+                    <description>Wall stands for [color=title]5.0s[/color]
+Recharges in [color=title]25.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>6.0</duration>
+					<recharge measure = 'seconds'>22.0</recharge>
+					<modifiers>
+                        <modifier name = 'has-spikes' value = '0' />
+                    </modifiers>
+                    <description>Wall stands for [color=title]6.0s[/color] (+1.0s)
+Recharges in [color=title]22.0s[/color] (-3.0s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>7.0</duration>
+					<recharge measure = 'seconds'>20.0</recharge>
+					<modifiers>
+                        <modifier name = 'has-spikes' value = '1' />
+                    </modifiers>
+                    <description>Wall stands for [color=title]7.0s[/color] (+1.0s)
+Recharges in [color=title]20.0s[/color] (-2.0s)
+Wall has deadly [color=title]spikes[/color]</description>
+				</stats>
+			</wall>
+		</shield>
+		<bombadier min-character-level = '10' max-upgrade-level = '3'>
+			<remote-bomb>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>5.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-concurrent-bombs' value = '0' />
+                    </modifiers>
+                    <description>Place [color=title]one[/color] remote bomb</description>
+                    <manual>Press the assigned skill key to place a [color=title]remote-controlled bomb[/color].  You will hear 3 beeps, signalling that the bomb will remain [color=title]dormant[/color] until you detonate it.  At any time, you can press the assigned skill key a second time to [color=title]detonate[/color] the bomb.</manual>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>2.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-concurrent-bombs' value = '1' />
+                    </modifiers>
+                    <description>Place [color=title]two[/color] remote bombs (+1)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>5.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-concurrent-bombs' value = '2' />
+                    </modifiers>
+                    <description>Place [color=title]three[/color] remote bombs (+1)</description>
+				</stats>
+			</remote-bomb>
+			<mega-bomb>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>15.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-bombs-required-for-fuel' value = '1' />
+                        <modifier name = 'radius-bonus' value = '1' />
+                    </modifiers>
+                    <description>Mega Bomb radius of [color=title]2 tiles[/color]
+Requires [color=title]2 bombs[/color]
+Recharges in [color=title]15.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>12.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-bombs-required-for-fuel' value = '0' />
+                        <modifier name = 'radius-bonus' value = '1' />
+                    </modifiers>
+                    <description>Mega Bomb radius of [color=title]2 tiles[/color]
+Requires [color=title]1 bomb[/color] (-1)
+Recharges in [color=title]12.0s[/color] (-3.0s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>10.0</recharge>
+					<modifiers>
+                        <modifier name = 'additional-bombs-required-for-fuel' value = '2' />
+                        <modifier name = 'radius-bonus' value = '3' />
+                    </modifiers>
+                    <description>Mega Bomb radius of [color=title]4 tiles[/color] (+2)
+Requires [color=title][color=special]3[/color] bombs[/color] ([color=special]+2[/color])
+Recharges in [color=title]10.0s[/color] (-2.0s)</description>
+				</stats>
+			</mega-bomb>
+		</bombadier>
+		<stealth min-character-level = '12' max-upgrade-level = '3'>
+			<invisibility>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>2.0</duration>
+					<recharge measure = 'seconds'>45.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '2' />
+                        <modifier name = 'timer-drain-while-motionless' value = '2' />
+                    </modifiers>
+                    <description>Remain Invisible for [color=title]2.0s[/color]
+Recharges in [color=title]45.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>3.0</duration>
+					<recharge measure = 'seconds'>40.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '2' />
+                        <modifier name = 'timer-drain-while-motionless' value = '2' />
+                    </modifiers>
+                    <description>Remain Invisible for [color=title]3.0s[/color] (+1.0s)
+Recharges in [color=title]40.0s[/color] (-5.0s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>4.0</duration>
+					<recharge measure = 'seconds'>36.0</recharge>
+					<modifiers>
+                        <modifier name = 'timer-drain' value = '2' />
+                        <modifier name = 'timer-drain-while-motionless' value = '1' />
+                    </modifiers>
+                    <description>Remain Invisible for [color=title]4.0s[/color] (+1.0s)
+Recharges in [color=title]36.0s[/color] (-4.0s)
+[color=title]50% power drain[/color] when not moving</description>
+				</stats>
+			</invisibility>
+			<pickpocket>
+				<stats level = '1' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>30.0</recharge>
+					<modifiers>
+                        <modifier name = 'effective-radius' value = '4' />
+                        <modifier name = 'can-pickpocket-npcs' value = '0' />
+                    </modifiers>
+                    <description>Pickpocket radius of [color=title]4 tiles[/color]
+Recharges in [color=title]30.0s[/color]</description>
+				</stats>
+				<stats level = '2' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>27.0</recharge>
+					<modifiers>
+                        <modifier name = 'effective-radius' value = '6' />
+                        <modifier name = 'can-pickpocket-npcs' value = '0' />
+                    </modifiers>
+                    <description>Pickpocket radius of [color=title]6 tiles[/color] (+2)
+Recharges in [color=title]27.0s[/color] (-3.0s)</description>
+				</stats>
+				<stats level = '3' min-character-level = '2'>
+					<duration measure = 'seconds'>0.0</duration>
+					<recharge measure = 'seconds'>24.0</recharge>
+					<modifiers>
+                        <modifier name = 'effective-radius' value = '1000' />
+                        <modifier name = 'can-pickpocket-npcs' value = '1' />
+                    </modifiers>
+                    <description>Unlimited Pickpocket radius
+Recharges in [color=title]24.0s[/color] (-3.0s)
+Pickpocket [color=title]NPCs[/color]</description>
+				</stats>
+			</pickpocket>
+		</stealth>
+	</categories>
+</skill-definitions>

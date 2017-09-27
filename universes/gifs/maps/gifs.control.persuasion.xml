@@ -1,0 +1,129 @@
+<params>
+	<param key = 'layer' value = '1' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 327 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 34 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 310 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 153 328 153 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 153 313 330 23 29 329 153 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 153 0 0 0 0 0 154 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 329 153 219 0 0 154 325 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 153 0 217 0 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 153 0 0 216 154 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 218 153 333 0 0 0 323 0 0 0 0 327 0 0 0 
+			0 0 0 0 219 0 153 0 0 0 0 304 331 25 27 23 314 0 0 0 
+			0 0 0 0 0 0 154 0 0 0 0 0 314 311 310 0 0 0 0 0 
+			0 0 0 0 0 0 330 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 300 263 0 0 283 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 300 263 0 0 0 283 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '6' y = '9' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '11' y = '4' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' nick = '' title = '' />
+	<entity x = '7' y = '3' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '5' y = '9' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '14' y = '10' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '10' y = '7' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'wp0' x = '10' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '8' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2' x = '9' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'bubble1' x = '7' y = '4' width = '3' height = '2' behavior = '3' prompt = 'Tell me where the bomb is!' show-icon = '0'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'bubble2' x = '7' y = '4' width = '5' height = '2' behavior = '3' prompt = 'Ok...' show-icon = '0'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'bubble1' entity = 'player1' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'bubble2' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp1' param = '' entity = 'player1' />
+			<event message = 'seek-target' type = 'entity-message' target = 'wp0' param = '' entity = 'npc1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'wp2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '10' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate' type = 'trigger-message' target = 'bubble1' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '120' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'deactivate' type = 'trigger-message' target = 'bubble1' entity = 'player1' />
+			<event message = 'activate' type = 'trigger-message' target = 'bubble2' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '110' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'on' />
+<challenge behavior = 'off' />

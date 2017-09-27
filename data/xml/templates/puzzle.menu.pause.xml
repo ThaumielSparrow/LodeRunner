@@ -1,0 +1,88 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@overworld-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'puzzle.menu.pause'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '27' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '80%' value = 'Puzzle Room Menu' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Resume Game' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Continue Puzzle' />
+                </stack>
+
+                <action do = 'resume-puzzle' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Retry Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Start from the beginning' />
+                    </stack>
+
+                    <action do = 'retry-puzzle' />
+
+                </contents>
+                <tooltip render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = 'You can retry the puzzle as many times as you wish.' />
+                </tooltip>
+            </item>
+
+            <xitem class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+                <label x = '17%' y = '0' width = '90%' value = 'Help
+[color=title]Puzzle Room FAQs[/color]' />
+                <action do = 'help' />
+            </xitem>
+
+            <item class = 'option' fill = 'active'>
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Exit Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Return to [color=special]@overworld-title[/color]' />
+                    </stack>
+
+                    <action do = 'leave-puzzle' />
+
+                </contents>
+                <tooltip render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = 'Exit the [color=title]Puzzle Room[/color] and return to the overworld.  You can [color=title]revisit[/color] this Puzzle Room at any time.' />
+                </tooltip>
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

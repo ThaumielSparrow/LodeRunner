@@ -1,0 +1,74 @@
+<parameters>
+	<data>
+		<parameter>@session-id</parameter>
+		<parameter>@universe-name</parameter>
+		<parameter>@universe-version</parameter>
+		<parameter>@universe-title</parameter>
+	</data>
+	<text>
+		<parameter>@server-name</parameter>
+        <parameter>@universe-title</parameter>
+        <parameter>@current-level</parameter>
+		<parameter>@player-count</parameter>
+		<parameter>@max-players</parameter>
+		<parameter>@game-type</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.coop.browser.insert' version = 'public'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <icon class = 'lode-runner' x = '-24' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+        <stack>
+
+            <item>
+                <label x = '5%' y = '0' align = 'left' width = '100%' value = '@server-name' />
+                <label x = '25%' y = '0' align = 'left' width = '100%' marquee-rate = '0.25' value = '@universe-title - @current-level' />
+                <label x = '62.5%' y = '0' align = 'center' width = '100%' value = '@player-count / @max-players' />
+                <label x = '80%' y = '0' align = 'center' width = '100%' value = 'Public' />
+                <label x = '95%' y = '0' align = 'center' width = '100%' value = '@game-type' />
+            </item>
+
+            <rect class = 'underline-subtle' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+
+        </stack>
+
+        <action do = 'app:join-coop-session' session-id = '@session-id' session-password = '' />
+            <hidden id = 'universe-name' rel = '@universe-name' />
+            <hidden id = 'universe-version' rel = '@universe-version' />
+            <hidden id = 'universe-title' rel = '@universe-title' />
+
+    </insert:item>
+
+</template>
+
+<template name = 'mainmenu.root.coop.browser.insert' version = 'private'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <icon class = 'lode-runner' x = '-24' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+        <stack>
+
+            <item>
+                <label x = '5%' y = '0' align = 'left' width = '100%' value = '@server-name' />
+                <label x = '25%' y = '0' align = 'left' width = '100%' marquee-rate = '0.25' value = '@universe-title - @current-level' />
+                <label x = '62.5%' y = '0' align = 'center' width = '100%' value = '@player-count / @max-players' />
+                <label x = '80%' y = '0' align = 'center' width = '100%' value = 'Private' />
+                <label x = '95%' y = '0' align = 'center' width = '100%' value = '@game-type' />
+            </item>
+
+            <rect class = 'underline-subtle' x = '0' y = '0' width = '100%' height = '2' midpoint = '0.25' />
+
+        </stack>
+
+        <action do = 'show:keyboard.password' session-id = '@session-id' />
+            <hidden id = 'universe-name' rel = '@universe-name' />
+            <hidden id = 'universe-version' rel = '@universe-version' />
+            <hidden id = 'universe-title' rel = '@universe-title' />
+
+    </insert:item>
+
+</template>

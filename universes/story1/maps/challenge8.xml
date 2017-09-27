@@ -1,0 +1,577 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'challenge' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 234 0 0 212 0 0 215 213 0 0 0 0 0 0 0 
+			0 0 0 0 226 50 153 220 224 0 210 26 154 54 221 0 0 0 0 
+			0 0 0 0 0 0 154 0 202 0 225 0 154 0 0 0 0 0 0 
+			0 0 0 0 0 219 154 219 213 217 234 216 154 216 0 0 0 0 0 
+			0 0 0 154 210 0 152 212 225 0 224 211 154 231 227 154 0 0 0 
+			0 0 0 152 221 227 154 29 201 0 204 227 153 226 200 152 0 0 0 
+			0 0 0 153 0 214 152 0 231 0 214 214 154 0 0 153 0 0 0 
+			0 0 152 222 153 25 225 49 223 152 225 53 223 29 152 225 154 0 0 
+			0 0 152 0 154 0 0 0 202 154 202 0 0 0 154 0 152 0 0 
+			0 0 152 0 152 0 0 0 0 152 0 0 0 0 154 0 154 0 0 
+			0 0 152 0 225 152 219 0 214 154 0 0 218 154 224 0 153 0 0 
+			0 0 154 213 229 153 212 153 220 207 222 154 0 153 213 0 153 0 0 
+			0 0 226 51 226 29 28 222 200 225 202 23 24 220 27 50 224 0 0 
+			0 0 0 0 200 201 203 0 0 0 0 0 204 201 200 228 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 263 0 283 0 0 263 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 263 0 0 302 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 265 0 0 283 0 263 0 283 0 263 0 0 283 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 263 0 0 283 0 0 263 0 0 265 0 283 0 0 0 
+			0 0 0 0 300 0 302 0 0 0 0 0 0 0 0 302 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '8' y = '11' genus = '2' ai-behavior = '1' name = 'player1' class = '' nick = '' title = '' />
+	<entity x = '2' y = '2' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '3' y = '1' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '15' y = '1' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '16' y = '2' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '9' y = '0' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '9' y = '1' genus = '5' ai-behavior = '1' name = '' class = '' nick = '' title = '' />
+	<entity x = '13' y = '1' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '9' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '9' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '3' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '7' y = '9' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '13' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '4' y = '12' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '14' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+	<entity x = '9' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.8' class = '' nick = '' title = '' />
+	<entity x = '10' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.9' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '6' y = '12' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig1' x = '5' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig2' x = '13' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig3' x = '7' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig4' x = '11' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig5' x = '3' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig6' x = '15' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'dig1check' x = '4' y = '1' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+	<trigger name = 'dig2check' x = '12' y = '1' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+	<trigger name = 'dig3check' x = '6' y = '7' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+	<trigger name = 'dig4check' x = '10' y = '7' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+	<trigger name = 'dig5check' x = '2' y = '12' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+	<trigger name = 'dig6check' x = '14' y = '12' width = '3' height = '3' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wave1:enable-dig-checking' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+			<script name = 'wave1:disable-dig-checking' />
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'on-arrival'>
+// Debug...
+//debug("Skipping to wave3 on this challenge map...");
+        if ( session("core.challenge.wave").get() == 1 ) { map().runScript("wave1:begin"); }
+        elif ( session("core.challenge.wave").get() == 2 ) { map().runScript("wave2:begin"); }
+        elif ( session("core.challenge.wave").get() == 3 ) { map().runScript("wave3:begin"); }
+        else { map().runScript("wave1:begin"); }
+    </script>
+	<script name = 'wave1:begin'>
+		map().executeScript("wave1:cleanup");
+
+        // Params
+        map()
+            .disableAllGold()    // take all gold offline, irrelevant in this wave
+
+            // text labels
+            .setParams({
+                "overview": "Dig away all of the black-and-white tiles before the enemies get you.",
+                "wave-goal": "Destroy all of the [color=special]black-and-white tiles[/color] to complete this wave!  When you dig one of those tiles, it will [color=special]permanently disappear[/color], allowing both the bad guys and you to fall through it freely."
+            })
+
+            .setWaveParams({
+                "on-complete": "wave1:complete",    // complete wave script
+                "on-dig": "wave1:check-digs"        // check to see if we just dug a black-and-white tile
+            });
+
+        // Player must dig all black-and-white tiles
+        map().setWaveRequirement("survive", 1);
+
+        // Show progress chart / begin new wave
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // Start with 2 respawners
+map().spawnRandomEnemies(
+            2,
+            {
+                "disposable": False
+            }
+        );
+
+        // Default to no dig checking
+        session("tmp.check-digs").set("0");
+
+        // Default flags, 1 for each black-and-white tile
+        session("tmp.tile1").set("0");
+        session("tmp.tile2").set("0");
+        session("tmp.tile3").set("0");
+        session("tmp.tile4").set("0");
+        session("tmp.tile5").set("0");
+        session("tmp.tile6").set("0");
+	</script>
+	<script name = 'wave1:enable-dig-checking'>session("tmp.check-digs").set("1");</script>
+	<script name = 'wave1:disable-dig-checking'>session("tmp.check-digs").set("0");</script>
+	<script name = 'wave1:add-enemy'>
+		map().spawnRandomEnemies(
+            1,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave1:check-digs'>
+		if ( session("tmp.check-digs").get() == 1 )
+        {
+            map().runScript("wave1:check-digs:commit");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit'>
+		// Check each tile variable, one-by-one, to see if we need to check its status still (i.e. player hasn't dug it yet)
+        if ( session("tmp.tile1").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile1");
+        }
+        if ( session("tmp.tile2").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile2");
+        }
+        if ( session("tmp.tile3").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile3");
+        }
+        if ( session("tmp.tile4").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile4");
+        }
+        if ( session("tmp.tile5").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile5");
+        }
+        if ( session("tmp.tile6").get() == 0 )
+        {
+            map().runScript("wave1:check-digs:commit:tile6");
+        }
+
+        // Lastly, let's see if all regions are dug...
+        map().runScript("wave1:check-digs:commit:check-for-victory");
+	</script>
+	<script name = 'wave1:check-digs:commit:tile1'>
+		// dug yet?
+        if ( map().isRegionDug("dig1") )
+        {
+            // set flag
+            session("tmp.tile1").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig1",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 1...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:tile2'>
+		// dug yet?
+        if ( map().isRegionDug("dig2") )
+        {
+            // set flag
+            session("tmp.tile2").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig2",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 2...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:tile3'>
+		// dug yet?
+        if ( map().isRegionDug("dig3") )
+        {
+            // set flag
+            session("tmp.tile3").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig3",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 3...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:tile4'>
+		// dug yet?
+        if ( map().isRegionDug("dig4") )
+        {
+            // set flag
+            session("tmp.tile4").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig4",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 4...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:tile5'>
+		// dug yet?
+        if ( map().isRegionDug("dig5") )
+        {
+            // set flag
+            session("tmp.tile5").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig5",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 5...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:tile6'>
+		// dug yet?
+        if ( map().isRegionDug("dig6") )
+        {
+            // set flag
+            session("tmp.tile6").set("1");
+
+            // purge tile (by "digging" it again)
+            map().digArea(
+                "dig6",
+                {
+                    "purge": True,
+                    "force": True       // we have to force the dig, because the tile is currently 0 (empty air)
+                }
+            );
+debug("done with tile 6...");
+        }
+	</script>
+	<script name = 'wave1:check-digs:commit:check-for-victory'>
+		if ( ( session("tmp.tile1").get() == 1 ) and ( session("tmp.tile2").get() == 1 ) and ( session("tmp.tile3").get() == 1 ) and ( session("tmp.tile4").get() == 1 ) and ( session("tmp.tile5").get() == 1 ) and ( session("tmp.tile6").get() == 1 ) )
+        {
+            createTimer({
+                "name": "timerComplete",
+                "on-complete": "script:wave1:complete",
+                "length": 0,
+                "measure": "seconds"
+            });
+
+debug("done with WAVE CLEAR???");
+        }
+	</script>
+	<script name = 'wave1:cleanup'>
+		// Remove timer(s)
+        clearTimer("timerComplete");
+
+        // End wave
+        map().endWave();
+	</script>
+	<script name = 'wave1:complete'>
+		map().executeScript("wave1:cleanup");
+
+        // Track that we advanced to the next wave
+        session("core.challenge.wave").increment(1);
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "Prepare for another wave...");
+
+        // Advance to next wave in a moment
+        createTimer({
+            "name": "timerNextWave",
+            "on-complete": "script:wave2:begin",
+            "length": 5,
+            "measure": "seconds"
+        });
+	</script>
+	<script name = 'wave2:begin'>
+		map().executeScript("wave2:cleanup");
+
+        // Params
+        map()
+            .disableAllGold()    // take all gold offline, irrelevant in this wave
+
+            // text labels
+            .setParams({
+                "overview": "Survive for a short period of time against multiple enemies.",
+                "wave-goal": "You must last for [color=special]30 seconds[/color] against 4 bad guys.  If you kill a bad guy, 2 bad guys will replace him!"
+            })
+
+            .setWaveParams({
+                "on-complete": "wave2:complete",    // complete wave script
+                "on-enemy-kill": "wave2:add-enemy"  // killing a bad guy spawns a new respawner
+            });
+
+        // Player must survive for 30 seconds
+        map().setWaveRequirement("survive", 1);
+
+        // Show progress chart / begin new wave
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // Start with 4 respawners
+map().spawnRandomEnemies(
+            4,
+            {
+                "disposable": False
+            }
+        );
+
+        // Survival timer
+        createTimer({
+            "name": "timerSurvive",
+            "on-complete": "script:wave2:complete",
+            "length": 30,
+            "measure": "seconds"
+        });
+
+        // Display timer / status message on screen
+        map()
+            .setWaveParams({
+                "active-timer": "timerSurvive",
+                "active-timer-label": "Survive!"
+            });
+	</script>
+	<script name = 'wave2:add-enemy'>
+		map().spawnRandomEnemies(
+            1,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave2:cleanup'>
+		// Remove timer(s)
+        clearTimer("timerSurvive");
+
+        // End wave
+        map().endWave();
+	</script>
+	<script name = 'wave2:complete'>
+		map().executeScript("wave2:cleanup");
+
+        // Track that we advanced to the next wave
+        session("core.challenge.wave").increment(1);
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "Prepare for another wave...");
+
+        // Advance to next wave in a moment
+        createTimer({
+            "name": "timerNextWave",
+            "on-complete": "script:wave3:begin",
+            "length": 5,
+            "measure": "seconds"
+        });
+	</script>
+	<script name = 'wave3:begin'>
+		map().executeScript("wave3:cleanup");
+
+        // Params
+        map()
+            .disableAllGold()    // disable all gold; setting gold rotation will implicitly bring n pieces online
+
+            // text labels
+            .setParams({
+                "overview": "Collect [color=special]15 gold pieces[/color] as an increasing number of enemies hunts you down!",
+                "wave-goal": "Every [color=special]5th[/color] piece of gold you collect summons a [color=special]new enemy[/color].  Plan accordingly!"
+            })
+
+            .setWaveParams({
+                "on-collect-gold": "wave3:collect-gold", // spawn enemy every nth piece
+                "on-complete": "wave3:complete",         // complete wave script
+                "gold-rotation-size": 3
+            });
+
+        // Player must collect 15 gold
+        map().setWaveRequirement("gold", 15);
+
+        // Show progress chart / begin new wave
+        map()
+            .showWaveProgressChart()
+            .beginWave();
+
+
+        // Start with 2 respawners
+map().spawnRandomEnemies(
+            2,
+            {
+                "disposable": False
+            }
+        );
+	</script>
+	<script name = 'wave3:cleanup'>
+		// End wave
+        map().endWave();
+	</script>
+	<script name = 'wave3:collect-gold'>
+		if ( map().getWaveCounter("gold") % 5 == 0 )
+        {
+            // Add a new respawner
+    map().spawnRandomEnemy({
+                "disposable": False
+            });
+        }
+	</script>
+	<script name = 'wave3:complete'>
+		map().executeScript("wave3:cleanup");
+
+        // Remove enemies
+        map().removeEnemies();
+
+        // Post complete nag
+postNewsItem("Wave Complete!", "All waves cleared...");
+
+        // Show victory menu
+        showChallengeOutro();
+	</script>
+</scripts>

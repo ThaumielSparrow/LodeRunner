@@ -1,0 +1,189 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@overview</parameter>
+		<parameter>@tooltip-text</parameter>
+		<parameter>@overworld-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'puzzle.menu.intro'>
+
+<layouts id = 'layout'>
+<default>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'right' valign = 'center' shrinkwrap = '1' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Puzzle Room' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = '@overview' />
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'line-break' />
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Begin Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '990%' value = 'Collect all Gold' />
+                    </stack>
+
+                    <action do = 'begin' />
+
+                </contents>
+
+                <tooltip align = 'left' render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = '@tooltip-text' />
+                </tooltip>
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Leave Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Return to [color=special]@overworld-title[/color]' />
+                    </stack>
+
+                    <action do = 'leave-puzzle' />
+
+                </contents>
+
+                <tooltip align = 'left' render-border = '1'>
+                    <label x = '0' y = '0' width = '100%' value = 'You can retry the puzzle as many times as you wish.' />
+                </tooltip>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</default>
+<else>
+
+<hpane handedness = 'right' x = '@x' y = '50%' width = '@width' scale-width = '2.0' height = '@height' halign = 'right' xvalign = 'center'>
+<left>
+    <rowmenu id = 'info' y = '25%' height = '@height' shrinkwrap = '1' uses-focus = '0' valign = 'bottom'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Puzzle Room' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = '@overview' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+</left>
+<right>
+    <rowmenu id = 'menu' y = '-25%' height = '@height' shrinkwrap = '1' uses-focus = '1' valign = 'top'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Begin Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '990%' value = 'Collect all Gold' />
+                    </stack>
+
+                    <action do = 'begin' />
+
+                </contents>
+
+                <tooltip align = 'left' render-border = '1' delay = '60'>
+                    <label x = '0' y = '0' width = '100%' value = '@tooltip-text' />
+                </tooltip>
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <contents>
+
+                    <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                    <stack>
+                        <label x = '17%' y = '0' width = '90%' value = 'Leave Puzzle' />
+                        <label class = 'subtitle' x = '17%' y = '0' width = '90%' value = 'Return to [color=special]@overworld-title[/color]' />
+                    </stack>
+
+                    <action do = 'leave-puzzle' />
+
+                </contents>
+
+                <tooltip align = 'left' render-border = '1' delay = '60'>
+                    <label x = '0' y = '0' width = '100%' value = 'You can retry the puzzle as many times as you wish.' />
+                </tooltip>
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+</right>
+</hpane>
+
+</else>
+</layouts>
+
+</template>

@@ -1,0 +1,394 @@
+<parameters>
+	<data>
+		<parameter>@skill-name</parameter>
+		<parameter>@button-width</parameter>
+		<parameter>@gif-source</parameter>
+		<parameter>@replay-file</parameter>
+		<parameter>@active-skill</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title</parameter>
+		<parameter>@skill-level</parameter>
+		<parameter>@required-skill-points</parameter>
+		<parameter>@skill-overview</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.tree.directory.insert' version = 'upgrade:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Level @skill-level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Skill Points Needed:  @required-skill-points' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'upgrade:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.6' width-right = '0.4'>
+
+                <left>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label y = '0' x = '15%' width = '80%' value = '[color=special]How it Works:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </left>
+
+                <right>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </right>
+
+            </hpane>
+
+            <action do = 'show:skills.tree.insert.options' skill = '@skill-name' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert' version = 'locked:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Level @skill-level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Skill Points Needed:  @required-skill-points' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'locked:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.6' width-right = '0.4'>
+
+                <left>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label class = 'disabled' y = '0' x = '15%' width = '80%' value = '[color=dim]How it would have Worked:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label class = 'disabled' y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </left>
+
+                <right>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </right>
+
+            </hpane>
+
+            <action do = '' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert' version = 'max:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Max Level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Fully Upgraded!' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'max:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.6' width-right = '0.4'>
+
+                <left>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label y = '0' x = '15%' width = '80%' value = '[color=special]How it Works:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </left>
+
+                <right>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </right>
+
+            </hpane>
+
+            <action do = 'show:skills.tree.insert.options' skill = '@skill-name' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+
+
+<template name = 'skills.tree.directory.insert' version = 'upgrade:zebra:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Level @skill-level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Skill Points Needed:  @required-skill-points' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'upgrade:zebra:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.4' width-right = '0.6'>
+
+                <left>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </left>
+
+                <right>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label y = '0' x = '15%' width = '80%' value = '[color=special]How it Works:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </right>
+
+            </hpane>
+
+            <action do = 'show:skills.tree.insert.options' skill = '@skill-name' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert' version = 'upgrade:zebra:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Level @skill-level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Skill Points Needed:  @required-skill-points' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'upgrade:zebra:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.4' width-right = '0.6'>
+
+                <left>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </left>
+
+                <right>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label y = '0' x = '15%' width = '80%' value = '[color=special]How it Works:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </right>
+
+            </hpane>
+
+            <action do = 'show:skills.tree.insert.options' skill = '@skill-name' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert' version = 'locked:zebra:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Level @skill-level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Skill Points Needed:  @required-skill-points' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'locked:zebra:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.4' width-right = '0.6'>
+
+                <left>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </left>
+
+                <right>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label class = 'disabled' y = '0' x = '15%' width = '80%' value = '[color=special]How it would have Worked:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label class = 'disabled' y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </right>
+
+            </hpane>
+
+            <action do = '' />
+
+        </item>
+
+    </item-group>
+
+</template>
+
+
+<template name = 'skills.tree.directory.insert' version = 'max:zebra:header'>
+
+    <item-group id = 'insert-header' class = 'spacer' render-border = '1' uses-title-bar = '1' rel = '@skill-name'>
+        <item disabled = '1' class = 'title-bar' fill = 'always'>
+            <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+            <label font = 'high-contrast' x = '8%' y = '0' width = '80%' value = '@skill-title:  Max Level' />
+            <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '80%' value = 'Fully Upgraded!' />
+        </item>
+    </item-group>
+
+</template>
+<template name = 'skills.tree.directory.insert' version = 'max:zebra:content'>
+
+    <item-group id = 'insert-content' class = 'options' rel = '@skill-name'>
+
+        <item id = 'insert' class = 'link' render-border = '1'>
+
+            <hpane class = 'no-indent' width-left = '0.4' width-right = '0.6'>
+
+                <left>
+                    <stack class = 'frame'>
+                        <gif x = '50%' y = '0' width = '@button-width' align = 'center' universe = 'gifs' map = '@gif-source' replay-file = '@replay-file' active-skill = '@active-skill' />
+                    </stack>
+                </left>
+
+                <right>
+
+                    <stack class = 'frame'>
+
+                        <item>
+                            <icon y = '0' x = '5%' index = '13' position = 'absolute' />
+                            <label y = '0' x = '15%' width = '80%' value = '[color=special]How it Works:[/color]' text-effect = 'blaster:line-by-line' />
+                        </item>
+
+                        <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.5' />
+
+                        <label y = '0' x = '7%' value = '@skill-overview' width = '90%' text-effect = 'blaster:line-by-line' />
+
+                    </stack>
+
+                </right>
+
+            </hpane>
+
+            <action do = 'show:skills.tree.insert.options' skill = '@skill-name' />
+
+        </item>
+
+    </item-group>
+
+</template>

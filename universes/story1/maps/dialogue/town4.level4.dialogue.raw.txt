@@ -1,0 +1,153 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] I can't believe you've made it this far already, $player$!
+
+                    Have you talked to my sister, $Sierra$, just on the north side of this town?  I haven't had a chance to speak with her recently, and I'm worried about her business.
+                    -redirect root
+
+                [l id = 'line2'] I want to make sure she's doing okay.  Please take these $50 gold pieces$ to her, $player$.
+
+                    +accept No problem.  I'll get right on it.
+
+                        >>> root.accept
+
+                            [l id = 'line1'] Thank you so much, $player$!  Here, take these $50 gold pieces$ to give to her, and I'll give you $5 free bombs$ in case you run into ^bad guys^ on the way up there.  I appreciate this!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("active");
+                                    npc("npc1").clearIndicators();
+                                    session("4.4.npc1.quest:received-gold").set("yes");
+                                    player().addBombs(5).addGold(50);
+
+                    +more I bet she could use more than that, how about $75 gold pieces$?
+
+                        >>> root.more
+
+                            [l id = 'line1'] I bet you're right.  Take these $75 gold pieces$ and make sure she's doing okay, won't you, $player$?
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("active");
+                                    quest("4.4.npc1.quest").update("update-extra-gold").status("active");
+                                    npc("npc1").clearIndicators();
+                                    session("4.4.npc1.quest:received-gold").set("yes");
+                                    player().addGold(75);
+
+                    +cover I've collected a lot of gold already.  Let me pay for this one myself, $Lily$.
+
+                        >>> root.cover
+
+                            [l id = 'line1'] Wow, $player$!  I can't believe you'd do that for me!  Please take this $special item$ before you go.  I've been saving it for a $hero$ like you, \
+                                $player$.  It has a lot of special attributes.  A couple of them sound a little bit dangerous, such as the increased enemy speed, but I think you'll \
+                                like it all the same!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("active");
+                                    quest("4.4.npc1.quest").update("update-picked-up-tab").status("active");
+                                    npc("npc1").clearIndicators();
+                                    session("4.4.npc1.quest:received-gold").set("yes");
+                                    player().acquireItem("lilys-shovel-of-sevenfold");
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Hi, $player$.  If you are looking for my sister $Sierra$, you can find her just a little bit north of here.  Make sure she gets that gold, okay?
+
+                [n id = 'nag2'] I appreciate your help in getting a little bit of gold to my sister $Sierra$.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You don't need to travel very far to visit my sister, $player$.  I think you can make it there without \
+                    needing to customize your controls in the $pause menu$.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I bet customizing your gameplay controls helped you a lot, $player$.  You can help my sister $Sierra$ just as much \
+                    by taking that gold to her!
+
+
+        @conversation[id = 'quest:in-progress:killed-sierra']
+
+            >>> root
+
+                [l id = 'line1'] How is my sister $Sierra$ doing, $player$?  I haven't heard from her in a long time!
+
+                    +lie I guess the ^Bungeling empire^ finally got her.
+
+                        >>> root.lie
+
+                            [l id = 'line1'] That's probably what happened, isn't it, $player$?  I wish we could have done more to help her.  I had better keep this special item to protect myself \
+                                from those ^bad guys^.
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-killed-sierra:lied").status("active");
+                                    npc("npc1").clearIndicators();
+
+                    +confess I decided to kill her, $Lily$.
+
+                        >>> root.confess
+
+                            [l id = 'line1'] I... don't know what to say, $player$.  I never told anyone this, but I found out a while back that $Sierra$ was secretly smuggling inventory to the ^Bungeling emperor^. \
+                                You must have figured that out somehow, $player$.
+
+                                I didn't want to tell anyone about Sierra because she's my loving sister, but I guess I don't have to keep secrets any more.  Too bad things didn't work out better for her!
+                                -redirect root.confess
+
+                            [l id = 'line2'] I'm going to give you this $strange item$ my sister received from the ^Bungeling emperor^.  The ^bad guys^ were going to use it, which means it has some really bad properties, \
+                                like making the ^bad guys^ faster.  It has some other interesting properties too, though.  Try it and see!
+
+                                @post-script
+                                    quest("4.4.npc1.quest").status("complete");
+                                    quest("4.4.npc1.quest").update("update-killed-sierra:confessed").status("active");
+                                    npc("npc1").clearIndicators();
+                                    player().acquireRandomItem("lilys-shoes-of-chance", "lilys-terrible-accelerating-shovel");
+
+
+        @conversation[id = 'quest:failed:lied']
+
+            >>> root
+
+                [n id = 'nag1'] I hope you get revenge on the ^Bungeling empire^ for what they did to my sister, $player$!
+
+                [n id = 'nag2'] The ^Bungeling empire^ must pay for what they did to my sister $Sierra$.  Don't let them get away with this!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Make the ^Bungeling empire^ pay for their crimes by continuing to defeat them with the default gameplay controls!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Make the ^Bungeling empire^ pay for their crimes by continuing to defeat them with your customized gameplay controls!
+
+
+        @conversation[id = 'quest:complete:confessed']
+
+            >>> root
+
+                [n id = 'nag1'] I have no idea how you discovered that my sister $Sierra$ was smuggling inventory to the ^emperor^.  I'm sure you didn't just randomly kill her.
+
+                [n id = 'nag2'] My dear sister, working for the ^Bungeling emperor^ all along.  I still can hardly believe it!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You should think about customizing your controls in the $pause menu$, $player$.  My dear sister, who worked with the \
+                    ^bad guys^ all along, always said that they had a lot of trouble dealing with people who customized their controls!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] When I last talked to $Sierra$, she confided to me that the ^bad guys^ have a lot of trouble dealing with people \
+                    who customize their controls.  Knowing you, I don't have any doubt that you'll save us all from the ^Bungeling emperor^!
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [l id = 'line1'] Thanks for looking out for my sister, $player$!  I really appreciate your help.
+
+                [n id = 'nag1'] I'm glad to know my sister won't have to worry about money for a little while.
+
+                [n id = 'nag2'] That gold you give to my sister $Sierra$ will really help her sleep more easily, $player$.  Thank you for helping!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Now that you have taken such good care of my sister, $player$, you should think about taking care of yourself.  \
+                    You can choose to customize your controls in the $pause menu$ at any time!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] When my sister told me about the gold you brought her, she made a point to compliment your customized gameplay controls.  I \
+                    thought you'd appreciate hearing about it!
+

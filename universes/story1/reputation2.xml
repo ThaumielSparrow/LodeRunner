@@ -1,0 +1,55 @@
+<data>
+
+    <early>
+
+        <overview>You just arrived in [color=special]Lelandria[/color], and people are still trying to learn more about you.</overview>
+
+        <npc-kills>
+            <none>People are excited to see you treating them reasonably well in the first stages of your journey.</none>
+            <some>Worry is quickly making the rounds, though, as people share stories about the [color=special]townsfolk[/color] you have killed.</some>
+            <lots>Many people, though, are starting to raise some alarms.  Your brutal and hostile treatment of the [color=special]townsfolk[/color] is causing a lot of panic.</lots>
+            <all>People know that you modified your save game file to make it look as if you killed every NPC in less than 10 minutes!</all>
+        </npc-kills>
+
+        <enemy-kills>
+            <none>A lot of people wonder when you will start doing something about the [color=special]bad guys[/color] causing so much trouble everywhere.</none>
+            <some>Most of the population is reacting favorably to the work you have done clearing out a few of the [color=special]bad guys[/color].</some>
+            <lots>Everyone is marveling at your prodigious ability to eliminate [color=special]bad guys[/color] from the game, of course!</lots>
+        </enemy-kills>
+
+        <levels-complete>
+            <none>Although some people are concerned that you have not fully recovered the gold from any stage of the game yet, most people understand that you have only worked for a short time to date.</none>
+            <some>More and more people are starting to believe you are truly the hero of [color=special]Lelandria[/color] now that you have completed one of the levels in the game in such a short order!</some>
+            <lots>[color=special]Lelandria[/color]n rumor mills are buzzing with the news of your ability to complete multiple levels in an unbelievably short period of time!</lots>
+            <all>Face it:  you're a cheater!  You did not complete every level in this game in under 10 minutes!</all>
+        </levels-complete>
+
+    </early>
+
+    <late>
+
+        <overview>Now that you have spent a reasonable length of time traveling through [color=special]Lelandria[/color], people are starting to form solid opinions about you.</overview>
+
+        <npc-kills>
+            <none>Your gentleness when dealing with the [color=special]townsfolk[/color] has earned you a fair deal of respect among the populace.  Most people see you as a trustworthy hero.</none>
+            <some>Certain corners within [color=special]Lelandria[/color] are raising their eyebrows, having read about the couple of [color=special]townsfolk[/color] you have killed.  They are looking the other way, though, attributing it to the stress of your journey.</some>
+            <lots>No one has the courage to confront you directly, but everyone has heard about your rampages through the towns of [color=special]Lelandria[/color], destroying multitudes of friendly [color=special]townsfolk[/color].</lots>
+            <all>Social media feeds from other lands have started calling you much worse than the [color=special]bad guys[/color].  Unlike them, you have the ability to enter towns, and you took advantage of that freedom to exterminate the entire citizenry of [color=special]Lelandria[/color].</all>
+        </npc-kills>
+
+        <enemy-kills>
+            <none>Nobody wants to question you openly, but your steadfast refusal to kill even one bad guy has a lot of people thinking you are working for the [color=special]Bungeling emperor[/color] himself.</none>
+            <some>People think you are taking it easy on the bad guys, owing to your low kill totals.  As long as you collect their gold, though, they will look the other way.</some>
+            <lots>Your impressive history of killing [color=special]bad guys[/color] has much of [color=special]Lelandria[/color] quite excited.</lots>
+        </enemy-kills>
+
+        <levels-complete>
+            <none>As time passes on, people become more and more concerned about your refusal to complete any of the stages in [color=special]Lelandria[/color].  They want to know you will rescue all of their gold!</none>
+            <some>Your early successes in completing a few of the stages in [color=special]Lelandria[/color] are inspiring confidence among the general public.  The people think you might have a chance to recover all of the gold in the game!</some>
+            <lots>At first, nobody believed that only one person could possibly save them from the [color=special]Bungeling empire[/color].  Your gritty work in completing a great many stages in [color=special]Lelandria[/color] has completely changed their minds!</lots>
+            <all>All of the citizens who survived the [color=special]Bungeling invasion[/color] look at you with great reverence.  Your successful recovery of every piece of gold in [color=special]Lelandria[/color] has put you in the history books forever!</all>
+        </levels-complete>
+
+    </late>
+
+</data>

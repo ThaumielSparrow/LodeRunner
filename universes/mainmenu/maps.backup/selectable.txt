@@ -1,0 +1,33 @@
+[x] root.coop.back.xml
+[x] root.coop.host.xml
+[x] root.coop.join.xml
+[x] root.coop.xml
+[x] root.dlc.xml
+[ ] root.generic.xml
+[ ] root.options.audio.xml
+[ ] root.options.back.xml
+[ ] root.options.controls.actions.bomb.xml
+[ ] root.options.controls.actions.digleft.xml
+[ ] root.options.controls.actions.digright.xml
+[ ] root.options.controls.actions.doreset.xml
+[ ] root.options.controls.actions.dosave.xml
+[ ] root.options.controls.actions.interact.xml
+[ ] root.options.controls.actions.movedown.xml
+[ ] root.options.controls.actions.moveleft.xml
+[ ] root.options.controls.actions.moveright.xml
+[ ] root.options.controls.actions.moveup.xml
+[ ] root.options.controls.actions.suicide.xml
+[ ] root.options.controls.actions.useskill1.xml
+[ ] root.options.controls.actions.useskill2.xml
+[x] root.options.gamepads.back.xml
+[x] root.options.gamepads.customize.xml
+[ ] root.options.gamepads.switch.back.xml
+[x] root.options.gamepads.switch.xml
+[x] root.options.gamepads.xml
+[x] root.options.keyboard.xml
+[x] root.options.xml
+[x] root.quit.xml
+[x] root.story.back.xml
+[x] root.story.continue.xml
+[x] root.story.new.xml
+[x] root.story.xml

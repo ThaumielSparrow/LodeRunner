@@ -1,0 +1,256 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@side</parameter>
+		<parameter>@item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+		<parameter>@slots-free</parameter>
+		<parameter>@slots-total</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.myitems.insert.options' version = 'equipped'>
+
+    <rowmenu id = 'my-items.options' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '0' uses-scroll = '1' scrollbar-position = '@side'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '100%' value = 'Item Actions' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' position = 'absolute' display = 'on-focus' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Unequip @item-title' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = 'Free Inventory Slot' />
+                </stack>
+
+                <action do = 'game:unequip-item' item-name = '@item-name' />
+                <action do = 'hide:inventories.inventory.all.options' />
+
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrades' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.available-upgrades' class = 'options' render-border = '1' />
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Options' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Do Nothing' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = 'Return to Inventory' />
+                </stack>
+
+                <action do = 'hide:inventories.inventory.all.options' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert.options' version = 'not-equipped'>
+
+    <rowmenu id = 'my-items.options' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '0' uses-scroll = '1' scrollbar-position = '@side'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '100%' value = 'Item Actions' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' position = 'absolute' display = 'on-focus' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Equip @item-title' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = '@slots-free / @slots-total slot(s) available' />
+                </stack>
+
+                <action do = 'game:equip-item' item-name = '@item-name' />
+                <action do = 'hide:inventories.inventory.all.options' />
+
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrades' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.available-upgrades' class = 'options' render-border = '1' />
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Options' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Do Nothing' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = 'Return to Inventory' />
+                </stack>
+
+                <action do = 'hide:inventories.inventory.all.options' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'inventory.myitems.insert.options' version = 'not-equipped:no-free-slot'>
+
+    <rowmenu id = 'my-items.options' x = '@x' y = '@y' width = '@width' height = '@height' uses-focus = '1' shrinkwrap = '0' uses-scroll = '1' scrollbar-position = '@side'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '100%' value = 'Item Actions' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' position = 'absolute' display = 'on-focus' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Equip @item-title' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = '0 slots available' />
+                </stack>
+
+                <action do = 'show:inventories.inventory.item.replace.options' item-name = '@item-name' />
+
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Upgrades' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.available-upgrades' class = 'options' render-border = '1' />
+
+
+        <item-group id = 'spacer' class = 'line-break' />
+
+
+        <item-group render-border = '1' uses-title-bar = '1' class = 'spacer'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = 'Options' align = '' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Do Nothing' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = 'Return to Inventory' />
+                </stack>
+
+                <action do = 'hide:inventories.inventory.all.options' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,635 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Welcome to [color=special]Amandria[/color]!
+
+I've been waiting for you to make it this far. [color=special]$[core.player1.name][/color].  I want to send a [color=special]special item[/color] to a friend of mine, but I can't risk doing it myself with all of the [color=dim]bad guys[/color] running around.
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								My friend [color=special]JoAnna[/color] lives in small village just a little bit [color=special]northeast[/color] of here, [color=special]$[core.player1.name][/color]. If you would kindly deliver this [color=special]special item[/color] to her, she and I would both appreciate it!
+
+What do you say, [color=special]$[core.player1.name][/color]?
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>I&apos;ll do it.</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I can't thank you enough, [color=special]$[core.player1.name][/color].
+
+After thinking about what I could send to her, I decided to go with this, [color=dim]$[1.1.npc1.quest:item-title][/color]!  Of course, you can try it out en route to delivering it to [color=special]JoAnna[/color].  Just make sure she gets it, [color=special]$[core.player1.name][/color]!
+											</comment>
+											<pre-script>map().executeScript("npc1.begin-quest");</pre-script>
+											<post-script>npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>I&apos;ll do it, but you&apos;ll have to pay me [color=special]50 gold pieces[/color] up front.</phrase>
+								<branch id = 'root.extort'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												You didn't look so greedy when I first saw you, [color=special]$[core.player1.name][/color].  I don't think I can trust a truly [color=special]special item[/color] with such a greedy player as you.  After all, I want to make sure that it eventually ends up in [color=special]JoAnna[/color]'s hands.
+
+I'm going to have to reach down into the bottom of the barrel here, [color=special]$[core.player1.name][/color].  Take a look at this, [color=dim]$[1.1.npc1.quest:item-title][/color].  I had a better version, but I won't trust you with it.  If you'd like to try it out en route to delivering it, go ahead, but try to find enough traces of honor within your soul to deliver it to [color=special]JoAnna[/color] instead of keeping it, [color=special]$[core.player1.name][/color].
+
+Of course, I'll also include the [color=special]50 gold pieces[/color] you so humbly requested!
+											</comment>
+											<pre-script>map().executeScript("npc1.begin-quest:extorted");</pre-script>
+											<post-script>quest("1.1.npc1.quest").update("update-extorted").status("active");npc("npc1").clearIndicators();player().addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'already-killed' branch-id = 'root.already-killed'>
+								<phrase>Is now the wrong time to mention I killed her already?</phrase>
+								<branch id = 'root.already-killed'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Why did you kill her, [color=special]$[core.player1.name][/color]?  I should have sent the item I had sooner.  Maybe she could have protected herself with it!  I suppose I don&apos;t need anything else from you right now.</comment>
+											<pre-script>quest("1.1.npc1.quest").status("failed");</pre-script>
+											<post-script>npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:default'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Have you had a chance to visit [color=special]Navarra[/color] yet, [color=special]$[core.player1.name][/color]?  If you travel just a little ways [color=special]northeast[/color] out of town, you&apos;ll find my friend [color=special]JoAnna[/color] there!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I hope you can find a way to deliver that [color=special]item[/color] I gave you to my friend in [color=special]Navarra[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Are you having in trouble making it to [color=special]Navarra[/color], by chance?  You might have an easier trip if you customize your controls in the [color=special]pause menu[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>With your specially customized controls, [color=special]$[core.player1.name][/color], you shouldn&apos;t have any trouble at all reaching my friend in [color=special]Navarra[/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:extorted'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Make your way to [color=special]Navarra[/color], [color=special]$[core.player1.name][/color].  I gave you some extra gold, and I expect you to at least deliver that item promptly to [color=special]JoAnna[/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>You&apos;d better find a way to deliver that [color=special]item[/color] I gave you to my friend in [color=special]Navarra[/color].  I don&apos;t want to find out I paid that extra fee for nothing!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I see that you haven&apos;t bothered to customize your controls yet, [color=special]$[core.player1.name][/color].  I suppose you are waiting for someone to give you more gold to do that, too!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-joanna'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I've heard bad news about my friend [color=special]JoAnna[/color] recently.  I think the [color=dim]bad guys[/color] must have gotten her.  Do you think I could have done anything to protect her?  I did everything I could, didn't I?
+
+Well, I guess she won't be needing that [color=special]item[/color] I gave you anymore.  You can give it back to me now, [color=special]$[core.player1.name][/color].
+							</comment>
+							<response branch-id = 'root.yes'>
+								<phrase>Here you go, [color=special]Dave[/color].</phrase>
+								<branch id = 'root.yes'>
+									<linear>
+										<line id = 'line1'>
+											<comment>Thanks, [color=special]$[core.player1.name][/color].  Thanks for trying to deliver the item for me, even if you didn&apos;t quite make it happen in the end.</comment>
+											<post-script>quest("1.1.npc1.quest").status("complete");quest("1.1.npc1.quest").update("update-returned-to-dave").status("active");npc("npc1").clearIndicators();player().dropItem( session("1.1.npc1.quest:item-name").get() );</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.extort'>
+								<phrase>I&apos;ll give it back to you for [color=special]50 gold pieces[/color].</phrase>
+								<branch id = 'root.extort'>
+									<linear>
+										<line id = 'line1'>
+											<comment>
+												I still need that item to protect some of my other friends from the [color=dim]bad guys[/color], so I will go ahead and cash you out this one time, [color=dim]player[/color].
+
+I'll know better than to ask you to deliver an item for me next time, though.  Take these [color=special]50 gold pieces[/color] and leave me to commiserate!
+											</comment>
+											<post-script>quest("1.1.npc1.quest").status("complete");quest("1.1.npc1.quest").update("update-returned-to-dave-for-gold").status("active");npc("npc1").clearIndicators();player().dropItem( session("1.1.npc1.quest:item-name").get() );player().addGold(50);</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response branch-id = 'root.no'>
+								<phrase>I&apos;m going to keep it.</phrase>
+								<branch id = 'root.no'>
+									<linear>
+										<line id = 'line1'>
+											<comment>You&apos;re going to keep it?  Okay.  I don&apos;t have any way to force you to return it to me, [color=special]$[core.player1.name][/color].  I can at least respect that you didn&apos;t try to [color=dim]extort[/color] gold from me in return for the item.</comment>
+											<post-script>quest("1.1.npc1.quest").status("failed");quest("1.1.npc1.quest").update("update-kept-from-dave").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:killed-joanna'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1' class = 'delivered'>
+							<comment>I hear the [color=dim]bad guys[/color] got the better of my friend [color=special]JoAnna[/color].  She sounded very pleased with the item you delivered for her, [color=special]$[core.player1.name][/color].  I wonder why it didn&apos;t protect her!</comment>
+						</line>
+						<line id = 'nag2' class = 'delivered'>
+							<comment>I wonder if I should have sent even more items to [color=special]JoAnna[/color].  Did you see how the [color=dim]bad guys[/color] got her, [color=special]$[core.player1.name][/color]?  I can&apos;t figure it out!</comment>
+						</line>
+						<line id = 'nag3' class = 'bought'>
+							<comment>From what I&apos;ve heard, [color=special]$[core.player1.name][/color], some of the [color=dim]bad guys[/color] must have gotten ahold of [color=special]JoAnna[/color].  She said you gave her that item I sent with you, but I&apos;m starting to wonder...</comment>
+						</line>
+						<line id = 'nag4' class = 'bought'>
+							<comment>How could the [color=dim]bad guys[/color] have gotten to my friend [color=special]JoAnna[/color]?  That item really should have protected her!</comment>
+						</line>
+						<line id = 'nag5' class = 'default'>
+							<comment>I wonder how the [color=dim]bad guys[/color] made it into a town area.  Maybe [color=special]JoAnna[/color] was looking for food outside of town when they got her!</comment>
+						</line>
+						<line id = 'nag6' class = 'default'>
+							<comment>I&apos;ve heard rumors of someone who looks like you striking down a lot of talking people.  Don&apos;t let him get you too, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag7' class = 'extorted'>
+							<comment>I wonder how the [color=dim]bad guys[/color] made it into a town area.  I bet you had something to do with it, [color=special]$[core.player1.name][/color].  Took a little money on the side to let them in, I bet!</comment>
+						</line>
+						<line id = 'nag8' class = 'extorted'>
+							<comment>I&apos;ve heard rumors of someone who looks like you striking down a lot of talking people.  Whoever that guy is, I bet he frequently extorts extra gold out of people after failing their quests, too.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete:delivered-item'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I heard from [color=special]JoAnna[/color] that she received my [color=special]item[/color], or something like that.  Thanks for doing the job for me, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>[color=special]$[core.player1.name][/color], I wish I knew how to outsmart the [color=dim]bad guys[/color] like you do.  Thanks for getting past them and delivering that item to [color=special]JoAnna[/color] for me!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I know you delivered that item to [color=special]JoAnna[/color] as quickly as possible, [color=special]$[core.player1.name][/color], and I most certainly appreciate it!  I wonder, though:  could you have delivered it even more quickly if you had customized your controls in the [color=special]pause menu[/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I don&apos;t have a single doubt that you took full advantage of your customized controls when you delivered that item for me, [color=special]$[core.player1.name][/color].  Thanks again for your help!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:kept-item'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>[color=special]$[core.player1.name][/color], I&apos;ve decided to forgive you for stealing that item from me and killing my good friend, [color=special]JoAnna[/color].  Please accept this second item as a [color=dim]peace offering[/color].</comment>
+							<post-script>player().acquireItem("daves-cursed-triton-of-rage");</post-script>
+						</line>
+						<line id = 'line2'>
+							<comment>Have you tried that item out yet, [color=special]$[core.player1.name][/color]?  I saved it just for you.</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I don&apos;t think I&apos;ll be doing business with you again, [color=special]$[core.player1.name][/color].  You didn&apos;t do anything good for me on that last endeavor.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I still can&apos;t believe that you killed [color=special]JoAnna[/color].  Have you considered pressing the [color=special]@bomb[/color] key and then standing perfectly still for a few seconds, [color=special]$[core.player1.name][/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Not only did you kill my innocent friend [color=special]JoAnna[/color], but you obviously knew exactly what you were doing!  After all, you have clearly taken the initiative of customizing your controls!  You know that the [color=special]@bomb[/color] key drops bombs, and you definitely know what they do!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed:killed-joanna-prematurely'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Do you just go around killing everyone indiscriminately, [color=special]$[core.player1.name][/color]?  Why haven&apos;t you gotten rid of me yet?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I was going to give you an item to take to [color=special]JoAnna[/color].  If you hadn&apos;t killed her so quickly, you could have sampled the item during delivery, and in theory you could have decided to keep it forever!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Yes, you do look like a [color=dim]calculating[/color] person to me, [color=special]$[core.player1.name][/color].  You plan everything ahead of time:  customizing controls, stealing gold, and killing innocent civilians!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1' class = 'default'>
+							<comment>
+								Hi, [color=special]$[core.player1.name][/color]!
+
+I have collected a number of [color=special]nice jumpsuits[/color] from all of the previous heroes that attempted to save us from the [color=dim]Bungeling Empire[/color].
+
+You will look good in [color=special]any[/color] of them, or perhaps all of them!
+							</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'default'>
+							<comment>Would you like to purchase a new [color=special]jumpsuit[/color], or [color=special]switch back[/color] to a jumpsuit you previously purchased?</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>Let me see what you&apos;ve got.</phrase>
+								<branch id = 'root.shop'>
+									<linear />
+									<nags>
+										<line per-row = '3' id = 'nag1' use-grid = 'yes'>
+											<comment>I guarantee it!</comment>
+											<response branch-id = 'root.shop.default'>
+												<phrase>avatar:default</phrase>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced red-unpurchased' branch-id = 'root.shop.redLocked'>
+												<phrase>avatar:primary=229,0,0;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced red-purchased' branch-id = 'root.shop.redUnlocked'>
+												<phrase>avatar:primary=229,0,0;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.redLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the red one!</comment>
+															<post-script>player().colorify("primary=229,0,0;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.red.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.redUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the red one!</comment>
+															<post-script>player().colorify("primary=229,0,0;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced orange-unpurchased' branch-id = 'root.shop.orangeLocked'>
+												<phrase>avatar:primary=229,148,0;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced orange-purchased' branch-id = 'root.shop.orangeUnlocked'>
+												<phrase>avatar:primary=229,148,0;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.orangeLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the orange one!</comment>
+															<post-script>player().colorify("primary=229,148,0;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.orange.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.orangeUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the orange one!</comment>
+															<post-script>player().colorify("primary=229,148,0;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced gold-unpurchased' branch-id = 'root.shop.goldLocked'>
+												<phrase>avatar:primary=229,193,0;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced gold-purchased' branch-id = 'root.shop.goldUnlocked'>
+												<phrase>avatar:primary=229,193,0;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.goldLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the gold one!</comment>
+															<post-script>player().colorify("primary=229,193,0;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.gold.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.goldUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the gold one!</comment>
+															<post-script>player().colorify("primary=229,193,0;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced green-unpurchased' branch-id = 'root.shop.greenLocked'>
+												<phrase>avatar:primary=0,229,0;secondary=191,191,191</phrase>
+											</response>
+											<response translate = '0' class = 'priced green-purchased' branch-id = 'root.shop.greenUnlocked'>
+												<phrase>avatar:primary=0,229,0;secondary=191,191,191</phrase>
+												<branch id = 'root.shop.greenLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the green one!</comment>
+															<post-script>player().colorify("primary=0,229,0;secondary=191,191,191");player().subtractGold(25);session("jumpsuit.green.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.greenUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the green one!</comment>
+															<post-script>player().colorify("primary=0,229,0;secondary=191,191,191");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced teal-unpurchased' branch-id = 'root.shop.tealLocked'>
+												<phrase>avatar:primary=0,229,229;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced teal-purchased' branch-id = 'root.shop.tealUnlocked'>
+												<phrase>avatar:primary=0,229,229;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.tealLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the teal one!</comment>
+															<post-script>player().colorify("primary=0,229,229;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.teal.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.tealUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the teal one!</comment>
+															<post-script>player().colorify("primary=0,229,229;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced pink-unpurchased' branch-id = 'root.shop.pinkLocked'>
+												<phrase>avatar:primary=229,18,132;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced pink-purchased' branch-id = 'root.shop.pinkUnlocked'>
+												<phrase>avatar:primary=229,18,132;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.pinkLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the pink one!</comment>
+															<post-script>player().colorify("primary=229,18,132;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.pink.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.pinkUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the pink one!</comment>
+															<post-script>player().colorify("primary=229,18,132;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced tan-unpurchased' branch-id = 'root.shop.tanLocked'>
+												<phrase>avatar:primary=229,205,162;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'priced tan-purchased' branch-id = 'root.shop.tanUnlocked'>
+												<phrase>avatar:primary=229,205,162;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.tanLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the tan one!</comment>
+															<post-script>player().colorify("primary=229,205,162;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.tan.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.tanUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the tan one!</comment>
+															<post-script>player().colorify("primary=229,205,162;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'criminal priced white-unpurchased' branch-id = 'root.shop.davesWhiteLocked'>
+												<phrase>avatar:primary=229,229,229;secondary=114,114,114</phrase>
+											</response>
+											<response translate = '0' class = 'criminal priced white-purchased' branch-id = 'root.shop.davesWhiteUnlocked'>
+												<phrase>avatar:primary=229,229,229;secondary=114,114,114</phrase>
+												<branch id = 'root.shop.whiteLocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Thanks for buying the white one!</comment>
+															<post-script>player().colorify("primary=229,229,229;secondary=114,114,114");player().subtractGold(25);session("jumpsuit.white.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+												<branch id = 'root.shop.whiteUnlocked'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>You look good in the white one!</comment>
+															<post-script>player().colorify("primary=229,229,229;secondary=114,114,114");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+								<branch id = 'root.unused'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Couldn&apos;t fit this one in!</comment>
+											<response min-gold = '25' translate = '0' class = 'priced grey-unpurchased' branch-id = 'root.unused.greyLocked'>
+												<phrase>avatar:primary=114,114,114;secondary=64,64,64</phrase>
+											</response>
+											<response min-gold = '25' translate = '0' class = 'priced grey-purchased' branch-id = 'root.unused.greyUnlocked'>
+												<phrase>avatar:primary=114,114,114;secondary=64,64,64</phrase>
+											</response>
+										</line>
+									</nags>
+								</branch>
+								<branch id = 'root.shop2'>
+									<linear />
+									<nags>
+										<line id = 'nag1' use-grid = 'yes'>
+											<comment>What color looks good to you?</comment>
+											<response min-gold = '0' branch-id = 'root.shop2.default'>
+												<phrase>Blue Jumpsuit (free!)</phrase>
+												<branch id = 'root.shop.default'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>The classic look suits your quite well, [color=special]$[core.player1.name][/color].  Come back anytime!</comment>
+															<post-script>player().colorify("");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '10' class = 'priced green-unpurchased' branch-id = 'root.shop2.green'>
+												<phrase>Green Jumpsuit</phrase>
+												<branch id = 'root.shop.green'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>I had a dream many years ago that a [color=special]hero[/color] in a green jumpsuit would save our beautiful land.  Enjoy your new look, [color=special]$[core.player1.name][/color]!</comment>
+															<post-script>player().colorify("primary=25,225,25;secondary=225,225,225");player().subtractGold(10);session("jumpsuit.green.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response class = 'priced green-purchased' branch-id = 'root.shop2.green2'>
+												<phrase>Green Jumpsuit (Owned)</phrase>
+												<branch id = 'root.shop.green2'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>player().colorify("primary=25,225,25;secondary=225,225,225");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '10' class = 'priced red-unpurchased' branch-id = 'root.shop2.red'>
+												<phrase>Red Jumpsuit</phrase>
+												<branch id = 'root.shop.red'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>I have always liked red better than any other color, [color=special]$[core.player1.name][/color].  Thanks for your donation!</comment>
+															<post-script>player().colorify("primary=225,25,25;secondary=175,175,175");player().subtractGold(10);session("jumpsuit.red.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response class = 'priced red-purchased' branch-id = 'root.shop2.red2'>
+												<phrase>Red Jumpsuit (Owned)</phrase>
+												<branch id = 'root.shop.red2'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>player().colorify("primary=225,25,25;secondary=175,175,175");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '100' class = 'priced gold-unpurchased' branch-id = 'root.shop2.gold'>
+												<phrase>Gold Jumpsuit</phrase>
+												<branch id = 'root.shop.gold'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>I have always liked gold better than any other color, [color=special]$[core.player1.name][/color].  Thanks for your donation!</comment>
+															<post-script>player().colorify("primary=248,212,10;secondary=175,175,175");player().subtractGold(100);session("jumpsuit.gold.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response class = 'priced gold-purchased' branch-id = 'root.shop2.gold2'>
+												<phrase>Gold Jumpsuit (Owned)</phrase>
+												<branch id = 'root.shop.gold2'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>player().colorify("primary=248,212,10;secondary=175,175,175");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response min-gold = '20' class = 'priced criminal white-unpurchased' branch-id = 'root.shop2.white'>
+												<phrase>Dave&apos;s White Jumpsuit (new!)</phrase>
+												<branch id = 'root.shop.white'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment>Dave never had a chance to wear this one, [color=special]$[core.player1.name][/color].  Enjoy!</comment>
+															<post-script>player().colorify("primary=225,225,225;secondary=225,25,25");player().subtractGold(20);session("jumpsuit.white.purchased").set("yes");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+											<response class = 'priced criminal white-purchased' branch-id = 'root.shop2.white2'>
+												<phrase>Dave&apos;s White Jumpsuit (Owned)</phrase>
+												<branch id = 'root.shop.red2'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+															<post-script>player().colorify("primary=225,225,225;secondary=225,25,25");</post-script>
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Not right now.</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2' class = 'criminal'>
+							<comment>I raided [color=special]Dave[/color]&apos;s closet after you killed him.  He won&apos;t need them any more, and I need the inventory!</comment>
+							<response branch-id = 'root.shop'>
+								<phrase>Let me see the new digs.</phrase>
+							</response>
+							<response branch-id = 'root.bye'>
+								<phrase>Not right now.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

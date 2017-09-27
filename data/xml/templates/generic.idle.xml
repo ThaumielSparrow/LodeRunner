@@ -1,0 +1,41 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@title</parameter>
+		<parameter>@message</parameter>
+	</text>
+</parameters>
+
+<template name = 'generic.idle'>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' uses-input = '0' shrinkwrap = '1'>
+
+        <item-group render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '15%' y = '0' width = '80%' value = '@title' />
+
+            </item>
+
+        </item-group>
+
+        <item disabled = '1' class = 'spacer' />
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label id = 'label-message' x = '5%' y = '0' width = '90%' value = '@message' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

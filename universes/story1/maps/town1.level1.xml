@@ -1,0 +1,534 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 216 
+			0 0 154 327 256 329 333 154 217 217 217 217 219 333 153 0 0 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 154 0 0 0 0 0 303 332 152 0 0 0 0 153 210 0 
+			328 153 327 0 0 0 327 255 327 0 0 0 0 0 305 332 153 0 0 154 323 334 0 
+			0 152 0 0 0 324 209 0 310 329 0 0 0 0 0 0 152 327 257 332 305 0 0 
+			154 324 0 0 0 0 314 331 310 0 0 333 323 333 154 257 329 305 0 0 0 0 0 
+			153 0 0 0 0 0 0 311 0 0 0 310 0 0 154 0 0 0 0 0 0 0 0 
+			326 152 219 216 219 217 219 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 
+			0 152 0 0 0 0 0 154 331 327 152 324 329 256 324 332 330 152 0 0 0 152 328 
+			154 325 0 0 0 0 153 325 311 0 153 0 0 305 311 307 0 154 0 0 0 154 217 
+			152 0 0 0 0 152 326 307 0 0 154 0 0 0 0 0 0 153 0 0 0 154 0 
+			327 153 0 0 153 332 314 0 0 152 328 329 152 333 325 256 332 329 217 0 0 153 0 
+			0 153 0 152 324 310 0 0 0 154 0 310 154 0 310 307 311 0 0 216 0 152 0 
+			154 329 254 153 304 0 0 0 0 153 0 310 330 152 0 312 0 0 0 0 218 154 325 
+			153 219 219 154 219 217 219 217 217 152 332 309 311 330 153 305 0 0 0 0 0 334 306 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 344 0 343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 344 0 0 0 0 0 0 0 300 345 0 0 0 0 341 302 0 
+			0 0 0 0 0 300 0 0 0 302 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 345 0 0 0 0 300 341 348 0 0 342 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 344 0 0 344 345 0 341 345 0 0 0 0 0 300 
+			0 302 0 0 0 0 0 343 302 0 0 0 0 300 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 302 0 0 0 0 342 0 341 345 343 341 302 0 0 0 0 0 
+			0 0 0 0 341 302 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 340 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 302 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '12' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Dave' title = 'Citizen' />
+	<entity x = '17' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Isabella' title = 'Citizen' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '4' x = '7' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '1' x = '11' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '7' x = '15' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '9' x = '12' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '12' x = '22' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '14' x = '5' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '3' x = '5' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '0' x = '6' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '4' x = '21' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '2' x = '19' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '6' x = '3' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '8' x = '4' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '11' x = '8' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '13' x = '10' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '13' x = '18' genus = '6' class = '' />
+</entities>
+<triggers>
+<trigger prompt = 'Welcome to Amandria' name = 'ad1' height = '1' width = '1' behavior = '3' y = '0' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Dave' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '6' x = '11' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '7' x = '8'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '7' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '11' x = '3'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '14' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '10' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.f' height = '1' width = '1' behavior = '1' y = '10' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.g' height = '1' width = '1' behavior = '1' y = '4' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Isabella' name = 'npc2.talk' height = '3' width = '3' behavior = '3' y = '2' x = '16' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc2.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.a' height = '1' width = '1' behavior = '1' y = '0' x = '13'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.b' height = '1' width = '1' behavior = '1' y = '3' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c0' height = '1' width = '1' behavior = '1' y = '3' x = '19'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.c' height = '1' width = '1' behavior = '1' y = '1' x = '21'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc2.d' height = '1' width = '1' behavior = '1' y = '4' x = '15'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'spawn' height = '1' width = '1' behavior = '1' y = '7' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '10' x = '16'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'onvisit'>
+		// when player first arrives in Amandria, they have reached the 2nd town in
+        // the game and can thus now use travel mode on the worldmap.
+        session("core.minimap.can-travel").set("yes");
+
+        // Also, we now consider "training" complete.
+        session("training.complete").set(1);
+
+        // (Of course, we&apos;re redundantly updating these flags on each subsequent visit.  That&apos;s ok.)
+
+
+
+        // Clear quest indicators
+        npc("npc1").clearIndicators();
+
+        // Does npc need quest available indicator?
+        if ( quest("1.1.npc1.quest").status() == "inactive" )
+        {
+            // Available!
+            npc("npc1").addIndicator("quest-available");
+        }
+
+        // Quest is still active, player killed Joanna.
+        // We can still "turn in" to Dave here...
+        elif (
+            quest("1.1.npc1.quest").status() == "active" and
+            quest("1.1.npc1.quest").update("flag-killed-joanna").status() == "active"
+        )
+        {
+            // Ready to complete
+            npc("npc1").addIndicator("quest-complete");
+        }
+	</script>
+	<script name = 'onload'>
+		// npc1 path
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(2)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.f")
+                   .addHotspot("npc1.g")
+                   .addHotspot("sleep(2.5)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // npc2 path
+        npc("npc2").addHotspot("npc2.b")
+                   .addHotspot("npc2.a")
+                   .addHotspot("sleep(2.5)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.c0")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(2.0)")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(1.0)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'npc1.talk'>
+		#define QUEST "1.1.npc1.quest"
+
+        #define FLAG_KILLED_JOANNA "flag-killed-joanna"
+
+        #define UPDATE_EXTORTED "update-extorted"
+        #define UPDATE_KILLED_JOANNA_DURING "update-killed-joanna-during"
+        #define UPDATE_KILLED_DAVE "update-killed-dave"
+        #define UPDATE_DELIVERED_ITEM "update-delivered-item"
+        #define UPDATE_BOUGHT_ITEM "update-bought-item"
+        #define UPDATE_RETURNED_TO_DAVE "update-returned-to-dave"
+        #define UPDATE_RETURNED_TO_DAVE_FOR_GOLD "update-returned-to-dave-for-gold"
+        #define UPDATE_KEPT_FROM_DAVE "update-kept-from-dave"
+
+
+        // Quest not assigned?
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // Assume
+            npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("*").getResponsesByClass("already-killed").enable();
+
+            // If JoAnna is alive, then disable the "killed her already" response
+            if ( quest(QUEST).update(FLAG_KILLED_JOANNA).status() != "active" )
+            {
+                npc("npc1").conversation("quest:pending:assign").branch("root").getLinesByClass("*").getResponsesByClass("already-killed").disable();
+            }
+
+            // Quest assign dialogue, perhaps with "already killed" response (no auto fail, you can omit the info that you killed her and steal the item thusly).
+            npc("npc1").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Having killed JoAnna triggers end of quest dialogue, give item back?
+            if ( quest(QUEST).update(FLAG_KILLED_JOANNA).status() == "active" )
+            {
+                npc("npc1").talk("quest:in-progress:killed-joanna");
+
+                // Clear indicators
+                npc("npc1").clearIndicators();
+            }
+
+            // Otherwise, generic nag
+            else
+            {
+                // Extorted?  Aggressive dialogue
+                if ( quest(QUEST).update(UPDATE_EXTORTED).status() == "active" )
+                {
+                    npc("npc1").talk("quest:in-progress:extorted");
+                }
+
+                // Calm
+                else
+                {
+                    npc("npc1").talk("quest:in-progress:default");
+                }
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Killed JoAnna before delivery, but gave item back for successful quest?
+            if ( quest(QUEST).update(FLAG_KILLED_JOANNA).status() == "active" )
+            {
+                // Disable all
+                npc("npc1").conversation("quest:complete:killed-joanna").branch("root").getLinesByClass("*").disable();
+
+                // Did we actually deliver the item to JoAnna before killing her?
+                if ( quest(QUEST).update(UPDATE_DELIVERED_ITEM).status() == "active" )
+                {
+                    // Enable only appropriate nags
+                    npc("npc1").conversation("quest:complete:killed-joanna").branch("root").getLinesByClass("delivered").enable();
+                }
+
+                // Did we pay for the item, completing the quest but not actually delivering the goods?
+                elif ( quest(QUEST).update(UPDATE_BOUGHT_ITEM).status() == "active" )
+                {
+                    // Enable only appropriate nags
+                    npc("npc1").conversation("quest:complete:killed-joanna").branch("root").getLinesByClass("bought").enable();
+                }
+
+                // We never gave it to JoAnna, but did we return it to Dave?
+                elif ( quest(QUEST).update(UPDATE_RETURNED_TO_DAVE).status() == "active" )
+                {
+                    // Enable only appropriate nags
+                    npc("npc1").conversation("quest:complete:killed-joanna").branch("root").getLinesByClass("default").enable();
+                }
+
+                // Only other way to complete after killing JoAnna is to return the item to Dave, but at a price.
+                else
+                {
+                    npc("npc1").conversation("quest:complete:killed-joanna").branch("root").getLinesByClass("extorted").enable();
+                }
+
+                // Run dialogue
+                npc("npc1").talk("quest:complete:killed-joanna");
+            }
+
+            // Delivered item (or paid good money for it), nice work!
+            else
+            {
+                npc("npc1").talk("quest:complete:delivered-item");
+            }
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // Kept item, thus failing?
+            if ( quest(QUEST).update(UPDATE_KEPT_FROM_DAVE).status() == "active" )
+            {
+                npc("npc1").talk("quest:failed:kept-item");
+            }
+
+            // Only other way to fail is to kill JoAnna prematurely
+            else
+            {
+                npc("npc1").talk("quest:failed:killed-joanna-prematurely");
+            }
+        }
+	</script>
+	<script name = 'npc1.begin-quest'>
+		// Set a session variable to track which random item Dave gives us
+        session("1.1.npc1.quest:item-name").setRandomly(
+            "daves-enemy-repellant", "daves-anti-thief-glue", "daves-fireworks-of-the-paranoid"
+        );
+
+        // Get the readable title of the item and save it to session as well
+        session("1.1.npc1.quest:item-title").set(
+            universe().getItem(
+                session("1.1.npc1.quest:item-name").get("unwrapped")
+            ).getTitle()
+        );
+
+
+        // Acquire the random item
+        player().acquireItem(
+            session("1.1.npc1.quest:item-name").get("unwrapped")
+        );
+
+
+        // Activate quest
+        quest("1.1.npc1.quest").status("active");
+	</script>
+	<script name = 'npc1.begin-quest:extorted'>
+		// Set a session variable to track which random item Dave gives us
+        session("1.1.npc1.quest:item-name").setRandomly(
+            "daves-lousy-enemy-repellant", "daves-lousy-anti-thief-glue", "daves-lousy-fireworks-of-the-paranoid"
+        );
+
+        // Get the readable title of the item and save it to session as well
+        session("1.1.npc1.quest:item-title").set(
+            universe().getItem(
+                session("1.1.npc1.quest:item-name").get("unwrapped")
+            ).getTitle()
+        );
+
+
+        // Acquire the random item
+        player().acquireItem(
+            session("1.1.npc1.quest:item-name").get("unwrapped")
+        );
+
+
+        // Activate quest
+        quest("1.1.npc1.quest").status("active");
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "1.1.npc1.quest"
+
+        #define FLAG_KILLED_JOANNA "update-killed-joanna"
+
+        #define UPDATE_KILLED_DAVE_BEFORE "update-killed-dave-before"
+        #define UPDATE_KILLED_DAVE "update-killed-dave"
+
+        // Killing npc1 before quest is active will fail quest.
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // fail
+            quest(QUEST).status("failed");
+
+            // premature kill update
+            quest(QUEST).update(UPDATE_KILLED_DAVE_BEFORE).status("active");
+        }
+
+        // If quest already active, it depends.
+        // If JoAnna still alive, we can complete delivery.  If not, no way to complete.
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Killed her?
+            if ( quest(QUEST).update(FLAG_KILLED_JOANNA).status() == "active" )
+            {
+                // no way to win
+                quest(QUEST).status("failed");
+            }
+
+            // Otherwise, we can still theoretically complete.
+            // Either way, let&apos;s update killed Dave status.
+            quest(QUEST).update(UPDATE_KILLED_DAVE).status("active");
+        }
+
+        // Quest is already failed/complete
+        // Generic update
+        else
+        {
+            // Same generic update either way
+            quest(QUEST).update(UPDATE_KILLED_DAVE).status("active");
+        }
+
+
+// always set flag
+quest("1.1.npc1.quest").update("flag-killed-dave").status("active");
+
+
+        // disable talking trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc2.talk'>
+
+        // Disable all non-free color options first
+        npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("priced").disable();
+
+
+        // Bought red?
+        if ( session("jumpsuit.red.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("red-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("red-unpurchased").enable();
+        }
+
+        // Bought orange?
+        if ( session("jumpsuit.orange.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("orange-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("orange-unpurchased").enable();
+        }
+
+        // Bought gold?
+        if ( session("jumpsuit.gold.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("gold-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("gold-unpurchased").enable();
+        }
+
+        // Bought green?
+        if ( session("jumpsuit.green.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("green-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("green-unpurchased").enable();
+        }
+
+        // Bought teal?
+        if ( session("jumpsuit.teal.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("teal-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("teal-unpurchased").enable();
+        }
+
+        // Bought pink?
+        if ( session("jumpsuit.pink.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("pink-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("pink-unpurchased").enable();
+        }
+
+        // Bought tan?
+        if ( session("jumpsuit.tan.purchased").get() == "yes" ) {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("tan-purchased").enable();
+        }
+        else {
+            npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("tan-unpurchased").enable();
+        }
+
+
+		// Is Dave dead?
+        if ( quest("1.1.npc1.quest").update("flag-killed-dave").status() == "active" )
+        {
+            // Bought white?
+            //npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("*").enable();
+            if ( session("jumpsuit.white.purchased").get() == "yes" ) {
+                npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("white-purchased").enable();
+            }
+            else {
+                npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("white-unpurchased").enable();
+            }
+
+            // Different intro text
+            npc("npc2").conversation("default").branch("root").getLinesByClass("*").disable();
+            npc("npc2").conversation("default").branch("root").getLinesByClass("criminal").enable();
+        }
+
+        // No; standard shopping
+        else
+        {
+                // Disable Dave&apos;s outfits (he&apos;s still alive)
+                npc("npc2").conversation("default").branch("root.shop").getLinesByClass("*").getResponsesByClass("criminal").disable();
+
+                // Different intro text
+                npc("npc2").conversation("default").branch("root").getLinesByClass("*").disable();
+                npc("npc2").conversation("default").branch("root").getLinesByClass("default").enable();
+        }
+
+        // Talk
+        npc("npc2").talk("default", "shop");
+	</script>
+</scripts>

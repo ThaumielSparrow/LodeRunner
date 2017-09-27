@@ -1,0 +1,255 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1'] Good day, $player$.  Have you had a chance to visit any of the $bomb vending machines$ yet?  I hear you can get some really good deals.
+
+                [n id = 'nag1'] In the interest of full disclosure, $player$, I must tell you that I have no idea who's profiting from the $bomb vending machines$.
+
+                [n id = 'nag2'] Ever since the ^Bungeling empire^ invaded our beautiful land, I've started making a lot of money.  I can't tell you how, though.
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I can't help but to notice that you haven't customized your controls yet, $player$.  You \
+                    look like a new player, yes.  I like new players because I make a lot of gold off of them.
+
+                    +oops[min-gold = '5'] I will give you these 5 gold pieces, $Kenny$.
+
+                        >>> root.oops
+
+                            [n id = 'nag1'] Thank you, $player$.  I always like players who immediately choose the first option, whether on accident or not!
+
+                                @pre-script
+                                    player().subtractGold(5);
+                                -redirect trap
+
+                    +ok Goodbye.
+
+                        >>> root.ok
+
+                            [n id = 'nag1'] 
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I notice you have already customized your controls in the $pause menu$.  Smart.  A smart player like you \
+                    uses $bombs$ with great skill and aplomb.
+
+                    You should definitely stop by one of my many $bomb vending machines$ to stock up!
+
+            >>> trap
+
+                [n id = 'nag1'] You never took the time to customize your controls, $player$.  Yes, you still look like a new player.  I make a lot of gold off of new players like you!
+
+                    +oops[min-gold = '5'] I will give you these 5 gold pieces again, $Kenny$.
+
+                        >>> root.oops
+
+                            [n id = 'nag1'] Thanks again, $player$!  This will never get old!
+
+                                @pre-script
+                                    player().subtractGold(5);
+                                -redirect trap
+
+                    +ok I should stop giving you gold immediately.  You will never give me anything in return, and eventually I will simply run out of gold.  Goodbye, ^Kenny^.
+
+                        >>> root.ok
+
+                            [n id = 'nag1'] 
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] Yes, I'm making a lot of money selling bombs to both $you$ and the ^bad guys^, and I hope to make a lot more!  If you want to \
+                    buy some bombs, please visit one of my many $vending machines$.  Otherwise, please leave me to count my money in peace.
+
+                    +buy[min-gold = '100'] I'd like to buy your business contract, ^Kenny^.
+
+                        >>> root.buy
+
+                            [n id = 'nag1'] You're offering me a lot of $gold$ there, $player$.  I usually wouldn't listen to an offer like this, but you obviously mean business.
+
+                                I think I can agree to your offer.  Are you sure you want to buy my business contracts?
+
+                                +confirm Yes, I'm sure.  Give me the contracts.
+
+                                    >>> root.buy.confirm
+
+                                        [l id = 'line1'] Ok, $player$!  Now that we have finalized the sale, why don't you take a moment to make your first business decision?
+
+                                            If you'd like, I can deposit $all of the bomb vending machine revenue$ into your gold reserves, netting you $250 gold pieces$ this \
+                                            very minute.  Alternatively, you could decide to $lower the prices$ on each machine, saving you and everyone else a little money on each purchase.
+
+                                            Make the call, business owner!
+
+                                            +withdraw I'm going to withdraw the money, ^Kenny^.
+
+                                                >>> root.buy.confirm.withdraw
+
+                                                    [l id = 'line1'] You are going to do a great job with these machines, $player$.  As you requested, I have deposited all of the revenue into your account, \
+                                                        netting you a cool $250 gold pieces$.  Have a nice day!
+
+                                                        @post-script
+                                                            quest("2.1.npc1.quest").update("update-bought-contract").status("active");
+                                                            quest("2.1.npc1.quest").update("update-extracted-funds").status("active");
+                                                            player().addGold(250);
+
+                                            +discount The bombs should cost less, no doubt about it.
+
+                                                >>> root.buy.confirm.discount
+
+                                                    [l id = 'line1'] I think you're taking a bit of a risk on this one, $player$, but you're running the show now.  I can confirm that \
+                                                        the prices for every $bomb vending machine$ have fallen by about $10 percent$ now.  I'll talk to you later, $player$!
+
+                                                        @post-script
+                                                            quest("2.1.npc1.quest").update("update-bought-contract").status("active");
+                                                            quest("2.1.npc1.quest").update("update-lowered-prices").status("active");
+
+
+                                +decline Not yet.  Let me think it over...
+
+                                    >>> root.buy.decline
+
+                                        [n id = 'nag1']
+
+                    +later Let's talk later...
+
+                        >>> root.later
+
+                            [n id = 'nag1']
+
+
+        @conversation[id = 'quest:bought-business-contracts']
+
+            >>> root
+
+                [n id = 'nag1'] I'm still trying to put together a new business venture, now that I'm not bringing in all of that money from the $bomb vending machines$ you bought from me.
+
+                [n id = 'nag2'] Looking back, I wish I hadn't sold you my business contracts, $player$.  I sure did make a lot of money from those $bomb vending machines$!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I can't believe that someone who hasn't even customized their controls in the $pause menu$ now owns \
+                    all of the $bomb vending machines$.  You impress me, $player$!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] You did a nice job of customizing your gameplay controls, but you won't need to adjust a thing on the \
+                    $bomb vending machines$ I sold you.  I programmed them to perfection, thanks to my use of the $Python$ programming language!
+
+
+        @conversation[id = 'quest:failed']
+
+            >>> root
+
+                [l id = 'line1'] I used to know this guy in a little town just east of here.  I think people called him $Alien$.  I only remember him because he constantly \
+                    whined about how much money I made from my $bomb vending machines$.
+
+                [n id = 'nag1'] I haven't seen that guy in a pretty long time, $player$.  I bet someone got tired of his whining.
+
+                [n id = 'nag2' class = 'once'] I feel really charitable today, knowing that people like $Alien$ can't stop me from making money anymore. \
+                    Just to flaunt, I'm going to give you $35 gold pieces$ for absolutely nothing!
+
+                    @post-script
+                        npc("npc1").conversation("quest:failed").branch("root").getLinesByClass("once").disable();
+                        player().addGold(35);
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I'd like to see you customize your controls in the $pause menu$ soon.  If you change your controls, \
+                    you might accidentally waste some $bombs$ as you adjust to the new settings.  When you run out of $bombs$, you will eventually need to buy more at one of my $bomb vending machines$, and I \
+                    will profit!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] How many $bombs$ do you have left?  $$[core.bombs.count]$, I see.  You must have done a great job \
+                    customizing your controls to have that many left.
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] You're making some pretty good progress, $player$.  I bet you've got a pretty good $world map$ of the entire land of $Lelandria$ by now!
+
+                    You know, $player$, I'd love to have a complete copy of the entire world.  If you happen to complete your world map by visiting every level in this world, \
+                    please stop back to share a copy of your map with me!
+
+                    @post-script
+                        quest("6.2.npc2.quest").status("active");
+                        npc("npc2").clearIndicators();
+                        session("6.2.npc2.quest:percent-visited").set( progress().getMapsByClass("overworld").getPercentVisited() );
+
+
+        @conversation[id = 'quest:in-progress']
+
+            >>> root
+
+                [n id = 'nag1'] I wish I could travel the entire world along your side, $player$.  If you ever finish that map, let me know!  I have a $special item$ waiting for you!
+
+                    +bye Have a nice day, $Dani$.
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+
+                    +buy Do you have any map data to share with me?
+
+                        >>> root.buy
+
+                            [n id = 'nag1' class = 'no'] I have done a lot of traveling between here and the western area of $Lelandria$, but it looks like you have already visited all of the same places.  I'm sorry, $player$, \
+                                             but I don't have anything that would help you!
+
+                            [n id = 'nag2' class = 'yes'] I think I might, $player$.
+
+                                I've spent a lot of time traveling between here and $Manderkeen$, a city not too far west of here.  If you'd like, I could make you a copy of my limited map data for a small fee.
+
+                                +confirm[min-gold = '50'] Sure!  I'll take it!
+
+                                    >>> root.buy.confirm
+
+                                        [l id = 'line1'] Thanks for the gold, $player$.  I've updated your $World Map$ with all of the places I've visited between here and $Manderkeen$.  You'll see them as "unvisited" areas, but you \
+                                            can fast travel to $Manderkeen$ right now if you'd like!
+
+                                            @post-script
+                                                player().subtractGold(50);
+                                                map().runScript("npc2.share-map");
+
+                                +deny Not right now, $Dani$.
+
+                                    >>> root.buy.deny
+                                        [n id = 'nag1']
+
+                [n id = 'nag2'] I've been keeping a $special item$ to offer in exchange for a complete $world map$ of $Lelandria$.  If you ever fully reveal your map, $player$, please stop by!
+
+                    +bye I'll see you later, $Dani$.
+
+                    +buy Do you have any map data to share with me?
+
+
+        @conversation[id = 'quest:in-progress:map-complete']
+
+            >>> root
+
+                [l id = 'line1'] This looks so neat, $player$!  I can't believe you visited the entire world!
+
+                    I have that $special item$ ready for you too, $player$.  If you haven't gotten all of the gold in the game yet, this might help you out!
+
+                    @post-script
+                        quest("6.2.npc2.quest").status("complete");
+                        quest("6.2.npc2.quest").update("update-complete").status("active");
+                        npc("npc2").clearIndicators();
+                        player().acquireRandomItem("danis-world-traveler-shoes", "danis-anti-thief-shoes", "danis-heavy-shoes-of-fortune");
+
+
+        @conversation[id = 'quest:complete']
+
+            >>> root
+
+                [n id = 'nag1'] I love this map, $player$.  Thanks so much for sharing it with me!
+
+                [n id = 'nag2'] I can't stop staring at this map.  I bet you have fought a ton of ^bad guys^!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] I bet you've spent a lot of time studying this map in the $pause menu$, right?  Have you thought about \
+                    customizing your gameplay controls while you're in the $pause menu$?
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I don't think anyone could explore the entirety of $Lelandria$ without customizing their gameplay controls \
+                    at least once!  You did an incredible job on this map, $player$!
+

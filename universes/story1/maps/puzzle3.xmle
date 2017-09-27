@@ -1,0 +1,77 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 233 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 97 118 0 0 0 150 147 230 0 149 148 150 0 0 119 
+			0 0 0 209 96 0 0 152 116 117 117 119 116 118 119 119 152 0 233 
+			0 0 0 116 98 0 153 119 98 97 97 97 0 209 96 98 153 0 117 
+			0 0 0 99 97 153 118 0 208 97 0 98 116 118 96 0 154 0 98 
+			0 0 0 0 99 153 99 118 116 0 0 0 0 99 98 116 119 152 97 
+			0 0 0 0 148 153 98 98 98 116 0 0 0 229 98 96 0 153 99 
+			0 0 233 151 118 153 0 98 0 208 116 219 117 116 98 96 0 153 97 
+			0 0 118 116 96 152 117 96 119 118 0 0 208 98 0 99 0 152 0 
+			0 0 0 96 97 152 0 0 0 0 0 216 117 99 119 0 0 153 210 
+			0 0 0 0 96 117 154 0 0 0 0 0 0 0 0 0 0 154 119 
+			0 0 0 0 0 96 117 152 148 0 0 216 0 149 150 229 152 119 97 
+			0 0 0 0 0 0 96 110 119 117 111 0 110 119 118 117 111 110 98 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 300 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 302 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '8' y = '8' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '9' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '12' y = '11' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '12' y = '4' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '7' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '15' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '14' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '8' y = '2' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "Sometimes you must dig for a long time to reach a piece of gold.",
+            "tooltip": "Collect all of the gold.",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        showPuzzleIntro();
+	</script>
+</scripts>

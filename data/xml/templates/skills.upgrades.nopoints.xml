@@ -1,0 +1,77 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@skill-name</parameter>
+	</data>
+	<text>
+		<parameter>@required-skill-points</parameter>
+		<parameter>@necessary-skill-points-pluralizer</parameter>
+		<parameter>@skill-title</parameter>
+		<parameter>@skill-level</parameter>
+		<parameter>@skill-points-available</parameter>
+		<parameter>@pluralizer</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.upgrades.nopoints'>
+
+    <rowmenu id = 'alert' rel = 'skills.upgrades.confirm' x = '@x' y = '@y' width = '@width' height = '@height' valign = 'center' shrinkwrap = '1' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Insufficient Skill Points' />
+            </item>
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1'>
+                <stack>
+
+                    <stack id = 'ext.header' render-border = '0' />
+
+                    <stack class = 'frame'>
+                        <label class = 'line-break' x = '5%' y = '0' width = '90%' value = 'You need at least [color=special]@required-skill-points[/color] skill point@necessary-skill-points-pluralizer to unlock [color=special]@skill-title @skill-level[/color].' />
+                        <label x = '5%' y = '0' width = '90%' value = 'You currently have [color=special]@skill-points-available[/color] skill point@pluralizer.' />
+                    </stack>
+
+                    <stack id = 'ext.footer' render-border = '0' />
+
+                </stack>
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '16%' y = '0' width = '80%' value = 'Options' />
+            </item>
+        </item-group>
+
+        <item-group id = 'generic.options' class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '16%' y = '0' width = '80%' value = 'Back' />
+                    <label class = 'subtitle' x = '16%' y = '0' width = '80%' value = 'Return to Skill Tree' />
+                </stack>
+
+                <action do = 'hide:skill.tree.insert.options.upgrade.confirm' skill = '@skill-name' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

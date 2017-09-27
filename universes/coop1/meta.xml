@@ -1,0 +1,39 @@
+<metadata>
+    <version>1.0</version>
+    <params>
+        <param id = 'title'>Coop Campaign 1</param>
+        <param id = 'min-players'>2</param>
+        <param id = 'max-players'>3</param>
+        <param id = 'type'>linear</param>
+    </params>
+    <subtitles>
+        <subtitle>Team up with your friends to complete 20 challenging levels.  Work together to access seemingly unreachable pieces of gold!</subtitle>
+    </subtitles>
+    <preview-maps>
+        <preview-map duration = '3' measure = 'seconds' script = 'on-preview'>map1</preview-map>
+        <preview-map duration = '2' measure = 'seconds' script = 'on-preview'>map2</preview-map>
+        <preview-map duration = '2' measure = 'seconds' script = 'on-preview'>badmap</preview-map>
+    </preview-maps>
+    <selectable-levels>
+        <selectable-level>map1</selectable-level>
+        <selectable-level>map2</selectable-level>
+        <selectable-level>map3</selectable-level>
+        <selectable-level>map4</selectable-level>
+        <selectable-level>map5</selectable-level>
+        <selectable-level>map6</selectable-level>
+        <selectable-level>map7</selectable-level>
+        <selectable-level>map8</selectable-level>
+        <selectable-level>map9</selectable-level>
+        <selectable-level>map10</selectable-level>
+        <selectable-level>map11</selectable-level>
+        <selectable-level>map12</selectable-level>
+        <selectable-level>map13</selectable-level>
+        <selectable-level>map14</selectable-level>
+        <selectable-level>map15</selectable-level>
+        <selectable-level>map16</selectable-level>
+        <selectable-level>map17</selectable-level>
+        <selectable-level>map18</selectable-level>
+        <selectable-level>map19</selectable-level>
+        <selectable-level>map20</selectable-level>
+    </selectable-levels>
+</metadata>

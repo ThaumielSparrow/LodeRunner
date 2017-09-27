@@ -1,0 +1,243 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 
+			0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152 0 
+			0 0 0 9 0 0 0 9 152 0 0 9 0 152 0 9 0 0 216 9 0 0 0 
+			116 152 116 116 116 152 116 116 116 152 116 116 116 152 116 116 116 152 0 116 116 152 116 
+			0 152 0 0 0 152 0 0 0 152 0 0 0 152 0 0 0 152 0 0 0 0 0 
+			0 152 0 9 0 152 0 9 0 152 0 9 216 152 0 9 0 152 0 9 0 152 0 
+			116 152 116 116 116 152 116 116 116 116 116 116 0 152 116 116 116 152 116 116 116 152 116 
+			0 152 0 0 0 152 0 0 0 0 0 0 0 152 0 0 0 152 0 0 0 0 0 
+			0 152 0 9 0 152 0 9 216 0 0 9 0 152 0 9 0 152 0 9 0 152 0 
+			116 152 116 116 116 152 116 116 0 116 116 116 116 152 116 116 116 152 116 116 116 152 116 
+			0 152 0 0 0 152 0 0 0 0 0 0 0 152 0 0 0 152 0 0 0 0 0 
+			0 152 0 9 0 152 0 9 0 0 0 9 0 152 216 9 0 152 0 9 0 152 0 
+			116 116 116 116 116 116 116 116 116 152 116 116 116 116 0 116 116 116 116 116 116 116 116 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 116 152 116 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 152 116 116 116 152 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 116 116 116 116 96 96 96 116 116 116 110 116 116 116 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<xentity name = '' title = '' ai-behavior = '1' nick = '' y = '8' x = '16' genus = '1' class = '' />
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '8' x = '3' genus = '2' class = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '8' x = '18' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '11' x = '0' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '2' x = '14' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '0' x = '17' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '18' x = '14' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'trigger1' x = '3' y = '2' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle1'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger1.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger2' x = '7' y = '2' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle2'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger2.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger3' x = '11' y = '2' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle3'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger3.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger4' x = '15' y = '2' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle4'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger4.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger5' x = '19' y = '2' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle5'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger5.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger6' x = '3' y = '5' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle6'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger6.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger7' x = '7' y = '5' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle7'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger7.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger8' x = '11' y = '5' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle8'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger8.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger9' x = '15' y = '5' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle9'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger9.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger10' x = '19' y = '5' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle10'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger10.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger11' x = '3' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle11'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger11.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger12' x = '7' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle12'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger12.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger13' x = '11' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle13'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger13.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger14' x = '15' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle14'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger14.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger15' x = '19' y = '8' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle15'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger15.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger16' x = '3' y = '11' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle16'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger16.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger17' x = '7' y = '11' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle17'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger17.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger18' x = '11' y = '11' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle18'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger18.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger19' x = '15' y = '11' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle19'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger19.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'trigger20' x = '19' y = '11' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle20'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'trigger20.use' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'trigger1.use'>session("core.challenge.wave").set("1");trigger("trigger1").loadMap("puzzle1", "origin");</script>
+	<script name = 'trigger10.use'>session("core.challenge.wave").set("1");trigger("trigger10").loadMap("puzzle10", "origin");</script>
+	<script name = 'trigger11.use'>session("core.challenge.wave").set("1");trigger("trigger11").loadMap("puzzle11", "origin");</script>
+	<script name = 'trigger12.use'>session("core.challenge.wave").set("1");trigger("trigger12").loadMap("puzzle12", "origin");</script>
+	<script name = 'trigger13.use'>session("core.challenge.wave").set("1");trigger("trigger13").loadMap("puzzle13", "origin");</script>
+	<script name = 'trigger14.use'>session("core.challenge.wave").set("1");trigger("trigger14").loadMap("puzzle14", "origin");</script>
+	<script name = 'trigger15.use'>session("core.challenge.wave").set("1");trigger("trigger15").loadMap("puzzle15", "origin");</script>
+	<script name = 'trigger16.use'>session("core.challenge.wave").set("1");trigger("trigger16").loadMap("puzzle16", "origin");</script>
+	<script name = 'trigger17.use'>session("core.challenge.wave").set("1");trigger("trigger17").loadMap("puzzle17", "origin");</script>
+	<script name = 'trigger18.use'>session("core.challenge.wave").set("1");trigger("trigger18").loadMap("puzzle18", "origin");</script>
+	<script name = 'trigger19.use'>session("core.challenge.wave").set("1");trigger("trigger19").loadMap("puzzle19", "origin");</script>
+	<script name = 'trigger2.use'>session("core.challenge.wave").set("1");trigger("trigger2").loadMap("puzzle2", "origin");</script>
+	<script name = 'trigger20.use'>session("core.challenge.wave").set("1");trigger("trigger20").loadMap("puzzle20", "origin");</script>
+	<script name = 'trigger3.use'>session("core.challenge.wave").set("1");trigger("trigger3").loadMap("puzzle3", "origin");</script>
+	<script name = 'trigger4.use'>session("core.challenge.wave").set("1");trigger("trigger4").loadMap("puzzle4", "origin");</script>
+	<script name = 'trigger5.use'>session("core.challenge.wave").set("1");trigger("trigger5").loadMap("puzzle5", "origin");</script>
+	<script name = 'trigger6.use'>session("core.challenge.wave").set("1");trigger("trigger6").loadMap("puzzle6", "origin");</script>
+	<script name = 'trigger7.use'>session("core.challenge.wave").set("1");trigger("trigger7").loadMap("puzzle7", "origin");</script>
+	<script name = 'trigger8.use'>session("core.challenge.wave").set("1");trigger("trigger8").loadMap("puzzle8", "origin");</script>
+	<script name = 'trigger9.use'>session("core.challenge.wave").set("1");trigger("trigger9").loadMap("puzzle9", "origin");</script>
+</scripts>

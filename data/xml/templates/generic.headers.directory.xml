@@ -1,0 +1,26 @@
+<parameters>
+	<data>
+		<parameter>@icon-index</parameter>
+	</data>
+	<text>
+		<parameter>@header-text</parameter>
+	</text>
+</parameters>
+
+<template name = 'generic.headers.directory' version = 'align-left'>
+
+    <item disabled = '1' render-border = '0'>
+        <icon x = '3%' y = '0' index = '@icon-index' position = 'absolute' />
+        <label x = '15%' y = '0' width = '80%' value = '[color=normal]@header-text[/color]' />
+    </item>
+
+</template>
+
+<template name = 'generic.headers.directory' version = 'align-right'>
+
+    <item disabled = '1' render-border = '0'>
+        <icon x = '97%' y = '0' index = '@icon-index' align = 'right' position = 'absolute' />
+        <label x = '85%' y = '0' align = 'right' width = '80%' value = '[color=normal]@header-text[/color]' />
+    </item>
+
+</template>

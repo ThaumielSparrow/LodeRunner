@@ -1,0 +1,332 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 326 328 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 307 327 152 0 0 9 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 153 325 253 331 153 0 0 0 0 0 0 152 
+			0 0 0 0 0 154 0 0 0 152 0 0 0 0 0 152 334 
+			0 0 0 330 324 331 253 324 327 330 254 328 154 326 254 325 303 
+			0 0 0 0 313 311 309 0 0 0 0 0 153 0 0 0 0 
+			0 0 0 0 0 304 0 0 0 0 0 0 152 0 0 0 0 
+			0 0 0 325 0 144 0 0 0 0 153 328 255 325 152 329 0 
+			0 0 0 306 0 144 0 0 0 154 325 313 0 0 154 0 0 
+			152 218 0 304 0 207 0 0 152 331 308 0 0 325 329 0 0 
+			152 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 
+			154 0 0 0 152 327 324 327 254 325 333 328 152 0 0 0 0 
+			253 0 0 0 154 305 309 0 0 0 313 305 154 0 0 0 0 
+			306 0 0 0 153 310 0 0 0 0 0 308 152 0 0 0 0 
+			308 333 0 0 154 0 0 0 0 0 0 0 153 0 0 0 303 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '14' y = '12' modal = '0'>
+		<structure>
+			0 53 0 
+			53 207 50 
+			0 52 0 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '1' y = '3' modal = '0'>
+		<structure>
+			0 208 49 
+			210 49 0 
+			49 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 345 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 342 345 340 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 340 343 343 0 340 0 342 0 0 0 340 0 302 
+			0 0 0 0 300 0 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 341 0 0 0 0 0 0 0 340 344 340 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 344 302 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 302 0 0 300 343 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 345 0 340 0 0 342 0 0 0 0 0 
+			345 0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 346 0 0 0 0 0 346 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '11' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jill' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '12' x = '8' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '11' x = '0' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '10' x = '16' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '10' x = '6' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '6' x = '11' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '3' x = '7' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '1' x = '6' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '0' x = '15' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '6' x = '3' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '8' x = '13' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '5' x = '14' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '12' x = '14' genus = '6' class = '' />
+	<entity x = '9' y = '10' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '2' position = '1' />
+	<entity x = '4' y = '0' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '3' position = '2' />
+</entities>
+<triggers>
+<trigger prompt = '' name = 'wp1a' height = '1' width = '1' behavior = '1' y = '12' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp1b' height = '1' width = '1' behavior = '1' y = '12' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2a' height = '1' width = '1' behavior = '1' y = '0' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'wp2b' height = '1' width = '1' behavior = '1' y = '12' x = '1'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '@do:activate lever' name = 'lever1' height = '1' width = '1' behavior = '3' y = '10' x = '9'>
+	<touch />
+	<hover>
+		<script name = 'lever1.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@do:activate lever' name = 'lever2' height = '1' width = '1' behavior = '3' y = '0' x = '4'>
+	<touch />
+	<hover>
+		<script name = 'lever2.action' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '@talk:Jill' name = 'npc1.talk' height = '3' width = '3' behavior = '3' y = '2' x = '10' class = 'talk'>
+	<touch />
+	<hover>
+		<script name = 'npc1.talk' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.a' height = '1' width = '1' behavior = '1' y = '3' x = '6'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.b' height = '1' width = '1' behavior = '1' y = '1' x = '9'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.c' height = '1' width = '1' behavior = '1' y = '6' x = '15'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.d' height = '1' width = '1' behavior = '1' y = '6' x = '10'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'npc1.e' height = '1' width = '1' behavior = '1' y = '3' x = '14'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+<trigger prompt = '#puzzle:puzzle18' name = 'puzzle18.enter' height = '1' width = '1' behavior = '3' y = '1' x = '8' class = 'door'>
+	<touch />
+	<hover>
+		<script name = 'puzzle18.enter' />
+	</hover>
+	<exit />
+</trigger>
+<trigger prompt = '' name = 'safe-spawn' height = '1' width = '1' behavior = '1' y = '10' x = '11'>
+	<touch />
+	<hover />
+	<exit />
+</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle18.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle18.enter").loadMap("puzzle18", "origin");
+	</script>
+	<script name = 'onvisit'>
+		// clear indicators
+        npc("npc1").clearIndicators();
+
+        // If love letter quest is active and player has not delivered
+        // letter, then highlight as quest available
+        if (
+            quest("4.3.npc1.quest").status() == "active" and
+            quest("4.3.npc1.quest").update("update-delivered-letter").status() != "active"
+        )
+        {
+            // Highlight
+            npc("npc1").addIndicator("quest-available");
+        }
+	</script>
+	<script name = 'lever1.action'>
+		// lever points left?
+        if ( npc("lever1").hasPosition("left") )
+        {
+            // point right
+            npc("lever1").setPosition("right");
+
+            // shift right
+            map().plane("shift1").shiftToX("wp1b");
+        }
+
+        // assume right
+        else
+        {
+            // point left
+            npc("lever1").setPosition("left");
+
+            // shift far left
+            map().plane("shift1").shiftToX("wp2b");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points up?
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // point down
+            npc("lever2").setPosition("down");
+
+            // shift down
+            map().plane("shift2").shiftToY("wp2b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever2").setPosition("up");
+
+            // shift up
+            map().plane("shift2").shiftToY("wp2a");
+        }
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define QUEST "4.3.npc1.quest"
+
+        #define UPDATE_DELIVERED_LETTER "update-delivered-letter"
+        #define UPDATE_KILLED_JILL_BEFORE_DELIVERY "update-killed-jill-before-delivery"
+        #define UPDATE_KILLED_JILL_AFTER_DELIVERY "update-killed-jill-after-delivery"
+
+        // Quest not even started, we killed Jill far too soon
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // If we killed Timmy already, then we failed the quest then.
+            // If we didn&apos;t kill him, wait until we talk to him before failing or whatever.
+            // Thus, just flag an update
+            quest(QUEST).update("update-killed-jill-before").status("active");
+        }
+
+        // Quest in progress...
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Haven&apos;t delivered letter yet?  We&apos;re ahead of schedule
+            if ( quest(QUEST).update("update-delivered-letter").status() != "active" )
+            {
+                quest(QUEST).update("update-killed-jill-before-delivery").status("active");
+            }
+
+            // Quest still active, but we delivered the letter and got the ring, so killing Jill doesn&apos;t mean much
+            else
+            {
+                quest(QUEST).update("update-killed-jill-after-delivery").status("active");
+            }
+        }
+
+        // Failed, by killing Timmy before turning in?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // We can also fail by killing Jill early, but in that case she&apos;s already dead and we can&apos;t kill her twice.
+            quest(QUEST).update("update-killed-jill-after-timmy").status("active");
+        }
+
+        // Killing her after completing quest...
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // Did we kill Timmy too?
+            if ( quest(QUEST).update("flag-killed-timmy").status() == "active" )
+            {
+                quest(QUEST).update("update-killed-jill-after-timmy").status("active");
+            }
+
+            // NO, so it&apos;s just an "after delivery" update
+            else
+            {
+                quest(QUEST).update("update-killed-jill-after-delivery").status("active");
+            }
+        }
+
+
+        // Flag
+        quest(QUEST).update("flag-killed-jill").status("active");
+
+        // disable talk trigger
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		// Jill is the target of a love letter delivery quest from 4.3 Timmy.
+        #define QUEST "4.3.npc1.quest"
+
+        #define UPDATE_KILLED_JILL_BEFORE_DELIVERY "update-killed-jill-before-delivery"
+        #define UPDATE_KILLED_JILL_AFTER_DELIVERY "update-killed-jill-after-delivery"
+        #define UPDATE_KILLED_TIMMY "update-killed-timmy"
+        #define UPDATE_DELIVERED_LETTER "update-delivered-letter"
+        #define UPDATE_DELIVERED_LETTER:DELIVERED_RING "update-delivered-letter:delivered-ring"
+        #define UPDATE_DELIVERED_LETTER:KEPT_RING "update-delivered-letter:kept-ring"
+
+        // If we have the letter, she wants to read it.  This supercedes any quest status
+        if ( session("4.3.npc1.received-letter").equals("yes") )
+        {
+            // First time reading?
+            if ( quest(QUEST).update(UPDATE_DELIVERED_LETTER).status() != "active" )
+            {
+                // Read it
+                npc("npc1").talk("quest:in-progress");
+            }
+
+            // already read, rah rah rah
+            else
+            {
+                // maybe timmy already dead, no importance
+                npc("npc1").talk("quest:delivered-letter");
+            }
+        }
+
+        // If not, it&apos;s a default conversation, regardless of Timmy&apos;s state
+        else
+        {
+            npc("npc1").talk("default");
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("npc1.e")
+                   .addHotspot("sleep(1.25)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+	</script>
+</scripts>

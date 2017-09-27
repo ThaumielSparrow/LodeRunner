@@ -1,0 +1,88 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'puzzle' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 211 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 154 116 218 218 217 217 219 152 233 0 
+			0 0 0 0 0 153 118 96 0 0 0 211 211 154 118 0 
+			0 0 0 0 0 153 98 96 0 0 230 119 118 152 0 0 
+			0 0 0 0 231 153 0 99 0 0 119 97 0 153 0 0 
+			0 0 0 0 116 152 207 0 0 0 96 99 116 154 0 0 
+			0 0 0 0 0 154 119 119 0 0 0 0 96 152 0 0 
+			0 0 0 0 0 154 0 96 0 0 211 209 0 154 0 0 
+			0 0 0 0 0 154 0 0 0 116 118 119 116 116 153 0 
+			0 0 0 210 211 154 0 0 0 0 98 96 98 0 152 0 
+			0 0 0 110 116 117 119 154 0 211 211 0 0 211 152 207 
+			0 0 0 0 0 230 97 99 118 110 111 117 117 111 119 119 
+			0 0 0 0 0 116 97 96 0 0 118 96 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 302 0 300 0 
+			0 0 0 0 0 300 0 0 0 0 0 302 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '11' y = '7' genus = '6' ai-behavior = '1' name = 'gold.uid.0' class = '' nick = '' title = '' />
+	<entity x = '7' y = '6' genus = '6' ai-behavior = '1' name = 'gold.uid.1' class = '' nick = '' title = '' />
+	<entity x = '12' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.2' class = '' nick = '' title = '' />
+	<entity x = '6' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.3' class = '' nick = '' title = '' />
+	<entity x = '10' y = '2' genus = '6' ai-behavior = '1' name = 'gold.uid.4' class = '' nick = '' title = '' />
+	<entity x = '4' y = '5' genus = '6' ai-behavior = '1' name = 'gold.uid.5' class = '' nick = '' title = '' />
+	<entity x = '15' y = '6' genus = '6' ai-behavior = '1' name = 'gold.uid.6' class = '' nick = '' title = '' />
+	<entity x = '9' y = '10' genus = '6' ai-behavior = '1' name = 'gold.uid.7' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'origin' x = '11' y = '11' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'origin' x = '11' y = '11' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		map().setParams({
+            "overview": "Use your mining laser to create a path to the unreachable gold pieces.  Collect all of the gold to complete the puzzle!",
+            "tooltip": "You can't use [color=special]special abilities[/color] in puzzle rooms, and in this puzzle room you have no [color=special]bomb[/color] to use.",
+            "prizes.warehouses": ["puzzle1"],
+            "prizes.min-quality": 1,
+            "prizes.max-quality": 1,
+            "prizes.required-item-names": ["running-shoes"]
+        });
+
+        map().setWaveAllowances({
+            "bombs": 3
+        });
+
+        showPuzzleIntro();
+	</script>
+</scripts>

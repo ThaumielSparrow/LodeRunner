@@ -1,0 +1,110 @@
+<parameters>
+    <data>
+        <parameter>@x</parameter>
+        <parameter>@y</parameter>
+        <parameter>@width</parameter>
+        <parameter>@height</parameter>
+    </data>
+    <text>
+        
+    </text>
+</parameters>
+
+<template name = 'mainmenu.root.story.warning'>
+
+    <hpane id = 'dialog' handedness = 'right' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'left' valign = 'center' shrinkwrap = '1'>
+
+        <left>
+
+            <rowmenu id = 'info' y = '-36' width = '100%' height = '@height' shrinkwrap = '0' uses-focus = '0' uses-lightbox = '1'>
+
+                <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                    <item disabled = '1' class = 'title-bar' fill = 'always'>
+                        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                        <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Notification' />
+                    </item>
+
+                </item-group>
+
+                <item-group render-border = '1'>
+
+                    <item disabled = '1' class = 'frame' valign = 'pack'>
+                        <stack>
+                            <label x = '5%' y = '0' width = '90%' value = 'You already have a game [color=special]in progress[/color] for this story mode.' />
+                            <label x = '5%' y = '0' width = '90%' value = '' />
+                            <label x = '5%' y = '0' width = '90%' value = 'If you continue, you will overwrite the existing autosave file.' />
+                            <label x = '5%' y = '0' width = '90%' value = '' />
+                            <label x = '5%' y = '0' width = '90%' value = '[color=special]Manual saves[/color] will not be affected, of course.' />
+                        </stack>
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </left>
+
+        <right>
+
+            <rowmenu id = 'menu' y = '36' height = '@height' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '0'>
+
+                <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                    <item disabled = '1' class = 'title-bar' fill = 'always'>
+                        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                        <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Options' />
+                    </item>
+
+                </item-group>
+
+                <item-group class = 'options' render-border = '1'>
+
+                    <item class = 'option' fill = 'active'>
+
+                        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                        <stack>
+                            <label x = '17%' y = '0' width = '90%' value = 'Resume Game' />
+                            <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' value = 'Load the Autosave' />
+                        </stack>
+
+                        <action do = 'warning:resume' />
+
+                    </item>
+
+                    <item class = 'option' fill = 'active'>
+
+                        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                        <stack>
+                            <label x = '17%' y = '0' width = '90%' value = 'New Game' />
+                            <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' value = 'Begin a New Adventure!' />
+                        </stack>
+
+                        <action do = 'warning:new' />
+
+                    </item>
+
+                    <item class = 'option' fill = 'active'>
+
+                        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                        <stack>
+                            <label x = '17%' y = '0' width = '90%' value = 'Cancel' />
+                            <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' xvalue = 'TEst' value = 'Do Nothing' />
+                        </stack>
+
+                        <action do = 'warning:cancel' />
+
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </right>
+
+    </hpane>
+
+</template>

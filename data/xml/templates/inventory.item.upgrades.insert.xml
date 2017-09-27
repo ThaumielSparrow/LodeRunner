@@ -1,0 +1,84 @@
+<parameters>
+	<data>
+		<parameter>@side</parameter>
+		<parameter>@item-name</parameter>
+		<parameter>@upgrade-name</parameter>
+		<parameter>@opposite-side</parameter>
+	</data>
+	<text>
+		<parameter>@upgrade-title</parameter>
+		<parameter>@upgrade-cost</parameter>
+		<parameter>@upgrades-remaining</parameter>
+		<parameter>@upgrades-remaining-pluralizer</parameter>
+		<parameter>@gold-needed</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.item.upgrades.insert' version = 'affordable'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label x = '16%' y = '0' width = '79%' value = '@upgrade-title' />
+                <label class = 'subtitle' x = '16%' y = '0' width = '79%' value = 'Cost:  [color=special]@upgrade-cost gold[/color]' />
+            </stack>
+
+            <action do = 'show:inventories.inventory.item.upgrade.confirm' side = '@side' item-name = '@item-name' upgrade-name = '@upgrade-name' />
+
+        </contents>
+
+        <tooltip class = 'upgrade' render-border = '1' align = '@opposite-side'>
+            <label width = '100%' value = 'You can upgrade this item @upgrades-remaining time@upgrades-remaining-pluralizer.' />
+        </tooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.item.upgrades.insert' version = 'unaffordable'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label x = '16%' y = '0' width = '79%' value = '@upgrade-title' />
+                <label class = 'disabled' x = '16%' y = '0' width = '79%' value = 'Cost:  [color=unaffordable]@upgrade-cost gold[/color]' />
+            </stack>
+
+        </contents>
+
+        <tooltip class = 'upgrade' render-border = '1' align = '@opposite-side'>
+            <label width = '100%' value = 'You cannot afford this upgrade right now.  You need [color=special]@gold-needed more gold[/color] to buy this upgrade.' />
+        </tooltip>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.item.upgrades.insert' version = 'out-of-upgrades'>
+
+    <insert:item id = 'insert' class = 'option' fill = 'active'>
+
+        <contents>
+
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label xclass = 'line-break' x = '16%' y = '0' width = '79%' value = 'Fully Upgraded' />
+                <label class = 'disabled' x = '16%' y = '0' width = '79%' value = 'You cannot upgrade this item again.' />
+            </stack>
+
+        </contents>
+
+    </insert:item>
+
+</template>

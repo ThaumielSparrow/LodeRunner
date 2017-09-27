@@ -1,0 +1,94 @@
+<template name = 'game.load'>
+
+    <rowmenu id = 'load-game' class = 'saved-game-directory' width = '@width' height = '@height' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item id = 'invisible-left-column' disabled = '1' />
+
+            <item class = 'button' individual-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label x = '20%' y = '0' width = '75%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'right' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Last Checkpoint (Autosave)' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item class = 'preview' individual-border = '0' disabled = '1'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '1'>
+
+                    <label xfont = 'high-contrast' id = 'label' x = '50%' y = '14' width = '75%' value = 'Checkpoint Preview:' align = 'center' valign = 'center' />
+
+                    <item>
+                        <rect x = '50%' y = '0' width = '162' height = '122' align = 'center' />
+                        <graphic filename = 'temp_surface.resized.png' file-width = '160' file-height = '120' x = '50%' y = '1' width = '100%' height = '0' align = 'center' />
+                    </item>
+
+                </stack>
+
+            </item>
+
+            <item class = 'saved-game' render-border = '0' valign = 'center'>
+
+                <stack class = 'frame' uses-focus = '0' render-border = '1'>
+
+                    <item class = 'byline'>
+                        <icon x = '5%' y = '0' index = '25' position = 'absolute' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Load [color=special]Last Checkpoint[/color]' />
+                    </item>
+
+                    <item>
+                        <icon x = '5%' y = '2' index = '13' />
+                        <label x = '20%' y = '0' width = '75%' value = 'Game Statistics' />
+                    </item>
+
+                    <item>
+                        <label x = '20%' y = '0' width = '75%' value = 'Character Level:  [color=special]10[/color]
+Gold Collected:  [color=special]20%[/color]' />
+                    </item>
+
+                </stack>
+
+                <action do = 'show:game.load.confirm' autosave = '1' quicksave = '0' slot = '1' />
+
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Quicksave Slots (@quicksave-slot-count)' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.quicksaves' render-border = '0' per-row = '2' column-padding = '20' />
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Existing Custom Saves (@manualsave-slot-count)' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.manualsaves' render-border = '0' per-row = '2' column-padding = '20' />
+
+    </rowmenu>
+
+</template>

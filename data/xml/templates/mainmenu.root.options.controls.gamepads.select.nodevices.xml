@@ -1,0 +1,43 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.options.controls.gamepads.select.nodevices'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' xvalign = 'center' center-vertically = '1' uses-focus = '1' uses-scroll = '1'>
+
+        <xitem-group>
+            <item disabled = '1' class = 'line-break' />
+            <item disabled = '1' class = 'first-title'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Device Found:  0' alpha-factor-start = '0.5' />
+                    <rect class = 'underline' x = '60' y = '0' width = '240' height = '2' align = 'right' midpoint = '0.75' />
+                </stack>
+            </item>
+        </xitem-group>
+
+        <item-group>
+
+            <item class = 'title' id = 'testid1' rel = 'root.options.gamepads.switch.back'>
+                <hidden id = 'replay-file' rel = 'root.options.gamepads.switch.back.input.txt' />
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' />
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <label x = '0' y = '0' align = 'right' width = '90%' value = 'No available device' text-effect = 'blaster:line-by-line' reset-on-blur = '1' />
+                <xicon x = '-180' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

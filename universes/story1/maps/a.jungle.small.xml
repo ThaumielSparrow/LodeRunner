@@ -1,0 +1,213 @@
+<params>
+	<param key = 'layer' value = '2' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '2' modal = '0'>
+		<structure>
+			0 0 0 0 0 
+			0 225 224 222 153 
+			0 0 0 203 225 
+			0 0 0 0 0 
+			0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '11' y = '2' modal = '0'>
+		<structure>
+			0 0 0 0 
+			0 154 221 154 
+			0 153 203 220 
+			153 225 204 0 
+			154 0 204 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '13' y = '9' modal = '0'>
+		<structure>
+			0 152 224 220 
+			153 227 203 0 
+			222 205 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '7' y = '12' modal = '0'>
+		<structure>
+			0 224 224 
+			0 205 205 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '10' modal = '0'>
+		<structure>
+			0 0 0 0 
+			0 0 222 0 
+			0 223 204 220 
+			0 0 201 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '13' y = '13' modal = '0'>
+		<structure>
+			221 223 154 0 
+			0 201 224 154 
+			0 0 201 220 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '6' y = '16' modal = '0'>
+		<structure>
+			225 225 228 
+			0 226 205 
+			0 0 202 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '10' y = '16' modal = '0'>
+		<structure>
+			225 152 0 
+			202 226 153 
+			204 205 228 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '14' y = '17' modal = '0'>
+		<structure>
+			0 153 227 
+			153 220 205 
+			224 202 203 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '18' y = '13' modal = '0'>
+		<structure>
+			0 154 227 221 
+			153 224 204 0 
+			221 201 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '2' y = '16' modal = '0'>
+		<structure>
+			226 224 224 
+			203 202 0 
+			205 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '23' y = '14' modal = '0'>
+		<structure>
+			0 226 
+			220 204 
+			203 0 
+			203 224 
+			0 200 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '17' y = '1' modal = '0'>
+		<structure>
+			0 0 0 
+			224 222 220 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '17' y = '5' modal = '0'>
+		<structure>
+			220 0 
+			202 0 
+			203 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '18' y = '8' modal = '0'>
+		<structure>
+			0 0 0 0 
+			222 225 152 0 
+			0 203 221 152 
+			0 0 201 220 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '8' y = '7' modal = '0'>
+		<structure>
+			0 0 0 0 0 
+			0 224 226 153 0 
+			0 0 202 222 223 
+			0 0 0 205 0 
+			0 0 0 200 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '22' y = '1' modal = '0'>
+		<structure>
+			227 227 0 
+			203 203 223 
+			0 205 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '26' y = '1' modal = '0'>
+		<structure>
+			152 220 221 
+			152 204 0 
+			202 202 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '26' y = '5' modal = '0'>
+		<structure>
+			153 220 227 
+			226 203 0 
+			200 202 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '22' y = '5' modal = '0'>
+		<structure>
+			0 0 0 0 
+			222 221 152 0 
+			0 200 154 0 
+			0 204 224 154 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '28' y = '9' modal = '0'>
+		<structure>
+			0 222 
+			227 203 
+			0 204 
+			0 201 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '26' y = '13' modal = '0'>
+		<structure>
+			0 226 0 
+			0 203 0 
+			0 201 227 
+			0 0 203 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '26' y = '17' modal = '0'>
+		<structure>
+			0 0 
+			0 0 
+		</structure>
+	</plane>
+	<plane name = 'mold1' x = '23' y = '9' modal = '0'>
+		<structure>
+			0 0 0 
+			224 223 221 
+			0 200 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+</entities>
+<triggers>
+</triggers>
+<scripts />

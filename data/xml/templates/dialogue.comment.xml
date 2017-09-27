@@ -1,0 +1,169 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@npc-name</parameter>
+		<parameter>@npc-comment</parameter>
+		<parameter>@some-key</parameter>
+	</text>
+</parameters>
+
+<template name = 'dialogue.comment' version = 'interactive'>
+
+    <rowmenu id = 'panel' class = 'dialogue' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'top' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = '[color=special]@npc-name[/color] says:' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item class = 'frame' disabled = '1'>
+                <label x = '5%' y = '0' width = '90%' value = '@npc-comment' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group valign = 'pack'>
+            <item disabled = '1' />
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '0' index = '29' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Select a Response:' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group id = 'ext.responses' class = 'options' render-border = '1' />
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'dialogue.comment' version = 'noninteractive'>
+
+    <rowmenu id = 'panel' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'top' uses-focus = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = '[color=special]@npc-name[/color] says:' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1'>
+
+            <item class = 'frame' disabled = '1'>
+                <label x = '5%' y = '0' width = '90%' value = '@npc-comment' text-effect = 'blaster:line-by-line' />
+            </item>
+
+            <item hidden = '1'>
+                <action do = 'continue' />
+            </item>
+
+        </item-group>
+
+        <item-group>
+            <item disabled = '1'>
+                <label x = '98%' y = '0' align = 'right' value = 'press [color=special]@some-key[/color] to continue...' text-effect = 'blaster:line-by-line' />
+            </item>
+        </item-group>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'dialogue.comment' version = 'fyi'>
+
+    <rowmenu id = 'panel.fyi' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'top' uses-focus = '0' uses-lightbox = '0' shrinkwrap = '1'>
+
+        <item-group class = 'spacer' render-border = '1'>
+
+            <item class = 'frame' disabled = '1'>
+                <label x = '5%' y = '0' width = '90%' value = '@npc-comment' text-effect = 'blaster:line-by-line' />
+            </item>
+
+            <xitem hidden = '1'>
+                <action do = 'continue' />
+            </xitem>
+
+        </item-group>
+
+        <x>
+        <item-group>
+            <item disabled = '1'>
+                <label x = '98%' y = '0' align = 'right' value = 'press [color=special]@some-key[/color] to continue...' text-effect = 'blaster:line-by-line' />
+            </item>
+        </item-group>
+        </x>
+
+    </rowmenu>
+
+</template>
+
+
+<template name = 'dialogue.comment' version = 'interrogative'>
+
+    <rowmenu id = 'panel' class = 'dialogue' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'top' uses-focus = '1' tunnel-target-id = 'tunnel'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = '[color=special]@npc-name[/color] says:' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item class = 'frame' disabled = '1'>
+                <label x = '5%' y = '0' width = '90%' value = '@npc-comment' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+
+        <item-group valign = 'pack'>
+            <item disabled = '1' />
+        </item-group>
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '4%' y = '0' index = '29' position = 'absolute' />
+                <label font = 'high-contrast' x = '10%' y = '0' width = '80%' value = 'Enter a Response:' align = '' text-effect = 'blaster:line-by-line' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '0'>
+
+            <item>
+                <keyboard id = 'keyboard' width = '100%' height = '200' render-border = '1' uses-lightbox = '0' on-save = 'submit:keyboard' on-cancel = 'back' value = '' prompt = 'Tell me your name:' min-length = '2' max-length = '8' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

@@ -1,0 +1,20 @@
+<parameters>
+	<data>
+		<parameter>@quest-name</parameter>
+	</data>
+	<text>
+		<parameter>@quest-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'quests.home.listing.item'>
+
+    <item render-border = '0' glow = '1'>
+        <attributes quest-name = '@quest-name' />
+        <icon x = '3%' y = '8' index = '12' position = 'absolute' />
+        <label x = '20%' y = '0' width = '75%' value = '[color=button]@quest-title[/color]
+Assigned Quest' />
+        <action do = 'show-quests:scroll-summary' steps = '1' delay = '0' />
+    </item>
+
+</template>

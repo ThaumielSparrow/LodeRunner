@@ -1,0 +1,25 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@cache-preference</parameter>
+	</data>
+	<text>
+		<parameter>@content</parameter>
+	</text>
+</parameters>
+
+<template name = 'trigger.tooltip' version = 'normal'>
+
+    <rowmenu id = 'tooltip' class = 'trigger-tooltip' x = '@x' y = '@y' width = '@width' height = '@height' shrinkwrap = '1' render-border = '0'>
+        <item-group render-border = '1'>
+            <item class = 'frame'>
+                <icon x = '5%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+                <label x = '20%' y = '0' width = '75%' value = '@content' cache-preference = '@cache-preference' />
+            </item>
+        </item-group>
+    </rowmenu>
+
+</template>

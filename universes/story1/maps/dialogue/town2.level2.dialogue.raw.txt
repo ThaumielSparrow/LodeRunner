@@ -1,0 +1,85 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [l id = 'line1' class = 'nichole-alive'] Hi, $player$!  I hope the ^bad guys^ aren't giving you too much trouble.  If you need help against them, you can buy some $new items$ from $Nichole$!
+
+                [l id = 'line2' class = 'nichole-alive'] A lot of people buy $items$ from $Nichole$.  Just between you and me:  She keeps a pretty large stash of gold hidden in an unknown reserve.  Even I don't know where to find it!
+
+                [l id = 'line3' class = 'nichole-alive'] One time, $Nichole$ told me that she would only take her gold out from the vault if she feared for her life.
+
+                [l id = 'line4' class = 'nichole-dead'] I always warned $Nichole$ about the dangers of getting into the merchant business.  When the ^Bungeling empire^ showed up, I knew trouble would find her.
+
+                [n id = 'nag1' class = 'nichole-alive'] Have you bought anything cool from $Nichole$ lately?
+
+                [n id = 'nag2' class = 'nichole-alive'] I wish I had enough gold to buy some of $Nichole$'s items.  After you defeat the ^Bungeling empire^, maybe you'll share some with me!
+
+                [n id = 'nagUncustomized1' class = 'nichole-alive controls-uncustomized' priority = '-1' max-reads = '1'] You're lucky that $Nichole$ allows you to look at her items, $player$.  The last hero that stopped by \
+                    without customizing their controls in the $pause menu$?  She turned him away!
+
+                [n id = 'nagCustomized1' class = 'nichole-alive controls-customized' priority = '-1' max-reads = '1'] For some players, $Nichole$ used to sell detailed instructions on the best way to customize gameplay controls. \
+                    She knows that she can't run that kind of scam on you, though.
+
+                [n id = 'nag3' class = 'nichole-dead'] I'm thinking of starting my own shoppe, now that $Nichole$ has disappeared.  I just need to save up a few million pieces of gold first!
+
+                [n id = 'nag4' class = 'nichole-dead'] $Nichole$ always warned me about heroes, saying that they'd just as soon blow you up as they would save you from anything.  I trust you though, $player$!
+
+                [n id = 'nagUncustomized1' class = 'nichole-dead controls-uncustomized' priority = '-1' max-reads = '1'] I don't know what I will sell if I start my own shoppe, $player$.  Would you have any interest in a \
+                    video tutorial showing you how to customize your controls in the $pause menu$?
+
+                [n id = 'nagCustomized1' class = 'nichole-dead controls-customized' priority = '-1' max-reads = '1'] I wish I had the ability to customize my controls like you did, $player$.  With better controls, I could \
+                    have tried to save $Nichole$ from whoever killed her!
+
+
+@npc2
+
+    @chapter1
+
+        @conversation[id = 'default']
+
+            >>> root
+
+                [n id = 'nag1'] Welcome to $Edenton$, $player$.  You'll find my items compare very favorably to most others'!
+
+                    +shop I'll do some shopping.
+
+                        >>> root.shop
+
+                            [n id = 'nag1' transition = '1']
+                                @post-script
+                                    map().runScript("npc2.shop");
+
+                    +warning[class = 'warning hitlist'] A guy named $Curry$ wants me to kill you.
+
+                        >>> root.warning
+
+                            [l id = 'line1'] I've known $Curry$ for a long time.  I wish he hadn't stooped to that level, $player$.  Thanks for the warning.  I think I owe you a small \
+                                reward for your honesty.  Perhaps this $special item$ will help you against the ^Bungeling empire^ and other serpents like ^Curry^ the evil merchant.
+
+                                @post-script
+                                    quest("1.3.npc1.quest").update("update-warned-nichole").status("active");
+                                    npc("npc2").removeIndicator("target");
+                                    player().acquireRandomItem("nicholes-quicksand-shovel", "nicholes-superior-inhibiting-thorns", "nicholes-excellent-hoarding-wand");
+
+                    +saved[class = 'warning saved-you'] A guy named $Curry$ wanted me to kill you.  I killed him instead.
+
+                        >>> root.saved
+
+                            [l id = 'line1'] I appreciate that you meant well, $player$, but we already have enough violence in $Lelandria$.  If you had simply given me a heads up, I might have shared a special item with you, but I don't know if I can trust you anymore.
+
+                                I suppose I owe you at least a small token of gratitude.  Please, take these $50 gold pieces$ with my regards.
+
+                                @post-script
+                                    quest("1.3.npc1.quest").update("update-saved-nichole").status("active");
+                                    player().addGold(50);
+
+                    +bye See you later...
+
+                        >>> root.bye
+
+                            [n id = 'nag1']
+

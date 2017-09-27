@@ -1,0 +1,128 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 257 0 0 325 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 310 154 332 306 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 312 152 306 0 
+			0 0 0 328 329 0 0 0 0 0 0 0 208 304 153 311 0 
+			0 0 0 0 309 330 153 218 216 154 329 257 334 309 153 0 0 
+			0 0 0 0 0 0 152 0 0 152 0 207 0 0 154 324 0 
+			0 0 0 0 152 253 331 152 324 253 328 331 152 255 326 309 0 
+			0 0 152 330 333 308 0 152 0 0 0 0 154 0 0 0 0 
+			0 0 153 0 0 0 0 153 0 0 333 330 154 0 0 0 0 
+			0 0 153 0 0 0 0 154 0 330 309 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 330 253 308 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 300 0 0 0 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '15' y = '2' genus = '1' ai-behavior = '1' name = 'enemy1' nick = '' title = '' />
+	<entity x = '3' y = '8' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '12' y = '7' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '9' y = '10' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '5' y = '5' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+	<entity x = '2' y = '8' genus = '6' ai-behavior = '1' name = 'gold3' nick = '' title = '' />
+	<entity x = '13' y = '1' genus = '6' ai-behavior = '1' name = 'gold4' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'p1' x = '7' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'p2' x = '10' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'p3' x = '14' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'p4' x = '12' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'ad1' x = '10' y = '7' width = '3' height = '2' behavior = '3' prompt = 'Yoink!'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet>
+			<event type = 'cutscene' behavior = 'begin' />
+			<event message = 'deactivate' type = 'trigger-message' target = 'ad1' param = '' entity = 'enemy1' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'p1' param = '' entity = 'player1' />
+			<xevent message = 'seek-target' type = 'entity-message' target = 'p3' param = '' entity = 'enemy1' />
+		</packet>
+		<packet>
+			<event type = 'cutscene' behavior = 'end' />
+		</packet>
+		<packet>
+			<event message = 'seek-target' type = 'entity-message' target = 'p2' param = '' entity = 'player1' />
+		</packet>
+		<packet>
+			<xevent message = 'seek-target' type = 'entity-message' target = 'p4' param = '' entity = 'enemy1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '150' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'activate' type = 'trigger-message' target = 'ad1' param = '' entity = 'enemy1' />
+			<event message = 'activate-skill' type = 'entity-message' target = 'ad1' param = 'pickpocket' entity = 'player1' />
+		</packet>
+		<packet>
+			<event message = 'pause' type = 'entity-message' target = 'wp1' param = '60' entity = 'player1' />
+		</packet>
+		<packet>
+			<event type = 'reload-map' />
+		</packet>
+	</script>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

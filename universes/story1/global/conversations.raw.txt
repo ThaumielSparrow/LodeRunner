@@ -1,0 +1,153 @@
+@conversations
+
+    @conversation[id = 'global.talk1']
+
+        >>> root
+
+            [l id = 'line1'] How are you doing, $player$?
+
+            [l id = 'line2'] This is the second line of dialogue.
+
+
+    @conversation[id = 'global.random1']
+
+        >>> root
+
+            [n id = 'nag1'] I can say any one of many random things.
+
+            [n id = 'nag2'] What more can I say?
+
+            [n id = 'nag3' class = 'test'] I can apply class names to my dialogue lines.
+
+            [n id = 'nag4' class = 'test'] Maybe I can use the class feature to create a single "random" conversation that holds all random lines \
+                but appears to be different across all NPCs that share it, by enabling/disabling different classes.
+
+
+    @conversation[id = 'global.ask-for-name']
+
+        >>> root
+
+            [n id = 'nag1'] Hi there!  I've never seen you before!  Tell me your name!
+
+                +response[class = 'keyboard'] [This input goes to the player name variable.]
+
+
+    @conversation[id = 'global.tax']
+
+        >>> root
+
+            [l id = 'line1' class = 'request-tax'] Tell me what's going on with this new ^tax^, $player$.  Do I really have to give you $[2.3.npc1:tithe-amount] pieces of gold?
+
+                +yes Yes.  I'll collect your tax now.
+
+                    >>> root.yes
+
+                        [l id = 'line1'] I can't believe $Lelandria$ is enacting this tax, $player$.  This won't help business, not at all.  Take these $[2.3.npc1:tithe-amount] gold pieces, though.
+
+                            @post-script
+                                universe().runScript("2.3.npc1:collect-tithe");
+
+                +no Never mind.  It's a scam...
+
+                    >>> root.no
+
+                        [l id = 'line1'] Thanks for giving me the heads up, $pleyer$!
+
+                            @post-script
+                                universe().runScript("2.3.npc1:decline-tithe");
+
+            [l id = 'line2' class = 'xrequest-tax'] Line 2 - Let's collect your tax!
+
+            [l id = 'line3' class = 'xrequest-tax'] Line 3 - Let's collect your tax!
+
+            [l id = 'line4' class = 'xrequest-tax'] Line 4 - Let's collect your tax!
+
+            [l id = 'line5' class = 'xrequest-tax'] Line 5 - Let's collect your tax!
+
+            [n id = 'nag1'] Thanks for collecting tax, nag 1
+
+            [n id = 'nag2'] Thanks for collecting tax, nag 2
+
+
+    @conversation[id = 'global.bomb-machine.shop']
+
+        >>> root
+
+            [n id = 'nag1'] Thank you for your business.  Select an option below!
+
+                +five[min-gold = '25'] Buy 5 bombs
+
+                    >>> root.five
+
+                        [n id = 'nag1'] Thank you for using this bomb vending machine!
+
+                            @post-script
+                                player().subtractGold(25).addBombs(5);
+                                session("achievements.repeat-customer.counter").increment(5);
+                                universe().executeAchievementHook("bought-bombs");
+                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "a bomb vending machine", "@g": 25 });
+
+                +ten[min-gold = '45'] Buy 10 bombs
+
+                    >>> root.ten
+
+                        [n id = 'nag1'] Thank you for using this bomb vending machine!
+
+                            @post-script
+                                player().subtractGold(45).addBombs(10);
+                                session("achievements.repeat-customer.counter").increment(10);
+                                universe().executeAchievementHook("bought-bombs");
+                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "a bomb vending machine", "@g": 45 });
+
+                +bye Leave
+
+                    >>> root.bye
+                        [n id = 'nag1']
+
+
+    @conversation[id = 'global.bomb-machine.shop:discount']
+
+        >>> root
+
+            [n id = 'nag1'] Thank you for your business.  Now offering discounts for every purchase!
+
+                +five[min-gold = '20'] Buy 5 bombs
+
+                    >>> root.five
+
+                        [n id = 'nag1'] Thank you for using this bomb vending machine!
+
+                            @post-script
+                                player().subtractGold(20).addBombs(5);
+                                session("achievements.repeat-customer.counter").increment(5);
+                                universe().executeAchievementHook("bought-bombs");
+                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "your own bomb vending machine", "@g": 20 });
+
+                +ten[min-gold = '37'] Buy 10 bombs
+
+                    >>> root.ten
+
+                        [n id = 'nag1'] Thank you for using this bomb vending machine!
+
+                            @post-script
+                                player().subtractGold(37).addBombs(10);
+                                session("achievements.repeat-customer.counter").increment(10);
+                                universe().executeAchievementHook("bought-bombs");
+                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "your own bomb vending machine", "@g": 37 });
+
+                +ten[min-gold = '70'] [color=special]New![/color] - Buy 20 bombs
+
+                    >>> root.ten
+
+                        [n id = 'nag1'] Thank you for using this bomb vending machine!
+
+                            @post-script
+                                player().subtractGold(70).addBombs(20);
+                                session("achievements.repeat-customer.counter").increment(20);
+                                universe().executeAchievementHook("bought-bombs");
+                                addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "20 bombs", "@n": "your own bomb vending machine", "@g": 70 });
+
+                +bye Leave
+
+                    >>> root.bye
+                        [n id = 'nag1']

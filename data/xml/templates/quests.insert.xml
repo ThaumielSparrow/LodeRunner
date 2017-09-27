@@ -1,0 +1,77 @@
+<parameters>
+	<data>
+		<parameter>@thumbnail</parameter>
+		<parameter>@quest-name</parameter>
+	</data>
+	<text>
+		<parameter>@quest-title</parameter>
+		<parameter>@quest-description</parameter>
+		<parameter>@quest-xp</parameter>
+	</text>
+</parameters>
+
+<template name = 'quests.insert' version = 'active'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <box class = 'insert'>
+            <stack class = 'frame' x = '40%' width = '60%'>
+                <label x = '5%' y = '0' width = '95%' value = '@quest-title' />
+
+                <rect class = 'underline' x = '0%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                <label x = '5%' y = '0' width = '95%' value = '@quest-description' />
+                <label x = '95%' y = '0' width = '95%' value = '@quest-xp' align = 'right' />
+            </stack>
+
+            <graphic lazy-loading = '1' lazy-loading-discard-delay = '600' filename = '@thumbnail' file-width = '160' file-height = '120' x = '20%' y = '50%' align = 'center' valign = 'center' xwidth = '100%' height = '0' xalign = 'center' position = 'absolute' />
+
+            <xlabel x = '5%' y = '0' width = '95%' value = 'xxx@quest-title' />
+        </box>
+
+        <action do = 'show:quest.updates' quest-name = '@quest-name' />
+
+    </insert:item>
+
+</template>
+
+<template name = 'quests.insert' version = 'active:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <hpane class = 'no-indent' width-left = '0.6' width-right = '0.4'>
+
+            <left>
+
+                <stack class = 'frame'>
+
+                    <label x = '5%' y = '0' width = '95%' value = '@quest-title' />
+
+                    <rect class = 'underline' x = '0%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <xlabel class = 'subtitle' x = '17%' y = '0' width = '83%' value = 'Active' />
+
+                    <stack>
+                        <label x = '5%' y = '0' width = '95%' value = '@quest-description' />
+                        <label x = '5%' y = '0' width = '95%' value = '@quest-xp' />
+                    </stack>
+
+                </stack>
+
+            </left>
+
+            <right>
+
+                <stack class = 'frame'>
+                    <graphic lazy-loading = '1' lazy-loading-discard-delay = '600' filename = '@thumbnail' file-width = '160' file-height = '120' x = '50%' y = '0' align = 'center' xwidth = '100%' height = '0' xalign = 'center' />
+                </stack>
+
+            </right>
+
+        </hpane>
+
+        <action do = 'show:quest.updates' quest-name = '@quest-name' />
+
+    </insert:item>
+
+</template>

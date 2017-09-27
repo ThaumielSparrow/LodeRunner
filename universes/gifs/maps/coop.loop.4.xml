@@ -1,0 +1,37 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+			0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+</entities>
+<triggers>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		<packet />
+	</script>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

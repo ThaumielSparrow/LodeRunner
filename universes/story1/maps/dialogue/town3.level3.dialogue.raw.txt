@@ -1,0 +1,171 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'quest:pending:assign']
+
+            >>> root
+
+                [l id = 'line1'] Do you have a moment to take a brief quiz, $player$?
+
+                    The quiz covers a variety of $classic videogames$.  If you can answer 3 questions in a row correctly, I will give you $1 skill point$ as a reward. \
+                    I do hope you enjoy this \
+                    quiz.
+
+                    However, you only have one chance to complete the quiz, and you must notch a perfect score to win.  If you incorrectly answer any question, then you will fail the quiz!
+                    -redirect root
+
+                [l id = 'line2'] You can only take the quiz one time, $player$. What do you say?
+
+                    +take-quiz I'll take the quiz now.
+
+                    +pay[min-gold = '205'] I wouldn't want to fail.  I'll pay you $205 gold pieces$ to pass me automatically.
+
+                    +quit I'll come back to try the quiz later.
+
+                        >>> root.quit
+
+                            [n id = 'nag1']
+                                @post-script
+                                    quest("3.3.npc1.quest").status("active");
+
+                [n id = 'nag1'] Do you want to take that quiz now, $player$?  You can only take it one time!
+                    +take-quiz I'll take the quiz now.
+                    +pay[min-gold = '205'] I wouldn't want to fail.  I'll pay you $205 gold pieces$ to pass me automatically.
+                    +quit I'll come back to try the quiz later.
+
+                [n id = 'nag2'] Ready to take the quiz yet, $player$?  You only get one try!
+                    +take-quiz I'll take the quiz now.
+                    +pay[min-gold = '205'] I wouldn't want to fail.  I'll pay you $205 gold pieces$ to pass me automatically.
+                    +quit I'll come back to try the quiz later.
+
+            >>> root.take-quiz
+
+                [l id = 'line1'] Get ready for the first question, $player$!
+
+                    In the classic $Deus Ex$, a character named $Gunther Hermann$ attempted to operate a soda machine.  To his dismay, the vending machine malfunctioned and delivered him a ^lemon lime soda^.
+
+                    Which flavor button did Gunther actually press?
+
+                    +wrong Grape
+
+                        >>> root.take-quiz.wrong
+
+                            [n id = 'nag1'] 
+                                -redirect root.failed-quiz
+
+                    +wrong Peach
+                    +right Orange
+
+                        >>> root.take-quiz.right
+
+                            [n id = 'nag1'] 
+                                -redirect root.take-quiz
+
+                [l id = 'line2'] Well played, $player$!  Let's move on to the next question.
+
+                    In $Super Mario 64$, one of Mario's longtime enemies returned to serve as the game's $camera operator$.  Which previous enemy decided to enter this new, neutral role?
+
+                    +right Lakitu
+                    +wrong Petey Piranha
+                    +wrong Luigi
+
+                [l id = 'line3'] Another fine selection, $player$.  One last question stands between you and $1 skill point$:
+
+                    Many $Lode Runner$ games have appeared for PCs and other systems.  One of the following titles, though, does not actually exist.
+
+                    Which of these titles $does not exist$?
+
+                    +wrong Lode Runner:  The Legend Returns
+                    +wrong Lode Runner:  Mad Monks' Revenge
+                    +right Lode Runner:  Desperate for a Skill Point
+
+                [l id = 'line4'] Well done, $player$!  You aced the quiz on your first try, most likely without loading from the checkpoint even once!  Congratulations!
+
+                    As I promised, I will now present you with $1 skill point$.  Use it wisely!
+
+                    @post-script
+                        quest("3.3.npc1.quest").status("complete");
+                        quest("3.3.npc1.quest").update("update-aced-quiz").status("active");
+                        npc("npc1").clearIndicators();
+                        player().addSkillPoints(1);
+
+
+            >>> root.failed-quiz
+
+                [l id = 'line1'] I'm sorry, $player$, but you did not select the correct answer to that question.
+
+                    I cannot in good conscience let you walk home with empty hands, though.  As a consolation prize, please enjoy this $1 free bomb$.
+
+                    Remember, if you blow me up with that bomb, you still won't get that skill point!
+
+                    @post-script
+                        quest("3.3.npc1.quest").status("failed");
+                        quest("3.3.npc1.quest").update("update-failed-quiz").status("active");
+                        npc("npc1").clearIndicators();
+                        player().addBombs(1);
+
+
+            >>> root.pay
+
+                [l id = 'line1'] You really know how to get what you want, $player$!
+
+                    To be perfectly honest, I can respect your decision.  A lot of players would have used a search engine to find the right answers, but you decided to spend hard-earned gold pieces.
+                    -redirect root.pay
+
+                [l id = 'line2'] In recognition of your honor,  I'm going to throw in $20 free bombs$ in addition to the $1 skill point$.
+
+                    Good luck against the ^Bungeling empire^!
+
+                    @post-script
+                        quest("3.3.npc1.quest").status("complete");
+                        quest("3.3.npc1.quest").update("update-buyout").status("active");
+                        npc("npc1").clearIndicators();
+                        player().subtractGold(205).addSkillPoints(1);
+
+
+        @conversation[id = 'quest:done:passed']
+
+            >>> root
+
+                [n id = 'nag1'] You did a great job on the $quiz$, I must say.  I wonder what you did with that skill point?
+
+                [n id = 'nag2'] I hope you made some good use out of that $skill point$ I gave you, $player$.  You earned it!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] You know a great deal about videogames, $player$.  Just in case you didn't know this already, though, let \
+                    me remind you that you can customize your gameplay controls in the $pause menu$ at any time!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I don't know exactly how you have customized your controls, $player$, but I think everyone should download a copy \
+                    of your configuration file to use in their own game.  You've demonstrated such a thorough knowledge of videogames that I wouldn't want anyone else's!
+
+
+        @conversation[id = 'quest:done:failed']
+
+            >>> root
+
+                [l id = 'line1'] I'm glad that you haven't blown me up yet, $player$.  Use it on the ^bad guys^ instead!
+
+                [n id = 'nag1'] If you've never played $Deus Ex$, then I highly recommend it!
+
+                [n id = 'nag2'] Do you know that scientists recently proved that $Mario 64$ is one of the greatest games of all time?
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Don't worry too much about missing out on that skill point, $player$.  You can easily earn more by completing other \
+                    quests and by completing levels in the game!  If you're having any trouble, try to customize your controls in the $pause menu$ to make things easier!
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] I feel pretty bad about not giving you that skill point, $player$.  I see that you customized your controls, which means you \
+                    know a little bit more about this game than the average hero.  I think that means that you will find a way to overcome the loss of that skill point!
+
+
+        @conversation[id = 'quest:done:paid']
+
+            >>> root
+
+                [n id = 'nag1'] I'd love to sell you another skill point, $player$, but I gave you my last one.  Sorry!
+
+                [n id = 'nag2'] I bet you won't have too much trouble finding some more gold, $player$.  Enjoy the skill point you spent so much money to buy!
+
+                [n id = 'nagUncustomized1' class = 'controls-uncustomized' priority = '-1' max-reads = '1'] Before I entered the quiz administration business, $player$, I ran a small business dedicated to customizing players' \
+                    gameplay controls.  Once they started customizing them on their own in the $pause menu$, though, I had to find a new line of work.
+
+                [n id = 'nagCustomized1' class = 'controls-customized' priority = '-1' max-reads = '1'] Please don't take this the wrong way, $player$, but... did you also pay someone gold to customize your controls for you?  I \
+                    wouldn't hold it against you at all, by the way!

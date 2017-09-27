@@ -1,0 +1,163 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			216 216 216 213 0 231 0 213 216 216 212 213 0 0 
+			0 230 0 228 222 222 221 227 0 215 221 220 228 227 
+			0 225 0 0 0 202 203 0 0 223 200 203 0 204 
+			0 205 222 216 219 216 154 218 217 218 216 217 0 0 
+			0 0 210 0 0 0 153 0 0 0 0 0 217 0 
+			0 0 225 0 232 215 153 214 214 0 0 0 0 222 
+			0 225 200 154 223 25 27 226 221 152 231 0 0 200 
+			0 0 201 152 0 0 0 0 204 225 228 27 152 200 
+			0 221 0 154 226 0 0 0 0 203 200 0 154 208 
+			234 205 0 152 0 0 0 0 0 0 0 0 154 227 
+			221 205 223 153 218 216 152 218 218 219 216 154 221 200 
+			0 0 205 0 0 0 154 0 0 0 0 153 0 200 
+			0 0 0 0 0 212 153 217 217 219 153 223 0 0 
+			0 0 231 0 223 228 153 0 0 0 152 204 0 0 
+			0 0 220 0 0 201 223 154 215 0 152 0 0 0 
+			218 221 203 24 220 201 201 220 228 153 220 0 0 0 
+			0 0 202 0 207 205 0 0 203 152 203 220 0 0 
+			0 0 0 223 222 0 0 0 0 154 201 0 0 0 
+			0 0 0 0 0 0 0 229 0 152 214 0 0 208 
+			207 0 0 213 215 0 153 227 226 26 225 152 233 225 
+			225 0 153 226 23 25 222 200 204 0 204 221 225 200 
+			203 228 226 203 204 205 204 205 0 0 202 205 0 204 
+			0 0 204 201 205 202 0 0 0 225 200 0 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 300 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 263 0 265 0 0 283 0 0 0 0 0 0 
+			0 0 300 0 0 0 0 0 300 0 263 0 0 283 
+			0 0 0 0 302 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 283 0 
+			0 0 302 0 0 0 0 0 0 0 0 0 0 300 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 263 0 283 0 0 0 263 0 283 0 0 0 
+			0 0 300 0 0 0 0 0 300 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 263 0 265 0 0 0 
+			0 0 0 265 0 0 283 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 302 0 0 0 302 0 300 
+			0 0 300 0 0 302 0 0 0 300 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '22' x = '3' genus = '2' class = '' />
+	<entity x = '13' y = '7' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow1' class = '' nick = '' title = '' />
+	<entity x = '8' y = '21' genus = '3' species = 'indicator-arrow' ai-behavior = '1' name = 'arrow0' class = '' nick = '' title = '' />
+<entity name = 'gold.uid.0' title = '' ai-behavior = '1' nick = '' y = '19' x = '3' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '23' x = '1' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '8' x = '5' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '6' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.4' title = '' ai-behavior = '1' nick = '' y = '13' x = '8' genus = '6' class = '' />
+<entity name = 'gold.uid.5' title = '' ai-behavior = '1' nick = '' y = '16' x = '9' genus = '6' class = '' />
+<entity name = 'gold.uid.6' title = '' ai-behavior = '1' nick = '' y = '11' x = '2' genus = '6' class = '' />
+<entity name = 'gold.uid.7' title = '' ai-behavior = '1' nick = '' y = '7' x = '3' genus = '6' class = '' />
+<entity name = 'gold.uid.8' title = '' ai-behavior = '1' nick = '' y = '9' x = '11' genus = '6' class = '' />
+<entity name = 'gold.uid.9' title = '' ai-behavior = '1' nick = '' y = '21' x = '4' genus = '6' class = '' />
+<entity name = 'gold.uid.10' title = '' ai-behavior = '1' nick = '' y = '20' x = '5' genus = '6' class = '' />
+<entity name = 'gold.uid.11' title = '' ai-behavior = '1' nick = '' y = '21' x = '11' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '6' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'exit1' x = '12' y = '6' width = '2' height = '2' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'exit1' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '14' y = '7' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp.lesson1' x = '0' y = '21' width = '1' height = '1' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wp.lesson1.touch' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp.lesson2' x = '3' y = '10' width = '10' height = '1' behavior = '2' prompt = ''>
+		<touch>
+			<script name = 'wp.lesson2.touch' />
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload' />
+	<script name = 'exit1'>
+		trigger("exit1").disable();
+        npc("arrow1").fadeOut();
+        npc("arrow1").disable();
+	</script>
+	<script name = 'wp.lesson2.touch'>
+		trigger("wp.lesson2").disable();
+        npc("arrow1").dismissFYI("tutorial2");
+
+        npc("arrow0").disable();
+        npc("arrow1").enable();
+	</script>
+	<script name = 'wp.lesson1.touch'>
+		// hide tutorial fyi from first level
+        npc("arrow0").dismissFYI("tutorial1");
+
+        // set arrow directions
+        npc("arrow0").setDirection("up");
+        npc("arrow1").setDirection("right");
+
+        // show next tutorial message
+        npc("arrow1").talk("tutorial", "fyi:tutorial2");
+
+        // hide arrows (?)
+        npc("arrow0").disable();
+        npc("arrow1").disable();
+
+        // disable a trigger
+        trigger("wp.lesson1").disable();
+
+        // ok, turning the first arrow back on, whatever
+        npc("arrow0").enable();
+	</script>
+	<script name = 'onunload'>
+        // get rid of fyi message(s)
+        npc("arrow1")
+            .killFYI("tutorial1")
+            .killFYI("tutorial2");
+    </script>
+</scripts>

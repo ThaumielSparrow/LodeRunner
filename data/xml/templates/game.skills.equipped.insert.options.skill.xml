@@ -1,0 +1,28 @@
+<parameters>
+	<data>
+		<parameter>@skill-icon-index</parameter>
+		<parameter>@slot</parameter>
+		<parameter>@skill-name</parameter>
+	</data>
+	<text>
+		<parameter>@skill-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'skills.equipped.insert.options.insert'>
+
+    <item id = 'insert' class = 'option' fill = 'active'>
+
+        <icon class = 'lode-runner' x = '10%' y = '50%' valign = 'center' index = '@skill-icon-index' position = 'absolute' />
+
+        <stack>
+            <label x = '25%' y = '0' width = '75%' value = '@skill-title' />
+            <label class = 'subtitle' x = '25%' y = '0' width = '75%' xdisplay = 'on-focus' value = 'Level 1' />
+        </stack>
+
+        <action do = 'commit:game.skills.assign' slot = '@slot' skill = '@skill-name' />
+        <action do = 'hide:game.skills.equipped.insert.options' />
+
+    </item>
+
+</template>

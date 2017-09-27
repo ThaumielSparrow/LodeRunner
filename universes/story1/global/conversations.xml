@@ -1,0 +1,204 @@
+<characters>
+	<conversations>
+		<conversation id = 'global.talk1'>
+			<branch id = 'root'>
+				<linear>
+					<line id = 'line1'>
+						<comment>How are you doing, [color=special]$[core.player1.name][/color]?</comment>
+					</line>
+					<line id = 'line2'>
+						<comment>This is the second line of dialogue.</comment>
+					</line>
+				</linear>
+				<nags />
+			</branch>
+		</conversation>
+		<conversation id = 'global.random1'>
+			<branch id = 'root'>
+				<linear />
+				<nags>
+					<line id = 'nag1'>
+						<comment>I can say any one of many random things.</comment>
+					</line>
+					<line id = 'nag2'>
+						<comment>What more can I say?</comment>
+					</line>
+					<line id = 'nag3' class = 'test'>
+						<comment>I can apply class names to my dialogue lines.</comment>
+					</line>
+					<line id = 'nag4' class = 'test'>
+						<comment>Maybe I can use the class feature to create a single "random" conversation that holds all random lines but appears to be different across all NPCs that share it, by enabling/disabling different classes.</comment>
+					</line>
+				</nags>
+			</branch>
+		</conversation>
+		<conversation id = 'global.ask-for-name'>
+			<branch id = 'root'>
+				<linear />
+				<nags>
+					<line id = 'nag1'>
+						<comment>Hi there!  I&apos;ve never seen you before!  Tell me your name!</comment>
+						<response class = 'keyboard' branch-id = 'root.response'>
+							<phrase>[This input goes to the player name variable.]</phrase>
+						</response>
+					</line>
+				</nags>
+			</branch>
+		</conversation>
+		<conversation id = 'global.tax'>
+			<branch id = 'root'>
+				<linear>
+					<line id = 'line1' class = 'request-tax'>
+						<comment>Tell me what&apos;s going on with this new [color=dim]tax[/color], [color=special]$[core.player1.name][/color].  Do I really have to give you $[2.3.npc1:tithe-amount] pieces of gold?</comment>
+						<response branch-id = 'root.yes'>
+							<phrase>Yes.  I&apos;ll collect your tax now.</phrase>
+							<branch id = 'root.yes'>
+								<linear>
+									<line id = 'line1'>
+										<comment>I can&apos;t believe [color=special]Lelandria[/color] is enacting this tax, [color=special]$[core.player1.name][/color].  This won&apos;t help business, not at all.  Take these $[2.3.npc1:tithe-amount] gold pieces, though.</comment>
+										<post-script>universe().runScript("2.3.npc1:collect-tithe");</post-script>
+									</line>
+								</linear>
+								<nags />
+							</branch>
+						</response>
+						<response branch-id = 'root.no'>
+							<phrase>Never mind.  It&apos;s a scam...</phrase>
+							<branch id = 'root.no'>
+								<linear>
+									<line id = 'line1'>
+										<comment>Thanks for giving me the heads up, [color=special]pleyer[/color]!</comment>
+										<post-script>universe().runScript("2.3.npc1:decline-tithe");</post-script>
+									</line>
+								</linear>
+								<nags />
+							</branch>
+						</response>
+					</line>
+					<line id = 'line2' class = 'xrequest-tax'>
+						<comment>Line 2 - Let&apos;s collect your tax!</comment>
+					</line>
+					<line id = 'line3' class = 'xrequest-tax'>
+						<comment>Line 3 - Let&apos;s collect your tax!</comment>
+					</line>
+					<line id = 'line4' class = 'xrequest-tax'>
+						<comment>Line 4 - Let&apos;s collect your tax!</comment>
+					</line>
+					<line id = 'line5' class = 'xrequest-tax'>
+						<comment>Line 5 - Let&apos;s collect your tax!</comment>
+					</line>
+				</linear>
+				<nags>
+					<line id = 'nag1'>
+						<comment>Thanks for collecting tax, nag 1</comment>
+					</line>
+					<line id = 'nag2'>
+						<comment>Thanks for collecting tax, nag 2</comment>
+					</line>
+				</nags>
+			</branch>
+		</conversation>
+		<conversation id = 'global.bomb-machine.shop'>
+			<branch id = 'root'>
+				<linear />
+				<nags>
+					<line id = 'nag1'>
+						<comment>Thank you for your business.  Select an option below!</comment>
+						<response min-gold = '25' branch-id = 'root.five'>
+							<phrase>Buy 5 bombs</phrase>
+							<branch id = 'root.five'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment>Thank you for using this bomb vending machine!</comment>
+										<post-script>player().subtractGold(25).addBombs(5);session("achievements.repeat-customer.counter").increment(5);universe().executeAchievementHook("bought-bombs");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "a bomb vending machine", "@g": 25 });</post-script>
+									</line>
+								</nags>
+							</branch>
+						</response>
+						<response min-gold = '45' branch-id = 'root.ten'>
+							<phrase>Buy 10 bombs</phrase>
+							<branch id = 'root.ten'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment>Thank you for using this bomb vending machine!</comment>
+										<post-script>player().subtractGold(45).addBombs(10);session("achievements.repeat-customer.counter").increment(10);universe().executeAchievementHook("bought-bombs");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "a bomb vending machine", "@g": 45 });</post-script>
+									</line>
+								</nags>
+							</branch>
+						</response>
+						<response branch-id = 'root.bye'>
+							<phrase>Leave</phrase>
+							<branch id = 'root.bye'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment />
+									</line>
+								</nags>
+							</branch>
+						</response>
+					</line>
+				</nags>
+			</branch>
+		</conversation>
+		<conversation id = 'global.bomb-machine.shop:discount'>
+			<branch id = 'root'>
+				<linear />
+				<nags>
+					<line id = 'nag1'>
+						<comment>Thank you for your business.  Now offering discounts for every purchase!</comment>
+						<response min-gold = '20' branch-id = 'root.five'>
+							<phrase>Buy 5 bombs</phrase>
+							<branch id = 'root.five'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment>Thank you for using this bomb vending machine!</comment>
+										<post-script>player().subtractGold(20).addBombs(5);session("achievements.repeat-customer.counter").increment(5);universe().executeAchievementHook("bought-bombs");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "5 bombs", "@n": "your own bomb vending machine", "@g": 20 });</post-script>
+									</line>
+								</nags>
+							</branch>
+						</response>
+						<response min-gold = '37' branch-id = 'root.ten'>
+							<phrase>Buy 10 bombs</phrase>
+							<branch id = 'root.ten'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment>Thank you for using this bomb vending machine!</comment>
+										<post-script>player().subtractGold(37).addBombs(10);session("achievements.repeat-customer.counter").increment(10);universe().executeAchievementHook("bought-bombs");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "10 bombs", "@n": "your own bomb vending machine", "@g": 37 });</post-script>
+									</line>
+								</nags>
+							</branch>
+						</response>
+						<response min-gold = '70' branch-id = 'root.ten'>
+							<phrase>[color=special]New![/color] - Buy 20 bombs</phrase>
+							<branch id = 'root.ten'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment>Thank you for using this bomb vending machine!</comment>
+										<post-script>player().subtractGold(70).addBombs(20);session("achievements.repeat-customer.counter").increment(20);universe().executeAchievementHook("bought-bombs");addHistoricalRecordUsingLabel("purchases", "purchased-m-from-n-for-g:message", { "@m": "20 bombs", "@n": "your own bomb vending machine", "@g": 70 });</post-script>
+									</line>
+								</nags>
+							</branch>
+						</response>
+						<response branch-id = 'root.bye'>
+							<phrase>Leave</phrase>
+							<branch id = 'root.bye'>
+								<linear />
+								<nags>
+									<line id = 'nag1'>
+										<comment />
+									</line>
+								</nags>
+							</branch>
+						</response>
+					</line>
+				</nags>
+			</branch>
+		</conversation>
+	</conversations>
+</characters>

@@ -1,0 +1,22 @@
+<characters>
+	<arrow1>
+		<chapter1>
+			<conversation id = 'tutorial'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>To reach the next level, you must use your [color=dim]mining laser[/color]!  Press [color=dim]@dig-left[/color] to dig to the [color=dim]left[/color], or press [color=dim]@dig-right[/color] to dig to the [color=dim]right[/color].  You can also press [color=dim]@dig-forward[/color] to dig in the direction your character is currently facing.</comment>
+						</line>
+						<line redirect = 'root' id = 'line2'>
+							<comment>You might notice that you cannot dig directly beneath a [color=dim]ladder[/color].  Aside from that limitation, you can dig [color=dim]wherever[/color] you want, [color=dim]whenever[/color] you want.  You will never run out of "ammo!"</comment>
+						</line>
+						<line id = 'line3'>
+							<comment>Remember that you can return to previous levels at any time.</comment>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+		</chapter1>
+	</arrow1>
+</characters>

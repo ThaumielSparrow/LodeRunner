@@ -1,0 +1,628 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'slide1' x = '7' y = '3' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'slide2' x = '23' y = '3' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			328 330 334 324 327 331 326 324 328 323 324 328 331 331 332 328 325 330 332 332 331 331 334 324 323 324 328 324 330 332 330 0 
+			0 209 29 27 26 303 29 206 29 207 26 28 29 308 25 206 28 207 27 25 24 310 24 206 26 207 28 27 27 314 0 0 
+			0 274 0 0 0 274 0 144 0 274 0 0 0 274 0 0 0 274 0 0 0 274 0 144 0 274 0 0 0 0 0 0 
+			0 275 0 0 0 275 0 0 0 275 0 0 0 275 0 0 0 275 0 0 0 275 0 0 0 275 0 0 0 0 0 0 
+			0 273 0 0 0 273 0 0 0 273 0 9 0 273 0 0 0 273 0 0 0 273 0 0 0 273 0 0 0 153 331 328 
+			154 324 28 206 28 209 26 24 23 325 23 206 27 209 23 29 28 331 28 206 27 209 26 24 26 324 23 206 26 312 308 305 
+			312 306 303 313 307 307 314 305 308 304 313 311 309 331 303 305 314 313 303 313 314 330 313 310 306 309 308 308 308 307 309 310 
+			314 0 0 0 0 0 0 0 0 311 303 308 314 311 305 209 307 311 305 303 0 309 0 303 312 313 0 0 0 0 0 0 
+			0 0 0 0 0 0 323 326 0 0 314 0 306 305 303 329 303 308 314 0 0 307 332 304 307 0 0 0 0 0 154 329 
+			0 0 0 0 0 0 0 307 331 0 0 0 0 310 207 303 309 0 0 0 0 0 309 0 0 0 0 0 0 154 330 311 
+			0 0 0 0 0 0 326 208 0 325 0 0 0 310 328 305 0 0 0 326 207 0 0 0 0 0 0 0 153 326 304 0 
+			0 0 0 0 0 0 308 29 206 308 0 0 0 0 308 303 0 0 0 309 329 331 334 0 0 0 0 153 323 308 0 0 
+			154 0 0 0 0 0 0 0 0 0 0 0 327 334 308 312 332 0 0 0 304 307 310 323 217 219 152 326 305 0 0 0 
+			330 154 0 0 0 0 323 0 332 0 0 0 0 311 307 0 0 0 0 0 305 310 0 0 0 0 152 313 0 0 0 154 
+			310 332 152 0 0 0 0 0 312 323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 152 0 0 0 153 330 
+			303 304 324 152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154 0 0 153 325 310 
+			314 309 26 23 26 333 28 206 24 207 27 26 23 328 27 206 27 210 29 29 25 334 24 206 23 210 29 27 27 332 305 305 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 263 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 283 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 
+			0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 283 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			302 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 300 0 0 0 0 0 0 0 0 300 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 263 0 283 302 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 302 0 0 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 302 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 263 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 265 0 265 0 0 0 0 0 283 0 302 
+		</structure>
+	</plane>
+	<plane name = 'block1' x = '7' y = '3' modal = '0'>
+		<structure>
+			207 
+		</structure>
+	</plane>
+	<plane name = 'block2' x = '23' y = '3' modal = '0'>
+		<structure>
+			207 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '15' x = '17' genus = '2' class = '' />
+	<entity x = '22' y = '15' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'merchant' nick = 'William' title = '' />
+	<entity x = '7' y = '15' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Linus' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '14' x = '20' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '12' x = '6' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '13' x = '9' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '14' x = '14' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '11' x = '13' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '4' x = '27' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '4' x = '23' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '4' x = '16' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '4' x = '8' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '4' x = '4' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '9' x = '2' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '15' x = '10' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '15' x = '18' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '15' x = '24' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '12' x = '25' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '9' x = '28' genus = '6' class = '' />
+<entity name = 'gold16' title = '' ai-behavior = '1' nick = '' y = '14' x = '29' genus = '6' class = '' />
+<entity name = 'gold17' title = '' ai-behavior = '1' nick = '' y = '10' x = '21' genus = '6' class = '' />
+<entity name = 'gold18' title = '' ai-behavior = '1' nick = '' y = '9' x = '19' genus = '6' class = '' />
+<entity name = 'gold19' title = '' ai-behavior = '1' nick = '' y = '7' x = '7' genus = '6' class = '' />
+	<entity x = '22' y = '7' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '3' position = '0' />
+	<entity x = '8' y = '10' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '1' position = '0' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '21' y = '14' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to William'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.talk' x = '6' y = '14' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Linus'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc2.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '19' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '27' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '24' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.a' x = '11' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.b' x = '13' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.c' x = '9' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.d' x = '4' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle8.enter' x = '11' y = '4' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle8'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle8.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'spawn' x = '3' y = '4' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1' x = '6' y = '3' width = '20' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2a' x = '4' y = '13' width = '10' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp2b' x = '17' y = '11' width = '10' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '8' y = '10' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever2' x = '22' y = '7' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever2.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '30' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle8.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle8.enter").loadMap("puzzle8", "origin");
+	</script>
+	<script name = 'npc1.ondeath'>
+		#define TASK "7.1.npc1.quest"
+
+
+        // Killed him ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // fails kill Linus quest
+            quest(TASK).status("failed");
+
+            // we already got linus too?
+            if ( quest(TASK).update("flag-killed-linus").status() == "active" )
+            {
+                // better than nothing
+                quest(TASK).update("update-killed-william-after-linus").status("active");
+            }
+
+            else
+            {
+                // premature kill update
+                quest(TASK).update("update-killed-william-before").status("active");
+            }
+        }
+
+        // Killed him while on his job?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // Did we already kill Linus too?
+            if ( quest(TASK).update("flag-killed-linus").status() == "active" )
+            {
+                // We could have at least turned it in, but alas!
+                quest(TASK).update("update-killed-william-after-linus").status("active");
+            }
+
+            // No, we just killed William
+            else
+            {
+                quest(TASK).update("update-killed-william-during").status("active");
+            }
+
+
+            // Either way, killing William fails his quest if active
+            quest(TASK).status("failed");
+        }
+
+        // Killed after completing task?
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // Why?
+            quest(TASK).update("update-killed-william-after-success").status("active");
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-william").status("active");
+
+        // disable talk
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.shop'>
+		// warehouses already configured during first ontalk, before shop redirect
+        npc("npc1").shop({
+            "min-quality": 1,
+            "max-quality": 1,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc1.talk'>
+		// William will ask you to kill Linus
+        #define QUEST "7.1.npc1.quest"
+
+        #define UPDATE_KILLED_WILLIAM "update-killed-william"
+        #define UPDATE_KILLED_LINUS "update-killed-linus"
+
+
+        // Real quick, let's see if tax quest is active.  It affects all merchants.
+        if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+             ( npc("npc1").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() > 0 ) )
+        {
+            // Use tax conversation, queueing this same script to run again afterward...
+            npc("npc1").talk("global.tax");
+        }
+
+        else
+        {
+            // Assume thank you is disabled, not needed / applicable
+            npc("npc1").conversation("default").branch("root").getLinesByClass("thanks").disable();
+
+
+            // Default warehouse
+            npc("npc1").clearWarehouses()
+                       .addWarehouse("warehouseBill");
+
+
+            // Should we show the "what can I do for better items" response?
+            if ( quest(QUEST).status() == "inactive" )
+            {
+                // Show it
+                npc("npc1").conversation("default").branch("root").getLinesByClass("shop").getResponsesByClass("better-deal").enable();
+
+                // Assume
+                npc("npc1").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("*").disable();
+
+                // Did we kill Linus already?
+                if ( quest(QUEST).update("flag-killed-linus").status() == "active" )
+                {
+                    // Use the "already done" response only
+                    npc("npc1").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("already-done").enable();
+                }
+
+                // No...
+                else
+                {
+                    // Yes/no
+                    npc("npc1").conversation("default").branch("root.quest").getLinesByClass("prompt").getResponsesByClass("default").enable();
+                }
+            }
+
+            else
+            {
+                // Already accepted quest
+                npc("npc1").conversation("default").branch("root").getLinesByClass("shop").getResponsesByClass("better-deal").disable();
+            }
+
+
+            if ( quest(QUEST).status() == "inactive" )
+            {
+                // overpriced junk
+                npc("npc1").conversation("default").branch("root").getLinesByClass("shop-cheaper").disable();
+                npc("npc1").conversation("default").branch("root").getLinesByClass("shop").enable();
+            }
+
+            // If we killed Linus after accepting quest,
+            // Gates'll say thanks one time (linear message)
+            elif ( quest(QUEST).status() == "active" )
+            {
+                if ( quest(QUEST).update("flag-killed-linus").status() == "active" )
+                {
+                    // activate thank you line
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("thanks").enable();
+
+                    // shop cheaper (what junk!)
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("shop").disable();
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("shop-cheaper").enable();
+
+                    // "Cheaper" warehouse
+                    npc("npc1").clearWarehouses()
+                               .addWarehouse("warehouseBill-");
+                }
+
+                // Otherwise, we shop normal
+                else
+                {
+                    // overpriced junk
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("shop-cheaper").disable();
+                    npc("npc1").conversation("default").branch("root").getLinesByClass("shop").enable();
+                }
+            }
+
+            elif ( quest(QUEST).status() == "complete" )
+            {
+                // "Cheaper" warehouse
+                npc("npc1").clearWarehouses()
+                           .addWarehouse("warehouseBill-");
+            }
+
+
+            // Shop talk, using whatever (normal/cheaper) is appropriate
+            npc("npc1").talk("default", "shop");
+        }
+	</script>
+	<script name = 'npc2.ondeath'>
+		#define TASK "7.1.npc1.quest"
+
+
+        // Killed him ahead of schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // just note update
+            quest(TASK).update("update-killed-linus-before").status("active");
+        }
+
+        // On schedule?
+        elif ( quest(TASK).status() == "active" )
+        {
+            // simple update
+            quest(TASK).update("update-killed-linus-during").status("active");
+        }
+
+        // Killed Linus after failing William's quest (i.e. killing William instead)?
+        elif ( quest(TASK).status() == "failed" )
+        {
+            // why??
+            quest(TASK).update("update-killed-linus-after-failing").status("active");
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-linus").status("active");
+
+        // disable talk trigger
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.shop'>
+		// warehouses already configured during first ontalk, before shop redirect
+        npc("npc2").shop({
+            "min-quality": 1,
+            "max-quality": 3,
+            "max-items": 3,
+            "max-reloads": 2,
+            "required-item-names": ["a", "b"]
+        });
+	</script>
+	<script name = 'npc2.talk'>
+		// Linus (same map here) is the kill target of Gates' quest
+        #define QUEST "7.1.npc1.quest"
+
+        #define UPDATE_KILLED_WILLIAM "update-killed-william"
+        #define UPDATE_KILLED_LINUS "update-killed-linus"
+
+        // Real quick, let's see if tax quest is active.  It affects all merchants.
+        if ( ( quest("2.3.npc1.quest").status() == "active" ) and
+             ( npc("npc2").conversation("global.tax").branch("root").getLinesByClass("request-tax").selectActive().countUnread() > 0 ) )
+        {
+            // Use tax conversation, queueing this same script to run again afterward...
+            npc("npc2").talk("global.tax");
+        }
+
+        else
+        {
+            // Assume thank you is disabled, not needed / applicable
+            npc("npc2").conversation("default").branch("root").getLinesByClass("thanks").disable();
+
+            // If we killed William after he gave his quest,
+            // we'll say thanks one time (linear message)
+            if ( quest(QUEST).update("flag-killed-william").status() == "active" )
+            {
+                // We skip this thanks if the player killed William before learning about quest
+                if ( quest(QUEST).update("flag-heard-williams-quest").status() == "active" )
+                {
+                    // activate thank you line
+                    npc("npc2").conversation("default").branch("root").getLinesByClass("thanks").enable();
+                }
+            }
+
+
+            // Default warehouse
+            npc("npc2").clearWarehouses()
+                       .addWarehouse("warehouseLinus");        
+
+
+            // If we donated 3 times to Linus, then we get better items
+            if ( session("7.2.npc2:finished-donating").equals("yes") )
+            {
+                npc("npc2").conversation("default").branch("root").getLinesByClass("shop").disable();
+                npc("npc2").conversation("default").branch("root").getLinesByClass("shop-better").enable();
+
+                // Shop better
+                npc("npc2").clearWarehouses()
+                           .addWarehouse("warehouseLinus+");
+            }
+
+            // Otherwise, standard fare
+            else
+            {
+                // it's still free stuff, at least!
+                npc("npc2").conversation("default").branch("root").getLinesByClass("shop-better").disable();
+                npc("npc2").conversation("default").branch("root").getLinesByClass("shop").enable();
+            }
+
+
+            // Shop either normal or better items, according to what we just activated
+            npc("npc2").talk("default", "shop");
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("sleep(0.75)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(1.0)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc2.a")
+                   .addHotspot("npc2.d")
+                   .addHotspot("sleep(1.5)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+
+
+        // chains up if levers up
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // instant
+            map().plane("slide1").slide("absolute", "up", 0, 100000);
+        }
+
+        // other chain
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // instant
+            map().plane("slide2").slide("absolute", "up", 0, 100000);
+        }
+	</script>
+	<script name = 'lever1.action'>
+		// lever pointing up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // shift block down, +slide chain down (simultaneous)
+            map().plane("block1").shiftToY("wp2a");
+            +map().plane("slide1").slide("absolute", "down", 240); // hard-coded length, oh well
+        }
+
+        // assume pointing down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // shift block up, +slide chain up (simultaneous)
+            map().plane("block1").shiftToY("wp1");
+            +map().plane("slide1").slide("absolute", "up", 0);
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever pointing up?
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // point down
+            npc("lever2").setPosition("down");
+
+            // shift block down, +slide chain down (simultaneous)
+            map().plane("block2").shiftToY("wp2b");
+            +map().plane("slide2").slide("absolute", "down", 192); // hard-coded length, oh well
+        }
+
+        // assume pointing down
+        else
+        {
+            // point up
+            npc("lever2").setPosition("up");
+
+            // shift block up, +slide chain up (simultaneous)
+            map().plane("block2").shiftToY("wp1");
+            +map().plane("slide2").slide("absolute", "up", 0);
+        }
+	</script>
+</scripts>

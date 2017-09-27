@@ -1,0 +1,120 @@
+<earth-mover id = 'earth-mover'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>[color=title]Earthmover[/color] gives you the power to dig [color=title]multiple tiles[/color] ahead of your location with one blast of your mining laser.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.laser.earthmover</map>
+                <replay-file>gifs.laser.earthmover.animation.txt</replay-file>
+                <active-skill>earth-mover</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '3' cost = '1'>
+		<texts>
+			<overview>[color=title]Earthmover[/color] gives you the power to dig [color=title]multiple tiles[/color] ahead of your location with one blast of your mining laser.</overview>
+			<specs>Dig [color=title]2 tiles[/color] across the ground
+Recharges in [color=title]25.0s[/color]</specs>
+			<manual>Press @key to dig [color=title]2[/color] tiles horizontally in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.earthmover</map>
+                <replay-file>gifs.laser.earthmover.animation.txt</replay-file>
+                <active-skill>earth-mover</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Earth Mover[/color], you will lose access to the [color=title]Jackhammer[/color] skill.
+
+Further upgrades to [color=title]Earth Mover[/color] will increase the [color=title]distance[/color] of each dig and extend the duration of the dig on each tile.</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Jackhammer[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>1</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>25.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '2' />
+				<modifier name = 'dig-duration-multiplier' value = '1.0' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The beginning upgrade to [color=title]Earth Mover[/color] extends the distance of the dig by [color=dim]one tile[/color].  In conjunction, [color=title]Earth Mover[/color] now causes delays [color=title]tile refill[/color] for a brief period of time.</overview>
+			<specs>Dig [color=title]3 tiles[/color] across the ground (+1)
+Recharges in [color=title]20.0s[/color] (-5.0s)
+Tiles refill [color=title]10%[/color] more slowly</specs>
+			<manual>Press @key to dig [color=title]3[/color] tiles horizontally in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.earthmover</map>
+                <replay-file>gifs.laser.earthmover.animation.txt</replay-file>
+                <active-skill>earth-mover</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>2</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>20.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '3' />
+				<modifier name = 'dig-duration-multiplier' value = '1.1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>[color=title]Earth Mover[/color]'s last upgrade greatly reduces the skill's total [color=dim]recharge time[/color].  Each tile you dig with [color=title]Earth Mover[/color] will remain unfilled for even longer.</overview>
+			<specs>Dig [color=title]3 tiles[/color] into the ground
+Recharges in [color=title]15.0s[/color] (-5.0s)
+Tiles refill [color=title]25%[/color] more slowly (+15%)</specs>
+			<manual>Press @key to dig [color=title]3[/color] tiles horizontally in the direction you are facing.</manual>
+			<gif-data>
+                <map>gifs.laser.earthmover</map>
+                <replay-file>gifs.laser.earthmover.animation.txt</replay-file>
+                <active-skill>earth-mover</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Earth Mover[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Earth Mover[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+            <min-character-level>1</min-character-level>
+            <cost>2</cost>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>15.0</recharge>
+			<modifiers>
+				<modifier name = 'dig-power' value = '3' />
+				<modifier name = 'dig-duration-multiplier' value = '1.25' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You fully upgraded [color=title]Earth Mover[/color], greatly reducing the skill's total [color=dim]recharge time[/color].  Each tile you dig with [color=title]Earth Mover[/color] now remains unfilled for longer than ever before.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.laser.earthmover</map>
+                <replay-file>gifs.laser.earthmover.animation.txt</replay-file>
+                <active-skill>earth-mover</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</earth-mover>

@@ -1,0 +1,46 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@back-button-text</parameter>
+		<parameter>@responses-header-text</parameter>
+	</text>
+</parameters>
+
+<template name = 'dialogue.computer.simple'>
+
+    <item-group render-border = '0' per-row = '1'>
+
+        <item disabled = '1'>
+            <label x = '2%' y = '0' width = '90%' align = '' value = '[color=normal]Simple Terminal[/color]' />
+        </item>
+
+    </item-group>
+
+    <item-group render-border = '1' per-row = '1'>
+
+        <item glow = '1'>
+            <label x = '10%' y = '0' width = '90%' value = '@back-button-text' />
+            <action do = 'respond' response-id = '' />
+        </item>
+
+        <Xitem id = 'spacer' disabled = '1' render-border = '0' />
+
+    </item-group>
+
+    <item-group render-border = '0' per-row = '1'>
+
+        <item disabled = '1'>
+            <label x = '2%' y = '0' width = '90%' align = '' value = '[color=normal]@responses-header-text[/color]' />
+        </item>
+
+    </item-group>
+
+    <item-group id = 'ext.responses' render-border = '1' per-row = '1'>
+
+    </item-group>
+
+    <item id = 'spacer' disabled = '1' render-border = '0' />
+
+</template>

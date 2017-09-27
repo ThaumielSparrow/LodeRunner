@@ -1,0 +1,77 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'linear' />
+	<param key = 'next-map' value = 'map3' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 150 147 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 119 118 118 117 119 152 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 97 96 0 99 152 0 0 0 
+			0 0 0 0 0 150 149 0 0 0 0 210 117 97 152 0 0 0 
+			0 0 0 0 118 119 116 153 110 117 0 117 97 0 153 0 0 0 
+			0 0 0 208 97 99 0 154 0 96 154 97 0 0 117 153 0 0 
+			0 0 0 118 96 0 0 153 0 0 154 0 0 0 0 152 0 0 
+			0 0 118 99 0 0 0 152 118 217 154 0 0 0 0 117 154 0 
+			0 0 97 0 0 0 152 119 96 0 153 218 0 0 0 0 153 0 
+			0 119 99 0 154 116 117 99 0 0 154 0 219 0 0 152 116 0 
+			0 210 0 0 152 0 97 0 0 0 154 0 0 217 0 152 0 0 
+			0 116 117 0 153 148 151 147 0 116 118 116 154 0 217 154 0 0 
+			0 0 97 118 110 111 116 110 117 96 0 0 152 0 0 152 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 116 117 110 119 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 300 0 0 
+			0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 302 0 0 0 0 302 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 302 0 0 300 0 0 302 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 302 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = 'player1' title = '' ai-behavior = '1' nick = '' y = '6' x = '5' genus = '2' class = '' />
+<entity name = 'player2' title = '' ai-behavior = '1' nick = '' y = '3' x = '13' genus = '2' class = '' />
+<entity name = 'player3' title = '' ai-behavior = '1' nick = '' y = '13' x = '11' genus = '2' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '9' x = '12' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '5' x = '12' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '13' x = '2' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '12' x = '9' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '15' x = '14' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '9' x = '16' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '5' x = '7' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '5' x = '5' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '14' x = '5' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '11' x = '13' genus = '6' class = '' />
+<entity name = 'player1.respawn' title = '' ai-behavior = '1' nick = 'Bomb Vending Machine' y = '4' x = '8' genus = '12' class = '' />
+<entity name = 'player2.respawn' title = '' ai-behavior = '1' nick = 'Bomb Vending Machine' y = '10' x = '4' genus = '12' class = '' />
+<entity name = 'player3.respawn' title = '' ai-behavior = '1' nick = 'Bomb Vending Machine' y = '7' x = '3' genus = '12' class = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts>
+	<script name = 'onload'>
+		// Define how many bombs each player gets
+        //distributeBombs({
+        //    "per-slot": [1, 0, 3, 2]
+        //});
+	</script>
+</scripts>

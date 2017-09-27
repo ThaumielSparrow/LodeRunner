@@ -1,0 +1,245 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								Do you have a moment to take a brief quiz, [color=special]$[core.player1.name][/color]?
+
+The quiz covers a variety of [color=special]classic videogames[/color].  If you can answer 3 questions in a row correctly, I will give you [color=special]1 skill point[/color] as a reward. I do hope you enjoy this quiz.
+
+However, you only have one chance to complete the quiz, and you must notch a perfect score to win.  If you incorrectly answer any question, then you will fail the quiz!
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>You can only take the quiz one time, [color=special]$[core.player1.name][/color]. What do you say?</comment>
+							<response branch-id = 'root.take-quiz'>
+								<phrase>I&apos;ll take the quiz now.</phrase>
+							</response>
+							<response min-gold = '205' branch-id = 'root.pay'>
+								<phrase>I wouldn&apos;t want to fail.  I&apos;ll pay you [color=special]205 gold pieces[/color] to pass me automatically.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>I&apos;ll come back to try the quiz later.</phrase>
+								<branch id = 'root.quit'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+											<post-script>quest("3.3.npc1.quest").status("active");</post-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>Do you want to take that quiz now, [color=special]$[core.player1.name][/color]?  You can only take it one time!</comment>
+							<response branch-id = 'root.take-quiz'>
+								<phrase>I&apos;ll take the quiz now.</phrase>
+							</response>
+							<response min-gold = '205' branch-id = 'root.pay'>
+								<phrase>I wouldn&apos;t want to fail.  I&apos;ll pay you [color=special]205 gold pieces[/color] to pass me automatically.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>I&apos;ll come back to try the quiz later.</phrase>
+							</response>
+						</line>
+						<line id = 'nag2'>
+							<comment>Ready to take the quiz yet, [color=special]$[core.player1.name][/color]?  You only get one try!</comment>
+							<response branch-id = 'root.take-quiz'>
+								<phrase>I&apos;ll take the quiz now.</phrase>
+							</response>
+							<response min-gold = '205' branch-id = 'root.pay'>
+								<phrase>I wouldn&apos;t want to fail.  I&apos;ll pay you [color=special]205 gold pieces[/color] to pass me automatically.</phrase>
+							</response>
+							<response branch-id = 'root.quit'>
+								<phrase>I&apos;ll come back to try the quiz later.</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+				<branch id = 'root.take-quiz'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								Get ready for the first question, [color=special]$[core.player1.name][/color]!
+
+In the classic [color=special]Deus Ex[/color], a character named [color=special]Gunther Hermann[/color] attempted to operate a soda machine.  To his dismay, the vending machine malfunctioned and delivered him a [color=dim]lemon lime soda[/color].
+
+Which flavor button did Gunther actually press?
+							</comment>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Grape</phrase>
+								<branch id = 'root.take-quiz.wrong'>
+									<linear />
+									<nags>
+										<line redirect = 'root.failed-quiz' id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Peach</phrase>
+							</response>
+							<response branch-id = 'root.take-quiz.right'>
+								<phrase>Orange</phrase>
+								<branch id = 'root.take-quiz.right'>
+									<linear />
+									<nags>
+										<line redirect = 'root.take-quiz' id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								Well played, [color=special]$[core.player1.name][/color]!  Let's move on to the next question.
+
+In [color=special]Super Mario 64[/color], one of Mario's longtime enemies returned to serve as the game's [color=special]camera operator[/color].  Which previous enemy decided to enter this new, neutral role?
+							</comment>
+							<response branch-id = 'root.take-quiz.right'>
+								<phrase>Lakitu</phrase>
+							</response>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Petey Piranha</phrase>
+							</response>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Luigi</phrase>
+							</response>
+						</line>
+						<line id = 'line3'>
+							<comment>
+								Another fine selection, [color=special]$[core.player1.name][/color].  One last question stands between you and [color=special]1 skill point[/color]:
+
+Many [color=special]Lode Runner[/color] games have appeared for PCs and other systems.  One of the following titles, though, does not actually exist.
+
+Which of these titles [color=special]does not exist[/color]?
+							</comment>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Lode Runner:  The Legend Returns</phrase>
+							</response>
+							<response branch-id = 'root.take-quiz.wrong'>
+								<phrase>Lode Runner:  Mad Monks&apos; Revenge</phrase>
+							</response>
+							<response branch-id = 'root.take-quiz.right'>
+								<phrase>Lode Runner:  Desperate for a Skill Point</phrase>
+							</response>
+						</line>
+						<line id = 'line4'>
+							<comment>
+								Well done, [color=special]$[core.player1.name][/color]!  You aced the quiz on your first try, most likely without loading from the checkpoint even once!  Congratulations!
+
+As I promised, I will now present you with [color=special]1 skill point[/color].  Use it wisely!
+							</comment>
+							<post-script>quest("3.3.npc1.quest").status("complete");quest("3.3.npc1.quest").update("update-aced-quiz").status("active");npc("npc1").clearIndicators();player().addSkillPoints(1);</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+				<branch id = 'root.failed-quiz'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								I'm sorry, [color=special]$[core.player1.name][/color], but you did not select the correct answer to that question.
+
+I cannot in good conscience let you walk home with empty hands, though.  As a consolation prize, please enjoy this [color=special]1 free bomb[/color].
+
+Remember, if you blow me up with that bomb, you still won't get that skill point!
+							</comment>
+							<post-script>quest("3.3.npc1.quest").status("failed");quest("3.3.npc1.quest").update("update-failed-quiz").status("active");npc("npc1").clearIndicators();player().addBombs(1);</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+				<branch id = 'root.pay'>
+					<linear>
+						<line redirect = 'root.pay' id = 'line1'>
+							<comment>
+								You really know how to get what you want, [color=special]$[core.player1.name][/color]!
+
+To be perfectly honest, I can respect your decision.  A lot of players would have used a search engine to find the right answers, but you decided to spend hard-earned gold pieces.
+							</comment>
+						</line>
+						<line id = 'line2'>
+							<comment>
+								In recognition of your honor,  I'm going to throw in [color=special]20 free bombs[/color] in addition to the [color=special]1 skill point[/color].
+
+Good luck against the [color=dim]Bungeling empire[/color]!
+							</comment>
+							<post-script>quest("3.3.npc1.quest").status("complete");quest("3.3.npc1.quest").update("update-buyout").status("active");npc("npc1").clearIndicators();player().subtractGold(205).addSkillPoints(1);</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:done:passed'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You did a great job on the [color=special]quiz[/color], I must say.  I wonder what you did with that skill point?</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I hope you made some good use out of that [color=special]skill point[/color] I gave you, [color=special]$[core.player1.name][/color].  You earned it!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>You know a great deal about videogames, [color=special]$[core.player1.name][/color].  Just in case you didn&apos;t know this already, though, let me remind you that you can customize your gameplay controls in the [color=special]pause menu[/color] at any time!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I don&apos;t know exactly how you have customized your controls, [color=special]$[core.player1.name][/color], but I think everyone should download a copy of your configuration file to use in their own game.  You&apos;ve demonstrated such a thorough knowledge of videogames that I wouldn&apos;t want anyone else&apos;s!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:done:failed'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>I&apos;m glad that you haven&apos;t blown me up yet, [color=special]$[core.player1.name][/color].  Use it on the [color=dim]bad guys[/color] instead!</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>If you&apos;ve never played [color=special]Deus Ex[/color], then I highly recommend it!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Do you know that scientists recently proved that [color=special]Mario 64[/color] is one of the greatest games of all time?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Don&apos;t worry too much about missing out on that skill point, [color=special]$[core.player1.name][/color].  You can easily earn more by completing other quests and by completing levels in the game!  If you&apos;re having any trouble, try to customize your controls in the [color=special]pause menu[/color] to make things easier!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I feel pretty bad about not giving you that skill point, [color=special]$[core.player1.name][/color].  I see that you customized your controls, which means you know a little bit more about this game than the average hero.  I think that means that you will find a way to overcome the loss of that skill point!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:done:paid'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;d love to sell you another skill point, [color=special]$[core.player1.name][/color], but I gave you my last one.  Sorry!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I bet you won&apos;t have too much trouble finding some more gold, [color=special]$[core.player1.name][/color].  Enjoy the skill point you spent so much money to buy!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>Before I entered the quiz administration business, [color=special]$[core.player1.name][/color], I ran a small business dedicated to customizing players&apos; gameplay controls.  Once they started customizing them on their own in the [color=special]pause menu[/color], though, I had to find a new line of work.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Please don&apos;t take this the wrong way, [color=special]$[core.player1.name][/color], but... did you also pay someone gold to customize your controls for you?  I wouldn&apos;t hold it against you at all, by the way!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>

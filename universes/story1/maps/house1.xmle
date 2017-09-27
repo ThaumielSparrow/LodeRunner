@@ -1,0 +1,339 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 189 193 26 29 190 0 186 186 199 180 198 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 179 0 0 0 172 0 0 170 170 175 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 219 179 153 0 0 0 0 179 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 190 154 199 0 0 153 193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 162 153 168 26 25 179 163 188 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 210 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 209 0 0 0 175 154 0 0 0 0 0 179 194 0 0 0 199 23 199 29 23 194 153 0 0 0 153 188 25 183 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 196 199 154 185 168 24 27 23 199 154 0 0 0 0 0 0 0 0 0 0 0 171 153 0 0 0 152 174 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 165 0 152 0 168 179 0 0 162 192 183 153 0 0 0 0 0 0 0 0 0 176 191 153 0 154 189 170 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 179 29 28 199 176 0 0 181 172 0 0 197 154 0 0 0 0 0 0 0 0 0 163 188 153 192 177 169 189 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 179 165 0 0 0 0 0 171 193 191 0 154 0 0 0 0 0 0 0 0 198 179 0 152 0 179 0 167 187 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 179 0 0 0 0 180 176 164 0 154 194 0 0 0 0 0 0 0 0 179 175 154 174 0 179 187 179 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 174 161 0 154 0 0 0 0 0 0 0 0 184 175 163 153 0 0 0 0 0 0 0 0 0 0 153 183 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 217 235 0 0 0 199 154 0 0 0 0 0 181 28 177 179 176 154 0 0 181 25 199 185 0 0 0 0 152 176 182 186 0 
+			0 0 0 0 0 0 0 0 0 0 0 208 0 0 0 0 154 217 218 217 219 189 177 0 0 0 167 187 153 192 163 0 208 179 218 218 218 153 199 179 179 175 0 
+			0 0 0 0 0 0 0 0 0 0 188 206 27 28 206 194 186 0 0 0 0 164 0 0 0 0 174 0 154 0 160 179 164 173 0 0 0 199 178 0 163 172 182 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153 0 0 0 0 161 0 0 0 173 0 0 0 0 179 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 208 0 0 0 153 188 185 29 199 152 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 180 183 195 28 23 179 0 0 178 25 28 29 183 153 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 163 179 175 0 0 0 0 0 0 0 175 184 153 0 0 0 0 0 0 199 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 170 0 0 0 0 0 0 0 0 177 196 23 23 199 25 25 29 172 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 218 235 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 209 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			199 24 26 25 196 0 0 0 0 0 186 206 27 23 206 196 0 0 0 0 0 189 196 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			179 0 0 0 170 198 0 0 0 198 171 0 0 0 176 0 0 0 0 0 0 0 164 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			199 152 0 153 184 218 216 219 216 216 187 153 0 154 183 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			179 186 152 186 179 0 0 0 0 0 179 199 152 198 167 0 0 0 0 0 0 0 195 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 152 0 0 0 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 0 162 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 185 182 154 198 189 0 0 0 190 23 152 28 188 0 0 0 0 0 0 0 0 173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 154 0 0 0 0 0 0 0 152 0 0 0 0 0 0 0 0 0 0 174 28 154 24 183 192 25 152 199 188 0 185 0 0 0 0 0 0 0 0 0 
+			187 26 154 27 199 218 218 217 216 216 182 188 153 28 188 0 0 0 0 0 0 0 169 0 154 0 0 177 0 153 0 167 0 179 209 0 0 0 0 0 0 0 0 
+			0 0 154 0 174 198 0 0 0 0 0 0 153 0 0 0 0 0 0 0 0 0 0 0 152 0 0 163 182 198 154 0 0 169 192 0 0 0 0 0 0 0 0 
+			198 196 152 197 169 167 0 0 0 197 199 190 152 184 191 0 0 0 0 0 0 0 190 188 153 196 28 28 162 166 187 183 154 165 173 194 0 0 0 0 0 0 210 
+			173 0 152 0 175 0 0 0 0 0 169 0 153 0 171 0 0 0 0 0 0 0 179 0 152 0 209 0 0 0 0 179 152 179 179 165 196 26 187 29 27 154 190 
+			0 152 189 152 0 0 0 0 0 0 0 153 182 153 0 0 0 0 0 0 0 0 0 152 189 0 187 0 0 0 0 0 152 0 0 0 0 0 0 0 0 153 174 
+			183 152 0 152 189 189 28 27 26 199 189 154 0 152 187 0 0 0 0 0 0 0 190 153 0 0 179 193 152 0 153 185 153 29 199 191 28 23 189 152 189 198 173 
+			168 27 27 168 165 170 172 179 209 171 168 24 194 28 27 191 0 0 0 0 0 199 163 199 24 24 163 170 184 23 182 178 152 160 179 0 0 0 0 154 0 166 179 
+			0 0 0 0 0 179 179 167 193 161 0 0 164 173 174 0 0 0 0 0 0 0 0 0 168 179 171 0 0 164 179 0 153 176 0 0 0 0 0 152 0 0 162 
+			0 0 0 0 0 0 168 175 219 218 217 217 218 216 217 218 218 219 219 216 217 216 219 218 218 217 218 219 219 216 218 216 152 217 216 219 219 217 217 152 217 216 179 
+		</structure>
+	</plane>
+	<plane name = 'slide1' x = '15' y = '26' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'slide2' x = '21' y = '26' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'slide3' x = '18' y = '3' modal = '1'>
+		<structure>
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+			144 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '15' y = '30' modal = '0'>
+		<structure>
+			49 208 0 0 0 210 49 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '15' y = '30' modal = '0'>
+		<structure>
+			0 0 49 75 49 
+		</structure>
+	</plane>
+	<plane name = 'gate1' x = '38' y = '15' modal = '0'>
+		<structure>
+			58 
+			58 
+			58 
+			58 
+		</structure>
+	</plane>
+	<plane name = 'crusher1' x = '41' y = '15' modal = '0'>
+		<structure>
+			208 
+			49 
+			49 
+			207 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 263 0 0 283 0 300 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 302 0 0 0 300 0 0 300 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 302 0 0 0 263 0 265 0 0 283 0 0 0 0 0 263 0 283 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 263 0 0 0 265 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 263 0 0 283 302 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 300 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 283 0 0 0 0 0 263 0 283 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 264 0 284 264 0 284 302 0 0 0 0 0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 130 0 300 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 263 0 0 283 0 0 263 0 0 0 265 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 300 263 0 0 265 0 0 0 283 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			263 0 0 0 283 0 0 0 0 0 264 0 284 264 0 284 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			302 0 0 0 300 0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 302 0 0 0 0 0 300 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 300 0 0 0 302 0 0 0 263 0 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 0 0 283 263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 
+			263 0 0 0 283 0 0 0 0 0 300 0 0 0 283 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			302 0 0 0 300 0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 300 0 0 0 0 263 0 265 0 0 0 283 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 263 0 0 0 283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 0 0 283 263 0 0 283 0 0 0 0 
+			263 0 0 283 0 0 0 0 0 0 263 0 265 0 0 283 0 0 0 0 0 300 0 263 0 0 283 0 263 0 283 0 0 0 302 0 0 0 0 0 0 300 0 
+			0 0 0 0 0 300 0 0 0 302 0 0 0 0 302 0 0 0 0 0 0 0 0 0 300 0 302 0 0 300 302 0 0 302 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 300 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '4' y = '27' genus = '2' ai-behavior = '1' name = 'player1' class = '' nick = '' title = '' />
+	<entity x = '14' y = '34' genus = '3' species = 'terminal' ai-behavior = '5' name = 'term1' class = 'terminal' nick = '' title = '' />
+	<entity x = '22' y = '34' genus = '3' species = 'terminal' ai-behavior = '5' name = 'term2' class = 'terminal' nick = '' title = '' />
+	<entity x = '18' y = '29' genus = '3' species = 'terminal' ai-behavior = '5' name = 'term3' class = 'terminal' nick = '' title = '' />
+	<entity x = '27' y = '37' genus = '3' species = 'terminal' ai-behavior = '5' name = 'term4' class = 'terminal' nick = '' title = '' />
+	<entity x = '22' y = '16' genus = '3' species = 'terminal' ai-behavior = '5' name = 'term5' class = 'terminal' nick = '' title = '' />
+	<entity x = '39' y = '18' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Sonny' title = 'Captive' />
+	<entity x = '5' y = '36' genus = '6' ai-behavior = '1' name = 'gold0' class = '' nick = '' title = '' />
+	<entity x = '13' y = '12' genus = '6' ai-behavior = '1' name = 'gold1' class = '' nick = '' title = '' />
+	<entity x = '9' y = '25' genus = '6' ai-behavior = '1' name = 'gold2' class = '' nick = '' title = '' />
+	<entity x = '32' y = '11' genus = '6' ai-behavior = '1' name = 'gold3' class = '' nick = '' title = '' />
+	<entity x = '31' y = '13' genus = '6' ai-behavior = '1' name = 'gold4' class = '' nick = '' title = '' />
+	<entity x = '32' y = '15' genus = '6' ai-behavior = '1' name = 'gold5' class = '' nick = '' title = '' />
+	<entity x = '42' y = '17' genus = '6' ai-behavior = '1' name = 'gold6' class = '' nick = '' title = '' />
+	<entity x = '41' y = '20' genus = '6' ai-behavior = '1' name = 'gold7' class = '' nick = '' title = '' />
+	<entity x = '21' y = '15' genus = '6' ai-behavior = '1' name = 'gold8' class = '' nick = '' title = '' />
+	<entity x = '9' y = '14' genus = '6' ai-behavior = '1' name = 'gold9' class = '' nick = '' title = '' />
+</entities>
+<triggers>
+	<trigger name = 'tide1' x = '15' y = '5' width = '7' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'tide2' x = '15' y = '26' width = '7' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'tide3' x = '15' y = '30' width = '7' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'tide4' x = '15' y = '38' width = '7' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'term1' x = '14' y = '34' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use terminal'>
+		<touch>
+			<script name = 'term1.hide-ads' />
+		</touch>
+		<hover>
+			<script name = 'term1.login' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'term3' x = '18' y = '29' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use terminal'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'term3.access' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'modem.offline' x = '27' y = '37' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to access modem'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'modem.access.offline' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'modem.online' x = '27' y = '37' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to access modem'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'modem.access.online' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'term2' x = '22' y = '34' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use terminal'>
+		<touch>
+			<script name = 'term2.hide-ads' />
+		</touch>
+		<hover>
+			<script name = 'term1.login' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'term5' x = '22' y = '16' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use terminal'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'term5.access' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'crusher.wp1' x = '38' y = '15' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'sonny' x = '38' y = '17' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Sonny'>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'onload' />
+	<script name = 'modem.reboot' />
+	<script name = 'term2.hide-ads' />
+	<script name = 'modem.access.offline' />
+	<script name = 'bridge.raise' />
+	<script name = 'modem.access.online' />
+	<script name = 'term1.login' />
+	<script name = 'cage.crush' />
+	<script name = 'modem.overload' />
+	<script name = 'term1.access' />
+	<script name = 'bridge.lower' />
+	<script name = 'term5.access' />
+	<script name = 'term1.hide-ads' />
+	<script name = 'gate.open' />
+	<script name = 'bridge.secret' />
+	<script name = 'term3.access' />
+	<script name = 'term1.watchdog' />
+</scripts>

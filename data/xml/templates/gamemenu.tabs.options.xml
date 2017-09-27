@@ -1,0 +1,129 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+		<parameter>@box-height</parameter>
+	</data>
+	<text>
+		
+	</text>
+</parameters>
+
+<template name = 'gamemenu.tabs.options'>
+
+    <rowmenu id = 'tab' class = 'skills' width = '@width' height = '@height' uses-focus = '1' on-wrap-up = 'tab-abort' on-wrap-down = 'tab-abort'>
+
+        <item-group per-row = '2' column-padding = '20'>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '13' />
+                        <label x = '18%' y = '7' value = '[color=title]Controls[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Customize your [color=dim]keyboard[/color] or [color=dim]gamepad[/color] controls for playing the game.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'Customize your [color=dim]keyboard[/color] or [color=dim]gamepad[/color].' />
+                        </else>
+                    </languages>
+
+                </stack>
+
+                <action do = 'show:options.controls' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' align = 'right' index = '13' />
+                        <label x = '82%' y = '7' align = 'right' value = '[color=title]Transaction Journal[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'See the records of your dealings with the people of [color=special]Lelandria[/color], along with a record of each business transaction you commit.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'View a list of your previous transactions.' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:options.transactions' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '5%' y = '5' index = '26' />
+                        <label x = '18%' y = '7' value = '[color=title]Achievements[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'View a list of the [color=dim]Achievements[/color] available in [color=title]A Lode Runner Story[/color].' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'View a list of [color=dim]Achievements[/color].' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:options.achievements' />
+
+            </item>
+
+            <item class = 'option' render-border = '1' min-height = '@box-height'>
+
+                <stack class = 'frame'>
+
+                    <item>
+                        <icon x = '95%' y = '5' align = 'right' index = '27' />
+                        <label x = '82%' y = '7' align = 'right' value = '[color=title]Gameplay Statistics[/color]' width = '100%' />
+                    </item>
+
+                    <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                    <languages>
+                        <en>
+                            <label x = '5%' y = '0' width = '90%' value = 'Analyze a detailed statistical overview of your progress-to-date in the game.' />
+                        </en>
+                        <else>
+                            <label x = '5%' y = '0' width = '90%' value = 'Analyze a series of game statistics.' />
+                        </else>
+                    </languages>
+
+
+                </stack>
+
+                <action do = 'show:options.statistics' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

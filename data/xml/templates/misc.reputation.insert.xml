@@ -1,0 +1,18 @@
+<parameters>
+	<data>
+		
+	</data>
+	<text>
+		<parameter>@data</parameter>
+	</text>
+</parameters>
+
+<template name = 'misc.reputation.insert'>
+
+    <insert:item id = 'insert' disabled = '1' class = 'option'>
+        <stack rel = 'dummy stack'>
+        <label x = '5%' width = '90%' value = '@data' />
+        </stack>
+    </insert:item>
+
+</template>

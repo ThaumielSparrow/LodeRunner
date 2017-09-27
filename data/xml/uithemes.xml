@@ -1,0 +1,673 @@
+<color-definitions>
+
+    <global>
+
+        <color-definition name = 'global.gradient.color1:active'>15, 15, 15</color-definition>
+        <color-definition name = 'global.gradient.color2:active'>45, 45, 45</color-definition>
+
+        <color-definition name = 'global.gradient.color1:inactive'>25, 25, 25</color-definition>
+        <color-definition name = 'global.gradient.color2:inactive'>25, 25, 25</color-definition>
+
+        <color-definition name = 'global.gradient.color1:highlight'>10, 10, 10</color-definition>
+        <color-definition name = 'global.gradient.color2:highlight'>55, 55, 55</color-definition>
+
+    </global>
+
+
+    <local target = 'default3.ext.panel'>
+
+        <xcolor-definition name = 'border:active'>125, 125, 125</xcolor-definition>
+        <color-definition name = 'border:active'>35, 35, 35</color-definition>
+            <color-definition name = 'border:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'border:highlight'>215, 215, 215</color-definition>
+
+        <xcolor-definition name = 'shadow:active'>225, 225, 225</xcolor-definition>
+        <color-definition name = 'shadow:active'>35, 35, 35</color-definition>
+            <color-definition name = 'shadow:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'text:highlight'>184, 56, 17</color-definition>
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.normal:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.normal:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.normal:highlight'>225, 225, 225</color-definition>
+
+        <color-definition name = 'colors.dim:active'>155, 155, 155</color-definition>
+            <color-definition name = 'colors.dim:inactive'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.skill:active'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.button:highlight'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.title:active'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.title:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.title:highlight'>125, 125, 125</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.hmenu'>
+
+        <color-definition name = 'border:active'>125, 125, 125</color-definition>
+            <color-definition name = 'border:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'border:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'xhmenu.shadow:active'>225, 225, 225</color-definition>
+            <color-definition name = 'xhmenu.shadow:inactive'>35, 35, 35</color-definition>
+            <color-definition name = 'xhmenu.shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'text:highlight'>237, 77, 24</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.tooltip'>
+
+        <color-definition name = 'border:inactive'>155, 155, 155</color-definition>
+
+        <color-definition name = 'colors.special:inactive'>207, 106, 19</color-definition>
+        <color-definition name = 'colors.title:inactive'>175, 175, 125</color-definition>
+
+    </local>
+
+
+    <local target = 'default3'>
+
+        <xcolor-definition name = 'border:active'>195, 195, 195</xcolor-definition>
+            <xcolor-definition name = 'shadow:active'>75, 75, 75</xcolor-definition>
+        <color-definition name = 'border:active'>75, 75, 75</color-definition>
+            <color-definition name = 'shadow:active'>45, 45, 45</color-definition>
+
+        <color-definition name = 'border:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'shadow:inactive'>45, 45, 45</color-definition>
+
+        <color-definition name = 'border:highlight'>225, 225, 225</color-definition>
+            <color-definition name = 'shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:active'>175, 175, 175</color-definition>
+            <color-definition name = 'text:inactive'>225, 225, 225</color-definition>
+            <color-definition name = 'text:highlight'>225, 225, 225</color-definition>
+
+
+        <color-definition name = 'colors.normal:active'>225, 225, 225</color-definition>
+            <color-definition name = 'colors.normal:inactive'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.normal:highlight'>225, 225, 225</color-definition>
+
+        <color-definition name = 'colors.dim:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.dim:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'colors.dim:highlight'>175, 75, 75</color-definition>
+
+        <color-definition name = 'colors.special:active'>207, 106, 19</color-definition>
+            <color-definition name = 'colors.special:inactive'>225, 225, 225</color-definition>
+            <color-definition name = 'colors.special:highlight'>192, 160, 40</color-definition>
+
+        <color-definition name = 'colors.evil:active'>225, 75, 225</color-definition>
+            <color-definition name = 'colors.evil:inactive'>25, 75, 125</color-definition>
+            <color-definition name = 'colors.evil:highlight'>25, 15, 105</color-definition>
+
+        <color-definition name = 'colors.warning:active'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.warning:inactive'>25, 225, 225</color-definition>
+            <color-definition name = 'colors.warning:highlight'>225, 25, 125</color-definition>
+
+        <color-definition name = 'colors.lowlight:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.lowlight:inactive'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.lowlight:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.highlight:active'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.highlight:inactive'>225, 25, 25</color-definition>
+            <color-definition name = 'colors.highlight:highlight'>225, 25, 25</color-definition>
+
+        <color-definition name = 'colors.header:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.header:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'colors.header:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.headerx:active'>45, 45, 45</color-definition>
+            <color-definition name = 'colors.headerx:inactive'>45, 45, 45</color-definition>
+            <color-definition name = 'colors.headerx:highlight'>45, 45, 45</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.generic-list'>
+
+        <color-definition name = 'border:active'>125, 125, 125</color-definition>
+
+        <color-definition name = 'border:inactive'>35, 35, 35</color-definition>
+
+        <color-definition name = 'border:highlight'>215, 215, 215</color-definition>
+            <color-definition name = 'shadow:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'text:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'text:highlight'>184, 56, 17</color-definition>
+
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+            <color-definition name = 'colors.special:inactive'>155, 155, 155</color-definition>
+            <color-definition name = 'colors.special:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.dim:active'>155, 155, 155</color-definition>
+            <color-definition name = 'colors.dim:inactive'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.skill:active'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.button:highlight'>237, 77, 24</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.billboard'>
+
+        <color-definition name = 'border:active'>95, 95, 95</color-definition>
+
+        <color-definition name = 'border:inactive'>35, 35, 35</color-definition>
+
+        <color-definition name = 'border:highlight'>192, 160, 40</color-definition>
+            <color-definition name = 'shadow:highlight'>142, 110, 10</color-definition>
+
+        <color-definition name = 'text:active'>155, 155, 155</color-definition>
+            <color-definition name = 'text:inactive'>75, 75, 75</color-definition>
+            <color-definition name = 'text:highlight'>25, 25, 225</color-definition>
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+            <color-definition name = 'colors.special:inactive'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.dim:active'>155, 155, 155</color-definition>
+            <color-definition name = 'colors.dim:inactive'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.skill:active'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.skill:highlight'>175, 175, 175</color-definition>
+
+        <color-definition name = 'colors.title:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.title:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.title:highlight'>125, 125, 125</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.popup'>
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+            <color-definition name = 'colors.special:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.special:highlight'>225, 225, 25</color-definition>
+
+        <color-definition name = 'colors.title:active'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.title:inactive'>125, 125, 125</color-definition>
+            <color-definition name = 'colors.title:highlight'>125, 125, 125</color-definition>
+
+        <color-definition name = 'colors.button:highlight'>237, 77, 24</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.prompt'>
+
+        <color-definition name = 'text:active'>237, 77, 24</color-definition>
+            <color-definition name = 'text:inactive'>225, 225, 225</color-definition>
+            <color-definition name = 'text:highlight'>225, 225, 225</color-definition>
+
+        <color-definition name = 'colors.numeric:active'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.numeric:inactive'>175, 175, 175</color-definition>
+            <color-definition name = 'colors.numeric:highlight'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.nonalphanumeric:active'>25, 225, 25</color-definition>
+            <color-definition name = 'colors.nonalphanumeric:inactive'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.nonalphanumeric:highlight'>237, 77, 24</color-definition>
+
+    </local>
+
+
+    <local target = 'default3.ext.newsfeeder'>
+
+        <color-definition name = 'colors.button'>225, 27, 27</color-definition>
+
+        <color-definition name = 'colors.special:active'>237, 77, 24</color-definition>
+            <color-definition name = 'colors.special:inactive'>237, 77, 24</color-definition>
+            <color-definition name = 'colors.special:highlight'>237, 77, 24</color-definition>
+
+        <color-definition name = 'colors.title:active'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.title:inactive'>175, 175, 125</color-definition>
+            <color-definition name = 'colors.title:highlight'>175, 175, 125</color-definition>
+
+    </local>
+
+</color-definitions>
+
+<themes>
+    <theme class = 'default3.ext.panel'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:highlight</color>
+                    <size>3</size>
+                </shadow>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <color-classes>
+            <active>
+                <color name = 'normal'>.colors.normal:active</color>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'dim'>.colors.dim:active</color>
+                <color name = 'skill'>.colors.skill:active</color>
+                <color name = 'title'>.colors.title:active</color>
+            </active>
+            <inactive>
+                <color name = 'normal'>.colors.normal:inactive</color>
+                <color name = 'dim'>.colors.dim:inactive</color>
+                <color name = 'skill'>.colors.skill:inactive</color>
+                <color name = 'title'>.colors.title:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'normal'>.colors.normal:highlight</color>
+                <color name = 'skill'>.colors.skill:highlight</color>
+                <color name = 'button'>.colors.button:highlight</color>
+                <color name = 'title'>.colors.title:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+    <theme class = 'default3.ext.hmenu'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <gradient>
+            <inactive>
+                <alpha-factor>0.35</alpha-factor>
+            </inactive>
+        </gradient>
+    </theme>
+
+    <theme class = 'default3.ext.flip-gradient'>
+        <gradient>
+            <active>
+                <active>1</active>
+                <color1>.global.gradient.color2:active</color1>
+                <color2>.global.gradient.color1:active</color2>
+                <direction>1</direction>
+                <alpha-factor>0.5</alpha-factor>
+            </active>
+            <inactive>
+                <active>1</active>
+                <color1>.global.gradient.color2:inactive</color1>
+                <color2>.global.gradient.color1:inactive</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </inactive>
+            <highlight>
+                <active>2</active>
+                <color1>.global.gradient.color2:highlight</color1>
+                <color2>.global.gradient.color1:highlight</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </highlight>
+        </gradient>
+    </theme>
+    <theme class = 'default3.ext.mainmenu.overlay'>
+        <xwindow>
+            <active>
+                <border>
+                    <size>0</size>
+                </border>
+                <shadow>
+                    <size>0</size>
+                </shadow>
+            </active>
+        </xwindow>
+    </theme>
+    <theme class = 'default3.ext.billboard'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:active</color>
+                </text-color>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:highlight</color>
+                    <size>3</size>
+                </shadow>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <color-classes>
+            <active>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'dim'>.colors.dim:active</color>
+                <color name = 'skill'>.colors.skill:active</color>
+                <color name = 'title'>.colors.title:active</color>
+            </active>
+            <inactive>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'dim'>.colors.dim:inactive</color>
+                <color name = 'skill'>.colors.skill:inactive</color>
+                <color name = 'title'>.colors.title:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'skill'>.colors.skill:highlight</color>
+                <color name = 'title'>.colors.title:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+
+    <theme class = 'default3.ext.newsfeeder'>
+        <xwindow>
+            <active>
+                <border>
+                    <color>.colors.button</color>
+                </border>
+            </active>
+            <inactive>
+                <border>
+                    <color>.colors.button</color>
+                </border>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.colors.button</color>
+                </border>
+            </highlight>
+        </xwindow>
+        <color-classes>
+            <active>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'title'>.colors.title:active</color>
+            </active>
+            <inactive>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'title'>.colors.title:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'special'>.colors.special:highlight</color>
+                <color name = 'title'>.colors.title:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+
+    <theme class = 'default3.ext.popup'>
+        <color-classes>
+            <active>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'title'>.colors.title:active</color>
+            </active>
+            <inactive>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'title'>.colors.title:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'special'>.colors.special:highlight</color>
+                <color name = 'button'>.colors.button:highlight</color>
+                <color name = 'title'>.colors.title:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+
+    <theme class = 'default3.ext.prompt'>
+        <window>
+            <active>
+                <text-color>
+                    <color>.text:active</color>
+                </text-color>
+            </active>
+            <inactive>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <color-classes>
+            <active>
+                <color name = 'numeric'>.colors.numeric:active</color>
+                <color name = 'nonalphanumeric'>.colors.nonalphanumeric:active</color>
+            </active>
+            <inactive>
+                <color name = 'numeric'>.colors.numeric:inactive</color>
+                <color name = 'nonalphanumeric'>.colors.nonalphanumeric:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'numeric'>.colors.numeric:highlight</color>
+                <color name = 'nonalphanumeric'>.colors.nonalphanumeric:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+
+    <theme class = 'default3.ext.tooltip'>
+        <window>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                </border>
+            </inactive>
+        </window>
+        <color-classes>
+            <inactive>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'title'>.colors.title:inactive</color>
+            </inactive>
+        </color-classes>
+    </theme>
+
+    <theme class = 'default3.ext.generic-list'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:highlight</color>
+                    <size>3</size>
+                </shadow>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <color-classes>
+            <active>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'dim'>.colors.dim:active</color>
+                <color name = 'skill'>.colors.skill:active</color>
+            </active>
+            <inactive>
+                <color name = 'dim'>.colors.dim:inactive</color>
+                <color name = 'skill'>.colors.skill:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'skill'>.colors.skill:highlight</color>
+                <color name = 'button'>.colors.button:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+    <theme class = 'default3'>
+        <window>
+            <active>
+                <border>
+                    <color>.border:active</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:active</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:active</color>
+                </text-color>
+            </active>
+            <inactive>
+                <border>
+                    <color>.border:inactive</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:inactive</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:inactive</color>
+                </text-color>
+            </inactive>
+            <highlight>
+                <border>
+                    <color>.border:highlight</color>
+                    <size>3</size>
+                </border>
+                <shadow>
+                    <color>.shadow:highlight</color>
+                    <size>2</size>
+                </shadow>
+                <text-color>
+                    <color>.text:highlight</color>
+                </text-color>
+            </highlight>
+        </window>
+        <gradient>
+            <active>
+                <active>1</active>
+                <color1>.global.gradient.color1:active</color1>
+                <color2>.global.gradient.color2:active</color2>
+                <direction>1</direction>
+                <alpha-factor>0.5</alpha-factor>
+            </active>
+            <inactive>
+                <active>1</active>
+                <color1>.global.gradient.color1:inactive</color1>
+                <color2>.global.gradient.color2:inactive</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </inactive>
+            <highlight>
+                <active>2</active>
+                <color1>.global.gradient.color1:highlight</color1>
+                <color2>.global.gradient.color2:highlight</color2>
+                <direction>1</direction>
+                <alpha-factor>0.75</alpha-factor>
+            </highlight>
+        </gradient>
+        <color-classes>
+            <active>
+                <color name = 'normal'>.colors.normal:active</color>
+                <color name = 'dim'>.colors.dim:active</color>
+                <color name = 'special'>.colors.special:active</color>
+                <color name = 'evil'>.colors.evil:active</color>
+                <color name = 'warning'>.colors.warning:active</color>
+                <color name = 'lowlight'>.colors.lowlight:active</color>
+                <color name = 'highlight'>.colors.highlight:active</color>
+                <color name = 'header'>.colors.header:active</color>
+                <color name = 'headerx'>.colors.headerx:active</color>
+            </active>
+            <inactive>
+                <color name = 'normal'>.colors.normal:inactive</color>
+                <color name = 'dim'>.colors.dim:inactive</color>
+                <color name = 'special'>.colors.special:inactive</color>
+                <color name = 'evil'>.colors.evil:inactive</color>
+                <color name = 'warning'>.colors.warning:inactive</color>
+                <color name = 'lowlight'>.colors.lowlight:inactive</color>
+                <color name = 'highlight'>.colors.highlight:inactive</color>
+                <color name = 'header'>.colors.header:inactive</color>
+                <color name = 'headerx'>.colors.headerx:inactive</color>
+            </inactive>
+            <highlight>
+                <color name = 'normal'>.colors.normal:highlight</color>
+                <color name = 'dim'>.colors.dim:highlight</color>
+                <color name = 'special'>.colors.special:highlight</color>
+                <color name = 'evil'>.colors.evil:highlight</color>
+                <color name = 'warning'>.colors.warning:highlight</color>
+                <color name = 'lowlight'>.colors.lowlight:highlight</color>
+                <color name = 'highlight'>.colors.highlight:highlight</color>
+                <color name = 'header'>.colors.header:highlight</color>
+                <color name = 'headerx'>.colors.headerx:highlight</color>
+            </highlight>
+        </color-classes>
+    </theme>
+</themes>

@@ -1,0 +1,36 @@
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 117 11 11 29 152 29 29 29 117 152 207 0 0 0 0 0 0 
+			0 0 0 0 0 152 0 0 0 0 152 0 0 0 0 0 0 0 
+			0 118 24 24 24 24 24 152 179 117 152 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 152 0 0 152 0 0 0 0 0 0 0 
+			0 116 25 152 25 25 25 25 25 117 152 0 0 0 0 0 0 0 
+			0 0 0 152 0 0 0 0 0 0 152 0 0 0 0 0 0 0 
+			0 116 26 26 26 152 26 26 26 119 152 0 0 0 0 0 0 0 
+			0 0 0 0 0 152 0 0 0 0 152 0 0 0 0 0 0 0 
+			0 119 27 27 27 27 27 152 27 119 152 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 152 0 0 152 119 119 119 118 119 116 119 
+			0 119 28 152 28 28 28 28 28 119 152 96 0 0 0 0 0 0 
+			0 0 0 152 0 0 0 0 0 0 152 98 0 0 0 0 0 0 
+			0 119 29 29 29 29 29 29 29 119 118 96 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '6' y = '2' genus = '2' ai-behavior = '1' name = 'player1' nick = '' title = '' />
+	<entity x = '1' y = '10' genus = '6' ai-behavior = '1' name = 'gold0' nick = '' title = '' />
+	<entity x = '11' y = '11' genus = '6' ai-behavior = '1' name = 'gold1' nick = '' title = '' />
+	<entity x = '1' y = '2' genus = '6' ai-behavior = '1' name = 'gold2' nick = '' title = '' />
+</entities>
+<triggers>
+</triggers>
+<scripts>
+</scripts>
+<redline behavior = 'off' />
+<challenge behavior = 'off' />
+<puzzle behavior = 'off' />

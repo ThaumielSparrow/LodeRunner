@@ -1,0 +1,39 @@
+<causes>
+    <tile-fill>
+        <string>No one can survive the refilling process, not even a [color=special]hero[/color]!</string>
+        <string>Digging holes can help you kill [color=normal]bad guys[/color].  Or, in this case, yourself.</string>
+        <string>It looks like you didn't quite make it out of the way in time, [color=special]$[core.player1.name][/color].</string>
+    </tile-fill>
+    <enemy>
+        <string>The [color=dim]Bungeling Emperor[/color]'s troops take no prisoners.</string>
+        <string>Dig [color=dim]holes[/color] in the ground for the [color=dim]bad guys[/color] to fall into.</string>
+        <string>The [color=dim]bad guys[/color] won't take no for an answer.</string>
+    </enemy>
+    <planar-shift>
+        <string>Part of the level decided it just didn't like you very much, [color=special]$[core.player1.name][/color].</string>
+        <string>You suffered a tragic death by level movement.</string>
+        <string>When the level itself starts moving around, can anything good really happen?</string>
+    </planar-shift>
+    <out-of-bounds>
+        <string>Unfortunately, you fell off of the world.  Watch out for the warning lines!</string>
+        <string>You cannot exit the bottom of a level through a warning line.</string>
+    </out-of-bounds>
+    <deadly-tile>
+        <string>Make sure not to step on the spikes.  They step back, if you know what I mean.</string>
+        <string>Falling on the spikes is one way of ensuring that the [color=evil]bad guys[/color] don't get you.</string>
+        <string>Try to lure enemies into walking on the spikes while avoiding them yourself!</string>
+    </deadly-tile>
+    <bomb>
+        <string>It looks like you went and blew yourself up again, [color=special]$[core.player1.name][/color]!</string>
+        <string>Make sure to keep your distance from those [color=normal]bombs[/color].</string>
+        <string>You got caught too close to a [color=normal]bomb[/color].  Everyone's done that once or twice, right?</string>
+    </bomb>
+    <vaporization>
+        <string>Some sort of mysterious force just killed you.  That doesn't seem fair!</string>
+        <string>You got vaporized.  I didn't know that could happen!</string>
+    </vaporization>
+    <suicide>
+        <string>Now you know how the suicide key works.  Try not to get stuck!</string>
+        <string>Hold down the suicide key when you want to quickly reload the previous checkpoint.</string>
+    </suicide>
+</causes>

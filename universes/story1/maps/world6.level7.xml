@@ -1,0 +1,86 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 153 219 217 219 152 0 0 0 0 0 0 0 153 216 218 219 154 0 0 
+			0 0 154 0 0 0 153 0 0 0 192 24 197 0 153 0 0 0 152 0 0 
+			0 0 153 0 0 0 153 0 185 191 162 163 207 187 153 0 0 0 154 0 0 
+			0 0 154 0 0 0 154 184 171 171 0 166 187 168 153 0 0 0 152 0 0 
+			181 198 152 181 29 24 152 27 161 162 180 163 164 0 154 188 25 23 154 198 186 
+			164 0 153 0 169 176 153 0 0 164 169 160 0 0 154 0 0 176 154 176 0 
+			0 0 154 0 0 0 152 0 0 0 144 0 0 0 153 0 0 0 152 0 0 
+			0 191 24 153 28 196 183 153 188 0 144 0 194 153 26 29 188 152 25 196 217 
+			0 0 164 153 0 0 0 154 170 0 208 0 164 152 171 0 0 153 0 0 0 
+			0 0 0 153 0 0 0 154 0 0 0 0 0 154 0 0 0 154 0 0 219 
+			0 0 187 185 153 26 192 28 153 23 185 28 153 195 194 180 153 27 183 219 0 
+			0 0 0 0 153 178 168 0 152 0 0 163 153 175 172 0 153 0 0 0 0 
+			0 0 0 0 153 0 0 0 153 0 0 0 153 0 0 0 153 0 0 0 216 
+			0 182 152 23 183 153 188 183 25 26 25 185 185 27 24 154 192 188 152 194 0 
+			0 0 152 160 0 153 0 179 161 169 0 0 170 172 0 154 160 0 152 0 0 
+			0 0 153 0 0 154 0 0 0 0 0 0 0 0 0 153 0 0 152 0 0 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 263 0 283 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 0 0 0 0 0 
+			0 0 0 263 0 0 0 0 283 0 0 0 302 0 0 263 0 0 0 283 0 
+			302 0 0 0 0 0 0 0 0 300 0 302 0 0 0 0 0 300 0 302 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 263 0 0 0 283 0 0 0 0 0 0 263 0 0 0 265 0 0 283 0 
+			0 0 300 0 0 0 0 0 302 0 0 0 300 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 263 0 0 265 0 0 0 265 0 0 283 0 263 0 0 302 0 0 
+			0 0 0 0 0 0 302 0 0 0 0 300 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 263 0 0 283 0 0 263 0 0 0 283 263 0 0 0 283 0 0 0 0 
+			0 0 0 0 0 0 0 300 0 302 0 0 300 302 0 0 302 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '9' x = '4' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '6' x = '16' genus = '1' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '12' x = '13' genus = '1' class = '' />
+	<entity x = '16' y = '3' genus = '3' species = 'terminal' ai-behavior = '1' name = 'machine1' class = 'bomb-vending-machine' nick = 'Bomb Vending Machine' title = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '19' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '19' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '5' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '1' x = '3' genus = '5' class = '' />
+<entity name = '' title = '' ai-behavior = '1' nick = '' y = '0' x = '7' genus = '5' class = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '7' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '3' x = '10' genus = '6' class = '' />
+<entity name = 'gold.uid.2' title = '' ai-behavior = '1' nick = '' y = '0' x = '12' genus = '6' class = '' />
+<entity name = 'gold.uid.3' title = '' ai-behavior = '1' nick = '' y = '1' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '4' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '2' x = '1' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '6' x = '3' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '9' x = '5' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '6' x = '13' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '2' x = '19' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '9' x = '18' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '12' x = '17' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '12' x = '11' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '11' x = '9' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '12' x = '2' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '8' x = '16' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '1' x = '15' genus = '6' class = '' />
+</entities>
+<triggers>
+	<trigger name = 'bomb-machine' x = '16' y = '3' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to buy bombs'>
+		<touch>
+		</touch>
+		<hover>
+            <script name = 'global.bomb-machine.shop' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts />

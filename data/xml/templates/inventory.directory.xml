@@ -1,0 +1,59 @@
+<parameters>
+	<data>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@slots</parameter>
+		<parameter>@count</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.directory'>
+
+    <rowmenu id = 'directory' class = 'inventory-directory' width = '@width' height = '@height' uses-focus = '1' uses-scroll = '1'>
+
+        <item-group class = 'spacer' render-border = '0' per-row = '2' column-padding = '20'>
+
+            <item class = 'button' render-border = '1'>
+                <icon x = '5%' y = '0' index = '19' />
+                <label x = '20%' y = '0' width = '75%' value = 'Back to [color=special]Game Menu[/color]...' />
+                <action do = 'back' slide = 'left' />
+            </item>
+
+            <item id = 'invisible-right-column' disabled = '1' />
+
+        </item-group>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'Equipped Item Slots' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Available:  @slots' />
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'ext.equipped-items' render-border = '0' per-row = '2' column-padding = '20' homogenize = '1' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item class = 'title-bar' disabled = '1' fill = 'always'>
+                <icon x = '2%' y = '50%' valign = 'center' index = '13' position = 'absolute' />
+
+                <label font = 'high-contrast' x = '8%' y = '0' width = '100%' value = 'My Items' />
+                <label font = 'high-contrast' x = '98%' y = '0' align = 'right' width = '100%' value = 'Count:  @count' />
+            </item>
+
+        </item-group>
+
+
+        <item-group id = 'ext.my-items' render-border = '0' per-row = '2' column-padding = '20' homogenize = '1' />
+
+    </rowmenu>
+
+</template>

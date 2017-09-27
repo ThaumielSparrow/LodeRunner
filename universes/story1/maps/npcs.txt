@@ -1,0 +1,38 @@
+town1.level1.xml:47:	<entity x = '12' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Dave' title = 'Citizen' />
+town1.level1.xml:48:	<entity x = '17' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Isabella' title = 'Citizen' />
+town1.level2.xml:51:	<entity x = '15' y = '9' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Desiree' title = '' />
+town1.level2.xml:52:	<entity x = '7' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Jackson' title = 'Citizen' />
+town1.level3.xml:54:	<entity x = '3' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'merchant' nick = 'Curry' title = '' />
+town2.level1.xml:36:	<entity x = '12' y = '8' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Alien' title = '' />
+town2.level2.xml:49:	<entity x = '5' y = '13' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc class1 class2' nick = 'Kev' title = '' />
+town2.level2.xml:50:	<entity x = '10' y = '4' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant class2 class3' nick = 'Nichole' title = '' />
+town2.level3.xml:48:	<entity x = '10' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Elizabeth' title = '' />
+town3.level1.xml:55:	<entity x = '6' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Rebecca' title = '' />
+town3.level1.xml:56:	<entity x = '11' y = '16' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Erich' title = '' />
+town3.level2.xml:50:	<entity x = '6' y = '4' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'JoAnna' title = '' />
+town3.level3.xml:67:	<entity x = '4' y = '6' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Rico' title = '' />
+town4.level1.xml:60:	<entity x = '5' y = '1' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Zack' title = '' />
+town4.level2.xml:65:	<entity x = '7' y = '4' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Erin' title = '' />
+town4.level2.xml:66:	<entity x = '27' y = '1' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Sophia' title = '' />
+town4.level3.xml:61:	<entity x = '4' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Timmy' title = '' />
+town4.level3.xml:62:	<entity x = '16' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Sierra' title = '' />
+town4.level4.xml:50:	<entity x = '10' y = '12' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Lily' title = '' />
+town5.level1.xml:60:	<entity x = '11' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jill' title = '' />
+town5.level2.xml:37:	<entity x = '2' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Willy' title = '' />
+town5.level4.xml:47:	<entity x = '5' y = '10' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc potential-merchant' nick = 'Logan' title = '' />
+town5.level4.xml:48:	<entity x = '13' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Alice' title = '' />
+town6.level2.xml:65:	<entity x = '7' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Kenny' title = '' />
+town6.level2.xml:66:	<entity x = '19' y = '19' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Dani' title = '' />
+town6.level3.xml:49:	<entity x = '2' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Maria' title = '' />
+town6.level3.xml:50:	<entity x = '20' y = '7' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Biggins' title = '' />
+town6.level4.xml:77:	<entity x = '2' y = '9' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Carlie' title = '' />
+town6.level5.xml:65:	<entity x = '5' y = '12' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Han' title = '' />
+town7.level1.xml:87:	<entity x = '22' y = '15' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'merchant' nick = 'William' title = '' />
+town7.level1.xml:88:	<entity x = '7' y = '15' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'merchant' nick = 'Linus' title = '' />
+town7.level2.xml:46:	<entity x = '4' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jessie' title = '' />
+town7.level3.xml:68:	<entity x = '5' y = '14' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Amelia' title = '' />
+town7.level4.xml:97:	<entity x = '2' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jake' title = '' />
+town7.level4.xml:98:	<entity x = '8' y = '28' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'JC' title = '' />
+world0.level3.xml:56:	<entity x = '11' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Brent' title = '' />
+world0.level4.xml:69:	<entity x = '12' y = '22' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'Rochelle' title = '' />
+world0.level4.xml:70:	<entity x = '4' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Carlos' title = '' />

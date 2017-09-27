@@ -1,0 +1,158 @@
+<parameters>
+	<data>
+		<parameter>@slot</parameter>
+		<parameter>@item-name</parameter>
+	</data>
+	<text>
+		<parameter>@item-title</parameter>
+		<parameter>@item-summary</parameter>
+		<parameter>@count</parameter>
+	</text>
+</parameters>
+
+<template name = 'inventory.equipped.insert' version = 'occupied'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame' uses-focus = '0' render-border = '0'>
+
+                <item xclass = 'line-break'>
+
+                    <icon x = '5%' y = '9' index = '8' position = 'absolute' />
+                    <label x = '17%' y = '0' width = '90%' value = '@item-title
+[color=dim]Equipped[/color]' />
+
+                </item>
+
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                <item class = 'spacer' />
+
+                <label x = '17%' y = '0' width = '78%' value = '@item-summary' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.equipped.options' side = 'left' slot = '@slot' item-name = '@item-name' />
+
+        </contents>
+
+        <xtooltip delay = '30' lifespan = '600' width = '90%' align = 'right' xmargin-x = '15'>
+            <item>
+                <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]
+
+@item-summary' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>
+
+<template name = 'inventory.equipped.insert' version = 'empty'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item xclass = 'line-break'>
+
+                    <icon x = '5%' y = '9' index = '12' position = 'absolute' />
+                    <label x = '17%' y = '0' width = '90%' value = 'Empty slot
+[color=dim]@count items available[/color]' />
+
+                    <action do = 'show:inventories.inventory.equipped.options' side = 'left' slot = '@slot' item-name = '@item-name' />
+
+                </item>
+
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.25' />
+
+                <item class = 'spacer' />
+
+                <label x = '17%' y = '0' width = '78%' value = 'Select an item below to fill this slot.' />
+
+            </stack>
+
+        </contents>
+
+    </insert:item>
+
+</template>
+
+
+<template name = 'inventory.equipped.insert' version = 'occupied:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame' uses-focus = '0' render-border = '0'>
+
+                <item xclass = 'line-break'>
+
+                    <icon x = '95%' y = '9' align = 'right' index = '8' position = 'absolute' />
+                    <label class = 'xdebug1' x = '83%' y = '0' align = 'right' width = '90%' value = '@item-title
+[color=dim]Equipped[/color]' />
+
+                </item>
+
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                <item class = 'spacer' />
+
+                <label x = '83%' y = '0' align = 'right' width = '78%' value = '@item-summary' />
+
+            </stack>
+
+            <action do = 'show:inventories.inventory.equipped.options' side = 'right' slot = '@slot' item-name = '@item-name' />
+
+        </contents>
+
+        <xtooltip delay = '30' lifespan = '600' width = '90%' align = 'right' xmargin-x = '15'>
+            <item>
+                <icon x = '0%' y = '0' index = '21' position = 'absolute' />
+                <label x = '15%' y = '0' width = '80%' value = '[color=special]@item-title[/color]
+
+@item-summary' />
+            </item>
+        </xtooltip>
+
+    </insert:item>
+
+</template>
+
+<template name = 'inventory.equipped.insert' version = 'empty:zebra'>
+
+    <insert:item id = 'insert' class = 'link' render-border = '1'>
+
+        <contents>
+
+            <stack class = 'frame'>
+
+                <item xclass = 'line-break'>
+
+                    <icon x = '95%' y = '9' align = 'right' index = '12' position = 'absolute' />
+                    <label x = '83%' y = '0' align = 'right' width = '90%' value = 'Empty slot
+[color=dim]@count items available[/color]' />
+
+                    <action do = 'show:inventories.inventory.equipped.options' side = 'right' slot = '@slot' item-name = '@item-name' />
+
+                </item>
+
+                <rect class = 'underline' x = '5%' y = '0' width = '90%' height = '2' midpoint = '0.75' />
+
+                <item class = 'spacer' />
+
+                <label x = '83%' y = '0' align = 'right' width = '78%' value = 'Select an item below to fill this slot.' />
+
+            </stack>
+
+        </contents>
+
+    </insert:item>
+
+</template>

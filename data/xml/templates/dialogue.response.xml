@@ -1,0 +1,224 @@
+<parameters>
+	<data>
+		<parameter>@response-id</parameter>
+	</data>
+	<text>
+		<parameter>@response-text</parameter>
+		<parameter>@response-special-phrase</parameter>
+		<parameter>@response-error-phrase</parameter>
+	</text>
+</parameters>
+
+<template name = 'dialogue.response' version = 'normal'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+        <contents>
+            <icon class = 'lode-runner' x = '2%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+            <stack>
+                <label x = '8%' y = '0' width = '81%' value = '@response-text' text-effect = 'blaster:line-by-line' obeys-linger-commands = '0' />
+            </stack>
+
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'special'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '2%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+            <label class = 'special' x = '8%' y = '0' width = '81%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'top-right' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]Special Option[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-special-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'disabled'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '2%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+            <label class = 'disabled' x = '8%' y = '0' width = '81%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'nothing' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'top-right' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]Not Available[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-error-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>
+
+
+
+<template name = 'dialogue.response' version = 'normal:shop'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+        <contents>
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+            <label x = '17%' y = '0' width = '79%' value = '@response-text' text-effect = 'blaster:line-by-line' obeys-linger-commands = '0' />
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'special:shop'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+            <label class = 'special' x = '17%' y = '0' width = '79%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'left' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]Special Option[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-special-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'disabled:shop'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '24' display = 'on-focus' position = 'absolute' />
+            <label class = 'disabled' x = '17%' y = '0' width = '79%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'nothing' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'left' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '24' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=dim]Not Available[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-error-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>
+
+
+<template name = 'dialogue.response' version = 'normal:shop:grid'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+        <contents>
+            <label x = '17%' y = '0' width = '79%' value = '@response-text' text-effect = 'blaster:line-by-line' obeys-linger-commands = '0' />
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'special:shop:grid'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <label class = 'special' x = '17%' y = '0' width = '79%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'respond' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'top' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '30' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=special]Special Option[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-special-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>
+
+<template name = 'dialogue.response' version = 'disabled:shop:grid'>
+
+    <item id = 'response' class = 'option' fill = 'active'>
+
+        <contents>
+            <label class = 'disabled' x = '17%' y = '0' width = '79%' value = '@response-text' xdisplay = 'off-focus' />
+            <action do = 'nothing' response-id = '@response-id' />
+        </contents>
+
+        <tooltip align = 'top' render-border = '1'>
+
+            <stack>
+
+                <item>
+                    <icon x = '0' y = '50%' valign = 'center' index = '24' position = 'absolute' />
+                    <label x = '15%' y = '0' width = '80%' value = '[color=dim]Not Available[/color]' />
+                </item>
+
+                <label x = '15%' y = '0' width = '80%' value = '@response-error-phrase' />
+
+            </stack>
+
+        </tooltip>
+
+    </item>
+
+</template>

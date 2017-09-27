@@ -1,0 +1,12 @@
+@npc1
+
+    @chapter1
+
+        @conversation[id = 'test1']
+
+            >>> root
+
+                [l] This is the first line of FYI dialogue.  This line will redirect to another line at some point.
+                    -redirect root
+
+                [l] It looks like you've reached the second line of FYI dialogue.

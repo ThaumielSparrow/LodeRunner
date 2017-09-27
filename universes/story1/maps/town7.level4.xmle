@@ -1,0 +1,538 @@
+<params>
+	<param key = 'layer' value = '1' />
+	<param key = 'type' value = 'overworld' />
+</params>
+<planes>
+	<plane name = 'Untitled Plane' x = '0' y = '0' modal = '0'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 325 
+			0 0 325 152 334 0 0 0 0 0 0 0 0 329 152 333 325 313 
+			0 0 0 153 0 0 0 0 0 0 0 0 0 0 154 308 0 0 
+			0 0 0 154 0 0 0 0 0 0 0 0 0 0 154 0 0 0 
+			0 0 153 325 154 0 0 0 0 0 0 0 0 154 330 152 0 0 
+			0 0 154 0 154 0 0 0 0 0 0 0 0 152 0 154 0 0 
+			0 0 328 152 326 323 0 0 325 324 0 323 25 333 152 332 0 0 
+			0 0 0 153 0 0 0 0 303 308 0 0 0 0 154 0 0 0 
+			333 0 0 153 0 0 0 0 314 311 0 0 0 0 154 0 0 329 
+			311 330 152 325 152 0 0 0 0 0 0 0 0 152 326 154 327 311 
+			0 0 153 0 153 0 0 0 0 0 0 0 0 153 0 153 0 0 
+			0 0 323 153 332 27 323 0 207 325 0 0 332 334 153 325 0 0 
+			0 0 0 154 0 0 0 0 311 311 0 325 0 0 152 0 0 0 
+			0 0 0 152 0 0 0 0 0 0 0 0 0 0 152 0 0 0 
+			0 0 0 324 152 0 0 0 0 0 0 0 0 152 332 154 0 0 
+			0 0 0 314 153 0 0 0 0 0 0 0 0 154 0 152 0 0 
+			0 0 0 307 324 330 25 25 333 152 0 0 0 330 152 334 0 0 
+			0 0 0 0 313 0 0 0 306 333 154 0 0 0 154 0 0 0 
+			0 0 0 0 0 0 328 0 306 306 329 26 27 323 152 0 0 0 
+			0 0 0 0 328 329 314 329 0 313 303 303 0 310 333 153 0 0 
+			0 0 0 0 0 309 307 310 330 305 0 0 0 0 304 331 26 24 
+			0 0 0 0 0 0 307 313 305 0 0 0 0 0 0 306 308 0 
+			0 0 0 0 0 0 303 310 304 331 0 0 0 0 0 314 0 0 
+			0 0 0 0 0 0 0 0 311 305 334 0 0 0 0 0 0 0 
+			0 0 0 0 328 152 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 314 328 152 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 305 328 25 24 334 0 0 0 0 0 331 334 26 
+		</structure>
+	</plane>
+	<plane name = 'shift1' x = '5' y = '4' modal = '0'>
+		<structure>
+			53 0 0 
+			75 54 0 
+			0 75 49 
+			0 0 75 
+		</structure>
+	</plane>
+	<plane name = 'shift2' x = '10' y = '15' modal = '0'>
+		<structure>
+			0 0 49 
+			0 49 75 
+			53 75 0 
+			75 0 0 
+		</structure>
+	</plane>
+	<plane name = 'shift3' x = '1' y = '28' modal = '0'>
+		<structure>
+			51 
+		</structure>
+	</plane>
+	<plane name = 'mask1' x = '0' y = '0' modal = '1'>
+		<structure>
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 302 0 0 0 0 0 263 0 265 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			300 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 300 0 265 0 283 0 0 0 0 0 0 0 0 302 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 300 0 263 0 0 265 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 263 0 0 265 0 0 0 0 
+			0 0 0 0 300 0 0 0 0 0 0 302 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 302 0 0 0 0 300 263 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 0 
+			0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 300 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+			0 0 0 0 0 300 263 0 0 283 0 0 0 0 0 0 263 0 
+		</structure>
+	</plane>
+</planes>
+<entities>
+	<entity x = '2' y = '3' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc1' class = 'npc' nick = 'Jake' title = '' />
+	<entity x = '8' y = '28' genus = '3' species = 'generic' ai-behavior = '5' name = 'npc2' class = 'npc' nick = 'JC' title = '' />
+<entity name = 'gold0' title = '' ai-behavior = '1' nick = '' y = '16' x = '8' genus = '6' class = '' />
+<entity name = 'gold.uid.1' title = '' ai-behavior = '1' nick = '' y = '6' x = '9' genus = '6' class = '' />
+<entity name = 'gold1' title = '' ai-behavior = '1' nick = '' y = '3' x = '13' genus = '6' class = '' />
+<entity name = 'gold2' title = '' ai-behavior = '1' nick = '' y = '6' x = '15' genus = '6' class = '' />
+<entity name = 'gold3' title = '' ai-behavior = '1' nick = '' y = '10' x = '17' genus = '6' class = '' />
+<entity name = 'gold4' title = '' ai-behavior = '1' nick = '' y = '13' x = '12' genus = '6' class = '' />
+<entity name = 'gold5' title = '' ai-behavior = '1' nick = '' y = '9' x = '10' genus = '6' class = '' />
+<entity name = 'gold6' title = '' ai-behavior = '1' nick = '' y = '8' x = '8' genus = '6' class = '' />
+<entity name = 'gold7' title = '' ai-behavior = '1' nick = '' y = '6' x = '4' genus = '6' class = '' />
+<entity name = 'gold8' title = '' ai-behavior = '1' nick = '' y = '11' x = '2' genus = '6' class = '' />
+<entity name = 'gold9' title = '' ai-behavior = '1' nick = '' y = '13' x = '5' genus = '6' class = '' />
+<entity name = 'gold10' title = '' ai-behavior = '1' nick = '' y = '18' x = '6' genus = '6' class = '' />
+<entity name = 'gold11' title = '' ai-behavior = '1' nick = '' y = '20' x = '12' genus = '6' class = '' />
+<entity name = 'gold12' title = '' ai-behavior = '1' nick = '' y = '22' x = '16' genus = '6' class = '' />
+<entity name = 'gold13' title = '' ai-behavior = '1' nick = '' y = '18' x = '17' genus = '6' class = '' />
+<entity name = 'gold14' title = '' ai-behavior = '1' nick = '' y = '25' x = '17' genus = '6' class = '' />
+<entity name = 'gold15' title = '' ai-behavior = '1' nick = '' y = '28' x = '7' genus = '6' class = '' />
+	<entity x = '1' y = '11' genus = '9' ai-behavior = '1' name = 'lever1' class = '' nick = '' title = '' mount = '3' position = '0' />
+	<entity x = '16' y = '11' genus = '9' ai-behavior = '1' name = 'lever2' class = '' nick = '' title = '' mount = '1' position = '0' />
+</entities>
+<triggers>
+	<trigger name = 'npc1.talk' x = '1' y = '2' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to Jake'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc1.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.talk' x = '7' y = '27' width = '3' height = '3' behavior = '3' prompt = 'Press [color=special]@enter[/color] to talk to JC'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'npc2.talk' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.a' x = '4' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.b' x = '3' y = '3' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.c' x = '2' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.d' x = '5' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.e' x = '3' y = '8' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc1.f' x = '2' y = '13' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.a' x = '4' y = '26' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.b' x = '9' y = '28' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'npc2.c' x = '6' y = '27' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'puzzle9.enter' x = '15' y = '3' width = '1' height = '1' behavior = '3' prompt = '#puzzle:puzzle9'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'puzzle9.enter' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1a' x = '3' y = '4' width = '10' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'wp1b' x = '5' y = '15' width = '10' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever1' x = '1' y = '11' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever1.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'lever2' x = '16' y = '11' width = '1' height = '1' behavior = '3' prompt = 'Press [color=special]@enter[/color] to use lever'>
+		<touch>
+		</touch>
+		<hover>
+			<script name = 'lever2.action' />
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'secret1' x = '1' y = '27' width = '1' height = '1' behavior = '2' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+	<trigger name = 'safe-spawn' x = '8' y = '18' width = '1' height = '1' behavior = '1' prompt = ''>
+		<touch>
+		</touch>
+		<hover>
+		</hover>
+		<exit>
+		</exit>
+	</trigger>
+</triggers>
+<scripts>
+	<script name = 'puzzle9.enter'>
+		// Load new map from puzzle.enter trigger.  Spawn at origin.
+        trigger("puzzle9.enter").loadMap("puzzle9", "origin");
+	</script>
+	<script name = 'npc1.ondeath'>
+		// Jake is the kill target of quest 6.3 biggins merchant quest
+        #define TASK "6.3.npc2.quest"
+
+
+        // Did we kill him ahead of quest schedule?
+        if ( quest(TASK).status() == "inactive" )
+        {
+            // If we already killed Biggins, then we already failed.
+            // If we didn't, then this doesn't affect quest.
+            // Thus, we should just hit the flag here...
+            quest(TASK).update("update-killed-jake-before").status("active");
+        }
+
+        // We were on the job
+        elif ( quest(TASK).status() == "active" )
+        {
+            // update flag
+            quest(TASK).update("update-killed-jake-during").status("active");
+        }
+
+        // If we killed Jake after completion quest, that necessarily means
+        // that we decided to kill Biggins instead.  We kill Jake as a bonus
+        elif ( quest(TASK).status() == "complete" )
+        {
+            // If Jake is still alive and we completed, then we killed Biggins first
+            quest(TASK).update("update-killed-jake-after-biggins").status("active");
+        }
+
+        // Well, okay, if quest is failed when we killed Jake, that means we killed
+        // Biggins waaaay too soon.  We'll just hit a flag update here
+        else
+        {
+            quest(TASK).update("update-killed-jake-after-biggins").status("active");
+        }
+
+
+        // always flag
+        quest(TASK).update("flag-killed-jake").status("active");
+
+        // disable talk
+        trigger("npc1.talk").disable();
+	</script>
+	<script name = 'npc1.talk'>
+		// Jake is the kill target of quest 6.3 biggins merchant quest
+        #define QUEST "6.3.npc2.quest"
+
+        #define UPDATE_KILLED_JAKE "update-killed-jake"
+        #define UPDATE_KILLED_BIGGINS_INSTEAD "update-killed-biggins-instead"
+        #define UPDATE_COMPLETE:FOR_JAKE "update-complete:for-jake"
+        #define UPDATE_COMPLETE:FOR_BIGGINS "update-complete:for-biggins"
+
+        // Quest not assigned?  random jabbering
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            npc("npc1").talk("default");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // Did we kill Biggins instead?
+            if ( quest(QUEST).update("flag-killed-biggins").status() == "active" )
+            {
+                // Jake is very relieved
+                npc("npc1").talk("quest:killed-biggins");
+            }
+
+            // Nope, so they're both alive...
+            else
+            {
+                // He'll beg off
+                npc("npc1").talk("quest:in-progress");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // We killed Biggins instead of Jake.  Jake stays with the same conversation as above...
+            npc("npc1").talk("quest:killed-biggins");
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // If we failed quest and Jake here is still alive,
+            // then we killed Biggins before activating the quest.
+            // Let's fall back to default dialogue for Jake, then...
+            npc("npc1").talk("default");
+        }
+	</script>
+	<script name = 'npc2.ondeath'>
+		#define QUEST "7.4.npc2.quest"
+
+        #define UPDATE_GAVE_POINT "update-gave-point"
+        #define UPDATE_KILL_JC "update-kill-jc"
+        #define UPDATE_KILLED_JC_BEFORE "update-killed-jc-before"
+        #define UPDATE_KILLED_JC "update-killed-jc"
+        #define UPDATE_KILLED_JC_DURING "update-killed-jc-during"
+
+        // If we haven't given JC a skill point yet, then we failed the quest by killing him too soon
+        // If we never even talked to JC (thus never activated quest), then we killed him way too soon
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // fail
+            quest(QUEST).status("failed");
+
+            // early kill update
+            quest(QUEST).update(UPDATE_KILLED_JC_BEFORE).status("active");
+        }
+
+        // otherwise, we were in progress or complete.  Which one?
+        else
+        {
+            // Quest is active, but we didn't give him the skill point.  Killed him too soon, then...
+            if ( quest(QUEST).update(UPDATE_GAVE_POINT).status() != "active" )
+            {
+                // fail
+                quest(QUEST).status("failed");
+
+                // early kill update, with full knowledge
+                quest(QUEST).update(UPDATE_KILLED_JC_DURING).status("active");
+            }
+
+            // We gave him the skill point, so now we wanted to kill him to (magically) get it back.
+            else
+            {
+                // win
+                quest(QUEST).status("complete");
+
+                // always note update
+                quest(QUEST).update(UPDATE_KILLED_JC).status("active");
+
+                // get the skill point back
+                session("core.player1.skill-points").increment(1);
+            }
+        }
+
+
+        // disable talk
+        trigger("npc2.talk").disable();
+	</script>
+	<script name = 'npc2.talk'>
+		#define QUEST "7.4.npc2.quest"
+
+        #define UPDATE_GAVE_POINT "update-gave-point"
+        #define UPDATE_KILL_JC "update-kill-jc"
+        #define UPDATE_KILLED_JC "update-killed-jc"
+
+        // Quest not assigned?  go for it
+        if ( quest(QUEST).status() == "inactive" )
+        {
+            // beg for skill point
+            npc("npc2").talk("quest:pending:assign");
+        }
+
+        // Quest in progress?
+        elif ( quest(QUEST).status() == "active" )
+        {
+            // did we give him the skill point yet, or is he still begging for it?
+            if ( quest(QUEST).update(UPDATE_GAVE_POINT).status() != "active" )
+            {
+                // still begging, let's run assign again
+                npc("npc2").talk("quest:pending:assign");
+            }
+
+            // gave it to him, now he taunts until we kill him to complete quest
+            else
+            {
+                // taunts
+                npc("npc2").talk("quest:in-progress:gave-skill-point");
+            }
+        }
+
+        // Quest complete?
+        elif ( quest(QUEST).status() == "complete" )
+        {
+            // complete by killing him, no more talking
+            // na then
+        }
+
+        // Quest failed?
+        elif ( quest(QUEST).status() == "failed" )
+        {
+            // fail by killing him too soon, before even accepting / giving point.
+            // no talking.
+        }
+	</script>
+	<script name = 'onload'>
+		// paths
+        npc("npc1").addHotspot("npc1.a")
+                   .addHotspot("sleep(0.5)")
+                   .addHotspot("npc1.b")
+                   .addHotspot("npc1.c")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.75)")
+                   .addHotspot("npc1.e")
+                   .addHotspot("npc1.f")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc1.d")
+                   .addHotspot("sleep(0.75)");
+
+        // trigger follow
+        trigger("npc1.talk").follow("npc1");
+
+        // paths
+        npc("npc2").addHotspot("npc2.a")
+                   .addHotspot("sleep(1.5)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("sleep(0.25)")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(1.25)")
+                   .addHotspot("npc2.c")
+                   .addHotspot("npc2.b")
+                   .addHotspot("sleep(0.75)");
+
+        // trigger follow
+        trigger("npc2.talk").follow("npc2");
+	</script>
+	<script name = 'lever1.action'>
+		// lever points up?
+        if ( npc("lever1").hasPosition("up") )
+        {
+            // point down
+            npc("lever1").setPosition("down");
+
+            // shift down
+            map().plane("shift1").shiftToY("wp1b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever1").setPosition("up");
+
+            // shift up
+            map().plane("shift1").shiftToY("wp1a");
+        }
+	</script>
+	<script name = 'lever2.action'>
+		// lever points up?
+        if ( npc("lever2").hasPosition("up") )
+        {
+            // point down
+            npc("lever2").setPosition("down");
+
+            // shift down
+            map().plane("shift2").shiftToY("wp1b");
+        }
+
+        // assume down
+        else
+        {
+            // point up
+            npc("lever2").setPosition("up");
+
+            // shift up
+            map().plane("shift2").shiftToY("wp1a");
+        }
+	</script>
+</scripts>

@@ -1,0 +1,8 @@
+<primary-map name = 'map1' />
+<maps>
+    <background />
+    <foreground>
+	    <map name = 'map2' title = 'Untitled Area' x = '43' y = '-3' width = '18' height = '17' gold-count = '3' />
+	    <map name = 'map1' title = 'Untitled Area' x = '11' y = '-2' width = '26' height = '15' gold-count = '10' />
+    </foreground>
+</maps>

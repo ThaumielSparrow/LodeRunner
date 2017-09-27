@@ -1,0 +1,91 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+		<parameter>@y</parameter>
+		<parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@universe-title</parameter>
+		<parameter>@player-name</parameter>
+		<parameter>@character-level</parameter>
+	</text>
+</parameters>
+
+<template name = 'mainmenu.root.story'>
+
+    <rowmenu id = 'menu' class = 'main-menu' x = '@x' y = '@y' width = '@width' height = '@height' center-vertically = '1' uses-focus = '1' rel = 'root'>
+
+        <item-group render-border = '0'>
+
+            <item class = 'first-title' id = 'testid1' rel = 'root.story.new'>
+                <hidden id = 'replay-file' rel = 'root.story.new.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Start New Game' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'app-directive' directive = 'app:singleplayer.new' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid1'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Select a level set...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '-180' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'continue-game' rel = 'root.story.continue'>
+                <contents>
+                    <hidden id = 'replay-file' rel = 'root.story.continue.input.txt' />
+                    <stack>
+                        <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                        <label x = '0' y = '0' align = 'right' width = '90%' value = 'Resume Story' alpha-factor-start = '0.6' />
+                    </stack>
+                    <action do = 'app-directive' directive = 'app:singleplayer.continue' />
+                </contents>
+                <tooltip class = 'continue-game' align = 'right' render-border = '1' x = '-625' y = '10'>
+                    <stack>
+                        <label width = '100%' value = 'Last played:' />
+                        <label width = '100%' value = '[color=special]@universe-title[/color]' />
+                        <label width = '100%' value = '' />
+                        <label width = '100%' value = 'Character Name:' />
+                        <label id = 'player-name' width = '100%' value = '[color=special]@player-name[/color]' />
+                        <label width = '100%' value = 'Character Level:' />
+                        <label id = 'character-level' width = '100%' value = '[color=special]@character-level[/color]' />
+                    </stack>
+
+                    <xlabel x = '0' y = '0' width = '100%' value = 'Last played:  [color=special]@universe-title[/color]
+
+Character Name:  [color=special]@player-name[/color]
+Character Level:  [color=special]@character-level[/color]' />
+                </tooltip>
+            </item>
+            <item disabled = '1' id = 'continue-game:subtitle' class = 'subtitle' visibility = 'with-parent' parent-id = 'continue-game'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Continue storyline...' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xdisplay = 'on-focus' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+            <item class = 'title' id = 'testid3' rel = 'root.story.back'>
+                <hidden id = 'replay-file' rel = 'root.story.back.input.txt' />
+                <stack>
+                    <rect class = 'mainmenu-overline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'on-focus' />
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Back' alpha-factor-start = '0.6' />
+                </stack>
+                <action do = 'back' />
+            </item>
+            <item disabled = '1' class = 'subtitle' visibility = 'with-parent' parent-id = 'testid3'>
+                <stack>
+                    <label x = '0' y = '0' align = 'right' width = '90%' value = 'Main Menu...' xdisplay = 'on-focus' text-effect = 'blaster:line-by-line' reset-on-blur = '1' xalpha-factor-start = '0.6' />
+                    <rect class = 'mainmenu-underline' x = '20' y = '0' width = '150' height = '1' align = 'right' midpoint = '0.75' display = 'constant' />
+                </stack>
+                <xicon x = '15' y = '-8' index = '2' position = 'absolute' xdisplay = 'on-focus' />
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</template>

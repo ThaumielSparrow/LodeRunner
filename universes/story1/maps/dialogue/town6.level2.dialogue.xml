@@ -1,0 +1,342 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'default'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>Good day, [color=special]$[core.player1.name][/color].  Have you had a chance to visit any of the [color=special]bomb vending machines[/color] yet?  I hear you can get some really good deals.</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>In the interest of full disclosure, [color=special]$[core.player1.name][/color], I must tell you that I have no idea who&apos;s profiting from the [color=special]bomb vending machines[/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Ever since the [color=dim]Bungeling empire[/color] invaded our beautiful land, I&apos;ve started making a lot of money.  I can&apos;t tell you how, though.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I can&apos;t help but to notice that you haven&apos;t customized your controls yet, [color=special]$[core.player1.name][/color].  You look like a new player, yes.  I like new players because I make a lot of gold off of them.</comment>
+							<response min-gold = '5' branch-id = 'root.oops'>
+								<phrase>I will give you these 5 gold pieces, [color=special]Kenny[/color].</phrase>
+								<branch id = 'root.oops'>
+									<linear />
+									<nags>
+										<line redirect = 'trap' id = 'nag1'>
+											<comment>Thank you, [color=special]$[core.player1.name][/color].  I always like players who immediately choose the first option, whether on accident or not!</comment>
+											<pre-script>player().subtractGold(5);</pre-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.ok'>
+								<phrase>Goodbye.</phrase>
+								<branch id = 'root.ok'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>
+								I notice you have already customized your controls in the [color=special]pause menu[/color].  Smart.  A smart player like you uses [color=special]bombs[/color] with great skill and aplomb.
+
+You should definitely stop by one of my many [color=special]bomb vending machines[/color] to stock up!
+							</comment>
+						</line>
+					</nags>
+				</branch>
+				<branch id = 'trap'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>You never took the time to customize your controls, [color=special]$[core.player1.name][/color].  Yes, you still look like a new player.  I make a lot of gold off of new players like you!</comment>
+							<response min-gold = '5' branch-id = 'trap.oops'>
+								<phrase>I will give you these 5 gold pieces again, [color=special]Kenny[/color].</phrase>
+								<branch id = 'root.oops'>
+									<linear />
+									<nags>
+										<line redirect = 'trap' id = 'nag1'>
+											<comment>Thanks again, [color=special]$[core.player1.name][/color]!  This will never get old!</comment>
+											<pre-script>player().subtractGold(5);</pre-script>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'trap.ok'>
+								<phrase>I should stop giving you gold immediately.  You will never give me anything in return, and eventually I will simply run out of gold.  Goodbye, [color=dim]Kenny[/color].</phrase>
+								<branch id = 'root.ok'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>Yes, I&apos;m making a lot of money selling bombs to both [color=special]you[/color] and the [color=dim]bad guys[/color], and I hope to make a lot more!  If you want to buy some bombs, please visit one of my many [color=special]vending machines[/color].  Otherwise, please leave me to count my money in peace.</comment>
+							<response min-gold = '100' branch-id = 'root.buy'>
+								<phrase>I&apos;d like to buy your business contract, [color=dim]Kenny[/color].</phrase>
+								<branch id = 'root.buy'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>
+												You're offering me a lot of [color=special]gold[/color] there, [color=special]$[core.player1.name][/color].  I usually wouldn't listen to an offer like this, but you obviously mean business.
+
+I think I can agree to your offer.  Are you sure you want to buy my business contracts?
+											</comment>
+											<response branch-id = 'root.buy.confirm'>
+												<phrase>Yes, I&apos;m sure.  Give me the contracts.</phrase>
+												<branch id = 'root.buy.confirm'>
+													<linear>
+														<line id = 'line1'>
+															<comment>
+																Ok, [color=special]$[core.player1.name][/color]!  Now that we have finalized the sale, why don't you take a moment to make your first business decision?
+
+If you'd like, I can deposit [color=special]all of the bomb vending machine revenue[/color] into your gold reserves, netting you [color=special]250 gold pieces[/color] this very minute.  Alternatively, you could decide to [color=special]lower the prices[/color] on each machine, saving you and everyone else a little money on each purchase.
+
+Make the call, business owner!
+															</comment>
+															<response branch-id = 'root.buy.confirm.withdraw'>
+																<phrase>I&apos;m going to withdraw the money, [color=dim]Kenny[/color].</phrase>
+																<branch id = 'root.buy.confirm.withdraw'>
+																	<linear>
+																		<line id = 'line1'>
+																			<comment>You are going to do a great job with these machines, [color=special]$[core.player1.name][/color].  As you requested, I have deposited all of the revenue into your account, netting you a cool [color=special]250 gold pieces[/color].  Have a nice day!</comment>
+																			<post-script>quest("2.1.npc1.quest").update("update-bought-contract").status("active");quest("2.1.npc1.quest").update("update-extracted-funds").status("active");player().addGold(250);</post-script>
+																		</line>
+																	</linear>
+																	<nags />
+																</branch>
+															</response>
+															<response branch-id = 'root.buy.confirm.discount'>
+																<phrase>The bombs should cost less, no doubt about it.</phrase>
+																<branch id = 'root.buy.confirm.discount'>
+																	<linear>
+																		<line id = 'line1'>
+																			<comment>I think you&apos;re taking a bit of a risk on this one, [color=special]$[core.player1.name][/color], but you&apos;re running the show now.  I can confirm that the prices for every [color=special]bomb vending machine[/color] have fallen by about [color=special]10 percent[/color] now.  I&apos;ll talk to you later, [color=special]$[core.player1.name][/color]!</comment>
+																			<post-script>quest("2.1.npc1.quest").update("update-bought-contract").status("active");quest("2.1.npc1.quest").update("update-lowered-prices").status("active");</post-script>
+																		</line>
+																	</linear>
+																	<nags />
+																</branch>
+															</response>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response branch-id = 'root.buy.decline'>
+												<phrase>Not yet.  Let me think it over...</phrase>
+												<branch id = 'root.buy.decline'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.later'>
+								<phrase>Let&apos;s talk later...</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:bought-business-contracts'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I&apos;m still trying to put together a new business venture, now that I&apos;m not bringing in all of that money from the [color=special]bomb vending machines[/color] you bought from me.</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>Looking back, I wish I hadn&apos;t sold you my business contracts, [color=special]$[core.player1.name][/color].  I sure did make a lot of money from those [color=special]bomb vending machines[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I can&apos;t believe that someone who hasn&apos;t even customized their controls in the [color=special]pause menu[/color] now owns all of the [color=special]bomb vending machines[/color].  You impress me, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>You did a nice job of customizing your gameplay controls, but you won&apos;t need to adjust a thing on the [color=special]bomb vending machines[/color] I sold you.  I programmed them to perfection, thanks to my use of the [color=special]Python[/color] programming language!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:failed'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>I used to know this guy in a little town just east of here.  I think people called him [color=special]Alien[/color].  I only remember him because he constantly whined about how much money I made from my [color=special]bomb vending machines[/color].</comment>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1'>
+							<comment>I haven&apos;t seen that guy in a pretty long time, [color=special]$[core.player1.name][/color].  I bet someone got tired of his whining.</comment>
+						</line>
+						<line id = 'nag2' class = 'once'>
+							<comment>I feel really charitable today, knowing that people like [color=special]Alien[/color] can&apos;t stop me from making money anymore. Just to flaunt, I&apos;m going to give you [color=special]35 gold pieces[/color] for absolutely nothing!</comment>
+							<post-script>npc("npc1").conversation("quest:failed").branch("root").getLinesByClass("once").disable();player().addGold(35);</post-script>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I&apos;d like to see you customize your controls in the [color=special]pause menu[/color] soon.  If you change your controls, you might accidentally waste some [color=special]bombs[/color] as you adjust to the new settings.  When you run out of [color=special]bombs[/color], you will eventually need to buy more at one of my [color=special]bomb vending machines[/color], and I will profit!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>How many [color=special]bombs[/color] do you have left?  [color=special]$[core.bombs.count][/color], I see.  You must have done a great job customizing your controls to have that many left.</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+	<npc2>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								You're making some pretty good progress, [color=special]$[core.player1.name][/color].  I bet you've got a pretty good [color=special]world map[/color] of the entire land of [color=special]Lelandria[/color] by now!
+
+You know, [color=special]$[core.player1.name][/color], I'd love to have a complete copy of the entire world.  If you happen to complete your world map by visiting every level in this world, please stop back to share a copy of your map with me!
+							</comment>
+							<post-script>quest("6.2.npc2.quest").status("active");npc("npc2").clearIndicators();session("6.2.npc2.quest:percent-visited").set( progress().getMapsByClass("overworld").getPercentVisited() );</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I wish I could travel the entire world along your side, [color=special]$[core.player1.name][/color].  If you ever finish that map, let me know!  I have a [color=special]special item[/color] waiting for you!</comment>
+							<response branch-id = 'root.bye'>
+								<phrase>Have a nice day, [color=special]Dani[/color].</phrase>
+								<branch id = 'root.bye'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment />
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response branch-id = 'root.buy'>
+								<phrase>Do you have any map data to share with me?</phrase>
+								<branch id = 'root.buy'>
+									<linear />
+									<nags>
+										<line id = 'nag1' class = 'no'>
+											<comment>I have done a lot of traveling between here and the western area of [color=special]Lelandria[/color], but it looks like you have already visited all of the same places.  I&apos;m sorry, [color=special]$[core.player1.name][/color], but I don&apos;t have anything that would help you!</comment>
+										</line>
+										<line id = 'nag2' class = 'yes'>
+											<comment>
+												I think I might, [color=special]$[core.player1.name][/color].
+
+I've spent a lot of time traveling between here and [color=special]Manderkeen[/color], a city not too far west of here.  If you'd like, I could make you a copy of my limited map data for a small fee.
+											</comment>
+											<response min-gold = '50' branch-id = 'root.buy.confirm'>
+												<phrase>Sure!  I&apos;ll take it!</phrase>
+												<branch id = 'root.buy.confirm'>
+													<linear>
+														<line id = 'line1'>
+															<comment>Thanks for the gold, [color=special]$[core.player1.name][/color].  I&apos;ve updated your [color=special]World Map[/color] with all of the places I&apos;ve visited between here and [color=special]Manderkeen[/color].  You&apos;ll see them as "unvisited" areas, but you can fast travel to [color=special]Manderkeen[/color] right now if you&apos;d like!</comment>
+															<post-script>player().subtractGold(50);map().runScript("npc2.share-map");</post-script>
+														</line>
+													</linear>
+													<nags />
+												</branch>
+											</response>
+											<response branch-id = 'root.buy.deny'>
+												<phrase>Not right now, [color=special]Dani[/color].</phrase>
+												<branch id = 'root.buy.deny'>
+													<linear />
+													<nags>
+														<line id = 'nag1'>
+															<comment />
+														</line>
+													</nags>
+												</branch>
+											</response>
+										</line>
+									</nags>
+								</branch>
+							</response>
+						</line>
+						<line id = 'nag2'>
+							<comment>I&apos;ve been keeping a [color=special]special item[/color] to offer in exchange for a complete [color=special]world map[/color] of [color=special]Lelandria[/color].  If you ever fully reveal your map, [color=special]$[core.player1.name][/color], please stop by!</comment>
+							<response branch-id = 'root.bye'>
+								<phrase>I&apos;ll see you later, [color=special]Dani[/color].</phrase>
+							</response>
+							<response branch-id = 'root.buy'>
+								<phrase>Do you have any map data to share with me?</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:map-complete'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								This looks so neat, [color=special]$[core.player1.name][/color]!  I can't believe you visited the entire world!
+
+I have that [color=special]special item[/color] ready for you too, [color=special]$[core.player1.name][/color].  If you haven't gotten all of the gold in the game yet, this might help you out!
+							</comment>
+							<post-script>quest("6.2.npc2.quest").status("complete");quest("6.2.npc2.quest").update("update-complete").status("active");npc("npc2").clearIndicators();player().acquireRandomItem("danis-world-traveler-shoes", "danis-anti-thief-shoes", "danis-heavy-shoes-of-fortune");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I love this map, [color=special]$[core.player1.name][/color].  Thanks so much for sharing it with me!</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I can&apos;t stop staring at this map.  I bet you have fought a ton of [color=dim]bad guys[/color]!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I bet you&apos;ve spent a lot of time studying this map in the [color=special]pause menu[/color], right?  Have you thought about customizing your gameplay controls while you&apos;re in the [color=special]pause menu[/color]?</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>I don&apos;t think anyone could explore the entirety of [color=special]Lelandria[/color] without customizing their gameplay controls at least once!  You did an incredible job on this map, [color=special]$[core.player1.name][/color]!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc2>
+</characters>

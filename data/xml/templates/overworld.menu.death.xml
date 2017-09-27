@@ -1,0 +1,166 @@
+<parameters>
+	<data>
+		<parameter>@x</parameter>
+        <parameter>@y</parameter>
+        <parameter>@doublewidth</parameter>
+        <parameter>@width</parameter>
+		<parameter>@height</parameter>
+	</data>
+	<text>
+		<parameter>@random-taunt</parameter>
+		<parameter>@last-visited-town-title</parameter>
+	</text>
+</parameters>
+
+<template name = 'overworld.menu.death'>
+
+<layouts id = 'layouts'>
+<default>
+
+    <rowmenu id = 'menu' x = '@x' y = '@y' width = '@width' height = '@height' halign = 'center' valign = 'center' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '1'>
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Game Over, Man!' />
+            </item>
+
+        </item-group>
+
+        <item-group render-border = '1'>
+
+            <item disabled = '1' class = 'frame'>
+                <label x = '5%' y = '0' width = '90%' value = '@random-taunt' xvalue = '@random-taunt' />
+            </item>
+
+        </item-group>
+
+
+        <item disabled = '1' class = 'line-break' />
+
+
+        <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+            <item disabled = '1' class = 'title-bar' fill = 'always'>
+                <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Options' />
+            </item>
+
+        </item-group>
+
+        <item-group class = 'options' render-border = '1'>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Load Checkpoint' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' value = 'Revert to Last Autosave' />
+                </stack>
+
+                <action do = 'last-autosave' />
+
+            </item>
+
+            <item class = 'option' fill = 'active'>
+
+                <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                <stack>
+                    <label x = '17%' y = '0' width = '90%' value = 'Respawn in Town' />
+                    <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' value = 'Last Visited:  @last-visited-town-title' />
+                </stack>
+
+                <action do = 'last-town' />
+
+            </item>
+
+        </item-group>
+
+    </rowmenu>
+
+</default>
+<else>
+
+    <hpane handedness = 'right' x = '@x' y = '50%' width = '@width' scale-width = '2.0' height = '@height' halign = 'center' valign = 'top' shrinkwrap = '0'>
+
+        <left>
+
+            <rowmenu id = 'info' y = '25%' width = '100%' height = '@height' shrinkwrap = '1' uses-focus = '0' uses-lightbox = '0' valign = 'bottom'>
+
+                <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                    <item disabled = '1' class = 'title-bar' fill = 'always'>
+                        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                        <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Game Over, Man!' />
+                    </item>
+
+                </item-group>
+
+                <item-group render-border = '1'>
+
+                    <item disabled = '1' class = 'frame' valign = 'pack'>
+                        <label x = '5%' y = '0' width = '90%' value = '@random-taunt' />
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </left>
+
+        <right>
+
+            <rowmenu id = 'menu' y = '-25%' height = '@height' shrinkwrap = '1' uses-focus = '1' uses-lightbox = '0' valign = 'top'>
+
+                <item-group class = 'spacer' render-border = '1' uses-title-bar = '1'>
+
+                    <item disabled = '1' class = 'title-bar' fill = 'always'>
+                        <icon x = '5%' y = '0' index = '13' position = 'absolute' />
+                        <label font = 'high-contrast' x = '17%' y = '0' width = '75%' value = 'Options' />
+                    </item>
+
+                </item-group>
+
+                <item-group class = 'options' render-border = '1'>
+
+                    <item class = 'option' fill = 'active'>
+
+                        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                        <stack>
+                            <label x = '17%' y = '0' width = '90%' value = 'Load Checkpoint' />
+                            <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' value = 'Revert to Last Autosave' />
+                        </stack>
+
+                        <action do = 'last-autosave' />
+
+                    </item>
+
+                    <item class = 'option' fill = 'active'>
+
+                        <icon class = 'lode-runner' x = '5%' y = '50%' valign = 'center' index = '30' display = 'on-focus' position = 'absolute' />
+
+                        <stack>
+                            <label x = '17%' y = '0' width = '90%' value = 'Respawn in Town' />
+                            <label class = 'subtitle' x = '17%' y = '0' width = '90%' xtext-effect = 'blaster:line-by-line' xdisplay = 'on-focus:linger' xvalue = 'TEst' value = 'Last Visited:  @last-visited-town-title' />
+                        </stack>
+
+                        <action do = 'last-town' />
+
+                    </item>
+
+                </item-group>
+
+            </rowmenu>
+
+        </right>
+
+    </hpane>
+
+</else>
+</layouts>
+
+</template>

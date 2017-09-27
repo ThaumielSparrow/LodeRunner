@@ -1,0 +1,115 @@
+<mega-bomb id = 'mega-bomb'>
+	<data tier = 'locked'>
+		<texts>
+			<overview>[color=title]Mega Bomb[/color] supercharges the power of a bomb, increasing the blast radius and causing rampant destruction.  Using a Mega Bomb will require [color=title]2 ordinary bombs[/color] to fuel the explosion.</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.bombs.mega</map>
+                <replay-file>gifs.bombs.mega.animation.txt</replay-file>
+                <active-skill>mega-bomb</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+	<data tier = '1' min-character-level = '2' cost = '1'>
+		<texts>
+			<overview>[color=title]Mega Bomb[/color] supercharges the power of a bomb, increasing the blast radius and causing rampant destruction.  Using a Mega Bomb will require [color=title]2 ordinary bombs[/color] to fuel the explosion.</overview>
+			<specs>Mega Bomb radius of [color=title]2 tiles[/color]
+Requires [color=title]2 bombs[/color]
+Recharges in [color=title]15.0s[/color]</specs>
+			<manual>Press @key to create a mega bomb in the direction you are facing.  This requires [color=title]2[/color] bombs.</manual>
+			<gif-data>
+                <map>gifs.bombs.mega</map>
+                <replay-file>gifs.bombs.mega.animation.txt</replay-file>
+                <active-skill>mega-bomb</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<header>If you unlock [color=title]Mega Bomb[/color], you will lose access to the [color=title]Remote Bomb[/color] skill.
+
+Future upgrades to [color=title]Mega Bomb[/color] reduce the [color=title]bomb fuel requirement[/color] and eventually increase the [color=title]blast radius[/color].</header>
+				</confirm>
+				<receipt>
+					<footer>You will no longer have access to the [color=title]Remote Bomb[/color] skill.</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>15.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-bombs-required-for-fuel' value = '1' />
+				<modifier name = 'radius-bonus' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '2' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>The first upgrade to [color=title]Mega Bomb[/color] reduces the fuel requirement to [color=title]1 bomb[/color].  The blast radius remains the same.</overview>
+			<specs>Mega Bomb radius of [color=title]2 tiles[/color]
+Requires [color=title]1 bomb[/color] (-1)
+Recharges in [color=title]12.0s[/color] (-3.0s)</specs>
+			<manual>Press @key to create a mega bomb in the direction you are facing.  This now requires only [color=title]1[/color] bomb.</manual>
+			<gif-data>
+                <map>gifs.bombs.mega</map>
+                <replay-file>gifs.bombs.mega.animation.txt</replay-file>
+                <active-skill>mega-bomb</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>12.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-bombs-required-for-fuel' value = '0' />
+				<modifier name = 'radius-bonus' value = '1' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = '3' min-character-level = '2' cost = '2'>
+		<texts>
+			<overview>If you brave the final upgrade to [color=title]Mega Bomb[/color], you will destroy entire levels.  You will need [color=special]3 bombs[/color] for each use of this highest-powered [color=title]Mega Bomb[/color].</overview>
+			<specs>Mega Bomb radius of [color=title]4 tiles[/color] (+2)
+Requires [color=title][color=special]3[/color] bombs[/color] ([color=special]+2[/color])
+Recharges in [color=title]10.0s[/color] (-2.0s)</specs>
+			<manual>Press @key to create a monster mega bomb.  This will require [color=title]3[/color] bombs!</manual>
+			<gif-data>
+                <map>gifs.bombs.mega</map>
+                <replay-file>gifs.bombs.mega.animation.txt</replay-file>
+                <active-skill>mega-bomb</active-skill>
+            </gif-data>
+			<inserts>
+				<confirm>
+					<footer>Doing so will fully upgrade your [color=title]Mega Bomb[/color] skill.</footer>
+				</confirm>
+				<receipt>
+					<footer>You have now fully upgraded [color=title]Mega Bomb[/color].</footer>
+				</receipt>
+			</inserts>
+		</texts>
+		<attributes>
+			<duration measure = 'seconds'>0.0</duration>
+			<recharge measure = 'seconds'>10.0</recharge>
+			<modifiers>
+				<modifier name = 'additional-bombs-required-for-fuel' value = '2' />
+				<modifier name = 'radius-bonus' value = '3' />
+			</modifiers>
+		</attributes>
+	</data>
+	<data tier = 'max'>
+		<texts>
+			<overview>You have reached the highest upgrade of [color=title]Mega Bomb[/color].  You need [color=special]3 bombs[/color] for each use of this highest-powered [color=title]Mega Bomb[/color].</overview>
+			<specs />
+			<manual />
+			<gif-data>
+                <map>gifs.bombs.mega</map>
+                <replay-file>gifs.bombs.mega.animation.txt</replay-file>
+                <active-skill>mega-bomb</active-skill>
+            </gif-data>
+			<inserts />
+		</texts>
+		<attributes />
+	</data>
+</mega-bomb>

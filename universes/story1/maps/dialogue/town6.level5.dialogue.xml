@@ -1,0 +1,128 @@
+<characters>
+	<npc1>
+		<chapter1>
+			<conversation id = 'quest:pending:assign'>
+				<branch id = 'root'>
+					<linear>
+						<line redirect = 'root' id = 'line1'>
+							<comment>
+								How did you find me down here, [color=special]$[core.player1.name][/color]?  Never mind that.  I have toiled in this place for too long.
+
+It all started when I fell behind on payments to one of the [color=special]merchants[/color] around here.  When I couldn't make my payments, they banished me to this location.
+							</comment>
+						</line>
+						<line redirect = 'root' id = 'line2'>
+							<comment>
+								I've never managed to figure out how to reach that [color=special]switch[/color] up there, so I can't escape.  I don't care about escaping any more, though.
+
+I want vengeance.  [color=special]$[core.player1.name][/color], you must destroy every merchant you can find in all of [color=special]Lelandria[/color].  You must make them pay for my suffering!
+							</comment>
+						</line>
+						<line id = 'line3' class = 'prompt'>
+							<comment>Will you help me, [color=special]$[core.player1.name][/color]?  Will you bomb every merchant in [color=special]Lelandria[/color] to hell?</comment>
+							<response class = 'default' branch-id = 'root.accept'>
+								<phrase>Absolutely.  It&apos;ll be my pleasure!</phrase>
+								<branch id = 'root.accept'>
+									<linear>
+										<line id = 'line1'>
+											<comment>I can&apos;t wait, [color=special]$[core.player1.name][/color].  Without the terrible corruption of merchandising in this land, everyone in [color=special]Lelandria[/color] will live a better life.  Except for the merchants themselves, naturally!</comment>
+											<post-script>quest("6.5.npc1.quest").status("active");npc("npc1").clearIndicators();</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+							<response class = 'default' branch-id = 'root.later'>
+								<phrase>Not right now, [color=special]Han[/color].</phrase>
+								<branch id = 'root.later'>
+									<linear />
+									<nags>
+										<line id = 'nag1'>
+											<comment>Don&apos;t leave me here like this, [color=special]$[core.player1.name][/color].  Come back if you change your mind!</comment>
+										</line>
+									</nags>
+								</branch>
+							</response>
+							<response class = 'already-done' branch-id = 'root.already-done'>
+								<phrase>I don&apos;t like merchants either, [color=special]Han[/color].  They&apos;re all gone already!</phrase>
+								<branch id = 'root.already-done'>
+									<linear>
+										<line transition = '1' id = 'line1'>
+											<comment />
+											<post-script queued = '1'>npc("npc1").talk("quest:in-progress:killed-all-merchants");</post-script>
+										</line>
+									</linear>
+									<nags />
+								</branch>
+							</response>
+						</line>
+					</linear>
+					<nags>
+						<line id = 'nag1' class = 'prompt'>
+							<comment>I need you to get revenge on the [color=special]merchants[/color] for banishing me to this level, [color=special]$[core.player1.name][/color].  Will you bomb every merchant to hell for me now?</comment>
+							<response class = 'default' branch-id = 'root.accept'>
+								<phrase>Absolutely.  I&apos;m going to get to work!</phrase>
+							</response>
+							<response class = 'default' branch-id = 'root.later'>
+								<phrase>Not yet, [color=special]Han[/color].</phrase>
+							</response>
+							<response class = 'already-done' branch-id = 'root.already-done'>
+								<phrase>I don&apos;t like merchants either, [color=special]Han[/color].  They&apos;re all gone already!</phrase>
+							</response>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I see that you are still working on ridding [color=special]Lelandria[/color] of every last merchant.  Get rid of the $[merchant.count.living] remaining merchant(s), the one(s) who unjustly sentenced me to this cruel fate!  Check all the towns!  Check everywhere!  Please!</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>If you customize your controls in the [color=special]pause menu[/color], you might kill the $[merchant.count.living] remaining merchant(s) more quickly.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>If you see one of the $[merchant.count.living] remaining merchant(s), [color=special]$[core.player1.name][/color], please use your [color=special]@bomb[/color] control liberally!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+			<conversation id = 'quest:in-progress:killed-all-merchants'>
+				<branch id = 'root'>
+					<linear>
+						<line id = 'line1'>
+							<comment>
+								You did it, [color=special]$[core.player1.name][/color]!  You exterminated every last [color=special]merchant[/color] from the entire game!  I can't put into words just how much that means to me!
+
+I have a couple of [color=special]very special items[/color] to share with you.  I stole these from the merchants, and they didn't take kindly to that.  Thanks to you, I'll never owe a one of them one single cent!
+							</comment>
+							<post-script>quest("6.5.npc1.quest").status("complete");quest("6.5.npc1.quest").update("update-complete").status("active");npc("npc1").clearIndicators();player().acquireItem("hans-solar-flaring-respawn-inhibitor");player().acquireRandomItem("hans-skilled-turtle-molasses", "hans-clinking-tunic-of-plenty", "hans-torturing-shovel", "hans-feathery-shovel-of-lag");player().acquireRandomItem("hans-skilled-turtle-molasses", "hans-clinking-tunic-of-plenty", "hans-torturing-shovel", "hans-feathery-shovel-of-lag");</post-script>
+						</line>
+					</linear>
+					<nags />
+				</branch>
+			</conversation>
+			<conversation id = 'quest:complete'>
+				<branch id = 'root'>
+					<linear />
+					<nags>
+						<line id = 'nag1'>
+							<comment>I bet those bomb machines are doing great business now that you&apos;ve wiped out every merchant in [color=special]Lelandria[/color].</comment>
+						</line>
+						<line id = 'nag2'>
+							<comment>I wish you could rescue me from this place, [color=special]$[core.player1.name][/color].  Unfortunately, my predefined path will leave me trapped here forever.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagUncustomized1' class = 'controls-uncustomized'>
+							<comment>I can&apos;t customize my movement controls in the [color=special]pause menu[/color], and therefore I will remain on this level until the end of time.</comment>
+						</line>
+						<line priority = '-1' max-reads = '1' id = 'nagCustomized1' class = 'controls-customized'>
+							<comment>Thanks for using your specially-configured gameplay controls to get rid of all of the merchants in [color=special]Lelandria[/color].  I will never forget it!</comment>
+						</line>
+					</nags>
+				</branch>
+			</conversation>
+		</chapter1>
+	</npc1>
+</characters>
