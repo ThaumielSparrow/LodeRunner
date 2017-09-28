@@ -15,3 +15,4 @@ that no one else could.
 Credit to /u/tristanpete (Tristan1000) for keeping $100 worth of late-night redbull. Also suggestions for quests, and in-game 
 improvements.
 
+Credit to Manav Shah for creating my account’s shitty username.
