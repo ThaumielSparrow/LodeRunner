@@ -12,7 +12,7 @@ juicy 60 fps, and a nice ambient track.
 Credits to /u/BurntSaltyPotato (McAntElon) for help with programming, literally all the spritework and finding that one bug 
 that no one else could.
 
-Credit to /u/tristanpete (Tristan1000) for keeping $100 worth of late-night redbull. Also suggestions for quests, and in-game 
+Credit to /u/tristanpete (Tristan1000) for buying $100 worth of late-night redbull. Also suggestions for quests, and in-game 
 improvements.
 
 Credit to Manav Shah for creating my account’s shitty username.
