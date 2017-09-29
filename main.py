@@ -1,5 +1,5 @@
-"""
-I'm releasing this under the "The I Really Could Care Less About You Public License."  Read it here:  http://www.revinc.org/pages/license
+""" 
+Released under the Creative Commons License. https://creativecommons.org/licenses/by/1.0/
 """
 # Profiling, beta only!
 # Remove this for ship!
@@ -249,5 +249,5 @@ if (q):
     q.close()
 
 
-# Goodbye message
-sys.stderr.write( "Forget you too.\n" )
+# Close message
+sys.stderr.write( "Wait! We have donuts!.\n" )
