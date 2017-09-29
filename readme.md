@@ -1,11 +1,13 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b533a1abcf54f5aae2fb7baeba2c440)](https://www.codacy.com/app/lzhang1337/LodeRunner?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LordZagreus/LodeRunner&amp;utm_campaign=Badge_Grade) DAMN STRAIGHT
 
+Licensed under Creative Commons Agreement
+
 Lode Runner was first released back in the 1980s. It was shit. I made it godlike. God bless Doug Smith,may his soul rest in 
 pepperonis. 
 
 YES, THIS IS A REMAKE. BUT IT'S ABOUT AS DIFFERENT AS POKEMON FIRERED WAS FROM RED.
 
-Enjoy. Game coded in python using pygame library, simply download and run loderunner.exe to play. Feel free to pull and make your
+Enjoy. Game coded in python using pygame library, simply download and run Lode-Runner.exe to play. Feel free to pull and make your
 own improvements.
 
 /u/dat_acid_w0lf's (MagikarpSlayer)(BidoofJason) remake improved the GUI, enemy AI, added 16-bit colorization, that sweet 
