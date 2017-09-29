@@ -1,3 +1,6 @@
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b533a1abcf54f5aae2fb7baeba2c440)](https://www.codacy.com/app/lzhang1337/LodeRunner?utm_source=github.com&utm_medium=referral&utm_content=LordZagreus/LodeRunner&utm_campaign=badger)
+
 Lode Runner was first released back in the 1980s. It was shit. I made it godlike. God bless Doug Smith,may his soul rest in 
 pepperonis. 
 
