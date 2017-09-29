@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b533a1abcf54f5aae2fb7baeba2c440)](https://www.codacy.com/app/lzhang1337/LodeRunner?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LordZagreus/LodeRunner&amp;utm_campaign=Badge_Grade) DAMN STRAIGHT
+
 Lode Runner was first released back in the 1980s. It was shit. I made it godlike. God bless Doug Smith,may his soul rest in 
 pepperonis. 
 
@@ -16,3 +18,4 @@ Credit to /u/tristanpete (Tristan1000) for buying $100 worth of late-night redbu
 improvements.
 
 Credit to Manav Shah for creating my account’s shitty username.
+
