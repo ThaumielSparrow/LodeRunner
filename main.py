@@ -1,9 +1,10 @@
 """ 
 Released under the Creative Commons License. https://creativecommons.org/licenses/by/1.0/
 """
-# Profiling, beta only!
+# Exiting Alpha, Entering Beta!
+# Test for bugs and submit through Issues forum. Feel free to pull req if wanted, I'll merge if you done it good.
 # Remove this for ship!
-#import cProfile
+# import cProfile
 
 import os
 import sys
@@ -250,4 +251,4 @@ if (q):
 
 
 # Close message
-sys.stderr.write( "Wait! We have donuts!.\n" )
+sys.stderr.write( "See ya! \n" )
