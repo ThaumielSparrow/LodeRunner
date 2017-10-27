@@ -1,6 +1,10 @@
 #include <GL/gl.h>
 #include <GL/glu.h>
 
+//nonfunctional until pystring and pygame get their c/c++ interpreter reworked 
+/* #include <pystring.h>
+#include <pygame1.h> */
+
 #include <string.h>
 #include <stdlib.h>
 #include <math.h>
