@@ -89,12 +89,7 @@ class GameMenu(Menu):
                 "align": "right"
             },
             {
-                "text": "[color=dim]Special Thanks:[/color]  Mom[color=dim],[/color] Zheng Han[color=dim],[/color] Uncle H",
-                "x": (SCREEN_WIDTH - PAUSE_MENU_X),
-                "align": "right"
-            },
-            {
-                "text": "[color=dim]Music, Sound FX, Programming, etc.:[/color]  Mike Doty",
+                "text": "[color=dim]Music, Sound FX, Programming, etc.:[/color]  LordZagreus",
                 "x": (SCREEN_WIDTH - PAUSE_MENU_X),
                 "align": "right"
             },
